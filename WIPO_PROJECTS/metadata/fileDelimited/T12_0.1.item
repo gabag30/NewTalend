@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_84uRwL9iEeeH2KtW5GK5VA" name="T12" label="T12" dataPackage="_C2Ngsr9fEeeH2KtW5GK5VA" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/12.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|~|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_C2Ngsr9fEeeH2KtW5GK5VA" name="default" dataManager="_84uRwL9iEeeH2KtW5GK5VA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C2Ngs79fEeeH2KtW5GK5VA" id="_6wf90L9eEeeH2KtW5GK5VA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sooL9jEeeH2KtW5GK5VA" name="NUM_ENTRADA" label="NUM_ENTRADA" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_A-soob9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soor9jEeeH2KtW5GK5VA" name="FEC_ENTRADA" label="FEC_ENTRADA" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" originalLength="-1">
+        <initialValue xmi:id="_A-soo79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sopL9jEeeH2KtW5GK5VA" name="NUM_ACTA_DOCUMENTO" label="NUM_ACTA_DOCUMENTO" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sopb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sopr9jEeeH2KtW5GK5VA" name="TIP_PATENTE" label="TIP_PATENTE" length="1" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sop79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soqL9jEeeH2KtW5GK5VA" name="TITULO" label="TITULO" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_A-soqb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soqr9jEeeH2KtW5GK5VA" name="NUM_AGENTE" label="NUM_AGENTE" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-soq79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sorL9jEeeH2KtW5GK5VA" name="COD_PRIMER_TITULAR" label="COD_PRIMER_TITULAR" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_A-sorb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sorr9jEeeH2KtW5GK5VA" name="COD_PRIMER_INVENT" label="COD_PRIMER_INVENT" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_A-sor79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sosL9jEeeH2KtW5GK5VA" name="NUM_SOLIC_PRIOR" label="NUM_SOLIC_PRIOR" length="20" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sosb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sosr9jEeeH2KtW5GK5VA" name="FEC_SOLIC_PRIOR" label="FEC_SOLIC_PRIOR" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sos79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sotL9jEeeH2KtW5GK5VA" name="COD_PAIS_PRIOR" label="COD_PAIS_PRIOR" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sotb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sotr9jEeeH2KtW5GK5VA" name="NUM_REGISTRO_REVAL" label="NUM_REGISTRO_REVAL" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sot79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-souL9jEeeH2KtW5GK5VA" name="FEC_REGISTRO_REVAL" label="FEC_REGISTRO_REVAL" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-soub9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sour9jEeeH2KtW5GK5VA" name="FEC_VENCIM_REVAL" label="FEC_VENCIM_REVAL" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sou79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sovL9jEeeH2KtW5GK5VA" name="COD_PAIS_REVAL" label="COD_PAIS_REVAL" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sovb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sovr9jEeeH2KtW5GK5VA" name="TIP_TRAMITE" label="TIP_TRAMITE" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_A-sov79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sowL9jEeeH2KtW5GK5VA" name="COD_STATUS" label="COD_STATUS" length="3" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_A-sowb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sowr9jEeeH2KtW5GK5VA" name="FEC_STATUS" label="FEC_STATUS" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" originalLength="-1">
+        <initialValue xmi:id="_A-sow79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soxL9jEeeH2KtW5GK5VA" name="NUM_REGISTRO" label="NUM_REGISTRO" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-soxb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soxr9jEeeH2KtW5GK5VA" name="FEC_REGISTRO" label="FEC_REGISTRO" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sox79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soyL9jEeeH2KtW5GK5VA" name="FEC_VENCIMIENTO" label="FEC_VENCIMIENTO" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-soyb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-soyr9jEeeH2KtW5GK5VA" name="NUM_REGISTRO_PODER" label="NUM_REGISTRO_PODER" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-soy79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_A-sozL9jEeeH2KtW5GK5VA" name="ANUALIDADES" label="ANUALIDADES" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_A-sozb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

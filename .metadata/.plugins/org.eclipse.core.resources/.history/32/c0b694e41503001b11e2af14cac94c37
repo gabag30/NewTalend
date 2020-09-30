@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_CFZZ4A37EemhrdbO7t61kg" id="_3s0LEIbQEemgdMK-o6OOMA" label="B_Only_migration" purpose="proceso de migración de datos de Ecuador" version="0.1" statusCode="" item="_CFZZ4g37EemhrdbO7t61kg" displayName="B_Only_migration">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_CFncUA37EemhrdbO7t61kg" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_CFncUQ37EemhrdbO7t61kg" key="created_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_CFncUg37EemhrdbO7t61kg" key="created_date" value="2019-06-04T15:58:46.097+0200"/>
+    <additionalProperties xmi:id="_CFncUw37EemhrdbO7t61kg" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_CFncVA37EemhrdbO7t61kg" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_CFncVQ37EemhrdbO7t61kg" key="modified_date" value="2019-09-30T14:01:33.829+0200"/>
+    <additionalProperties xmi:id="_5BH2kHexEemFqYcx60KUhg" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_5BH2kXexEemFqYcx60KUhg" key="import_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_5BH2knexEemFqYcx60KUhg" key="import_date" value="2019-06-19T12:42:23.145-0500"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_5IrLsAMVEeuOjv5n7xl_Lg" path="M/EC"/>
+  <TalendProperties:ProcessItem xmi:id="_CFZZ4g37EemhrdbO7t61kg" property="_CFZZ4A37EemhrdbO7t61kg" state="_5IrLsAMVEeuOjv5n7xl_Lg">
+    <process href="B_Only_migration_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

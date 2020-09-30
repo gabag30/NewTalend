@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_QHwwovHcEeim5sBtxACFZQ" dataPackage="_QHwwo_HcEeim5sBtxACFZQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_QHwwo_HcEeim5sBtxACFZQ" dataManager="_QHwwovHcEeim5sBtxACFZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QHwwpPHcEeim5sBtxACFZQ" id="_QHwwoPHcEeim5sBtxACFZQ" label="TIPO_SIGNOS">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QHwwpfHcEeim5sBtxACFZQ" name="CODIGO" label="CODIGO" length="3" sourceType="VARCHAR2" talendType="id_String" key="true" nullable="false">
+        <initialValue xmi:id="_QHwwpvHcEeim5sBtxACFZQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QHwwp_HcEeim5sBtxACFZQ" name="DESCRIPCION" label="DESCRIPCION" length="60" sourceType="VARCHAR2" talendType="id_String">
+        <initialValue xmi:id="_QHwwqPHcEeim5sBtxACFZQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

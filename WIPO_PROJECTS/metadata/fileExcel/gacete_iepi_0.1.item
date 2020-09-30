@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_-az4MFP7EemQhItKexLFvA" name="gacete_iepi" dataPackage="_-az4MVP7EemQhItKexLFvA" Server="Localhost 127.0.0.1" FilePath="C:/Users/galban/Desktop/INFORME FINAL DNPI DGI original 2019.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="GACETA" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" sheetList="GACETA:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-az4MVP7EemQhItKexLFvA" name="default" dataManager="_-az4MFP7EemQhItKexLFvA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-az4MlP7EemQhItKexLFvA" id="_xS3xkFP7EemQhItKexLFvA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4M1P7EemQhItKexLFvA" label="Gaceta" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4NFP7EemQhItKexLFvA" label="Fecha_Presentacion" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4NVP7EemQhItKexLFvA" label="Numero_Tramite" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4NlP7EemQhItKexLFvA" label="Nro_Gaceta" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4N1P7EemQhItKexLFvA" label="Tipo_Derecho" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4OFP7EemQhItKexLFvA" label="Nombre" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4OVP7EemQhItKexLFvA" label="Identificacion" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4OlP7EemQhItKexLFvA" label="Titulo" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4O1P7EemQhItKexLFvA" label="Alfresco" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-az4PFP7EemQhItKexLFvA" label="Clasificacion" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

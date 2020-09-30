@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_RpcHoL9jEeeH2KtW5GK5VA" name="T15" label="T15" dataPackage="_C2Ngsr9fEeeH2KtW5GK5VA" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/15.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|~|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_C2Ngsr9fEeeH2KtW5GK5VA" name="default" dataManager="_RpcHoL9jEeeH2KtW5GK5VA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C2Ngs79fEeeH2KtW5GK5VA" id="_6wf90L9eEeeH2KtW5GK5VA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WIlMcL9jEeeH2KtW5GK5VA" name="NUM_ENTRADA" label="NUM_ENTRADA" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_WIlMcb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WIlMcr9jEeeH2KtW5GK5VA" name="SEC_REGISTRO" label="SEC_REGISTRO" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_WIlMc79jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WIlMdL9jEeeH2KtW5GK5VA" name="RESUMEN" label="RESUMEN" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_WIlMdb9jEeeH2KtW5GK5VA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

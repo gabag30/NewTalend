@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:RegexpFileConnection xmi:id="_l3VUtARiEeCvxKXiy7iB_g" name="regex" dataPackage="_l3VUtQRiEeCvxKXiy7iB_g" Server="Localhost 127.0.0.1" FilePath="D:/03_Formation/jobs/regex.txt" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;^firstname=(.+?)lastname=(.+?)age=(\\d+)$&quot;" RowSeparatorValue="&quot;\n&quot;" UseLimit="true" LimitValue="3" FieldSeparatorType="Custom RegExp"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_l3VUtQRiEeCvxKXiy7iB_g" name="default" dataManager="_l3VUtARiEeCvxKXiy7iB_g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_l3VUugRiEeCvxKXiy7iB_g" id="_vCue0PE8Ed2QjNEn8_EUdA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l3VUtgRiEeCvxKXiy7iB_g" name="" label="Column0" length="10" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_l3VUtwRiEeCvxKXiy7iB_g" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_l3VUuARiEeCvxKXiy7iB_g" name="" label="Column1" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_l3VUuQRiEeCvxKXiy7iB_g" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

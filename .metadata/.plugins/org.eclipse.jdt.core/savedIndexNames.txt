@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+G:\GitHub\NewTalend\.metadata\.plugins\org.eclipse.jdt.core
+2292966262.index
+3233491652.index
+1646622057.index
+440732436.index

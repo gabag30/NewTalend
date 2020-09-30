@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_pffMML9iEeeH2KtW5GK5VA" name="T10" label="T10" dataPackage="_C2Ngsr9fEeeH2KtW5GK5VA" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/10.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|~|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_C2Ngsr9fEeeH2KtW5GK5VA" name="default" dataManager="_pffMML9iEeeH2KtW5GK5VA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C2Ngs79fEeeH2KtW5GK5VA" id="_6wf90L9eEeeH2KtW5GK5VA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqakL9iEeeH2KtW5GK5VA" name="SEC_DOCUMENTO" label="SEC_DOCUMENTO" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_vrqakb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqakr9iEeeH2KtW5GK5VA" name="SEC_MOVIMIENTO" label="SEC_MOVIMIENTO" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" originalLength="-1">
+        <initialValue xmi:id="_vrqak79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqalL9iEeeH2KtW5GK5VA" name="TIP_MOVIMIENTO" label="TIP_MOVIMIENTO" length="3" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqalb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqalr9iEeeH2KtW5GK5VA" name="FEC_MOVIMIENTO" label="FEC_MOVIMIENTO" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" originalLength="-1">
+        <initialValue xmi:id="_vrqal79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqamL9iEeeH2KtW5GK5VA" name="OBS_MOVIMIENTO" label="OBS_MOVIMIENTO" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqamb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqamr9iEeeH2KtW5GK5VA" name="COD_USUARIO" label="COD_USUARIO" length="15" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqam79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqanL9iEeeH2KtW5GK5VA" name="IND_FALTA_APROB" label="IND_FALTA_APROB" length="1" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqanb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqanr9iEeeH2KtW5GK5VA" name="OBS1" label="OBS1" length="-1" precision="-1" sourceType="LONG" talendType="id_Long" originalLength="-1">
+        <initialValue xmi:id="_vrqan79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqaoL9iEeeH2KtW5GK5VA" name="OBS2" label="OBS2" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqaob9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqaor9iEeeH2KtW5GK5VA" name="OBS3" label="OBS3" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqao79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqapL9iEeeH2KtW5GK5VA" name="OBS4" label="OBS4" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqapb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqapr9iEeeH2KtW5GK5VA" name="OBS5" label="OBS5" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqap79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqaqL9iEeeH2KtW5GK5VA" name="SECS_OPCIONES" label="SECS_OPCIONES" length="254" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqaqb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqaqr9iEeeH2KtW5GK5VA" name="IND_IMPRESION" label="IND_IMPRESION" length="1" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqaq79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqarL9iEeeH2KtW5GK5VA" name="COD_STATUS_ANT" label="COD_STATUS_ANT" length="3" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqarb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqarr9iEeeH2KtW5GK5VA" name="FEC_MOVIMIENTO_ANT" label="FEC_MOVIMIENTO_ANT" length="-1" precision="-1" sourceType="DATE" talendType="id_Date" originalLength="-1">
+        <initialValue xmi:id="_vrqar79iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_vrqasL9iEeeH2KtW5GK5VA" name="COD_STATUS" label="COD_STATUS" length="3" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_vrqasb9iEeeH2KtW5GK5VA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

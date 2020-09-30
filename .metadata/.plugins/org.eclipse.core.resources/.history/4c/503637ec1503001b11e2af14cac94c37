@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_d3TFQA0iEeeasvXSrEu7xw" id="_Xs9bMFZmEeeaJ7WI4qinBw" label="EDOCID_Oracle" purpose="Reload edocs in do_pending_edoc" version="0.1" statusCode="" item="_d3TFQg0iEeeasvXSrEu7xw" displayName="EDOCID_Oracle">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_ld6Q4BybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_ld6Q4RybEeifVt3bEFEg0w" key="created_product_version" value="6.4.1.20170623_1246"/>
+    <additionalProperties xmi:id="_ld6Q4hybEeifVt3bEFEg0w" key="created_date" value="2017-03-20T04:35:34.228+0100"/>
+    <additionalProperties xmi:id="_ld6Q4xybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_ld6Q5BybEeifVt3bEFEg0w" key="modified_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_ld6Q5RybEeifVt3bEFEg0w" key="modified_date" value="2018-12-28T20:51:10.108-0300"/>
+    <additionalProperties xmi:id="_eSFBoCmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eSFBoSmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_eSFBoimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7C8gAAMVEeuOjv5n7xl_Lg" path="OMPI/EDMS"/>
+  <TalendProperties:ProcessItem xmi:id="_d3TFQg0iEeeasvXSrEu7xw" property="_d3TFQA0iEeeasvXSrEu7xw" state="_7C8gAAMVEeuOjv5n7xl_Lg">
+    <process href="EDOCID_Oracle_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

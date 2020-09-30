@@ -1,0 +1,1244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="intermediateHost" prompt="intermediateHost?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="intermediatePort" prompt="intermediatePort?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" type="id_String" value="PAS4"/>
+    <contextParameter comment="" name="intermediateUser" prompt="intermediateUser?" promptNeeded="false" type="id_String" value="&quot;sa&quot;"/>
+    <contextParameter comment="" name="intermediatePassword" prompt="intermediatePassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;"/>
+    <contextParameter comment="" name="ipasHost" prompt="ipasHost?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="ipasPort" prompt="ipasPort?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" type="id_String" value="&quot;PATENTES&quot;"/>
+    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" type="id_String" value="&quot;PAT1&quot;"/>
+    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" type="id_String" value="&quot;PAT1&quot;"/>
+    <contextParameter comment="" name="ipasSaPassword" prompt="ipasSaPassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/WIPO/TOS_DI-20161216_1026-V6.3.1/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:RAUhjZZjqXnWtrXTFfmUqrh7rdFlE+LNVjDa+f0n" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-Win32-r118616-V5.5.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L+l2kfsFbeOFe7grFH2bie4WwPCrq6uCDa/WVI4h" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_abQ_UKLdEeSuYal6KjY4uA" name="DataOperation"/>
+    <routinesParameter id="_abg28KLdEeSuYal6KjY4uA" name="Mathematical"/>
+    <routinesParameter id="_abm9kKLdEeSuYal6KjY4uA" name="Numeric"/>
+    <routinesParameter id="_abrPAKLdEeSuYal6KjY4uA" name="Relational"/>
+    <routinesParameter id="_abvgcKLdEeSuYal6KjY4uA" name="StringHandling"/>
+    <routinesParameter id="_ab1nEKLdEeSuYal6KjY4uA" name="TalendDataGenerator"/>
+    <routinesParameter id="_ab7tsKLdEeSuYal6KjY4uA" name="TalendDate"/>
+    <routinesParameter id="_acB0UKLdEeSuYal6KjY4uA" name="TalendString"/>
+    <routinesParameter id="_2oQnQKLiEeSuYal6KjY4uA" name="IPAS"/>
+    <routinesParameter id="_8FqG8D7KEeeQurZirz5-Ng" name="TalendStringUtil"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_4" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HzH4kSeV+CpK3wn3fzq0wq4QuHR/xKti7CENv63W0LC75MbDwL8QEn/UXl+RuOcP"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IJ87fA3fY5ZqMak7EHE1LdbQnsz3IGIcms4giwGs" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportPateValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_4"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_19" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_19"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VqScOrQyhNOz6r2T1XEsRFJ1RvVaTfbMq/VAqBlZ" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportPateProcessByBatches&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_5"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_22" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_22"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_38" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LbfEkur1C/Il9vmwVP3C0CxqDr6oY8ifPyI23kUb" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_PATENT&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_IPC_CLASSES] set IPC_edition='2017.01';&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_LOCAR_CLASSES] set locarno_edition_code='2014.01';&#xD;&#xA;&#x9;  -------------------------------------&#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_CLASS='01' where IPC_CLASS is null;&#xD;&#xA;&#x9;&#x9;update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_group='01' where IPC_GROUP is null;&#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_subgroup='00' where IPC_SUBGROUP is null;&#xD;&#xA;&#x9;  -------------------------------------------------&#xD;&#xA;&#x9;  update  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes set IPC_EDITION=8&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  insert into cf_class_ipc&#xD;&#xA;    select distinct '1', '8',IPC_SECTION,IPC_CLASS,IPC_SUBCLASS,IPC_GROUP,&#xD;&#xA;&#x9; ipc_subgroup ,'','','' from [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes t, [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result s where&#xD;&#xA;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and msg_import='Invalid IPC class' and ipc_subgroup is not null and ipc_class is not null&#xD;&#xA;&#x9;  and not exists&#xD;&#xA;&#xD;&#xA;&#x9;  (&#xD;&#xA;&#x9;  &#x9;  select * from [CF_CLASS_IPC] where&#xD;&#xA;&#x9;  [IPC_EDITION_CODE]='8'&#xD;&#xA;      and [IPC_SECTION_CODE] = t.IPC_SECTION&#xD;&#xA;      and [IPC_CLASS_CODE] = t.IPC_CLASS&#xD;&#xA;      and [IPC_SUBCLASS_CODE] = t.IPC_SUBCLASS&#xD;&#xA;      and [IPC_GROUP_CODE] = t.IPC_GROUP&#xD;&#xA;      and [IPC_SUBGROUP_CODE] = t.ipc_subgroup);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;insert into CF_CLASS_LOCARNO (ROW_VERSION,LOCARNO_CLASS_CODE,LOCARNO_EDITION_CODE)&#xD;&#xA;SELECT distinct&#xD;&#xA;      '1',(case when (LEN(t.[LOCARNO_CLASS_NBR]))=1 then '0' else '' end)+&#xD;&#xA;&#x9;  cast(t.[LOCARNO_CLASS_NBR] as varchar)+'-'+&#xD;&#xA;&#x9;  (case when (LEN(t.[LOCARNO_SUBCLASS_NBR]))=1 then '0' else '' end)+&#xD;&#xA;      cast(t.[LOCARNO_SUBCLASS_NBR] as varchar)&#xD;&#xA;      ,t.[LOCARNO_EDITION_CODE]&#xD;&#xA;  FROM [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_LOCAR_CLASSES] t,&#xD;&#xA;   [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result s where&#xD;&#xA;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and msg_import='Invalid Locarno class';&#xD;&#xA;&#x9;  &#xD;&#xA;insert into CF_DOC_SERIES  values (1,1,'S',null);&#xD;&#xA;&#xD;&#xA;update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT] set ind_import=null;&#xD;&#xA;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_38"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_33" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_33"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_35" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_35"/>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="640">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_29" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_29">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_10" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BbfJY/Vx95lbXy4bDBAqrkBHB4o2eZeP/jrytVd5" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportPateValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_10"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_34" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_34"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G3zMuUuM1ty8nwR6OTS6MQ7iN/WmALjNh0NOm6+P" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_owners T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid owner residence country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.residence_country_code='PY';&#xD;&#xA;&#x9;  ---------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_inventors T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid inventor residence country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.residence_country_code='PY';&#xD;&#xA;&#x9;  --------------------------------------------&#xD;&#xA;&#x9;  MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_owners T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid owner nationality country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.nationality_country_code='PY';&#xD;&#xA;&#x9;  ---------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_inventors T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid inventor nationality country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.nationality_country_code='PY';&#xD;&#xA;&#x9;  ----------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_owners T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='No owner flagged as service address'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.IND_SERVICE='1';&#xD;&#xA;&#x9;  --------------------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_reprs T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='No representative flagged as service address'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.IND_SERVICE='1';&#xD;&#xA;&#x9;  ---------------------------------------------------------------------&#xD;&#xA;&#x9;  MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='File not flagged as registered but some of the registration data items is not null'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.notes='nota info registro: RT=' + t.registration_type + ' RS=' + cast(t.registration_series as varchar) + ' RN='&#xD;&#xA;&#x9;  + cast(t.registration_nbr as varchar) + ' RD=' + convert(varchar, t.registration_date,120) + ' ENTD=' + convert(varchar, t.entitlement_date,120) + ' EXPD=' + convert(varchar, t.expiration_date,120),&#xD;&#xA;&#x9;  t.registration_type =null, t.registration_series =null, &#xD;&#xA;&#x9;   t.registration_nbr =null,  t.registration_date =null,  t.entitlement_date =null, t.expiration_date =null;&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  --------------------------------------------------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='File flagged as registered but some of the registration data items is null'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and t.registration_type is null&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.registration_type=t.application_type;&#xD;&#xA;&#x9;  ----------------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;      MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_priorities T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid priority country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.Country_code='PY', t.notes='Se debe validar el país de la prioridad';&#xD;&#xA;&#xD;&#xA; MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Expiration date is less then entitlement date'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.NOTES=cast(T.notes as varchar) + cast(' nota la fecha de expiración original era incorrecta, chequear ->' + convert(varchar,t.expiration_date,120) as varchar),&#xD;&#xA;&#x9;   t.expiration_date= DateAdd(yy, 5, Cast(t.entitlement_date As datetime));&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;---------------------------------------------------------&#xD;&#xA;&#x9;&#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid application type / subtype code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and application_subtype='M'&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET &#xD;&#xA;&#x9;  t.application_type='MU',t.application_subtype='MU';&#xD;&#xA;&#x9;  --------------------------------------------------------&#xD;&#xA;&#x9;   MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid application type / subtype code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and application_subtype='D'&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET &#xD;&#xA;&#x9;  t.application_type='DI',t.application_subtype='DI';&#xD;&#xA;&#x9;  -------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent T&#xD;&#xA;   USING (&#xD;&#xA;          select file_seq,file_type,file_series,file_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result where msg_import='Invalid application type / subtype code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and application_type='MU' and application_subtype='U'&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET &#xD;&#xA;&#x9;  t.application_type='MU',t.application_subtype='MU';&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  -------------------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  insert into cf_class_ipc&#xD;&#xA;    select distinct '1', '2017.01',IPC_SECTION,IPC_CLASS,IPC_SUBCLASS,IPC_GROUP,&#xD;&#xA;&#x9; ipc_subgroup ,'','','' from [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes t, [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result s where&#xD;&#xA;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and msg_import='Invalid IPC class' and ipc_subgroup is not null and ipc_class is not null&#xD;&#xA;&#xD;&#xA;&#x9;  -----------------------------------------------------&#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_LOCAR_CLASSES] set locarno_edition_code='2014.01'&#xD;&#xA;&#x9;  -------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;   update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_IPC_CLASSES] set IPC_edition='2017.01'&#xD;&#xA;&#x9;   &#xD;&#xA;&#x9;     &#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_CLASS='01' where IPC_CLASS is null;&#xD;&#xA;&#x9;&#x9;update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_group='01' where IPC_GROUP is null;&#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes&#xD;&#xA;&#x9;  set IPC_subgroup='00' where IPC_SUBGROUP is null;&#xD;&#xA;&#xD;&#xA;insert into CF_CLASS_IPC&#xD;&#xA;  select distinct '1', '2017.01',IPC_SECTION,&#xD;&#xA;  IPC_CLASS,IPC_SUBCLASS,&#xD;&#xA;  IPC_GROUP,&#xD;&#xA;  IPC_subGROUP ,&#xD;&#xA;&#x9; '','','' from [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_IPC_classes t, [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result s where&#xD;&#xA;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and msg_import='Invalid IPC class' &#xD;&#xA;&#x9;  ---------------------------------&#xD;&#xA;insert into CF_CLASS_LOCARNO (ROW_VERSION,LOCARNO_CLASS_CODE,LOCARNO_EDITION_CODE)&#xD;&#xA;SELECT distinct&#xD;&#xA;      '1',(case when (LEN(t.[LOCARNO_CLASS_NBR]))=1 then '0' else '' end)+&#xD;&#xA;&#x9;  cast(t.[LOCARNO_CLASS_NBR] as varchar)+'-'+&#xD;&#xA;&#x9;  (case when (LEN(t.[LOCARNO_SUBCLASS_NBR]))=1 then '0' else '' end)+&#xD;&#xA;      cast(t.[LOCARNO_SUBCLASS_NBR] as varchar)&#xD;&#xA;      ,t.[LOCARNO_EDITION_CODE]&#xD;&#xA;  FROM [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_PATENT_LOCAR_CLASSES] t,&#xD;&#xA;   [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_patent_result s where&#xD;&#xA;  t.file_seq=s.file_seq &#xD;&#xA;&#x9;  and t.file_TYPE=s.file_type &#xD;&#xA;&#x9;  and t.file_series=s.File_series &#xD;&#xA;&#x9;  and t.file_nbr=s.file_nbr and msg_import='Invalid Locarno class';&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_5"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_5" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_5">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="960">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_3" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_3"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1792">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:R45M058YnjaXsS1wZuE5fH8v8U7mjpmKBXwcys0B" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportPateRelsProcessAll&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_1"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1760">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_4" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_4"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="1120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:W3KDrqPKjRLhVQAxKpFZKalJZI79l0lKhPIcBoKr" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportPateRelsValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_2"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1088">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_5" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_5"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_6" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_6"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xhYNewRPY7SnIAiXMZPcSbyDf8YHdeTW0oiapRox9uW7D1BnQrEpAV49Mqh119gM"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2272">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/iwGLXvlZEplUhhI9lsz8k/CLQnAFgGs34k9pAEq" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportUserdocValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_3"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="2240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_9" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_9"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="2368">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_10" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qkMUAEDzVzAH8rpWKPqWaQjJtPhouv9tRfbOdg08" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot; MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_owners T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Invalid new owner residence country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.residence_country_code='PY';&#xD;&#xA;&#x9;  -----------------------------------------&#xD;&#xA;&#x9;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_owners T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Invalid new owner nationality country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.nationality_country_code='PY';&#xD;&#xA;  ----------------------------------&#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Null or invalid applicant nationality country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.nationality_country_code='PY';&#xD;&#xA;&#x9;  ----------------------------------------&#xD;&#xA;&#x9;  &#xD;&#xA;&#xD;&#xA;  MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Null or invalid applicant residence country code'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.residence_country_code='PY';&#xD;&#xA;&#x9;  ----------------------------------------&#xD;&#xA;&#x9;  update [CF_USERDOC_TYPE] set IND_AFFECTS_FILE='S' where USERDOC_TYP in (&#xD;&#xA;  select userdoc_typ from [&quot; +context.intermediateDB+ &quot;].[dbo].VW_IMPORT_USERDOC a,[&quot; +context.intermediateDB+ &quot;].[dbo].VW_IMPORT_USERDOC_RESULT t&#xD;&#xA;  where a.USERDOC_NBR=t.USERDOC_NBR and a.USERDOC_SEQ=t.USERDOC_SEQ and a.USERDOC_SERIES=t.USERDOC_SERIES and &#xD;&#xA;  t.MSG_IMPORT='The type of the userdoc indicates that no association to files is possible')&#xD;&#xA;  ---------------------------------&#xD;&#xA;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Address street is required'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.address_street='Para revisar';&#xD;&#xA;&#x9;  ---------------------------------------&#xD;&#xA;&#x9;    MERGE INTO [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc T&#xD;&#xA;   USING (&#xD;&#xA;          select userdoc_seq,userdoc_series,userdoc_nbr from &#xD;&#xA;&#x9;&#x9;  [&quot; +context.intermediateDB+ &quot;].[dbo].vw_import_userdoc_result where msg_import='Address street is required'&#xD;&#xA;&#x9;&#x9;            ) S&#xD;&#xA;      ON &#xD;&#xA;&#x9;  t.userdoc_seq=s.userdoc_seq &#xD;&#xA;&#x9;  &#xD;&#xA;&#x9;  and t.userdoc_series=s.userdoc_series &#xD;&#xA;&#x9;  and t.userdoc_nbr=s.userdoc_nbr&#xD;&#xA;&#x9;  &#x9;WHEN MATCHED THEN&#xD;&#xA;   UPDATE &#xD;&#xA;      SET t.address_street='Para revisar';&#xD;&#xA;&#x9;  -----------------------------------------------&#xD;&#xA;&#x9;  update [&quot; +context.intermediateDB+ &quot;].[dbo].[VW_IMPORT_USERDOC_PAYMENTS] set RECEIPT_TYPE='REC',CURRENCY_TYPE='GS';&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_10"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="2400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_10" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_10"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="2400">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_11" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_11"/>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="2432">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_10" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_10">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="2464">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8zFzUDqN+veuWwYlr9dOw/gFHNjyQDtkI2GFaO5N" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportUserdocValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_6"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="2432">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_12" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_12"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="2464">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_2" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Mc9dwJFvLje9WJ/SN2AWWWG+1ssF2mhiFCU7hc7orP8drmKDkfwBecGdxPPnNGN4"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="2624">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_11" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aubzaqppewGSLDEJqvzT8zu10I/LYt1+ww4KG9eL" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;begin transaction;&#xD;&#xA;DECLARE @NumPROC_NBR FLOAT;&#xD;&#xA;DECLARE @NumACTION_NBR FLOAT;&#xD;&#xA;&#xD;&#xA;DELETE FROM   WRK_USERDOC;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;INSERT INTO  WRK_USERDOC   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( USERDOC_SEQ , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_SERIES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SERIES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LAW_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILING_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEPTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_CODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_STATUS_CODE )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_SEQ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LAW_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILING_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAPTURE_USER_ID,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAPTURE_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (10)) APPLICANT_PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (4)) APPLICANT_ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as VARCHAR (8)) USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (10)) USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as VARCHAR (8)) USERDOC_STATUS_CODE&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC M &#xD;&#xA;&#x9;&#x9;WHERE&#x9; IND_IMPORT =9;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;DELETE FROM   WRK_USERDOC_FILES;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  WRK_USERDOC_FILES    &#xD;&#xA;&#x9;&#x9;SELECT&#x9;&#x9;DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.*,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as VARCHAR (8)) USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (10)) USERDOC_FILE_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as VARCHAR (8)) USERDOC_FILE_STATUS_CODE&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC_FILES T JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_userdoc M ON M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; IND_IMPORT =9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;DELETE FROM   WRK_USERDOC_OWNERS;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  WRK_USERDOC_OWNERS    &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.*,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (10)) PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (4)) ADDR_NBR&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC_OWNERS T JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_userdoc M ON M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; IND_IMPORT =9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;DELETE FROM   WRK_USERDOC_REPRS;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  WRK_USERDOC_REPRS    &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.*,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (10)) PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (4)) ADDR_NBR&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC_REPRS T JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_userdoc M ON M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; IND_IMPORT =9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;DELETE FROM   WRK_USERDOC_ACTIONS;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  WRK_USERDOC_ACTIONS    &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.*,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (4)) ACTION_NBR&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC_ACTIONS T JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_userdoc M ON M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; IND_IMPORT =9;&#xD;&#xA;&#x9;&#x9; update  wrk_userdoc_actions&#xD;&#xA;                set     manual_due_date = dateadd(dd, 2, manual_due_date)&#xD;&#xA;                where   datepart(dw, manual_due_date) = 7 /* Saturday */&#xD;&#xA;                ;&#xD;&#xA;                update  wrk_userdoc_actions&#xD;&#xA;                set     manual_due_date = dateadd(dd, 1, manual_due_date)&#xD;&#xA;                where   datepart(dw, manual_due_date) = 1 /* Sunday */&#xD;&#xA;                ;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;DELETE FROM   wrk_person_addr;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  wrk_person_addr   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_CODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REF_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(null as NUMERIC (4)),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; rowid&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_owners T;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;EXEC IMPORTSETPERSONNBR;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;UPDATE  T   &#xD;&#xA;&#x9;&#x9;SET&#x9;person_nbr = (&#x9;SELECT person_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;),&#x9;&#xD;&#xA;&#x9;&#x9;    addr_nbr = (&#x9;SELECT addr_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_OWNERS T;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;DELETE FROM   wrk_person_addr;    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  wrk_person_addr   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_CODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REF_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; AGENT_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.rowid&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_reprs T;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#x9;&#xD;&#xA;&#x9;&#x9;EXEC IMPORTSETPERSONNBR;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;UPDATE  T   &#xD;&#xA;&#x9;&#x9;SET&#x9;person_nbr = (&#x9;SELECT person_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;),&#x9;&#xD;&#xA;&#x9;&#x9;    addr_nbr = (&#x9;SELECT addr_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_REPRS T ;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;BEGIN&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;select @NumACTION_NBR=max(action_nbr) from ip_action;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;select * from wrk_userdoc_actions; &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by USERDOC_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from wrk_userdoc_actions&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;update cte set ACTION_NBR=@NumACTION_NBR+ri&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;END;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;UPDATE  T   &#xD;&#xA;&#x9;&#x9;SET&#x9;USERDOC_FILE_PROC_TYP = (&#x9;SELECT GENERATE_PROC_TYP&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_USERDOC M,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CF_USERDOC_TYPE UT,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CF_PROCESS_TYPE PT &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_type  = UT.userdoc_typ COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UT.generate_proc_typ  = PT.proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;RELATED_TO_WCODE  = 2&#xD;&#xA;&#x9;&#x9;),&#x9;&#xD;&#xA;&#x9;&#x9;    USERDOC_FILE_STATUS_CODE = (&#x9;SELECT SECONDARY_INI_STATUS_CODE&#xD;&#xA;&#x9;&#x9;&#x9;FROM  WRK_USERDOC M,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CF_USERDOC_TYPE UT,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CF_PROCESS_TYPE PT &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_type  = UT.userdoc_typ COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UT.generate_proc_typ  = PT.proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;RELATED_TO_WCODE  = 2&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_FILES T;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;BEGIN&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;SELECT @NumPROC_NBR  =  ISNULL(MAX(PROC_NBR), 0) FROM  IP_PROC;&#xD;&#xA;&#x9;&#x9;&#x9;with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by USERDOC_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from wrk_userdoc_files where USERDOC_FILE_PROC_TYP is not null&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;update cte set USERDOC_FILE_PROC_NBR=@NumPROC_NBR+ri&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;END;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;DELETE FROM   wrk_person_addr;   &#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;INSERT INTO  wrk_person_addr   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_CODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REF_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.rowid&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc T &#xD;&#xA;&#x9;&#x9;WHERE&#x9; PERSON_NAME  is not null;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;/* Call procedure ImportSetPersonNbr() to set PERSON_NBR and ADDR_NBR */&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;EXEC IMPORTSETPERSONNBR;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;UPDATE  T   &#xD;&#xA;&#x9;&#x9;SET&#x9;applicant_person_nbr = (&#x9;SELECT person_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;),&#x9;&#xD;&#xA;&#x9;&#x9;    applicant_addr_nbr = (&#x9;SELECT addr_nbr&#xD;&#xA;&#x9;&#x9;&#x9;FROM WRK_PERSON_ADDR &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; ref_nbr  = T.rowid&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;FROM WRK_USERDOC T ;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;UPDATE  T   &#xD;&#xA;&#x9;&#x9;SET&#x9;USERDOC_PROC_TYP = (&#x9;SELECT GENERATE_PROC_TYP&#xD;&#xA;&#x9;&#x9;&#x9;FROM WRK_USERDOC M,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CF_USERDOC_TYPE UT,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CF_PROCESS_TYPE PT &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_type  = UT.userdoc_typ COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UT.generate_proc_typ  = PT.proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;RELATED_TO_WCODE  = 5&#xD;&#xA;&#x9;&#x9;),&#x9;&#xD;&#xA;&#x9;&#x9;    USERDOC_STATUS_CODE = (&#x9;SELECT SECONDARY_INI_STATUS_CODE&#xD;&#xA;&#x9;&#x9;&#x9;FROM WRK_USERDOC M,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CF_USERDOC_TYPE UT,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CF_PROCESS_TYPE PT &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; M.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_nbr  = T.userdoc_nbr&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;M.userdoc_type  = UT.userdoc_typ COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UT.generate_proc_typ  = PT.proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;RELATED_TO_WCODE  = 5&#xD;&#xA;&#x9;&#x9;) &#xD;&#xA;&#x9;&#x9;FROM WRK_USERDOC T;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;/* set the doc nbr and doc ori and doc series in the intermediate tables and don't do it here */&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;UPDATE R &#xD;&#xA;&#x9;&#x9;SET R.USERDOC_PROC_NBR = USERDOC_FILE_PROC_NBR,R.USERDOC_PROC_TYP=P.USERDOC_FILE_PROC_TYP,R.USERDOC_STATUS_CODE=P.USERDOC_FILE_STATUS_CODE &#xD;&#xA;&#x9;&#x9;FROM wrk_userdoc AS R&#xD;&#xA;&#x9;&#x9;INNER JOIN wrk_userdoc_files AS P &#xD;&#xA;&#x9;&#x9;&#x9;   ON R.USERDOC_SEQ = P.USERDOC_SEQ and R.USERDOC_SERIES=P.USERDOC_SERIES and R.USERDOC_NBR=P.USERDOC_NBR &#xD;&#xA;&#x9;&#x9;WHERE P.USERDOC_FILE_PROC_TYP is not null;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;BEGIN&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;SELECT @NumPROC_NBR  =  ISNULL(MAX(userdoc_PROC_NBR), 0) FROM  wrk_userdoc;&#xD;&#xA;&#x9;&#x9;&#x9;with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by USERDOC_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from WRK_userdoc where USERDOC_PROC_TYP is not null and USERDOC_PROC_NBR is null&#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;update cte set USERDOC_PROC_NBR=@NumPROC_NBR+ri&#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;END;&#xD;&#xA;commit transaction;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_11"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="2624">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_13" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_13"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="3008">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_14" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_14"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="3008">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_15" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_15"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="2880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_12" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N3Px7R1Gx9qDyeupQDITRkmjLK5NR3HKYpgmEduJ" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;EXEC sp_msforeachtable 'ALTER TABLE ? WITH CHECK CHECK CONSTRAINT all';&#xD;&#xA;&#x9;&#x9;--UPDATE   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_USERDOC   &#xD;&#xA;&#x9;--&#x9;SET&#x9;IND_IMPORT = 1 &#xD;&#xA;&#x9;--&#x9;WHERE  IND_IMPORT =9 ;&#xD;&#xA;&quot;&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_12"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2880">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_16" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_16"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="2752">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_13" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OavOzMnr5JTsNbBnzIGwf5m7xKhKCerulTJ5lmYV" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;begin transaction;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA; INSERT INTO  CF_DOC_SERIES   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( row_version , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;doc_ser , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ind_active )  &#xD;&#xA;&#x9;&#x9;SELECT DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; userdoc_series,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N'&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc &#xD;&#xA;&#x9;&#x9;WHERE&#x9; userdoc_series  not in&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9; &#x9;SELECT doc_ser&#xD;&#xA;&#x9;&#x9;&#x9;FROM  CF_DOC_SERIES &#xD;&#xA;&#x9;&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  CF_DOC_SERIES   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( row_version , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;doc_ser , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ind_active )  &#xD;&#xA;&#x9;&#x9;SELECT DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(DATEPART(YYYY, reception_date) as NUMERIC),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N'&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc &#xD;&#xA;&#x9;&#x9;WHERE&#x9; CAST(DATEPART(YYYY, reception_date) as NUMERIC)  not in&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9; &#x9;SELECT doc_ser&#xD;&#xA;&#x9;&#x9;&#x9;FROM  CF_DOC_SERIES &#xD;&#xA;&#x9;&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  IP_DAY   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( row_version , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;daily_date , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;doc_ser ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;next_working_date)  &#xD;&#xA;&#x9;&#x9;SELECT DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; cast(reception_date as DATE),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAST(DATEPART(YYYY, reception_date) as NUMERIC),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; case&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    when datepart(dw, cast(reception_date as DATE)) = 7 /* Saturday */&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;            then dateadd(dd, 2, cast(reception_date as DATE))&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    when datepart(dw, cast(reception_date as DATE)) = 1 /* Sunday */&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;            then dateadd(dd, 1, cast(reception_date as DATE))&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;    else null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; end&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc &#xD;&#xA;&#x9;&#x9;WHERE&#x9; cast(reception_date as DATE)  not in&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9; &#x9;SELECT daily_date&#xD;&#xA;&#x9;&#x9;&#x9;FROM  IP_DAY &#xD;&#xA;&#x9;&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  IP_DAILY_LOG   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( row_version , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;doc_ori , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;doc_log , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;daily_log_date )  &#xD;&#xA;&#x9;&#x9;SELECT DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; cast(RECEPTION_DATE as DATE)&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc M &#xD;&#xA;&#x9;&#x9;WHERE&#x9; NOT   exists&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9; &#x9;SELECT *&#xD;&#xA;&#x9;&#x9;&#x9;FROM  IP_DAILY_LOG L &#xD;&#xA;&#x9;&#x9;&#x9;WHERE&#x9; L.DOC_ORI  = M.DOC_ORI COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;DOC_LOG  = 'E'&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;DAILY_LOG_DATE  = cast(RECEPTION_DATE as DATE)&#xD;&#xA;&#x9;&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  IP_DOC   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SEQ_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SEQ_SERIES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SEQ_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DAILY_LOG_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEPTION_DATE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILING_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEPTION_WCODE )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_SEQ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; cast(RECEPTION_DATE as DATE),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILING_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'PE'&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC M ;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_DOC_FILES   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_SEQ , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#x9;&#x9;DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_SEQ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_NBR&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_FILES T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  ;&#xD;&#xA;&#x9;&#x9;&#x9;  &#xD;&#xA;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  IP_USERDOC   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;APPLICANT_NOTES )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAPTURE_USER_ID,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CAPTURE_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; APPLICANT_NOTES&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;ALTER TABLE IP_USERDOC_TYPES NOCHECK CONSTRAINT PROMOCION_TIPO_FK_TRAMITE;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;INSERT INTO  IP_USERDOC_TYPES   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;USERDOC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;PROC_NBR )  &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; USERDOC_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;FROM  WRK_USERDOC;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_USERDOC_NEW_OWNERS   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; OWNERSHIP_NOTES&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_OWNERS T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr; &#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_USERDOC_REPRS   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REPRESENTATIVE_TYP )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; REPRESENTATIVE_TYPE&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_REPRS T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr ; &#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_DOC_PAYMENTS   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEIPT_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEIPT_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEIPT_AMOUNT , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RECEIPT_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CURRENCY_TYP )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEIPT_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEIPT_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEIPT_AMOUNT,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEIPT_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CURRENCY_TYPE&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_userdoc_payments T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  ;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_PROC   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CREATION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_PROC_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_STATUS_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR&#xD;&#xA;&#x9;&#x9;FROM  WRK_userdoc uu&#xD;&#xA;&#x9;&#x9;join CF_PROCESS_TYPE pp&#xD;&#xA;&#x9;&#x9;on pp.PROC_TYP=uu.USERDOC_PROC_TYP &#xD;&#xA;&#x9;&#x9;where pp.RELATED_TO_WCODE=5&#xD;&#xA;&#x9;&#x9;and&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;ALTER TABLE IP_USERDOC_TYPES CHECK CONSTRAINT PROMOCION_TIPO_FK_TRAMITE;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;ACTION_CATEGORY  = 'N';&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'S',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; SPECIAL_FINAL_STATUS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.STATUS_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.STATUS_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.EXPIRATION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  JOIN IP_PROC P ON P.proc_typ  = U.userdoc_proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;P.proc_nbr  = U.userdoc_proc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;ACTION_CATEGORY  = 'S'&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9; &#x9;&#xD;&#xA;&#x9;&#x9;UPDATE R &#xD;&#xA;&#x9;&#x9;SET R.STATUS_CODE = P.SPECIAL_FINAL_STATUS,R.STATUS_DATE=P.ACTION_DATE, R.EXPIRATION_DATE=P.MANUAL_DUE_DATE&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;FROM IP_PROC AS R&#xD;&#xA;&#x9;&#x9;INNER JOIN (SELECT&#x9; SPECIAL_FINAL_STATUS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; MANUAL_DUE_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; userdoc_proc_typ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; userdoc_proc_nbr&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_ACTIONS T &#xD;&#xA;&#x9;&#x9;      JOIN WRK_userdoc M ON T.userdoc_seq  = M.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;T.userdoc_series  = M.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;T.userdoc_nbr  = M.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; ACTION_CATEGORY  = 'S'&#xD;&#xA;&#x9;&#x9; AND&#x9;userdoc_proc_typ  is not null) AS P &#xD;&#xA;&#x9;&#x9;&#x9;   ON R.PROC_TYP = P.USERDOC_PROC_TYP and R.PROC_NBR=P.USERDOC_PROC_NBR;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_PROC   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CREATION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_SEQ , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;UPPER_PROC_TYP, &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;UPPER_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;FILE_PROC_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; u.DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.file_seq,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.file_type,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.file_series,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.file_nbr,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_STATUS_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RECEPTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; F.PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; F.PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; F.PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; F.PROC_NBR&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc U JOIN wrk_userdoc_files UF ON U.userdoc_seq  = UF.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = UF.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = UF.userdoc_nbr  JOIN IP_FILE F ON UF.file_seq  = F.file_seq COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_type  = F.file_typ COLLATE DATABASE_DEFAULT&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_series  = F.file_ser&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_nbr  = F.file_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_FILE_PROC_TYP  is not null;&#x9;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  ip_userdoc_procs   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_SEQ , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;USERDOC_FILE_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#x9;&#x9; DISTINCT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; U.DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_SEQ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; FILE_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_NBR&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_files UF JOIN wrk_userdoc U ON U.userdoc_seq  = UF.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = UF.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = UF.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_FILE_PROC_TYP  is not null;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc_files UF ON UF.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; ACTION_CATEGORY  = 'N'&#xD;&#xA;&#x9;&#x9; AND&#x9;USERDOC_FILE_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;PROCESS_FILE_NBR  is null;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_FILE_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc_files UF ON UF.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_nbr  = T.userdoc_nbr&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_seq  = T.process_file_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_type  = T.process_file_type&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_series  = T.process_file_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.file_nbr  = T.process_file_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; ACTION_CATEGORY  = 'N'&#xD;&#xA;&#x9;&#x9; AND&#x9;USERDOC_FILE_PROC_TYP  is not null;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.USERDOC_FILE_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; UF.USERDOC_FILE_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'S',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; SPECIAL_FINAL_STATUS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.STATUS_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.STATUS_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; P.EXPIRATION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc_files UF ON UF.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;UF.userdoc_nbr  = T.userdoc_nbr  JOIN IP_PROC P ON P.proc_typ  = UF.userdoc_file_proc_typ&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;P.proc_nbr  = UF.userdoc_file_proc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; ACTION_CATEGORY  = 'S'&#xD;&#xA;&#x9;&#x9; AND&#x9;USERDOC_FILE_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;PROCESS_FILE_NBR  is null;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;UPDATE R &#xD;&#xA;&#x9;&#x9;SET R.STATUS_CODE = P.SPECIAL_FINAL_STATUS,R.STATUS_DATE=P.ACTION_DATE, R.EXPIRATION_DATE=P.MANUAL_DUE_DATE&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;FROM IP_PROC AS R&#xD;&#xA;&#x9;&#x9;INNER JOIN (SELECT&#x9;SPECIAL_FINAL_STATUS,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;MANUAL_DUE_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; userdoc_file_proc_typ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; userdoc_file_proc_nbr&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_ACTIONS T &#xD;&#xA;&#x9;&#x9;      JOIN WRK_userdoc_files M ON T.userdoc_seq  = M.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;T.userdoc_series  = M.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;T.userdoc_nbr  = M.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; ACTION_CATEGORY  = 'S'&#xD;&#xA;&#x9;&#x9; AND&#x9;userdoc_file_proc_typ  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;process_file_nbr  is not null) AS P &#xD;&#xA;&#x9;&#x9;&#x9;   ON R.PROC_TYP = P.USERDOC_FILE_PROC_TYP and R.PROC_NBR=P.USERDOC_FILE_PROC_NBR;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;commit transaction;&#xD;&#xA;&#x9;&#x9; &#xD;&#xA;&#x9;&#x9;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_13"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2752">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_23" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_23"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_14" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TXV3Ry0VXhQGRRyhg0DSoBB7koWc9H+jLb+Z4szm" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;&#xD;&#xA;BEGIN&#xD;&#xA;Declare @NumDoc_Nbr float;&#xD;&#xA;SELECT @NumDoc_Nbr  =  ISNULL(MAX(DOC_NBR), 0) FROM   IP_DOC;&#xD;&#xA;with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by userdoc_series,USERDOC_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from  &quot;+ context.intermediateDB + &quot;.dbo.vw_import_userdoc &#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;update cte set  doc_ORI='2', doc_series=2,doc_nbr=@NumDoc_Nbr+ri&#xD;&#xA;END;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_14"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="1920">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_24" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_24"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_15" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6sAdo8gsgiKu7UE4Ef6Rxn/vaVc0NzFYMd9kNvDu" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;&#xD;&#xA; Begin&#xD;&#xA; with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by file_series,file_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from  &quot;+ context.intermediateDB + &quot;.dbo.vw_import_patent &#xD;&#xA;&#x9;&#x9;&#x9; )&#xD;&#xA;&#x9;&#x9;&#x9; update cte set  doc_ORI='2', doc_series=1,doc_nbr=ri&#xD;&#xA; END;&#xD;&#xA;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlRow_15"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_25" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_4"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_25"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_3" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NwfPLe4tjA9IzM07qzxt+iAzk0+ERcGdv/mtmLoc5A4ZZCnFfGqpH6ZGmDNQbYMj"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SXdXJu7dkqcwGBgBePnKZj/iQV/JFCdDEK0Wj/Pi" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportAgentValidate&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_7"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_1"/>
+  </node>
+  <node componentName="tMSSqlSP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_8" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6DxMpftDmoB8Tf2hMfoTvN4GODEkGPfokld6tfQN" show="false"/>
+    <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportAgentProcessAll&quot;"/>
+    <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
+    <elementParameter field="TABLE" name="SP_ARGS"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlSP_8"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_2" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tMSSqlCommit_2"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_4" target="tMSSqlRow_15">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row27" lineStyle="0" metaname="tMSSqlSP_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_4" target="tMSSqlCommit_19">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_19" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_19" target="tMSSqlRow_38">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk22" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row32" lineStyle="0" metaname="tMSSqlSP_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_5" target="tMSSqlCommit_22">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlSP_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_5" target="tMSSqlSP_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row48" lineStyle="0" metaname="tMSSqlRow_38" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlRow_38" target="tMSSqlCommit_33">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row48" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row87" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlRow_38" target="tLogRow_29">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row87" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row50" lineStyle="0" metaname="tMSSqlCommit_33" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_33" target="tMSSqlCommit_35">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row50" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_35" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_35" target="tMSSqlRow_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk36" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row49" lineStyle="0" metaname="tMSSqlSP_10" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_10" target="tMSSqlCommit_34">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row49" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_34" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_34" target="tMSSqlSP_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk37" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="CorrecionPatentesPrevioMigracion" lineStyle="0" metaname="tMSSqlRow_5" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlRow_5" target="tMSSqlCommit_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="CorrecionPatentesPrevioMigracion" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row92" lineStyle="0" metaname="tMSSqlRow_5" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlRow_5" target="tLogRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row92" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_3" target="tMSSqlSP_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row38" lineStyle="0" metaname="tMSSqlSP_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_1" target="tMSSqlCommit_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlSP_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_1" target="tMSSqlCommit_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row37" lineStyle="0" metaname="tMSSqlSP_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_2" target="tMSSqlCommit_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row37" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_5" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_5" target="tMSSqlSP_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlCommit_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_6" target="tMSSqlConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_1" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_1" target="tMSSqlRow_14">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row45" lineStyle="0" metaname="tMSSqlSP_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_3" target="tMSSqlCommit_9">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row45" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_9" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_9" target="tMSSqlRow_10">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk14" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row51" lineStyle="0" metaname="tMSSqlRow_10" offsetLabelX="2" offsetLabelY="-28" outputId="1" source="tMSSqlRow_10" target="tMSSqlCommit_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row51" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row101" lineStyle="0" metaname="tMSSqlRow_10" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlRow_10" target="tLogRow_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row101" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row52" lineStyle="0" metaname="tMSSqlCommit_10" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_10" target="tMSSqlCommit_11">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row52" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_11" target="tMSSqlSP_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row53" lineStyle="0" metaname="tMSSqlSP_6" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_6" target="tMSSqlCommit_12">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row53" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlCommit_12" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_12" target="tMSSqlConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk16" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_2" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_2" target="tMSSqlRow_11">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk17" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMSSqlRow_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_11" target="tMSSqlCommit_13">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_11" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_11" target="tMSSqlRow_13">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlCommit_15" offsetLabelX="0" offsetLabelY="0" source="tMSSqlCommit_15" target="tMSSqlCommit_14">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMSSqlRow_12" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_12" target="tMSSqlCommit_16">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_12" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_12" target="tMSSqlCommit_15">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tMSSqlRow_13" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_13" target="tMSSqlCommit_23">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_13" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_13" target="tMSSqlRow_12">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tMSSqlRow_14" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_14" target="tMSSqlCommit_24">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_14" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_14" target="tMSSqlSP_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tMSSqlRow_15" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_15" target="tMSSqlCommit_25">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlRow_15" offsetLabelX="0" offsetLabelY="0" source="tMSSqlRow_15" target="tMSSqlSP_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_3" target="tMSSqlSP_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="ValidateAgents" lineStyle="0" metaname="tMSSqlSP_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_7" target="tMSSqlCommit_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="ValidateAgents" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlSP_7" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_7" target="tMSSqlSP_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row21" lineStyle="0" metaname="tMSSqlSP_8" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_8" target="tMSSqlCommit_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row21" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlSP_8" offsetLabelX="0" offsetLabelY="0" source="tMSSqlSP_8" target="tMSSqlConnection_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_38" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_5" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_14" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlCommit_15" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_12" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_14" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlRow_15" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlSP_8" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_-wYM48zLEeCcx6XpClwNiQ" name="TISTraining" dataPackage="_-wYM5MzLEeCcx6XpClwNiQ" DatabaseType="MySQL" URL="jdbc:mysql://localhost:3306/tistraining?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="enc:system.encryption.key.v1:oFeT4jZg58EoSP0v/F0qFEB27z3Ie2VXDsJ9fDLr8EI=" ServerName="localhost" SID="tistraining" SqlSynthax="Syntaxe SQL" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="true" UiSchema=""/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_-wYM5MzLEeCcx6XpClwNiQ" name="tistraining" dataManager="_-wYM48zLEeCcx6XpClwNiQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_-wYM5czLEeCcx6XpClwNiQ" name="directory" id="_EmA5MEPTEd6i_dBrjtU1VA" label="directory" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_-wYM5szLEeCcx6XpClwNiQ" name="Name" label="Name" length="15" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_-wYM58zLEeCcx6XpClwNiQ" body=""/>
+        <sqlDataType xmi:id="_-wYM6MzLEeCcx6XpClwNiQ" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_-wYM6czLEeCcx6XpClwNiQ" name="Firstname" label="Firstname" length="15" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_-wYM6szLEeCcx6XpClwNiQ" body=""/>
+        <sqlDataType xmi:id="_-wYM68zLEeCcx6XpClwNiQ" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_-wYM7MzLEeCcx6XpClwNiQ" name="City" label="City" length="15" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_-wYM7czLEeCcx6XpClwNiQ" body=""/>
+        <sqlDataType xmi:id="_-wYM7szLEeCcx6XpClwNiQ" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_-wYM78zLEeCcx6XpClwNiQ" name="PhoneNumber" label="PhoneNumber" length="10" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_-wYM8MzLEeCcx6XpClwNiQ" body=""/>
+        <sqlDataType xmi:id="_-wYM8czLEeCcx6XpClwNiQ" name="NULL"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_JFLDwHiIEem0Y-lrlGTg-g" name="Usuarios_SIPI" id="_2qyzIHiHEem0Y-lrlGTg-g" label="Usuarios_SIPI" dataPackage="_JIZW4HiIEem0Y-lrlGTg-g" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://localhost:1433/EC_USUARIOS;" dbVersionString="JTDS" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:hLQQK0Ui0xMdPO9zvtAYbkEi6p7wotG9MOtfVzkD0XEdseM4" ServerName="localhost" DatasourceName="" FileFieldName="" SID="EC_USUARIOS" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_JFLDwXiIEem0Y-lrlGTg-g" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_JFhpEHiIEem0Y-lrlGTg-g" tag="package filter" value=""/>
+    <taggedValue xmi:id="_JFhpEXiIEem0Y-lrlGTg-g" tag="Status" value=""/>
+    <taggedValue xmi:id="_JFhpEniIEem0Y-lrlGTg-g" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_JFhpE3iIEem0Y-lrlGTg-g" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_JFhpFHiIEem0Y-lrlGTg-g" tag="Description" value=""/>
+    <taggedValue xmi:id="_JFhpFXiIEem0Y-lrlGTg-g" tag="Author" value=""/>
+    <taggedValue xmi:id="_JFhpFniIEem0Y-lrlGTg-g" tag="otherParameter"/>
+    <taggedValue xmi:id="_JGyNUHiIEem0Y-lrlGTg-g" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_JGyNUXiIEem0Y-lrlGTg-g" tag="DB ProductVersion" value="14.00.1000"/>
+    <taggedValue xmi:id="_JGyNUniIEem0Y-lrlGTg-g" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_JFLDwniIEem0Y-lrlGTg-g" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_JIZW4HiIEem0Y-lrlGTg-g" name="EC_USUARIOS" dataManager="_JFLDwHiIEem0Y-lrlGTg-g">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW4XiIEem0Y-lrlGTg-g" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW4niIEem0Y-lrlGTg-g" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW43iIEem0Y-lrlGTg-g" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW5HiIEem0Y-lrlGTg-g" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW5XiIEem0Y-lrlGTg-g" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW5niIEem0Y-lrlGTg-g" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW53iIEem0Y-lrlGTg-g" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW6HiIEem0Y-lrlGTg-g" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW6XiIEem0Y-lrlGTg-g" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW6niIEem0Y-lrlGTg-g" name="db_users"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW63iIEem0Y-lrlGTg-g" name="db_users_query"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW7HiIEem0Y-lrlGTg-g" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW7XiIEem0Y-lrlGTg-g" name="dbonne"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW7niIEem0Y-lrlGTg-g" name="Funcionario"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW73iIEem0Y-lrlGTg-g" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW8HiIEem0Y-lrlGTg-g" name="IEPI\dbalarezo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW8XiIEem0Y-lrlGTg-g" name="IEPI\Infpri"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW8niIEem0Y-lrlGTg-g" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW83iIEem0Y-lrlGTg-g" name="nearcos"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_JIZW9HiIEem0Y-lrlGTg-g" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="intermediateType" prompt="intermediateType?" promptNeeded="false" type="id_String" value="&quot;ODBC Driver 17 for SQL Server&quot;" internalId="_6M9TMAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateHost" prompt="intermediateHost?" promptNeeded="false" type="id_String" value="&quot;127.0.0.1&quot;" internalId="_6M9TMQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediatePort" prompt="intermediatePort?" promptNeeded="false" type="id_String" value="&quot;1433&quot;" internalId="_6M9TMgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateUser" prompt="intermediateUser?" promptNeeded="false" type="id_String" value="&quot;sa&quot;" internalId="_6M9TMwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediatePassword" prompt="intermediatePassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_6M9TNAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" type="id_String" value="&quot;NI_MARCAS&quot;" internalId="_6M9TNQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediatePath" prompt="intermediatePath?" promptNeeded="false" type="id_String" value="&quot;C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\&quot;" internalId="_6M9TNgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="foxFolder" prompt="foxFolder?" promptNeeded="false" type="id_String" value="&quot;C:/WIPO/Nicaragua/Marcas/Basedato0212/Datos/&quot;" internalId="_6M9TNwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="tables_Ignore" prompt="tables_Ignore?" promptNeeded="false" type="id_String" value="&quot;do,fi,actualizar,bitacoraexp,controlreg,eliminados,extremo,ident,martemp,logos,oms,palelim,recepcion,viena&quot;" internalId="_6M9TOAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="tables_load" prompt="tables_load?" promptNeeded="false" type="id_String" value="&quot;producto,marca,movimi,martemp,bitacoraexp,actualizar,batfon,recepcion,titumar,busfig,logos,batexa,titular,eliminados,movimielim,movimimar,priorida,ccvs,viena,renova,agentes,petireg,peticion,nuenoms,orinoms,batbus,bustit,resbatbus,regtemp,examen,extremo,ident,solicitante,controlreg,oposiciones,movimipeti,useroles,users,palelim,resoluciones,status,migracio,peticion05032018,eventab,ccvs,codigos,concepreci,conceptos,migracio&quot;" internalId="_6M9TOQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="pyScript1" prompt="pyScript1?" promptNeeded="false" type="id_String" value="&quot;C:\\GitRepositories\\PythonProj\\moveDbfToSql.py&quot;" internalId="_6M9TOgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="fileNameIntermed" prompt="fileNameIntermed?" promptNeeded="false" type="id_String" value="&quot;NI_MARCAS&quot;" internalId="_6M9TOwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="logNameIntermed" prompt="logNameIntermed?" promptNeeded="false" type="id_String" value="&quot;log_NI_MARCAS&quot;" internalId="_6M9TPAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="pythonInt" prompt="pythonInt?" promptNeeded="false" type="id_String" value="&quot;C:/Progra~1/Python37/python.exe&quot;" internalId="_6M9TPQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="logsFold" prompt="logsFold?" promptNeeded="false" type="id_String" value="&quot;C:\\WIPO\\Nicaragua\\Temp&quot;" internalId="_6M9TPgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasHost" prompt="ipasHost?" promptNeeded="false" type="id_String" value="&quot;127.0.0.1&quot;" internalId="_6M9TPwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasPort" prompt="ipasPort?" promptNeeded="false" type="id_String" value="&quot;1433&quot;" internalId="_6M9TQAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" type="id_String" value="&quot;MAR_RPI&quot;" internalId="_6M9TQQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" type="id_String" value="&quot;PI&quot;" internalId="_6M9TQgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" type="id_String" value="&quot;PI&quot;" internalId="_6M9TQwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasSaPassword" prompt="ipasSaPassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_6M9TRAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="dumpIpasCero" prompt="dumpIpasCero?" promptNeeded="false" type="id_String" value="&quot;C:\\Dropbox\\WIPO\\MAR_RPI.bak&quot;" internalId="_6M9TRQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="utilityFolder" prompt="utilityFolder?" promptNeeded="false" type="id_String" value="&quot;C:\\Dropbox\\WIPO\\WIPOTools\\&quot;" internalId="_6M9TRgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="logosRootFolder" prompt="logosRootFolder?" promptNeeded="false" type="id_String" value="&quot;C:/WIPO/Nicaragua/Marcas/LOGOS0212&quot;" internalId="_6M9TRwMVEeuOjv5n7xl_Lg"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms4096M&quot;,&quot;-Xmx8192M&quot;]}" show="false"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:qCk8uT309o4a32c2gxW0KQfUNIlbcgG5q9nBecYn" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/gabag/OneDrive/WIPO/TalendWorkspace/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:667VFQuohRm4GJ/Y2dCqFq4ssDdQ3JVfwVNmOTVJ" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_wCsuUPH_EeiC1IsSqiKzTg" name="DataOperation"/>
+    <routinesParameter id="_wI6EAPH_EeiC1IsSqiKzTg" name="Mathematical"/>
+    <routinesParameter id="_wJFDIPH_EeiC1IsSqiKzTg" name="Numeric"/>
+    <routinesParameter id="_wJLw0PH_EeiC1IsSqiKzTg" name="Relational"/>
+    <routinesParameter id="_wJYlIPH_EeiC1IsSqiKzTg" name="StringHandling"/>
+    <routinesParameter id="_wJjkQPH_EeiC1IsSqiKzTg" name="TalendDataGenerator"/>
+    <routinesParameter id="_wJt8UPH_EeiC1IsSqiKzTg" name="TalendDate"/>
+    <routinesParameter id="_wKCFYPH_EeiC1IsSqiKzTg" name="TalendStringUtil"/>
+    <routinesParameter id="_wJ4UYPH_EeiC1IsSqiKzTg" name="TalendString"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="C_Migracion_Agentes"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Oz6ywBWBEemn5tKyIP3zgQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="hostInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="portInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="userInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="passwordInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="databaseInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AGE_MAR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_5" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="C_Migracion_Agentes"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Oz6ywBWBEemn5tKyIP3zgQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="hostInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;127.0.0.1&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="portInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;1433&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="userInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="passwordInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;W1P0w1p0&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="databaseInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_PATENTES&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AGE_PAT"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_5"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_6" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="C_Migracion_Agentes"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Oz6ywBWBEemn5tKyIP3zgQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="hostInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;127.0.0.1&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="portInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;1433&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="userInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="passwordInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;W1P0w1p0&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="databaseInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_DDA&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AGE_DDA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_6"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="E3_DDA_TO_INTERMED"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_1Jb8IEPkEemtLeIK3Rok8g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="hostInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="portInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="userInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="passwordInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="databaseInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MAR_INTER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_7"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_8" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="E3_DDA_TO_INTERMED"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_1Jb8IEPkEemtLeIK3Rok8g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="hostInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="portInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="userInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="passwordInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="databaseInterMed"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediateDB"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MarcOriginAIntermed"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_8"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gBE35kbWS3EoStMRrO68jpkiVm2igoSD86eE8tmw" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;&#xD;&#xA;BEGIN&#xD;&#xA;Declare @NumDoc_Nbr float;&#xD;&#xA;SELECT @NumDoc_Nbr  =  ISNULL(MAX(DOC_NBR), 0) FROM   IP_DOC;&#xD;&#xA;with cte as (&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;select *, ROW_NUMBER () OVER(order by userdoc_series,USERDOC_NBR) as ri&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;from  &quot;+ context.intermediateDB + &quot;.dbo.vw_import_userdoc &#xD;&#xA;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;update cte set  doc_ORI='2', doc_series=2,doc_nbr=@NumDoc_Nbr+ri&#xD;&#xA;END;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.utilityFolder +&quot;PhonAndTransli&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c phoneticsearch.bat&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_1"/>
+  </node>
+  <node componentName="tSystem" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="ROOTDIR" value="true"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.utilityFolder +&quot;PhonAndTransli&quot;"/>
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c transliteration.bat&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="OUTPUT_TO_CONSOLE"/>
+    <elementParameter field="TABLE" name="PARAMS"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSystem_2"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cxmZ81pA9GBm7a5euK2vQ0PtDx3YgLbWyOwk77/lTIUtfeBfUIAfEyNdIvgGsNC0"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T3t51czh6TyOL2bxm4UVUcUUL+xi2o7yEcg3l7q5" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;USE &quot;+ context.ipasDB+&quot; --Enter the name of the database you want to reindex &#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;DECLARE @TableName varchar(255) &#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;DECLARE TableCursor CURSOR FOR &#xD;&#xA; &#xD;&#xA;SELECT '&quot;+context.ipasUser+&quot;.'+table_name FROM information_schema.tables &#xD;&#xA; &#xD;&#xA;WHERE table_type = 'base table' &#xD;&#xA;--and (table_name like ('IP_%') or&#xD;&#xA; --table_name like ('CF_%') &#xD;&#xA;--or table_name like ('DO_%') )&#xD;&#xA;&#xD;&#xA;and TABLE_SCHEMA='&quot;+context.ipasUser+&quot;'&#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;OPEN TableCursor &#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;FETCH NEXT FROM TableCursor INTO @TableName &#xD;&#xA; &#xD;&#xA;WHILE @@FETCH_STATUS = 0 &#xD;&#xA; &#xD;&#xA;BEGIN &#xD;&#xA; &#xD;&#xA;DBCC DBREINDEX(@TableName,' ',90) &#xD;&#xA; &#xD;&#xA;FETCH NEXT FROM TableCursor INTO @TableName &#xD;&#xA; &#xD;&#xA;END &#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;CLOSE TableCursor &#xD;&#xA; &#xD;&#xA;  &#xD;&#xA; &#xD;&#xA;DEALLOCATE TableCursor &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_2"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_9" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="F_IPAS_ENV_CREATION"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_K4YqECn1Eemz5OxCQ4AlZg"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value=" context.intermediateDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasSaPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasSaPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="dumpBaseIpasLocation"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.dumpIpasCero"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="sqlLocation"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePath"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="IPAS_ENV_CREATION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_9"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_10" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Fa_Corrections_pre_migration_TM"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_XYl50EGEEemvw7tH_ArB6w"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Corrections_to_intermediate"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_10"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_11" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="G1_Validation_and_migration_AGENTS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_EV8vUEGEEemvw7tH_ArB6w"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasSaPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasSaPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="processAll"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AGENTS_VAL_MIG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_11"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_12" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="E3_DDA_TO_INTERMED"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_1Jb8IEPkEemtLeIK3Rok8g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasSaPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasSaPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="processAll"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="TM_VAL_MIG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_12"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="672">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_13" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="G3a_Validation_USERDOCS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_iVESAD9hEemo3_NJHT1Xgw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediateUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediateUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermediatePassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.intermediatePassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasDB"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasDB"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasSaPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasSaPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="processAll"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="UD_TM_VAL_MIG"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_13"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.ipasPort"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
+    <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kb/9J2nyXtYbvn+iessHk9Ez37lt5qhWF0KFjqT2ldHFMVYWJo8ZRSpUQr6BNck/"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_1"/>
+  </node>
+  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="768">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_14" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="G4_Migrate_logos"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_fQ3voEC-EemOjNwoa0edgA"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasHost"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPort"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasUser"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ipasPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ipasPassword"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="logosRootFolder"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.logosRootFolder"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Migrate_TM_Logos"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_14"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="B_FoxPro_A_MSSQL"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_iyGMsAuiEemDgcjb9L0Uhw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;ODBC Driver 17 for SQL Server&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;127.0.0.1&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;1433&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;W1P0w1p0&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedDatabase"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_DDA&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="foxProFolder"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:/WIPO/Nicaragua/DDA/Datos0212/&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="tablesIgnore"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;do,fi,actualizar,Bitacoraexp,controlreg,eliminados,extremo,ident,martemp,movimielim,oms,palelim,recepcion,viena&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="tablesLoad"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;producto,marca,movimi,martemp,bitacoraexp,actualizar,batfon,recepcion,titumar,busfig,logos,batexa,titular,eliminados,movimielim,movimimar,priorida,ccvs,viena,renova,agentes,petireg,peticion,nuenoms,orinoms,batbus,bustit,resbatbus,regtemp,examen,extremo,ident,solicitante,controlreg,oposiciones,movimipeti,useroles,users,palelim,resoluciones,status,migracio,peticion05032018,eventab,ccvs,codigos,concepreci,conceptos,migracio&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="pythonScript1"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\GitRepositories\\PythonProj\\moveDbfToSql.py&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedFileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_DDA&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedLogName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;log_NI_DDA&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="pythonInterpreter"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:/Progra~1/Python37/python.exe&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="logsFolder"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\WIPO\\Nicaragua\\Temp&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DBF_DDA_SQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="B_FoxPro_A_MSSQL"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_iyGMsAuiEemDgcjb9L0Uhw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;ODBC Driver 17 for SQL Server&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedHost"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;127.0.0.1&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPort"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;1433&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedUser"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;sa&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPassword"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;W1P0w1p0&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedDatabase"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_PATENTES&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="foxProFolder"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:/WIPO/Nicaragua/Patentes/Datos0212/&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="tablesIgnore"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;dibujo,do,fi,actualizar,Bitacoraexp,controlreg,eliminados,extremo,ident,martemp,oms,palelim,recepcion,company,controlexp,diarios,drawsea,feriado,forms,foxuser,gaceta,inventores,inventores1,inventor,migracio,nuevonom,originom,paises,patemp,probject,roleobj,roles,searlogo,seltra,sistema,tipc9816,tmpipc,tmpredr6,tmpredra,userroles&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="tablesLoad"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;producto,marca,movimi,martemp,bitacoraexp,actualizar,batfon,recepcion,titumar,busfig,logos,batexa,titular,eliminados,movimielim,movimimar,priorida,ccvs,viena,renova,agentes,petireg,peticion,nuenoms,orinoms,batbus,bustit,resbatbus,regtemp,examen,extremo,ident,solicitante,controlreg,oposiciones,movimipeti,useroles,users,palelim,resoluciones,status,migracio,peticion05032018,eventab,ccvs,codigos,concepreci,conceptos,migracio&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="pythonScript1"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\GitRepositories\\PythonProj\\moveDbfToSql.py&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedPath"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedFileName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;NI_PATENTES&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="intermedLogName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;log_NI_PATENTES&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="pythonInterpreter"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:/Progra~1/Python37/python.exe&quot;"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="logsFolder"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="&quot;C:\\WIPO\\Nicaragua\\Temp&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="DBF_PAT_SQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_7">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tRunJob_4" offsetLabelX="0" offsetLabelY="0" source="tRunJob_4" target="tRunJob_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tRunJob_5" offsetLabelX="0" offsetLabelY="0" source="tRunJob_5" target="tRunJob_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tRunJob_9">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tRunJob_7" offsetLabelX="0" offsetLabelY="0" source="tRunJob_7" target="tRunJob_8">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBCommit_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk9" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_1" offsetLabelX="0" offsetLabelY="0" source="tSystem_1" target="tDBConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSystem_2" offsetLabelX="0" offsetLabelY="0" source="tSystem_2" target="tSystem_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBRow_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk14" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tDBCommit_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_9" offsetLabelX="0" offsetLabelY="0" source="tRunJob_9" target="tRunJob_11">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tRunJob_9" offsetLabelX="0" offsetLabelY="0" source="tRunJob_9" target="tRunJob_10">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_11" offsetLabelX="0" offsetLabelY="0" source="tRunJob_11" target="tRunJob_12">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_12" offsetLabelX="0" offsetLabelY="0" source="tRunJob_12" target="tDBConnection_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_13" offsetLabelX="0" offsetLabelY="0" source="tRunJob_13" target="tRunJob_14">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk10" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBRow_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk11" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBCommit_1" offsetLabelX="0" offsetLabelY="0" source="tDBCommit_1" target="tRunJob_13">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_14" offsetLabelX="0" offsetLabelY="0" source="tRunJob_14" target="tSystem_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk15" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRunJob_2" target="tRunJob_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tRunJob_2" target="tRunJob_5">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_9" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_11" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_12" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_13" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_14" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

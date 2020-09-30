@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_z_X2sN65Eem7Qe8o507aSw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_z_X2sd65Eem7Qe8o507aSw" comment="" name="intermedHost" prompt="intermedHost?" promptNeeded="false" type="id_String" value="10.0.26.15"/>
+</talendfile:ContextType>

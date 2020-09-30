@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_qeGJYKgnEeaKse1c3yOsqA" id="_9M8xgMgREequdY9ihDRzng" label="D_Additional_VwPatent_Tables_Copy" purpose="Fill the other Patent subtables" description="To run after VW_IMPORT_PATENT is filled" version="0.1" statusCode="" item="_qeGJYqgnEeaKse1c3yOsqA" displayName="D_Additional_VwPatent_Tables_Copy">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_esbVsDjZEei5QtkpgTr11Q" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_esbVsTjZEei5QtkpgTr11Q" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_esbVsjjZEei5QtkpgTr11Q" key="created_date" value="2020-07-17T11:43:23.596+0200"/>
+    <additionalProperties xmi:id="_esbVszjZEei5QtkpgTr11Q" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_esbVtDjZEei5QtkpgTr11Q" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_esbVtTjZEei5QtkpgTr11Q" key="modified_date" value="2020-07-17T11:43:23.646+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_661F0AMVEeuOjv5n7xl_Lg" path="M/SouthAfrica"/>
+  <TalendProperties:ProcessItem xmi:id="_qeGJYqgnEeaKse1c3yOsqA" property="_qeGJYKgnEeaKse1c3yOsqA" state="_661F0AMVEeuOjv5n7xl_Lg">
+    <process href="D_Additional_VwPatent_Tables_Copy_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

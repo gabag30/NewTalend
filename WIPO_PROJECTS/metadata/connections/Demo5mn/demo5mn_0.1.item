@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_l2lt-QRiEeCvxKXiy7iB_g" name="demo5mn" dataPackage="_l24owARiEeCvxKXiy7iB_g" DatabaseType="MySQL" URL="jdbc:mysql://talend-dbms:3306/demo5mn?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="enc:system.encryption.key.v1:Y3kv/OK3b2lzAoZNaLxLdYg8RtIbeHVYv3xC6OIugII=" ServerName="talend-dbms" SID="demo5mn" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="true" UiSchema=""/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_l24owARiEeCvxKXiy7iB_g" name="demo5mn" dataManager="_l2lt-QRiEeCvxKXiy7iB_g">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_l2lt9wRiEeCvxKXiy7iB_g" name="customers" id="_oveDcPwxEd2Fpa89M5TuCQ" label="customers" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt3wRiEeCvxKXiy7iB_g" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_l2lt4ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24owQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt4QRiEeCvxKXiy7iB_g" name="firstname" label="firstname" length="10" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt4gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24owgRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt4wRiEeCvxKXiy7iB_g" name="lastname" label="lastname" length="12" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt5ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24owwRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt5QRiEeCvxKXiy7iB_g" name="address" label="address" length="25" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt5gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oxARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt5wRiEeCvxKXiy7iB_g" name="date" label="date" length="10" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt6ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oxQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt6QRiEeCvxKXiy7iB_g" name="revenue" label="revenue" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_l2lt6gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oxgRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt6wRiEeCvxKXiy7iB_g" name="states" label="states" length="2" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt7ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oxwRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_l2lt-ARiEeCvxKXiy7iB_g" name="states" id="_o00dgPwxEd2Fpa89M5TuCQ" label="states" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt7QRiEeCvxKXiy7iB_g" name="ID" label="ID" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_l2lt7gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oyARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt7wRiEeCvxKXiy7iB_g" name="Postal" label="Postal" length="2" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt8ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oyQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt8QRiEeCvxKXiy7iB_g" name="State" label="State" length="14" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt8gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oygRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt8wRiEeCvxKXiy7iB_g" name="Capital" label="Capital" length="14" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt9ARiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24oywRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_l2lt9QRiEeCvxKXiy7iB_g" name="MostPopulousCity" label="MostPopulousCity" length="14" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_l2lt9gRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l24ozARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

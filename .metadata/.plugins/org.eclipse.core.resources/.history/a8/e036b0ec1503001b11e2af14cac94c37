@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_K6MWINmdEeaZzt2oxI-L7Q" id="_oaHIYJT6EemIpuGlMCbRAQ" label="B1_Corr_PostgreSql" purpose="migracion marcas" version="0.1" statusCode="" item="_K6MWItmdEeaZzt2oxI-L7Q" displayName="B1_Corr_PostgreSql">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_lm-tUBybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lm-tURybEeifVt3bEFEg0w" key="created_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_lm-tUhybEeifVt3bEFEg0w" key="created_date" value="2019-06-22T16:32:58.656+0200"/>
+    <additionalProperties xmi:id="_lm-tUxybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lm-tVBybEeifVt3bEFEg0w" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_lm-tVRybEeifVt3bEFEg0w" key="modified_date" value="2020-09-21T17:05:17.492+0200"/>
+    <additionalProperties xmi:id="_eYCfsCmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eYCfsSmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_eYCfsimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7K47EAMVEeuOjv5n7xl_Lg" path="OMPI/MigCommon"/>
+  <TalendProperties:ProcessItem xmi:id="_K6MWItmdEeaZzt2oxI-L7Q" property="_K6MWINmdEeaZzt2oxI-L7Q" state="_7K47EAMVEeuOjv5n7xl_Lg">
+    <process href="B1_Corr_PostgreSql_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

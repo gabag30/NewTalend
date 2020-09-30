@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_H9pvcG3HEeqkKfl9jMFXqw" name="intermed_admin" id="_5mAUcG3GEeqkKfl9jMFXqw" label="intermed_admin" DatabaseType="Microsoft SQL Server" DriverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" URL="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=master;" dbVersionString="MSSQL_PROP" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:+UiAlN9dBckfX+4rE0NKNywBMMCaT5/a6eOvitfo519EsvBR" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="master" SqlSynthax="" StringQuote="" NullChar="" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+  <taggedValue xmi:id="_H9pvcW3HEeqkKfl9jMFXqw" tag="Is Conn Need Reload" value="true"/>
+  <parameters xmi:id="_H9pvcm3HEeqkKfl9jMFXqw" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+</TalendMetadata:DatabaseConnection>

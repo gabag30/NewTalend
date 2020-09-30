@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_WrVZEBYnEeiri7tQsRQKmw" name="Agente_valido" dataPackage="_WrVZERYnEeiri7tQsRQKmw" Server="Localhost 127.0.0.1" FilePath="D:/WIPO/HondurasFoxPro/Results/agentes_valido.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;§&quot;" RowSeparatorValue="&quot;\n&quot;" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_WrVZERYnEeiri7tQsRQKmw" name="default" dataManager="_WrVZEBYnEeiri7tQsRQKmw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WrVZEhYnEeiri7tQsRQKmw" id="_PpxQQBYmEeiri7tQsRQKmw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WrWAIBYnEeiri7tQsRQKmw" label="AgentNbr" length="-1" talendType="id_BigDecimal" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WrWAIRYnEeiri7tQsRQKmw" label="Name" length="26" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WrWAIhYnEeiri7tQsRQKmw" label="Address" length="38" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WrWAIxYnEeiri7tQsRQKmw" label="Column3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WrWAJBYnEeiri7tQsRQKmw" label="Column4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

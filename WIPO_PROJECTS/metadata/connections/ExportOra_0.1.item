@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_z50wEL6REee_6I1sk_FeZQ" name="ExportOra" id="_cp7iAL6REee_6I1sk_FeZQ" label="ExportOra" dataPackage="_z-cKUL6REee_6I1sk_FeZQ" DatabaseType="Microsoft SQL Server" DriverClass="net.sourceforge.jtds.jdbc.Driver" URL="jdbc:jtds:sqlserver://127.0.0.1:1433/ExportOracle;" dbVersionString="JTDS" Port="1433" Username="sa" Password="enc:system.encryption.key.v1:i3fO3KEgPBxV6Y1gFMMNNvFt+TO+1vLYLVyEAtOY4b+HkCd4" ServerName="127.0.0.1" DatasourceName="" FileFieldName="" SID="ExportOracle" SqlSynthax="SQL Syntax" DbmsId="id_MSSQL" ProductId="SQL_SERVER" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_z50wEb6REee_6I1sk_FeZQ" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_z6HrAL6REee_6I1sk_FeZQ" tag="package filter" value=""/>
+    <taggedValue xmi:id="_z6Q08L6REee_6I1sk_FeZQ" tag="Status" value=""/>
+    <taggedValue xmi:id="_z6Q08b6REee_6I1sk_FeZQ" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_z6Q08r6REee_6I1sk_FeZQ" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_z6Q0876REee_6I1sk_FeZQ" tag="Description" value=""/>
+    <taggedValue xmi:id="_z6Q09L6REee_6I1sk_FeZQ" tag="Author" value=""/>
+    <taggedValue xmi:id="_z6Q09b6REee_6I1sk_FeZQ" tag="otherParameter"/>
+    <taggedValue xmi:id="_z8WfoL6REee_6I1sk_FeZQ" tag="DB ProductName" value="Microsoft SQL Server"/>
+    <taggedValue xmi:id="_z8Wfob6REee_6I1sk_FeZQ" tag="DB ProductVersion" value="14.00.1000"/>
+    <taggedValue xmi:id="_z8Wfor6REee_6I1sk_FeZQ" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <parameters xmi:id="_z50wEr6REee_6I1sk_FeZQ" key="CONN_PARA_KEY_USERNAME" value="sa"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_z-cKUL6REee_6I1sk_FeZQ" name="ExportOracle" dataManager="_z50wEL6REee_6I1sk_FeZQ">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKUb6REee_6I1sk_FeZQ" name="db_accessadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKUr6REee_6I1sk_FeZQ" name="db_backupoperator"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKU76REee_6I1sk_FeZQ" name="db_datareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKVL6REee_6I1sk_FeZQ" name="db_datawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKVb6REee_6I1sk_FeZQ" name="db_ddladmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKVr6REee_6I1sk_FeZQ" name="db_denydatareader"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKV76REee_6I1sk_FeZQ" name="db_denydatawriter"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKWL6REee_6I1sk_FeZQ" name="db_owner"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKWb6REee_6I1sk_FeZQ" name="db_securityadmin"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKWr6REee_6I1sk_FeZQ" name="dbo"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKW76REee_6I1sk_FeZQ" name="guest"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKXL6REee_6I1sk_FeZQ" name="INFORMATION_SCHEMA"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_z-cKXb6REee_6I1sk_FeZQ" name="sys"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

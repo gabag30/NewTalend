@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendMetadata:DatabaseConnection xmi:id="_lx0iuwRiEeCvxKXiy7iB_g" name="RemoteDBMS" dataPackage="_l0DXMARiEeCvxKXiy7iB_g" DatabaseType="MySQL" URL="jdbc:mysql://talend-dbms:3306/test?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="enc:system.encryption.key.v1:AlgC+CtU0wr7J4N27cjjsgZ0TDczOBqGuzi/EasflFI=" ServerName="talend-dbms" SID="test" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="true" UiSchema=""/>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_l0DXMARiEeCvxKXiy7iB_g" name="test" dataManager="_lx0iuwRiEeCvxKXiy7iB_g">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_lx0iuARiEeCvxKXiy7iB_g" name="customers" id="_Uz4V4PFIEd2QjNEn8_EUdA" label="customers" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0ioARiEeCvxKXiy7iB_g" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_lx0ioQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIMARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0iogRiEeCvxKXiy7iB_g" name="CustomerName" label="CustomerName" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0iowRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIMQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0ipARiEeCvxKXiy7iB_g" name="CustomerAddress" label="CustomerAddress" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0ipQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIMgRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0ipgRiEeCvxKXiy7iB_g" name="idState" label="idState" length="2" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_lx0ipwRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIMwRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0iqARiEeCvxKXiy7iB_g" name="RegTime" label="RegTime" length="20" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0iqQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NINARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_lx0iuQRiEeCvxKXiy7iB_g" name="states" id="_U4ESUPFIEd2QjNEn8_EUdA" label="states" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0iqgRiEeCvxKXiy7iB_g" name="idState" label="idState" length="2" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_lx0iqwRiEeCvxKXiy7iB_g" body="0"/>
+        <sqlDataType xmi:id="_l0NINQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0irARiEeCvxKXiy7iB_g" name="LabelState" label="LabelState" length="255" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_lx0irQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NINgRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_lx0iugRiEeCvxKXiy7iB_g" name="subscribers" id="_U7gA0PFIEd2QjNEn8_EUdA" label="subscribers" tableType="TABLE">
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0irgRiEeCvxKXiy7iB_g" name="id" label="id" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_lx0irwRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NINwRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0isARiEeCvxKXiy7iB_g" name="CustomerName" label="CustomerName" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0isQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIOARiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0isgRiEeCvxKXiy7iB_g" name="CustomerAddress" label="CustomerAddress" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0iswRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIOQRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0itARiEeCvxKXiy7iB_g" name="LabelState" label="LabelState" length="255" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_lx0itQRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIOgRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+      <feature xsi:type="relational:TdColumn" xmi:id="_lx0itgRiEeCvxKXiy7iB_g" name="newColumn" label="RegTime" length="10" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_lx0itwRiEeCvxKXiy7iB_g" body=""/>
+        <sqlDataType xmi:id="_l0NIOwRiEeCvxKXiy7iB_g" name="NULL"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

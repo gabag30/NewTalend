@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_K6MWINmdEeaZzt2oxI-L7Q" id="_RmQjQKdmEee_tfNWzV_GRw" label="B_Agentes_A_INTERMED" purpose="copy directly from Oracle9" version="0.1" statusCode="" item="_K6MWItmdEeaZzt2oxI-L7Q" displayName="B_Agentes_A_INTERMED">
+    <author href="../../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_eq_yUDjZEei5QtkpgTr11Q" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eq_yUTjZEei5QtkpgTr11Q" key="created_product_version" value="6.4.1.20170623_1246"/>
+    <additionalProperties xmi:id="_eq_yUjjZEei5QtkpgTr11Q" key="created_date" value="2017-01-13T15:32:54.654+0100"/>
+    <additionalProperties xmi:id="_eq_yUzjZEei5QtkpgTr11Q" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eq_yVDjZEei5QtkpgTr11Q" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_eq_yVTjZEei5QtkpgTr11Q" key="modified_date" value="2019-09-30T14:04:49.119+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_6Z3GwAMVEeuOjv5n7xl_Lg" path="M/PY/ParaguayFinal"/>
+  <TalendProperties:ProcessItem xmi:id="_K6MWItmdEeaZzt2oxI-L7Q" property="_K6MWINmdEeaZzt2oxI-L7Q" state="_6Z3GwAMVEeuOjv5n7xl_Lg">
+    <process href="B_Agentes_A_INTERMED_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

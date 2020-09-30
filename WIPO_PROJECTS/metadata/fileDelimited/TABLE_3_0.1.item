@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_bCagQL8CEeepgdSdNXLSTw" name="TABLE_3" dataPackage="_bCagQb8CEeepgdSdNXLSTw" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/3.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_bCagQb8CEeepgdSdNXLSTw" name="default" dataManager="_bCagQL8CEeepgdSdNXLSTw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bCagQr8CEeepgdSdNXLSTw" id="_LpenYL8CEeepgdSdNXLSTw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagQ78CEeepgdSdNXLSTw" name="FILE_SEQ" label="FILE_SEQ" length="2" precision="-1" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagRL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagRb8CEeepgdSdNXLSTw" name="FILE_TYPE" label="FILE_TYPE" length="-1" precision="-1" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagRr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagR78CEeepgdSdNXLSTw" name="FILE_SERIES" label="FILE_SERIES" length="-1" precision="-1" talendType="id_BigDecimal" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagSL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagSb8CEeepgdSdNXLSTw" name="FILE_NBR" label="FILE_NBR" length="-1" precision="-1" talendType="id_BigDecimal" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagSr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagS78CEeepgdSdNXLSTw" name="SEC_MOVIMIENTO" label="SEC_MOVIMIENTO" length="14" precision="-1" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagTL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagTb8CEeepgdSdNXLSTw" name="TIP_MOVIMIENTO" label="TIP_MOVIMIENTO" length="3" precision="-1" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagTr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagT78CEeepgdSdNXLSTw" name="FEC_MOVIMIENTO" label="FEC_MOVIMIENTO" length="-1" precision="-1" talendType="id_Date" key="true" pattern="&quot;dd-MMM-yyy&quot;">
+        <initialValue xmi:id="_bCagUL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagUb8CEeepgdSdNXLSTw" name="OBS_MOVIMIENTO" label="OBS_MOVIMIENTO" length="100" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagUr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagU78CEeepgdSdNXLSTw" name="COD_USUARIO" label="COD_USUARIO" length="15" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagVL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagVb8CEeepgdSdNXLSTw" name="IND_FALTA_APROBAR" label="IND_FALTA_APROBAR" length="1" precision="-1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagVr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagV78CEeepgdSdNXLSTw" name="OBS1" label="OBS1" length="80" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagWL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagWb8CEeepgdSdNXLSTw" name="OBS2" label="OBS2" length="254" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagWr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagW78CEeepgdSdNXLSTw" name="OBS3" label="OBS3" length="254" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagXL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagXb8CEeepgdSdNXLSTw" name="OBS4" label="OBS4" length="254" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagXr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagX78CEeepgdSdNXLSTw" name="OBS5" label="OBS5" length="254" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagYL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagYb8CEeepgdSdNXLSTw" name="SECS_OPCIONES" label="SECS_OPCIONES" length="254" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagYr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagY78CEeepgdSdNXLSTw" name="IND_IMPRESION" label="IND_IMPRESION" length="1" precision="-1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagZL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagZb8CEeepgdSdNXLSTw" name="NUM_REGISTRO" label="NUM_REGISTRO" length="12" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagZr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagZ78CEeepgdSdNXLSTw" name="FEC_VENCIMIENTO" label="FEC_VENCIMIENTO" length="-1" precision="-1" talendType="id_Date" pattern="&quot;dd-MMM-yyy&quot;">
+        <initialValue xmi:id="_bCagaL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagab8CEeepgdSdNXLSTw" name="COD_STATUS" label="COD_STATUS" length="3" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagar8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCaga78CEeepgdSdNXLSTw" name="COD_STATUS_ANT" label="COD_STATUS_ANT" length="3" precision="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bCagbL8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bCagbb8CEeepgdSdNXLSTw" name="FEC_MOVIMIENTO_ANT" label="FEC_MOVIMIENTO_ANT" length="-1" precision="-1" talendType="id_Date" pattern="&quot;dd-MMM-yyy&quot;">
+        <initialValue xmi:id="_bCagbr8CEeepgdSdNXLSTw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

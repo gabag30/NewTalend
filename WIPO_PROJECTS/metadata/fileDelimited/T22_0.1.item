@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_DDJ-QL9kEeeH2KtW5GK5VA" name="T22" label="T22" dataPackage="_C2Ngsr9fEeeH2KtW5GK5VA" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/22.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|~|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom ANSI"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_C2Ngsr9fEeeH2KtW5GK5VA" name="default" dataManager="_DDJ-QL9kEeeH2KtW5GK5VA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_C2Ngs79fEeeH2KtW5GK5VA" id="_6wf90L9eEeeH2KtW5GK5VA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9UL9kEeeH2KtW5GK5VA" name="COD_TITULAR" label="COD_TITULAR" length="-1" precision="-1" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_E8A9Ub9kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9Ur9kEeeH2KtW5GK5VA" name="NOM_TITULAR" label="NOM_TITULAR" length="200" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_E8A9U79kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9VL9kEeeH2KtW5GK5VA" name="DIR_TITULAR" label="DIR_TITULAR" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_E8A9Vb9kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9Vr9kEeeH2KtW5GK5VA" name="COD_PAIS" label="COD_PAIS" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String" nullable="false" originalLength="-1">
+        <initialValue xmi:id="_E8A9V79kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9WL9kEeeH2KtW5GK5VA" name="DIR_TITULAR_OLD" label="DIR_TITULAR_OLD" length="500" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_E8A9Wb9kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9Wr9kEeeH2KtW5GK5VA" name="COD_PAIS_OLD" label="COD_PAIS_OLD" length="2" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_E8A9W79kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_E8A9XL9kEeeH2KtW5GK5VA" name="DIR_TITULAR_AUX" label="DIR_TITULAR_AUX" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_E8A9Xb9kEeeH2KtW5GK5VA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_d3TFQA0iEeeasvXSrEu7xw" id="_d3QpAA0iEeeasvXSrEu7xw" label="MissedEDOCID" purpose="Reload edocs in do_pending_edoc" version="0.1" statusCode="" item="_d3TFQg0iEeeasvXSrEu7xw" maxInformationLevel="ERROR" displayName="MissedEDOCID">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <informations xmi:id="_SVtrkM1hEeiNy63K8kA12g" level="ERROR" text="The import routines.Numeric_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrkc1hEeiNy63K8kA12g" level="ERROR" text="The import routines.TalendString_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrks1hEeiNy63K8kA12g" level="ERROR" text="The import routines.Mathematical_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrk81hEeiNy63K8kA12g" level="ERROR" text="The import routines.TalendDate_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrlM1hEeiNy63K8kA12g" level="ERROR" text="The import routines.DataOperation_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrlc1hEeiNy63K8kA12g" level="ERROR" text="The import routines.TalendDataGenerator_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrls1hEeiNy63K8kA12g" level="ERROR" text="The import routines.TalendStringUtil_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrl81hEeiNy63K8kA12g" level="ERROR" text="The import routines.StringHandling_1 cannot be resolved"/>
+    <informations xmi:id="_SVtrmM1hEeiNy63K8kA12g" level="ERROR" text="The import routines.Relational_1 cannot be resolved"/>
+    <additionalProperties xmi:id="_lejKEBybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lejKERybEeifVt3bEFEg0w" key="created_product_version" value="6.4.1.20170623_1246"/>
+    <additionalProperties xmi:id="_lejKEhybEeifVt3bEFEg0w" key="created_date" value="2017-03-20T04:35:34.228+0100"/>
+    <additionalProperties xmi:id="_lejKExybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lejKFBybEeifVt3bEFEg0w" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_lejKFRybEeifVt3bEFEg0w" key="modified_date" value="2020-03-19T11:35:48.753+0100"/>
+    <additionalProperties xmi:id="_eShGgCmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eShGgSmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_eShGgimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7DkyIAMVEeuOjv5n7xl_Lg" path="OMPI/EDMS"/>
+  <TalendProperties:ProcessItem xmi:id="_d3TFQg0iEeeasvXSrEu7xw" property="_d3TFQA0iEeeasvXSrEu7xw" state="_7DkyIAMVEeuOjv5n7xl_Lg">
+    <process href="MissedEDOCID_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

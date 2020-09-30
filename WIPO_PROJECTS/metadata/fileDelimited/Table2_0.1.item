@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_XsepML6UEee_6I1sk_FeZQ" name="Table2" dataPackage="_XsepMb6UEee_6I1sk_FeZQ" Server="Localhost 127.0.0.1" FilePath="C:/exportOra/2.csv" Encoding="ISO-8859-1" FieldSeparatorValue="&quot;|&quot;" RowSeparatorValue="&quot;\n&quot;" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XsepMb6UEee_6I1sk_FeZQ" name="default" dataManager="_XsepML6UEee_6I1sk_FeZQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XsepMr6UEee_6I1sk_FeZQ" id="_2iABUL6TEee_6I1sk_FeZQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XsepM76UEee_6I1sk_FeZQ" label="NumeroFila" length="-1" talendType="id_BigDecimal" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XsepNL6UEee_6I1sk_FeZQ" label="COD_LISTA" length="-1" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XsepNb6UEee_6I1sk_FeZQ" label="SEC_OPCION" length="-1" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XsepNr6UEee_6I1sk_FeZQ" label="DES_OPCION_RESUMID" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XsepN76UEee_6I1sk_FeZQ" label="DES_OPCION" length="1000" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

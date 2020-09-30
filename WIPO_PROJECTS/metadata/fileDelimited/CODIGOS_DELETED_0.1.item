@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_k_kdQBYzEeiri7tQsRQKmw" name="CODIGOS_DELETED" label="CODIGOS_DELETED" dataPackage="_hQ9dgRYzEeiri7tQsRQKmw" Server="Localhost 127.0.0.1" FilePath="D:/WIPO/HondurasFoxPro/Results/codigos_deleted.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;§&quot;" RowSeparatorValue="&quot;\n&quot;" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Custom UTF8"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_hQ9dgRYzEeiri7tQsRQKmw" name="default" dataManager="_k_kdQBYzEeiri7tQsRQKmw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_hQ9dghYzEeiri7tQsRQKmw" id="_UjDngBYzEeiri7tQsRQKmw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hQ9dgxYzEeiri7tQsRQKmw" label="ID_CODIGO" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hQ9dhBYzEeiri7tQsRQKmw" label="CODIGO" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hQ9dhRYzEeiri7tQsRQKmw" label="DESCRIPCOD" length="32" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

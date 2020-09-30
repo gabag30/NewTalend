@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_mCyhsBYbEeiri7tQsRQKmw" id="_lH-joPHzEeim5sBtxACFZQ" label="A_Generar_DB_InterMed_SQLServer" purpose="Crear el ambiente para tablas intermedias" version="0.1" statusCode="" item="_mCyhshYbEeiri7tQsRQKmw" displayName="A_Generar_DB_InterMed_SQLServer">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_lmQUkBybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lmQUkRybEeifVt3bEFEg0w" key="created_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_lmQUkhybEeifVt3bEFEg0w" key="created_date" value="2018-11-26T22:21:50.571-0500"/>
+    <additionalProperties xmi:id="_lmQUkxybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lmQUlBybEeifVt3bEFEg0w" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_lmQUlRybEeifVt3bEFEg0w" key="modified_date" value="2020-09-09T15:38:29.773+0200"/>
+    <additionalProperties xmi:id="_eXlzwCmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eXlzwSmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_eXlzwimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_6OHJwAMVEeuOjv5n7xl_Lg" path="M/PA"/>
+  <TalendProperties:ProcessItem xmi:id="_mCyhshYbEeiri7tQsRQKmw" property="_mCyhsBYbEeiri7tQsRQKmw" state="_6OHJwAMVEeuOjv5n7xl_Lg">
+    <process href="A_Generar_DB_InterMed_SQLServer_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

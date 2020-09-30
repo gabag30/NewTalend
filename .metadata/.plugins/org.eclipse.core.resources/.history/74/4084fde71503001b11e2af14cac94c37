@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_CFZZ4A37EemhrdbO7t61kg" id="_CFWWkA37EemhrdbO7t61kg" label="A1_General_Marcas" purpose="proceso de migración de datos de Nicaragua" version="0.1" statusCode="" item="_CFZZ4g37EemhrdbO7t61kg" displayName="A1_General_Marcas">
+    <author href="../../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_CFncUA37EemhrdbO7t61kg" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_CFncUQ37EemhrdbO7t61kg" key="created_product_version" value="7.1.1.20181026_1147"/>
+    <additionalProperties xmi:id="_CFncUg37EemhrdbO7t61kg" key="created_date" value="2019-01-01T16:25:43.957-0300"/>
+    <additionalProperties xmi:id="_CFncUw37EemhrdbO7t61kg" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_CFncVA37EemhrdbO7t61kg" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_CFncVQ37EemhrdbO7t61kg" key="modified_date" value="2020-07-17T14:34:58.839+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_5_oo4AMVEeuOjv5n7xl_Lg" path="M/NI/A_Marcas"/>
+  <TalendProperties:ProcessItem xmi:id="_CFZZ4g37EemhrdbO7t61kg" property="_CFZZ4A37EemhrdbO7t61kg" state="_5_oo4AMVEeuOjv5n7xl_Lg">
+    <process href="A1_General_Marcas_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
