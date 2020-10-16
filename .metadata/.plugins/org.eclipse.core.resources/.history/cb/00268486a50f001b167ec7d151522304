@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_uVJKUPwHEeqFhtRqCTUfWA" id="_bkUIkPwHEeqFhtRqCTUfWA" label="Paraguay_postgresql" version="0.1" statusCode="" item="_uVJKUvwHEeqFhtRqCTUfWA" displayName="Paraguay_postgresql">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_uVLmkPwHEeqFhtRqCTUfWA" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_uVLmkfwHEeqFhtRqCTUfWA" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_uVLmkvwHEeqFhtRqCTUfWA" key="created_date" value="2020-09-21T14:41:09.241+0200"/>
+    <additionalProperties xmi:id="_uVLmk_wHEeqFhtRqCTUfWA" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_uVLmlPwHEeqFhtRqCTUfWA" key="modified_product_version" value="7.4.1.20200916_1624-M2"/>
+    <additionalProperties xmi:id="_uVLmlfwHEeqFhtRqCTUfWA" key="modified_date" value="2020-10-16T13:48:21.106+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_8G4CMAMVEeuOjv5n7xl_Lg" path="Paraguay" locked="true" lockDate="2020-10-16T13:48:21.106+0200">
+    <locker href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_uVJKUvwHEeqFhtRqCTUfWA" property="_uVJKUPwHEeqFhtRqCTUfWA" state="_8G4CMAMVEeuOjv5n7xl_Lg" typeName="PostgreSQL">
+    <connection href="Paraguay_postgresql_0.1.item#_uVIjQPwHEeqFhtRqCTUfWA"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>
