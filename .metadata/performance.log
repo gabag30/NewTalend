@@ -37,3 +37,16 @@
 2020-10-16 09:32:09,212 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'install / setup root poms', elapsed time since previous step: 5334 ms
 2020-10-16 09:32:09,212 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   End 'logOnProject', elapsed time since last request: 5334 ms 
 2020-10-16 09:32:09,212 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   End 'logOnProject', total elapsed time: 15379 ms 
+2020-10-16 15:31:52,969 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   Start 'logOnProject' ...
+2020-10-16 15:31:58,052 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'beforeLogon', elapsed time since previous step: 5083 ms
+2020-10-16 15:31:58,606 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'Sync components libraries', elapsed time since previous step: 554 ms
+2020-10-16 15:31:58,613 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'executeMigrations(beforeLogonTasks)', elapsed time since previous step: 7 ms
+2020-10-16 15:31:58,973 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'logOnProject', elapsed time since previous step: 360 ms
+2020-10-16 15:31:59,085 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'executeMigrations(afterLogonTasks)', elapsed time since previous step: 112 ms
+2020-10-16 15:31:59,085 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'clean Java project', elapsed time since previous step: 0 ms
+2020-10-16 15:31:59,093 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'clean workspace history', elapsed time since previous step: 8 ms
+2020-10-16 15:32:02,392 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'sync repository (routines/rules/beans)', elapsed time since previous step: 3299 ms
+2020-10-16 15:32:02,396 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'sync log4j', elapsed time since previous step: 4 ms
+2020-10-16 15:32:07,920 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   -> 'logOnProject', step name 'install / setup root poms', elapsed time since previous step: 5524 ms
+2020-10-16 15:32:07,921 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   End 'logOnProject', elapsed time since last request: 5524 ms 
+2020-10-16 15:32:07,921 INFO  org.talend.commons.utils.time.TimeMeasurePerformance  -   End 'logOnProject', total elapsed time: 14952 ms 

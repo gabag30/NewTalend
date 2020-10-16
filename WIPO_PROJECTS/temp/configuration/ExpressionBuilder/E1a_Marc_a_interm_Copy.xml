@@ -1,37 +1,17 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_2=>" expression="row14.obs2!=null?&quot;Publicado el: &quot;+row14.obs2:null">
-  <variables name="row2.num_acta" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row2.tip_solicitud" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.cod_primer_titular" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row2.num_registro_viejo" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row2.num_acta_nuevo" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row2.tip_signo" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.cod_denominacion" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row2.num_clase" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row2.num_agente" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row2.num_reg_prioridad" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.cod_pais_prioridad" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.fec_prioridad" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.cod_status" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.fec_status" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.fec_registro" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.num_registro" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row2.fec_ingreso" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.fec_cambio" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.cod_usuario_cambio" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.fec_solicitud" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.num_logotipo" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row2.fec_vencimiento" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row2.tip_tramite" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row2.num_registro_poder" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row2.ed_niza" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row2.tip_signo_old" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row2.num_agente_old" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row2.cod_pais_prioridad_old" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row13.cod_denominacion" value="null" talendType="id_BigDecimal"/>
-  <variables name="row13.nom_denominacion" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row13.map_denominacion" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row14.num_acta" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row14.fec_movimiento" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row14.obs2" value="null" talendType="id_String" nullable="true"/>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_4=>" expression="new BigDecimal(Numeric.sequence(&quot;s1&quot;,5,1) )">
+  <variables name="row11.cod_usuario" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.nom_usuario" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.ind_administrador" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.ind_conectado" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row11.num_bandeja_activa" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row11.cod_dependencia" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row12.codigo" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row12.nombre" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row12.tipo" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row12.login" value="null" talendType="id_String"/>
+  <variables name="row12.clave" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row12.email" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row12.usuario_freg" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row12.cedula" value="null" talendType="id_String" nullable="true"/>
 </expression:EMFExpression>
