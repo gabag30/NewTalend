@@ -14,6 +14,7 @@
     <taggedValue xmi:id="_uV7NcvwHEeqFhtRqCTUfWA" tag="DB IdentifierQuoteString" value="&quot;"/>
     <queries xmi:id="_eHw6wA-lEeuRbvVdpSj_7g">
       <query xmi:id="_eHw6wg-lEeuRbvVdpSj_7g" id="_eHw6wQ-lEeuRbvVdpSj_7g" comment="get the pub date" label="pub_date" value="select num_acta,&#xD;&#xA;       case when extract(year from fec_movimiento)=201 then&#xD;&#xA;&#xD;&#xA;           fec_movimiento + '1800 years'::interval&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;           else fec_movimiento end&#xD;&#xA;&#xD;&#xA;       ,&#xD;&#xA;         obs2&#xD;&#xA;&#xD;&#xA;from movimiento where cod_status='PUB'&#xD;&#xA;--this is the status that the app goes during publication"/>
+      <query xmi:id="_cg2M4ROuEeuSF8bzvWRAhA" id="_cg2M4BOuEeuSF8bzvWRAhA" comment="getting related file" label="related file" value="select &quot;num_acta&quot;,&quot;num_acta_nuevo&quot; from &quot;marca&quot; where &quot;num_acta_nuevo&quot; is not null"/>
     </queries>
     <parameters xmi:id="_uVIjQvwHEeqFhtRqCTUfWA" key="CONN_PARA_KEY_USERNAME" value="postgres"/>
     <parameters xmi:id="_TgtEcAyPEeuOv_cqzDOu2A" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>

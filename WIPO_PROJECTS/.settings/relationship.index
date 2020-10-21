@@ -2585,6 +2585,10 @@
     "version" : "Latest",
     "type" : "query"
   }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - related file",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
     "id" : "IPAS",
     "version" : "Latest",
     "type" : "routine"
@@ -2605,6 +2609,14 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_NICE_CLASSES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_OWNERS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_bkUIkPwHEeqFhtRqCTUfWA - agente",
     "version" : "Latest",
     "type" : "schema"
@@ -2613,7 +2625,23 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - marca_producto",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - marca_titular",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_bkUIkPwHEeqFhtRqCTUfWA - movimiento",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - pagos",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - titular",
     "version" : "Latest",
     "type" : "schema"
   }, {

@@ -1,17 +1,60 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_4=>" expression="new BigDecimal(Numeric.sequence(&quot;s1&quot;,5,1) )">
-  <variables name="row11.cod_usuario" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row11.nom_usuario" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row11.ind_administrador" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row11.ind_conectado" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row11.num_bandeja_activa" value="null" talendType="id_Short" nullable="true"/>
-  <variables name="row11.cod_dependencia" value="null" talendType="id_Integer" nullable="true"/>
-  <variables name="row12.codigo" value="null" talendType="id_Long" nullable="true"/>
-  <variables name="row12.nombre" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.tipo" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.login" value="null" talendType="id_String"/>
-  <variables name="row12.clave" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.email" value="null" talendType="id_String" nullable="true"/>
-  <variables name="row12.usuario_freg" value="null" talendType="id_Date" nullable="true"/>
-  <variables name="row12.cedula" value="null" talendType="id_String" nullable="true"/>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_7=>" expression="row27.fec_recibo!=null? row27.fec_recibo:row26.FILING_DATE">
+  <variables name="row25.num_recibo" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row25.tip_tasa" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row25.sec_tasa" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row25.num_acta" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row25.importe" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row25.serie" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.FILE_SEQ" value="null" talendType="id_String"/>
+  <variables name="row26.FILE_TYPE" value="null" talendType="id_String"/>
+  <variables name="row26.FILE_SERIES" value="null" talendType="id_BigDecimal"/>
+  <variables name="row26.FILE_NBR" value="null" talendType="id_BigDecimal"/>
+  <variables name="row26.DOC_ORI" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.DOC_SERIES" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.DOC_NBR" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.IND_IMPORT" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.APPLICATION_TYPE" value="null" talendType="id_String"/>
+  <variables name="row26.APPLICATION_SUBTYPE" value="null" talendType="id_String"/>
+  <variables name="row26.LAW_CODE" value="null" talendType="id_BigDecimal"/>
+  <variables name="row26.FILING_DATE" value="null" talendType="id_Date"/>
+  <variables name="row26.RECEPTION_DATE" value="null" talendType="id_Date"/>
+  <variables name="row26.PUBLICATION_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.PUBLICATION_NOTES" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.IND_REGISTERED" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.REGISTRATION_TYPE" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.REGISTRATION_SERIES" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.REGISTRATION_NBR" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.REGISTRATION_DUP" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.REGISTRATION_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.ENTITLEMENT_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.EXPIRATION_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.EXHIBITION_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.EXHIBITION_NOTES" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.SIGN_TYPE" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_NAME" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_NAME_LANG2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_TRANSLATION" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_TRANSLATION_LANG2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_TRANSLITERATION" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.MARK_TRANSLITERATION_LANG2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.SERIES_DESCRIPTION" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.COLOUR_DESCRIPTION" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.COLOUR_DESCR_LANG2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.DISCLAIMER" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.DISCLAIMER_LANG2" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.BY_CONSENT" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.REGULATIONS" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.NOTES" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.CAPTURE_USER_ID" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.CAPTURE_DATE" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row26.PUBLICATION_NBR" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row26.PUBLICATION_SER" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row26.PUBLICATION_TYP" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row27.num_recibo" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row27.nombre" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row27.fec_recibo" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row27.importe_recibo" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row27.recibo" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row27.serie" value="null" talendType="id_String" nullable="true"/>
 </expression:EMFExpression>
