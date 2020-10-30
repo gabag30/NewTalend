@@ -89,79 +89,107 @@ public class Component_part_footerJava
   protected final String TEXT_56 = NL + "     ";
   protected final String TEXT_57 = " = ";
   protected final String TEXT_58 = ";";
-  protected final String TEXT_59 = NL + "    globalMap.put(\"USE_CONDITION\",Boolean.TRUE);" + NL + "    globalMap.put(\"TRACE_CONDITION\", Boolean.FALSE);";
-  protected final String TEXT_60 = NL + "  " + NL + "  if (";
-  protected final String TEXT_61 = " !=null) {" + NL + "  globalMap.put(\"ENABLE_TRACES_CONNECTION_";
-  protected final String TEXT_62 = "\",Boolean.TRUE);" + NL + "  if (runTrace.isPause()) {" + NL + "   while (runTrace.isPause()) {" + NL + "   \tThread.sleep(100);" + NL + "   }" + NL + "  }\t else {" + NL + "  \t" + NL + "   \t// here we dump the line content for trace purpose" + NL + "   \tjava.util.LinkedHashMap<String, String> runTraceData = new java.util.LinkedHashMap<String,String>();" + NL + "\t";
-  protected final String TEXT_63 = NL + "\t\trunTraceData.put(\"";
-  protected final String TEXT_64 = "\", String.valueOf(";
-  protected final String TEXT_65 = "));" + NL + "\t";
-  protected final String TEXT_66 = NL + "   \trunTrace.sendTrace(\"";
-  protected final String TEXT_67 = "\", runTraceData);" + NL + "\t}" + NL + "\t";
-  protected final String TEXT_68 = "     \t\t" + NL + "       if (";
-  protected final String TEXT_69 = NL + "           ";
-  protected final String TEXT_70 = "(";
-  protected final String TEXT_71 = "    ";
-  protected final String TEXT_72 = NL + "              ";
-  protected final String TEXT_73 = NL + "\t              ";
-  protected final String TEXT_74 = NL + "                  ";
-  protected final String TEXT_75 = "  ";
-  protected final String TEXT_76 = NL + "             )";
-  protected final String TEXT_77 = NL + "         ";
-  protected final String TEXT_78 = NL + "        true";
-  protected final String TEXT_79 = "      " + NL + "    ){" + NL + "    \tglobalMap.put(\"TRACE_CONDITION\", Boolean.TRUE);" + NL + "    }";
-  protected final String TEXT_80 = NL + "  }";
-  protected final String TEXT_81 = NL + NL + "ok_Hash.put(\"";
-  protected final String TEXT_82 = "\", true);" + NL + "end_Hash.put(\"";
-  protected final String TEXT_83 = "\", System.currentTimeMillis());" + NL;
-  protected final String TEXT_84 = NL;
-  protected final String TEXT_85 = ".addMessage(\"end\",\"";
-  protected final String TEXT_86 = "\", end_Hash.get(\"";
-  protected final String TEXT_87 = "\")-start_Hash.get(\"";
-  protected final String TEXT_88 = "\"));";
-  protected final String TEXT_89 = "Process(globalMap);";
-  protected final String TEXT_90 = NL + "\t\t\t\tif(execStat){   " + NL + "   \t \t\t\t\trunStat.updateStatOnConnection(\"";
-  protected final String TEXT_91 = "\", 0, \"ok\");" + NL + "\t\t\t\t}";
-  protected final String TEXT_92 = NL + "\t\t\t\t\t\tmtp_";
-  protected final String TEXT_93 = ".waitForEndOfQueue();";
-  protected final String TEXT_94 = NL + "\t\t\t\t";
-  protected final String TEXT_95 = NL + "   \t\t\tif (";
-  protected final String TEXT_96 = ") {" + NL + "   \t\t\t\t";
-  protected final String TEXT_97 = NL + "\t\t\t\t\tif(execStat){" + NL + "   \t \t\t\t\t\trunStat.updateStatOnConnection(\"";
-  protected final String TEXT_98 = "\", 0, \"true\");" + NL + "\t\t\t\t\t}";
-  protected final String TEXT_99 = NL + "\t\t\t\t\t\t\tmtp_";
-  protected final String TEXT_100 = "Process(globalMap);" + NL + "\t\t\t}" + NL + "" + NL + "\t\t\t";
-  protected final String TEXT_101 = "   " + NL + "   \t\t\t\telse{" + NL + "\t\t\t\t\tif(execStat){   " + NL + "   \t \t\t\t\t\trunStat.updateStatOnConnection(\"";
-  protected final String TEXT_102 = "\", 0, \"false\");" + NL + "\t\t\t\t\t}   \t " + NL + "   \t\t\t\t}";
-  protected final String TEXT_103 = NL + "\t\t\tmtp_";
-  protected final String TEXT_104 = ".waitForEndOfQueue();" + NL + "\t\t\t" + NL + "\t\t\tTalendThread errorThread_";
-  protected final String TEXT_105 = " = mtp_";
-  protected final String TEXT_106 = ".getErrorThread();" + NL;
-  protected final String TEXT_107 = NL + "\tif(errorThread_";
-  protected final String TEXT_108 = " != null) {" + NL + "\t\tif (errorThread_";
-  protected final String TEXT_109 = ".errorCode != null) {" + NL + "\t\t\tif (errorCode == null" + NL + "\t\t\t\t\t|| errorThread_";
-  protected final String TEXT_110 = ".errorCode.compareTo(errorCode) > 0) {" + NL + "\t\t\t\terrorCode = errorThread_";
-  protected final String TEXT_111 = ".errorCode;" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!status.equals(\"failure\")) {" + NL + "\t\t\tstatus = errorThread_";
-  protected final String TEXT_112 = ".status;" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
-  protected final String TEXT_113 = ".exception!=null){" + NL + "\t\t\tthrow errorThread_";
-  protected final String TEXT_114 = ".exception;" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
-  protected final String TEXT_115 = ".error!=null){" + NL + "\t\t\tthrow errorThread_";
-  protected final String TEXT_116 = ".error;" + NL + "\t\t}" + NL + "\t}else{\t\t\t\t" + NL + "\t\tInteger threadErrorCode = mtp_";
-  protected final String TEXT_117 = ".getTalendThreadResult().getErrorCode();" + NL + "\t\tString threadStatus = mtp_";
-  protected final String TEXT_118 = ".getTalendThreadResult().getStatus();" + NL + "\t\t" + NL + "\t\tif (threadErrorCode != null) {" + NL + "\t\t\tif (errorCode == null" + NL + "\t\t\t\t\t|| threadErrorCode.compareTo(errorCode) > 0) {" + NL + "\t\t\t\terrorCode = threadErrorCode;" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!status.equals(\"failure\")) {" + NL + "\t\t\tstatus = threadStatus;" + NL + "\t\t}" + NL + "\t }\t\t\t";
-  protected final String TEXT_119 = " != null) {" + NL + "\t\tInteger localErrorCode = (Integer) (((java.util.Map) threadLocal.get()).get(\"errorCode\"));" + NL + "\t\tString localStatus = (String) (((java.util.Map) threadLocal.get()).get(\"status\"));" + NL + "\t\t" + NL + "\t\tif (errorThread_";
-  protected final String TEXT_120 = ".errorCode != null) {" + NL + "\t\t\tif (localErrorCode == null || errorThread_";
-  protected final String TEXT_121 = ".errorCode.compareTo(localErrorCode) > 0) {" + NL + "\t\t\t\t((java.util.Map) threadLocal.get()).put(\"errorCode\", errorThread_";
-  protected final String TEXT_122 = ".errorCode);" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!localStatus.equals(\"failure\")) {" + NL + "\t\t\t((java.util.Map) threadLocal.get()).put(\"status\", errorThread_";
-  protected final String TEXT_123 = ".status);" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
-  protected final String TEXT_124 = ".exception;" + NL + "\t\t}\t\t" + NL + "\t}else{" + NL + "\t\tInteger threadErrorCode = mtp_";
-  protected final String TEXT_125 = ".getTalendThreadResult().getStatus();" + NL + "\t\t" + NL + "\t\tInteger localErrorCode = (Integer) (((java.util.Map) threadLocal" + NL + "\t\t\t\t.get()).get(\"errorCode\"));" + NL + "\t\tString localStatus = (String) (((java.util.Map) threadLocal" + NL + "\t\t\t\t.get()).get(\"status\"));" + NL + "" + NL + "\t\tif (threadErrorCode != null) {" + NL + "\t\t\tif (localErrorCode == null" + NL + "\t\t\t\t\t|| threadErrorCode.compareTo(localErrorCode) > 0) {" + NL + "\t\t\t\t((java.util.Map) threadLocal.get()).put(\"errorCode\"," + NL + "\t\t\t\t\t\tthreadErrorCode);" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!localStatus.equals(\"failure\")) {" + NL + "\t\t\t((java.util.Map) threadLocal.get()).put(\"status\"," + NL + "\t\t\t\t\tthreadStatus);" + NL + "\t\t}" + NL + "\t}";
-  protected final String TEXT_126 = NL + "\t\t\t" + NL + "\t\t\t";
-  protected final String TEXT_127 = NL + "\ttos_count_";
-  protected final String TEXT_128 = "++;";
-  protected final String TEXT_129 = NL + NL + "/**" + NL + " * [";
-  protected final String TEXT_130 = " ";
-  protected final String TEXT_131 = " ] stop" + NL + " */";
+  protected final String TEXT_59 = NL + "  if(tos_count_";
+  protected final String TEXT_60 = " == 0) {";
+  protected final String TEXT_61 = NL + "      " + NL + "      class SchemaUtil_";
+  protected final String TEXT_62 = "_";
+  protected final String TEXT_63 = " {" + NL + "          " + NL + "          public java.util.List<java.util.Map<String, String>> getSchema(final ";
+  protected final String TEXT_64 = "Struct ";
+  protected final String TEXT_65 = ") {" + NL + "              java.util.List<java.util.Map<String, String>> schema = new java.util.ArrayList<>();" + NL + "              if(";
+  protected final String TEXT_66 = " == null) {" + NL + "            \t  return schema;" + NL + "              }" + NL + "              java.util.Map<String, String> field = null;";
+  protected final String TEXT_67 = NL + "              routines.system.Dynamic dynamic = ";
+  protected final String TEXT_68 = ";" + NL + "              if(dynamic != null) {" + NL + "                  for(routines.system.DynamicMetadata metadata :  dynamic.metadatas) {" + NL + "                      field = new java.util.HashMap<>();" + NL + "                      field.put(\"name\", metadata.getName());" + NL + "                      field.put(\"origin_name\", metadata.getDbName());" + NL + "                      field.put(\"iskey\", \"\" + metadata.isKey());" + NL + "                      field.put(\"talend_type\", metadata.getType());" + NL + "                      field.put(\"type\", metadata.getDbType());" + NL + "                      field.put(\"nullable\", \"\" + metadata.isNullable());" + NL + "                      field.put(\"pattern\", metadata.getFormat());" + NL + "                      field.put(\"length\", \"\" + metadata.getLength());" + NL + "                      field.put(\"precision\", \"\" + metadata.getPrecision());" + NL + "                      schema.add(field);" + NL + "                  }" + NL + "              }" + NL + "              ";
+  protected final String TEXT_69 = NL + "              field = new java.util.HashMap<>();" + NL + "              field.put(\"name\", \"";
+  protected final String TEXT_70 = "\");" + NL + "              field.put(\"origin_name\", \"";
+  protected final String TEXT_71 = "\");" + NL + "              field.put(\"iskey\", \"";
+  protected final String TEXT_72 = "\");" + NL + "              field.put(\"talend_type\", \"";
+  protected final String TEXT_73 = "\");" + NL + "              field.put(\"type\", \"";
+  protected final String TEXT_74 = "\");" + NL + "              field.put(\"nullable\", \"";
+  protected final String TEXT_75 = "\");" + NL + "              field.put(\"pattern\", ";
+  protected final String TEXT_76 = ");" + NL + "              field.put(\"length\", \"";
+  protected final String TEXT_77 = "\");" + NL + "              field.put(\"precision\", \"";
+  protected final String TEXT_78 = "\");" + NL + "              schema.add(field);";
+  protected final String TEXT_79 = NL + "              return schema;" + NL + "          }" + NL + "          " + NL + "      }" + NL + "      " + NL + "      java.util.List<java.util.Map<String, String>> schema_";
+  protected final String TEXT_80 = " = new SchemaUtil_";
+  protected final String TEXT_81 = "().getSchema(";
+  protected final String TEXT_82 = NL + "      ";
+  protected final String TEXT_83 = ".addConnectionSchemaMessage(\"";
+  protected final String TEXT_84 = "\", " + NL + "        \"";
+  protected final String TEXT_85 = "\", \"";
+  protected final String TEXT_86 = "\" + iterateId, schema_";
+  protected final String TEXT_87 = "Process(globalMap);";
+  protected final String TEXT_88 = NL + "  }";
+  protected final String TEXT_89 = NL + "    globalMap.put(\"USE_CONDITION\",Boolean.TRUE);" + NL + "    globalMap.put(\"TRACE_CONDITION\", Boolean.FALSE);";
+  protected final String TEXT_90 = NL + "  " + NL + "  if (";
+  protected final String TEXT_91 = " !=null) {" + NL + "  globalMap.put(\"ENABLE_TRACES_CONNECTION_";
+  protected final String TEXT_92 = "\",Boolean.TRUE);" + NL + "  if (runTrace.isPause()) {" + NL + "   while (runTrace.isPause()) {" + NL + "   \tThread.sleep(100);" + NL + "   }" + NL + "  }\t else {" + NL + "  \t" + NL + "   \t// here we dump the line content for trace purpose" + NL + "   \tjava.util.LinkedHashMap<String, String> runTraceData = new java.util.LinkedHashMap<String,String>();" + NL + "\t";
+  protected final String TEXT_93 = NL + "\t\trunTraceData.put(\"";
+  protected final String TEXT_94 = "\", String.valueOf(";
+  protected final String TEXT_95 = "));" + NL + "\t";
+  protected final String TEXT_96 = NL + "   \trunTrace.sendTrace(\"";
+  protected final String TEXT_97 = "\", runTraceData);" + NL + "\t}" + NL + "\t";
+  protected final String TEXT_98 = "     \t\t" + NL + "       if (";
+  protected final String TEXT_99 = NL + "           ";
+  protected final String TEXT_100 = "(";
+  protected final String TEXT_101 = "    ";
+  protected final String TEXT_102 = NL + "              ";
+  protected final String TEXT_103 = NL + "\t              ";
+  protected final String TEXT_104 = NL + "                  ";
+  protected final String TEXT_105 = "  ";
+  protected final String TEXT_106 = NL + "             )";
+  protected final String TEXT_107 = NL + "         ";
+  protected final String TEXT_108 = NL + "        true";
+  protected final String TEXT_109 = "      " + NL + "    ){" + NL + "    \tglobalMap.put(\"TRACE_CONDITION\", Boolean.TRUE);" + NL + "    }";
+  protected final String TEXT_110 = NL + NL + "ok_Hash.put(\"";
+  protected final String TEXT_111 = "\", true);" + NL + "end_Hash.put(\"";
+  protected final String TEXT_112 = "\", System.currentTimeMillis());" + NL;
+  protected final String TEXT_113 = NL;
+  protected final String TEXT_114 = ".addMessage(\"end\",\"";
+  protected final String TEXT_115 = "\", end_Hash.get(\"";
+  protected final String TEXT_116 = "\")-start_Hash.get(\"";
+  protected final String TEXT_117 = "\"));";
+  protected final String TEXT_118 = NL + "\t\t\t\tif(execStat){   " + NL + "   \t \t\t\t\trunStat.updateStatOnConnection(\"";
+  protected final String TEXT_119 = "\", 0, \"ok\");" + NL + "\t\t\t\t}";
+  protected final String TEXT_120 = NL + "\t\t\t\t\t\tmtp_";
+  protected final String TEXT_121 = ".waitForEndOfQueue();";
+  protected final String TEXT_122 = NL + "\t\t\t\t";
+  protected final String TEXT_123 = NL + "   \t\t\tif (";
+  protected final String TEXT_124 = ") {" + NL + "   \t\t\t\t";
+  protected final String TEXT_125 = NL + "\t\t\t\t\tif(execStat){" + NL + "   \t \t\t\t\t\trunStat.updateStatOnConnection(\"";
+  protected final String TEXT_126 = "\", 0, \"true\");" + NL + "\t\t\t\t\t}";
+  protected final String TEXT_127 = NL + "\t\t\t\t\t\t\tmtp_";
+  protected final String TEXT_128 = "Process(globalMap);" + NL + "\t\t\t}" + NL + "" + NL + "\t\t\t";
+  protected final String TEXT_129 = "   " + NL + "   \t\t\t\telse{" + NL + "\t\t\t\t\tif(execStat){   " + NL + "   \t \t\t\t\t\trunStat.updateStatOnConnection(\"";
+  protected final String TEXT_130 = "\", 0, \"false\");" + NL + "\t\t\t\t\t}   \t " + NL + "   \t\t\t\t}";
+  protected final String TEXT_131 = NL + "\t\t\tmtp_";
+  protected final String TEXT_132 = ".waitForEndOfQueue();" + NL + "\t\t\t" + NL + "\t\t\tTalendThread errorThread_";
+  protected final String TEXT_133 = " = mtp_";
+  protected final String TEXT_134 = ".getErrorThread();" + NL;
+  protected final String TEXT_135 = NL + "\tif(errorThread_";
+  protected final String TEXT_136 = " != null) {" + NL + "\t\tif (errorThread_";
+  protected final String TEXT_137 = ".errorCode != null) {" + NL + "\t\t\tif (errorCode == null" + NL + "\t\t\t\t\t|| errorThread_";
+  protected final String TEXT_138 = ".errorCode.compareTo(errorCode) > 0) {" + NL + "\t\t\t\terrorCode = errorThread_";
+  protected final String TEXT_139 = ".errorCode;" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!status.equals(\"failure\")) {" + NL + "\t\t\tstatus = errorThread_";
+  protected final String TEXT_140 = ".status;" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
+  protected final String TEXT_141 = ".exception!=null){" + NL + "\t\t\tthrow errorThread_";
+  protected final String TEXT_142 = ".exception;" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
+  protected final String TEXT_143 = ".error!=null){" + NL + "\t\t\tthrow errorThread_";
+  protected final String TEXT_144 = ".error;" + NL + "\t\t}" + NL + "\t}else{\t\t\t\t" + NL + "\t\tInteger threadErrorCode = mtp_";
+  protected final String TEXT_145 = ".getTalendThreadResult().getErrorCode();" + NL + "\t\tString threadStatus = mtp_";
+  protected final String TEXT_146 = ".getTalendThreadResult().getStatus();" + NL + "\t\t" + NL + "\t\tif (threadErrorCode != null) {" + NL + "\t\t\tif (errorCode == null" + NL + "\t\t\t\t\t|| threadErrorCode.compareTo(errorCode) > 0) {" + NL + "\t\t\t\terrorCode = threadErrorCode;" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!status.equals(\"failure\")) {" + NL + "\t\t\tstatus = threadStatus;" + NL + "\t\t}" + NL + "\t }\t\t\t";
+  protected final String TEXT_147 = " != null) {" + NL + "\t\tInteger localErrorCode = (Integer) (((java.util.Map) threadLocal.get()).get(\"errorCode\"));" + NL + "\t\tString localStatus = (String) (((java.util.Map) threadLocal.get()).get(\"status\"));" + NL + "\t\t" + NL + "\t\tif (errorThread_";
+  protected final String TEXT_148 = ".errorCode != null) {" + NL + "\t\t\tif (localErrorCode == null || errorThread_";
+  protected final String TEXT_149 = ".errorCode.compareTo(localErrorCode) > 0) {" + NL + "\t\t\t\t((java.util.Map) threadLocal.get()).put(\"errorCode\", errorThread_";
+  protected final String TEXT_150 = ".errorCode);" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!localStatus.equals(\"failure\")) {" + NL + "\t\t\t((java.util.Map) threadLocal.get()).put(\"status\", errorThread_";
+  protected final String TEXT_151 = ".status);" + NL + "\t\t}" + NL + "\t\tif(errorThread_";
+  protected final String TEXT_152 = ".exception;" + NL + "\t\t}\t\t" + NL + "\t}else{" + NL + "\t\tInteger threadErrorCode = mtp_";
+  protected final String TEXT_153 = ".getTalendThreadResult().getStatus();" + NL + "\t\t" + NL + "\t\tInteger localErrorCode = (Integer) (((java.util.Map) threadLocal" + NL + "\t\t\t\t.get()).get(\"errorCode\"));" + NL + "\t\tString localStatus = (String) (((java.util.Map) threadLocal" + NL + "\t\t\t\t.get()).get(\"status\"));" + NL + "" + NL + "\t\tif (threadErrorCode != null) {" + NL + "\t\t\tif (localErrorCode == null" + NL + "\t\t\t\t\t|| threadErrorCode.compareTo(localErrorCode) > 0) {" + NL + "\t\t\t\t((java.util.Map) threadLocal.get()).put(\"errorCode\"," + NL + "\t\t\t\t\t\tthreadErrorCode);" + NL + "\t\t\t}" + NL + "\t\t} " + NL + "\t\tif (!localStatus.equals(\"failure\")) {" + NL + "\t\t\t((java.util.Map) threadLocal.get()).put(\"status\"," + NL + "\t\t\t\t\tthreadStatus);" + NL + "\t\t}" + NL + "\t}";
+  protected final String TEXT_154 = NL + "\t\t\t" + NL + "\t\t\t";
+  protected final String TEXT_155 = NL + "\ttos_count_";
+  protected final String TEXT_156 = "++;";
+  protected final String TEXT_157 = NL + NL + "/**" + NL + " * [";
+  protected final String TEXT_158 = " ";
+  protected final String TEXT_159 = " ] stop" + NL + " */";
 
     // add the list of the connection names to avoid to declare two times the same name.
     public String createPrivateClassInstance(INode node, String parentLastRoot, boolean force) {
@@ -590,8 +618,11 @@ List<IConnection> allSubProcessConnection = codeGenArgument.getAllMainSubTreeCon
 String cid = node.getUniqueName();
 
 List<? extends INode> jobCatcherNodes = process.getNodesOfType("tJobStructureCatcher");
-boolean enableLogStash = jobCatcherNodes != null && !jobCatcherNodes.isEmpty();
-boolean logstashCurrent = !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend") && enableLogStash;
+boolean jobCatcherExists = jobCatcherNodes != null && !jobCatcherNodes.isEmpty();
+INode jobCatcherNode = jobCatcherExists ? jobCatcherNodes.get(0) : null;
+
+boolean enableLogStash = !Boolean.getBoolean("deactivate_extended_component_log") && jobCatcherExists;
+boolean logstashCurrent = enableLogStash && !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend");
 
 if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
 	boolean iterateInVFComp = (node.getVirtualLinkTo() != null && node.getVirtualLinkTo() == EConnectionType.ITERATE);
@@ -752,6 +783,7 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
     }
    }
   }
+  
   List<IMetadataTable> metadatas = node.getMetadataList();
   if ((!node.isSubProcessStart())&&(NodeUtil.isDataAutoPropagated(node))) {
    if (inputColName!=null) {
@@ -781,6 +813,139 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
     }
    }
   }
+  
+  //log runtime lineage
+  boolean enable_runtime_lineage_log = NodeUtil.isJobUsingRuntimeLineage(process) && jobCatcherExists && !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend");
+  if(enable_runtime_lineage_log) {//}
+  
+  List<? extends IConnection> outConns = node.getOutgoingConnections();
+  if(!outConns.isEmpty()) {
+  
+    stringBuffer.append(TEXT_59);
+    stringBuffer.append(node.getUniqueName() );
+    stringBuffer.append(TEXT_60);
+    
+  //}
+  }
+  
+  for (IConnection conn : outConns) {
+      if(!conn.getLineStyle().equals(EConnectionType.FLOW_MAIN) && !conn.getLineStyle().equals(EConnectionType.FLOW_MERGE) && !conn.getLineStyle().equals(EConnectionType.FLOW_REF)) {
+          continue;
+      }
+      
+      IMetadataTable metadata = conn.getMetadataTable();
+      if (metadata==null) {
+          continue;
+      }
+      
+      List<IMetadataColumn> columns = metadata.getListColumns();
+      
+      if(columns == null || columns.isEmpty()) {
+          continue;
+      }
+      
+      
+    stringBuffer.append(TEXT_61);
+    stringBuffer.append(conn.getUniqueName());
+    stringBuffer.append(TEXT_62);
+    stringBuffer.append(conn.getMetadataTable().getTableName());
+    stringBuffer.append(TEXT_63);
+    stringBuffer.append(NodeUtil.getPrivateConnClassName(conn) );
+    stringBuffer.append(TEXT_64);
+    stringBuffer.append(conn.getName());
+    stringBuffer.append(TEXT_65);
+    stringBuffer.append(conn.getName());
+    stringBuffer.append(TEXT_66);
+    
+          for(IMetadataColumn column : columns){
+              if("id_Dynamic".equals(column.getTalendType())) {
+              
+    stringBuffer.append(TEXT_67);
+    stringBuffer.append(conn.getName());
+    stringBuffer.append(TEXT_27);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_68);
+    
+                  continue;
+              }
+              
+              String pattern = column.getPattern();
+              if(pattern == null || pattern.isEmpty() || pattern.equals("\"\"")) {
+                  pattern = "\"\"";
+              }
+              
+    stringBuffer.append(TEXT_69);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_70);
+    stringBuffer.append(column.getOriginalDbColumnName());
+    stringBuffer.append(TEXT_71);
+    stringBuffer.append(column.isKey());
+    stringBuffer.append(TEXT_72);
+    stringBuffer.append(column.getTalendType());
+    stringBuffer.append(TEXT_73);
+    stringBuffer.append(column.getType());
+    stringBuffer.append(TEXT_74);
+    stringBuffer.append(column.isNullable());
+    stringBuffer.append(TEXT_75);
+    stringBuffer.append(pattern);
+    stringBuffer.append(TEXT_76);
+    stringBuffer.append(column.getLength());
+    stringBuffer.append(TEXT_77);
+    stringBuffer.append(column.getPrecision());
+    stringBuffer.append(TEXT_78);
+    
+          }
+          
+    stringBuffer.append(TEXT_79);
+    stringBuffer.append(conn.getUniqueName());
+    stringBuffer.append(TEXT_62);
+    stringBuffer.append(conn.getMetadataTable().getTableName());
+    stringBuffer.append(TEXT_80);
+    stringBuffer.append(conn.getUniqueName());
+    stringBuffer.append(TEXT_62);
+    stringBuffer.append(conn.getMetadataTable().getTableName());
+    stringBuffer.append(TEXT_81);
+    stringBuffer.append(conn.getName());
+    stringBuffer.append(TEXT_9);
+    
+      INode target = conn.getTarget();
+      String targetNodeId = target.getUniqueName();
+      String targetNodeComponent = target.getComponent().getName();
+      
+      
+    stringBuffer.append(TEXT_82);
+    stringBuffer.append(jobCatcherNode.getUniqueName());
+    stringBuffer.append(TEXT_83);
+    stringBuffer.append(node.getUniqueName());
+    stringBuffer.append(TEXT_44);
+    stringBuffer.append(node.getComponent().getName());
+    stringBuffer.append(TEXT_84);
+    stringBuffer.append(targetNodeId);
+    stringBuffer.append(TEXT_44);
+    stringBuffer.append(targetNodeComponent);
+    stringBuffer.append(TEXT_85);
+    stringBuffer.append(conn.getUniqueName());
+    stringBuffer.append(TEXT_86);
+    stringBuffer.append(conn.getUniqueName());
+    stringBuffer.append(TEXT_62);
+    stringBuffer.append(conn.getMetadataTable().getTableName());
+    stringBuffer.append(TEXT_9);
+    stringBuffer.append(TEXT_82);
+    stringBuffer.append(jobCatcherNode.getDesignSubjobStartNode().getUniqueName() );
+    stringBuffer.append(TEXT_87);
+    
+  }
+  
+  if(!outConns.isEmpty()) {
+  //{
+  
+    stringBuffer.append(TEXT_88);
+    
+  }
+  
+  //{
+  }
+
 //======================================TDI-17183 end=====================================
   boolean traceCodeGenerated = false;     
   for (IConnection conn : node.getOutgoingConnections()) {
@@ -788,7 +953,7 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
   	if(node.isSubProcessStart() && node.isSubProcessContainTraceBreakpoint() && !traceCodeGenerated) {
   	  traceCodeGenerated = true;
   
-    stringBuffer.append(TEXT_59);
+    stringBuffer.append(TEXT_89);
     
     }
    IMetadataTable metadata = conn.getMetadataTable();
@@ -797,29 +962,29 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
         conn.getLineStyle().equals(EConnectionType.FLOW_MERGE)) {
      if (trace && use_reaceenble) { 
   
-    stringBuffer.append(TEXT_60);
+    stringBuffer.append(TEXT_90);
     stringBuffer.append(conn.getName() );
-    stringBuffer.append(TEXT_61);
+    stringBuffer.append(TEXT_91);
     stringBuffer.append(startNodeCid);
-    stringBuffer.append(TEXT_62);
+    stringBuffer.append(TEXT_92);
     
 	for(IMetadataColumn column : metadata.getListColumns()){
 	
-    stringBuffer.append(TEXT_63);
+    stringBuffer.append(TEXT_93);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_64);
+    stringBuffer.append(TEXT_94);
     stringBuffer.append(conn.getName());
     stringBuffer.append(TEXT_27);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_65);
+    stringBuffer.append(TEXT_95);
     
     }
 	
-    stringBuffer.append(TEXT_66);
+    stringBuffer.append(TEXT_96);
     stringBuffer.append(conn.getName());
     stringBuffer.append(TEXT_44);
     stringBuffer.append(startNodeCid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_97);
     
 	    
      boolean use_breakout = ("true").equals(ElementParameterParser.getValue(conn, "__ACTIVEBREAKPOINT__"));
@@ -829,7 +994,7 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
      String logical = ElementParameterParser.getValue(conn,"__LOGICAL_OP__");
       if (metadata != null) {
       if(use_breakout && use_reaceenble){
-    stringBuffer.append(TEXT_68);
+    stringBuffer.append(TEXT_98);
      
       if ((keyColumns!=null &&keyColumns.size() > 0)|| use_advanced) { //111
         int ii = 0;
@@ -837,14 +1002,14 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
         for (Map<String, String> keyColumn : keyColumns){ // 222 -> 
           ii++;
           
-    stringBuffer.append(TEXT_69);
+    stringBuffer.append(TEXT_99);
     stringBuffer.append( ii == 1 ? "" : logical );
-    stringBuffer.append(TEXT_70);
+    stringBuffer.append(TEXT_100);
      
             if (!("").equals(keyColumn.get("FUNCTION"))) {
             
-    stringBuffer.append(TEXT_71);
-    stringBuffer.append(TEXT_72);
+    stringBuffer.append(TEXT_101);
+    stringBuffer.append(TEXT_102);
     stringBuffer.append(keyColumn.get("FUNCTION").replace("$source", conn.getName() + "." + keyColumn.get("INPUT_COLUMN")).replace("$target", keyColumn.get("RVALUE")).replace("$operator", keyColumn.get("OPERATOR")) );
     
             }else {
@@ -855,16 +1020,16 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
                 //this is only for bug:8133, when "Oject" type, and "Empty" function, and compare with "null"
                 if (keyColumn.get("RVALUE") != null && keyColumn.get("RVALUE").equals("null")){
 	            
-    stringBuffer.append(TEXT_73);
+    stringBuffer.append(TEXT_103);
     stringBuffer.append("$source $operator $target".replace("$source", conn.getName() + "." + keyColumn.get("INPUT_COLUMN")).replace("$target", keyColumn.get("RVALUE")).replace("$operator", keyColumn.get("OPERATOR")) );
     }else{
-    stringBuffer.append(TEXT_74);
+    stringBuffer.append(TEXT_104);
     stringBuffer.append("$source == null? false : $source.compareTo($target) $operator 0".replace("$source", conn.getName() + "." + keyColumn.get("INPUT_COLUMN")).replace("$target", keyColumn.get("RVALUE")).replace("$operator", keyColumn.get("OPERATOR")) );
     
 	            }
               } else {
               
-    stringBuffer.append(TEXT_75);
+    stringBuffer.append(TEXT_105);
     stringBuffer.append(TEXT_32);
     stringBuffer.append("$source $operator $target".replace("$source", conn.getName() + "." + keyColumn.get("INPUT_COLUMN")).replace("$target", keyColumn.get("RVALUE")).replace("$operator", keyColumn.get("OPERATOR")) );
     
@@ -872,24 +1037,24 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
             }
             
             
-    stringBuffer.append(TEXT_76);
+    stringBuffer.append(TEXT_106);
     
         } // <- 222
         
-    stringBuffer.append(TEXT_77);
+    stringBuffer.append(TEXT_107);
     stringBuffer.append(use_advanced? (keyColumns.size() < 1 ? "" : logical) + advancedCondition.replace("input_row", conn.getName()) : "");
      
       } else { //111 
       
-    stringBuffer.append(TEXT_78);
+    stringBuffer.append(TEXT_108);
     
       } //111
       
-    stringBuffer.append(TEXT_79);
+    stringBuffer.append(TEXT_109);
     
        }
 
-    stringBuffer.append(TEXT_80);
+    stringBuffer.append(TEXT_88);
     
       }
      }
@@ -901,28 +1066,28 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
  if (codePart.equals(ECodePart.END)) {
  log.endWork();
 
-    stringBuffer.append(TEXT_81);
+    stringBuffer.append(TEXT_110);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_82);
+    stringBuffer.append(TEXT_111);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_83);
+    stringBuffer.append(TEXT_112);
     
   String statCatcher = ElementParameterParser.getValue(node,"__TSTATCATCHER_STATS__");
   if ((node.getProcess().getNodesOfType("tStatCatcher").size() > 0) & (statCatcher.equals("true"))) {
    for (INode statCatcherNode : node.getProcess().getNodesOfType("tStatCatcher")) {
 
-    stringBuffer.append(TEXT_84);
+    stringBuffer.append(TEXT_113);
     stringBuffer.append(statCatcherNode.getUniqueName() );
-    stringBuffer.append(TEXT_85);
+    stringBuffer.append(TEXT_114);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_86);
+    stringBuffer.append(TEXT_115);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_87);
+    stringBuffer.append(TEXT_116);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_88);
-    stringBuffer.append(TEXT_84);
+    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_113);
     stringBuffer.append(statCatcherNode.getDesignSubjobStartNode().getUniqueName() );
-    stringBuffer.append(TEXT_89);
+    stringBuffer.append(TEXT_87);
     
    }
   }
@@ -935,9 +1100,9 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
 			//send the ok status to socket
 			if(stat){
 
-    stringBuffer.append(TEXT_90);
+    stringBuffer.append(TEXT_118);
     stringBuffer.append(outgoingConn.getUniqueName() );
-    stringBuffer.append(TEXT_91);
+    stringBuffer.append(TEXT_119);
     
 			}
 			
@@ -965,32 +1130,32 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
 					if (codePart.equals(ECodePart.END)) {
 						String iterateTargetNodeName = iterateConn.getTarget().getUniqueName();
 
-    stringBuffer.append(TEXT_92);
+    stringBuffer.append(TEXT_120);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_93);
+    stringBuffer.append(TEXT_121);
     
 					}
 				}
 			}
 
-    stringBuffer.append(TEXT_94);
+    stringBuffer.append(TEXT_122);
     stringBuffer.append(outgoingConn.getTarget().getUniqueName() );
-    stringBuffer.append(TEXT_89);
+    stringBuffer.append(TEXT_87);
       
 			}
 		}
 
    		if (outgoingConn.getLineStyle().equals(EConnectionType.RUN_IF)) {
 		
-    stringBuffer.append(TEXT_95);
+    stringBuffer.append(TEXT_123);
     stringBuffer.append(outgoingConn.getCondition() );
-    stringBuffer.append(TEXT_96);
+    stringBuffer.append(TEXT_124);
     //send the true status to socket
 				if(stat){
 				
-    stringBuffer.append(TEXT_97);
+    stringBuffer.append(TEXT_125);
     stringBuffer.append(outgoingConn.getUniqueName() );
-    stringBuffer.append(TEXT_98);
+    stringBuffer.append(TEXT_126);
     
 				}
 				/*check if parralel iterate call not finished from this component */
@@ -1001,24 +1166,24 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
 						if (codePart.equals(ECodePart.END)) {
 							String iterateTargetNodeName = iterateConn.getTarget().getUniqueName();
 
-    stringBuffer.append(TEXT_99);
+    stringBuffer.append(TEXT_127);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_93);
+    stringBuffer.append(TEXT_121);
     
 						}
 					}
 				}
 
-    stringBuffer.append(TEXT_94);
+    stringBuffer.append(TEXT_122);
     stringBuffer.append(outgoingConn.getTarget().getUniqueName() );
-    stringBuffer.append(TEXT_100);
+    stringBuffer.append(TEXT_128);
     
 			//send the false status to socket
 			if(stat){
 			
-    stringBuffer.append(TEXT_101);
+    stringBuffer.append(TEXT_129);
     stringBuffer.append(outgoingConn.getUniqueName() );
-    stringBuffer.append(TEXT_102);
+    stringBuffer.append(TEXT_130);
     
 			}
    		}
@@ -1026,7 +1191,7 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
   }
  }
 
-    stringBuffer.append(TEXT_84);
+    stringBuffer.append(TEXT_113);
      
 	//This part in order to feedback with the iterate_subprocess_header.javajet and iterate_subprocess_footer.javajet
 	
@@ -1037,76 +1202,76 @@ if((codePart.equals(ECodePart.END))&&(stat || logstashCurrent)){
 			if (codePart.equals(ECodePart.END)) {
 			String iterateTargetNodeName = iterateConn.getTarget().getUniqueName();
 
-    stringBuffer.append(TEXT_103);
+    stringBuffer.append(TEXT_131);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_104);
+    stringBuffer.append(TEXT_132);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_105);
+    stringBuffer.append(TEXT_133);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_106);
+    stringBuffer.append(TEXT_134);
     if(!isRunInMultiThread){
-    stringBuffer.append(TEXT_107);
+    stringBuffer.append(TEXT_135);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_108);
+    stringBuffer.append(TEXT_136);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_109);
+    stringBuffer.append(TEXT_137);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_110);
+    stringBuffer.append(TEXT_138);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_139);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_112);
+    stringBuffer.append(TEXT_140);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_141);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_114);
+    stringBuffer.append(TEXT_142);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_115);
+    stringBuffer.append(TEXT_143);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_116);
+    stringBuffer.append(TEXT_144);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_145);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_146);
     }else{
-    stringBuffer.append(TEXT_107);
+    stringBuffer.append(TEXT_135);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_119);
+    stringBuffer.append(TEXT_147);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_120);
+    stringBuffer.append(TEXT_148);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_121);
+    stringBuffer.append(TEXT_149);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_122);
+    stringBuffer.append(TEXT_150);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_123);
+    stringBuffer.append(TEXT_151);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_141);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_124);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_145);
     stringBuffer.append(iterateTargetNodeName );
-    stringBuffer.append(TEXT_125);
+    stringBuffer.append(TEXT_153);
     }
-    stringBuffer.append(TEXT_126);
+    stringBuffer.append(TEXT_154);
     
 			}
 			continue;
 		}
 	}
 
-    stringBuffer.append(TEXT_84);
+    stringBuffer.append(TEXT_113);
     if(codePart.equals(ECodePart.MAIN)){ 
-    stringBuffer.append(TEXT_127);
+    stringBuffer.append(TEXT_155);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_128);
+    stringBuffer.append(TEXT_156);
     }
-    stringBuffer.append(TEXT_129);
+    stringBuffer.append(TEXT_157);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_130);
+    stringBuffer.append(TEXT_158);
     stringBuffer.append(codePart );
-    stringBuffer.append(TEXT_131);
+    stringBuffer.append(TEXT_159);
     return stringBuffer.toString();
   }
 }

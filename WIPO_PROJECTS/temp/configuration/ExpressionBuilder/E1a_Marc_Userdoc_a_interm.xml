@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row5.dir_titular!=null?row5.dir_titular:&quot;Se debe capturar direccion&quot;">
+  <variables name="row2.sec_documento" value="0" talendType="id_Integer"/>
+  <variables name="row2.tip_documento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.num_acta_documento" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row2.num_acta" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row2.num_registro" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row2.fec_documento" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.obs_documento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.nom_solicitante" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.cod_pais" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.num_agente" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row2.fec_ingreso" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.tip_tramite" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row2.cod_status" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row2.fec_status" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row2.num_registro_poder" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row2.num_agente_old" value="null" talendType="id_Short" nullable="true"/>
+  <variables name="row2.cobro_caja" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row2.ref_pago" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.cod_titular" value="null" talendType="id_BigDecimal"/>
+  <variables name="row5.nom_titular" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.dir_titular" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.cod_pais" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.dir_titular_old" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row5.cod_pais_old" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

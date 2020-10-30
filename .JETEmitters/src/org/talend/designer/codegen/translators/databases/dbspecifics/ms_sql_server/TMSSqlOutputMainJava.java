@@ -409,72 +409,72 @@ public class TMSSqlOutputMainJava {
   protected final String TEXT_380 = "++;" + NL + "    \t\t";
   protected final String TEXT_381 = NL + "                nb_line_";
   protected final String TEXT_382 = "++;";
-  protected final String TEXT_383 = NL + "                int processedCount_";
-  protected final String TEXT_384 = " = pstmt_";
-  protected final String TEXT_385 = ".executeUpdate();" + NL + "                insertedCount_";
-  protected final String TEXT_386 = " += processedCount_";
-  protected final String TEXT_387 = ";" + NL + "                rowsToCommitCount_";
-  protected final String TEXT_388 = NL + "            } catch(java.lang.Exception e) {" + NL + "                whetherReject_";
-  protected final String TEXT_389 = " = true;";
-  protected final String TEXT_390 = NL + "                    throw(e);";
-  protected final String TEXT_391 = " = new ";
-  protected final String TEXT_392 = "Struct();";
-  protected final String TEXT_393 = NL + "                        rejectedCount_";
-  protected final String TEXT_394 = " = rejectedCount_";
-  protected final String TEXT_395 = " + 1;";
-  protected final String TEXT_396 = ".errorCode = ((java.sql.SQLException)e).getSQLState();";
-  protected final String TEXT_397 = ".errorMessage = e.getMessage() + \" - Line: \" + tos_count_";
-  protected final String TEXT_398 = NL + "                        System.err.println(e.getMessage());";
-  protected final String TEXT_399 = NL + "            }";
-  protected final String TEXT_400 = NL + "\t\t     \tint counter";
-  protected final String TEXT_401 = " = rowCount";
-  protected final String TEXT_402 = " * ";
-  protected final String TEXT_403 = " + 1;" + NL + "" + NL + "\t\t     \t \t";
-  protected final String TEXT_404 = NL + "\t\t                        counter";
-  protected final String TEXT_405 = "++;" + NL + "\t\t                        ";
-  protected final String TEXT_406 = NL + "\t\t\t\t\t\t\t\tint count_dyn_";
-  protected final String TEXT_407 = "=DynamicUtils.writeColumnsToDatabse(";
-  protected final String TEXT_408 = ", counter";
-  protected final String TEXT_409 = "-1, \"";
-  protected final String TEXT_410 = "\");" + NL + "\t\t\t\t\t\t\t\tcounter";
-  protected final String TEXT_411 = "+=count_dyn_";
-  protected final String TEXT_412 = ";" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_413 = NL + NL + "\t\t                sInsertColValue";
-  protected final String TEXT_414 = " = new BufferLine_";
-  protected final String TEXT_415 = "(" + NL + "\t\t                ";
-  protected final String TEXT_416 = NL + "\t\t                            ," + NL + "\t\t                            ";
-  protected final String TEXT_417 = NL + "\t\t                        ";
-  protected final String TEXT_418 = NL + "\t\t\t\t\t\t, ";
-  protected final String TEXT_419 = NL + "\t\t\t\t\t";
-  protected final String TEXT_420 = NL + "\t\t                );" + NL + "" + NL + "\t\t                sInsertColValueList";
-  protected final String TEXT_421 = ".add(sInsertColValue";
-  protected final String TEXT_422 = ");" + NL + "" + NL + "\t\t                rowCount";
-  protected final String TEXT_423 = "++;" + NL + "\t\t";
-  protected final String TEXT_424 = NL + "\t\t\t\t\tnb_line_";
-  protected final String TEXT_425 = NL + "\t\t                if(rowCount";
-  protected final String TEXT_426 = " == ";
-  protected final String TEXT_427 = "){" + NL + "\t\t                    int processedCount_";
-  protected final String TEXT_428 = ".executeUpdate();" + NL + "\t\t                    insertedCount_";
-  protected final String TEXT_429 = ";" + NL + "\t\t                    rowsToCommitCount_";
-  protected final String TEXT_430 = ";" + NL + "\t\t                    sInsertColValueList";
-  protected final String TEXT_431 = ".clear();" + NL + "\t\t                    rowCount";
-  protected final String TEXT_432 = " = 0;" + NL + "\t\t                    counter";
-  protected final String TEXT_433 = "=1;" + NL + "\t\t                }" + NL + NL + NL + NL;
-  protected final String TEXT_434 = NL + "\t\t\t\t\t\troutines.system.DynamicUtils.debugDynamicSql(query_";
-  protected final String TEXT_435 = ",updateSQLSplits_";
-  protected final String TEXT_436 = ");" + NL + "\t\t\t\t\t";
-  protected final String TEXT_437 = NL + "\t\t\t\t\tint count_";
-  protected final String TEXT_438 = NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_439 = NL + "\t\t\t\t\t\t\t\tquery_";
-  protected final String TEXT_440 = NL + "\t\t\t\t\t\t\tquery_";
-  protected final String TEXT_441 = ";" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_442 = NL + "    \t\tpstmt_";
-  protected final String TEXT_443 = ".addBatch();" + NL + "    \t\tnb_line_";
-  protected final String TEXT_444 = NL + "    \t\t";
-  protected final String TEXT_445 = NL + "    \t\tbatchSizeCounter_";
-  protected final String TEXT_446 = ".executeUpdate();" + NL + "                updatedCount_";
-  protected final String TEXT_447 = NL + "            int checkCount_";
-  protected final String TEXT_448 = " = -1;" + NL + "            try (java.sql.ResultSet rs_";
+  protected final String TEXT_383 = NL + "                insertedCount_";
+  protected final String TEXT_384 = " = insertedCount_";
+  protected final String TEXT_385 = " + pstmt_";
+  protected final String TEXT_386 = ".executeUpdate();";
+  protected final String TEXT_387 = NL + "            } catch(java.lang.Exception e) {" + NL + "                whetherReject_";
+  protected final String TEXT_388 = " = true;";
+  protected final String TEXT_389 = NL + "                    throw(e);";
+  protected final String TEXT_390 = " = new ";
+  protected final String TEXT_391 = "Struct();";
+  protected final String TEXT_392 = NL + "                        rejectedCount_";
+  protected final String TEXT_393 = " = rejectedCount_";
+  protected final String TEXT_394 = " + 1;";
+  protected final String TEXT_395 = ".errorCode = ((java.sql.SQLException)e).getSQLState();";
+  protected final String TEXT_396 = ".errorMessage = e.getMessage() + \" - Line: \" + tos_count_";
+  protected final String TEXT_397 = NL + "                        System.err.println(e.getMessage());";
+  protected final String TEXT_398 = NL + "            }";
+  protected final String TEXT_399 = NL + "\t\t     \tint counter";
+  protected final String TEXT_400 = " = rowCount";
+  protected final String TEXT_401 = " * ";
+  protected final String TEXT_402 = " + 1;" + NL + "" + NL + "\t\t     \t \t";
+  protected final String TEXT_403 = NL + "\t\t                        counter";
+  protected final String TEXT_404 = "++;" + NL + "\t\t                        ";
+  protected final String TEXT_405 = NL + "\t\t\t\t\t\t\t\tint count_dyn_";
+  protected final String TEXT_406 = "=DynamicUtils.writeColumnsToDatabse(";
+  protected final String TEXT_407 = ", counter";
+  protected final String TEXT_408 = "-1, \"";
+  protected final String TEXT_409 = "\");" + NL + "\t\t\t\t\t\t\t\tcounter";
+  protected final String TEXT_410 = "+=count_dyn_";
+  protected final String TEXT_411 = ";" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_412 = NL + NL + "\t\t                sInsertColValue";
+  protected final String TEXT_413 = " = new BufferLine_";
+  protected final String TEXT_414 = "(" + NL + "\t\t                ";
+  protected final String TEXT_415 = NL + "\t\t                            ," + NL + "\t\t                            ";
+  protected final String TEXT_416 = NL + "\t\t                        ";
+  protected final String TEXT_417 = NL + "\t\t\t\t\t\t, ";
+  protected final String TEXT_418 = NL + "\t\t\t\t\t";
+  protected final String TEXT_419 = NL + "\t\t                );" + NL + "" + NL + "\t\t                sInsertColValueList";
+  protected final String TEXT_420 = ".add(sInsertColValue";
+  protected final String TEXT_421 = ");" + NL + "" + NL + "\t\t                rowCount";
+  protected final String TEXT_422 = "++;" + NL + "\t\t";
+  protected final String TEXT_423 = NL + "\t\t\t\t\tnb_line_";
+  protected final String TEXT_424 = NL + "\t\t                if(rowCount";
+  protected final String TEXT_425 = " == ";
+  protected final String TEXT_426 = "){" + NL + "\t\t                    insertedCount_";
+  protected final String TEXT_427 = ".executeUpdate();" + NL + "\t\t                    sInsertColValueList";
+  protected final String TEXT_428 = ".clear();" + NL + "\t\t                    rowCount";
+  protected final String TEXT_429 = " = 0;" + NL + "\t\t                    counter";
+  protected final String TEXT_430 = "=1;" + NL + "\t\t                }" + NL + NL + NL + NL;
+  protected final String TEXT_431 = NL + "\t\t\t\t\t\troutines.system.DynamicUtils.debugDynamicSql(query_";
+  protected final String TEXT_432 = ",updateSQLSplits_";
+  protected final String TEXT_433 = ");" + NL + "\t\t\t\t\t";
+  protected final String TEXT_434 = NL + "\t\t\t\t\tint count_";
+  protected final String TEXT_435 = NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_436 = NL + "\t\t\t\t\t\t\t\tquery_";
+  protected final String TEXT_437 = NL + "\t\t\t\t\t\t\tquery_";
+  protected final String TEXT_438 = ";" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_439 = NL + "    \t\tpstmt_";
+  protected final String TEXT_440 = ".addBatch();" + NL + "    \t\tnb_line_";
+  protected final String TEXT_441 = NL + "    \t\t";
+  protected final String TEXT_442 = NL + "    \t\tbatchSizeCounter_";
+  protected final String TEXT_443 = NL + "                updatedCount_";
+  protected final String TEXT_444 = " = updatedCount_";
+  protected final String TEXT_445 = ".executeUpdate();" + NL + "        \t    ";
+  protected final String TEXT_446 = NL + "            int checkCount_";
+  protected final String TEXT_447 = " = -1;" + NL + "            try (java.sql.ResultSet rs_";
+  protected final String TEXT_448 = " = pstmt_";
   protected final String TEXT_449 = ".executeQuery()) {" + NL + "                while(rs_";
   protected final String TEXT_450 = ".next()) {" + NL + "                    checkCount_";
   protected final String TEXT_451 = " = rs_";
@@ -493,132 +493,124 @@ public class TMSSqlOutputMainJava {
   protected final String TEXT_464 = ";" + NL + "\t\t\t\t\t\t\t     ";
   protected final String TEXT_465 = NL + "\t\t\t\t\t\t\t         query_";
   protected final String TEXT_466 = NL + "                    globalMap.put(\"";
-  protected final String TEXT_467 = NL + "                    int processedCount_";
-  protected final String TEXT_468 = " = pstmtUpdate_";
-  protected final String TEXT_469 = ".executeUpdate();" + NL + "                    updatedCount_";
-  protected final String TEXT_470 = ";" + NL + "                    rowsToCommitCount_";
-  protected final String TEXT_471 = ";" + NL + "                    nb_line_";
-  protected final String TEXT_472 = "++;" + NL + "        \t\t\t";
-  protected final String TEXT_473 = NL + "                } catch(java.lang.Exception e) {" + NL + "                    whetherReject_";
-  protected final String TEXT_474 = NL + "                        throw(e);";
-  protected final String TEXT_475 = NL + "                    \tnb_line_";
-  protected final String TEXT_476 = "++;" + NL + "                    \t";
-  protected final String TEXT_477 = NL + "                                ";
-  protected final String TEXT_478 = NL + "                            rejectedCount_";
-  protected final String TEXT_479 = NL + "                            System.err.println(e.getMessage());";
-  protected final String TEXT_480 = NL + "                }" + NL + "            } else {";
-  protected final String TEXT_481 = NL + "\t\t\t\t\t\tDynamicUtils.writeColumnsToDatabse(";
-  protected final String TEXT_482 = ", pstmtInsert_";
-  protected final String TEXT_483 = " = pstmtInsert_";
-  protected final String TEXT_484 = ".executeUpdate();" + NL + "                    insertedCount_";
-  protected final String TEXT_485 = NL + "                }" + NL + "            }";
-  protected final String TEXT_486 = NL + "            int updateFlag_";
-  protected final String TEXT_487 = "=0;";
-  protected final String TEXT_488 = NL + "\t\t\t\t\troutines.system.DynamicUtils.debugDynamicSql(query_";
-  protected final String TEXT_489 = ");" + NL + "\t\t\t\t";
-  protected final String TEXT_490 = NL + NL + "\t\t\t\t\tint count_";
-  protected final String TEXT_491 = NL + "\t\t\t\t\t\t\t\t\tquery_";
-  protected final String TEXT_492 = ";" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_493 = NL + "                updateFlag_";
-  protected final String TEXT_494 = "=pstmtUpdate_";
-  protected final String TEXT_495 = " = updatedCount_";
-  protected final String TEXT_496 = "+updateFlag_";
-  protected final String TEXT_497 = " += updateFlag_";
-  protected final String TEXT_498 = ";" + NL + "            if(updateFlag_";
-  protected final String TEXT_499 = " == 0) {" + NL + "            \t";
-  protected final String TEXT_500 = NL + "\t\t\t\tquery_";
-  protected final String TEXT_501 = " = new StringBuffer(\"\");" + NL + "        \t\t";
-  protected final String TEXT_502 = NL + "    \t\t\t}else{" + NL + "    \t\t\t\tnb_line_";
-  protected final String TEXT_503 = "++;" + NL + "    \t\t\t\t";
-  protected final String TEXT_504 = NL + "    \t\t\t}" + NL + "                } catch(java.lang.Exception e) {" + NL + "                    whetherReject_";
-  protected final String TEXT_505 = NL + "                } finally {" + NL + "\t\t\t\t    ";
-  protected final String TEXT_506 = NL + "\t\t\t\t}";
-  protected final String TEXT_507 = NL + "\t                        query_";
-  protected final String TEXT_508 = ";" + NL + "\t                        ";
-  protected final String TEXT_509 = NL + "         \t";
-  protected final String TEXT_510 = NL + "\t\t\t";
-  protected final String TEXT_511 = ".executeUpdate();" + NL + "                deletedCount_";
-  protected final String TEXT_512 = ";" + NL + "                nb_line_";
-  protected final String TEXT_513 = NL + "                \tnb_line_";
-  protected final String TEXT_514 = "++;" + NL + "                \t";
-  protected final String TEXT_515 = NL + NL + "        java.sql.ResultSet rs_";
-  protected final String TEXT_516 = ".executeQuery();" + NL + "        int checkCount_";
-  protected final String TEXT_517 = " = -1;" + NL + "        while(rs_";
-  protected final String TEXT_518 = ".next()) {" + NL + "            checkCount_";
-  protected final String TEXT_519 = ".getInt(1);" + NL + "        }" + NL + "" + NL + "        if (checkCount_";
-  protected final String TEXT_520 = " < 1) {";
-  protected final String TEXT_521 = NL + "            } catch(java.lang.Exception e) {" + NL + "\t\t\t\twhetherReject_";
-  protected final String TEXT_522 = NL + "                throw(e);";
-  protected final String TEXT_523 = NL + "            \tnb_line_";
-  protected final String TEXT_524 = "++;" + NL + "            \t";
-  protected final String TEXT_525 = NL + "\t            ";
-  protected final String TEXT_526 = NL + "                \trejectedCount_";
-  protected final String TEXT_527 = " + 1;" + NL + "                \t";
-  protected final String TEXT_528 = NL + "                            System.err.print(e.getMessage());";
-  protected final String TEXT_529 = NL + "            if(!whetherReject_";
-  protected final String TEXT_530 = NL + "            \t//////////batch execute by batch size///////" + NL + "            \tclass LimitBytesHelper_";
-  protected final String TEXT_531 = "{" + NL + "            \t\tpublic int limitBytePart1(int counter,java.sql.PreparedStatement pstmt_";
-  protected final String TEXT_532 = ") throws Exception {" + NL + "                try {" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_533 = NL + "\t\t\t\t\t\tfor(int countEach_";
-  protected final String TEXT_534 = ": pstmt_";
-  protected final String TEXT_535 = ".executeBatch()) {" + NL + "\t\t\t\t\t\t\tif(countEach_";
-  protected final String TEXT_536 = " == -2 || countEach_";
-  protected final String TEXT_537 = " == -3) {" + NL + "\t\t\t\t\t\t\t\tbreak;" + NL + "\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\tcounter += countEach_";
-  protected final String TEXT_538 = ";" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_539 = NL + "                }catch (java.sql.BatchUpdateException e){" + NL + "                \t";
-  protected final String TEXT_540 = NL + "                \t\tthrow(e);" + NL + "                \t";
-  protected final String TEXT_541 = NL + "                \tint countSum_";
-  protected final String TEXT_542 = " = 0;" + NL + "\t\t\t\t\tfor(int countEach_";
-  protected final String TEXT_543 = ": e.getUpdateCounts()) {" + NL + "\t\t\t\t\t\tcounter += (countEach_";
-  protected final String TEXT_544 = " < 0 ? 0 : countEach_";
-  protected final String TEXT_545 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t" + NL + "            \t    \t";
-  protected final String TEXT_546 = NL + "                \t\tSystem.err.println(e.getMessage());" + NL + "                \t";
-  protected final String TEXT_547 = NL + "               \t\t\t }" + NL + "    \t\t\t\treturn counter;" + NL + "            \t}" + NL + "            \t" + NL + "            \tpublic int limitBytePart2(int counter,java.sql.PreparedStatement pstmt_";
-  protected final String TEXT_548 = ") throws Exception {" + NL + "                try {" + NL + "                \t\t";
-  protected final String TEXT_549 = NL + "\t\t\t\t\t\tthrow(e);" + NL + "                \t";
-  protected final String TEXT_550 = NL + "                \t" + NL + "\t\t\t\t\tfor(int countEach_";
-  protected final String TEXT_551 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t\t" + NL + "            \t    \t";
-  protected final String TEXT_552 = NL + "                        System.err.println(e.getMessage());" + NL + "                \t";
-  protected final String TEXT_553 = NL + "                \t\t}\t" + NL + "                \treturn counter;\t" + NL + "            \t}" + NL + "            }";
-  protected final String TEXT_554 = NL + "    \t\tif ((batchSize_";
-  protected final String TEXT_555 = " > 0) && (batchSize_";
-  protected final String TEXT_556 = " <= batchSizeCounter_";
-  protected final String TEXT_557 = ")) {" + NL + "    \t\t" + NL + "    \t\t            ";
-  protected final String TEXT_558 = NL + "            \t    \t\tinsertedCount_";
-  protected final String TEXT_559 = " = new LimitBytesHelper_";
-  protected final String TEXT_560 = "().limitBytePart1(insertedCount_";
-  protected final String TEXT_561 = ",pstmt_";
-  protected final String TEXT_562 = ");" + NL + "            \t    \t\trowsToCommitCount_";
-  protected final String TEXT_563 = " = insertedCount_";
-  protected final String TEXT_564 = ";" + NL + "            \t    \t";
-  protected final String TEXT_565 = NL + "            \t    \t\tupdatedCount_";
-  protected final String TEXT_566 = "().limitBytePart1(updatedCount_";
-  protected final String TEXT_567 = NL + "            \t    \t    deletedCount_";
-  protected final String TEXT_568 = "().limitBytePart1(deletedCount_";
-  protected final String TEXT_569 = ");" + NL + "            \t    \t    rowsToCommitCount_";
-  protected final String TEXT_570 = " = deletedCount_";
-  protected final String TEXT_571 = NL + "    \t\t\t" + NL + "\t\t\t    batchSizeCounter_";
-  protected final String TEXT_572 = " = 0;" + NL + "\t\t\t}" + NL + "    \t\t";
-  protected final String TEXT_573 = NL + NL + "    \t////////////commit every////////////" + NL + "    \t\t\t";
-  protected final String TEXT_574 = NL + "    \t\t    commitCounter_";
-  protected final String TEXT_575 = "++;" + NL + "                if(commitEvery_";
-  protected final String TEXT_576 = " <= commitCounter_";
-  protected final String TEXT_577 = NL + "                if ((batchSize_";
-  protected final String TEXT_578 = " > 0) && (batchSizeCounter_";
-  protected final String TEXT_579 = " > 0)) {" + NL + "    \t\t            ";
-  protected final String TEXT_580 = ");" + NL + "            \t    \t";
-  protected final String TEXT_581 = NL + "            \tbatchSizeCounter_";
-  protected final String TEXT_582 = " = 0;" + NL + "            \t}";
-  protected final String TEXT_583 = NL + "                if(rowsToCommitCount_";
-  protected final String TEXT_584 = " != 0){" + NL + "                \t";
-  protected final String TEXT_585 = NL + "                }" + NL + "                conn_";
-  protected final String TEXT_586 = ".commit();" + NL + "                if(rowsToCommitCount_";
-  protected final String TEXT_587 = NL + "                \trowsToCommitCount_";
-  protected final String TEXT_588 = " = 0;\t" + NL + "                }" + NL + "                commitCounter_";
-  protected final String TEXT_589 = "=0;" + NL + "                }";
-  protected final String TEXT_590 = NL + "\t\tif (isShareIdentity_";
-  protected final String TEXT_591 = " ) {" + NL + "        \t stmt_";
-  protected final String TEXT_592 = " +\"] OFF\");" + NL + "        }";
+  protected final String TEXT_467 = NL + "                    updatedCount_";
+  protected final String TEXT_468 = " + pstmtUpdate_";
+  protected final String TEXT_469 = ".executeUpdate();" + NL + "                    nb_line_";
+  protected final String TEXT_470 = "++;" + NL + "        \t\t\t";
+  protected final String TEXT_471 = NL + "                } catch(java.lang.Exception e) {" + NL + "                    whetherReject_";
+  protected final String TEXT_472 = NL + "                        throw(e);";
+  protected final String TEXT_473 = NL + "                    \tnb_line_";
+  protected final String TEXT_474 = "++;" + NL + "                    \t";
+  protected final String TEXT_475 = NL + "                                ";
+  protected final String TEXT_476 = NL + "                            rejectedCount_";
+  protected final String TEXT_477 = NL + "                            System.err.println(e.getMessage());";
+  protected final String TEXT_478 = NL + "                }" + NL + "            } else {";
+  protected final String TEXT_479 = NL + "\t\t\t\t\t\tDynamicUtils.writeColumnsToDatabse(";
+  protected final String TEXT_480 = ", pstmtInsert_";
+  protected final String TEXT_481 = NL + "                    insertedCount_";
+  protected final String TEXT_482 = " + pstmtInsert_";
+  protected final String TEXT_483 = NL + "                }" + NL + "            }";
+  protected final String TEXT_484 = NL + "            int updateFlag_";
+  protected final String TEXT_485 = "=0;";
+  protected final String TEXT_486 = NL + "\t\t\t\t\troutines.system.DynamicUtils.debugDynamicSql(query_";
+  protected final String TEXT_487 = ");" + NL + "\t\t\t\t";
+  protected final String TEXT_488 = NL + NL + "\t\t\t\t\tint count_";
+  protected final String TEXT_489 = NL + "\t\t\t\t\t\t\t\t\tquery_";
+  protected final String TEXT_490 = ";" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_491 = NL + "                updateFlag_";
+  protected final String TEXT_492 = "=pstmtUpdate_";
+  protected final String TEXT_493 = ".executeUpdate();" + NL + "                updatedCount_";
+  protected final String TEXT_494 = "+updateFlag_";
+  protected final String TEXT_495 = ";" + NL + "            if(updateFlag_";
+  protected final String TEXT_496 = " == 0) {" + NL + "            \t";
+  protected final String TEXT_497 = NL + "\t\t\t\tquery_";
+  protected final String TEXT_498 = " = new StringBuffer(\"\");" + NL + "        \t\t";
+  protected final String TEXT_499 = ".executeUpdate();" + NL + "\t\t\t\t\tnb_line_";
+  protected final String TEXT_500 = NL + "    \t\t\t}else{" + NL + "    \t\t\t\tnb_line_";
+  protected final String TEXT_501 = "++;" + NL + "    \t\t\t\t" + NL + "    \t\t\t\t";
+  protected final String TEXT_502 = NL + "    \t\t\t}" + NL + "                } catch(java.lang.Exception e) {" + NL + "                    whetherReject_";
+  protected final String TEXT_503 = NL + "                } finally {" + NL + "\t\t\t\t    ";
+  protected final String TEXT_504 = NL + "\t\t\t\t}";
+  protected final String TEXT_505 = NL + "\t                        query_";
+  protected final String TEXT_506 = ";" + NL + "\t                        ";
+  protected final String TEXT_507 = NL + "         \t";
+  protected final String TEXT_508 = NL + "\t\t\t";
+  protected final String TEXT_509 = NL + "                deletedCount_";
+  protected final String TEXT_510 = " = deletedCount_";
+  protected final String TEXT_511 = ".executeUpdate();" + NL + "                nb_line_";
+  protected final String TEXT_512 = NL + "                \tnb_line_";
+  protected final String TEXT_513 = "++;" + NL + "                \t";
+  protected final String TEXT_514 = NL + NL + "        java.sql.ResultSet rs_";
+  protected final String TEXT_515 = ".executeQuery();" + NL + "        int checkCount_";
+  protected final String TEXT_516 = " = -1;" + NL + "        while(rs_";
+  protected final String TEXT_517 = ".next()) {" + NL + "            checkCount_";
+  protected final String TEXT_518 = ".getInt(1);" + NL + "        }" + NL + "" + NL + "        if (checkCount_";
+  protected final String TEXT_519 = " < 1) {";
+  protected final String TEXT_520 = NL + "            } catch(java.lang.Exception e) {" + NL + "\t\t\t\twhetherReject_";
+  protected final String TEXT_521 = NL + "                throw(e);";
+  protected final String TEXT_522 = NL + "            \tnb_line_";
+  protected final String TEXT_523 = "++;" + NL + "            \t";
+  protected final String TEXT_524 = NL + "\t            ";
+  protected final String TEXT_525 = NL + "                \trejectedCount_";
+  protected final String TEXT_526 = " + 1;" + NL + "                \t";
+  protected final String TEXT_527 = NL + "                            System.err.print(e.getMessage());";
+  protected final String TEXT_528 = NL + "            if(!whetherReject_";
+  protected final String TEXT_529 = NL + "            \t//////////batch execute by batch size///////" + NL + "            \tclass LimitBytesHelper_";
+  protected final String TEXT_530 = "{" + NL + "            \t\tpublic int limitBytePart1(int counter,java.sql.PreparedStatement pstmt_";
+  protected final String TEXT_531 = ") throws Exception {" + NL + "                try {" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_532 = NL + "\t\t\t\t\t\tfor(int countEach_";
+  protected final String TEXT_533 = ": pstmt_";
+  protected final String TEXT_534 = ".executeBatch()) {" + NL + "\t\t\t\t\t\t\tif(countEach_";
+  protected final String TEXT_535 = " == -2 || countEach_";
+  protected final String TEXT_536 = " == -3) {" + NL + "\t\t\t\t\t\t\t\tbreak;" + NL + "\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\tcounter += countEach_";
+  protected final String TEXT_537 = ";" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_538 = NL + "                }catch (java.sql.BatchUpdateException e){" + NL + "                \t";
+  protected final String TEXT_539 = NL + "                \t\tthrow(e);" + NL + "                \t";
+  protected final String TEXT_540 = NL + "                \tint countSum_";
+  protected final String TEXT_541 = " = 0;" + NL + "\t\t\t\t\tfor(int countEach_";
+  protected final String TEXT_542 = ": e.getUpdateCounts()) {" + NL + "\t\t\t\t\t\tcounter += (countEach_";
+  protected final String TEXT_543 = " < 0 ? 0 : countEach_";
+  protected final String TEXT_544 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t" + NL + "            \t    \t";
+  protected final String TEXT_545 = NL + "                \t\tSystem.err.println(e.getMessage());" + NL + "                \t";
+  protected final String TEXT_546 = NL + "               \t\t\t }" + NL + "    \t\t\t\treturn counter;" + NL + "            \t}" + NL + "            \t" + NL + "            \tpublic int limitBytePart2(int counter,java.sql.PreparedStatement pstmt_";
+  protected final String TEXT_547 = ") throws Exception {" + NL + "                try {" + NL + "                \t\t";
+  protected final String TEXT_548 = NL + "\t\t\t\t\t\tthrow(e);" + NL + "                \t";
+  protected final String TEXT_549 = NL + "                \t" + NL + "\t\t\t\t\tfor(int countEach_";
+  protected final String TEXT_550 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t\t" + NL + "            \t    \t";
+  protected final String TEXT_551 = NL + "                        System.err.println(e.getMessage());" + NL + "                \t";
+  protected final String TEXT_552 = NL + "                \t\t}\t" + NL + "                \treturn counter;\t" + NL + "            \t}" + NL + "            }";
+  protected final String TEXT_553 = NL + "    \t\tif ((batchSize_";
+  protected final String TEXT_554 = " > 0) && (batchSize_";
+  protected final String TEXT_555 = " <= batchSizeCounter_";
+  protected final String TEXT_556 = ")) {" + NL + "    \t\t" + NL + "    \t\t            ";
+  protected final String TEXT_557 = NL + "            \t    \t\tinsertedCount_";
+  protected final String TEXT_558 = " = new LimitBytesHelper_";
+  protected final String TEXT_559 = "().limitBytePart1(insertedCount_";
+  protected final String TEXT_560 = ",pstmt_";
+  protected final String TEXT_561 = ");" + NL + "            \t    \t";
+  protected final String TEXT_562 = NL + "            \t    \t\tupdatedCount_";
+  protected final String TEXT_563 = "().limitBytePart1(updatedCount_";
+  protected final String TEXT_564 = NL + "            \t    \t    deletedCount_";
+  protected final String TEXT_565 = "().limitBytePart1(deletedCount_";
+  protected final String TEXT_566 = NL + "    \t\t\t" + NL + "\t\t\t    batchSizeCounter_";
+  protected final String TEXT_567 = " = 0;" + NL + "\t\t\t}" + NL + "    \t\t";
+  protected final String TEXT_568 = NL + NL + "    \t////////////commit every////////////" + NL + "    \t\t\t";
+  protected final String TEXT_569 = NL + "    \t\t    commitCounter_";
+  protected final String TEXT_570 = "++;" + NL + "                if(commitEvery_";
+  protected final String TEXT_571 = " <= commitCounter_";
+  protected final String TEXT_572 = NL + "                if ((batchSize_";
+  protected final String TEXT_573 = " > 0) && (batchSizeCounter_";
+  protected final String TEXT_574 = " > 0)) {" + NL + "    \t\t            ";
+  protected final String TEXT_575 = NL + "            \tbatchSizeCounter_";
+  protected final String TEXT_576 = " = 0;" + NL + "            \t}";
+  protected final String TEXT_577 = NL + "                \t";
+  protected final String TEXT_578 = NL + "                \tconn_";
+  protected final String TEXT_579 = ".commit();" + NL + "            \t\t";
+  protected final String TEXT_580 = NL + "                \tcommitCounter_";
+  protected final String TEXT_581 = "=0;" + NL + "                }";
+  protected final String TEXT_582 = NL + "\t\tif (isShareIdentity_";
+  protected final String TEXT_583 = " ) {" + NL + "        \t stmt_";
+  protected final String TEXT_584 = " +\"] OFF\");" + NL + "        }";
 
     public static final String INSERT_COLUMN_NAME = "insertColName";
     public static final String INSERT_VALUE_STMT = "insertValueStmt";
@@ -8619,33 +8611,27 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(TEXT_383);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_384);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_385);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
+    dbLog.data().inserting(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_387);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_359);
-    dbLog.data().inserting(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_388);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
     
                 if (("true").equals(dieOnError)) {
                     
-    stringBuffer.append(TEXT_390);
+    stringBuffer.append(TEXT_389);
     
                 } else {
                     if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
                         
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                         for(IMetadataColumn column : columnList) {
                             
@@ -8661,29 +8647,29 @@ if(incomingConnName != null && columnList != null){
     
                         }
                         
+    stringBuffer.append(TEXT_392);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_21);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_21);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                     } else {
                     	dbLog.logPrintedException("e.getMessage()");
                         
-    stringBuffer.append(TEXT_398);
+    stringBuffer.append(TEXT_397);
     
                     }
                 }
                 
-    stringBuffer.append(TEXT_399);
+    stringBuffer.append(TEXT_398);
     }///end use batch
     
 		    } else if("SINGLE_INSERT".equals(dataAction)){
@@ -8697,23 +8683,23 @@ if(incomingConnName != null && columnList != null){
 		        if(!isDynamic) {
 		        	if(isSpecifyIdentityKey){
 		     		
+    stringBuffer.append(TEXT_399);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_400);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_401);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_402);
     stringBuffer.append(insertableCount-1);
-    stringBuffer.append(TEXT_403);
+    stringBuffer.append(TEXT_402);
     
 		     	 	}else{
 					
+    stringBuffer.append(TEXT_399);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_400);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_401);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_402);
     stringBuffer.append(insertableCount);
-    stringBuffer.append(TEXT_403);
+    stringBuffer.append(TEXT_402);
     
 		     	 	}
 				}
@@ -8725,9 +8711,9 @@ if(incomingConnName != null && columnList != null){
 		                        String typeToGenerate = JavaTypesManager.getTypeToGenerate(column.getColumn().getTalendType(), column.getColumn().isNullable());
 		                        siOperation.generateSetStmt(typeToGenerate,column,incomingConnName,cid,ignoreDateOutofRange,dbmsId);
 		                        
-    stringBuffer.append(TEXT_404);
+    stringBuffer.append(TEXT_403);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_405);
+    stringBuffer.append(TEXT_404);
     
 		                    }
 		                }
@@ -8736,32 +8722,32 @@ if(incomingConnName != null && columnList != null){
 							String typeToGenerate = JavaTypesManager.getTypeToGenerate(dynamicColumn.getColumn().getTalendType(), dynamicColumn.getColumn().isNullable());
 							if("Dynamic".equals(typeToGenerate)) {
 							
-    stringBuffer.append(TEXT_406);
+    stringBuffer.append(TEXT_405);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_407);
+    stringBuffer.append(TEXT_406);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
     stringBuffer.append(TEXT_306);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
+    stringBuffer.append(TEXT_407);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_409);
+    stringBuffer.append(TEXT_408);
     stringBuffer.append(dbmsId);
+    stringBuffer.append(TEXT_409);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_410);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_411);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_412);
     
 							}
 						}
 		                
+    stringBuffer.append(TEXT_412);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_413);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_414);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_415);
     
 		                int count =0;
 		                for(Column column : colStruct) {
@@ -8771,15 +8757,15 @@ if(incomingConnName != null && columnList != null){
 	                   			}
 		                        if(count != 0) {
 		                            
-    stringBuffer.append(TEXT_416);
+    stringBuffer.append(TEXT_415);
     
 		                        }
 		                        
-    stringBuffer.append(TEXT_417);
+    stringBuffer.append(TEXT_416);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(column.getName());
-    stringBuffer.append(TEXT_417);
+    stringBuffer.append(TEXT_416);
     
 		                        count++;
 		                    }
@@ -8789,54 +8775,48 @@ if(incomingConnName != null && columnList != null){
 					String typeToGenerate = JavaTypesManager.getTypeToGenerate(dynamicColumn.getColumn().getTalendType(), dynamicColumn.getColumn().isNullable());
 					if("Dynamic".equals(typeToGenerate)) {
 					
-    stringBuffer.append(TEXT_418);
+    stringBuffer.append(TEXT_417);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
-    stringBuffer.append(TEXT_419);
+    stringBuffer.append(TEXT_418);
     
 					}
 				    }
 		                
+    stringBuffer.append(TEXT_419);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_420);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_421);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_422);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_423);
     
 				if(isDynamic) {
 		
-    stringBuffer.append(TEXT_424);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_423);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_422);
     
 				}
 		
-    stringBuffer.append(TEXT_425);
+    stringBuffer.append(TEXT_424);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_426);
+    stringBuffer.append(TEXT_425);
     stringBuffer.append(batchSize);
-    stringBuffer.append(TEXT_427);
+    stringBuffer.append(TEXT_426);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_384);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_428);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
+    stringBuffer.append(TEXT_385);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_427);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_428);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_429);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_430);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_431);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_432);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_433);
       }else if(("UPDATE").equals(dataAction)) {
             int counterCol = 1;
 
@@ -8872,7 +8852,7 @@ if(incomingConnName != null && columnList != null){
 				if("Dynamic".equals(typeToGenerate)) {
 					if(isEnableDebug) {
 					
-    stringBuffer.append(TEXT_434);
+    stringBuffer.append(TEXT_431);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_79);
     stringBuffer.append(incomingConnName);
@@ -8880,16 +8860,16 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(dynamicColumn.getName());
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counterCol);
-    stringBuffer.append(TEXT_435);
+    stringBuffer.append(TEXT_432);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_436);
+    stringBuffer.append(TEXT_433);
     
 					}
 
 				
-    stringBuffer.append(TEXT_437);
+    stringBuffer.append(TEXT_434);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_407);
+    stringBuffer.append(TEXT_406);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
@@ -8911,13 +8891,13 @@ if(incomingConnName != null && columnList != null){
 					if(whereSupportNull && column.getColumn().isNullable()) {
 						if(isDynamic){
 						
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(talendDynCol.getLabel(),column, counterCol, incomingConnName, cid, NORMAL_TYPE));
     stringBuffer.append(TEXT_70);
     
 						}else{
 						
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(column, counterCol, incomingConnName, cid, NORMAL_TYPE));
     stringBuffer.append(TEXT_70);
     
@@ -8925,19 +8905,19 @@ if(incomingConnName != null && columnList != null){
 						if(isEnableDebug) {
 							if(isDynamic){
 							
-    stringBuffer.append(TEXT_439);
+    stringBuffer.append(TEXT_436);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(talendDynCol.getLabel(),typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_", "("+incomingConnName+"."+column.getName()+"==null)"));
-    stringBuffer.append(TEXT_412);
+    stringBuffer.append(TEXT_411);
     
 							}else{
 							
-    stringBuffer.append(TEXT_439);
+    stringBuffer.append(TEXT_436);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_", "("+incomingConnName+"."+column.getName()+"==null)"));
-    stringBuffer.append(TEXT_412);
+    stringBuffer.append(TEXT_411);
     
 							}
 						}
@@ -8952,19 +8932,19 @@ if(incomingConnName != null && columnList != null){
                     if(isEnableDebug) {
 						if(isDynamic){
 						
-    stringBuffer.append(TEXT_440);
+    stringBuffer.append(TEXT_437);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(talendDynCol.getLabel(),typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_441);
+    stringBuffer.append(TEXT_438);
     
 						}else{
 						
-    stringBuffer.append(TEXT_440);
+    stringBuffer.append(TEXT_437);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_441);
+    stringBuffer.append(TEXT_438);
     
 						}
                     }
@@ -8985,17 +8965,17 @@ if(incomingConnName != null && columnList != null){
     
             if(useBatch) {
     		
-    stringBuffer.append(TEXT_442);
+    stringBuffer.append(TEXT_439);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_443);
+    stringBuffer.append(TEXT_440);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_380);
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_444);
+    stringBuffer.append(TEXT_441);
     
     		dbLog.data().addingToBatch(dbLog.var("nb_line"), dbLog.str(dataAction));
     		
-    stringBuffer.append(TEXT_445);
+    stringBuffer.append(TEXT_442);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_380);
     
@@ -9013,36 +8993,30 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_383);
+    stringBuffer.append(TEXT_443);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_384);
+    stringBuffer.append(TEXT_444);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_385);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_446);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_445);
+    dbLog.data().updating(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_387);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_359);
-    dbLog.data().updating(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_388);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
     
                 if (("true").equals(dieOnError)) {
                     
-    stringBuffer.append(TEXT_390);
+    stringBuffer.append(TEXT_389);
     
                 } else {
                     if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
                         
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                         for(IMetadataColumn column : columnList) {
                             
@@ -9058,29 +9032,29 @@ if(incomingConnName != null && columnList != null){
     
                         }
                         
+    stringBuffer.append(TEXT_392);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_21);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_21);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                     } else {
                     	dbLog.logPrintedException("e.getMessage()");
                         
-    stringBuffer.append(TEXT_398);
+    stringBuffer.append(TEXT_397);
     
                     }
                 }
                 
-    stringBuffer.append(TEXT_399);
+    stringBuffer.append(TEXT_398);
     }
     
         } else if (("INSERT_OR_UPDATE").equals(dataAction)) {
@@ -9108,11 +9082,11 @@ if(incomingConnName != null && columnList != null){
                 }
             }
             
+    stringBuffer.append(TEXT_446);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_447);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_448);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_384);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_449);
     stringBuffer.append(cid);
@@ -9166,7 +9140,7 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(dynamicColumn.getName());
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counterCol);
-    stringBuffer.append(TEXT_435);
+    stringBuffer.append(TEXT_432);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_456);
     
@@ -9174,7 +9148,7 @@ if(incomingConnName != null && columnList != null){
 						
     stringBuffer.append(TEXT_457);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_407);
+    stringBuffer.append(TEXT_406);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
@@ -9200,17 +9174,17 @@ if(incomingConnName != null && columnList != null){
 							
     stringBuffer.append(TEXT_461);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(talendDynCol.getLabel(),column, counterCol, incomingConnName, cid, UPDATE_TYPE));
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     
 							}else{
 							
     stringBuffer.append(TEXT_462);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(column, counterCol, incomingConnName, cid, UPDATE_TYPE));
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     
 							}
 						
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(column, counterCol, incomingConnName, cid, UPDATE_TYPE));
     stringBuffer.append(TEXT_70);
     
@@ -9244,19 +9218,19 @@ if(incomingConnName != null && columnList != null){
 						if(isEnableDebug) {
 							if(isDynamic){
 							
-    stringBuffer.append(TEXT_439);
+    stringBuffer.append(TEXT_436);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(talendDynCol.getLabel(),typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_412);
+    stringBuffer.append(TEXT_411);
     
 							}else{
 							
-    stringBuffer.append(TEXT_439);
+    stringBuffer.append(TEXT_436);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, column, incomingConnName, cid, "query_" , counterCol, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_412);
+    stringBuffer.append(TEXT_411);
     
 							}
                         }
@@ -9284,44 +9258,38 @@ if(incomingConnName != null && columnList != null){
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
     stringBuffer.append(TEXT_467);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_444);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_468);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_469);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_470);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
+    dbLog.data().updating(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_471);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_472);
-    dbLog.data().updating(dbLog.var("nb_line"));
-    stringBuffer.append(TEXT_473);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     
                     if (("true").equals(dieOnError)) {
                         
-    stringBuffer.append(TEXT_474);
+    stringBuffer.append(TEXT_472);
     
                     } else {
                     
-    stringBuffer.append(TEXT_475);
+    stringBuffer.append(TEXT_473);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_476);
+    stringBuffer.append(TEXT_474);
     
                         if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                             for(IMetadataColumn column : columnList) {
                                 
-    stringBuffer.append(TEXT_477);
+    stringBuffer.append(TEXT_475);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(column.getLabel());
@@ -9333,29 +9301,29 @@ if(incomingConnName != null && columnList != null){
     
                             }
                             
-    stringBuffer.append(TEXT_478);
+    stringBuffer.append(TEXT_476);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_16);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_16);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_16);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                         } else {
                         	dbLog.logPrintedException("e.getMessage()");
                             
-    stringBuffer.append(TEXT_479);
+    stringBuffer.append(TEXT_477);
     
                         }
                     }
                     
-    stringBuffer.append(TEXT_480);
+    stringBuffer.append(TEXT_478);
     
                 int counterInsert = 1;
 
@@ -9391,7 +9359,7 @@ if(incomingConnName != null && columnList != null){
 					Column dynamicColumn = getColumn(talendDynCol);
 					if(isEnableDebug) {
     				
-    stringBuffer.append(TEXT_434);
+    stringBuffer.append(TEXT_431);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_79);
     stringBuffer.append(incomingConnName);
@@ -9407,11 +9375,11 @@ if(incomingConnName != null && columnList != null){
 					String typeToGenerate = JavaTypesManager.getTypeToGenerate(dynamicColumn.getColumn().getTalendType(), dynamicColumn.getColumn().isNullable());
 					if("Dynamic".equals(typeToGenerate)) {
 					
-    stringBuffer.append(TEXT_481);
+    stringBuffer.append(TEXT_479);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
-    stringBuffer.append(TEXT_482);
+    stringBuffer.append(TEXT_480);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counterInsert-1);
@@ -9440,47 +9408,41 @@ if(incomingConnName != null && columnList != null){
 				}//end issue0010403 date type
 
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_467);
+    stringBuffer.append(TEXT_481);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_483);
+    stringBuffer.append(TEXT_384);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_482);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_484);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_470);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_471);
+    stringBuffer.append(TEXT_469);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
     dbLog.data().inserting(dbLog.var("nb_line"));
-    stringBuffer.append(TEXT_473);
+    stringBuffer.append(TEXT_471);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     
                     if (("true").equals(dieOnError)) {
                         
-    stringBuffer.append(TEXT_474);
+    stringBuffer.append(TEXT_472);
     
                     } else {
                     
-    stringBuffer.append(TEXT_475);
+    stringBuffer.append(TEXT_473);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_476);
+    stringBuffer.append(TEXT_474);
     
                         if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
                             
     stringBuffer.append(TEXT_16);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                             for(IMetadataColumn column : columnList) {
                                 
-    stringBuffer.append(TEXT_477);
+    stringBuffer.append(TEXT_475);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(column.getLabel());
@@ -9492,35 +9454,35 @@ if(incomingConnName != null && columnList != null){
     
                             }
                             
-    stringBuffer.append(TEXT_478);
+    stringBuffer.append(TEXT_476);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_16);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_16);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_16);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                         } else {
                         	dbLog.logPrintedException("e.getMessage()");
                             
-    stringBuffer.append(TEXT_479);
+    stringBuffer.append(TEXT_477);
     
                         }
                     }
                     
-    stringBuffer.append(TEXT_485);
+    stringBuffer.append(TEXT_483);
     
         } else if (("UPDATE_OR_INSERT").equals(dataAction)) {
             
-    stringBuffer.append(TEXT_486);
+    stringBuffer.append(TEXT_484);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_487);
+    stringBuffer.append(TEXT_485);
     
             int counterColUpdate = 1;
 
@@ -9554,7 +9516,7 @@ if(incomingConnName != null && columnList != null){
 				Column dynamicColumn = getColumn(talendDynCol);
 				if(isEnableDebug) {
 				
-    stringBuffer.append(TEXT_488);
+    stringBuffer.append(TEXT_486);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_79);
     stringBuffer.append(incomingConnName);
@@ -9562,17 +9524,17 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(dynamicColumn.getName());
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counterColUpdate);
-    stringBuffer.append(TEXT_435);
+    stringBuffer.append(TEXT_432);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_489);
+    stringBuffer.append(TEXT_487);
     
 				}
 				String typeToGenerate = JavaTypesManager.getTypeToGenerate(dynamicColumn.getColumn().getTalendType(), dynamicColumn.getColumn().isNullable());
 				if("Dynamic".equals(typeToGenerate)) {
 				
-    stringBuffer.append(TEXT_490);
+    stringBuffer.append(TEXT_488);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_407);
+    stringBuffer.append(TEXT_406);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
@@ -9598,31 +9560,31 @@ if(incomingConnName != null && columnList != null){
 							
     stringBuffer.append(TEXT_462);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(talendDynCol.getLabel(),columnUpdate, counterColUpdate, incomingConnName, cid, UPDATE_TYPE));
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     
 							}else{
 							
     stringBuffer.append(TEXT_462);
     stringBuffer.append(getManager(dbmsId, cid, node).generateSetBooleanForNullableKeyStmt(columnUpdate, counterColUpdate, incomingConnName, cid, UPDATE_TYPE));
-    stringBuffer.append(TEXT_438);
+    stringBuffer.append(TEXT_435);
     
 							}
 							if(isEnableDebug) {
 								if(isDynamic){
 								
-    stringBuffer.append(TEXT_491);
+    stringBuffer.append(TEXT_489);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(talendDynCol.getLabel(),typeToGenerate, columnUpdate, incomingConnName, cid, "query_" , counterColUpdate, "updateSQLSplits_", "(("+incomingConnName+"."+columnUpdate.getName()+"==null))"));
-    stringBuffer.append(TEXT_492);
+    stringBuffer.append(TEXT_490);
     
 								}else{
 								
-    stringBuffer.append(TEXT_491);
+    stringBuffer.append(TEXT_489);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, columnUpdate, incomingConnName, cid, "query_" , counterColUpdate, "updateSQLSplits_", "(("+incomingConnName+"."+columnUpdate.getName()+"==null))"));
-    stringBuffer.append(TEXT_492);
+    stringBuffer.append(TEXT_490);
     
 								}
 
@@ -9638,19 +9600,19 @@ if(incomingConnName != null && columnList != null){
                     if(isEnableDebug) {
 						if(isDynamic){
 						
-    stringBuffer.append(TEXT_440);
+    stringBuffer.append(TEXT_437);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid, node).retrieveSQL(talendDynCol.getLabel(),typeToGenerate, columnUpdate, incomingConnName, cid, "query_" , counterColUpdate, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_441);
+    stringBuffer.append(TEXT_438);
     
 						}else{
 						
-    stringBuffer.append(TEXT_440);
+    stringBuffer.append(TEXT_437);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, columnUpdate, incomingConnName, cid, "query_" , counterColUpdate, "updateSQLSplits_"));
-    stringBuffer.append(TEXT_441);
+    stringBuffer.append(TEXT_438);
     
 						}
                     }
@@ -9675,29 +9637,25 @@ if(incomingConnName != null && columnList != null){
     
 				}//end issue0010403 date type
 
+    stringBuffer.append(TEXT_491);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_492);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_493);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_444);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_494);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_446);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_495);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_496);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_387);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_497);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_498);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_499);
     
             	if(isEnableDebug) {
             	
-    stringBuffer.append(TEXT_500);
+    stringBuffer.append(TEXT_497);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_501);
+    stringBuffer.append(TEXT_498);
     
         		}
                 int counter = 1;
@@ -9743,11 +9701,11 @@ if(incomingConnName != null && columnList != null){
     
 						}
 					
-    stringBuffer.append(TEXT_481);
+    stringBuffer.append(TEXT_479);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
-    stringBuffer.append(TEXT_482);
+    stringBuffer.append(TEXT_480);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counter-1);
@@ -9767,51 +9725,45 @@ if(incomingConnName != null && columnList != null){
     
                 }
                 
-    stringBuffer.append(TEXT_467);
+    stringBuffer.append(TEXT_481);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_483);
+    stringBuffer.append(TEXT_384);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_482);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_484);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_470);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_471);
+    stringBuffer.append(TEXT_499);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
     dbLog.data().inserting(dbLog.var("nb_line"));
+    stringBuffer.append(TEXT_500);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_501);
+    dbLog.data().updating(dbLog.var("nb_line"));
     stringBuffer.append(TEXT_502);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_503);
-    dbLog.data().updating(dbLog.var("nb_line"));
-    stringBuffer.append(TEXT_504);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     
                     if (("true").equals(dieOnError)) {
                         
-    stringBuffer.append(TEXT_474);
+    stringBuffer.append(TEXT_472);
     
                     } else {
                     
-    stringBuffer.append(TEXT_475);
+    stringBuffer.append(TEXT_473);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_476);
+    stringBuffer.append(TEXT_474);
     
                         if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
                             
     stringBuffer.append(TEXT_16);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                             for(IMetadataColumn column : columnList) {
                                 
-    stringBuffer.append(TEXT_477);
+    stringBuffer.append(TEXT_475);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(column.getLabel());
@@ -9823,31 +9775,31 @@ if(incomingConnName != null && columnList != null){
     
                             }
                             
-    stringBuffer.append(TEXT_478);
+    stringBuffer.append(TEXT_476);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_16);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_16);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_16);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                         } else {
                         	dbLog.logPrintedException("e.getMessage()");
                             
-    stringBuffer.append(TEXT_479);
+    stringBuffer.append(TEXT_477);
     
                         }
                     }
                     
-    stringBuffer.append(TEXT_505);
+    stringBuffer.append(TEXT_503);
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_506);
+    stringBuffer.append(TEXT_504);
     
 
         } else if (("DELETE").equals(dataAction)) {
@@ -9872,11 +9824,11 @@ if(incomingConnName != null && columnList != null){
     
                      if(isEnableDebug) {
 	                        
-    stringBuffer.append(TEXT_507);
+    stringBuffer.append(TEXT_505);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(getManager(dbmsId, cid).retrieveSQL(typeToGenerate, column, incomingConnName, cid, "query_" , keyCounter, "deleteSQLSplits_", "("+incomingConnName+"."+column.getName()+"==null)"));
-    stringBuffer.append(TEXT_508);
+    stringBuffer.append(TEXT_506);
     
 	                    	}
                     	keyCounter++;
@@ -9909,20 +9861,20 @@ if(incomingConnName != null && columnList != null){
     
             }
             
-    stringBuffer.append(TEXT_509);
+    stringBuffer.append(TEXT_507);
     if(useBatch) {
     		
-    stringBuffer.append(TEXT_442);
+    stringBuffer.append(TEXT_439);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_443);
+    stringBuffer.append(TEXT_440);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_380);
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_510);
+    stringBuffer.append(TEXT_508);
     
 			dbLog.data().addingToBatch(dbLog.var("nb_line"), dbLog.str(dataAction));
     		
-    stringBuffer.append(TEXT_445);
+    stringBuffer.append(TEXT_442);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_380);
     
@@ -9937,43 +9889,37 @@ if(incomingConnName != null && columnList != null){
 				}//end issue0010403 date type
 
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
-    stringBuffer.append(TEXT_383);
+    stringBuffer.append(TEXT_509);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_384);
+    stringBuffer.append(TEXT_510);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_385);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_511);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_387);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_512);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
     dbLog.data().deleting(dbLog.var("nb_line"));
-    stringBuffer.append(TEXT_388);
+    stringBuffer.append(TEXT_387);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     
                 if (("true").equals(dieOnError)) {
                     
-    stringBuffer.append(TEXT_390);
+    stringBuffer.append(TEXT_389);
     
                 } else {
                 
-    stringBuffer.append(TEXT_513);
+    stringBuffer.append(TEXT_512);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_514);
+    stringBuffer.append(TEXT_513);
     
                     if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
                         
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                         for(IMetadataColumn column : columnList) {
                             
@@ -9989,29 +9935,29 @@ if(incomingConnName != null && columnList != null){
     
                         }
                         
+    stringBuffer.append(TEXT_392);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_393);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_21);
+    stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_21);
     stringBuffer.append(rejectConnName);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(TEXT_21);
-    stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                     } else {
                     	dbLog.logPrintedException("e.getMessage()");
                         
-    stringBuffer.append(TEXT_398);
+    stringBuffer.append(TEXT_397);
     
                     }
                 }
                 
-    stringBuffer.append(TEXT_399);
+    stringBuffer.append(TEXT_398);
     
     		}
     
@@ -10039,21 +9985,21 @@ if(incomingConnName != null && columnList != null){
             }
         }
         
+    stringBuffer.append(TEXT_514);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_448);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_515);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_384);
-    stringBuffer.append(cid );
     stringBuffer.append(TEXT_516);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_517);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_518);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_451);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_519);
+    stringBuffer.append(TEXT_518);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_520);
+    stringBuffer.append(TEXT_519);
     
             int counterInsert = 1;
 
@@ -10091,11 +10037,11 @@ if(incomingConnName != null && columnList != null){
 					String typeToGenerate = JavaTypesManager.getTypeToGenerate(dynamicColumn.getColumn().getTalendType(), dynamicColumn.getColumn().isNullable());
 					if("Dynamic".equals(typeToGenerate)) {
 					
-    stringBuffer.append(TEXT_481);
+    stringBuffer.append(TEXT_479);
     stringBuffer.append(incomingConnName);
     stringBuffer.append(TEXT_28);
     stringBuffer.append(dynamicColumn.getName());
-    stringBuffer.append(TEXT_482);
+    stringBuffer.append(TEXT_480);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_68);
     stringBuffer.append(counterInsert-1);
@@ -10124,41 +10070,35 @@ if(incomingConnName != null && columnList != null){
     if(isEnableDebug){dbLog.data().sqlDebugPrint("globalMap.get(\""+cid+"_QUERY\")");}
     stringBuffer.append(TEXT_383);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_483);
+    stringBuffer.append(TEXT_384);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_482);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_385);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_387);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_386);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_512);
+    stringBuffer.append(TEXT_511);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
     dbLog.data().inserting(dbLog.var("nb_line"));
-    stringBuffer.append(TEXT_521);
+    stringBuffer.append(TEXT_520);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     
             if (("true").equals(dieOnError)) {
                 
-    stringBuffer.append(TEXT_522);
+    stringBuffer.append(TEXT_521);
     
             } else {
             
-    stringBuffer.append(TEXT_523);
+    stringBuffer.append(TEXT_522);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_524);
+    stringBuffer.append(TEXT_523);
     
                 if(rejectConnName != null && rejectColumnList != null && rejectColumnList.size() > 0) {
 			 
-    stringBuffer.append(TEXT_525);
+    stringBuffer.append(TEXT_524);
+    stringBuffer.append(rejectConnName );
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(rejectConnName );
     stringBuffer.append(TEXT_391);
-    stringBuffer.append(rejectConnName );
-    stringBuffer.append(TEXT_392);
     
                 for(IMetadataColumn column : columnList) {
                     
@@ -10174,34 +10114,34 @@ if(incomingConnName != null && columnList != null){
     
                 }
                 
+    stringBuffer.append(TEXT_525);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_393);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_526);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_527);
     stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_396);
+    stringBuffer.append(TEXT_395);
     stringBuffer.append(TEXT_14);
     stringBuffer.append(rejectConnName);
-    stringBuffer.append(TEXT_397);
+    stringBuffer.append(TEXT_396);
     stringBuffer.append(node.getUniqueName() );
     stringBuffer.append(TEXT_359);
     
                         } else {
                         	dbLog.logPrintedException("e.getMessage()");
                             
-    stringBuffer.append(TEXT_528);
+    stringBuffer.append(TEXT_527);
     
                         }
                     }
                     
-    stringBuffer.append(TEXT_485);
+    stringBuffer.append(TEXT_483);
     
         }  // end of insert if not exist
 
         if(outgoingConns != null && outgoingConns.size() > 0) {
             
-    stringBuffer.append(TEXT_529);
+    stringBuffer.append(TEXT_528);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_64);
     
@@ -10212,13 +10152,13 @@ if(incomingConnName != null && columnList != null){
                             
     stringBuffer.append(TEXT_16);
     stringBuffer.append(outgoingConn.getName());
-    stringBuffer.append(TEXT_391);
+    stringBuffer.append(TEXT_390);
     stringBuffer.append(outgoingConn.getName());
-    stringBuffer.append(TEXT_392);
+    stringBuffer.append(TEXT_391);
     
                             for(IMetadataColumn column : columnList) {
                                 
-    stringBuffer.append(TEXT_477);
+    stringBuffer.append(TEXT_475);
     stringBuffer.append(outgoingConn.getName());
     stringBuffer.append(TEXT_28);
     stringBuffer.append(column.getLabel());
@@ -10233,35 +10173,37 @@ if(incomingConnName != null && columnList != null){
                     }
                 }
             
-    stringBuffer.append(TEXT_399);
+    stringBuffer.append(TEXT_398);
     
         }
         	
+    stringBuffer.append(TEXT_529);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_530);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_531);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_532);
     dbLog.batch().executeTry(dbLog.str(dataAction));
-    stringBuffer.append(TEXT_533);
+    stringBuffer.append(TEXT_532);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_534);
+    stringBuffer.append(TEXT_533);
     stringBuffer.append(cid );
+    stringBuffer.append(TEXT_534);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_535);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_536);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_537);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_538);
     dbLog.batch().executeDone(dbLog.str(dataAction));
-    stringBuffer.append(TEXT_539);
+    stringBuffer.append(TEXT_538);
     if(("true").equals(dieOnError)) {
                 	
-    stringBuffer.append(TEXT_540);
+    stringBuffer.append(TEXT_539);
     
                 	}else {
                 	
+    stringBuffer.append(TEXT_540);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_541);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_542);
@@ -10269,211 +10211,191 @@ if(incomingConnName != null && columnList != null){
     stringBuffer.append(TEXT_543);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_544);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_545);
     
             	    	
             	    	dbLog.logPrintedException("e.getMessage()");
             	    	
-    stringBuffer.append(TEXT_546);
+    stringBuffer.append(TEXT_545);
     
                 	}
                 	
+    stringBuffer.append(TEXT_546);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_547);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_548);
     dbLog.batch().executeTry(dbLog.str(dataAction));
-    stringBuffer.append(TEXT_533);
+    stringBuffer.append(TEXT_532);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_534);
+    stringBuffer.append(TEXT_533);
     stringBuffer.append(cid );
+    stringBuffer.append(TEXT_534);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_535);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_536);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_537);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_538);
     dbLog.batch().executeDone(dbLog.str(dataAction));
-    stringBuffer.append(TEXT_539);
+    stringBuffer.append(TEXT_538);
     if(("true").equals(dieOnError)) {
                 	
-    stringBuffer.append(TEXT_549);
+    stringBuffer.append(TEXT_548);
     
                 	}else {
                 	
-    stringBuffer.append(TEXT_550);
+    stringBuffer.append(TEXT_549);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_542);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_543);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_544);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_551);
+    stringBuffer.append(TEXT_550);
     
             	    	
             	    	dbLog.logPrintedException("e.getMessage()");
             	    	
-    stringBuffer.append(TEXT_552);
+    stringBuffer.append(TEXT_551);
     
                 	}
 					
-    stringBuffer.append(TEXT_553);
+    stringBuffer.append(TEXT_552);
     
     	if (useBatch) {
     		
+    stringBuffer.append(TEXT_553);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_554);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_555);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_556);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_557);
     if (("INSERT").equals(dataAction)) {
             	    	
+    stringBuffer.append(TEXT_557);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_558);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_559);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_560);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_562);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_563);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_564);
+    stringBuffer.append(TEXT_561);
     
             	    	}else if (("UPDATE").equals(dataAction)) {
             	    	
-    stringBuffer.append(TEXT_565);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_559);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_566);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
-    stringBuffer.append(cid );
     stringBuffer.append(TEXT_562);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_495);
+    stringBuffer.append(TEXT_558);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_564);
+    stringBuffer.append(TEXT_563);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_560);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_561);
     
             	    	}else if (("DELETE").equals(dataAction)) {
             	    	
-    stringBuffer.append(TEXT_567);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_559);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_568);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_569);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_570);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_564);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_558);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_565);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_560);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_561);
     
             	    	}
-    stringBuffer.append(TEXT_571);
+    stringBuffer.append(TEXT_566);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_572);
+    stringBuffer.append(TEXT_567);
     
     		}
     		
-    stringBuffer.append(TEXT_573);
+    stringBuffer.append(TEXT_568);
     
     	if(!useExistingConnection) {
     		if(!("").equals(commitEvery) && !("0").equals(commitEvery)) {
     		    
-    stringBuffer.append(TEXT_574);
+    stringBuffer.append(TEXT_569);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_575);
+    stringBuffer.append(TEXT_570);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_576);
+    stringBuffer.append(TEXT_571);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_64);
     
                 if (useBatch) {
                 
-    stringBuffer.append(TEXT_577);
+    stringBuffer.append(TEXT_572);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_578);
+    stringBuffer.append(TEXT_573);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_579);
+    stringBuffer.append(TEXT_574);
     if (("INSERT").equals(dataAction)) {
             	    	
+    stringBuffer.append(TEXT_557);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_558);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_559);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_560);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_580);
+    stringBuffer.append(TEXT_561);
     
             	    	}else if (("UPDATE").equals(dataAction)) {
             	    	
-    stringBuffer.append(TEXT_565);
+    stringBuffer.append(TEXT_562);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_559);
+    stringBuffer.append(TEXT_558);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_566);
+    stringBuffer.append(TEXT_563);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
+    stringBuffer.append(TEXT_560);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_580);
+    stringBuffer.append(TEXT_561);
     
             	    	}else if (("DELETE").equals(dataAction)) {
             	    	
-    stringBuffer.append(TEXT_567);
+    stringBuffer.append(TEXT_564);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_559);
+    stringBuffer.append(TEXT_558);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_568);
+    stringBuffer.append(TEXT_565);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_561);
+    stringBuffer.append(TEXT_560);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_580);
+    stringBuffer.append(TEXT_561);
     
             	    	}
-    stringBuffer.append(TEXT_581);
+    stringBuffer.append(TEXT_575);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_582);
+    stringBuffer.append(TEXT_576);
     
         }
         
-    stringBuffer.append(TEXT_583);
+    stringBuffer.append(TEXT_577);
+    dbLog.commit().commitTry(null, dbLog.var("commitCounter"));
+    stringBuffer.append(TEXT_578);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_584);
-    dbLog.commit().commitTry(null, dbLog.var("rowsToCommitCount"));
-    stringBuffer.append(TEXT_585);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_586);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_584);
+    stringBuffer.append(TEXT_579);
     dbLog.commit().commitDone(null);
-    stringBuffer.append(TEXT_587);
+    stringBuffer.append(TEXT_580);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_588);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_589);
+    stringBuffer.append(TEXT_581);
     
     		}
     	}
 
 		if(identityInsert && useExistingConnection ) {
         
-    stringBuffer.append(TEXT_590);
+    stringBuffer.append(TEXT_582);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_591);
+    stringBuffer.append(TEXT_583);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_352);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_592);
+    stringBuffer.append(TEXT_584);
     
    		 }
     }

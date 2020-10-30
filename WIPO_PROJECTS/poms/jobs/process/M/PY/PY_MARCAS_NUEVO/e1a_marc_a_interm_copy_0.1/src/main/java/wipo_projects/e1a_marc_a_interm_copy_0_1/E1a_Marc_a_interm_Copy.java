@@ -49,7 +49,7 @@ import java.util.Comparator;
  * Description: <br>
  * 
  * @author user@talend.com
- * @version 7.4.1.20200916_1624-M2
+ * @version 7.4.1.20201015_1726-M3
  * @status
  */
 public class E1a_Marc_a_interm_Copy implements TalendJob {
@@ -415,64 +415,114 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		tDBConnection_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tDBInput_21_error(Exception exception, String errorComponent,
+	public void tDBInput_3_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tMap_9_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap)
+	public void tMap_3_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap)
 			throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tDBOutput_10_error(Exception exception, String errorComponent,
+	public void tDBOutput_4_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tLogRow_10_error(Exception exception, String errorComponent,
+	public void tLogRow_4_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tDBInput_22_error(Exception exception, String errorComponent,
+	public void tDBInput_33_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tDBInput_23_error(Exception exception, String errorComponent,
+	public void tMap_12_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap)
+			throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBOutput_13_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tLogRow_14_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_4_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_6_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tDBInput_31_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tStatCatcher_1_error(Exception exception, String errorComponent,
@@ -495,24 +545,34 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		tStatCatcher_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tAdvancedHash_row34_error(Exception exception, String errorComponent,
+	public void tAdvancedHash_row9_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
 	}
 
-	public void tAdvancedHash_row33_error(Exception exception, String errorComponent,
+	public void tAdvancedHash_row11_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
 
 		((java.util.Map) threadLocal.get()).put("status", "failure");
 
-		tDBInput_21_onSubJobError(exception, errorComponent, globalMap);
+		tDBInput_3_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tAdvancedHash_row44_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		((java.util.Map) threadLocal.get()).put("status", "failure");
+
+		tDBInput_33_onSubJobError(exception, errorComponent, globalMap);
 	}
 
 	public void tDBConnection_3_onSubJobError(Exception exception, String errorComponent,
@@ -539,7 +599,15 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public void tDBInput_21_onSubJobError(Exception exception, String errorComponent,
+	public void tDBInput_3_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tDBInput_33_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -601,7 +669,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_3 = "ADMIN";
 
 				final String decryptedPassword_tDBConnection_3 = routines.system.PasswordEncryptUtil
-						.decryptPassword("enc:routine.encryption.key.v1:bDhPYBaNJaRksFBrALt9mLOBe/PPvLGRGHEPjVYaZUSJ");
+						.decryptPassword("enc:routine.encryption.key.v1:Kbt4IYcXBnCikjaPG+uZ5Ax0l1c+2Szo+adQeQ28cJsH");
 				String dbPwd_tDBConnection_3 = decryptedPassword_tDBConnection_3;
 
 				java.sql.Connection conn_tDBConnection_3 = null;
@@ -762,7 +830,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_2 = "postgres";
 
 				final String decryptedPassword_tDBConnection_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:ohnrrmr/ZihUhTqWEKd5a56QfNpRS44HBtOGiHM/k0dO6L3g");
+						"enc:routine.encryption.key.v1:a9hfrKXtuEC1FKK6AoA2dsT9H0ggW63iG5DdLrIbY0y2wK+D");
 				String dbPwd_tDBConnection_2 = decryptedPassword_tDBConnection_2;
 
 				java.sql.Connection conn_tDBConnection_2 = null;
@@ -938,7 +1006,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_1 = "sa";
 
 				final String decryptedPassword_tDBConnection_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:tuBjRU4vdoqGHsiLYyEClsLHQ/UEUqoQOMJZmKGnumPN/O+5");
+						"enc:routine.encryption.key.v1:J5fU65HnRy5o36DlimUGIOZHxt4jUAhXiI0cdB6uTnbLx4d7");
 				String dbPwd_tDBConnection_1 = decryptedPassword_tDBConnection_1;
 
 				java.sql.Connection conn_tDBConnection_1 = null;
@@ -1020,10 +1088,10 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			}
 
 			if (execStat) {
-				runStat.updateStatOnConnection("OnSubjobOk13", 0, "ok");
+				runStat.updateStatOnConnection("OnSubjobOk4", 0, "ok");
 			}
 
-			tDBInput_21Process(globalMap);
+			tDBInput_3Process(globalMap);
 
 		} catch (java.lang.Exception e) {
 
@@ -1059,7 +1127,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		globalMap.put("tDBConnection_1_SUBPROCESS_STATE", 1);
 	}
 
-	public static class row31Struct implements routines.system.IPersistableRow<row31Struct> {
+	public static class row10Struct implements routines.system.IPersistableRow<row10Struct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		protected static final int DEFAULT_HASHCODE = 1;
@@ -1093,46 +1161,118 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			return this.FILE_NBR;
 		}
 
-		public String RELATIONSHIP_TYPE;
+		public String ACTION_TYPE;
 
-		public String getRELATIONSHIP_TYPE() {
-			return this.RELATIONSHIP_TYPE;
+		public String getACTION_TYPE() {
+			return this.ACTION_TYPE;
 		}
 
-		public String RELATIONSHIP_ROLE;
+		public java.util.Date ACTION_DATE;
 
-		public String getRELATIONSHIP_ROLE() {
-			return this.RELATIONSHIP_ROLE;
+		public java.util.Date getACTION_DATE() {
+			return this.ACTION_DATE;
 		}
 
-		public String RELATED_FILE_SEQ;
+		public java.util.Date MANUAL_DUE_DATE;
 
-		public String getRELATED_FILE_SEQ() {
-			return this.RELATED_FILE_SEQ;
+		public java.util.Date getMANUAL_DUE_DATE() {
+			return this.MANUAL_DUE_DATE;
 		}
 
-		public String RELATED_FILE_TYPE;
+		public BigDecimal RESPONSIBLE_USER;
 
-		public String getRELATED_FILE_TYPE() {
-			return this.RELATED_FILE_TYPE;
+		public BigDecimal getRESPONSIBLE_USER() {
+			return this.RESPONSIBLE_USER;
 		}
 
-		public BigDecimal RELATED_FILE_SERIES;
+		public String ACTION_NOTES1;
 
-		public BigDecimal getRELATED_FILE_SERIES() {
-			return this.RELATED_FILE_SERIES;
+		public String getACTION_NOTES1() {
+			return this.ACTION_NOTES1;
 		}
 
-		public BigDecimal RELATED_FILE_NBR;
+		public String ACTION_NOTES2;
 
-		public BigDecimal getRELATED_FILE_NBR() {
-			return this.RELATED_FILE_NBR;
+		public String getACTION_NOTES2() {
+			return this.ACTION_NOTES2;
 		}
 
-		public BigDecimal IND_IMPORT;
+		public String ACTION_NOTES3;
 
-		public BigDecimal getIND_IMPORT() {
-			return this.IND_IMPORT;
+		public String getACTION_NOTES3() {
+			return this.ACTION_NOTES3;
+		}
+
+		public String ACTION_NOTES4;
+
+		public String getACTION_NOTES4() {
+			return this.ACTION_NOTES4;
+		}
+
+		public String ACTION_NOTES5;
+
+		public String getACTION_NOTES5() {
+			return this.ACTION_NOTES5;
+		}
+
+		public String GENERAL_NOTES;
+
+		public String getGENERAL_NOTES() {
+			return this.GENERAL_NOTES;
+		}
+
+		public String SELECTED_OPTIONS_TEXT;
+
+		public String getSELECTED_OPTIONS_TEXT() {
+			return this.SELECTED_OPTIONS_TEXT;
+		}
+
+		public BigDecimal ACTION_USER;
+
+		public BigDecimal getACTION_USER() {
+			return this.ACTION_USER;
+		}
+
+		public String ACTION_CATEGORY;
+
+		public String getACTION_CATEGORY() {
+			return this.ACTION_CATEGORY;
+		}
+
+		public String SPECIAL_FINAL_STATUS;
+
+		public String getSPECIAL_FINAL_STATUS() {
+			return this.SPECIAL_FINAL_STATUS;
+		}
+
+		public String JOURNAL_CODE;
+
+		public String getJOURNAL_CODE() {
+			return this.JOURNAL_CODE;
+		}
+
+		public java.util.Date PUBLICATION_DATE;
+
+		public java.util.Date getPUBLICATION_DATE() {
+			return this.PUBLICATION_DATE;
+		}
+
+		public String IPAS_PROC_TYP;
+
+		public String getIPAS_PROC_TYP() {
+			return this.IPAS_PROC_TYP;
+		}
+
+		public BigDecimal IPAS_PROC_NBR;
+
+		public BigDecimal getIPAS_PROC_NBR() {
+			return this.IPAS_PROC_NBR;
+		}
+
+		public BigDecimal IPAS_ACTION_NBR;
+
+		public BigDecimal getIPAS_ACTION_NBR() {
+			return this.IPAS_ACTION_NBR;
 		}
 
 		public String errorCode;
@@ -1161,14 +1301,9 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				result = prime * result + ((this.FILE_NBR == null) ? 0 : this.FILE_NBR.hashCode());
 
-				result = prime * result + ((this.RELATED_FILE_SEQ == null) ? 0 : this.RELATED_FILE_SEQ.hashCode());
+				result = prime * result + ((this.ACTION_TYPE == null) ? 0 : this.ACTION_TYPE.hashCode());
 
-				result = prime * result + ((this.RELATED_FILE_TYPE == null) ? 0 : this.RELATED_FILE_TYPE.hashCode());
-
-				result = prime * result
-						+ ((this.RELATED_FILE_SERIES == null) ? 0 : this.RELATED_FILE_SERIES.hashCode());
-
-				result = prime * result + ((this.RELATED_FILE_NBR == null) ? 0 : this.RELATED_FILE_NBR.hashCode());
+				result = prime * result + ((this.ACTION_DATE == null) ? 0 : this.ACTION_DATE.hashCode());
 
 				this.hashCode = result;
 				this.hashCodeDirty = false;
@@ -1184,7 +1319,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			final row31Struct other = (row31Struct) obj;
+			final row10Struct other = (row10Struct) obj;
 
 			if (this.FILE_SEQ == null) {
 				if (other.FILE_SEQ != null)
@@ -1218,69 +1353,63 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				return false;
 
-			if (this.RELATED_FILE_SEQ == null) {
-				if (other.RELATED_FILE_SEQ != null)
+			if (this.ACTION_TYPE == null) {
+				if (other.ACTION_TYPE != null)
 					return false;
 
-			} else if (!this.RELATED_FILE_SEQ.equals(other.RELATED_FILE_SEQ))
+			} else if (!this.ACTION_TYPE.equals(other.ACTION_TYPE))
 
 				return false;
 
-			if (this.RELATED_FILE_TYPE == null) {
-				if (other.RELATED_FILE_TYPE != null)
+			if (this.ACTION_DATE == null) {
+				if (other.ACTION_DATE != null)
 					return false;
 
-			} else if (!this.RELATED_FILE_TYPE.equals(other.RELATED_FILE_TYPE))
-
-				return false;
-
-			if (this.RELATED_FILE_SERIES == null) {
-				if (other.RELATED_FILE_SERIES != null)
-					return false;
-
-			} else if (!this.RELATED_FILE_SERIES.equals(other.RELATED_FILE_SERIES))
-
-				return false;
-
-			if (this.RELATED_FILE_NBR == null) {
-				if (other.RELATED_FILE_NBR != null)
-					return false;
-
-			} else if (!this.RELATED_FILE_NBR.equals(other.RELATED_FILE_NBR))
+			} else if (!this.ACTION_DATE.equals(other.ACTION_DATE))
 
 				return false;
 
 			return true;
 		}
 
-		public void copyDataTo(row31Struct other) {
+		public void copyDataTo(row10Struct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
 			other.FILE_SERIES = this.FILE_SERIES;
 			other.FILE_NBR = this.FILE_NBR;
-			other.RELATIONSHIP_TYPE = this.RELATIONSHIP_TYPE;
-			other.RELATIONSHIP_ROLE = this.RELATIONSHIP_ROLE;
-			other.RELATED_FILE_SEQ = this.RELATED_FILE_SEQ;
-			other.RELATED_FILE_TYPE = this.RELATED_FILE_TYPE;
-			other.RELATED_FILE_SERIES = this.RELATED_FILE_SERIES;
-			other.RELATED_FILE_NBR = this.RELATED_FILE_NBR;
-			other.IND_IMPORT = this.IND_IMPORT;
+			other.ACTION_TYPE = this.ACTION_TYPE;
+			other.ACTION_DATE = this.ACTION_DATE;
+			other.MANUAL_DUE_DATE = this.MANUAL_DUE_DATE;
+			other.RESPONSIBLE_USER = this.RESPONSIBLE_USER;
+			other.ACTION_NOTES1 = this.ACTION_NOTES1;
+			other.ACTION_NOTES2 = this.ACTION_NOTES2;
+			other.ACTION_NOTES3 = this.ACTION_NOTES3;
+			other.ACTION_NOTES4 = this.ACTION_NOTES4;
+			other.ACTION_NOTES5 = this.ACTION_NOTES5;
+			other.GENERAL_NOTES = this.GENERAL_NOTES;
+			other.SELECTED_OPTIONS_TEXT = this.SELECTED_OPTIONS_TEXT;
+			other.ACTION_USER = this.ACTION_USER;
+			other.ACTION_CATEGORY = this.ACTION_CATEGORY;
+			other.SPECIAL_FINAL_STATUS = this.SPECIAL_FINAL_STATUS;
+			other.JOURNAL_CODE = this.JOURNAL_CODE;
+			other.PUBLICATION_DATE = this.PUBLICATION_DATE;
+			other.IPAS_PROC_TYP = this.IPAS_PROC_TYP;
+			other.IPAS_PROC_NBR = this.IPAS_PROC_NBR;
+			other.IPAS_ACTION_NBR = this.IPAS_ACTION_NBR;
 			other.errorCode = this.errorCode;
 			other.errorMessage = this.errorMessage;
 
 		}
 
-		public void copyKeysDataTo(row31Struct other) {
+		public void copyKeysDataTo(row10Struct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
 			other.FILE_SERIES = this.FILE_SERIES;
 			other.FILE_NBR = this.FILE_NBR;
-			other.RELATED_FILE_SEQ = this.RELATED_FILE_SEQ;
-			other.RELATED_FILE_TYPE = this.RELATED_FILE_TYPE;
-			other.RELATED_FILE_SERIES = this.RELATED_FILE_SERIES;
-			other.RELATED_FILE_NBR = this.RELATED_FILE_NBR;
+			other.ACTION_TYPE = this.ACTION_TYPE;
+			other.ACTION_DATE = this.ACTION_DATE;
 
 		}
 
@@ -1314,6 +1443,27 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			}
 		}
 
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
@@ -1330,19 +1480,43 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 					this.FILE_NBR = (BigDecimal) dis.readObject();
 
-					this.RELATIONSHIP_TYPE = readString(dis);
+					this.ACTION_TYPE = readString(dis);
 
-					this.RELATIONSHIP_ROLE = readString(dis);
+					this.ACTION_DATE = readDate(dis);
 
-					this.RELATED_FILE_SEQ = readString(dis);
+					this.MANUAL_DUE_DATE = readDate(dis);
 
-					this.RELATED_FILE_TYPE = readString(dis);
+					this.RESPONSIBLE_USER = (BigDecimal) dis.readObject();
 
-					this.RELATED_FILE_SERIES = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES1 = readString(dis);
 
-					this.RELATED_FILE_NBR = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES2 = readString(dis);
 
-					this.IND_IMPORT = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES3 = readString(dis);
+
+					this.ACTION_NOTES4 = readString(dis);
+
+					this.ACTION_NOTES5 = readString(dis);
+
+					this.GENERAL_NOTES = readString(dis);
+
+					this.SELECTED_OPTIONS_TEXT = readString(dis);
+
+					this.ACTION_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_CATEGORY = readString(dis);
+
+					this.SPECIAL_FINAL_STATUS = readString(dis);
+
+					this.JOURNAL_CODE = readString(dis);
+
+					this.PUBLICATION_DATE = readDate(dis);
+
+					this.IPAS_PROC_TYP = readString(dis);
+
+					this.IPAS_PROC_NBR = (BigDecimal) dis.readObject();
+
+					this.IPAS_ACTION_NBR = (BigDecimal) dis.readObject();
 
 					this.errorCode = readString(dis);
 
@@ -1381,31 +1555,79 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				// String
 
-				writeString(this.RELATIONSHIP_TYPE, dos);
+				writeString(this.ACTION_TYPE, dos);
 
-				// String
+				// java.util.Date
 
-				writeString(this.RELATIONSHIP_ROLE, dos);
+				writeDate(this.ACTION_DATE, dos);
 
-				// String
+				// java.util.Date
 
-				writeString(this.RELATED_FILE_SEQ, dos);
-
-				// String
-
-				writeString(this.RELATED_FILE_TYPE, dos);
+				writeDate(this.MANUAL_DUE_DATE, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.RELATED_FILE_SERIES);
+				dos.writeObject(this.RESPONSIBLE_USER);
+
+				// String
+
+				writeString(this.ACTION_NOTES1, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES2, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES3, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES4, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES5, dos);
+
+				// String
+
+				writeString(this.GENERAL_NOTES, dos);
+
+				// String
+
+				writeString(this.SELECTED_OPTIONS_TEXT, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.RELATED_FILE_NBR);
+				dos.writeObject(this.ACTION_USER);
+
+				// String
+
+				writeString(this.ACTION_CATEGORY, dos);
+
+				// String
+
+				writeString(this.SPECIAL_FINAL_STATUS, dos);
+
+				// String
+
+				writeString(this.JOURNAL_CODE, dos);
+
+				// java.util.Date
+
+				writeDate(this.PUBLICATION_DATE, dos);
+
+				// String
+
+				writeString(this.IPAS_PROC_TYP, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.IND_IMPORT);
+				dos.writeObject(this.IPAS_PROC_NBR);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_ACTION_NBR);
 
 				// String
 
@@ -1430,13 +1652,25 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			sb.append(",FILE_TYPE=" + FILE_TYPE);
 			sb.append(",FILE_SERIES=" + String.valueOf(FILE_SERIES));
 			sb.append(",FILE_NBR=" + String.valueOf(FILE_NBR));
-			sb.append(",RELATIONSHIP_TYPE=" + RELATIONSHIP_TYPE);
-			sb.append(",RELATIONSHIP_ROLE=" + RELATIONSHIP_ROLE);
-			sb.append(",RELATED_FILE_SEQ=" + RELATED_FILE_SEQ);
-			sb.append(",RELATED_FILE_TYPE=" + RELATED_FILE_TYPE);
-			sb.append(",RELATED_FILE_SERIES=" + String.valueOf(RELATED_FILE_SERIES));
-			sb.append(",RELATED_FILE_NBR=" + String.valueOf(RELATED_FILE_NBR));
-			sb.append(",IND_IMPORT=" + String.valueOf(IND_IMPORT));
+			sb.append(",ACTION_TYPE=" + ACTION_TYPE);
+			sb.append(",ACTION_DATE=" + String.valueOf(ACTION_DATE));
+			sb.append(",MANUAL_DUE_DATE=" + String.valueOf(MANUAL_DUE_DATE));
+			sb.append(",RESPONSIBLE_USER=" + String.valueOf(RESPONSIBLE_USER));
+			sb.append(",ACTION_NOTES1=" + ACTION_NOTES1);
+			sb.append(",ACTION_NOTES2=" + ACTION_NOTES2);
+			sb.append(",ACTION_NOTES3=" + ACTION_NOTES3);
+			sb.append(",ACTION_NOTES4=" + ACTION_NOTES4);
+			sb.append(",ACTION_NOTES5=" + ACTION_NOTES5);
+			sb.append(",GENERAL_NOTES=" + GENERAL_NOTES);
+			sb.append(",SELECTED_OPTIONS_TEXT=" + SELECTED_OPTIONS_TEXT);
+			sb.append(",ACTION_USER=" + String.valueOf(ACTION_USER));
+			sb.append(",ACTION_CATEGORY=" + ACTION_CATEGORY);
+			sb.append(",SPECIAL_FINAL_STATUS=" + SPECIAL_FINAL_STATUS);
+			sb.append(",JOURNAL_CODE=" + JOURNAL_CODE);
+			sb.append(",PUBLICATION_DATE=" + String.valueOf(PUBLICATION_DATE));
+			sb.append(",IPAS_PROC_TYP=" + IPAS_PROC_TYP);
+			sb.append(",IPAS_PROC_NBR=" + String.valueOf(IPAS_PROC_NBR));
+			sb.append(",IPAS_ACTION_NBR=" + String.valueOf(IPAS_ACTION_NBR));
 			sb.append(",errorCode=" + errorCode);
 			sb.append(",errorMessage=" + errorMessage);
 			sb.append("]");
@@ -1447,7 +1681,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row31Struct other) {
+		public int compareTo(row10Struct other) {
 
 			int returnValue = -1;
 
@@ -1471,22 +1705,12 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return returnValue;
 			}
 
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_SEQ, other.RELATED_FILE_SEQ);
+			returnValue = checkNullsAndCompare(this.ACTION_TYPE, other.ACTION_TYPE);
 			if (returnValue != 0) {
 				return returnValue;
 			}
 
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_TYPE, other.RELATED_FILE_TYPE);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_SERIES, other.RELATED_FILE_SERIES);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_NBR, other.RELATED_FILE_NBR);
+			returnValue = checkNullsAndCompare(this.ACTION_DATE, other.ACTION_DATE);
 			if (returnValue != 0) {
 				return returnValue;
 			}
@@ -1517,8 +1741,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public static class insert_related_filesStruct
-			implements routines.system.IPersistableRow<insert_related_filesStruct> {
+	public static class insert_actionsStruct implements routines.system.IPersistableRow<insert_actionsStruct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		protected static final int DEFAULT_HASHCODE = 1;
@@ -1552,46 +1775,118 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			return this.FILE_NBR;
 		}
 
-		public String RELATIONSHIP_TYPE;
+		public String ACTION_TYPE;
 
-		public String getRELATIONSHIP_TYPE() {
-			return this.RELATIONSHIP_TYPE;
+		public String getACTION_TYPE() {
+			return this.ACTION_TYPE;
 		}
 
-		public String RELATIONSHIP_ROLE;
+		public java.util.Date ACTION_DATE;
 
-		public String getRELATIONSHIP_ROLE() {
-			return this.RELATIONSHIP_ROLE;
+		public java.util.Date getACTION_DATE() {
+			return this.ACTION_DATE;
 		}
 
-		public String RELATED_FILE_SEQ;
+		public java.util.Date MANUAL_DUE_DATE;
 
-		public String getRELATED_FILE_SEQ() {
-			return this.RELATED_FILE_SEQ;
+		public java.util.Date getMANUAL_DUE_DATE() {
+			return this.MANUAL_DUE_DATE;
 		}
 
-		public String RELATED_FILE_TYPE;
+		public BigDecimal RESPONSIBLE_USER;
 
-		public String getRELATED_FILE_TYPE() {
-			return this.RELATED_FILE_TYPE;
+		public BigDecimal getRESPONSIBLE_USER() {
+			return this.RESPONSIBLE_USER;
 		}
 
-		public BigDecimal RELATED_FILE_SERIES;
+		public String ACTION_NOTES1;
 
-		public BigDecimal getRELATED_FILE_SERIES() {
-			return this.RELATED_FILE_SERIES;
+		public String getACTION_NOTES1() {
+			return this.ACTION_NOTES1;
 		}
 
-		public BigDecimal RELATED_FILE_NBR;
+		public String ACTION_NOTES2;
 
-		public BigDecimal getRELATED_FILE_NBR() {
-			return this.RELATED_FILE_NBR;
+		public String getACTION_NOTES2() {
+			return this.ACTION_NOTES2;
 		}
 
-		public BigDecimal IND_IMPORT;
+		public String ACTION_NOTES3;
 
-		public BigDecimal getIND_IMPORT() {
-			return this.IND_IMPORT;
+		public String getACTION_NOTES3() {
+			return this.ACTION_NOTES3;
+		}
+
+		public String ACTION_NOTES4;
+
+		public String getACTION_NOTES4() {
+			return this.ACTION_NOTES4;
+		}
+
+		public String ACTION_NOTES5;
+
+		public String getACTION_NOTES5() {
+			return this.ACTION_NOTES5;
+		}
+
+		public String GENERAL_NOTES;
+
+		public String getGENERAL_NOTES() {
+			return this.GENERAL_NOTES;
+		}
+
+		public String SELECTED_OPTIONS_TEXT;
+
+		public String getSELECTED_OPTIONS_TEXT() {
+			return this.SELECTED_OPTIONS_TEXT;
+		}
+
+		public BigDecimal ACTION_USER;
+
+		public BigDecimal getACTION_USER() {
+			return this.ACTION_USER;
+		}
+
+		public String ACTION_CATEGORY;
+
+		public String getACTION_CATEGORY() {
+			return this.ACTION_CATEGORY;
+		}
+
+		public String SPECIAL_FINAL_STATUS;
+
+		public String getSPECIAL_FINAL_STATUS() {
+			return this.SPECIAL_FINAL_STATUS;
+		}
+
+		public String JOURNAL_CODE;
+
+		public String getJOURNAL_CODE() {
+			return this.JOURNAL_CODE;
+		}
+
+		public java.util.Date PUBLICATION_DATE;
+
+		public java.util.Date getPUBLICATION_DATE() {
+			return this.PUBLICATION_DATE;
+		}
+
+		public String IPAS_PROC_TYP;
+
+		public String getIPAS_PROC_TYP() {
+			return this.IPAS_PROC_TYP;
+		}
+
+		public BigDecimal IPAS_PROC_NBR;
+
+		public BigDecimal getIPAS_PROC_NBR() {
+			return this.IPAS_PROC_NBR;
+		}
+
+		public BigDecimal IPAS_ACTION_NBR;
+
+		public BigDecimal getIPAS_ACTION_NBR() {
+			return this.IPAS_ACTION_NBR;
 		}
 
 		@Override
@@ -1608,14 +1903,9 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				result = prime * result + ((this.FILE_NBR == null) ? 0 : this.FILE_NBR.hashCode());
 
-				result = prime * result + ((this.RELATED_FILE_SEQ == null) ? 0 : this.RELATED_FILE_SEQ.hashCode());
+				result = prime * result + ((this.ACTION_TYPE == null) ? 0 : this.ACTION_TYPE.hashCode());
 
-				result = prime * result + ((this.RELATED_FILE_TYPE == null) ? 0 : this.RELATED_FILE_TYPE.hashCode());
-
-				result = prime * result
-						+ ((this.RELATED_FILE_SERIES == null) ? 0 : this.RELATED_FILE_SERIES.hashCode());
-
-				result = prime * result + ((this.RELATED_FILE_NBR == null) ? 0 : this.RELATED_FILE_NBR.hashCode());
+				result = prime * result + ((this.ACTION_DATE == null) ? 0 : this.ACTION_DATE.hashCode());
 
 				this.hashCode = result;
 				this.hashCodeDirty = false;
@@ -1631,7 +1921,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			final insert_related_filesStruct other = (insert_related_filesStruct) obj;
+			final insert_actionsStruct other = (insert_actionsStruct) obj;
 
 			if (this.FILE_SEQ == null) {
 				if (other.FILE_SEQ != null)
@@ -1665,67 +1955,61 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				return false;
 
-			if (this.RELATED_FILE_SEQ == null) {
-				if (other.RELATED_FILE_SEQ != null)
+			if (this.ACTION_TYPE == null) {
+				if (other.ACTION_TYPE != null)
 					return false;
 
-			} else if (!this.RELATED_FILE_SEQ.equals(other.RELATED_FILE_SEQ))
+			} else if (!this.ACTION_TYPE.equals(other.ACTION_TYPE))
 
 				return false;
 
-			if (this.RELATED_FILE_TYPE == null) {
-				if (other.RELATED_FILE_TYPE != null)
+			if (this.ACTION_DATE == null) {
+				if (other.ACTION_DATE != null)
 					return false;
 
-			} else if (!this.RELATED_FILE_TYPE.equals(other.RELATED_FILE_TYPE))
-
-				return false;
-
-			if (this.RELATED_FILE_SERIES == null) {
-				if (other.RELATED_FILE_SERIES != null)
-					return false;
-
-			} else if (!this.RELATED_FILE_SERIES.equals(other.RELATED_FILE_SERIES))
-
-				return false;
-
-			if (this.RELATED_FILE_NBR == null) {
-				if (other.RELATED_FILE_NBR != null)
-					return false;
-
-			} else if (!this.RELATED_FILE_NBR.equals(other.RELATED_FILE_NBR))
+			} else if (!this.ACTION_DATE.equals(other.ACTION_DATE))
 
 				return false;
 
 			return true;
 		}
 
-		public void copyDataTo(insert_related_filesStruct other) {
+		public void copyDataTo(insert_actionsStruct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
 			other.FILE_SERIES = this.FILE_SERIES;
 			other.FILE_NBR = this.FILE_NBR;
-			other.RELATIONSHIP_TYPE = this.RELATIONSHIP_TYPE;
-			other.RELATIONSHIP_ROLE = this.RELATIONSHIP_ROLE;
-			other.RELATED_FILE_SEQ = this.RELATED_FILE_SEQ;
-			other.RELATED_FILE_TYPE = this.RELATED_FILE_TYPE;
-			other.RELATED_FILE_SERIES = this.RELATED_FILE_SERIES;
-			other.RELATED_FILE_NBR = this.RELATED_FILE_NBR;
-			other.IND_IMPORT = this.IND_IMPORT;
+			other.ACTION_TYPE = this.ACTION_TYPE;
+			other.ACTION_DATE = this.ACTION_DATE;
+			other.MANUAL_DUE_DATE = this.MANUAL_DUE_DATE;
+			other.RESPONSIBLE_USER = this.RESPONSIBLE_USER;
+			other.ACTION_NOTES1 = this.ACTION_NOTES1;
+			other.ACTION_NOTES2 = this.ACTION_NOTES2;
+			other.ACTION_NOTES3 = this.ACTION_NOTES3;
+			other.ACTION_NOTES4 = this.ACTION_NOTES4;
+			other.ACTION_NOTES5 = this.ACTION_NOTES5;
+			other.GENERAL_NOTES = this.GENERAL_NOTES;
+			other.SELECTED_OPTIONS_TEXT = this.SELECTED_OPTIONS_TEXT;
+			other.ACTION_USER = this.ACTION_USER;
+			other.ACTION_CATEGORY = this.ACTION_CATEGORY;
+			other.SPECIAL_FINAL_STATUS = this.SPECIAL_FINAL_STATUS;
+			other.JOURNAL_CODE = this.JOURNAL_CODE;
+			other.PUBLICATION_DATE = this.PUBLICATION_DATE;
+			other.IPAS_PROC_TYP = this.IPAS_PROC_TYP;
+			other.IPAS_PROC_NBR = this.IPAS_PROC_NBR;
+			other.IPAS_ACTION_NBR = this.IPAS_ACTION_NBR;
 
 		}
 
-		public void copyKeysDataTo(insert_related_filesStruct other) {
+		public void copyKeysDataTo(insert_actionsStruct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
 			other.FILE_SERIES = this.FILE_SERIES;
 			other.FILE_NBR = this.FILE_NBR;
-			other.RELATED_FILE_SEQ = this.RELATED_FILE_SEQ;
-			other.RELATED_FILE_TYPE = this.RELATED_FILE_TYPE;
-			other.RELATED_FILE_SERIES = this.RELATED_FILE_SERIES;
-			other.RELATED_FILE_NBR = this.RELATED_FILE_NBR;
+			other.ACTION_TYPE = this.ACTION_TYPE;
+			other.ACTION_DATE = this.ACTION_DATE;
 
 		}
 
@@ -1759,6 +2043,27 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			}
 		}
 
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
 		public void readData(ObjectInputStream dis) {
 
 			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
@@ -1775,19 +2080,43 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 					this.FILE_NBR = (BigDecimal) dis.readObject();
 
-					this.RELATIONSHIP_TYPE = readString(dis);
+					this.ACTION_TYPE = readString(dis);
 
-					this.RELATIONSHIP_ROLE = readString(dis);
+					this.ACTION_DATE = readDate(dis);
 
-					this.RELATED_FILE_SEQ = readString(dis);
+					this.MANUAL_DUE_DATE = readDate(dis);
 
-					this.RELATED_FILE_TYPE = readString(dis);
+					this.RESPONSIBLE_USER = (BigDecimal) dis.readObject();
 
-					this.RELATED_FILE_SERIES = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES1 = readString(dis);
 
-					this.RELATED_FILE_NBR = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES2 = readString(dis);
 
-					this.IND_IMPORT = (BigDecimal) dis.readObject();
+					this.ACTION_NOTES3 = readString(dis);
+
+					this.ACTION_NOTES4 = readString(dis);
+
+					this.ACTION_NOTES5 = readString(dis);
+
+					this.GENERAL_NOTES = readString(dis);
+
+					this.SELECTED_OPTIONS_TEXT = readString(dis);
+
+					this.ACTION_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_CATEGORY = readString(dis);
+
+					this.SPECIAL_FINAL_STATUS = readString(dis);
+
+					this.JOURNAL_CODE = readString(dis);
+
+					this.PUBLICATION_DATE = readDate(dis);
+
+					this.IPAS_PROC_TYP = readString(dis);
+
+					this.IPAS_PROC_NBR = (BigDecimal) dis.readObject();
+
+					this.IPAS_ACTION_NBR = (BigDecimal) dis.readObject();
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
@@ -1822,31 +2151,79 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				// String
 
-				writeString(this.RELATIONSHIP_TYPE, dos);
+				writeString(this.ACTION_TYPE, dos);
 
-				// String
+				// java.util.Date
 
-				writeString(this.RELATIONSHIP_ROLE, dos);
+				writeDate(this.ACTION_DATE, dos);
 
-				// String
+				// java.util.Date
 
-				writeString(this.RELATED_FILE_SEQ, dos);
-
-				// String
-
-				writeString(this.RELATED_FILE_TYPE, dos);
+				writeDate(this.MANUAL_DUE_DATE, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.RELATED_FILE_SERIES);
+				dos.writeObject(this.RESPONSIBLE_USER);
+
+				// String
+
+				writeString(this.ACTION_NOTES1, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES2, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES3, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES4, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES5, dos);
+
+				// String
+
+				writeString(this.GENERAL_NOTES, dos);
+
+				// String
+
+				writeString(this.SELECTED_OPTIONS_TEXT, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.RELATED_FILE_NBR);
+				dos.writeObject(this.ACTION_USER);
+
+				// String
+
+				writeString(this.ACTION_CATEGORY, dos);
+
+				// String
+
+				writeString(this.SPECIAL_FINAL_STATUS, dos);
+
+				// String
+
+				writeString(this.JOURNAL_CODE, dos);
+
+				// java.util.Date
+
+				writeDate(this.PUBLICATION_DATE, dos);
+
+				// String
+
+				writeString(this.IPAS_PROC_TYP, dos);
 
 				// BigDecimal
 
-				dos.writeObject(this.IND_IMPORT);
+				dos.writeObject(this.IPAS_PROC_NBR);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_ACTION_NBR);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -1863,13 +2240,25 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			sb.append(",FILE_TYPE=" + FILE_TYPE);
 			sb.append(",FILE_SERIES=" + String.valueOf(FILE_SERIES));
 			sb.append(",FILE_NBR=" + String.valueOf(FILE_NBR));
-			sb.append(",RELATIONSHIP_TYPE=" + RELATIONSHIP_TYPE);
-			sb.append(",RELATIONSHIP_ROLE=" + RELATIONSHIP_ROLE);
-			sb.append(",RELATED_FILE_SEQ=" + RELATED_FILE_SEQ);
-			sb.append(",RELATED_FILE_TYPE=" + RELATED_FILE_TYPE);
-			sb.append(",RELATED_FILE_SERIES=" + String.valueOf(RELATED_FILE_SERIES));
-			sb.append(",RELATED_FILE_NBR=" + String.valueOf(RELATED_FILE_NBR));
-			sb.append(",IND_IMPORT=" + String.valueOf(IND_IMPORT));
+			sb.append(",ACTION_TYPE=" + ACTION_TYPE);
+			sb.append(",ACTION_DATE=" + String.valueOf(ACTION_DATE));
+			sb.append(",MANUAL_DUE_DATE=" + String.valueOf(MANUAL_DUE_DATE));
+			sb.append(",RESPONSIBLE_USER=" + String.valueOf(RESPONSIBLE_USER));
+			sb.append(",ACTION_NOTES1=" + ACTION_NOTES1);
+			sb.append(",ACTION_NOTES2=" + ACTION_NOTES2);
+			sb.append(",ACTION_NOTES3=" + ACTION_NOTES3);
+			sb.append(",ACTION_NOTES4=" + ACTION_NOTES4);
+			sb.append(",ACTION_NOTES5=" + ACTION_NOTES5);
+			sb.append(",GENERAL_NOTES=" + GENERAL_NOTES);
+			sb.append(",SELECTED_OPTIONS_TEXT=" + SELECTED_OPTIONS_TEXT);
+			sb.append(",ACTION_USER=" + String.valueOf(ACTION_USER));
+			sb.append(",ACTION_CATEGORY=" + ACTION_CATEGORY);
+			sb.append(",SPECIAL_FINAL_STATUS=" + SPECIAL_FINAL_STATUS);
+			sb.append(",JOURNAL_CODE=" + JOURNAL_CODE);
+			sb.append(",PUBLICATION_DATE=" + String.valueOf(PUBLICATION_DATE));
+			sb.append(",IPAS_PROC_TYP=" + IPAS_PROC_TYP);
+			sb.append(",IPAS_PROC_NBR=" + String.valueOf(IPAS_PROC_NBR));
+			sb.append(",IPAS_ACTION_NBR=" + String.valueOf(IPAS_ACTION_NBR));
 			sb.append("]");
 
 			return sb.toString();
@@ -1878,7 +2267,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(insert_related_filesStruct other) {
+		public int compareTo(insert_actionsStruct other) {
 
 			int returnValue = -1;
 
@@ -1902,22 +2291,12 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return returnValue;
 			}
 
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_SEQ, other.RELATED_FILE_SEQ);
+			returnValue = checkNullsAndCompare(this.ACTION_TYPE, other.ACTION_TYPE);
 			if (returnValue != 0) {
 				return returnValue;
 			}
 
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_TYPE, other.RELATED_FILE_TYPE);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_SERIES, other.RELATED_FILE_SERIES);
-			if (returnValue != 0) {
-				return returnValue;
-			}
-
-			returnValue = checkNullsAndCompare(this.RELATED_FILE_NBR, other.RELATED_FILE_NBR);
+			returnValue = checkNullsAndCompare(this.ACTION_DATE, other.ACTION_DATE);
 			if (returnValue != 0) {
 				return returnValue;
 			}
@@ -1948,20 +2327,194 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public static class row32Struct implements routines.system.IPersistableRow<row32Struct> {
+	public static class row8Struct implements routines.system.IPersistableRow<row8Struct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 
-		public BigDecimal num_acta;
+		public Long num_acta;
 
-		public BigDecimal getNum_acta() {
+		public Long getNum_acta() {
 			return this.num_acta;
 		}
 
-		public BigDecimal num_acta_nuevo;
+		public Short sec_movimiento;
 
-		public BigDecimal getNum_acta_nuevo() {
-			return this.num_acta_nuevo;
+		public Short getSec_movimiento() {
+			return this.sec_movimiento;
+		}
+
+		public String tip_movimiento;
+
+		public String getTip_movimiento() {
+			return this.tip_movimiento;
+		}
+
+		public java.util.Date fec_movimiento;
+
+		public java.util.Date getFec_movimiento() {
+			return this.fec_movimiento;
+		}
+
+		public String obs_movimiento;
+
+		public String getObs_movimiento() {
+			return this.obs_movimiento;
+		}
+
+		public String cod_usuario;
+
+		public String getCod_usuario() {
+			return this.cod_usuario;
+		}
+
+		public Integer num_registro;
+
+		public Integer getNum_registro() {
+			return this.num_registro;
+		}
+
+		public java.util.Date fec_vencimiento;
+
+		public java.util.Date getFec_vencimiento() {
+			return this.fec_vencimiento;
+		}
+
+		public String ind_falta_aprob;
+
+		public String getInd_falta_aprob() {
+			return this.ind_falta_aprob;
+		}
+
+		public String obs1;
+
+		public String getObs1() {
+			return this.obs1;
+		}
+
+		public String obs2;
+
+		public String getObs2() {
+			return this.obs2;
+		}
+
+		public String obs3;
+
+		public String getObs3() {
+			return this.obs3;
+		}
+
+		public String obs4;
+
+		public String getObs4() {
+			return this.obs4;
+		}
+
+		public String obs5;
+
+		public String getObs5() {
+			return this.obs5;
+		}
+
+		public String secs_opciones;
+
+		public String getSecs_opciones() {
+			return this.secs_opciones;
+		}
+
+		public String ind_impresion;
+
+		public String getInd_impresion() {
+			return this.ind_impresion;
+		}
+
+		public String cod_status_ant;
+
+		public String getCod_status_ant() {
+			return this.cod_status_ant;
+		}
+
+		public java.util.Date fec_movimiento_ant;
+
+		public java.util.Date getFec_movimiento_ant() {
+			return this.fec_movimiento_ant;
+		}
+
+		public String cod_status;
+
+		public String getCod_status() {
+			return this.cod_status;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		private Integer readInteger(ObjectInputStream dis) throws IOException {
+			Integer intReturn;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				intReturn = null;
+			} else {
+				intReturn = dis.readInt();
+			}
+			return intReturn;
+		}
+
+		private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException {
+			if (intNum == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeInt(intNum);
+			}
 		}
 
 		public void readData(ObjectInputStream dis) {
@@ -1972,15 +2525,56 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 					int length = 0;
 
-					this.num_acta = (BigDecimal) dis.readObject();
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta = null;
+					} else {
+						this.num_acta = dis.readLong();
+					}
 
-					this.num_acta_nuevo = (BigDecimal) dis.readObject();
+					length = dis.readByte();
+					if (length == -1) {
+						this.sec_movimiento = null;
+					} else {
+						this.sec_movimiento = dis.readShort();
+					}
+
+					this.tip_movimiento = readString(dis);
+
+					this.fec_movimiento = readDate(dis);
+
+					this.obs_movimiento = readString(dis);
+
+					this.cod_usuario = readString(dis);
+
+					this.num_registro = readInteger(dis);
+
+					this.fec_vencimiento = readDate(dis);
+
+					this.ind_falta_aprob = readString(dis);
+
+					this.obs1 = readString(dis);
+
+					this.obs2 = readString(dis);
+
+					this.obs3 = readString(dis);
+
+					this.obs4 = readString(dis);
+
+					this.obs5 = readString(dis);
+
+					this.secs_opciones = readString(dis);
+
+					this.ind_impresion = readString(dis);
+
+					this.cod_status_ant = readString(dis);
+
+					this.fec_movimiento_ant = readDate(dis);
+
+					this.cod_status = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
 
 				}
 
@@ -1991,13 +2585,91 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		public void writeData(ObjectOutputStream dos) {
 			try {
 
-				// BigDecimal
+				// Long
 
-				dos.writeObject(this.num_acta);
+				if (this.num_acta == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta);
+				}
 
-				// BigDecimal
+				// Short
 
-				dos.writeObject(this.num_acta_nuevo);
+				if (this.sec_movimiento == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.sec_movimiento);
+				}
+
+				// String
+
+				writeString(this.tip_movimiento, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_movimiento, dos);
+
+				// String
+
+				writeString(this.obs_movimiento, dos);
+
+				// String
+
+				writeString(this.cod_usuario, dos);
+
+				// Integer
+
+				writeInteger(this.num_registro, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_vencimiento, dos);
+
+				// String
+
+				writeString(this.ind_falta_aprob, dos);
+
+				// String
+
+				writeString(this.obs1, dos);
+
+				// String
+
+				writeString(this.obs2, dos);
+
+				// String
+
+				writeString(this.obs3, dos);
+
+				// String
+
+				writeString(this.obs4, dos);
+
+				// String
+
+				writeString(this.obs5, dos);
+
+				// String
+
+				writeString(this.secs_opciones, dos);
+
+				// String
+
+				writeString(this.ind_impresion, dos);
+
+				// String
+
+				writeString(this.cod_status_ant, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_movimiento_ant, dos);
+
+				// String
+
+				writeString(this.cod_status, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2011,7 +2683,24 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("num_acta=" + String.valueOf(num_acta));
-			sb.append(",num_acta_nuevo=" + String.valueOf(num_acta_nuevo));
+			sb.append(",sec_movimiento=" + String.valueOf(sec_movimiento));
+			sb.append(",tip_movimiento=" + tip_movimiento);
+			sb.append(",fec_movimiento=" + String.valueOf(fec_movimiento));
+			sb.append(",obs_movimiento=" + obs_movimiento);
+			sb.append(",cod_usuario=" + cod_usuario);
+			sb.append(",num_registro=" + String.valueOf(num_registro));
+			sb.append(",fec_vencimiento=" + String.valueOf(fec_vencimiento));
+			sb.append(",ind_falta_aprob=" + ind_falta_aprob);
+			sb.append(",obs1=" + obs1);
+			sb.append(",obs2=" + obs2);
+			sb.append(",obs3=" + obs3);
+			sb.append(",obs4=" + obs4);
+			sb.append(",obs5=" + obs5);
+			sb.append(",secs_opciones=" + secs_opciones);
+			sb.append(",ind_impresion=" + ind_impresion);
+			sb.append(",cod_status_ant=" + cod_status_ant);
+			sb.append(",fec_movimiento_ant=" + String.valueOf(fec_movimiento_ant));
+			sb.append(",cod_status=" + cod_status);
 			sb.append("]");
 
 			return sb.toString();
@@ -2020,7 +2709,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row32Struct other) {
+		public int compareTo(row8Struct other) {
 
 			int returnValue = -1;
 
@@ -2050,20 +2739,194 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public static class after_tDBInput_21Struct implements routines.system.IPersistableRow<after_tDBInput_21Struct> {
+	public static class after_tDBInput_3Struct implements routines.system.IPersistableRow<after_tDBInput_3Struct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 
-		public BigDecimal num_acta;
+		public Long num_acta;
 
-		public BigDecimal getNum_acta() {
+		public Long getNum_acta() {
 			return this.num_acta;
 		}
 
-		public BigDecimal num_acta_nuevo;
+		public Short sec_movimiento;
 
-		public BigDecimal getNum_acta_nuevo() {
-			return this.num_acta_nuevo;
+		public Short getSec_movimiento() {
+			return this.sec_movimiento;
+		}
+
+		public String tip_movimiento;
+
+		public String getTip_movimiento() {
+			return this.tip_movimiento;
+		}
+
+		public java.util.Date fec_movimiento;
+
+		public java.util.Date getFec_movimiento() {
+			return this.fec_movimiento;
+		}
+
+		public String obs_movimiento;
+
+		public String getObs_movimiento() {
+			return this.obs_movimiento;
+		}
+
+		public String cod_usuario;
+
+		public String getCod_usuario() {
+			return this.cod_usuario;
+		}
+
+		public Integer num_registro;
+
+		public Integer getNum_registro() {
+			return this.num_registro;
+		}
+
+		public java.util.Date fec_vencimiento;
+
+		public java.util.Date getFec_vencimiento() {
+			return this.fec_vencimiento;
+		}
+
+		public String ind_falta_aprob;
+
+		public String getInd_falta_aprob() {
+			return this.ind_falta_aprob;
+		}
+
+		public String obs1;
+
+		public String getObs1() {
+			return this.obs1;
+		}
+
+		public String obs2;
+
+		public String getObs2() {
+			return this.obs2;
+		}
+
+		public String obs3;
+
+		public String getObs3() {
+			return this.obs3;
+		}
+
+		public String obs4;
+
+		public String getObs4() {
+			return this.obs4;
+		}
+
+		public String obs5;
+
+		public String getObs5() {
+			return this.obs5;
+		}
+
+		public String secs_opciones;
+
+		public String getSecs_opciones() {
+			return this.secs_opciones;
+		}
+
+		public String ind_impresion;
+
+		public String getInd_impresion() {
+			return this.ind_impresion;
+		}
+
+		public String cod_status_ant;
+
+		public String getCod_status_ant() {
+			return this.cod_status_ant;
+		}
+
+		public java.util.Date fec_movimiento_ant;
+
+		public java.util.Date getFec_movimiento_ant() {
+			return this.fec_movimiento_ant;
+		}
+
+		public String cod_status;
+
+		public String getCod_status() {
+			return this.cod_status;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		private Integer readInteger(ObjectInputStream dis) throws IOException {
+			Integer intReturn;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				intReturn = null;
+			} else {
+				intReturn = dis.readInt();
+			}
+			return intReturn;
+		}
+
+		private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException {
+			if (intNum == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeInt(intNum);
+			}
 		}
 
 		public void readData(ObjectInputStream dis) {
@@ -2074,15 +2937,56 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 					int length = 0;
 
-					this.num_acta = (BigDecimal) dis.readObject();
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta = null;
+					} else {
+						this.num_acta = dis.readLong();
+					}
 
-					this.num_acta_nuevo = (BigDecimal) dis.readObject();
+					length = dis.readByte();
+					if (length == -1) {
+						this.sec_movimiento = null;
+					} else {
+						this.sec_movimiento = dis.readShort();
+					}
+
+					this.tip_movimiento = readString(dis);
+
+					this.fec_movimiento = readDate(dis);
+
+					this.obs_movimiento = readString(dis);
+
+					this.cod_usuario = readString(dis);
+
+					this.num_registro = readInteger(dis);
+
+					this.fec_vencimiento = readDate(dis);
+
+					this.ind_falta_aprob = readString(dis);
+
+					this.obs1 = readString(dis);
+
+					this.obs2 = readString(dis);
+
+					this.obs3 = readString(dis);
+
+					this.obs4 = readString(dis);
+
+					this.obs5 = readString(dis);
+
+					this.secs_opciones = readString(dis);
+
+					this.ind_impresion = readString(dis);
+
+					this.cod_status_ant = readString(dis);
+
+					this.fec_movimiento_ant = readDate(dis);
+
+					this.cod_status = readString(dis);
 
 				} catch (IOException e) {
 					throw new RuntimeException(e);
-
-				} catch (ClassNotFoundException eCNFE) {
-					throw new RuntimeException(eCNFE);
 
 				}
 
@@ -2093,13 +2997,91 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		public void writeData(ObjectOutputStream dos) {
 			try {
 
-				// BigDecimal
+				// Long
 
-				dos.writeObject(this.num_acta);
+				if (this.num_acta == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta);
+				}
 
-				// BigDecimal
+				// Short
 
-				dos.writeObject(this.num_acta_nuevo);
+				if (this.sec_movimiento == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.sec_movimiento);
+				}
+
+				// String
+
+				writeString(this.tip_movimiento, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_movimiento, dos);
+
+				// String
+
+				writeString(this.obs_movimiento, dos);
+
+				// String
+
+				writeString(this.cod_usuario, dos);
+
+				// Integer
+
+				writeInteger(this.num_registro, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_vencimiento, dos);
+
+				// String
+
+				writeString(this.ind_falta_aprob, dos);
+
+				// String
+
+				writeString(this.obs1, dos);
+
+				// String
+
+				writeString(this.obs2, dos);
+
+				// String
+
+				writeString(this.obs3, dos);
+
+				// String
+
+				writeString(this.obs4, dos);
+
+				// String
+
+				writeString(this.obs5, dos);
+
+				// String
+
+				writeString(this.secs_opciones, dos);
+
+				// String
+
+				writeString(this.ind_impresion, dos);
+
+				// String
+
+				writeString(this.cod_status_ant, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_movimiento_ant, dos);
+
+				// String
+
+				writeString(this.cod_status, dos);
 
 			} catch (IOException e) {
 				throw new RuntimeException(e);
@@ -2113,7 +3095,24 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			sb.append(super.toString());
 			sb.append("[");
 			sb.append("num_acta=" + String.valueOf(num_acta));
-			sb.append(",num_acta_nuevo=" + String.valueOf(num_acta_nuevo));
+			sb.append(",sec_movimiento=" + String.valueOf(sec_movimiento));
+			sb.append(",tip_movimiento=" + tip_movimiento);
+			sb.append(",fec_movimiento=" + String.valueOf(fec_movimiento));
+			sb.append(",obs_movimiento=" + obs_movimiento);
+			sb.append(",cod_usuario=" + cod_usuario);
+			sb.append(",num_registro=" + String.valueOf(num_registro));
+			sb.append(",fec_vencimiento=" + String.valueOf(fec_vencimiento));
+			sb.append(",ind_falta_aprob=" + ind_falta_aprob);
+			sb.append(",obs1=" + obs1);
+			sb.append(",obs2=" + obs2);
+			sb.append(",obs3=" + obs3);
+			sb.append(",obs4=" + obs4);
+			sb.append(",obs5=" + obs5);
+			sb.append(",secs_opciones=" + secs_opciones);
+			sb.append(",ind_impresion=" + ind_impresion);
+			sb.append(",cod_status_ant=" + cod_status_ant);
+			sb.append(",fec_movimiento_ant=" + String.valueOf(fec_movimiento_ant));
+			sb.append(",cod_status=" + cod_status);
 			sb.append("]");
 
 			return sb.toString();
@@ -2122,7 +3121,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(after_tDBInput_21Struct other) {
+		public int compareTo(after_tDBInput_3Struct other) {
 
 			int returnValue = -1;
 
@@ -2152,8 +3151,8 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public void tDBInput_21Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_21_SUBPROCESS_STATE", 0);
+	public void tDBInput_3Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_3_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -2172,350 +3171,473 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
 
-				tDBInput_22Process(globalMap);
-				tDBInput_23Process(globalMap);
+				tDBInput_4Process(globalMap);
+				tDBInput_6Process(globalMap);
 
-				row32Struct row32 = new row32Struct();
-				insert_related_filesStruct insert_related_files = new insert_related_filesStruct();
-				row31Struct row31 = new row31Struct();
+				row8Struct row8 = new row8Struct();
+				insert_actionsStruct insert_actions = new insert_actionsStruct();
+				row10Struct row10 = new row10Struct();
 
 				/**
-				 * [tLogRow_10 begin ] start
+				 * [tLogRow_4 begin ] start
 				 */
 
-				ok_Hash.put("tLogRow_10", false);
-				start_Hash.put("tLogRow_10", System.currentTimeMillis());
+				ok_Hash.put("tLogRow_4", false);
+				start_Hash.put("tLogRow_4", System.currentTimeMillis());
 
-				currentComponent = "tLogRow_10";
+				currentComponent = "tLogRow_4";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row31");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row10");
 				}
 
-				int tos_count_tLogRow_10 = 0;
+				int tos_count_tLogRow_4 = 0;
 
 				///////////////////////
 
-				final String OUTPUT_FIELD_SEPARATOR_tLogRow_10 = "|";
-				java.io.PrintStream consoleOut_tLogRow_10 = null;
+				final String OUTPUT_FIELD_SEPARATOR_tLogRow_4 = "|";
+				java.io.PrintStream consoleOut_tLogRow_4 = null;
 
-				StringBuilder strBuffer_tLogRow_10 = null;
-				int nb_line_tLogRow_10 = 0;
+				StringBuilder strBuffer_tLogRow_4 = null;
+				int nb_line_tLogRow_4 = 0;
 ///////////////////////    			
 
 				/**
-				 * [tLogRow_10 begin ] stop
+				 * [tLogRow_4 begin ] stop
 				 */
 
 				/**
-				 * [tDBOutput_10 begin ] start
+				 * [tDBOutput_4 begin ] start
 				 */
 
-				ok_Hash.put("tDBOutput_10", false);
-				start_Hash.put("tDBOutput_10", System.currentTimeMillis());
+				ok_Hash.put("tDBOutput_4", false);
+				start_Hash.put("tDBOutput_4", System.currentTimeMillis());
 
-				currentComponent = "tDBOutput_10";
+				currentComponent = "tDBOutput_4";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "insert_related_files");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "insert_actions");
 				}
 
-				int tos_count_tDBOutput_10 = 0;
+				int tos_count_tDBOutput_4 = 0;
 
-				int nb_line_tDBOutput_10 = 0;
-				int nb_line_update_tDBOutput_10 = 0;
-				int nb_line_inserted_tDBOutput_10 = 0;
-				int nb_line_deleted_tDBOutput_10 = 0;
-				int nb_line_rejected_tDBOutput_10 = 0;
+				int nb_line_tDBOutput_4 = 0;
+				int nb_line_update_tDBOutput_4 = 0;
+				int nb_line_inserted_tDBOutput_4 = 0;
+				int nb_line_deleted_tDBOutput_4 = 0;
+				int nb_line_rejected_tDBOutput_4 = 0;
 
-				int deletedCount_tDBOutput_10 = 0;
-				int updatedCount_tDBOutput_10 = 0;
-				int insertedCount_tDBOutput_10 = 0;
-				int rowsToCommitCount_tDBOutput_10 = 0;
-				int rejectedCount_tDBOutput_10 = 0;
-				String dbschema_tDBOutput_10 = null;
-				String tableName_tDBOutput_10 = null;
-				boolean whetherReject_tDBOutput_10 = false;
+				int deletedCount_tDBOutput_4 = 0;
+				int updatedCount_tDBOutput_4 = 0;
+				int insertedCount_tDBOutput_4 = 0;
+				int rejectedCount_tDBOutput_4 = 0;
+				String dbschema_tDBOutput_4 = null;
+				String tableName_tDBOutput_4 = null;
+				boolean whetherReject_tDBOutput_4 = false;
 
-				java.util.Calendar calendar_tDBOutput_10 = java.util.Calendar.getInstance();
-				long year1_tDBOutput_10 = TalendDate.parseDate("yyyy-MM-dd", "0001-01-01").getTime();
-				long year2_tDBOutput_10 = TalendDate.parseDate("yyyy-MM-dd", "1753-01-01").getTime();
-				long year10000_tDBOutput_10 = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss", "9999-12-31 24:00:00")
+				java.util.Calendar calendar_tDBOutput_4 = java.util.Calendar.getInstance();
+				long year1_tDBOutput_4 = TalendDate.parseDate("yyyy-MM-dd", "0001-01-01").getTime();
+				long year2_tDBOutput_4 = TalendDate.parseDate("yyyy-MM-dd", "1753-01-01").getTime();
+				long year10000_tDBOutput_4 = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss", "9999-12-31 24:00:00")
 						.getTime();
-				long date_tDBOutput_10;
+				long date_tDBOutput_4;
 
-				java.util.Calendar calendar_datetimeoffset_tDBOutput_10 = java.util.Calendar
+				java.util.Calendar calendar_datetimeoffset_tDBOutput_4 = java.util.Calendar
 						.getInstance(java.util.TimeZone.getTimeZone("UTC"));
 
-				int updateKeyCount_tDBOutput_10 = 8;
-				if (updateKeyCount_tDBOutput_10 < 1) {
+				int updateKeyCount_tDBOutput_4 = 6;
+				if (updateKeyCount_tDBOutput_4 < 1) {
 					throw new RuntimeException("For update, Schema must have a key");
 				}
 
-				java.sql.Connection conn_tDBOutput_10 = null;
-				String dbUser_tDBOutput_10 = null;
-				dbschema_tDBOutput_10 = (String) globalMap.get("dbschema_tDBConnection_1");
+				java.sql.Connection conn_tDBOutput_4 = null;
+				String dbUser_tDBOutput_4 = null;
+				dbschema_tDBOutput_4 = (String) globalMap.get("dbschema_tDBConnection_1");
 
-				conn_tDBOutput_10 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
+				conn_tDBOutput_4 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
 
-				if (dbschema_tDBOutput_10 == null || dbschema_tDBOutput_10.trim().length() == 0) {
-					tableName_tDBOutput_10 = "VW_IMPORT_MARK_RELS";
+				if (dbschema_tDBOutput_4 == null || dbschema_tDBOutput_4.trim().length() == 0) {
+					tableName_tDBOutput_4 = "VW_IMPORT_MARK_ACTIONS";
 				} else {
-					tableName_tDBOutput_10 = dbschema_tDBOutput_10 + "].[" + "VW_IMPORT_MARK_RELS";
+					tableName_tDBOutput_4 = dbschema_tDBOutput_4 + "].[" + "VW_IMPORT_MARK_ACTIONS";
 				}
-				int count_tDBOutput_10 = 0;
+				int count_tDBOutput_4 = 0;
 
-				try (java.sql.Statement stmtClear_tDBOutput_10 = conn_tDBOutput_10.createStatement()) {
-					stmtClear_tDBOutput_10.executeUpdate("DELETE FROM [" + tableName_tDBOutput_10 + "]");
+				int rsTruncCountNumber_tDBOutput_4 = 0;
+				try (java.sql.Statement stmtTruncCount_tDBOutput_4 = conn_tDBOutput_4.createStatement()) {
+					try (java.sql.ResultSet rsTruncCount_tDBOutput_4 = stmtTruncCount_tDBOutput_4
+							.executeQuery("SELECT COUNT(1) FROM [" + tableName_tDBOutput_4 + "]")) {
+						if (rsTruncCount_tDBOutput_4.next()) {
+							rsTruncCountNumber_tDBOutput_4 = rsTruncCount_tDBOutput_4.getInt(1);
+						}
+					}
 				}
-				java.sql.PreparedStatement pstmt_tDBOutput_10 = conn_tDBOutput_10
-						.prepareStatement("SELECT COUNT(1) FROM [" + tableName_tDBOutput_10
-								+ "] WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [RELATED_FILE_SEQ] = ? AND [RELATED_FILE_TYPE] = ? AND [RELATED_FILE_SERIES] = ? AND [RELATED_FILE_NBR] = ?");
-				resourceMap.put("pstmt_tDBOutput_10", pstmt_tDBOutput_10);
-				String insert_tDBOutput_10 = "INSERT INTO [" + tableName_tDBOutput_10
-						+ "] ([FILE_SEQ],[FILE_TYPE],[FILE_SERIES],[FILE_NBR],[RELATIONSHIP_TYPE],[RELATIONSHIP_ROLE],[RELATED_FILE_SEQ],[RELATED_FILE_TYPE],[RELATED_FILE_SERIES],[RELATED_FILE_NBR],[IND_IMPORT]) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
-				java.sql.PreparedStatement pstmtInsert_tDBOutput_10 = conn_tDBOutput_10
-						.prepareStatement(insert_tDBOutput_10);
-				resourceMap.put("pstmtInsert_tDBOutput_10", pstmtInsert_tDBOutput_10);
-				String update_tDBOutput_10 = "UPDATE [" + tableName_tDBOutput_10
-						+ "] SET [RELATIONSHIP_TYPE] = ?,[RELATIONSHIP_ROLE] = ?,[IND_IMPORT] = ? WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [RELATED_FILE_SEQ] = ? AND [RELATED_FILE_TYPE] = ? AND [RELATED_FILE_SERIES] = ? AND [RELATED_FILE_NBR] = ?";
-				java.sql.PreparedStatement pstmtUpdate_tDBOutput_10 = conn_tDBOutput_10
-						.prepareStatement(update_tDBOutput_10);
-				resourceMap.put("pstmtUpdate_tDBOutput_10", pstmtUpdate_tDBOutput_10);
-				boolean isShareIdentity_tDBOutput_10 = globalMap.get("shareIdentitySetting_tDBConnection_1") != null
+				try (java.sql.Statement stmtTrunc_tDBOutput_4 = conn_tDBOutput_4.createStatement()) {
+					stmtTrunc_tDBOutput_4.executeUpdate("TRUNCATE TABLE [" + tableName_tDBOutput_4 + "]");
+					deletedCount_tDBOutput_4 += rsTruncCountNumber_tDBOutput_4;
+				}
+				java.sql.PreparedStatement pstmt_tDBOutput_4 = conn_tDBOutput_4
+						.prepareStatement("SELECT COUNT(1) FROM [" + tableName_tDBOutput_4
+								+ "] WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [ACTION_TYPE] = ? AND [ACTION_DATE] = ?");
+				resourceMap.put("pstmt_tDBOutput_4", pstmt_tDBOutput_4);
+				String insert_tDBOutput_4 = "INSERT INTO [" + tableName_tDBOutput_4
+						+ "] ([FILE_SEQ],[FILE_TYPE],[FILE_SERIES],[FILE_NBR],[ACTION_TYPE],[ACTION_DATE],[MANUAL_DUE_DATE],[RESPONSIBLE_USER],[ACTION_NOTES1],[ACTION_NOTES2],[ACTION_NOTES3],[ACTION_NOTES4],[ACTION_NOTES5],[GENERAL_NOTES],[SELECTED_OPTIONS_TEXT],[ACTION_USER],[ACTION_CATEGORY],[SPECIAL_FINAL_STATUS],[JOURNAL_CODE],[PUBLICATION_DATE],[IPAS_PROC_TYP],[IPAS_PROC_NBR],[IPAS_ACTION_NBR]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+				java.sql.PreparedStatement pstmtInsert_tDBOutput_4 = conn_tDBOutput_4
+						.prepareStatement(insert_tDBOutput_4);
+				resourceMap.put("pstmtInsert_tDBOutput_4", pstmtInsert_tDBOutput_4);
+				String update_tDBOutput_4 = "UPDATE [" + tableName_tDBOutput_4
+						+ "] SET [MANUAL_DUE_DATE] = ?,[RESPONSIBLE_USER] = ?,[ACTION_NOTES1] = ?,[ACTION_NOTES2] = ?,[ACTION_NOTES3] = ?,[ACTION_NOTES4] = ?,[ACTION_NOTES5] = ?,[GENERAL_NOTES] = ?,[SELECTED_OPTIONS_TEXT] = ?,[ACTION_USER] = ?,[ACTION_CATEGORY] = ?,[SPECIAL_FINAL_STATUS] = ?,[JOURNAL_CODE] = ?,[PUBLICATION_DATE] = ?,[IPAS_PROC_TYP] = ?,[IPAS_PROC_NBR] = ?,[IPAS_ACTION_NBR] = ? WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [ACTION_TYPE] = ? AND [ACTION_DATE] = ?";
+				java.sql.PreparedStatement pstmtUpdate_tDBOutput_4 = conn_tDBOutput_4
+						.prepareStatement(update_tDBOutput_4);
+				resourceMap.put("pstmtUpdate_tDBOutput_4", pstmtUpdate_tDBOutput_4);
+				boolean isShareIdentity_tDBOutput_4 = globalMap.get("shareIdentitySetting_tDBConnection_1") != null
 						&& (Boolean) globalMap.get("shareIdentitySetting_tDBConnection_1") == true;
 
 				/**
-				 * [tDBOutput_10 begin ] stop
+				 * [tDBOutput_4 begin ] stop
 				 */
 
 				/**
-				 * [tMap_9 begin ] start
+				 * [tMap_3 begin ] start
 				 */
 
-				ok_Hash.put("tMap_9", false);
-				start_Hash.put("tMap_9", System.currentTimeMillis());
+				ok_Hash.put("tMap_3", false);
+				start_Hash.put("tMap_3", System.currentTimeMillis());
 
-				currentComponent = "tMap_9";
+				currentComponent = "tMap_3";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row32");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row8");
 				}
 
-				int tos_count_tMap_9 = 0;
+				int tos_count_tMap_3 = 0;
 
 // ###############################
 // # Lookup's keys initialization
 
-				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row33Struct> tHash_Lookup_row33 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row33Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row33Struct>) globalMap
-						.get("tHash_Lookup_row33"));
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct> tHash_Lookup_row9 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct>) globalMap
+						.get("tHash_Lookup_row9"));
 
-				row33Struct row33HashKey = new row33Struct();
-				row33Struct row33Default = new row33Struct();
+				row9Struct row9HashKey = new row9Struct();
+				row9Struct row9Default = new row9Struct();
 
-				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row34Struct> tHash_Lookup_row34 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row34Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row34Struct>) globalMap
-						.get("tHash_Lookup_row34"));
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row11Struct> tHash_Lookup_row11 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row11Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row11Struct>) globalMap
+						.get("tHash_Lookup_row11"));
 
-				row34Struct row34HashKey = new row34Struct();
-				row34Struct row34Default = new row34Struct();
+				row11Struct row11HashKey = new row11Struct();
+				row11Struct row11Default = new row11Struct();
 // ###############################        
 
 // ###############################
 // # Vars initialization
-				class Var__tMap_9__Struct {
+				class Var__tMap_3__Struct {
 				}
-				Var__tMap_9__Struct Var__tMap_9 = new Var__tMap_9__Struct();
+				Var__tMap_3__Struct Var__tMap_3 = new Var__tMap_3__Struct();
 // ###############################
 
 // ###############################
 // # Outputs initialization
-				insert_related_filesStruct insert_related_files_tmp = new insert_related_filesStruct();
+				insert_actionsStruct insert_actions_tmp = new insert_actionsStruct();
 // ###############################
 
 				/**
-				 * [tMap_9 begin ] stop
+				 * [tMap_3 begin ] stop
 				 */
 
 				/**
-				 * [tDBInput_21 begin ] start
+				 * [tDBInput_3 begin ] start
 				 */
 
-				ok_Hash.put("tDBInput_21", false);
-				start_Hash.put("tDBInput_21", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_3", false);
+				start_Hash.put("tDBInput_3", System.currentTimeMillis());
 
-				currentComponent = "tDBInput_21";
+				currentComponent = "tDBInput_3";
 
-				int tos_count_tDBInput_21 = 0;
+				int tos_count_tDBInput_3 = 0;
 
-				int nb_line_tDBInput_21 = 0;
-				java.sql.Connection conn_tDBInput_21 = null;
-				conn_tDBInput_21 = (java.sql.Connection) globalMap.get("conn_tDBConnection_2");
+				int nb_line_tDBInput_3 = 0;
+				java.sql.Connection conn_tDBInput_3 = null;
+				conn_tDBInput_3 = (java.sql.Connection) globalMap.get("conn_tDBConnection_2");
 
-				java.sql.Statement stmt_tDBInput_21 = conn_tDBInput_21.createStatement();
+				java.sql.Statement stmt_tDBInput_3 = conn_tDBInput_3.createStatement();
 
-				String dbquery_tDBInput_21 = "select \"num_acta\",\"num_acta_nuevo\" from \"marca\" where \"num_acta_nuevo\" is not null";
+				String dbquery_tDBInput_3 = "SELECT \n  \"Paraguay\".\"public\".\"movimiento\".\"num_acta\", \n  \"Paraguay\".\"public\".\"movimiento\".\"sec_movimien"
+						+ "to\", \n  \"Paraguay\".\"public\".\"movimiento\".\"tip_movimiento\", \n  \"Paraguay\".\"public\".\"movimiento\".\"fec_movi"
+						+ "miento\", \n  \"Paraguay\".\"public\".\"movimiento\".\"obs_movimiento\", \n  \"Paraguay\".\"public\".\"movimiento\".\"cod_"
+						+ "usuario\", \n  \"Paraguay\".\"public\".\"movimiento\".\"num_registro\", \n  \"Paraguay\".\"public\".\"movimiento\".\"fec_v"
+						+ "encimiento\", \n  \"Paraguay\".\"public\".\"movimiento\".\"ind_falta_aprob\", \n  \"Paraguay\".\"public\".\"movimiento\"."
+						+ "\"obs1\", \n  \"Paraguay\".\"public\".\"movimiento\".\"obs2\", \n  \"Paraguay\".\"public\".\"movimiento\".\"obs3\", \n  \"P"
+						+ "araguay\".\"public\".\"movimiento\".\"obs4\", \n  \"Paraguay\".\"public\".\"movimiento\".\"obs5\", \n  \"Paraguay\".\"publ"
+						+ "ic\".\"movimiento\".\"secs_opciones\", \n  \"Paraguay\".\"public\".\"movimiento\".\"ind_impresion\", \n  \"Paraguay\".\"pu"
+						+ "blic\".\"movimiento\".\"cod_status_ant\", \n  \"Paraguay\".\"public\".\"movimiento\".\"fec_movimiento_ant\", \n  \"Paragua"
+						+ "y\".\"public\".\"movimiento\".\"cod_status\"\nFROM \"Paraguay\".\"public\".\"movimiento\"";
 
-				globalMap.put("tDBInput_21_QUERY", dbquery_tDBInput_21);
-				java.sql.ResultSet rs_tDBInput_21 = null;
+				globalMap.put("tDBInput_3_QUERY", dbquery_tDBInput_3);
+				java.sql.ResultSet rs_tDBInput_3 = null;
 
 				try {
-					rs_tDBInput_21 = stmt_tDBInput_21.executeQuery(dbquery_tDBInput_21);
-					java.sql.ResultSetMetaData rsmd_tDBInput_21 = rs_tDBInput_21.getMetaData();
-					int colQtyInRs_tDBInput_21 = rsmd_tDBInput_21.getColumnCount();
+					rs_tDBInput_3 = stmt_tDBInput_3.executeQuery(dbquery_tDBInput_3);
+					java.sql.ResultSetMetaData rsmd_tDBInput_3 = rs_tDBInput_3.getMetaData();
+					int colQtyInRs_tDBInput_3 = rsmd_tDBInput_3.getColumnCount();
 
-					String tmpContent_tDBInput_21 = null;
+					String tmpContent_tDBInput_3 = null;
 
-					while (rs_tDBInput_21.next()) {
-						nb_line_tDBInput_21++;
+					while (rs_tDBInput_3.next()) {
+						nb_line_tDBInput_3++;
 
-						if (colQtyInRs_tDBInput_21 < 1) {
-							row32.num_acta = null;
+						if (colQtyInRs_tDBInput_3 < 1) {
+							row8.num_acta = null;
 						} else {
 
-							row32.num_acta = rs_tDBInput_21.getBigDecimal(1);
-							if (rs_tDBInput_21.wasNull()) {
-								row32.num_acta = null;
+							row8.num_acta = rs_tDBInput_3.getLong(1);
+							if (rs_tDBInput_3.wasNull()) {
+								row8.num_acta = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_21 < 2) {
-							row32.num_acta_nuevo = null;
+						if (colQtyInRs_tDBInput_3 < 2) {
+							row8.sec_movimiento = null;
 						} else {
 
-							row32.num_acta_nuevo = rs_tDBInput_21.getBigDecimal(2);
-							if (rs_tDBInput_21.wasNull()) {
-								row32.num_acta_nuevo = null;
+							row8.sec_movimiento = rs_tDBInput_3.getShort(2);
+							if (rs_tDBInput_3.wasNull()) {
+								row8.sec_movimiento = null;
 							}
+						}
+						if (colQtyInRs_tDBInput_3 < 3) {
+							row8.tip_movimiento = null;
+						} else {
+
+							row8.tip_movimiento = routines.system.JDBCUtil.getString(rs_tDBInput_3, 3, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 4) {
+							row8.fec_movimiento = null;
+						} else {
+
+							row8.fec_movimiento = routines.system.JDBCUtil.getDate(rs_tDBInput_3, 4);
+						}
+						if (colQtyInRs_tDBInput_3 < 5) {
+							row8.obs_movimiento = null;
+						} else {
+
+							row8.obs_movimiento = routines.system.JDBCUtil.getString(rs_tDBInput_3, 5, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 6) {
+							row8.cod_usuario = null;
+						} else {
+
+							row8.cod_usuario = routines.system.JDBCUtil.getString(rs_tDBInput_3, 6, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 7) {
+							row8.num_registro = null;
+						} else {
+
+							row8.num_registro = rs_tDBInput_3.getInt(7);
+							if (rs_tDBInput_3.wasNull()) {
+								row8.num_registro = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_3 < 8) {
+							row8.fec_vencimiento = null;
+						} else {
+
+							row8.fec_vencimiento = routines.system.JDBCUtil.getDate(rs_tDBInput_3, 8);
+						}
+						if (colQtyInRs_tDBInput_3 < 9) {
+							row8.ind_falta_aprob = null;
+						} else {
+
+							row8.ind_falta_aprob = routines.system.JDBCUtil.getString(rs_tDBInput_3, 9, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 10) {
+							row8.obs1 = null;
+						} else {
+
+							row8.obs1 = routines.system.JDBCUtil.getString(rs_tDBInput_3, 10, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 11) {
+							row8.obs2 = null;
+						} else {
+
+							row8.obs2 = routines.system.JDBCUtil.getString(rs_tDBInput_3, 11, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 12) {
+							row8.obs3 = null;
+						} else {
+
+							row8.obs3 = routines.system.JDBCUtil.getString(rs_tDBInput_3, 12, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 13) {
+							row8.obs4 = null;
+						} else {
+
+							row8.obs4 = routines.system.JDBCUtil.getString(rs_tDBInput_3, 13, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 14) {
+							row8.obs5 = null;
+						} else {
+
+							row8.obs5 = routines.system.JDBCUtil.getString(rs_tDBInput_3, 14, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 15) {
+							row8.secs_opciones = null;
+						} else {
+
+							row8.secs_opciones = routines.system.JDBCUtil.getString(rs_tDBInput_3, 15, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 16) {
+							row8.ind_impresion = null;
+						} else {
+
+							row8.ind_impresion = routines.system.JDBCUtil.getString(rs_tDBInput_3, 16, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 17) {
+							row8.cod_status_ant = null;
+						} else {
+
+							row8.cod_status_ant = routines.system.JDBCUtil.getString(rs_tDBInput_3, 17, false);
+						}
+						if (colQtyInRs_tDBInput_3 < 18) {
+							row8.fec_movimiento_ant = null;
+						} else {
+
+							row8.fec_movimiento_ant = routines.system.JDBCUtil.getDate(rs_tDBInput_3, 18);
+						}
+						if (colQtyInRs_tDBInput_3 < 19) {
+							row8.cod_status = null;
+						} else {
+
+							row8.cod_status = routines.system.JDBCUtil.getString(rs_tDBInput_3, 19, false);
 						}
 
 						/**
-						 * [tDBInput_21 begin ] stop
+						 * [tDBInput_3 begin ] stop
 						 */
 
 						/**
-						 * [tDBInput_21 main ] start
+						 * [tDBInput_3 main ] start
 						 */
 
-						currentComponent = "tDBInput_21";
+						currentComponent = "tDBInput_3";
 
-						tos_count_tDBInput_21++;
-
-						/**
-						 * [tDBInput_21 main ] stop
-						 */
+						tos_count_tDBInput_3++;
 
 						/**
-						 * [tDBInput_21 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_21";
-
-						/**
-						 * [tDBInput_21 process_data_begin ] stop
+						 * [tDBInput_3 main ] stop
 						 */
 
 						/**
-						 * [tMap_9 main ] start
+						 * [tDBInput_3 process_data_begin ] start
 						 */
 
-						currentComponent = "tMap_9";
+						currentComponent = "tDBInput_3";
+
+						/**
+						 * [tDBInput_3 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tMap_3 main ] start
+						 */
+
+						currentComponent = "tMap_3";
 
 						if (execStat) {
 							runStat.updateStatOnConnection(iterateId, 1, 1
 
-									, "row32"
+									, "row8"
 
 							);
 						}
 
-						boolean hasCasePrimitiveKeyWithNull_tMap_9 = false;
+						boolean hasCasePrimitiveKeyWithNull_tMap_3 = false;
 
 						// ###############################
 						// # Input tables (lookups)
-						boolean rejectedInnerJoin_tMap_9 = false;
-						boolean mainRowRejected_tMap_9 = false;
+						boolean rejectedInnerJoin_tMap_3 = false;
+						boolean mainRowRejected_tMap_3 = false;
 
 						///////////////////////////////////////////////
-						// Starting Lookup Table "row33"
+						// Starting Lookup Table "row9"
 						///////////////////////////////////////////////
 
-						boolean forceLooprow33 = false;
+						boolean forceLooprow9 = false;
 
-						row33Struct row33ObjectFromLookup = null;
+						row9Struct row9ObjectFromLookup = null;
 
-						if (!rejectedInnerJoin_tMap_9) { // G_TM_M_020
+						if (!rejectedInnerJoin_tMap_3) { // G_TM_M_020
 
-							hasCasePrimitiveKeyWithNull_tMap_9 = false;
+							hasCasePrimitiveKeyWithNull_tMap_3 = false;
 
-							row33HashKey.FILE_NBR = row32.num_acta;
+							row9HashKey.FILE_NBR = new BigDecimal(row8.num_acta);
 
-							row33HashKey.hashCodeDirty = true;
+							row9HashKey.hashCodeDirty = true;
 
-							tHash_Lookup_row33.lookup(row33HashKey);
+							tHash_Lookup_row9.lookup(row9HashKey);
 
 						} // G_TM_M_020
 
-						if (tHash_Lookup_row33 != null && tHash_Lookup_row33.getCount(row33HashKey) > 1) { // G 071
+						if (tHash_Lookup_row9 != null && tHash_Lookup_row9.getCount(row9HashKey) > 1) { // G 071
 
-							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup
-							// 'row33' and it contains more one result from keys : row33.FILE_NBR = '" +
-							// row33HashKey.FILE_NBR + "'");
+							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup 'row9'
+							// and it contains more one result from keys : row9.FILE_NBR = '" +
+							// row9HashKey.FILE_NBR + "'");
 						} // G 071
 
-						row33Struct row33 = null;
+						row9Struct row9 = null;
 
-						row33Struct fromLookup_row33 = null;
-						row33 = row33Default;
+						row9Struct fromLookup_row9 = null;
+						row9 = row9Default;
 
-						if (tHash_Lookup_row33 != null && tHash_Lookup_row33.hasNext()) { // G 099
+						if (tHash_Lookup_row9 != null && tHash_Lookup_row9.hasNext()) { // G 099
 
-							fromLookup_row33 = tHash_Lookup_row33.next();
+							fromLookup_row9 = tHash_Lookup_row9.next();
 
 						} // G 099
 
-						if (fromLookup_row33 != null) {
-							row33 = fromLookup_row33;
+						if (fromLookup_row9 != null) {
+							row9 = fromLookup_row9;
 						}
 
 						///////////////////////////////////////////////
-						// Starting Lookup Table "row34"
+						// Starting Lookup Table "row11"
 						///////////////////////////////////////////////
 
-						boolean forceLooprow34 = false;
+						boolean forceLooprow11 = false;
 
-						row34Struct row34ObjectFromLookup = null;
+						row11Struct row11ObjectFromLookup = null;
 
-						if (!rejectedInnerJoin_tMap_9) { // G_TM_M_020
+						if (!rejectedInnerJoin_tMap_3) { // G_TM_M_020
 
-							hasCasePrimitiveKeyWithNull_tMap_9 = false;
+							hasCasePrimitiveKeyWithNull_tMap_3 = false;
 
-							row34HashKey.FILE_NBR = row32.num_acta_nuevo;
+							row11HashKey.LOGIN = row8.cod_usuario;
 
-							row34HashKey.hashCodeDirty = true;
+							row11HashKey.hashCodeDirty = true;
 
-							tHash_Lookup_row34.lookup(row34HashKey);
+							tHash_Lookup_row11.lookup(row11HashKey);
 
 						} // G_TM_M_020
 
-						if (tHash_Lookup_row34 != null && tHash_Lookup_row34.getCount(row34HashKey) > 1) { // G 071
+						if (tHash_Lookup_row11 != null && tHash_Lookup_row11.getCount(row11HashKey) > 1) { // G 071
 
 							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup
-							// 'row34' and it contains more one result from keys : row34.FILE_NBR = '" +
-							// row34HashKey.FILE_NBR + "'");
+							// 'row11' and it contains more one result from keys : row11.LOGIN = '" +
+							// row11HashKey.LOGIN + "'");
 						} // G 071
 
-						row34Struct row34 = null;
+						row11Struct row11 = null;
 
-						row34Struct fromLookup_row34 = null;
-						row34 = row34Default;
+						row11Struct fromLookup_row11 = null;
+						row11 = row11Default;
 
-						if (tHash_Lookup_row34 != null && tHash_Lookup_row34.hasNext()) { // G 099
+						if (tHash_Lookup_row11 != null && tHash_Lookup_row11.hasNext()) { // G 099
 
-							fromLookup_row34 = tHash_Lookup_row34.next();
+							fromLookup_row11 = tHash_Lookup_row11.next();
 
 						} // G 099
 
-						if (fromLookup_row34 != null) {
-							row34 = fromLookup_row34;
+						if (fromLookup_row11 != null) {
+							row11 = fromLookup_row11;
 						}
 
 						// ###############################
@@ -2524,283 +3646,456 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 							// ###############################
 							// # Vars tables
 
-							Var__tMap_9__Struct Var = Var__tMap_9;// ###############################
+							Var__tMap_3__Struct Var = Var__tMap_3;// ###############################
 							// ###############################
 							// # Output tables
 
-							insert_related_files = null;
+							insert_actions = null;
 
-// # Output table : 'insert_related_files'
-							insert_related_files_tmp.FILE_SEQ = row33.FILE_SEQ;
-							insert_related_files_tmp.FILE_TYPE = row33.FILE_TYPE;
-							insert_related_files_tmp.FILE_SERIES = row33.FILE_SERIES;
-							insert_related_files_tmp.FILE_NBR = row33.FILE_NBR;
-							insert_related_files_tmp.RELATIONSHIP_TYPE = "REN";
-							insert_related_files_tmp.RELATIONSHIP_ROLE = "1";
-							insert_related_files_tmp.RELATED_FILE_SEQ = row34.FILE_SEQ;
-							insert_related_files_tmp.RELATED_FILE_TYPE = row34.FILE_TYPE;
-							insert_related_files_tmp.RELATED_FILE_SERIES = row34.FILE_SERIES;
-							insert_related_files_tmp.RELATED_FILE_NBR = row34.FILE_NBR;
-							insert_related_files_tmp.IND_IMPORT = null;
-							insert_related_files = insert_related_files_tmp;
+// # Output table : 'insert_actions'
+							insert_actions_tmp.FILE_SEQ = row9.FILE_SEQ;
+							insert_actions_tmp.FILE_TYPE = row9.FILE_TYPE;
+							insert_actions_tmp.FILE_SERIES = row9.FILE_SERIES;
+							insert_actions_tmp.FILE_NBR = row9.FILE_NBR;
+							insert_actions_tmp.ACTION_TYPE = row8.tip_movimiento;
+							insert_actions_tmp.ACTION_DATE = TalendDate.compareDate(row8.fec_movimiento,
+									TalendDate.parseDateInUTC("yyyy-MM-dd HH:mm:ss", "1800-01-01 00:00:00"),
+									"yyyy-MM-dd") == 1 ? row8.fec_movimiento
+											: row8.fec_movimiento_ant != null ? row8.fec_movimiento_ant
+													: TalendDate.getCurrentDate();
+							insert_actions_tmp.MANUAL_DUE_DATE = null;
+							insert_actions_tmp.RESPONSIBLE_USER = row11.USER_ID != null ? row11.USER_ID
+									: new BigDecimal("4");
+							insert_actions_tmp.ACTION_NOTES1 = row8.obs1;
+							insert_actions_tmp.ACTION_NOTES2 = row8.obs2;
+							insert_actions_tmp.ACTION_NOTES3 = row8.obs3;
+							insert_actions_tmp.ACTION_NOTES4 = row8.obs4;
+							insert_actions_tmp.ACTION_NOTES5 = row8.obs5;
+							insert_actions_tmp.GENERAL_NOTES = row8.obs_movimiento;
+							insert_actions_tmp.SELECTED_OPTIONS_TEXT = row8.secs_opciones;
+							insert_actions_tmp.ACTION_USER = row11.USER_ID != null ? row11.USER_ID
+									: new BigDecimal("4");
+							insert_actions_tmp.ACTION_CATEGORY = "N";
+							insert_actions_tmp.SPECIAL_FINAL_STATUS = null;
+							insert_actions_tmp.JOURNAL_CODE = null;
+							insert_actions_tmp.PUBLICATION_DATE = null;
+							insert_actions_tmp.IPAS_PROC_TYP = null;
+							insert_actions_tmp.IPAS_PROC_NBR = null;
+							insert_actions_tmp.IPAS_ACTION_NBR = null;
+							insert_actions = insert_actions_tmp;
 // ###############################
 
 						} // end of Var scope
 
-						rejectedInnerJoin_tMap_9 = false;
+						rejectedInnerJoin_tMap_3 = false;
 
-						tos_count_tMap_9++;
+						tos_count_tMap_3++;
 
 						/**
-						 * [tMap_9 main ] stop
+						 * [tMap_3 main ] stop
 						 */
 
 						/**
-						 * [tMap_9 process_data_begin ] start
+						 * [tMap_3 process_data_begin ] start
 						 */
 
-						currentComponent = "tMap_9";
+						currentComponent = "tMap_3";
 
 						/**
-						 * [tMap_9 process_data_begin ] stop
+						 * [tMap_3 process_data_begin ] stop
 						 */
-// Start of branch "insert_related_files"
-						if (insert_related_files != null) {
-							row31 = null;
+// Start of branch "insert_actions"
+						if (insert_actions != null) {
+							row10 = null;
 
 							/**
-							 * [tDBOutput_10 main ] start
+							 * [tDBOutput_4 main ] start
 							 */
 
-							currentComponent = "tDBOutput_10";
+							currentComponent = "tDBOutput_4";
 
 							if (execStat) {
 								runStat.updateStatOnConnection(iterateId, 1, 1
 
-										, "insert_related_files"
+										, "insert_actions"
 
 								);
 							}
 
-							row31 = null;
-							whetherReject_tDBOutput_10 = false;
+							row10 = null;
+							whetherReject_tDBOutput_4 = false;
 
-							if (insert_related_files.FILE_SEQ == null) {
-								pstmt_tDBOutput_10.setNull(1, java.sql.Types.VARCHAR);
+							if (insert_actions.FILE_SEQ == null) {
+								pstmt_tDBOutput_4.setNull(1, java.sql.Types.VARCHAR);
 							} else {
-								pstmt_tDBOutput_10.setString(1, insert_related_files.FILE_SEQ);
+								pstmt_tDBOutput_4.setString(1, insert_actions.FILE_SEQ);
 							}
 
-							if (insert_related_files.FILE_TYPE == null) {
-								pstmt_tDBOutput_10.setNull(2, java.sql.Types.VARCHAR);
+							if (insert_actions.FILE_TYPE == null) {
+								pstmt_tDBOutput_4.setNull(2, java.sql.Types.VARCHAR);
 							} else {
-								pstmt_tDBOutput_10.setString(2, insert_related_files.FILE_TYPE);
+								pstmt_tDBOutput_4.setString(2, insert_actions.FILE_TYPE);
 							}
 
-							pstmt_tDBOutput_10.setBigDecimal(3, insert_related_files.FILE_SERIES);
+							pstmt_tDBOutput_4.setBigDecimal(3, insert_actions.FILE_SERIES);
 
-							pstmt_tDBOutput_10.setBigDecimal(4, insert_related_files.FILE_NBR);
+							pstmt_tDBOutput_4.setBigDecimal(4, insert_actions.FILE_NBR);
 
-							if (insert_related_files.RELATED_FILE_SEQ == null) {
-								pstmt_tDBOutput_10.setNull(5, java.sql.Types.VARCHAR);
+							if (insert_actions.ACTION_TYPE == null) {
+								pstmt_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
 							} else {
-								pstmt_tDBOutput_10.setString(5, insert_related_files.RELATED_FILE_SEQ);
+								pstmt_tDBOutput_4.setString(5, insert_actions.ACTION_TYPE);
 							}
 
-							if (insert_related_files.RELATED_FILE_TYPE == null) {
-								pstmt_tDBOutput_10.setNull(6, java.sql.Types.VARCHAR);
+							if (insert_actions.ACTION_DATE != null) {
+								pstmt_tDBOutput_4.setTimestamp(6,
+										new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
 							} else {
-								pstmt_tDBOutput_10.setString(6, insert_related_files.RELATED_FILE_TYPE);
+								pstmt_tDBOutput_4.setNull(6, java.sql.Types.TIMESTAMP);
 							}
 
-							pstmt_tDBOutput_10.setBigDecimal(7, insert_related_files.RELATED_FILE_SERIES);
-
-							pstmt_tDBOutput_10.setBigDecimal(8, insert_related_files.RELATED_FILE_NBR);
-
-							int checkCount_tDBOutput_10 = -1;
-							try (java.sql.ResultSet rs_tDBOutput_10 = pstmt_tDBOutput_10.executeQuery()) {
-								while (rs_tDBOutput_10.next()) {
-									checkCount_tDBOutput_10 = rs_tDBOutput_10.getInt(1);
+							int checkCount_tDBOutput_4 = -1;
+							try (java.sql.ResultSet rs_tDBOutput_4 = pstmt_tDBOutput_4.executeQuery()) {
+								while (rs_tDBOutput_4.next()) {
+									checkCount_tDBOutput_4 = rs_tDBOutput_4.getInt(1);
 								}
 							}
-							if (checkCount_tDBOutput_10 > 0) {
+							if (checkCount_tDBOutput_4 > 0) {
 								try {
-									if (insert_related_files.RELATIONSHIP_TYPE == null) {
-										pstmtUpdate_tDBOutput_10.setNull(1, java.sql.Types.VARCHAR);
+									if (insert_actions.MANUAL_DUE_DATE != null) {
+										pstmtUpdate_tDBOutput_4.setTimestamp(1,
+												new java.sql.Timestamp(insert_actions.MANUAL_DUE_DATE.getTime()));
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(1, insert_related_files.RELATIONSHIP_TYPE);
+										pstmtUpdate_tDBOutput_4.setNull(1, java.sql.Types.TIMESTAMP);
 									}
 
-									if (insert_related_files.RELATIONSHIP_ROLE == null) {
-										pstmtUpdate_tDBOutput_10.setNull(2, java.sql.Types.VARCHAR);
+									pstmtUpdate_tDBOutput_4.setBigDecimal(2, insert_actions.RESPONSIBLE_USER);
+
+									if (insert_actions.ACTION_NOTES1 == null) {
+										pstmtUpdate_tDBOutput_4.setNull(3, java.sql.Types.VARCHAR);
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(2, insert_related_files.RELATIONSHIP_ROLE);
+										pstmtUpdate_tDBOutput_4.setString(3, insert_actions.ACTION_NOTES1);
 									}
 
-									pstmtUpdate_tDBOutput_10.setBigDecimal(3, insert_related_files.IND_IMPORT);
-
-									if (insert_related_files.FILE_SEQ == null) {
-										pstmtUpdate_tDBOutput_10.setNull(4 + count_tDBOutput_10,
-												java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_NOTES2 == null) {
+										pstmtUpdate_tDBOutput_4.setNull(4, java.sql.Types.VARCHAR);
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(4 + count_tDBOutput_10,
-												insert_related_files.FILE_SEQ);
+										pstmtUpdate_tDBOutput_4.setString(4, insert_actions.ACTION_NOTES2);
 									}
 
-									if (insert_related_files.FILE_TYPE == null) {
-										pstmtUpdate_tDBOutput_10.setNull(5 + count_tDBOutput_10,
-												java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_NOTES3 == null) {
+										pstmtUpdate_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(5 + count_tDBOutput_10,
-												insert_related_files.FILE_TYPE);
+										pstmtUpdate_tDBOutput_4.setString(5, insert_actions.ACTION_NOTES3);
 									}
 
-									pstmtUpdate_tDBOutput_10.setBigDecimal(6 + count_tDBOutput_10,
-											insert_related_files.FILE_SERIES);
-
-									pstmtUpdate_tDBOutput_10.setBigDecimal(7 + count_tDBOutput_10,
-											insert_related_files.FILE_NBR);
-
-									if (insert_related_files.RELATED_FILE_SEQ == null) {
-										pstmtUpdate_tDBOutput_10.setNull(8 + count_tDBOutput_10,
-												java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_NOTES4 == null) {
+										pstmtUpdate_tDBOutput_4.setNull(6, java.sql.Types.VARCHAR);
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(8 + count_tDBOutput_10,
-												insert_related_files.RELATED_FILE_SEQ);
+										pstmtUpdate_tDBOutput_4.setString(6, insert_actions.ACTION_NOTES4);
 									}
 
-									if (insert_related_files.RELATED_FILE_TYPE == null) {
-										pstmtUpdate_tDBOutput_10.setNull(9 + count_tDBOutput_10,
-												java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_NOTES5 == null) {
+										pstmtUpdate_tDBOutput_4.setNull(7, java.sql.Types.VARCHAR);
 									} else {
-										pstmtUpdate_tDBOutput_10.setString(9 + count_tDBOutput_10,
-												insert_related_files.RELATED_FILE_TYPE);
+										pstmtUpdate_tDBOutput_4.setString(7, insert_actions.ACTION_NOTES5);
 									}
 
-									pstmtUpdate_tDBOutput_10.setBigDecimal(10 + count_tDBOutput_10,
-											insert_related_files.RELATED_FILE_SERIES);
+									if (insert_actions.GENERAL_NOTES == null) {
+										pstmtUpdate_tDBOutput_4.setNull(8, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(8, insert_actions.GENERAL_NOTES);
+									}
 
-									pstmtUpdate_tDBOutput_10.setBigDecimal(11 + count_tDBOutput_10,
-											insert_related_files.RELATED_FILE_NBR);
+									if (insert_actions.SELECTED_OPTIONS_TEXT == null) {
+										pstmtUpdate_tDBOutput_4.setNull(9, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(9, insert_actions.SELECTED_OPTIONS_TEXT);
+									}
 
-									int processedCount_tDBOutput_10 = pstmtUpdate_tDBOutput_10.executeUpdate();
-									updatedCount_tDBOutput_10 += processedCount_tDBOutput_10;
-									rowsToCommitCount_tDBOutput_10 += processedCount_tDBOutput_10;
-									nb_line_tDBOutput_10++;
+									pstmtUpdate_tDBOutput_4.setBigDecimal(10, insert_actions.ACTION_USER);
+
+									if (insert_actions.ACTION_CATEGORY == null) {
+										pstmtUpdate_tDBOutput_4.setNull(11, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(11, insert_actions.ACTION_CATEGORY);
+									}
+
+									if (insert_actions.SPECIAL_FINAL_STATUS == null) {
+										pstmtUpdate_tDBOutput_4.setNull(12, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(12, insert_actions.SPECIAL_FINAL_STATUS);
+									}
+
+									if (insert_actions.JOURNAL_CODE == null) {
+										pstmtUpdate_tDBOutput_4.setNull(13, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(13, insert_actions.JOURNAL_CODE);
+									}
+
+									if (insert_actions.PUBLICATION_DATE != null) {
+										pstmtUpdate_tDBOutput_4.setTimestamp(14,
+												new java.sql.Timestamp(insert_actions.PUBLICATION_DATE.getTime()));
+									} else {
+										pstmtUpdate_tDBOutput_4.setNull(14, java.sql.Types.TIMESTAMP);
+									}
+
+									if (insert_actions.IPAS_PROC_TYP == null) {
+										pstmtUpdate_tDBOutput_4.setNull(15, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(15, insert_actions.IPAS_PROC_TYP);
+									}
+
+									pstmtUpdate_tDBOutput_4.setBigDecimal(16, insert_actions.IPAS_PROC_NBR);
+
+									pstmtUpdate_tDBOutput_4.setBigDecimal(17, insert_actions.IPAS_ACTION_NBR);
+
+									if (insert_actions.FILE_SEQ == null) {
+										pstmtUpdate_tDBOutput_4.setNull(18 + count_tDBOutput_4, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(18 + count_tDBOutput_4,
+												insert_actions.FILE_SEQ);
+									}
+
+									if (insert_actions.FILE_TYPE == null) {
+										pstmtUpdate_tDBOutput_4.setNull(19 + count_tDBOutput_4, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(19 + count_tDBOutput_4,
+												insert_actions.FILE_TYPE);
+									}
+
+									pstmtUpdate_tDBOutput_4.setBigDecimal(20 + count_tDBOutput_4,
+											insert_actions.FILE_SERIES);
+
+									pstmtUpdate_tDBOutput_4.setBigDecimal(21 + count_tDBOutput_4,
+											insert_actions.FILE_NBR);
+
+									if (insert_actions.ACTION_TYPE == null) {
+										pstmtUpdate_tDBOutput_4.setNull(22 + count_tDBOutput_4, java.sql.Types.VARCHAR);
+									} else {
+										pstmtUpdate_tDBOutput_4.setString(22 + count_tDBOutput_4,
+												insert_actions.ACTION_TYPE);
+									}
+
+									if (insert_actions.ACTION_DATE != null) {
+										pstmtUpdate_tDBOutput_4.setTimestamp(23 + count_tDBOutput_4,
+												new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
+									} else {
+										pstmtUpdate_tDBOutput_4.setNull(23 + count_tDBOutput_4,
+												java.sql.Types.TIMESTAMP);
+									}
+
+									updatedCount_tDBOutput_4 = updatedCount_tDBOutput_4
+											+ pstmtUpdate_tDBOutput_4.executeUpdate();
+									nb_line_tDBOutput_4++;
 
 								} catch (java.lang.Exception e) {
-									whetherReject_tDBOutput_10 = true;
-									nb_line_tDBOutput_10++;
+									whetherReject_tDBOutput_4 = true;
+									nb_line_tDBOutput_4++;
 
-									row31 = new row31Struct();
-									row31.FILE_SEQ = insert_related_files.FILE_SEQ;
-									row31.FILE_TYPE = insert_related_files.FILE_TYPE;
-									row31.FILE_SERIES = insert_related_files.FILE_SERIES;
-									row31.FILE_NBR = insert_related_files.FILE_NBR;
-									row31.RELATIONSHIP_TYPE = insert_related_files.RELATIONSHIP_TYPE;
-									row31.RELATIONSHIP_ROLE = insert_related_files.RELATIONSHIP_ROLE;
-									row31.RELATED_FILE_SEQ = insert_related_files.RELATED_FILE_SEQ;
-									row31.RELATED_FILE_TYPE = insert_related_files.RELATED_FILE_TYPE;
-									row31.RELATED_FILE_SERIES = insert_related_files.RELATED_FILE_SERIES;
-									row31.RELATED_FILE_NBR = insert_related_files.RELATED_FILE_NBR;
-									row31.IND_IMPORT = insert_related_files.IND_IMPORT;
-									rejectedCount_tDBOutput_10 = rejectedCount_tDBOutput_10 + 1;
-									row31.errorCode = ((java.sql.SQLException) e).getSQLState();
-									row31.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_10;
+									row10 = new row10Struct();
+									row10.FILE_SEQ = insert_actions.FILE_SEQ;
+									row10.FILE_TYPE = insert_actions.FILE_TYPE;
+									row10.FILE_SERIES = insert_actions.FILE_SERIES;
+									row10.FILE_NBR = insert_actions.FILE_NBR;
+									row10.ACTION_TYPE = insert_actions.ACTION_TYPE;
+									row10.ACTION_DATE = insert_actions.ACTION_DATE;
+									row10.MANUAL_DUE_DATE = insert_actions.MANUAL_DUE_DATE;
+									row10.RESPONSIBLE_USER = insert_actions.RESPONSIBLE_USER;
+									row10.ACTION_NOTES1 = insert_actions.ACTION_NOTES1;
+									row10.ACTION_NOTES2 = insert_actions.ACTION_NOTES2;
+									row10.ACTION_NOTES3 = insert_actions.ACTION_NOTES3;
+									row10.ACTION_NOTES4 = insert_actions.ACTION_NOTES4;
+									row10.ACTION_NOTES5 = insert_actions.ACTION_NOTES5;
+									row10.GENERAL_NOTES = insert_actions.GENERAL_NOTES;
+									row10.SELECTED_OPTIONS_TEXT = insert_actions.SELECTED_OPTIONS_TEXT;
+									row10.ACTION_USER = insert_actions.ACTION_USER;
+									row10.ACTION_CATEGORY = insert_actions.ACTION_CATEGORY;
+									row10.SPECIAL_FINAL_STATUS = insert_actions.SPECIAL_FINAL_STATUS;
+									row10.JOURNAL_CODE = insert_actions.JOURNAL_CODE;
+									row10.PUBLICATION_DATE = insert_actions.PUBLICATION_DATE;
+									row10.IPAS_PROC_TYP = insert_actions.IPAS_PROC_TYP;
+									row10.IPAS_PROC_NBR = insert_actions.IPAS_PROC_NBR;
+									row10.IPAS_ACTION_NBR = insert_actions.IPAS_ACTION_NBR;
+									rejectedCount_tDBOutput_4 = rejectedCount_tDBOutput_4 + 1;
+									row10.errorCode = ((java.sql.SQLException) e).getSQLState();
+									row10.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_4;
 								}
 							} else {
 								try {
-									if (insert_related_files.FILE_SEQ == null) {
-										pstmtInsert_tDBOutput_10.setNull(1, java.sql.Types.VARCHAR);
+									if (insert_actions.FILE_SEQ == null) {
+										pstmtInsert_tDBOutput_4.setNull(1, java.sql.Types.VARCHAR);
 									} else {
-										pstmtInsert_tDBOutput_10.setString(1, insert_related_files.FILE_SEQ);
+										pstmtInsert_tDBOutput_4.setString(1, insert_actions.FILE_SEQ);
 									}
 
-									if (insert_related_files.FILE_TYPE == null) {
-										pstmtInsert_tDBOutput_10.setNull(2, java.sql.Types.VARCHAR);
+									if (insert_actions.FILE_TYPE == null) {
+										pstmtInsert_tDBOutput_4.setNull(2, java.sql.Types.VARCHAR);
 									} else {
-										pstmtInsert_tDBOutput_10.setString(2, insert_related_files.FILE_TYPE);
+										pstmtInsert_tDBOutput_4.setString(2, insert_actions.FILE_TYPE);
 									}
 
-									pstmtInsert_tDBOutput_10.setBigDecimal(3, insert_related_files.FILE_SERIES);
+									pstmtInsert_tDBOutput_4.setBigDecimal(3, insert_actions.FILE_SERIES);
 
-									pstmtInsert_tDBOutput_10.setBigDecimal(4, insert_related_files.FILE_NBR);
+									pstmtInsert_tDBOutput_4.setBigDecimal(4, insert_actions.FILE_NBR);
 
-									if (insert_related_files.RELATIONSHIP_TYPE == null) {
-										pstmtInsert_tDBOutput_10.setNull(5, java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_TYPE == null) {
+										pstmtInsert_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
 									} else {
-										pstmtInsert_tDBOutput_10.setString(5, insert_related_files.RELATIONSHIP_TYPE);
+										pstmtInsert_tDBOutput_4.setString(5, insert_actions.ACTION_TYPE);
 									}
 
-									if (insert_related_files.RELATIONSHIP_ROLE == null) {
-										pstmtInsert_tDBOutput_10.setNull(6, java.sql.Types.VARCHAR);
+									if (insert_actions.ACTION_DATE != null) {
+										pstmtInsert_tDBOutput_4.setTimestamp(6,
+												new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
 									} else {
-										pstmtInsert_tDBOutput_10.setString(6, insert_related_files.RELATIONSHIP_ROLE);
+										pstmtInsert_tDBOutput_4.setNull(6, java.sql.Types.TIMESTAMP);
 									}
 
-									if (insert_related_files.RELATED_FILE_SEQ == null) {
-										pstmtInsert_tDBOutput_10.setNull(7, java.sql.Types.VARCHAR);
+									if (insert_actions.MANUAL_DUE_DATE != null) {
+										pstmtInsert_tDBOutput_4.setTimestamp(7,
+												new java.sql.Timestamp(insert_actions.MANUAL_DUE_DATE.getTime()));
 									} else {
-										pstmtInsert_tDBOutput_10.setString(7, insert_related_files.RELATED_FILE_SEQ);
+										pstmtInsert_tDBOutput_4.setNull(7, java.sql.Types.TIMESTAMP);
 									}
 
-									if (insert_related_files.RELATED_FILE_TYPE == null) {
-										pstmtInsert_tDBOutput_10.setNull(8, java.sql.Types.VARCHAR);
+									pstmtInsert_tDBOutput_4.setBigDecimal(8, insert_actions.RESPONSIBLE_USER);
+
+									if (insert_actions.ACTION_NOTES1 == null) {
+										pstmtInsert_tDBOutput_4.setNull(9, java.sql.Types.VARCHAR);
 									} else {
-										pstmtInsert_tDBOutput_10.setString(8, insert_related_files.RELATED_FILE_TYPE);
+										pstmtInsert_tDBOutput_4.setString(9, insert_actions.ACTION_NOTES1);
 									}
 
-									pstmtInsert_tDBOutput_10.setBigDecimal(9, insert_related_files.RELATED_FILE_SERIES);
+									if (insert_actions.ACTION_NOTES2 == null) {
+										pstmtInsert_tDBOutput_4.setNull(10, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(10, insert_actions.ACTION_NOTES2);
+									}
 
-									pstmtInsert_tDBOutput_10.setBigDecimal(10, insert_related_files.RELATED_FILE_NBR);
+									if (insert_actions.ACTION_NOTES3 == null) {
+										pstmtInsert_tDBOutput_4.setNull(11, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(11, insert_actions.ACTION_NOTES3);
+									}
 
-									pstmtInsert_tDBOutput_10.setBigDecimal(11, insert_related_files.IND_IMPORT);
+									if (insert_actions.ACTION_NOTES4 == null) {
+										pstmtInsert_tDBOutput_4.setNull(12, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(12, insert_actions.ACTION_NOTES4);
+									}
 
-									int processedCount_tDBOutput_10 = pstmtInsert_tDBOutput_10.executeUpdate();
-									insertedCount_tDBOutput_10 += processedCount_tDBOutput_10;
-									rowsToCommitCount_tDBOutput_10 += processedCount_tDBOutput_10;
-									nb_line_tDBOutput_10++;
+									if (insert_actions.ACTION_NOTES5 == null) {
+										pstmtInsert_tDBOutput_4.setNull(13, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(13, insert_actions.ACTION_NOTES5);
+									}
+
+									if (insert_actions.GENERAL_NOTES == null) {
+										pstmtInsert_tDBOutput_4.setNull(14, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(14, insert_actions.GENERAL_NOTES);
+									}
+
+									if (insert_actions.SELECTED_OPTIONS_TEXT == null) {
+										pstmtInsert_tDBOutput_4.setNull(15, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(15, insert_actions.SELECTED_OPTIONS_TEXT);
+									}
+
+									pstmtInsert_tDBOutput_4.setBigDecimal(16, insert_actions.ACTION_USER);
+
+									if (insert_actions.ACTION_CATEGORY == null) {
+										pstmtInsert_tDBOutput_4.setNull(17, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(17, insert_actions.ACTION_CATEGORY);
+									}
+
+									if (insert_actions.SPECIAL_FINAL_STATUS == null) {
+										pstmtInsert_tDBOutput_4.setNull(18, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(18, insert_actions.SPECIAL_FINAL_STATUS);
+									}
+
+									if (insert_actions.JOURNAL_CODE == null) {
+										pstmtInsert_tDBOutput_4.setNull(19, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(19, insert_actions.JOURNAL_CODE);
+									}
+
+									if (insert_actions.PUBLICATION_DATE != null) {
+										pstmtInsert_tDBOutput_4.setTimestamp(20,
+												new java.sql.Timestamp(insert_actions.PUBLICATION_DATE.getTime()));
+									} else {
+										pstmtInsert_tDBOutput_4.setNull(20, java.sql.Types.TIMESTAMP);
+									}
+
+									if (insert_actions.IPAS_PROC_TYP == null) {
+										pstmtInsert_tDBOutput_4.setNull(21, java.sql.Types.VARCHAR);
+									} else {
+										pstmtInsert_tDBOutput_4.setString(21, insert_actions.IPAS_PROC_TYP);
+									}
+
+									pstmtInsert_tDBOutput_4.setBigDecimal(22, insert_actions.IPAS_PROC_NBR);
+
+									pstmtInsert_tDBOutput_4.setBigDecimal(23, insert_actions.IPAS_ACTION_NBR);
+
+									insertedCount_tDBOutput_4 = insertedCount_tDBOutput_4
+											+ pstmtInsert_tDBOutput_4.executeUpdate();
+									nb_line_tDBOutput_4++;
 								} catch (java.lang.Exception e) {
-									whetherReject_tDBOutput_10 = true;
-									nb_line_tDBOutput_10++;
+									whetherReject_tDBOutput_4 = true;
+									nb_line_tDBOutput_4++;
 
-									row31 = new row31Struct();
-									row31.FILE_SEQ = insert_related_files.FILE_SEQ;
-									row31.FILE_TYPE = insert_related_files.FILE_TYPE;
-									row31.FILE_SERIES = insert_related_files.FILE_SERIES;
-									row31.FILE_NBR = insert_related_files.FILE_NBR;
-									row31.RELATIONSHIP_TYPE = insert_related_files.RELATIONSHIP_TYPE;
-									row31.RELATIONSHIP_ROLE = insert_related_files.RELATIONSHIP_ROLE;
-									row31.RELATED_FILE_SEQ = insert_related_files.RELATED_FILE_SEQ;
-									row31.RELATED_FILE_TYPE = insert_related_files.RELATED_FILE_TYPE;
-									row31.RELATED_FILE_SERIES = insert_related_files.RELATED_FILE_SERIES;
-									row31.RELATED_FILE_NBR = insert_related_files.RELATED_FILE_NBR;
-									row31.IND_IMPORT = insert_related_files.IND_IMPORT;
-									rejectedCount_tDBOutput_10 = rejectedCount_tDBOutput_10 + 1;
-									row31.errorCode = ((java.sql.SQLException) e).getSQLState();
-									row31.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_10;
+									row10 = new row10Struct();
+									row10.FILE_SEQ = insert_actions.FILE_SEQ;
+									row10.FILE_TYPE = insert_actions.FILE_TYPE;
+									row10.FILE_SERIES = insert_actions.FILE_SERIES;
+									row10.FILE_NBR = insert_actions.FILE_NBR;
+									row10.ACTION_TYPE = insert_actions.ACTION_TYPE;
+									row10.ACTION_DATE = insert_actions.ACTION_DATE;
+									row10.MANUAL_DUE_DATE = insert_actions.MANUAL_DUE_DATE;
+									row10.RESPONSIBLE_USER = insert_actions.RESPONSIBLE_USER;
+									row10.ACTION_NOTES1 = insert_actions.ACTION_NOTES1;
+									row10.ACTION_NOTES2 = insert_actions.ACTION_NOTES2;
+									row10.ACTION_NOTES3 = insert_actions.ACTION_NOTES3;
+									row10.ACTION_NOTES4 = insert_actions.ACTION_NOTES4;
+									row10.ACTION_NOTES5 = insert_actions.ACTION_NOTES5;
+									row10.GENERAL_NOTES = insert_actions.GENERAL_NOTES;
+									row10.SELECTED_OPTIONS_TEXT = insert_actions.SELECTED_OPTIONS_TEXT;
+									row10.ACTION_USER = insert_actions.ACTION_USER;
+									row10.ACTION_CATEGORY = insert_actions.ACTION_CATEGORY;
+									row10.SPECIAL_FINAL_STATUS = insert_actions.SPECIAL_FINAL_STATUS;
+									row10.JOURNAL_CODE = insert_actions.JOURNAL_CODE;
+									row10.PUBLICATION_DATE = insert_actions.PUBLICATION_DATE;
+									row10.IPAS_PROC_TYP = insert_actions.IPAS_PROC_TYP;
+									row10.IPAS_PROC_NBR = insert_actions.IPAS_PROC_NBR;
+									row10.IPAS_ACTION_NBR = insert_actions.IPAS_ACTION_NBR;
+									rejectedCount_tDBOutput_4 = rejectedCount_tDBOutput_4 + 1;
+									row10.errorCode = ((java.sql.SQLException) e).getSQLState();
+									row10.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_4;
 								}
 							}
-							if (!whetherReject_tDBOutput_10) {
+							if (!whetherReject_tDBOutput_4) {
 							}
 							////////// batch execute by batch size///////
-							class LimitBytesHelper_tDBOutput_10 {
-								public int limitBytePart1(int counter, java.sql.PreparedStatement pstmt_tDBOutput_10)
+							class LimitBytesHelper_tDBOutput_4 {
+								public int limitBytePart1(int counter, java.sql.PreparedStatement pstmt_tDBOutput_4)
 										throws Exception {
 									try {
 
-										for (int countEach_tDBOutput_10 : pstmt_tDBOutput_10.executeBatch()) {
-											if (countEach_tDBOutput_10 == -2 || countEach_tDBOutput_10 == -3) {
+										for (int countEach_tDBOutput_4 : pstmt_tDBOutput_4.executeBatch()) {
+											if (countEach_tDBOutput_4 == -2 || countEach_tDBOutput_4 == -3) {
 												break;
 											}
-											counter += countEach_tDBOutput_10;
+											counter += countEach_tDBOutput_4;
 										}
 
 									} catch (java.sql.BatchUpdateException e) {
 
-										int countSum_tDBOutput_10 = 0;
-										for (int countEach_tDBOutput_10 : e.getUpdateCounts()) {
-											counter += (countEach_tDBOutput_10 < 0 ? 0 : countEach_tDBOutput_10);
+										int countSum_tDBOutput_4 = 0;
+										for (int countEach_tDBOutput_4 : e.getUpdateCounts()) {
+											counter += (countEach_tDBOutput_4 < 0 ? 0 : countEach_tDBOutput_4);
 										}
 
 										System.err.println(e.getMessage());
@@ -2809,21 +4104,21 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 									return counter;
 								}
 
-								public int limitBytePart2(int counter, java.sql.PreparedStatement pstmt_tDBOutput_10)
+								public int limitBytePart2(int counter, java.sql.PreparedStatement pstmt_tDBOutput_4)
 										throws Exception {
 									try {
 
-										for (int countEach_tDBOutput_10 : pstmt_tDBOutput_10.executeBatch()) {
-											if (countEach_tDBOutput_10 == -2 || countEach_tDBOutput_10 == -3) {
+										for (int countEach_tDBOutput_4 : pstmt_tDBOutput_4.executeBatch()) {
+											if (countEach_tDBOutput_4 == -2 || countEach_tDBOutput_4 == -3) {
 												break;
 											}
-											counter += countEach_tDBOutput_10;
+											counter += countEach_tDBOutput_4;
 										}
 
 									} catch (java.sql.BatchUpdateException e) {
 
-										for (int countEach_tDBOutput_10 : e.getUpdateCounts()) {
-											counter += (countEach_tDBOutput_10 < 0 ? 0 : countEach_tDBOutput_10);
+										for (int countEach_tDBOutput_4 : e.getUpdateCounts()) {
+											counter += (countEach_tDBOutput_4 < 0 ? 0 : countEach_tDBOutput_4);
 										}
 
 										System.err.println(e.getMessage());
@@ -2835,343 +4130,3836 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 							//////////// commit every////////////
 
-							tos_count_tDBOutput_10++;
+							tos_count_tDBOutput_4++;
 
 							/**
-							 * [tDBOutput_10 main ] stop
+							 * [tDBOutput_4 main ] stop
 							 */
 
 							/**
-							 * [tDBOutput_10 process_data_begin ] start
+							 * [tDBOutput_4 process_data_begin ] start
 							 */
 
-							currentComponent = "tDBOutput_10";
+							currentComponent = "tDBOutput_4";
 
 							/**
-							 * [tDBOutput_10 process_data_begin ] stop
+							 * [tDBOutput_4 process_data_begin ] stop
 							 */
-// Start of branch "row31"
-							if (row31 != null) {
+// Start of branch "row10"
+							if (row10 != null) {
 
 								/**
-								 * [tLogRow_10 main ] start
+								 * [tLogRow_4 main ] start
 								 */
 
-								currentComponent = "tLogRow_10";
+								currentComponent = "tLogRow_4";
 
 								if (execStat) {
 									runStat.updateStatOnConnection(iterateId, 1, 1
 
-											, "row31"
+											, "row10"
 
 									);
 								}
 
 ///////////////////////		
 
-								strBuffer_tLogRow_10 = new StringBuilder();
+								strBuffer_tLogRow_4 = new StringBuilder();
 
-								if (row31.FILE_SEQ != null) { //
+								if (row10.FILE_SEQ != null) { //
 
-									strBuffer_tLogRow_10.append(String.valueOf(row31.FILE_SEQ));
-
-								} //
-
-								strBuffer_tLogRow_10.append("|");
-
-								if (row31.FILE_TYPE != null) { //
-
-									strBuffer_tLogRow_10.append(String.valueOf(row31.FILE_TYPE));
+									strBuffer_tLogRow_4.append(String.valueOf(row10.FILE_SEQ));
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.FILE_SERIES != null) { //
+								if (row10.FILE_TYPE != null) { //
 
-									strBuffer_tLogRow_10.append(row31.FILE_SERIES
+									strBuffer_tLogRow_4.append(String.valueOf(row10.FILE_TYPE));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.FILE_SERIES != null) { //
+
+									strBuffer_tLogRow_4.append(row10.FILE_SERIES
 											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.FILE_NBR != null) { //
+								if (row10.FILE_NBR != null) { //
 
-									strBuffer_tLogRow_10.append(
-											row31.FILE_NBR.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
-
-								} //
-
-								strBuffer_tLogRow_10.append("|");
-
-								if (row31.RELATIONSHIP_TYPE != null) { //
-
-									strBuffer_tLogRow_10.append(String.valueOf(row31.RELATIONSHIP_TYPE));
+									strBuffer_tLogRow_4.append(
+											row10.FILE_NBR.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.RELATIONSHIP_ROLE != null) { //
+								if (row10.ACTION_TYPE != null) { //
 
-									strBuffer_tLogRow_10.append(String.valueOf(row31.RELATIONSHIP_ROLE));
-
-								} //
-
-								strBuffer_tLogRow_10.append("|");
-
-								if (row31.RELATED_FILE_SEQ != null) { //
-
-									strBuffer_tLogRow_10.append(String.valueOf(row31.RELATED_FILE_SEQ));
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_TYPE));
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.RELATED_FILE_TYPE != null) { //
+								if (row10.ACTION_DATE != null) { //
 
-									strBuffer_tLogRow_10.append(String.valueOf(row31.RELATED_FILE_TYPE));
+									strBuffer_tLogRow_4
+											.append(FormatterUtils.format_Date(row10.ACTION_DATE, "dd-MM-yyyy"));
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.RELATED_FILE_SERIES != null) { //
+								if (row10.MANUAL_DUE_DATE != null) { //
 
-									strBuffer_tLogRow_10.append(row31.RELATED_FILE_SERIES
+									strBuffer_tLogRow_4
+											.append(FormatterUtils.format_Date(row10.MANUAL_DUE_DATE, "dd-MM-yyyy"));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.RESPONSIBLE_USER != null) { //
+
+									strBuffer_tLogRow_4.append(row10.RESPONSIBLE_USER
 											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.RELATED_FILE_NBR != null) { //
+								if (row10.ACTION_NOTES1 != null) { //
 
-									strBuffer_tLogRow_10.append(row31.RELATED_FILE_NBR
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_NOTES1));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.ACTION_NOTES2 != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_NOTES2));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.ACTION_NOTES3 != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_NOTES3));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.ACTION_NOTES4 != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_NOTES4));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.ACTION_NOTES5 != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_NOTES5));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.GENERAL_NOTES != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.GENERAL_NOTES));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.SELECTED_OPTIONS_TEXT != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.SELECTED_OPTIONS_TEXT));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.ACTION_USER != null) { //
+
+									strBuffer_tLogRow_4.append(row10.ACTION_USER
 											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.IND_IMPORT != null) { //
+								if (row10.ACTION_CATEGORY != null) { //
 
-									strBuffer_tLogRow_10.append(row31.IND_IMPORT
+									strBuffer_tLogRow_4.append(String.valueOf(row10.ACTION_CATEGORY));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.SPECIAL_FINAL_STATUS != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.SPECIAL_FINAL_STATUS));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.JOURNAL_CODE != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.JOURNAL_CODE));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.PUBLICATION_DATE != null) { //
+
+									strBuffer_tLogRow_4
+											.append(FormatterUtils.format_Date(row10.PUBLICATION_DATE, "dd-MM-yyyy"));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.IPAS_PROC_TYP != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.IPAS_PROC_TYP));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.IPAS_PROC_NBR != null) { //
+
+									strBuffer_tLogRow_4.append(row10.IPAS_PROC_NBR
 											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.errorCode != null) { //
+								if (row10.IPAS_ACTION_NBR != null) { //
 
-									strBuffer_tLogRow_10.append(String.valueOf(row31.errorCode));
+									strBuffer_tLogRow_4.append(row10.IPAS_ACTION_NBR
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
 
 								} //
 
-								strBuffer_tLogRow_10.append("|");
+								strBuffer_tLogRow_4.append("|");
 
-								if (row31.errorMessage != null) { //
+								if (row10.errorCode != null) { //
 
-									strBuffer_tLogRow_10.append(String.valueOf(row31.errorMessage));
+									strBuffer_tLogRow_4.append(String.valueOf(row10.errorCode));
+
+								} //
+
+								strBuffer_tLogRow_4.append("|");
+
+								if (row10.errorMessage != null) { //
+
+									strBuffer_tLogRow_4.append(String.valueOf(row10.errorMessage));
 
 								} //
 
 								if (globalMap.get("tLogRow_CONSOLE") != null) {
-									consoleOut_tLogRow_10 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
+									consoleOut_tLogRow_4 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
 								} else {
-									consoleOut_tLogRow_10 = new java.io.PrintStream(
+									consoleOut_tLogRow_4 = new java.io.PrintStream(
 											new java.io.BufferedOutputStream(System.out));
-									globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_10);
+									globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_4);
 								}
-								consoleOut_tLogRow_10.println(strBuffer_tLogRow_10.toString());
-								consoleOut_tLogRow_10.flush();
-								nb_line_tLogRow_10++;
+								consoleOut_tLogRow_4.println(strBuffer_tLogRow_4.toString());
+								consoleOut_tLogRow_4.flush();
+								nb_line_tLogRow_4++;
 //////
 
 //////                    
 
 ///////////////////////    			
 
-								tos_count_tLogRow_10++;
+								tos_count_tLogRow_4++;
 
 								/**
-								 * [tLogRow_10 main ] stop
+								 * [tLogRow_4 main ] stop
 								 */
 
 								/**
-								 * [tLogRow_10 process_data_begin ] start
+								 * [tLogRow_4 process_data_begin ] start
 								 */
 
-								currentComponent = "tLogRow_10";
+								currentComponent = "tLogRow_4";
 
 								/**
-								 * [tLogRow_10 process_data_begin ] stop
+								 * [tLogRow_4 process_data_begin ] stop
 								 */
 
 								/**
-								 * [tLogRow_10 process_data_end ] start
+								 * [tLogRow_4 process_data_end ] start
 								 */
 
-								currentComponent = "tLogRow_10";
+								currentComponent = "tLogRow_4";
 
 								/**
-								 * [tLogRow_10 process_data_end ] stop
+								 * [tLogRow_4 process_data_end ] stop
 								 */
 
-							} // End of branch "row31"
+							} // End of branch "row10"
 
 							/**
-							 * [tDBOutput_10 process_data_end ] start
+							 * [tDBOutput_4 process_data_end ] start
 							 */
 
-							currentComponent = "tDBOutput_10";
+							currentComponent = "tDBOutput_4";
 
 							/**
-							 * [tDBOutput_10 process_data_end ] stop
+							 * [tDBOutput_4 process_data_end ] stop
 							 */
 
-						} // End of branch "insert_related_files"
+						} // End of branch "insert_actions"
 
 						/**
-						 * [tMap_9 process_data_end ] start
+						 * [tMap_3 process_data_end ] start
 						 */
 
-						currentComponent = "tMap_9";
+						currentComponent = "tMap_3";
 
 						/**
-						 * [tMap_9 process_data_end ] stop
-						 */
-
-						/**
-						 * [tDBInput_21 process_data_end ] start
-						 */
-
-						currentComponent = "tDBInput_21";
-
-						/**
-						 * [tDBInput_21 process_data_end ] stop
+						 * [tMap_3 process_data_end ] stop
 						 */
 
 						/**
-						 * [tDBInput_21 end ] start
+						 * [tDBInput_3 process_data_end ] start
 						 */
 
-						currentComponent = "tDBInput_21";
+						currentComponent = "tDBInput_3";
+
+						/**
+						 * [tDBInput_3 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_3 end ] start
+						 */
+
+						currentComponent = "tDBInput_3";
 
 					}
 				} finally {
-					if (rs_tDBInput_21 != null) {
-						rs_tDBInput_21.close();
+					if (rs_tDBInput_3 != null) {
+						rs_tDBInput_3.close();
 					}
-					if (stmt_tDBInput_21 != null) {
-						stmt_tDBInput_21.close();
+					if (stmt_tDBInput_3 != null) {
+						stmt_tDBInput_3.close();
 					}
 				}
-				globalMap.put("tDBInput_21_NB_LINE", nb_line_tDBInput_21);
+				globalMap.put("tDBInput_3_NB_LINE", nb_line_tDBInput_3);
 
-				ok_Hash.put("tDBInput_21", true);
-				end_Hash.put("tDBInput_21", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_3", true);
+				end_Hash.put("tDBInput_3", System.currentTimeMillis());
 
 				/**
-				 * [tDBInput_21 end ] stop
+				 * [tDBInput_3 end ] stop
 				 */
 
 				/**
-				 * [tMap_9 end ] start
+				 * [tMap_3 end ] start
 				 */
 
-				currentComponent = "tMap_9";
+				currentComponent = "tMap_3";
 
 // ###############################
 // # Lookup hashes releasing
-				if (tHash_Lookup_row33 != null) {
-					tHash_Lookup_row33.endGet();
+				if (tHash_Lookup_row9 != null) {
+					tHash_Lookup_row9.endGet();
 				}
-				globalMap.remove("tHash_Lookup_row33");
+				globalMap.remove("tHash_Lookup_row9");
 
-				if (tHash_Lookup_row34 != null) {
-					tHash_Lookup_row34.endGet();
+				if (tHash_Lookup_row11 != null) {
+					tHash_Lookup_row11.endGet();
 				}
-				globalMap.remove("tHash_Lookup_row34");
+				globalMap.remove("tHash_Lookup_row11");
 
 // ###############################      
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "row32");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row8");
 				}
 
-				ok_Hash.put("tMap_9", true);
-				end_Hash.put("tMap_9", System.currentTimeMillis());
+				ok_Hash.put("tMap_3", true);
+				end_Hash.put("tMap_3", System.currentTimeMillis());
 
 				/**
-				 * [tMap_9 end ] stop
+				 * [tMap_3 end ] stop
 				 */
 
 				/**
-				 * [tDBOutput_10 end ] start
+				 * [tDBOutput_4 end ] start
 				 */
 
-				currentComponent = "tDBOutput_10";
+				currentComponent = "tDBOutput_4";
 
-				if (pstmtUpdate_tDBOutput_10 != null) {
-					pstmtUpdate_tDBOutput_10.close();
-					resourceMap.remove("pstmtUpdate_tDBOutput_10");
+				if (pstmtUpdate_tDBOutput_4 != null) {
+					pstmtUpdate_tDBOutput_4.close();
+					resourceMap.remove("pstmtUpdate_tDBOutput_4");
 				}
-				if (pstmtInsert_tDBOutput_10 != null) {
-					pstmtInsert_tDBOutput_10.close();
-					resourceMap.remove("pstmtInsert_tDBOutput_10");
+				if (pstmtInsert_tDBOutput_4 != null) {
+					pstmtInsert_tDBOutput_4.close();
+					resourceMap.remove("pstmtInsert_tDBOutput_4");
 				}
-				if (pstmt_tDBOutput_10 != null) {
-					pstmt_tDBOutput_10.close();
-					resourceMap.remove("pstmt_tDBOutput_10");
+				if (pstmt_tDBOutput_4 != null) {
+					pstmt_tDBOutput_4.close();
+					resourceMap.remove("pstmt_tDBOutput_4");
 				}
-				resourceMap.put("statementClosed_tDBOutput_10", true);
+				resourceMap.put("statementClosed_tDBOutput_4", true);
 
-				nb_line_deleted_tDBOutput_10 = nb_line_deleted_tDBOutput_10 + deletedCount_tDBOutput_10;
-				nb_line_update_tDBOutput_10 = nb_line_update_tDBOutput_10 + updatedCount_tDBOutput_10;
-				nb_line_inserted_tDBOutput_10 = nb_line_inserted_tDBOutput_10 + insertedCount_tDBOutput_10;
-				nb_line_rejected_tDBOutput_10 = nb_line_rejected_tDBOutput_10 + rejectedCount_tDBOutput_10;
+				nb_line_deleted_tDBOutput_4 = nb_line_deleted_tDBOutput_4 + deletedCount_tDBOutput_4;
+				nb_line_update_tDBOutput_4 = nb_line_update_tDBOutput_4 + updatedCount_tDBOutput_4;
+				nb_line_inserted_tDBOutput_4 = nb_line_inserted_tDBOutput_4 + insertedCount_tDBOutput_4;
+				nb_line_rejected_tDBOutput_4 = nb_line_rejected_tDBOutput_4 + rejectedCount_tDBOutput_4;
 
-				globalMap.put("tDBOutput_10_NB_LINE", nb_line_tDBOutput_10);
-				globalMap.put("tDBOutput_10_NB_LINE_UPDATED", nb_line_update_tDBOutput_10);
-				globalMap.put("tDBOutput_10_NB_LINE_INSERTED", nb_line_inserted_tDBOutput_10);
-				globalMap.put("tDBOutput_10_NB_LINE_DELETED", nb_line_deleted_tDBOutput_10);
-				globalMap.put("tDBOutput_10_NB_LINE_REJECTED", nb_line_rejected_tDBOutput_10);
+				globalMap.put("tDBOutput_4_NB_LINE", nb_line_tDBOutput_4);
+				globalMap.put("tDBOutput_4_NB_LINE_UPDATED", nb_line_update_tDBOutput_4);
+				globalMap.put("tDBOutput_4_NB_LINE_INSERTED", nb_line_inserted_tDBOutput_4);
+				globalMap.put("tDBOutput_4_NB_LINE_DELETED", nb_line_deleted_tDBOutput_4);
+				globalMap.put("tDBOutput_4_NB_LINE_REJECTED", nb_line_rejected_tDBOutput_4);
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "insert_related_files");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "insert_actions");
 				}
 
-				ok_Hash.put("tDBOutput_10", true);
-				end_Hash.put("tDBOutput_10", System.currentTimeMillis());
+				ok_Hash.put("tDBOutput_4", true);
+				end_Hash.put("tDBOutput_4", System.currentTimeMillis());
 
 				/**
-				 * [tDBOutput_10 end ] stop
+				 * [tDBOutput_4 end ] stop
 				 */
 
 				/**
-				 * [tLogRow_10 end ] start
+				 * [tLogRow_4 end ] start
 				 */
 
-				currentComponent = "tLogRow_10";
+				currentComponent = "tLogRow_4";
 
 //////
 //////
-				globalMap.put("tLogRow_10_NB_LINE", nb_line_tLogRow_10);
+				globalMap.put("tLogRow_4_NB_LINE", nb_line_tLogRow_4);
 
 ///////////////////////    			
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "row31");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row10");
 				}
 
-				ok_Hash.put("tLogRow_10", true);
-				end_Hash.put("tLogRow_10", System.currentTimeMillis());
+				ok_Hash.put("tLogRow_4", true);
+				end_Hash.put("tLogRow_4", System.currentTimeMillis());
 
 				/**
-				 * [tLogRow_10 end ] stop
+				 * [tLogRow_4 end ] stop
+				 */
+
+			} // end the resume
+
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:tDBInput_3:OnSubjobOk", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("OnSubjobOk18", 0, "ok");
+			}
+
+			tDBInput_33Process(globalMap);
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			// free memory for "tMap_3"
+			globalMap.remove("tHash_Lookup_row9");
+
+			// free memory for "tMap_3"
+			globalMap.remove("tHash_Lookup_row11");
+
+			try {
+
+				/**
+				 * [tDBInput_3 finally ] start
+				 */
+
+				currentComponent = "tDBInput_3";
+
+				/**
+				 * [tDBInput_3 finally ] stop
+				 */
+
+				/**
+				 * [tMap_3 finally ] start
+				 */
+
+				currentComponent = "tMap_3";
+
+				/**
+				 * [tMap_3 finally ] stop
+				 */
+
+				/**
+				 * [tDBOutput_4 finally ] start
+				 */
+
+				currentComponent = "tDBOutput_4";
+
+				if (resourceMap.get("statementClosed_tDBOutput_4") == null) {
+					java.sql.PreparedStatement pstmtUpdateToClose_tDBOutput_4 = null;
+					if ((pstmtUpdateToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
+							.remove("pstmtUpdate_tDBOutput_4")) != null) {
+						pstmtUpdateToClose_tDBOutput_4.close();
+					}
+					java.sql.PreparedStatement pstmtInsertToClose_tDBOutput_4 = null;
+					if ((pstmtInsertToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
+							.remove("pstmtInsert_tDBOutput_4")) != null) {
+						pstmtInsertToClose_tDBOutput_4.close();
+					}
+					java.sql.PreparedStatement pstmtToClose_tDBOutput_4 = null;
+					if ((pstmtToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
+							.remove("pstmt_tDBOutput_4")) != null) {
+						pstmtToClose_tDBOutput_4.close();
+					}
+				}
+
+				/**
+				 * [tDBOutput_4 finally ] stop
+				 */
+
+				/**
+				 * [tLogRow_4 finally ] start
+				 */
+
+				currentComponent = "tLogRow_4";
+
+				/**
+				 * [tLogRow_4 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tDBInput_3_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row45Struct implements routines.system.IPersistableRow<row45Struct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+
+		public String FILE_SEQ;
+
+		public String getFILE_SEQ() {
+			return this.FILE_SEQ;
+		}
+
+		public String FILE_TYPE;
+
+		public String getFILE_TYPE() {
+			return this.FILE_TYPE;
+		}
+
+		public BigDecimal FILE_SERIES;
+
+		public BigDecimal getFILE_SERIES() {
+			return this.FILE_SERIES;
+		}
+
+		public BigDecimal FILE_NBR;
+
+		public BigDecimal getFILE_NBR() {
+			return this.FILE_NBR;
+		}
+
+		public String ACTION_TYPE;
+
+		public String getACTION_TYPE() {
+			return this.ACTION_TYPE;
+		}
+
+		public java.util.Date ACTION_DATE;
+
+		public java.util.Date getACTION_DATE() {
+			return this.ACTION_DATE;
+		}
+
+		public java.util.Date MANUAL_DUE_DATE;
+
+		public java.util.Date getMANUAL_DUE_DATE() {
+			return this.MANUAL_DUE_DATE;
+		}
+
+		public BigDecimal RESPONSIBLE_USER;
+
+		public BigDecimal getRESPONSIBLE_USER() {
+			return this.RESPONSIBLE_USER;
+		}
+
+		public String ACTION_NOTES1;
+
+		public String getACTION_NOTES1() {
+			return this.ACTION_NOTES1;
+		}
+
+		public String ACTION_NOTES2;
+
+		public String getACTION_NOTES2() {
+			return this.ACTION_NOTES2;
+		}
+
+		public String ACTION_NOTES3;
+
+		public String getACTION_NOTES3() {
+			return this.ACTION_NOTES3;
+		}
+
+		public String ACTION_NOTES4;
+
+		public String getACTION_NOTES4() {
+			return this.ACTION_NOTES4;
+		}
+
+		public String ACTION_NOTES5;
+
+		public String getACTION_NOTES5() {
+			return this.ACTION_NOTES5;
+		}
+
+		public String GENERAL_NOTES;
+
+		public String getGENERAL_NOTES() {
+			return this.GENERAL_NOTES;
+		}
+
+		public String SELECTED_OPTIONS_TEXT;
+
+		public String getSELECTED_OPTIONS_TEXT() {
+			return this.SELECTED_OPTIONS_TEXT;
+		}
+
+		public BigDecimal ACTION_USER;
+
+		public BigDecimal getACTION_USER() {
+			return this.ACTION_USER;
+		}
+
+		public String ACTION_CATEGORY;
+
+		public String getACTION_CATEGORY() {
+			return this.ACTION_CATEGORY;
+		}
+
+		public String SPECIAL_FINAL_STATUS;
+
+		public String getSPECIAL_FINAL_STATUS() {
+			return this.SPECIAL_FINAL_STATUS;
+		}
+
+		public String JOURNAL_CODE;
+
+		public String getJOURNAL_CODE() {
+			return this.JOURNAL_CODE;
+		}
+
+		public java.util.Date PUBLICATION_DATE;
+
+		public java.util.Date getPUBLICATION_DATE() {
+			return this.PUBLICATION_DATE;
+		}
+
+		public String IPAS_PROC_TYP;
+
+		public String getIPAS_PROC_TYP() {
+			return this.IPAS_PROC_TYP;
+		}
+
+		public BigDecimal IPAS_PROC_NBR;
+
+		public BigDecimal getIPAS_PROC_NBR() {
+			return this.IPAS_PROC_NBR;
+		}
+
+		public BigDecimal IPAS_ACTION_NBR;
+
+		public BigDecimal getIPAS_ACTION_NBR() {
+			return this.IPAS_ACTION_NBR;
+		}
+
+		public String errorCode;
+
+		public String getErrorCode() {
+			return this.errorCode;
+		}
+
+		public String errorMessage;
+
+		public String getErrorMessage() {
+			return this.errorMessage;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
+
+				try {
+
+					int length = 0;
+
+					this.FILE_SEQ = readString(dis);
+
+					this.FILE_TYPE = readString(dis);
+
+					this.FILE_SERIES = (BigDecimal) dis.readObject();
+
+					this.FILE_NBR = (BigDecimal) dis.readObject();
+
+					this.ACTION_TYPE = readString(dis);
+
+					this.ACTION_DATE = readDate(dis);
+
+					this.MANUAL_DUE_DATE = readDate(dis);
+
+					this.RESPONSIBLE_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_NOTES1 = readString(dis);
+
+					this.ACTION_NOTES2 = readString(dis);
+
+					this.ACTION_NOTES3 = readString(dis);
+
+					this.ACTION_NOTES4 = readString(dis);
+
+					this.ACTION_NOTES5 = readString(dis);
+
+					this.GENERAL_NOTES = readString(dis);
+
+					this.SELECTED_OPTIONS_TEXT = readString(dis);
+
+					this.ACTION_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_CATEGORY = readString(dis);
+
+					this.SPECIAL_FINAL_STATUS = readString(dis);
+
+					this.JOURNAL_CODE = readString(dis);
+
+					this.PUBLICATION_DATE = readDate(dis);
+
+					this.IPAS_PROC_TYP = readString(dis);
+
+					this.IPAS_PROC_NBR = (BigDecimal) dis.readObject();
+
+					this.IPAS_ACTION_NBR = (BigDecimal) dis.readObject();
+
+					this.errorCode = readString(dis);
+
+					this.errorMessage = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.FILE_SEQ, dos);
+
+				// String
+
+				writeString(this.FILE_TYPE, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.FILE_SERIES);
+
+				// BigDecimal
+
+				dos.writeObject(this.FILE_NBR);
+
+				// String
+
+				writeString(this.ACTION_TYPE, dos);
+
+				// java.util.Date
+
+				writeDate(this.ACTION_DATE, dos);
+
+				// java.util.Date
+
+				writeDate(this.MANUAL_DUE_DATE, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.RESPONSIBLE_USER);
+
+				// String
+
+				writeString(this.ACTION_NOTES1, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES2, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES3, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES4, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES5, dos);
+
+				// String
+
+				writeString(this.GENERAL_NOTES, dos);
+
+				// String
+
+				writeString(this.SELECTED_OPTIONS_TEXT, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.ACTION_USER);
+
+				// String
+
+				writeString(this.ACTION_CATEGORY, dos);
+
+				// String
+
+				writeString(this.SPECIAL_FINAL_STATUS, dos);
+
+				// String
+
+				writeString(this.JOURNAL_CODE, dos);
+
+				// java.util.Date
+
+				writeDate(this.PUBLICATION_DATE, dos);
+
+				// String
+
+				writeString(this.IPAS_PROC_TYP, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_PROC_NBR);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_ACTION_NBR);
+
+				// String
+
+				writeString(this.errorCode, dos);
+
+				// String
+
+				writeString(this.errorMessage, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("FILE_SEQ=" + FILE_SEQ);
+			sb.append(",FILE_TYPE=" + FILE_TYPE);
+			sb.append(",FILE_SERIES=" + String.valueOf(FILE_SERIES));
+			sb.append(",FILE_NBR=" + String.valueOf(FILE_NBR));
+			sb.append(",ACTION_TYPE=" + ACTION_TYPE);
+			sb.append(",ACTION_DATE=" + String.valueOf(ACTION_DATE));
+			sb.append(",MANUAL_DUE_DATE=" + String.valueOf(MANUAL_DUE_DATE));
+			sb.append(",RESPONSIBLE_USER=" + String.valueOf(RESPONSIBLE_USER));
+			sb.append(",ACTION_NOTES1=" + ACTION_NOTES1);
+			sb.append(",ACTION_NOTES2=" + ACTION_NOTES2);
+			sb.append(",ACTION_NOTES3=" + ACTION_NOTES3);
+			sb.append(",ACTION_NOTES4=" + ACTION_NOTES4);
+			sb.append(",ACTION_NOTES5=" + ACTION_NOTES5);
+			sb.append(",GENERAL_NOTES=" + GENERAL_NOTES);
+			sb.append(",SELECTED_OPTIONS_TEXT=" + SELECTED_OPTIONS_TEXT);
+			sb.append(",ACTION_USER=" + String.valueOf(ACTION_USER));
+			sb.append(",ACTION_CATEGORY=" + ACTION_CATEGORY);
+			sb.append(",SPECIAL_FINAL_STATUS=" + SPECIAL_FINAL_STATUS);
+			sb.append(",JOURNAL_CODE=" + JOURNAL_CODE);
+			sb.append(",PUBLICATION_DATE=" + String.valueOf(PUBLICATION_DATE));
+			sb.append(",IPAS_PROC_TYP=" + IPAS_PROC_TYP);
+			sb.append(",IPAS_PROC_NBR=" + String.valueOf(IPAS_PROC_NBR));
+			sb.append(",IPAS_ACTION_NBR=" + String.valueOf(IPAS_ACTION_NBR));
+			sb.append(",errorCode=" + errorCode);
+			sb.append(",errorMessage=" + errorMessage);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row45Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class copyOfinsert_actionsStruct
+			implements routines.system.IPersistableRow<copyOfinsert_actionsStruct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+
+		public String FILE_SEQ;
+
+		public String getFILE_SEQ() {
+			return this.FILE_SEQ;
+		}
+
+		public String FILE_TYPE;
+
+		public String getFILE_TYPE() {
+			return this.FILE_TYPE;
+		}
+
+		public BigDecimal FILE_SERIES;
+
+		public BigDecimal getFILE_SERIES() {
+			return this.FILE_SERIES;
+		}
+
+		public BigDecimal FILE_NBR;
+
+		public BigDecimal getFILE_NBR() {
+			return this.FILE_NBR;
+		}
+
+		public String ACTION_TYPE;
+
+		public String getACTION_TYPE() {
+			return this.ACTION_TYPE;
+		}
+
+		public java.util.Date ACTION_DATE;
+
+		public java.util.Date getACTION_DATE() {
+			return this.ACTION_DATE;
+		}
+
+		public java.util.Date MANUAL_DUE_DATE;
+
+		public java.util.Date getMANUAL_DUE_DATE() {
+			return this.MANUAL_DUE_DATE;
+		}
+
+		public BigDecimal RESPONSIBLE_USER;
+
+		public BigDecimal getRESPONSIBLE_USER() {
+			return this.RESPONSIBLE_USER;
+		}
+
+		public String ACTION_NOTES1;
+
+		public String getACTION_NOTES1() {
+			return this.ACTION_NOTES1;
+		}
+
+		public String ACTION_NOTES2;
+
+		public String getACTION_NOTES2() {
+			return this.ACTION_NOTES2;
+		}
+
+		public String ACTION_NOTES3;
+
+		public String getACTION_NOTES3() {
+			return this.ACTION_NOTES3;
+		}
+
+		public String ACTION_NOTES4;
+
+		public String getACTION_NOTES4() {
+			return this.ACTION_NOTES4;
+		}
+
+		public String ACTION_NOTES5;
+
+		public String getACTION_NOTES5() {
+			return this.ACTION_NOTES5;
+		}
+
+		public String GENERAL_NOTES;
+
+		public String getGENERAL_NOTES() {
+			return this.GENERAL_NOTES;
+		}
+
+		public String SELECTED_OPTIONS_TEXT;
+
+		public String getSELECTED_OPTIONS_TEXT() {
+			return this.SELECTED_OPTIONS_TEXT;
+		}
+
+		public BigDecimal ACTION_USER;
+
+		public BigDecimal getACTION_USER() {
+			return this.ACTION_USER;
+		}
+
+		public String ACTION_CATEGORY;
+
+		public String getACTION_CATEGORY() {
+			return this.ACTION_CATEGORY;
+		}
+
+		public String SPECIAL_FINAL_STATUS;
+
+		public String getSPECIAL_FINAL_STATUS() {
+			return this.SPECIAL_FINAL_STATUS;
+		}
+
+		public String JOURNAL_CODE;
+
+		public String getJOURNAL_CODE() {
+			return this.JOURNAL_CODE;
+		}
+
+		public java.util.Date PUBLICATION_DATE;
+
+		public java.util.Date getPUBLICATION_DATE() {
+			return this.PUBLICATION_DATE;
+		}
+
+		public String IPAS_PROC_TYP;
+
+		public String getIPAS_PROC_TYP() {
+			return this.IPAS_PROC_TYP;
+		}
+
+		public BigDecimal IPAS_PROC_NBR;
+
+		public BigDecimal getIPAS_PROC_NBR() {
+			return this.IPAS_PROC_NBR;
+		}
+
+		public BigDecimal IPAS_ACTION_NBR;
+
+		public BigDecimal getIPAS_ACTION_NBR() {
+			return this.IPAS_ACTION_NBR;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
+
+				try {
+
+					int length = 0;
+
+					this.FILE_SEQ = readString(dis);
+
+					this.FILE_TYPE = readString(dis);
+
+					this.FILE_SERIES = (BigDecimal) dis.readObject();
+
+					this.FILE_NBR = (BigDecimal) dis.readObject();
+
+					this.ACTION_TYPE = readString(dis);
+
+					this.ACTION_DATE = readDate(dis);
+
+					this.MANUAL_DUE_DATE = readDate(dis);
+
+					this.RESPONSIBLE_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_NOTES1 = readString(dis);
+
+					this.ACTION_NOTES2 = readString(dis);
+
+					this.ACTION_NOTES3 = readString(dis);
+
+					this.ACTION_NOTES4 = readString(dis);
+
+					this.ACTION_NOTES5 = readString(dis);
+
+					this.GENERAL_NOTES = readString(dis);
+
+					this.SELECTED_OPTIONS_TEXT = readString(dis);
+
+					this.ACTION_USER = (BigDecimal) dis.readObject();
+
+					this.ACTION_CATEGORY = readString(dis);
+
+					this.SPECIAL_FINAL_STATUS = readString(dis);
+
+					this.JOURNAL_CODE = readString(dis);
+
+					this.PUBLICATION_DATE = readDate(dis);
+
+					this.IPAS_PROC_TYP = readString(dis);
+
+					this.IPAS_PROC_NBR = (BigDecimal) dis.readObject();
+
+					this.IPAS_ACTION_NBR = (BigDecimal) dis.readObject();
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				} catch (ClassNotFoundException eCNFE) {
+					throw new RuntimeException(eCNFE);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.FILE_SEQ, dos);
+
+				// String
+
+				writeString(this.FILE_TYPE, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.FILE_SERIES);
+
+				// BigDecimal
+
+				dos.writeObject(this.FILE_NBR);
+
+				// String
+
+				writeString(this.ACTION_TYPE, dos);
+
+				// java.util.Date
+
+				writeDate(this.ACTION_DATE, dos);
+
+				// java.util.Date
+
+				writeDate(this.MANUAL_DUE_DATE, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.RESPONSIBLE_USER);
+
+				// String
+
+				writeString(this.ACTION_NOTES1, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES2, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES3, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES4, dos);
+
+				// String
+
+				writeString(this.ACTION_NOTES5, dos);
+
+				// String
+
+				writeString(this.GENERAL_NOTES, dos);
+
+				// String
+
+				writeString(this.SELECTED_OPTIONS_TEXT, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.ACTION_USER);
+
+				// String
+
+				writeString(this.ACTION_CATEGORY, dos);
+
+				// String
+
+				writeString(this.SPECIAL_FINAL_STATUS, dos);
+
+				// String
+
+				writeString(this.JOURNAL_CODE, dos);
+
+				// java.util.Date
+
+				writeDate(this.PUBLICATION_DATE, dos);
+
+				// String
+
+				writeString(this.IPAS_PROC_TYP, dos);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_PROC_NBR);
+
+				// BigDecimal
+
+				dos.writeObject(this.IPAS_ACTION_NBR);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("FILE_SEQ=" + FILE_SEQ);
+			sb.append(",FILE_TYPE=" + FILE_TYPE);
+			sb.append(",FILE_SERIES=" + String.valueOf(FILE_SERIES));
+			sb.append(",FILE_NBR=" + String.valueOf(FILE_NBR));
+			sb.append(",ACTION_TYPE=" + ACTION_TYPE);
+			sb.append(",ACTION_DATE=" + String.valueOf(ACTION_DATE));
+			sb.append(",MANUAL_DUE_DATE=" + String.valueOf(MANUAL_DUE_DATE));
+			sb.append(",RESPONSIBLE_USER=" + String.valueOf(RESPONSIBLE_USER));
+			sb.append(",ACTION_NOTES1=" + ACTION_NOTES1);
+			sb.append(",ACTION_NOTES2=" + ACTION_NOTES2);
+			sb.append(",ACTION_NOTES3=" + ACTION_NOTES3);
+			sb.append(",ACTION_NOTES4=" + ACTION_NOTES4);
+			sb.append(",ACTION_NOTES5=" + ACTION_NOTES5);
+			sb.append(",GENERAL_NOTES=" + GENERAL_NOTES);
+			sb.append(",SELECTED_OPTIONS_TEXT=" + SELECTED_OPTIONS_TEXT);
+			sb.append(",ACTION_USER=" + String.valueOf(ACTION_USER));
+			sb.append(",ACTION_CATEGORY=" + ACTION_CATEGORY);
+			sb.append(",SPECIAL_FINAL_STATUS=" + SPECIAL_FINAL_STATUS);
+			sb.append(",JOURNAL_CODE=" + JOURNAL_CODE);
+			sb.append(",PUBLICATION_DATE=" + String.valueOf(PUBLICATION_DATE));
+			sb.append(",IPAS_PROC_TYP=" + IPAS_PROC_TYP);
+			sb.append(",IPAS_PROC_NBR=" + String.valueOf(IPAS_PROC_NBR));
+			sb.append(",IPAS_ACTION_NBR=" + String.valueOf(IPAS_ACTION_NBR));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(copyOfinsert_actionsStruct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class row43Struct implements routines.system.IPersistableRow<row43Struct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+
+		public Long num_acta;
+
+		public Long getNum_acta() {
+			return this.num_acta;
+		}
+
+		public String tip_solicitud;
+
+		public String getTip_solicitud() {
+			return this.tip_solicitud;
+		}
+
+		public Integer cod_primer_titular;
+
+		public Integer getCod_primer_titular() {
+			return this.cod_primer_titular;
+		}
+
+		public Long num_registro_viejo;
+
+		public Long getNum_registro_viejo() {
+			return this.num_registro_viejo;
+		}
+
+		public Long num_acta_nuevo;
+
+		public Long getNum_acta_nuevo() {
+			return this.num_acta_nuevo;
+		}
+
+		public String tip_signo;
+
+		public String getTip_signo() {
+			return this.tip_signo;
+		}
+
+		public Integer cod_denominacion;
+
+		public Integer getCod_denominacion() {
+			return this.cod_denominacion;
+		}
+
+		public Short num_clase;
+
+		public Short getNum_clase() {
+			return this.num_clase;
+		}
+
+		public Short num_agente;
+
+		public Short getNum_agente() {
+			return this.num_agente;
+		}
+
+		public String num_reg_prioridad;
+
+		public String getNum_reg_prioridad() {
+			return this.num_reg_prioridad;
+		}
+
+		public String cod_pais_prioridad;
+
+		public String getCod_pais_prioridad() {
+			return this.cod_pais_prioridad;
+		}
+
+		public java.util.Date fec_prioridad;
+
+		public java.util.Date getFec_prioridad() {
+			return this.fec_prioridad;
+		}
+
+		public String cod_status;
+
+		public String getCod_status() {
+			return this.cod_status;
+		}
+
+		public java.util.Date fec_status;
+
+		public java.util.Date getFec_status() {
+			return this.fec_status;
+		}
+
+		public java.util.Date fec_registro;
+
+		public java.util.Date getFec_registro() {
+			return this.fec_registro;
+		}
+
+		public Integer num_registro;
+
+		public Integer getNum_registro() {
+			return this.num_registro;
+		}
+
+		public java.util.Date fec_ingreso;
+
+		public java.util.Date getFec_ingreso() {
+			return this.fec_ingreso;
+		}
+
+		public java.util.Date fec_cambio;
+
+		public java.util.Date getFec_cambio() {
+			return this.fec_cambio;
+		}
+
+		public String cod_usuario_cambio;
+
+		public String getCod_usuario_cambio() {
+			return this.cod_usuario_cambio;
+		}
+
+		public java.util.Date fec_solicitud;
+
+		public java.util.Date getFec_solicitud() {
+			return this.fec_solicitud;
+		}
+
+		public Long num_logotipo;
+
+		public Long getNum_logotipo() {
+			return this.num_logotipo;
+		}
+
+		public java.util.Date fec_vencimiento;
+
+		public java.util.Date getFec_vencimiento() {
+			return this.fec_vencimiento;
+		}
+
+		public Short tip_tramite;
+
+		public Short getTip_tramite() {
+			return this.tip_tramite;
+		}
+
+		public Integer num_registro_poder;
+
+		public Integer getNum_registro_poder() {
+			return this.num_registro_poder;
+		}
+
+		public Short ed_niza;
+
+		public Short getEd_niza() {
+			return this.ed_niza;
+		}
+
+		public String tip_signo_old;
+
+		public String getTip_signo_old() {
+			return this.tip_signo_old;
+		}
+
+		public Short num_agente_old;
+
+		public Short getNum_agente_old() {
+			return this.num_agente_old;
+		}
+
+		public String cod_pais_prioridad_old;
+
+		public String getCod_pais_prioridad_old() {
+			return this.cod_pais_prioridad_old;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private Integer readInteger(ObjectInputStream dis) throws IOException {
+			Integer intReturn;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				intReturn = null;
+			} else {
+				intReturn = dis.readInt();
+			}
+			return intReturn;
+		}
+
+		private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException {
+			if (intNum == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeInt(intNum);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
+
+				try {
+
+					int length = 0;
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta = null;
+					} else {
+						this.num_acta = dis.readLong();
+					}
+
+					this.tip_solicitud = readString(dis);
+
+					this.cod_primer_titular = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_registro_viejo = null;
+					} else {
+						this.num_registro_viejo = dis.readLong();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta_nuevo = null;
+					} else {
+						this.num_acta_nuevo = dis.readLong();
+					}
+
+					this.tip_signo = readString(dis);
+
+					this.cod_denominacion = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_clase = null;
+					} else {
+						this.num_clase = dis.readShort();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_agente = null;
+					} else {
+						this.num_agente = dis.readShort();
+					}
+
+					this.num_reg_prioridad = readString(dis);
+
+					this.cod_pais_prioridad = readString(dis);
+
+					this.fec_prioridad = readDate(dis);
+
+					this.cod_status = readString(dis);
+
+					this.fec_status = readDate(dis);
+
+					this.fec_registro = readDate(dis);
+
+					this.num_registro = readInteger(dis);
+
+					this.fec_ingreso = readDate(dis);
+
+					this.fec_cambio = readDate(dis);
+
+					this.cod_usuario_cambio = readString(dis);
+
+					this.fec_solicitud = readDate(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_logotipo = null;
+					} else {
+						this.num_logotipo = dis.readLong();
+					}
+
+					this.fec_vencimiento = readDate(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.tip_tramite = null;
+					} else {
+						this.tip_tramite = dis.readShort();
+					}
+
+					this.num_registro_poder = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.ed_niza = null;
+					} else {
+						this.ed_niza = dis.readShort();
+					}
+
+					this.tip_signo_old = readString(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_agente_old = null;
+					} else {
+						this.num_agente_old = dis.readShort();
+					}
+
+					this.cod_pais_prioridad_old = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// Long
+
+				if (this.num_acta == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta);
+				}
+
+				// String
+
+				writeString(this.tip_solicitud, dos);
+
+				// Integer
+
+				writeInteger(this.cod_primer_titular, dos);
+
+				// Long
+
+				if (this.num_registro_viejo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_registro_viejo);
+				}
+
+				// Long
+
+				if (this.num_acta_nuevo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta_nuevo);
+				}
+
+				// String
+
+				writeString(this.tip_signo, dos);
+
+				// Integer
+
+				writeInteger(this.cod_denominacion, dos);
+
+				// Short
+
+				if (this.num_clase == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_clase);
+				}
+
+				// Short
+
+				if (this.num_agente == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_agente);
+				}
+
+				// String
+
+				writeString(this.num_reg_prioridad, dos);
+
+				// String
+
+				writeString(this.cod_pais_prioridad, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_prioridad, dos);
+
+				// String
+
+				writeString(this.cod_status, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_status, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_registro, dos);
+
+				// Integer
+
+				writeInteger(this.num_registro, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_ingreso, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_cambio, dos);
+
+				// String
+
+				writeString(this.cod_usuario_cambio, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_solicitud, dos);
+
+				// Long
+
+				if (this.num_logotipo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_logotipo);
+				}
+
+				// java.util.Date
+
+				writeDate(this.fec_vencimiento, dos);
+
+				// Short
+
+				if (this.tip_tramite == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.tip_tramite);
+				}
+
+				// Integer
+
+				writeInteger(this.num_registro_poder, dos);
+
+				// Short
+
+				if (this.ed_niza == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.ed_niza);
+				}
+
+				// String
+
+				writeString(this.tip_signo_old, dos);
+
+				// Short
+
+				if (this.num_agente_old == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_agente_old);
+				}
+
+				// String
+
+				writeString(this.cod_pais_prioridad_old, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("num_acta=" + String.valueOf(num_acta));
+			sb.append(",tip_solicitud=" + tip_solicitud);
+			sb.append(",cod_primer_titular=" + String.valueOf(cod_primer_titular));
+			sb.append(",num_registro_viejo=" + String.valueOf(num_registro_viejo));
+			sb.append(",num_acta_nuevo=" + String.valueOf(num_acta_nuevo));
+			sb.append(",tip_signo=" + tip_signo);
+			sb.append(",cod_denominacion=" + String.valueOf(cod_denominacion));
+			sb.append(",num_clase=" + String.valueOf(num_clase));
+			sb.append(",num_agente=" + String.valueOf(num_agente));
+			sb.append(",num_reg_prioridad=" + num_reg_prioridad);
+			sb.append(",cod_pais_prioridad=" + cod_pais_prioridad);
+			sb.append(",fec_prioridad=" + String.valueOf(fec_prioridad));
+			sb.append(",cod_status=" + cod_status);
+			sb.append(",fec_status=" + String.valueOf(fec_status));
+			sb.append(",fec_registro=" + String.valueOf(fec_registro));
+			sb.append(",num_registro=" + String.valueOf(num_registro));
+			sb.append(",fec_ingreso=" + String.valueOf(fec_ingreso));
+			sb.append(",fec_cambio=" + String.valueOf(fec_cambio));
+			sb.append(",cod_usuario_cambio=" + cod_usuario_cambio);
+			sb.append(",fec_solicitud=" + String.valueOf(fec_solicitud));
+			sb.append(",num_logotipo=" + String.valueOf(num_logotipo));
+			sb.append(",fec_vencimiento=" + String.valueOf(fec_vencimiento));
+			sb.append(",tip_tramite=" + String.valueOf(tip_tramite));
+			sb.append(",num_registro_poder=" + String.valueOf(num_registro_poder));
+			sb.append(",ed_niza=" + String.valueOf(ed_niza));
+			sb.append(",tip_signo_old=" + tip_signo_old);
+			sb.append(",num_agente_old=" + String.valueOf(num_agente_old));
+			sb.append(",cod_pais_prioridad_old=" + cod_pais_prioridad_old);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row43Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public static class after_tDBInput_33Struct implements routines.system.IPersistableRow<after_tDBInput_33Struct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+
+		public Long num_acta;
+
+		public Long getNum_acta() {
+			return this.num_acta;
+		}
+
+		public String tip_solicitud;
+
+		public String getTip_solicitud() {
+			return this.tip_solicitud;
+		}
+
+		public Integer cod_primer_titular;
+
+		public Integer getCod_primer_titular() {
+			return this.cod_primer_titular;
+		}
+
+		public Long num_registro_viejo;
+
+		public Long getNum_registro_viejo() {
+			return this.num_registro_viejo;
+		}
+
+		public Long num_acta_nuevo;
+
+		public Long getNum_acta_nuevo() {
+			return this.num_acta_nuevo;
+		}
+
+		public String tip_signo;
+
+		public String getTip_signo() {
+			return this.tip_signo;
+		}
+
+		public Integer cod_denominacion;
+
+		public Integer getCod_denominacion() {
+			return this.cod_denominacion;
+		}
+
+		public Short num_clase;
+
+		public Short getNum_clase() {
+			return this.num_clase;
+		}
+
+		public Short num_agente;
+
+		public Short getNum_agente() {
+			return this.num_agente;
+		}
+
+		public String num_reg_prioridad;
+
+		public String getNum_reg_prioridad() {
+			return this.num_reg_prioridad;
+		}
+
+		public String cod_pais_prioridad;
+
+		public String getCod_pais_prioridad() {
+			return this.cod_pais_prioridad;
+		}
+
+		public java.util.Date fec_prioridad;
+
+		public java.util.Date getFec_prioridad() {
+			return this.fec_prioridad;
+		}
+
+		public String cod_status;
+
+		public String getCod_status() {
+			return this.cod_status;
+		}
+
+		public java.util.Date fec_status;
+
+		public java.util.Date getFec_status() {
+			return this.fec_status;
+		}
+
+		public java.util.Date fec_registro;
+
+		public java.util.Date getFec_registro() {
+			return this.fec_registro;
+		}
+
+		public Integer num_registro;
+
+		public Integer getNum_registro() {
+			return this.num_registro;
+		}
+
+		public java.util.Date fec_ingreso;
+
+		public java.util.Date getFec_ingreso() {
+			return this.fec_ingreso;
+		}
+
+		public java.util.Date fec_cambio;
+
+		public java.util.Date getFec_cambio() {
+			return this.fec_cambio;
+		}
+
+		public String cod_usuario_cambio;
+
+		public String getCod_usuario_cambio() {
+			return this.cod_usuario_cambio;
+		}
+
+		public java.util.Date fec_solicitud;
+
+		public java.util.Date getFec_solicitud() {
+			return this.fec_solicitud;
+		}
+
+		public Long num_logotipo;
+
+		public Long getNum_logotipo() {
+			return this.num_logotipo;
+		}
+
+		public java.util.Date fec_vencimiento;
+
+		public java.util.Date getFec_vencimiento() {
+			return this.fec_vencimiento;
+		}
+
+		public Short tip_tramite;
+
+		public Short getTip_tramite() {
+			return this.tip_tramite;
+		}
+
+		public Integer num_registro_poder;
+
+		public Integer getNum_registro_poder() {
+			return this.num_registro_poder;
+		}
+
+		public Short ed_niza;
+
+		public Short getEd_niza() {
+			return this.ed_niza;
+		}
+
+		public String tip_signo_old;
+
+		public String getTip_signo_old() {
+			return this.tip_signo_old;
+		}
+
+		public Short num_agente_old;
+
+		public Short getNum_agente_old() {
+			return this.num_agente_old;
+		}
+
+		public String cod_pais_prioridad_old;
+
+		public String getCod_pais_prioridad_old() {
+			return this.cod_pais_prioridad_old;
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private Integer readInteger(ObjectInputStream dis) throws IOException {
+			Integer intReturn;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				intReturn = null;
+			} else {
+				intReturn = dis.readInt();
+			}
+			return intReturn;
+		}
+
+		private void writeInteger(Integer intNum, ObjectOutputStream dos) throws IOException {
+			if (intNum == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeInt(intNum);
+			}
+		}
+
+		private java.util.Date readDate(ObjectInputStream dis) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, ObjectOutputStream dos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
+
+				try {
+
+					int length = 0;
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta = null;
+					} else {
+						this.num_acta = dis.readLong();
+					}
+
+					this.tip_solicitud = readString(dis);
+
+					this.cod_primer_titular = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_registro_viejo = null;
+					} else {
+						this.num_registro_viejo = dis.readLong();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_acta_nuevo = null;
+					} else {
+						this.num_acta_nuevo = dis.readLong();
+					}
+
+					this.tip_signo = readString(dis);
+
+					this.cod_denominacion = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_clase = null;
+					} else {
+						this.num_clase = dis.readShort();
+					}
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_agente = null;
+					} else {
+						this.num_agente = dis.readShort();
+					}
+
+					this.num_reg_prioridad = readString(dis);
+
+					this.cod_pais_prioridad = readString(dis);
+
+					this.fec_prioridad = readDate(dis);
+
+					this.cod_status = readString(dis);
+
+					this.fec_status = readDate(dis);
+
+					this.fec_registro = readDate(dis);
+
+					this.num_registro = readInteger(dis);
+
+					this.fec_ingreso = readDate(dis);
+
+					this.fec_cambio = readDate(dis);
+
+					this.cod_usuario_cambio = readString(dis);
+
+					this.fec_solicitud = readDate(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_logotipo = null;
+					} else {
+						this.num_logotipo = dis.readLong();
+					}
+
+					this.fec_vencimiento = readDate(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.tip_tramite = null;
+					} else {
+						this.tip_tramite = dis.readShort();
+					}
+
+					this.num_registro_poder = readInteger(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.ed_niza = null;
+					} else {
+						this.ed_niza = dis.readShort();
+					}
+
+					this.tip_signo_old = readString(dis);
+
+					length = dis.readByte();
+					if (length == -1) {
+						this.num_agente_old = null;
+					} else {
+						this.num_agente_old = dis.readShort();
+					}
+
+					this.cod_pais_prioridad_old = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+				// Long
+
+				if (this.num_acta == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta);
+				}
+
+				// String
+
+				writeString(this.tip_solicitud, dos);
+
+				// Integer
+
+				writeInteger(this.cod_primer_titular, dos);
+
+				// Long
+
+				if (this.num_registro_viejo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_registro_viejo);
+				}
+
+				// Long
+
+				if (this.num_acta_nuevo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_acta_nuevo);
+				}
+
+				// String
+
+				writeString(this.tip_signo, dos);
+
+				// Integer
+
+				writeInteger(this.cod_denominacion, dos);
+
+				// Short
+
+				if (this.num_clase == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_clase);
+				}
+
+				// Short
+
+				if (this.num_agente == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_agente);
+				}
+
+				// String
+
+				writeString(this.num_reg_prioridad, dos);
+
+				// String
+
+				writeString(this.cod_pais_prioridad, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_prioridad, dos);
+
+				// String
+
+				writeString(this.cod_status, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_status, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_registro, dos);
+
+				// Integer
+
+				writeInteger(this.num_registro, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_ingreso, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_cambio, dos);
+
+				// String
+
+				writeString(this.cod_usuario_cambio, dos);
+
+				// java.util.Date
+
+				writeDate(this.fec_solicitud, dos);
+
+				// Long
+
+				if (this.num_logotipo == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeLong(this.num_logotipo);
+				}
+
+				// java.util.Date
+
+				writeDate(this.fec_vencimiento, dos);
+
+				// Short
+
+				if (this.tip_tramite == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.tip_tramite);
+				}
+
+				// Integer
+
+				writeInteger(this.num_registro_poder, dos);
+
+				// Short
+
+				if (this.ed_niza == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.ed_niza);
+				}
+
+				// String
+
+				writeString(this.tip_signo_old, dos);
+
+				// Short
+
+				if (this.num_agente_old == null) {
+					dos.writeByte(-1);
+				} else {
+					dos.writeByte(0);
+					dos.writeShort(this.num_agente_old);
+				}
+
+				// String
+
+				writeString(this.cod_pais_prioridad_old, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("num_acta=" + String.valueOf(num_acta));
+			sb.append(",tip_solicitud=" + tip_solicitud);
+			sb.append(",cod_primer_titular=" + String.valueOf(cod_primer_titular));
+			sb.append(",num_registro_viejo=" + String.valueOf(num_registro_viejo));
+			sb.append(",num_acta_nuevo=" + String.valueOf(num_acta_nuevo));
+			sb.append(",tip_signo=" + tip_signo);
+			sb.append(",cod_denominacion=" + String.valueOf(cod_denominacion));
+			sb.append(",num_clase=" + String.valueOf(num_clase));
+			sb.append(",num_agente=" + String.valueOf(num_agente));
+			sb.append(",num_reg_prioridad=" + num_reg_prioridad);
+			sb.append(",cod_pais_prioridad=" + cod_pais_prioridad);
+			sb.append(",fec_prioridad=" + String.valueOf(fec_prioridad));
+			sb.append(",cod_status=" + cod_status);
+			sb.append(",fec_status=" + String.valueOf(fec_status));
+			sb.append(",fec_registro=" + String.valueOf(fec_registro));
+			sb.append(",num_registro=" + String.valueOf(num_registro));
+			sb.append(",fec_ingreso=" + String.valueOf(fec_ingreso));
+			sb.append(",fec_cambio=" + String.valueOf(fec_cambio));
+			sb.append(",cod_usuario_cambio=" + cod_usuario_cambio);
+			sb.append(",fec_solicitud=" + String.valueOf(fec_solicitud));
+			sb.append(",num_logotipo=" + String.valueOf(num_logotipo));
+			sb.append(",fec_vencimiento=" + String.valueOf(fec_vencimiento));
+			sb.append(",tip_tramite=" + String.valueOf(tip_tramite));
+			sb.append(",num_registro_poder=" + String.valueOf(num_registro_poder));
+			sb.append(",ed_niza=" + String.valueOf(ed_niza));
+			sb.append(",tip_signo_old=" + tip_signo_old);
+			sb.append(",num_agente_old=" + String.valueOf(num_agente_old));
+			sb.append(",cod_pais_prioridad_old=" + cod_pais_prioridad_old);
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(after_tDBInput_33Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tDBInput_33Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_33_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				tDBInput_31Process(globalMap);
+
+				row43Struct row43 = new row43Struct();
+				copyOfinsert_actionsStruct copyOfinsert_actions = new copyOfinsert_actionsStruct();
+				row45Struct row45 = new row45Struct();
+
+				/**
+				 * [tLogRow_14 begin ] start
+				 */
+
+				ok_Hash.put("tLogRow_14", false);
+				start_Hash.put("tLogRow_14", System.currentTimeMillis());
+
+				currentComponent = "tLogRow_14";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row45");
+				}
+
+				int tos_count_tLogRow_14 = 0;
+
+				///////////////////////
+
+				final String OUTPUT_FIELD_SEPARATOR_tLogRow_14 = "|";
+				java.io.PrintStream consoleOut_tLogRow_14 = null;
+
+				StringBuilder strBuffer_tLogRow_14 = null;
+				int nb_line_tLogRow_14 = 0;
+///////////////////////    			
+
+				/**
+				 * [tLogRow_14 begin ] stop
+				 */
+
+				/**
+				 * [tDBOutput_13 begin ] start
+				 */
+
+				ok_Hash.put("tDBOutput_13", false);
+				start_Hash.put("tDBOutput_13", System.currentTimeMillis());
+
+				currentComponent = "tDBOutput_13";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "copyOfinsert_actions");
+				}
+
+				int tos_count_tDBOutput_13 = 0;
+
+				int nb_line_tDBOutput_13 = 0;
+				int nb_line_update_tDBOutput_13 = 0;
+				int nb_line_inserted_tDBOutput_13 = 0;
+				int nb_line_deleted_tDBOutput_13 = 0;
+				int nb_line_rejected_tDBOutput_13 = 0;
+
+				int deletedCount_tDBOutput_13 = 0;
+				int updatedCount_tDBOutput_13 = 0;
+				int insertedCount_tDBOutput_13 = 0;
+				int rejectedCount_tDBOutput_13 = 0;
+				String dbschema_tDBOutput_13 = null;
+				String tableName_tDBOutput_13 = null;
+				boolean whetherReject_tDBOutput_13 = false;
+
+				java.util.Calendar calendar_tDBOutput_13 = java.util.Calendar.getInstance();
+				long year1_tDBOutput_13 = TalendDate.parseDate("yyyy-MM-dd", "0001-01-01").getTime();
+				long year2_tDBOutput_13 = TalendDate.parseDate("yyyy-MM-dd", "1753-01-01").getTime();
+				long year10000_tDBOutput_13 = TalendDate.parseDate("yyyy-MM-dd HH:mm:ss", "9999-12-31 24:00:00")
+						.getTime();
+				long date_tDBOutput_13;
+
+				java.util.Calendar calendar_datetimeoffset_tDBOutput_13 = java.util.Calendar
+						.getInstance(java.util.TimeZone.getTimeZone("UTC"));
+
+				java.sql.Connection conn_tDBOutput_13 = null;
+				String dbUser_tDBOutput_13 = null;
+				dbschema_tDBOutput_13 = (String) globalMap.get("dbschema_tDBConnection_1");
+
+				conn_tDBOutput_13 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
+
+				if (dbschema_tDBOutput_13 == null || dbschema_tDBOutput_13.trim().length() == 0) {
+					tableName_tDBOutput_13 = "VW_IMPORT_MARK_ACTIONS";
+				} else {
+					tableName_tDBOutput_13 = dbschema_tDBOutput_13 + "].[" + "VW_IMPORT_MARK_ACTIONS";
+				}
+				int count_tDBOutput_13 = 0;
+
+				String insert_tDBOutput_13 = "INSERT INTO [" + tableName_tDBOutput_13
+						+ "] ([FILE_SEQ],[FILE_TYPE],[FILE_SERIES],[FILE_NBR],[ACTION_TYPE],[ACTION_DATE],[MANUAL_DUE_DATE],[RESPONSIBLE_USER],[ACTION_NOTES1],[ACTION_NOTES2],[ACTION_NOTES3],[ACTION_NOTES4],[ACTION_NOTES5],[GENERAL_NOTES],[SELECTED_OPTIONS_TEXT],[ACTION_USER],[ACTION_CATEGORY],[SPECIAL_FINAL_STATUS],[JOURNAL_CODE],[PUBLICATION_DATE],[IPAS_PROC_TYP],[IPAS_PROC_NBR],[IPAS_ACTION_NBR]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+				java.sql.PreparedStatement pstmt_tDBOutput_13 = conn_tDBOutput_13.prepareStatement(insert_tDBOutput_13);
+				resourceMap.put("pstmt_tDBOutput_13", pstmt_tDBOutput_13);
+
+				boolean isShareIdentity_tDBOutput_13 = globalMap.get("shareIdentitySetting_tDBConnection_1") != null
+						&& (Boolean) globalMap.get("shareIdentitySetting_tDBConnection_1") == true;
+
+				/**
+				 * [tDBOutput_13 begin ] stop
+				 */
+
+				/**
+				 * [tMap_12 begin ] start
+				 */
+
+				ok_Hash.put("tMap_12", false);
+				start_Hash.put("tMap_12", System.currentTimeMillis());
+
+				currentComponent = "tMap_12";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row43");
+				}
+
+				int tos_count_tMap_12 = 0;
+
+// ###############################
+// # Lookup's keys initialization
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row44Struct> tHash_Lookup_row44 = (org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row44Struct>) ((org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row44Struct>) globalMap
+						.get("tHash_Lookup_row44"));
+
+				row44Struct row44HashKey = new row44Struct();
+				row44Struct row44Default = new row44Struct();
+// ###############################        
+
+// ###############################
+// # Vars initialization
+				class Var__tMap_12__Struct {
+				}
+				Var__tMap_12__Struct Var__tMap_12 = new Var__tMap_12__Struct();
+// ###############################
+
+// ###############################
+// # Outputs initialization
+				copyOfinsert_actionsStruct copyOfinsert_actions_tmp = new copyOfinsert_actionsStruct();
+// ###############################
+
+				/**
+				 * [tMap_12 begin ] stop
+				 */
+
+				/**
+				 * [tDBInput_33 begin ] start
+				 */
+
+				ok_Hash.put("tDBInput_33", false);
+				start_Hash.put("tDBInput_33", System.currentTimeMillis());
+
+				currentComponent = "tDBInput_33";
+
+				int tos_count_tDBInput_33 = 0;
+
+				int nb_line_tDBInput_33 = 0;
+				java.sql.Connection conn_tDBInput_33 = null;
+				conn_tDBInput_33 = (java.sql.Connection) globalMap.get("conn_tDBConnection_2");
+
+				java.sql.Statement stmt_tDBInput_33 = conn_tDBInput_33.createStatement();
+
+				String dbquery_tDBInput_33 = "SELECT \n  \"Paraguay\".\"public\".\"marca\".\"num_acta\", \n  \"Paraguay\".\"public\".\"marca\".\"tip_solicitud\", \n  \""
+						+ "Paraguay\".\"public\".\"marca\".\"cod_primer_titular\", \n  \"Paraguay\".\"public\".\"marca\".\"num_registro_viejo\", \n  "
+						+ "\"Paraguay\".\"public\".\"marca\".\"num_acta_nuevo\", \n  \"Paraguay\".\"public\".\"marca\".\"tip_signo\", \n  \"Paraguay"
+						+ "\".\"public\".\"marca\".\"cod_denominacion\", \n  \"Paraguay\".\"public\".\"marca\".\"num_clase\", \n  \"Paraguay\".\"publ"
+						+ "ic\".\"marca\".\"num_agente\", \n  \"Paraguay\".\"public\".\"marca\".\"num_reg_prioridad\", \n  \"Paraguay\".\"public\".\""
+						+ "marca\".\"cod_pais_prioridad\", \n  \"Paraguay\".\"public\".\"marca\".\"fec_prioridad\", \n  \"Paraguay\".\"public\".\"mar"
+						+ "ca\".\"cod_status\", \n  \"Paraguay\".\"public\".\"marca\".\"fec_status\", \n  \"Paraguay\".\"public\".\"marca\".\"fec_reg"
+						+ "istro\", \n  \"Paraguay\".\"public\".\"marca\".\"num_registro\", \n  \"Paraguay\".\"public\".\"marca\".\"fec_ingreso\", \n "
+						+ " \"Paraguay\".\"public\".\"marca\".\"fec_cambio\", \n  \"Paraguay\".\"public\".\"marca\".\"cod_usuario_cambio\", \n  \"Par"
+						+ "aguay\".\"public\".\"marca\".\"fec_solicitud\", \n  \"Paraguay\".\"public\".\"marca\".\"num_logotipo\", \n  \"Paraguay\"."
+						+ "\"public\".\"marca\".\"fec_vencimiento\", \n  \"Paraguay\".\"public\".\"marca\".\"tip_tramite\", \n  \"Paraguay\".\"public"
+						+ "\".\"marca\".\"num_registro_poder\", \n  \"Paraguay\".\"public\".\"marca\".\"ed_niza\", \n  \"Paraguay\".\"public\".\"marc"
+						+ "a\".\"tip_signo_old\", \n  \"Paraguay\".\"public\".\"marca\".\"num_agente_old\", \n  \"Paraguay\".\"public\".\"marca\".\"c"
+						+ "od_pais_prioridad_old\"\nFROM \"Paraguay\".\"public\".\"marca\" where   \"Paraguay\".\"public\".\"marca\".\"num_logotipo"
+						+ "\" is not null";
+
+				globalMap.put("tDBInput_33_QUERY", dbquery_tDBInput_33);
+				java.sql.ResultSet rs_tDBInput_33 = null;
+
+				try {
+					rs_tDBInput_33 = stmt_tDBInput_33.executeQuery(dbquery_tDBInput_33);
+					java.sql.ResultSetMetaData rsmd_tDBInput_33 = rs_tDBInput_33.getMetaData();
+					int colQtyInRs_tDBInput_33 = rsmd_tDBInput_33.getColumnCount();
+
+					String tmpContent_tDBInput_33 = null;
+
+					while (rs_tDBInput_33.next()) {
+						nb_line_tDBInput_33++;
+
+						if (colQtyInRs_tDBInput_33 < 1) {
+							row43.num_acta = null;
+						} else {
+
+							row43.num_acta = rs_tDBInput_33.getLong(1);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_acta = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 2) {
+							row43.tip_solicitud = null;
+						} else {
+
+							row43.tip_solicitud = routines.system.JDBCUtil.getString(rs_tDBInput_33, 2, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 3) {
+							row43.cod_primer_titular = null;
+						} else {
+
+							row43.cod_primer_titular = rs_tDBInput_33.getInt(3);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.cod_primer_titular = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 4) {
+							row43.num_registro_viejo = null;
+						} else {
+
+							row43.num_registro_viejo = rs_tDBInput_33.getLong(4);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_registro_viejo = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 5) {
+							row43.num_acta_nuevo = null;
+						} else {
+
+							row43.num_acta_nuevo = rs_tDBInput_33.getLong(5);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_acta_nuevo = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 6) {
+							row43.tip_signo = null;
+						} else {
+
+							row43.tip_signo = routines.system.JDBCUtil.getString(rs_tDBInput_33, 6, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 7) {
+							row43.cod_denominacion = null;
+						} else {
+
+							row43.cod_denominacion = rs_tDBInput_33.getInt(7);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.cod_denominacion = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 8) {
+							row43.num_clase = null;
+						} else {
+
+							row43.num_clase = rs_tDBInput_33.getShort(8);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_clase = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 9) {
+							row43.num_agente = null;
+						} else {
+
+							row43.num_agente = rs_tDBInput_33.getShort(9);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_agente = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 10) {
+							row43.num_reg_prioridad = null;
+						} else {
+
+							row43.num_reg_prioridad = routines.system.JDBCUtil.getString(rs_tDBInput_33, 10, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 11) {
+							row43.cod_pais_prioridad = null;
+						} else {
+
+							row43.cod_pais_prioridad = routines.system.JDBCUtil.getString(rs_tDBInput_33, 11, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 12) {
+							row43.fec_prioridad = null;
+						} else {
+
+							row43.fec_prioridad = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 12);
+						}
+						if (colQtyInRs_tDBInput_33 < 13) {
+							row43.cod_status = null;
+						} else {
+
+							row43.cod_status = routines.system.JDBCUtil.getString(rs_tDBInput_33, 13, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 14) {
+							row43.fec_status = null;
+						} else {
+
+							row43.fec_status = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 14);
+						}
+						if (colQtyInRs_tDBInput_33 < 15) {
+							row43.fec_registro = null;
+						} else {
+
+							row43.fec_registro = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 15);
+						}
+						if (colQtyInRs_tDBInput_33 < 16) {
+							row43.num_registro = null;
+						} else {
+
+							row43.num_registro = rs_tDBInput_33.getInt(16);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_registro = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 17) {
+							row43.fec_ingreso = null;
+						} else {
+
+							row43.fec_ingreso = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 17);
+						}
+						if (colQtyInRs_tDBInput_33 < 18) {
+							row43.fec_cambio = null;
+						} else {
+
+							row43.fec_cambio = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 18);
+						}
+						if (colQtyInRs_tDBInput_33 < 19) {
+							row43.cod_usuario_cambio = null;
+						} else {
+
+							row43.cod_usuario_cambio = routines.system.JDBCUtil.getString(rs_tDBInput_33, 19, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 20) {
+							row43.fec_solicitud = null;
+						} else {
+
+							row43.fec_solicitud = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 20);
+						}
+						if (colQtyInRs_tDBInput_33 < 21) {
+							row43.num_logotipo = null;
+						} else {
+
+							row43.num_logotipo = rs_tDBInput_33.getLong(21);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_logotipo = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 22) {
+							row43.fec_vencimiento = null;
+						} else {
+
+							row43.fec_vencimiento = routines.system.JDBCUtil.getDate(rs_tDBInput_33, 22);
+						}
+						if (colQtyInRs_tDBInput_33 < 23) {
+							row43.tip_tramite = null;
+						} else {
+
+							row43.tip_tramite = rs_tDBInput_33.getShort(23);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.tip_tramite = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 24) {
+							row43.num_registro_poder = null;
+						} else {
+
+							row43.num_registro_poder = rs_tDBInput_33.getInt(24);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_registro_poder = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 25) {
+							row43.ed_niza = null;
+						} else {
+
+							row43.ed_niza = rs_tDBInput_33.getShort(25);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.ed_niza = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 26) {
+							row43.tip_signo_old = null;
+						} else {
+
+							row43.tip_signo_old = routines.system.JDBCUtil.getString(rs_tDBInput_33, 26, false);
+						}
+						if (colQtyInRs_tDBInput_33 < 27) {
+							row43.num_agente_old = null;
+						} else {
+
+							row43.num_agente_old = rs_tDBInput_33.getShort(27);
+							if (rs_tDBInput_33.wasNull()) {
+								row43.num_agente_old = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_33 < 28) {
+							row43.cod_pais_prioridad_old = null;
+						} else {
+
+							row43.cod_pais_prioridad_old = routines.system.JDBCUtil.getString(rs_tDBInput_33, 28,
+									false);
+						}
+
+						/**
+						 * [tDBInput_33 begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_33 main ] start
+						 */
+
+						currentComponent = "tDBInput_33";
+
+						tos_count_tDBInput_33++;
+
+						/**
+						 * [tDBInput_33 main ] stop
+						 */
+
+						/**
+						 * [tDBInput_33 process_data_begin ] start
+						 */
+
+						currentComponent = "tDBInput_33";
+
+						/**
+						 * [tDBInput_33 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tMap_12 main ] start
+						 */
+
+						currentComponent = "tMap_12";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1
+
+									, "row43"
+
+							);
+						}
+
+						boolean hasCasePrimitiveKeyWithNull_tMap_12 = false;
+
+						// ###############################
+						// # Input tables (lookups)
+						boolean rejectedInnerJoin_tMap_12 = false;
+						boolean mainRowRejected_tMap_12 = false;
+
+						///////////////////////////////////////////////
+						// Starting Lookup Table "row44"
+						///////////////////////////////////////////////
+
+						boolean forceLooprow44 = false;
+
+						row44Struct row44ObjectFromLookup = null;
+
+						if (!rejectedInnerJoin_tMap_12) { // G_TM_M_020
+
+							hasCasePrimitiveKeyWithNull_tMap_12 = false;
+
+							row44HashKey.FILE_NBR = new BigDecimal(row43.num_acta);
+
+							row44HashKey.hashCodeDirty = true;
+
+							tHash_Lookup_row44.lookup(row44HashKey);
+
+						} // G_TM_M_020
+
+						if (tHash_Lookup_row44 != null && tHash_Lookup_row44.getCount(row44HashKey) > 1) { // G 071
+
+							// System.out.println("WARNING: UNIQUE MATCH is configured for the lookup
+							// 'row44' and it contains more one result from keys : row44.FILE_NBR = '" +
+							// row44HashKey.FILE_NBR + "'");
+						} // G 071
+
+						row44Struct row44 = null;
+
+						row44Struct fromLookup_row44 = null;
+						row44 = row44Default;
+
+						if (tHash_Lookup_row44 != null && tHash_Lookup_row44.hasNext()) { // G 099
+
+							fromLookup_row44 = tHash_Lookup_row44.next();
+
+						} // G 099
+
+						if (fromLookup_row44 != null) {
+							row44 = fromLookup_row44;
+						}
+
+						// ###############################
+						{ // start of Var scope
+
+							// ###############################
+							// # Vars tables
+
+							Var__tMap_12__Struct Var = Var__tMap_12;// ###############################
+							// ###############################
+							// # Output tables
+
+							copyOfinsert_actions = null;
+
+// # Output table : 'copyOfinsert_actions'
+							copyOfinsert_actions_tmp.FILE_SEQ = row44.FILE_SEQ;
+							copyOfinsert_actions_tmp.FILE_TYPE = row44.FILE_TYPE;
+							copyOfinsert_actions_tmp.FILE_SERIES = row44.FILE_SERIES;
+							copyOfinsert_actions_tmp.FILE_NBR = row44.FILE_NBR;
+							copyOfinsert_actions_tmp.ACTION_TYPE = "WIPO";
+							copyOfinsert_actions_tmp.ACTION_DATE = row43.fec_status;
+							copyOfinsert_actions_tmp.MANUAL_DUE_DATE = null;
+							copyOfinsert_actions_tmp.RESPONSIBLE_USER = new BigDecimal("4");
+							copyOfinsert_actions_tmp.ACTION_NOTES1 = null;
+							copyOfinsert_actions_tmp.ACTION_NOTES2 = null;
+							copyOfinsert_actions_tmp.ACTION_NOTES3 = null;
+							copyOfinsert_actions_tmp.ACTION_NOTES4 = null;
+							copyOfinsert_actions_tmp.ACTION_NOTES5 = "Actualizacion del estado del expediente";
+							copyOfinsert_actions_tmp.GENERAL_NOTES = "Actualizacion del estado del expediente";
+							copyOfinsert_actions_tmp.SELECTED_OPTIONS_TEXT = null;
+							copyOfinsert_actions_tmp.ACTION_USER = new BigDecimal("4");
+							copyOfinsert_actions_tmp.ACTION_CATEGORY = "S";
+							copyOfinsert_actions_tmp.SPECIAL_FINAL_STATUS = row43.cod_status;
+							copyOfinsert_actions_tmp.JOURNAL_CODE = null;
+							copyOfinsert_actions_tmp.PUBLICATION_DATE = null;
+							copyOfinsert_actions_tmp.IPAS_PROC_TYP = null;
+							copyOfinsert_actions_tmp.IPAS_PROC_NBR = null;
+							copyOfinsert_actions_tmp.IPAS_ACTION_NBR = null;
+							copyOfinsert_actions = copyOfinsert_actions_tmp;
+// ###############################
+
+						} // end of Var scope
+
+						rejectedInnerJoin_tMap_12 = false;
+
+						tos_count_tMap_12++;
+
+						/**
+						 * [tMap_12 main ] stop
+						 */
+
+						/**
+						 * [tMap_12 process_data_begin ] start
+						 */
+
+						currentComponent = "tMap_12";
+
+						/**
+						 * [tMap_12 process_data_begin ] stop
+						 */
+// Start of branch "copyOfinsert_actions"
+						if (copyOfinsert_actions != null) {
+							row45 = null;
+
+							/**
+							 * [tDBOutput_13 main ] start
+							 */
+
+							currentComponent = "tDBOutput_13";
+
+							if (execStat) {
+								runStat.updateStatOnConnection(iterateId, 1, 1
+
+										, "copyOfinsert_actions"
+
+								);
+							}
+
+							row45 = null;
+							whetherReject_tDBOutput_13 = false;
+							try {
+								if (copyOfinsert_actions.FILE_SEQ == null) {
+									pstmt_tDBOutput_13.setNull(1, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(1, copyOfinsert_actions.FILE_SEQ);
+								}
+
+								if (copyOfinsert_actions.FILE_TYPE == null) {
+									pstmt_tDBOutput_13.setNull(2, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(2, copyOfinsert_actions.FILE_TYPE);
+								}
+
+								pstmt_tDBOutput_13.setBigDecimal(3, copyOfinsert_actions.FILE_SERIES);
+
+								pstmt_tDBOutput_13.setBigDecimal(4, copyOfinsert_actions.FILE_NBR);
+
+								if (copyOfinsert_actions.ACTION_TYPE == null) {
+									pstmt_tDBOutput_13.setNull(5, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(5, copyOfinsert_actions.ACTION_TYPE);
+								}
+
+								if (copyOfinsert_actions.ACTION_DATE != null) {
+									pstmt_tDBOutput_13.setTimestamp(6,
+											new java.sql.Timestamp(copyOfinsert_actions.ACTION_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_13.setNull(6, java.sql.Types.TIMESTAMP);
+								}
+
+								if (copyOfinsert_actions.MANUAL_DUE_DATE != null) {
+									pstmt_tDBOutput_13.setTimestamp(7,
+											new java.sql.Timestamp(copyOfinsert_actions.MANUAL_DUE_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_13.setNull(7, java.sql.Types.TIMESTAMP);
+								}
+
+								pstmt_tDBOutput_13.setBigDecimal(8, copyOfinsert_actions.RESPONSIBLE_USER);
+
+								if (copyOfinsert_actions.ACTION_NOTES1 == null) {
+									pstmt_tDBOutput_13.setNull(9, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(9, copyOfinsert_actions.ACTION_NOTES1);
+								}
+
+								if (copyOfinsert_actions.ACTION_NOTES2 == null) {
+									pstmt_tDBOutput_13.setNull(10, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(10, copyOfinsert_actions.ACTION_NOTES2);
+								}
+
+								if (copyOfinsert_actions.ACTION_NOTES3 == null) {
+									pstmt_tDBOutput_13.setNull(11, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(11, copyOfinsert_actions.ACTION_NOTES3);
+								}
+
+								if (copyOfinsert_actions.ACTION_NOTES4 == null) {
+									pstmt_tDBOutput_13.setNull(12, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(12, copyOfinsert_actions.ACTION_NOTES4);
+								}
+
+								if (copyOfinsert_actions.ACTION_NOTES5 == null) {
+									pstmt_tDBOutput_13.setNull(13, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(13, copyOfinsert_actions.ACTION_NOTES5);
+								}
+
+								if (copyOfinsert_actions.GENERAL_NOTES == null) {
+									pstmt_tDBOutput_13.setNull(14, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(14, copyOfinsert_actions.GENERAL_NOTES);
+								}
+
+								if (copyOfinsert_actions.SELECTED_OPTIONS_TEXT == null) {
+									pstmt_tDBOutput_13.setNull(15, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(15, copyOfinsert_actions.SELECTED_OPTIONS_TEXT);
+								}
+
+								pstmt_tDBOutput_13.setBigDecimal(16, copyOfinsert_actions.ACTION_USER);
+
+								if (copyOfinsert_actions.ACTION_CATEGORY == null) {
+									pstmt_tDBOutput_13.setNull(17, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(17, copyOfinsert_actions.ACTION_CATEGORY);
+								}
+
+								if (copyOfinsert_actions.SPECIAL_FINAL_STATUS == null) {
+									pstmt_tDBOutput_13.setNull(18, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(18, copyOfinsert_actions.SPECIAL_FINAL_STATUS);
+								}
+
+								if (copyOfinsert_actions.JOURNAL_CODE == null) {
+									pstmt_tDBOutput_13.setNull(19, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(19, copyOfinsert_actions.JOURNAL_CODE);
+								}
+
+								if (copyOfinsert_actions.PUBLICATION_DATE != null) {
+									pstmt_tDBOutput_13.setTimestamp(20,
+											new java.sql.Timestamp(copyOfinsert_actions.PUBLICATION_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_13.setNull(20, java.sql.Types.TIMESTAMP);
+								}
+
+								if (copyOfinsert_actions.IPAS_PROC_TYP == null) {
+									pstmt_tDBOutput_13.setNull(21, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_13.setString(21, copyOfinsert_actions.IPAS_PROC_TYP);
+								}
+
+								pstmt_tDBOutput_13.setBigDecimal(22, copyOfinsert_actions.IPAS_PROC_NBR);
+
+								pstmt_tDBOutput_13.setBigDecimal(23, copyOfinsert_actions.IPAS_ACTION_NBR);
+
+								nb_line_tDBOutput_13++;
+								insertedCount_tDBOutput_13 = insertedCount_tDBOutput_13
+										+ pstmt_tDBOutput_13.executeUpdate();
+							} catch (java.lang.Exception e) {
+								whetherReject_tDBOutput_13 = true;
+								row45 = new row45Struct();
+								row45.FILE_SEQ = copyOfinsert_actions.FILE_SEQ;
+								row45.FILE_TYPE = copyOfinsert_actions.FILE_TYPE;
+								row45.FILE_SERIES = copyOfinsert_actions.FILE_SERIES;
+								row45.FILE_NBR = copyOfinsert_actions.FILE_NBR;
+								row45.ACTION_TYPE = copyOfinsert_actions.ACTION_TYPE;
+								row45.ACTION_DATE = copyOfinsert_actions.ACTION_DATE;
+								row45.MANUAL_DUE_DATE = copyOfinsert_actions.MANUAL_DUE_DATE;
+								row45.RESPONSIBLE_USER = copyOfinsert_actions.RESPONSIBLE_USER;
+								row45.ACTION_NOTES1 = copyOfinsert_actions.ACTION_NOTES1;
+								row45.ACTION_NOTES2 = copyOfinsert_actions.ACTION_NOTES2;
+								row45.ACTION_NOTES3 = copyOfinsert_actions.ACTION_NOTES3;
+								row45.ACTION_NOTES4 = copyOfinsert_actions.ACTION_NOTES4;
+								row45.ACTION_NOTES5 = copyOfinsert_actions.ACTION_NOTES5;
+								row45.GENERAL_NOTES = copyOfinsert_actions.GENERAL_NOTES;
+								row45.SELECTED_OPTIONS_TEXT = copyOfinsert_actions.SELECTED_OPTIONS_TEXT;
+								row45.ACTION_USER = copyOfinsert_actions.ACTION_USER;
+								row45.ACTION_CATEGORY = copyOfinsert_actions.ACTION_CATEGORY;
+								row45.SPECIAL_FINAL_STATUS = copyOfinsert_actions.SPECIAL_FINAL_STATUS;
+								row45.JOURNAL_CODE = copyOfinsert_actions.JOURNAL_CODE;
+								row45.PUBLICATION_DATE = copyOfinsert_actions.PUBLICATION_DATE;
+								row45.IPAS_PROC_TYP = copyOfinsert_actions.IPAS_PROC_TYP;
+								row45.IPAS_PROC_NBR = copyOfinsert_actions.IPAS_PROC_NBR;
+								row45.IPAS_ACTION_NBR = copyOfinsert_actions.IPAS_ACTION_NBR;
+								rejectedCount_tDBOutput_13 = rejectedCount_tDBOutput_13 + 1;
+								row45.errorCode = ((java.sql.SQLException) e).getSQLState();
+								row45.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_13;
+							}
+							if (!whetherReject_tDBOutput_13) {
+							}
+							////////// batch execute by batch size///////
+							class LimitBytesHelper_tDBOutput_13 {
+								public int limitBytePart1(int counter, java.sql.PreparedStatement pstmt_tDBOutput_13)
+										throws Exception {
+									try {
+
+										for (int countEach_tDBOutput_13 : pstmt_tDBOutput_13.executeBatch()) {
+											if (countEach_tDBOutput_13 == -2 || countEach_tDBOutput_13 == -3) {
+												break;
+											}
+											counter += countEach_tDBOutput_13;
+										}
+
+									} catch (java.sql.BatchUpdateException e) {
+
+										int countSum_tDBOutput_13 = 0;
+										for (int countEach_tDBOutput_13 : e.getUpdateCounts()) {
+											counter += (countEach_tDBOutput_13 < 0 ? 0 : countEach_tDBOutput_13);
+										}
+
+										System.err.println(e.getMessage());
+
+									}
+									return counter;
+								}
+
+								public int limitBytePart2(int counter, java.sql.PreparedStatement pstmt_tDBOutput_13)
+										throws Exception {
+									try {
+
+										for (int countEach_tDBOutput_13 : pstmt_tDBOutput_13.executeBatch()) {
+											if (countEach_tDBOutput_13 == -2 || countEach_tDBOutput_13 == -3) {
+												break;
+											}
+											counter += countEach_tDBOutput_13;
+										}
+
+									} catch (java.sql.BatchUpdateException e) {
+
+										for (int countEach_tDBOutput_13 : e.getUpdateCounts()) {
+											counter += (countEach_tDBOutput_13 < 0 ? 0 : countEach_tDBOutput_13);
+										}
+
+										System.err.println(e.getMessage());
+
+									}
+									return counter;
+								}
+							}
+
+							//////////// commit every////////////
+
+							tos_count_tDBOutput_13++;
+
+							/**
+							 * [tDBOutput_13 main ] stop
+							 */
+
+							/**
+							 * [tDBOutput_13 process_data_begin ] start
+							 */
+
+							currentComponent = "tDBOutput_13";
+
+							/**
+							 * [tDBOutput_13 process_data_begin ] stop
+							 */
+// Start of branch "row45"
+							if (row45 != null) {
+
+								/**
+								 * [tLogRow_14 main ] start
+								 */
+
+								currentComponent = "tLogRow_14";
+
+								if (execStat) {
+									runStat.updateStatOnConnection(iterateId, 1, 1
+
+											, "row45"
+
+									);
+								}
+
+///////////////////////		
+
+								strBuffer_tLogRow_14 = new StringBuilder();
+
+								if (row45.FILE_SEQ != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.FILE_SEQ));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.FILE_TYPE != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.FILE_TYPE));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.FILE_SERIES != null) { //
+
+									strBuffer_tLogRow_14.append(row45.FILE_SERIES
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.FILE_NBR != null) { //
+
+									strBuffer_tLogRow_14.append(
+											row45.FILE_NBR.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_TYPE != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_TYPE));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_DATE != null) { //
+
+									strBuffer_tLogRow_14
+											.append(FormatterUtils.format_Date(row45.ACTION_DATE, "dd-MM-yyyy"));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.MANUAL_DUE_DATE != null) { //
+
+									strBuffer_tLogRow_14
+											.append(FormatterUtils.format_Date(row45.MANUAL_DUE_DATE, "dd-MM-yyyy"));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.RESPONSIBLE_USER != null) { //
+
+									strBuffer_tLogRow_14.append(row45.RESPONSIBLE_USER
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_NOTES1 != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_NOTES1));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_NOTES2 != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_NOTES2));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_NOTES3 != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_NOTES3));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_NOTES4 != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_NOTES4));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_NOTES5 != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_NOTES5));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.GENERAL_NOTES != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.GENERAL_NOTES));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.SELECTED_OPTIONS_TEXT != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.SELECTED_OPTIONS_TEXT));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_USER != null) { //
+
+									strBuffer_tLogRow_14.append(row45.ACTION_USER
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.ACTION_CATEGORY != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.ACTION_CATEGORY));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.SPECIAL_FINAL_STATUS != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.SPECIAL_FINAL_STATUS));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.JOURNAL_CODE != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.JOURNAL_CODE));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.PUBLICATION_DATE != null) { //
+
+									strBuffer_tLogRow_14
+											.append(FormatterUtils.format_Date(row45.PUBLICATION_DATE, "dd-MM-yyyy"));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.IPAS_PROC_TYP != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.IPAS_PROC_TYP));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.IPAS_PROC_NBR != null) { //
+
+									strBuffer_tLogRow_14.append(row45.IPAS_PROC_NBR
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.IPAS_ACTION_NBR != null) { //
+
+									strBuffer_tLogRow_14.append(row45.IPAS_ACTION_NBR
+											.setScale(0, java.math.RoundingMode.HALF_UP).toPlainString());
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.errorCode != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.errorCode));
+
+								} //
+
+								strBuffer_tLogRow_14.append("|");
+
+								if (row45.errorMessage != null) { //
+
+									strBuffer_tLogRow_14.append(String.valueOf(row45.errorMessage));
+
+								} //
+
+								if (globalMap.get("tLogRow_CONSOLE") != null) {
+									consoleOut_tLogRow_14 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
+								} else {
+									consoleOut_tLogRow_14 = new java.io.PrintStream(
+											new java.io.BufferedOutputStream(System.out));
+									globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_14);
+								}
+								consoleOut_tLogRow_14.println(strBuffer_tLogRow_14.toString());
+								consoleOut_tLogRow_14.flush();
+								nb_line_tLogRow_14++;
+//////
+
+//////                    
+
+///////////////////////    			
+
+								tos_count_tLogRow_14++;
+
+								/**
+								 * [tLogRow_14 main ] stop
+								 */
+
+								/**
+								 * [tLogRow_14 process_data_begin ] start
+								 */
+
+								currentComponent = "tLogRow_14";
+
+								/**
+								 * [tLogRow_14 process_data_begin ] stop
+								 */
+
+								/**
+								 * [tLogRow_14 process_data_end ] start
+								 */
+
+								currentComponent = "tLogRow_14";
+
+								/**
+								 * [tLogRow_14 process_data_end ] stop
+								 */
+
+							} // End of branch "row45"
+
+							/**
+							 * [tDBOutput_13 process_data_end ] start
+							 */
+
+							currentComponent = "tDBOutput_13";
+
+							/**
+							 * [tDBOutput_13 process_data_end ] stop
+							 */
+
+						} // End of branch "copyOfinsert_actions"
+
+						/**
+						 * [tMap_12 process_data_end ] start
+						 */
+
+						currentComponent = "tMap_12";
+
+						/**
+						 * [tMap_12 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_33 process_data_end ] start
+						 */
+
+						currentComponent = "tDBInput_33";
+
+						/**
+						 * [tDBInput_33 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_33 end ] start
+						 */
+
+						currentComponent = "tDBInput_33";
+
+					}
+				} finally {
+					if (rs_tDBInput_33 != null) {
+						rs_tDBInput_33.close();
+					}
+					if (stmt_tDBInput_33 != null) {
+						stmt_tDBInput_33.close();
+					}
+				}
+				globalMap.put("tDBInput_33_NB_LINE", nb_line_tDBInput_33);
+
+				ok_Hash.put("tDBInput_33", true);
+				end_Hash.put("tDBInput_33", System.currentTimeMillis());
+
+				/**
+				 * [tDBInput_33 end ] stop
+				 */
+
+				/**
+				 * [tMap_12 end ] start
+				 */
+
+				currentComponent = "tMap_12";
+
+// ###############################
+// # Lookup hashes releasing
+				if (tHash_Lookup_row44 != null) {
+					tHash_Lookup_row44.endGet();
+				}
+				globalMap.remove("tHash_Lookup_row44");
+
+// ###############################      
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row43");
+				}
+
+				ok_Hash.put("tMap_12", true);
+				end_Hash.put("tMap_12", System.currentTimeMillis());
+
+				/**
+				 * [tMap_12 end ] stop
+				 */
+
+				/**
+				 * [tDBOutput_13 end ] start
+				 */
+
+				currentComponent = "tDBOutput_13";
+
+				if (pstmt_tDBOutput_13 != null) {
+
+					pstmt_tDBOutput_13.close();
+					resourceMap.remove("pstmt_tDBOutput_13");
+
+				}
+				resourceMap.put("statementClosed_tDBOutput_13", true);
+
+				nb_line_deleted_tDBOutput_13 = nb_line_deleted_tDBOutput_13 + deletedCount_tDBOutput_13;
+				nb_line_update_tDBOutput_13 = nb_line_update_tDBOutput_13 + updatedCount_tDBOutput_13;
+				nb_line_inserted_tDBOutput_13 = nb_line_inserted_tDBOutput_13 + insertedCount_tDBOutput_13;
+				nb_line_rejected_tDBOutput_13 = nb_line_rejected_tDBOutput_13 + rejectedCount_tDBOutput_13;
+
+				globalMap.put("tDBOutput_13_NB_LINE", nb_line_tDBOutput_13);
+				globalMap.put("tDBOutput_13_NB_LINE_UPDATED", nb_line_update_tDBOutput_13);
+				globalMap.put("tDBOutput_13_NB_LINE_INSERTED", nb_line_inserted_tDBOutput_13);
+				globalMap.put("tDBOutput_13_NB_LINE_DELETED", nb_line_deleted_tDBOutput_13);
+				globalMap.put("tDBOutput_13_NB_LINE_REJECTED", nb_line_rejected_tDBOutput_13);
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "copyOfinsert_actions");
+				}
+
+				ok_Hash.put("tDBOutput_13", true);
+				end_Hash.put("tDBOutput_13", System.currentTimeMillis());
+
+				/**
+				 * [tDBOutput_13 end ] stop
+				 */
+
+				/**
+				 * [tLogRow_14 end ] start
+				 */
+
+				currentComponent = "tLogRow_14";
+
+//////
+//////
+				globalMap.put("tLogRow_14_NB_LINE", nb_line_tLogRow_14);
+
+///////////////////////    			
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row45");
+				}
+
+				ok_Hash.put("tLogRow_14", true);
+				end_Hash.put("tLogRow_14", System.currentTimeMillis());
+
+				/**
+				 * [tLogRow_14 end ] stop
 				 */
 
 			} // end the resume
@@ -3188,70 +7976,57 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			throw error;
 		} finally {
 
-			// free memory for "tMap_9"
-			globalMap.remove("tHash_Lookup_row34");
-
-			// free memory for "tMap_9"
-			globalMap.remove("tHash_Lookup_row33");
+			// free memory for "tMap_12"
+			globalMap.remove("tHash_Lookup_row44");
 
 			try {
 
 				/**
-				 * [tDBInput_21 finally ] start
+				 * [tDBInput_33 finally ] start
 				 */
 
-				currentComponent = "tDBInput_21";
+				currentComponent = "tDBInput_33";
 
 				/**
-				 * [tDBInput_21 finally ] stop
-				 */
-
-				/**
-				 * [tMap_9 finally ] start
-				 */
-
-				currentComponent = "tMap_9";
-
-				/**
-				 * [tMap_9 finally ] stop
+				 * [tDBInput_33 finally ] stop
 				 */
 
 				/**
-				 * [tDBOutput_10 finally ] start
+				 * [tMap_12 finally ] start
 				 */
 
-				currentComponent = "tDBOutput_10";
+				currentComponent = "tMap_12";
 
-				if (resourceMap.get("statementClosed_tDBOutput_10") == null) {
-					java.sql.PreparedStatement pstmtUpdateToClose_tDBOutput_10 = null;
-					if ((pstmtUpdateToClose_tDBOutput_10 = (java.sql.PreparedStatement) resourceMap
-							.remove("pstmtUpdate_tDBOutput_10")) != null) {
-						pstmtUpdateToClose_tDBOutput_10.close();
-					}
-					java.sql.PreparedStatement pstmtInsertToClose_tDBOutput_10 = null;
-					if ((pstmtInsertToClose_tDBOutput_10 = (java.sql.PreparedStatement) resourceMap
-							.remove("pstmtInsert_tDBOutput_10")) != null) {
-						pstmtInsertToClose_tDBOutput_10.close();
-					}
-					java.sql.PreparedStatement pstmtToClose_tDBOutput_10 = null;
-					if ((pstmtToClose_tDBOutput_10 = (java.sql.PreparedStatement) resourceMap
-							.remove("pstmt_tDBOutput_10")) != null) {
-						pstmtToClose_tDBOutput_10.close();
+				/**
+				 * [tMap_12 finally ] stop
+				 */
+
+				/**
+				 * [tDBOutput_13 finally ] start
+				 */
+
+				currentComponent = "tDBOutput_13";
+
+				if (resourceMap.get("statementClosed_tDBOutput_13") == null) {
+					java.sql.PreparedStatement pstmtToClose_tDBOutput_13 = null;
+					if ((pstmtToClose_tDBOutput_13 = (java.sql.PreparedStatement) resourceMap
+							.remove("pstmt_tDBOutput_13")) != null) {
+						pstmtToClose_tDBOutput_13.close();
 					}
 				}
 
 				/**
-				 * [tDBOutput_10 finally ] stop
+				 * [tDBOutput_13 finally ] stop
 				 */
 
 				/**
-				 * [tLogRow_10 finally ] start
+				 * [tLogRow_14 finally ] start
 				 */
 
-				currentComponent = "tLogRow_10";
+				currentComponent = "tLogRow_14";
 
 				/**
-				 * [tLogRow_10 finally ] stop
+				 * [tLogRow_14 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -3262,10 +8037,10 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tDBInput_21_SUBPROCESS_STATE", 1);
+		globalMap.put("tDBInput_33_SUBPROCESS_STATE", 1);
 	}
 
-	public static class row34Struct implements routines.system.IPersistableComparableLookupRow<row34Struct> {
+	public static class row9Struct implements routines.system.IPersistableComparableLookupRow<row9Struct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		protected static final int DEFAULT_HASHCODE = 1;
@@ -3568,7 +8343,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			final row34Struct other = (row34Struct) obj;
+			final row9Struct other = (row9Struct) obj;
 
 			if (this.FILE_NBR == null) {
 				if (other.FILE_NBR != null)
@@ -3581,7 +8356,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			return true;
 		}
 
-		public void copyDataTo(row34Struct other) {
+		public void copyDataTo(row9Struct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
@@ -3631,7 +8406,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 		}
 
-		public void copyKeysDataTo(row34Struct other) {
+		public void copyKeysDataTo(row9Struct other) {
 
 			other.FILE_NBR = this.FILE_NBR;
 
@@ -3981,7 +8756,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row34Struct other) {
+		public int compareTo(row9Struct other) {
 
 			int returnValue = -1;
 
@@ -4016,8 +8791,8 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public void tDBInput_22Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_22_SUBPROCESS_STATE", 0);
+	public void tDBInput_4Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_4_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -4036,67 +8811,66 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
 
-				row34Struct row34 = new row34Struct();
+				row9Struct row9 = new row9Struct();
 
 				/**
-				 * [tAdvancedHash_row34 begin ] start
+				 * [tAdvancedHash_row9 begin ] start
 				 */
 
-				ok_Hash.put("tAdvancedHash_row34", false);
-				start_Hash.put("tAdvancedHash_row34", System.currentTimeMillis());
+				ok_Hash.put("tAdvancedHash_row9", false);
+				start_Hash.put("tAdvancedHash_row9", System.currentTimeMillis());
 
-				currentComponent = "tAdvancedHash_row34";
+				currentComponent = "tAdvancedHash_row9";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row34");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row9");
 				}
 
-				int tos_count_tAdvancedHash_row34 = 0;
+				int tos_count_tAdvancedHash_row9 = 0;
 
-				// connection name:row34
-				// source node:tDBInput_22 - inputs:(after_tDBInput_21) outputs:(row34,row34) |
-				// target node:tAdvancedHash_row34 - inputs:(row34) outputs:()
-				// linked node: tMap_9 - inputs:(row32,row34,row33)
-				// outputs:(insert_related_files)
+				// connection name:row9
+				// source node:tDBInput_4 - inputs:(after_tDBInput_3) outputs:(row9,row9) |
+				// target node:tAdvancedHash_row9 - inputs:(row9) outputs:()
+				// linked node: tMap_3 - inputs:(row8,row9,row11) outputs:(insert_actions)
 
-				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row34 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row9 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
 
-				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row34Struct> tHash_Lookup_row34 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
-						.<row34Struct>getLookup(matchingModeEnum_row34);
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row9Struct> tHash_Lookup_row9 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
+						.<row9Struct>getLookup(matchingModeEnum_row9);
 
-				globalMap.put("tHash_Lookup_row34", tHash_Lookup_row34);
+				globalMap.put("tHash_Lookup_row9", tHash_Lookup_row9);
 
 				/**
-				 * [tAdvancedHash_row34 begin ] stop
+				 * [tAdvancedHash_row9 begin ] stop
 				 */
 
 				/**
-				 * [tDBInput_22 begin ] start
+				 * [tDBInput_4 begin ] start
 				 */
 
-				ok_Hash.put("tDBInput_22", false);
-				start_Hash.put("tDBInput_22", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_4", false);
+				start_Hash.put("tDBInput_4", System.currentTimeMillis());
 
-				currentComponent = "tDBInput_22";
+				currentComponent = "tDBInput_4";
 
-				int tos_count_tDBInput_22 = 0;
+				int tos_count_tDBInput_4 = 0;
 
-				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_22 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_4 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
 						.getMSSqlGenerateTimestampUtil();
 
-				java.util.List<String> talendToDBList_tDBInput_22 = new java.util.ArrayList();
-				String[] talendToDBArray_tDBInput_22 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+				java.util.List<String> talendToDBList_tDBInput_4 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_4 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
 						"DECIMAL IDENTITY", "REAL" };
-				java.util.Collections.addAll(talendToDBList_tDBInput_22, talendToDBArray_tDBInput_22);
-				int nb_line_tDBInput_22 = 0;
-				java.sql.Connection conn_tDBInput_22 = null;
-				conn_tDBInput_22 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
+				java.util.Collections.addAll(talendToDBList_tDBInput_4, talendToDBArray_tDBInput_4);
+				int nb_line_tDBInput_4 = 0;
+				java.sql.Connection conn_tDBInput_4 = null;
+				conn_tDBInput_4 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
 
-				String dbschema_tDBInput_22 = (String) globalMap.get("dbschema_tDBConnection_1");
+				String dbschema_tDBInput_4 = (String) globalMap.get("dbschema_tDBConnection_1");
 
-				java.sql.Statement stmt_tDBInput_22 = conn_tDBInput_22.createStatement();
+				java.sql.Statement stmt_tDBInput_4 = conn_tDBInput_4.createStatement();
 
-				String dbquery_tDBInput_22 = "SELECT dbo.VW_IMPORT_MARK.FILE_SEQ,\n		dbo.VW_IMPORT_MARK.FILE_TYPE,\n		dbo.VW_IMPORT_MARK.FILE_SERIES,\n		dbo.VW_IMPORT_M"
+				String dbquery_tDBInput_4 = "SELECT dbo.VW_IMPORT_MARK.FILE_SEQ,\n		dbo.VW_IMPORT_MARK.FILE_TYPE,\n		dbo.VW_IMPORT_MARK.FILE_SERIES,\n		dbo.VW_IMPORT_M"
 						+ "ARK.FILE_NBR,\n		dbo.VW_IMPORT_MARK.DOC_ORI,\n		dbo.VW_IMPORT_MARK.DOC_SERIES,\n		dbo.VW_IMPORT_MARK.DOC_NBR,\n		dbo.VW_IMPO"
 						+ "RT_MARK.IND_IMPORT,\n		dbo.VW_IMPORT_MARK.APPLICATION_TYPE,\n		dbo.VW_IMPORT_MARK.APPLICATION_SUBTYPE,\n		dbo.VW_IMPORT_MAR"
 						+ "K.LAW_CODE,\n		dbo.VW_IMPORT_MARK.FILING_DATE,\n		dbo.VW_IMPORT_MARK.RECEPTION_DATE,\n		dbo.VW_IMPORT_MARK.PUBLICATION_DATE"
@@ -4112,804 +8886,803 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 						+ "VW_IMPORT_MARK.PUBLICATION_NBR,\n		dbo.VW_IMPORT_MARK.PUBLICATION_SER,\n		dbo.VW_IMPORT_MARK.PUBLICATION_TYP\nFROM	dbo.VW_I"
 						+ "MPORT_MARK";
 
-				globalMap.put("tDBInput_22_QUERY", dbquery_tDBInput_22);
-				java.sql.ResultSet rs_tDBInput_22 = null;
+				globalMap.put("tDBInput_4_QUERY", dbquery_tDBInput_4);
+				java.sql.ResultSet rs_tDBInput_4 = null;
 
 				try {
-					rs_tDBInput_22 = stmt_tDBInput_22.executeQuery(dbquery_tDBInput_22);
-					java.sql.ResultSetMetaData rsmd_tDBInput_22 = rs_tDBInput_22.getMetaData();
-					int colQtyInRs_tDBInput_22 = rsmd_tDBInput_22.getColumnCount();
+					rs_tDBInput_4 = stmt_tDBInput_4.executeQuery(dbquery_tDBInput_4);
+					java.sql.ResultSetMetaData rsmd_tDBInput_4 = rs_tDBInput_4.getMetaData();
+					int colQtyInRs_tDBInput_4 = rsmd_tDBInput_4.getColumnCount();
 
-					String tmpContent_tDBInput_22 = null;
+					String tmpContent_tDBInput_4 = null;
 
-					while (rs_tDBInput_22.next()) {
-						nb_line_tDBInput_22++;
+					while (rs_tDBInput_4.next()) {
+						nb_line_tDBInput_4++;
 
-						if (colQtyInRs_tDBInput_22 < 1) {
-							row34.FILE_SEQ = null;
+						if (colQtyInRs_tDBInput_4 < 1) {
+							row9.FILE_SEQ = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(1);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(1).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.FILE_SEQ = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(1);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(1).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.FILE_SEQ = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.FILE_SEQ = tmpContent_tDBInput_22;
+									row9.FILE_SEQ = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.FILE_SEQ = null;
+								row9.FILE_SEQ = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 2) {
-							row34.FILE_TYPE = null;
+						if (colQtyInRs_tDBInput_4 < 2) {
+							row9.FILE_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(2);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.FILE_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(2);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.FILE_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.FILE_TYPE = tmpContent_tDBInput_22;
+									row9.FILE_TYPE = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.FILE_TYPE = null;
+								row9.FILE_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 3) {
-							row34.FILE_SERIES = null;
+						if (colQtyInRs_tDBInput_4 < 3) {
+							row9.FILE_SERIES = null;
 						} else {
 
-							row34.FILE_SERIES = rs_tDBInput_22.getBigDecimal(3);
-							if (rs_tDBInput_22.wasNull()) {
+							row9.FILE_SERIES = rs_tDBInput_4.getBigDecimal(3);
+							if (rs_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 4) {
-							row34.FILE_NBR = null;
+						if (colQtyInRs_tDBInput_4 < 4) {
+							row9.FILE_NBR = null;
 						} else {
 
-							row34.FILE_NBR = rs_tDBInput_22.getBigDecimal(4);
-							if (rs_tDBInput_22.wasNull()) {
+							row9.FILE_NBR = rs_tDBInput_4.getBigDecimal(4);
+							if (rs_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 5) {
-							row34.DOC_ORI = null;
+						if (colQtyInRs_tDBInput_4 < 5) {
+							row9.DOC_ORI = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(5);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.DOC_ORI = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(5);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.DOC_ORI = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.DOC_ORI = tmpContent_tDBInput_22;
+									row9.DOC_ORI = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.DOC_ORI = null;
+								row9.DOC_ORI = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 6) {
-							row34.DOC_SERIES = null;
+						if (colQtyInRs_tDBInput_4 < 6) {
+							row9.DOC_SERIES = null;
 						} else {
 
-							row34.DOC_SERIES = rs_tDBInput_22.getBigDecimal(6);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.DOC_SERIES = null;
+							row9.DOC_SERIES = rs_tDBInput_4.getBigDecimal(6);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.DOC_SERIES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 7) {
-							row34.DOC_NBR = null;
+						if (colQtyInRs_tDBInput_4 < 7) {
+							row9.DOC_NBR = null;
 						} else {
 
-							row34.DOC_NBR = rs_tDBInput_22.getBigDecimal(7);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.DOC_NBR = null;
+							row9.DOC_NBR = rs_tDBInput_4.getBigDecimal(7);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.DOC_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 8) {
-							row34.IND_IMPORT = null;
+						if (colQtyInRs_tDBInput_4 < 8) {
+							row9.IND_IMPORT = null;
 						} else {
 
-							row34.IND_IMPORT = rs_tDBInput_22.getBigDecimal(8);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.IND_IMPORT = null;
+							row9.IND_IMPORT = rs_tDBInput_4.getBigDecimal(8);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.IND_IMPORT = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 9) {
-							row34.APPLICATION_TYPE = null;
+						if (colQtyInRs_tDBInput_4 < 9) {
+							row9.APPLICATION_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(9);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.APPLICATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(9);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.APPLICATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.APPLICATION_TYPE = tmpContent_tDBInput_22;
+									row9.APPLICATION_TYPE = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.APPLICATION_TYPE = null;
+								row9.APPLICATION_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 10) {
-							row34.APPLICATION_SUBTYPE = null;
+						if (colQtyInRs_tDBInput_4 < 10) {
+							row9.APPLICATION_SUBTYPE = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(10);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.APPLICATION_SUBTYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(10);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.APPLICATION_SUBTYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.APPLICATION_SUBTYPE = tmpContent_tDBInput_22;
+									row9.APPLICATION_SUBTYPE = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.APPLICATION_SUBTYPE = null;
+								row9.APPLICATION_SUBTYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 11) {
-							row34.LAW_CODE = null;
+						if (colQtyInRs_tDBInput_4 < 11) {
+							row9.LAW_CODE = null;
 						} else {
 
-							row34.LAW_CODE = rs_tDBInput_22.getBigDecimal(11);
-							if (rs_tDBInput_22.wasNull()) {
+							row9.LAW_CODE = rs_tDBInput_4.getBigDecimal(11);
+							if (rs_tDBInput_4.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 12) {
-							row34.FILING_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 12) {
+							row9.FILING_DATE = null;
 						} else {
 
-							row34.FILING_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 12);
+							row9.FILING_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 12);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 13) {
-							row34.RECEPTION_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 13) {
+							row9.RECEPTION_DATE = null;
 						} else {
 
-							row34.RECEPTION_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 13);
+							row9.RECEPTION_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 13);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 14) {
-							row34.PUBLICATION_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 14) {
+							row9.PUBLICATION_DATE = null;
 						} else {
 
-							row34.PUBLICATION_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 14);
+							row9.PUBLICATION_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 14);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 15) {
-							row34.PUBLICATION_NOTES = null;
+						if (colQtyInRs_tDBInput_4 < 15) {
+							row9.PUBLICATION_NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(15);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.PUBLICATION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(15);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.PUBLICATION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.PUBLICATION_NOTES = tmpContent_tDBInput_22;
+									row9.PUBLICATION_NOTES = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.PUBLICATION_NOTES = null;
+								row9.PUBLICATION_NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 16) {
-							row34.IND_REGISTERED = null;
+						if (colQtyInRs_tDBInput_4 < 16) {
+							row9.IND_REGISTERED = null;
 						} else {
 
-							row34.IND_REGISTERED = rs_tDBInput_22.getBigDecimal(16);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.IND_REGISTERED = null;
+							row9.IND_REGISTERED = rs_tDBInput_4.getBigDecimal(16);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.IND_REGISTERED = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 17) {
-							row34.REGISTRATION_TYPE = null;
+						if (colQtyInRs_tDBInput_4 < 17) {
+							row9.REGISTRATION_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(17);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.REGISTRATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(17);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.REGISTRATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.REGISTRATION_TYPE = tmpContent_tDBInput_22;
+									row9.REGISTRATION_TYPE = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.REGISTRATION_TYPE = null;
+								row9.REGISTRATION_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 18) {
-							row34.REGISTRATION_SERIES = null;
+						if (colQtyInRs_tDBInput_4 < 18) {
+							row9.REGISTRATION_SERIES = null;
 						} else {
 
-							row34.REGISTRATION_SERIES = rs_tDBInput_22.getBigDecimal(18);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.REGISTRATION_SERIES = null;
+							row9.REGISTRATION_SERIES = rs_tDBInput_4.getBigDecimal(18);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.REGISTRATION_SERIES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 19) {
-							row34.REGISTRATION_NBR = null;
+						if (colQtyInRs_tDBInput_4 < 19) {
+							row9.REGISTRATION_NBR = null;
 						} else {
 
-							row34.REGISTRATION_NBR = rs_tDBInput_22.getBigDecimal(19);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.REGISTRATION_NBR = null;
+							row9.REGISTRATION_NBR = rs_tDBInput_4.getBigDecimal(19);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.REGISTRATION_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 20) {
-							row34.REGISTRATION_DUP = null;
+						if (colQtyInRs_tDBInput_4 < 20) {
+							row9.REGISTRATION_DUP = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(20);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.REGISTRATION_DUP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(20);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.REGISTRATION_DUP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.REGISTRATION_DUP = tmpContent_tDBInput_22;
+									row9.REGISTRATION_DUP = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.REGISTRATION_DUP = null;
+								row9.REGISTRATION_DUP = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 21) {
-							row34.REGISTRATION_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 21) {
+							row9.REGISTRATION_DATE = null;
 						} else {
 
-							row34.REGISTRATION_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22,
-									21);
+							row9.REGISTRATION_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 21);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 22) {
-							row34.ENTITLEMENT_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 22) {
+							row9.ENTITLEMENT_DATE = null;
 						} else {
 
-							row34.ENTITLEMENT_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 22);
+							row9.ENTITLEMENT_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 22);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 23) {
-							row34.EXPIRATION_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 23) {
+							row9.EXPIRATION_DATE = null;
 						} else {
 
-							row34.EXPIRATION_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 23);
+							row9.EXPIRATION_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 23);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 24) {
-							row34.EXHIBITION_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 24) {
+							row9.EXHIBITION_DATE = null;
 						} else {
 
-							row34.EXHIBITION_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 24);
+							row9.EXHIBITION_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 24);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 25) {
-							row34.EXHIBITION_NOTES = null;
+						if (colQtyInRs_tDBInput_4 < 25) {
+							row9.EXHIBITION_NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(25);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(25).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.EXHIBITION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(25);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(25).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.EXHIBITION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.EXHIBITION_NOTES = tmpContent_tDBInput_22;
+									row9.EXHIBITION_NOTES = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.EXHIBITION_NOTES = null;
+								row9.EXHIBITION_NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 26) {
-							row34.SIGN_TYPE = null;
+						if (colQtyInRs_tDBInput_4 < 26) {
+							row9.SIGN_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(26);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(26).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.SIGN_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(26);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(26).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.SIGN_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.SIGN_TYPE = tmpContent_tDBInput_22;
+									row9.SIGN_TYPE = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.SIGN_TYPE = null;
+								row9.SIGN_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 27) {
-							row34.MARK_NAME = null;
+						if (colQtyInRs_tDBInput_4 < 27) {
+							row9.MARK_NAME = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(27);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(27).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(27);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(27).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_NAME = tmpContent_tDBInput_22;
+									row9.MARK_NAME = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_NAME = null;
+								row9.MARK_NAME = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 28) {
-							row34.MARK_NAME_LANG2 = null;
+						if (colQtyInRs_tDBInput_4 < 28) {
+							row9.MARK_NAME_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(28);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(28).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_NAME_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(28);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(28).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_NAME_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_NAME_LANG2 = tmpContent_tDBInput_22;
+									row9.MARK_NAME_LANG2 = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_NAME_LANG2 = null;
+								row9.MARK_NAME_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 29) {
-							row34.MARK_TRANSLATION = null;
+						if (colQtyInRs_tDBInput_4 < 29) {
+							row9.MARK_TRANSLATION = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(29);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(29).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_TRANSLATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(29);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(29).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_TRANSLATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_TRANSLATION = tmpContent_tDBInput_22;
+									row9.MARK_TRANSLATION = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_TRANSLATION = null;
+								row9.MARK_TRANSLATION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 30) {
-							row34.MARK_TRANSLATION_LANG2 = null;
+						if (colQtyInRs_tDBInput_4 < 30) {
+							row9.MARK_TRANSLATION_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(30);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(30).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_TRANSLATION_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(30);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(30).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_TRANSLATION_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_TRANSLATION_LANG2 = tmpContent_tDBInput_22;
+									row9.MARK_TRANSLATION_LANG2 = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_TRANSLATION_LANG2 = null;
+								row9.MARK_TRANSLATION_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 31) {
-							row34.MARK_TRANSLITERATION = null;
+						if (colQtyInRs_tDBInput_4 < 31) {
+							row9.MARK_TRANSLITERATION = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(31);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(31).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_TRANSLITERATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(31);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(31).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_TRANSLITERATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_TRANSLITERATION = tmpContent_tDBInput_22;
+									row9.MARK_TRANSLITERATION = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_TRANSLITERATION = null;
+								row9.MARK_TRANSLITERATION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 32) {
-							row34.MARK_TRANSLITERATION_LANG2 = null;
+						if (colQtyInRs_tDBInput_4 < 32) {
+							row9.MARK_TRANSLITERATION_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(32);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(32).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.MARK_TRANSLITERATION_LANG2 = FormatterUtils
-											.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(32);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(32).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.MARK_TRANSLITERATION_LANG2 = FormatterUtils
+											.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.MARK_TRANSLITERATION_LANG2 = tmpContent_tDBInput_22;
+									row9.MARK_TRANSLITERATION_LANG2 = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.MARK_TRANSLITERATION_LANG2 = null;
+								row9.MARK_TRANSLITERATION_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 33) {
-							row34.SERIES_DESCRIPTION = null;
+						if (colQtyInRs_tDBInput_4 < 33) {
+							row9.SERIES_DESCRIPTION = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(33);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(33).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.SERIES_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(33);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(33).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.SERIES_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.SERIES_DESCRIPTION = tmpContent_tDBInput_22;
+									row9.SERIES_DESCRIPTION = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.SERIES_DESCRIPTION = null;
+								row9.SERIES_DESCRIPTION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 34) {
-							row34.COLOUR_DESCRIPTION = null;
+						if (colQtyInRs_tDBInput_4 < 34) {
+							row9.COLOUR_DESCRIPTION = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(34);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(34).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.COLOUR_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(34);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(34).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.COLOUR_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.COLOUR_DESCRIPTION = tmpContent_tDBInput_22;
+									row9.COLOUR_DESCRIPTION = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.COLOUR_DESCRIPTION = null;
+								row9.COLOUR_DESCRIPTION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 35) {
-							row34.COLOUR_DESCR_LANG2 = null;
+						if (colQtyInRs_tDBInput_4 < 35) {
+							row9.COLOUR_DESCR_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(35);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(35).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.COLOUR_DESCR_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(35);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(35).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.COLOUR_DESCR_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.COLOUR_DESCR_LANG2 = tmpContent_tDBInput_22;
+									row9.COLOUR_DESCR_LANG2 = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.COLOUR_DESCR_LANG2 = null;
+								row9.COLOUR_DESCR_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 36) {
-							row34.DISCLAIMER = null;
+						if (colQtyInRs_tDBInput_4 < 36) {
+							row9.DISCLAIMER = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(36);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(36).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.DISCLAIMER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(36);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(36).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.DISCLAIMER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.DISCLAIMER = tmpContent_tDBInput_22;
+									row9.DISCLAIMER = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.DISCLAIMER = null;
+								row9.DISCLAIMER = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 37) {
-							row34.DISCLAIMER_LANG2 = null;
+						if (colQtyInRs_tDBInput_4 < 37) {
+							row9.DISCLAIMER_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(37);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(37).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.DISCLAIMER_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(37);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(37).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.DISCLAIMER_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.DISCLAIMER_LANG2 = tmpContent_tDBInput_22;
+									row9.DISCLAIMER_LANG2 = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.DISCLAIMER_LANG2 = null;
+								row9.DISCLAIMER_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 38) {
-							row34.BY_CONSENT = null;
+						if (colQtyInRs_tDBInput_4 < 38) {
+							row9.BY_CONSENT = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(38);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(38).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.BY_CONSENT = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(38);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(38).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.BY_CONSENT = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.BY_CONSENT = tmpContent_tDBInput_22;
+									row9.BY_CONSENT = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.BY_CONSENT = null;
+								row9.BY_CONSENT = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 39) {
-							row34.REGULATIONS = null;
+						if (colQtyInRs_tDBInput_4 < 39) {
+							row9.REGULATIONS = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(39);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(39).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.REGULATIONS = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(39);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(39).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.REGULATIONS = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.REGULATIONS = tmpContent_tDBInput_22;
+									row9.REGULATIONS = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.REGULATIONS = null;
+								row9.REGULATIONS = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 40) {
-							row34.NOTES = null;
+						if (colQtyInRs_tDBInput_4 < 40) {
+							row9.NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(40);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(40).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(40);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(40).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.NOTES = tmpContent_tDBInput_22;
+									row9.NOTES = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.NOTES = null;
+								row9.NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 41) {
-							row34.CAPTURE_USER_ID = null;
+						if (colQtyInRs_tDBInput_4 < 41) {
+							row9.CAPTURE_USER_ID = null;
 						} else {
 
-							row34.CAPTURE_USER_ID = rs_tDBInput_22.getBigDecimal(41);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.CAPTURE_USER_ID = null;
+							row9.CAPTURE_USER_ID = rs_tDBInput_4.getBigDecimal(41);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.CAPTURE_USER_ID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 42) {
-							row34.CAPTURE_DATE = null;
+						if (colQtyInRs_tDBInput_4 < 42) {
+							row9.CAPTURE_DATE = null;
 						} else {
 
-							row34.CAPTURE_DATE = mssqlGTU_tDBInput_22.getDate(rsmd_tDBInput_22, rs_tDBInput_22, 42);
+							row9.CAPTURE_DATE = mssqlGTU_tDBInput_4.getDate(rsmd_tDBInput_4, rs_tDBInput_4, 42);
 
 						}
-						if (colQtyInRs_tDBInput_22 < 43) {
-							row34.PUBLICATION_NBR = null;
+						if (colQtyInRs_tDBInput_4 < 43) {
+							row9.PUBLICATION_NBR = null;
 						} else {
 
-							row34.PUBLICATION_NBR = rs_tDBInput_22.getBigDecimal(43);
-							if (rs_tDBInput_22.wasNull()) {
-								row34.PUBLICATION_NBR = null;
+							row9.PUBLICATION_NBR = rs_tDBInput_4.getBigDecimal(43);
+							if (rs_tDBInput_4.wasNull()) {
+								row9.PUBLICATION_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 44) {
-							row34.PUBLICATION_SER = null;
+						if (colQtyInRs_tDBInput_4 < 44) {
+							row9.PUBLICATION_SER = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(44);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(44).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.PUBLICATION_SER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(44);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(44).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.PUBLICATION_SER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.PUBLICATION_SER = tmpContent_tDBInput_22;
+									row9.PUBLICATION_SER = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.PUBLICATION_SER = null;
+								row9.PUBLICATION_SER = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_22 < 45) {
-							row34.PUBLICATION_TYP = null;
+						if (colQtyInRs_tDBInput_4 < 45) {
+							row9.PUBLICATION_TYP = null;
 						} else {
 
-							tmpContent_tDBInput_22 = rs_tDBInput_22.getString(45);
-							if (tmpContent_tDBInput_22 != null) {
-								if (talendToDBList_tDBInput_22.contains(
-										rsmd_tDBInput_22.getColumnTypeName(45).toUpperCase(java.util.Locale.ENGLISH))) {
-									row34.PUBLICATION_TYP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_22);
+							tmpContent_tDBInput_4 = rs_tDBInput_4.getString(45);
+							if (tmpContent_tDBInput_4 != null) {
+								if (talendToDBList_tDBInput_4.contains(
+										rsmd_tDBInput_4.getColumnTypeName(45).toUpperCase(java.util.Locale.ENGLISH))) {
+									row9.PUBLICATION_TYP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_4);
 								} else {
-									row34.PUBLICATION_TYP = tmpContent_tDBInput_22;
+									row9.PUBLICATION_TYP = tmpContent_tDBInput_4;
 								}
 							} else {
-								row34.PUBLICATION_TYP = null;
+								row9.PUBLICATION_TYP = null;
 							}
 						}
 
 						/**
-						 * [tDBInput_22 begin ] stop
+						 * [tDBInput_4 begin ] stop
 						 */
 
 						/**
-						 * [tDBInput_22 main ] start
+						 * [tDBInput_4 main ] start
 						 */
 
-						currentComponent = "tDBInput_22";
+						currentComponent = "tDBInput_4";
 
-						tos_count_tDBInput_22++;
-
-						/**
-						 * [tDBInput_22 main ] stop
-						 */
+						tos_count_tDBInput_4++;
 
 						/**
-						 * [tDBInput_22 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_22";
-
-						/**
-						 * [tDBInput_22 process_data_begin ] stop
+						 * [tDBInput_4 main ] stop
 						 */
 
 						/**
-						 * [tAdvancedHash_row34 main ] start
+						 * [tDBInput_4 process_data_begin ] start
 						 */
 
-						currentComponent = "tAdvancedHash_row34";
+						currentComponent = "tDBInput_4";
+
+						/**
+						 * [tDBInput_4 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row9 main ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row9";
 
 						if (execStat) {
 							runStat.updateStatOnConnection(iterateId, 1, 1
 
-									, "row34"
+									, "row9"
 
 							);
 						}
 
-						row34Struct row34_HashRow = new row34Struct();
+						row9Struct row9_HashRow = new row9Struct();
 
-						row34_HashRow.FILE_SEQ = row34.FILE_SEQ;
+						row9_HashRow.FILE_SEQ = row9.FILE_SEQ;
 
-						row34_HashRow.FILE_TYPE = row34.FILE_TYPE;
+						row9_HashRow.FILE_TYPE = row9.FILE_TYPE;
 
-						row34_HashRow.FILE_SERIES = row34.FILE_SERIES;
+						row9_HashRow.FILE_SERIES = row9.FILE_SERIES;
 
-						row34_HashRow.FILE_NBR = row34.FILE_NBR;
+						row9_HashRow.FILE_NBR = row9.FILE_NBR;
 
-						row34_HashRow.DOC_ORI = row34.DOC_ORI;
+						row9_HashRow.DOC_ORI = row9.DOC_ORI;
 
-						row34_HashRow.DOC_SERIES = row34.DOC_SERIES;
+						row9_HashRow.DOC_SERIES = row9.DOC_SERIES;
 
-						row34_HashRow.DOC_NBR = row34.DOC_NBR;
+						row9_HashRow.DOC_NBR = row9.DOC_NBR;
 
-						row34_HashRow.IND_IMPORT = row34.IND_IMPORT;
+						row9_HashRow.IND_IMPORT = row9.IND_IMPORT;
 
-						row34_HashRow.APPLICATION_TYPE = row34.APPLICATION_TYPE;
+						row9_HashRow.APPLICATION_TYPE = row9.APPLICATION_TYPE;
 
-						row34_HashRow.APPLICATION_SUBTYPE = row34.APPLICATION_SUBTYPE;
+						row9_HashRow.APPLICATION_SUBTYPE = row9.APPLICATION_SUBTYPE;
 
-						row34_HashRow.LAW_CODE = row34.LAW_CODE;
+						row9_HashRow.LAW_CODE = row9.LAW_CODE;
 
-						row34_HashRow.FILING_DATE = row34.FILING_DATE;
+						row9_HashRow.FILING_DATE = row9.FILING_DATE;
 
-						row34_HashRow.RECEPTION_DATE = row34.RECEPTION_DATE;
+						row9_HashRow.RECEPTION_DATE = row9.RECEPTION_DATE;
 
-						row34_HashRow.PUBLICATION_DATE = row34.PUBLICATION_DATE;
+						row9_HashRow.PUBLICATION_DATE = row9.PUBLICATION_DATE;
 
-						row34_HashRow.PUBLICATION_NOTES = row34.PUBLICATION_NOTES;
+						row9_HashRow.PUBLICATION_NOTES = row9.PUBLICATION_NOTES;
 
-						row34_HashRow.IND_REGISTERED = row34.IND_REGISTERED;
+						row9_HashRow.IND_REGISTERED = row9.IND_REGISTERED;
 
-						row34_HashRow.REGISTRATION_TYPE = row34.REGISTRATION_TYPE;
+						row9_HashRow.REGISTRATION_TYPE = row9.REGISTRATION_TYPE;
 
-						row34_HashRow.REGISTRATION_SERIES = row34.REGISTRATION_SERIES;
+						row9_HashRow.REGISTRATION_SERIES = row9.REGISTRATION_SERIES;
 
-						row34_HashRow.REGISTRATION_NBR = row34.REGISTRATION_NBR;
+						row9_HashRow.REGISTRATION_NBR = row9.REGISTRATION_NBR;
 
-						row34_HashRow.REGISTRATION_DUP = row34.REGISTRATION_DUP;
+						row9_HashRow.REGISTRATION_DUP = row9.REGISTRATION_DUP;
 
-						row34_HashRow.REGISTRATION_DATE = row34.REGISTRATION_DATE;
+						row9_HashRow.REGISTRATION_DATE = row9.REGISTRATION_DATE;
 
-						row34_HashRow.ENTITLEMENT_DATE = row34.ENTITLEMENT_DATE;
+						row9_HashRow.ENTITLEMENT_DATE = row9.ENTITLEMENT_DATE;
 
-						row34_HashRow.EXPIRATION_DATE = row34.EXPIRATION_DATE;
+						row9_HashRow.EXPIRATION_DATE = row9.EXPIRATION_DATE;
 
-						row34_HashRow.EXHIBITION_DATE = row34.EXHIBITION_DATE;
+						row9_HashRow.EXHIBITION_DATE = row9.EXHIBITION_DATE;
 
-						row34_HashRow.EXHIBITION_NOTES = row34.EXHIBITION_NOTES;
+						row9_HashRow.EXHIBITION_NOTES = row9.EXHIBITION_NOTES;
 
-						row34_HashRow.SIGN_TYPE = row34.SIGN_TYPE;
+						row9_HashRow.SIGN_TYPE = row9.SIGN_TYPE;
 
-						row34_HashRow.MARK_NAME = row34.MARK_NAME;
+						row9_HashRow.MARK_NAME = row9.MARK_NAME;
 
-						row34_HashRow.MARK_NAME_LANG2 = row34.MARK_NAME_LANG2;
+						row9_HashRow.MARK_NAME_LANG2 = row9.MARK_NAME_LANG2;
 
-						row34_HashRow.MARK_TRANSLATION = row34.MARK_TRANSLATION;
+						row9_HashRow.MARK_TRANSLATION = row9.MARK_TRANSLATION;
 
-						row34_HashRow.MARK_TRANSLATION_LANG2 = row34.MARK_TRANSLATION_LANG2;
+						row9_HashRow.MARK_TRANSLATION_LANG2 = row9.MARK_TRANSLATION_LANG2;
 
-						row34_HashRow.MARK_TRANSLITERATION = row34.MARK_TRANSLITERATION;
+						row9_HashRow.MARK_TRANSLITERATION = row9.MARK_TRANSLITERATION;
 
-						row34_HashRow.MARK_TRANSLITERATION_LANG2 = row34.MARK_TRANSLITERATION_LANG2;
+						row9_HashRow.MARK_TRANSLITERATION_LANG2 = row9.MARK_TRANSLITERATION_LANG2;
 
-						row34_HashRow.SERIES_DESCRIPTION = row34.SERIES_DESCRIPTION;
+						row9_HashRow.SERIES_DESCRIPTION = row9.SERIES_DESCRIPTION;
 
-						row34_HashRow.COLOUR_DESCRIPTION = row34.COLOUR_DESCRIPTION;
+						row9_HashRow.COLOUR_DESCRIPTION = row9.COLOUR_DESCRIPTION;
 
-						row34_HashRow.COLOUR_DESCR_LANG2 = row34.COLOUR_DESCR_LANG2;
+						row9_HashRow.COLOUR_DESCR_LANG2 = row9.COLOUR_DESCR_LANG2;
 
-						row34_HashRow.DISCLAIMER = row34.DISCLAIMER;
+						row9_HashRow.DISCLAIMER = row9.DISCLAIMER;
 
-						row34_HashRow.DISCLAIMER_LANG2 = row34.DISCLAIMER_LANG2;
+						row9_HashRow.DISCLAIMER_LANG2 = row9.DISCLAIMER_LANG2;
 
-						row34_HashRow.BY_CONSENT = row34.BY_CONSENT;
+						row9_HashRow.BY_CONSENT = row9.BY_CONSENT;
 
-						row34_HashRow.REGULATIONS = row34.REGULATIONS;
+						row9_HashRow.REGULATIONS = row9.REGULATIONS;
 
-						row34_HashRow.NOTES = row34.NOTES;
+						row9_HashRow.NOTES = row9.NOTES;
 
-						row34_HashRow.CAPTURE_USER_ID = row34.CAPTURE_USER_ID;
+						row9_HashRow.CAPTURE_USER_ID = row9.CAPTURE_USER_ID;
 
-						row34_HashRow.CAPTURE_DATE = row34.CAPTURE_DATE;
+						row9_HashRow.CAPTURE_DATE = row9.CAPTURE_DATE;
 
-						row34_HashRow.PUBLICATION_NBR = row34.PUBLICATION_NBR;
+						row9_HashRow.PUBLICATION_NBR = row9.PUBLICATION_NBR;
 
-						row34_HashRow.PUBLICATION_SER = row34.PUBLICATION_SER;
+						row9_HashRow.PUBLICATION_SER = row9.PUBLICATION_SER;
 
-						row34_HashRow.PUBLICATION_TYP = row34.PUBLICATION_TYP;
+						row9_HashRow.PUBLICATION_TYP = row9.PUBLICATION_TYP;
 
-						tHash_Lookup_row34.put(row34_HashRow);
+						tHash_Lookup_row9.put(row9_HashRow);
 
-						tos_count_tAdvancedHash_row34++;
+						tos_count_tAdvancedHash_row9++;
 
 						/**
-						 * [tAdvancedHash_row34 main ] stop
+						 * [tAdvancedHash_row9 main ] stop
 						 */
 
 						/**
-						 * [tAdvancedHash_row34 process_data_begin ] start
+						 * [tAdvancedHash_row9 process_data_begin ] start
 						 */
 
-						currentComponent = "tAdvancedHash_row34";
+						currentComponent = "tAdvancedHash_row9";
 
 						/**
-						 * [tAdvancedHash_row34 process_data_begin ] stop
-						 */
-
-						/**
-						 * [tAdvancedHash_row34 process_data_end ] start
-						 */
-
-						currentComponent = "tAdvancedHash_row34";
-
-						/**
-						 * [tAdvancedHash_row34 process_data_end ] stop
+						 * [tAdvancedHash_row9 process_data_begin ] stop
 						 */
 
 						/**
-						 * [tDBInput_22 process_data_end ] start
+						 * [tAdvancedHash_row9 process_data_end ] start
 						 */
 
-						currentComponent = "tDBInput_22";
+						currentComponent = "tAdvancedHash_row9";
 
 						/**
-						 * [tDBInput_22 process_data_end ] stop
+						 * [tAdvancedHash_row9 process_data_end ] stop
 						 */
 
 						/**
-						 * [tDBInput_22 end ] start
+						 * [tDBInput_4 process_data_end ] start
 						 */
 
-						currentComponent = "tDBInput_22";
+						currentComponent = "tDBInput_4";
+
+						/**
+						 * [tDBInput_4 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_4 end ] start
+						 */
+
+						currentComponent = "tDBInput_4";
 
 					}
 				} finally {
-					if (rs_tDBInput_22 != null) {
-						rs_tDBInput_22.close();
+					if (rs_tDBInput_4 != null) {
+						rs_tDBInput_4.close();
 					}
-					if (stmt_tDBInput_22 != null) {
-						stmt_tDBInput_22.close();
+					if (stmt_tDBInput_4 != null) {
+						stmt_tDBInput_4.close();
 					}
 				}
-				globalMap.put("tDBInput_22_NB_LINE", nb_line_tDBInput_22);
+				globalMap.put("tDBInput_4_NB_LINE", nb_line_tDBInput_4);
 
-				ok_Hash.put("tDBInput_22", true);
-				end_Hash.put("tDBInput_22", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_4", true);
+				end_Hash.put("tDBInput_4", System.currentTimeMillis());
 
 				/**
-				 * [tDBInput_22 end ] stop
+				 * [tDBInput_4 end ] stop
 				 */
 
 				/**
-				 * [tAdvancedHash_row34 end ] start
+				 * [tAdvancedHash_row9 end ] start
 				 */
 
-				currentComponent = "tAdvancedHash_row34";
+				currentComponent = "tAdvancedHash_row9";
 
-				tHash_Lookup_row34.endPut();
+				tHash_Lookup_row9.endPut();
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "row34");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row9");
 				}
 
-				ok_Hash.put("tAdvancedHash_row34", true);
-				end_Hash.put("tAdvancedHash_row34", System.currentTimeMillis());
+				ok_Hash.put("tAdvancedHash_row9", true);
+				end_Hash.put("tAdvancedHash_row9", System.currentTimeMillis());
 
 				/**
-				 * [tAdvancedHash_row34 end ] stop
+				 * [tAdvancedHash_row9 end ] stop
 				 */
 
 			} // end the resume
@@ -4929,23 +9702,23 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			try {
 
 				/**
-				 * [tDBInput_22 finally ] start
+				 * [tDBInput_4 finally ] start
 				 */
 
-				currentComponent = "tDBInput_22";
+				currentComponent = "tDBInput_4";
 
 				/**
-				 * [tDBInput_22 finally ] stop
+				 * [tDBInput_4 finally ] stop
 				 */
 
 				/**
-				 * [tAdvancedHash_row34 finally ] start
+				 * [tAdvancedHash_row9 finally ] start
 				 */
 
-				currentComponent = "tAdvancedHash_row34";
+				currentComponent = "tAdvancedHash_row9";
 
 				/**
-				 * [tAdvancedHash_row34 finally ] stop
+				 * [tAdvancedHash_row9 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -4956,10 +9729,1321 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tDBInput_22_SUBPROCESS_STATE", 1);
+		globalMap.put("tDBInput_4_SUBPROCESS_STATE", 1);
 	}
 
-	public static class row33Struct implements routines.system.IPersistableComparableLookupRow<row33Struct> {
+	public static class row11Struct implements routines.system.IPersistableComparableLookupRow<row11Struct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
+		protected static final int DEFAULT_HASHCODE = 1;
+		protected static final int PRIME = 31;
+		protected int hashCode = DEFAULT_HASHCODE;
+		public boolean hashCodeDirty = true;
+
+		public String loopKey;
+
+		public BigDecimal ROW_VERSION;
+
+		public BigDecimal getROW_VERSION() {
+			return this.ROW_VERSION;
+		}
+
+		public BigDecimal USER_ID;
+
+		public BigDecimal getUSER_ID() {
+			return this.USER_ID;
+		}
+
+		public String USER_NAME;
+
+		public String getUSER_NAME() {
+			return this.USER_NAME;
+		}
+
+		public String LOGIN;
+
+		public String getLOGIN() {
+			return this.LOGIN;
+		}
+
+		public String IND_ADMINISTRATOR;
+
+		public String getIND_ADMINISTRATOR() {
+			return this.IND_ADMINISTRATOR;
+		}
+
+		public String IND_EXAMINER;
+
+		public String getIND_EXAMINER() {
+			return this.IND_EXAMINER;
+		}
+
+		public String IND_INACTIVE;
+
+		public String getIND_INACTIVE() {
+			return this.IND_INACTIVE;
+		}
+
+		public String IND_EXTERNAL;
+
+		public String getIND_EXTERNAL() {
+			return this.IND_EXTERNAL;
+		}
+
+		public String OFFICE_DIVISION_CODE;
+
+		public String getOFFICE_DIVISION_CODE() {
+			return this.OFFICE_DIVISION_CODE;
+		}
+
+		public String OFFICE_DEPARTMENT_CODE;
+
+		public String getOFFICE_DEPARTMENT_CODE() {
+			return this.OFFICE_DEPARTMENT_CODE;
+		}
+
+		public String OFFICE_SECTION_CODE;
+
+		public String getOFFICE_SECTION_CODE() {
+			return this.OFFICE_SECTION_CODE;
+		}
+
+		public String INITIALS;
+
+		public String getINITIALS() {
+			return this.INITIALS;
+		}
+
+		public String FOOTER_DESCRIPTION;
+
+		public String getFOOTER_DESCRIPTION() {
+			return this.FOOTER_DESCRIPTION;
+		}
+
+		public BigDecimal QTY_WORK;
+
+		public BigDecimal getQTY_WORK() {
+			return this.QTY_WORK;
+		}
+
+		public String IND_TEST_USER;
+
+		public String getIND_TEST_USER() {
+			return this.IND_TEST_USER;
+		}
+
+		public String FORCE_DOC_ORI;
+
+		public String getFORCE_DOC_ORI() {
+			return this.FORCE_DOC_ORI;
+		}
+
+		public String LOGIN_PASSWORD;
+
+		public String getLOGIN_PASSWORD() {
+			return this.LOGIN_PASSWORD;
+		}
+
+		public java.util.Date LAST_LOGIN_DATE;
+
+		public java.util.Date getLAST_LOGIN_DATE() {
+			return this.LAST_LOGIN_DATE;
+		}
+
+		public String EMAIL;
+
+		public String getEMAIL() {
+			return this.EMAIL;
+		}
+
+		public String TELEPHONE;
+
+		public String getTELEPHONE() {
+			return this.TELEPHONE;
+		}
+
+		public String FULL_NAME;
+
+		public String getFULL_NAME() {
+			return this.FULL_NAME;
+		}
+
+		public String PERSONAL_ID;
+
+		public String getPERSONAL_ID() {
+			return this.PERSONAL_ID;
+		}
+
+		public java.util.Date CREATION_DATE;
+
+		public java.util.Date getCREATION_DATE() {
+			return this.CREATION_DATE;
+		}
+
+		public BigDecimal CREATION_USER_ID;
+
+		public BigDecimal getCREATION_USER_ID() {
+			return this.CREATION_USER_ID;
+		}
+
+		public java.util.Date LAST_UPDATE_DATE;
+
+		public java.util.Date getLAST_UPDATE_DATE() {
+			return this.LAST_UPDATE_DATE;
+		}
+
+		public BigDecimal LAST_UPDATE_USER_ID;
+
+		public BigDecimal getLAST_UPDATE_USER_ID() {
+			return this.LAST_UPDATE_USER_ID;
+		}
+
+		public String SIGNATURE_TYP;
+
+		public String getSIGNATURE_TYP() {
+			return this.SIGNATURE_TYP;
+		}
+
+		public Object SIGNATURE_DATA;
+
+		public Object getSIGNATURE_DATA() {
+			return this.SIGNATURE_DATA;
+		}
+
+		@Override
+		public int hashCode() {
+			if (this.hashCodeDirty) {
+				final int prime = PRIME;
+				int result = DEFAULT_HASHCODE;
+
+				result = prime * result + ((this.LOGIN == null) ? 0 : this.LOGIN.hashCode());
+
+				this.hashCode = result;
+				this.hashCodeDirty = false;
+			}
+			return this.hashCode;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			final row11Struct other = (row11Struct) obj;
+
+			if (this.LOGIN == null) {
+				if (other.LOGIN != null)
+					return false;
+
+			} else if (!this.LOGIN.equals(other.LOGIN))
+
+				return false;
+
+			return true;
+		}
+
+		public void copyDataTo(row11Struct other) {
+
+			other.ROW_VERSION = this.ROW_VERSION;
+			other.USER_ID = this.USER_ID;
+			other.USER_NAME = this.USER_NAME;
+			other.LOGIN = this.LOGIN;
+			other.IND_ADMINISTRATOR = this.IND_ADMINISTRATOR;
+			other.IND_EXAMINER = this.IND_EXAMINER;
+			other.IND_INACTIVE = this.IND_INACTIVE;
+			other.IND_EXTERNAL = this.IND_EXTERNAL;
+			other.OFFICE_DIVISION_CODE = this.OFFICE_DIVISION_CODE;
+			other.OFFICE_DEPARTMENT_CODE = this.OFFICE_DEPARTMENT_CODE;
+			other.OFFICE_SECTION_CODE = this.OFFICE_SECTION_CODE;
+			other.INITIALS = this.INITIALS;
+			other.FOOTER_DESCRIPTION = this.FOOTER_DESCRIPTION;
+			other.QTY_WORK = this.QTY_WORK;
+			other.IND_TEST_USER = this.IND_TEST_USER;
+			other.FORCE_DOC_ORI = this.FORCE_DOC_ORI;
+			other.LOGIN_PASSWORD = this.LOGIN_PASSWORD;
+			other.LAST_LOGIN_DATE = this.LAST_LOGIN_DATE;
+			other.EMAIL = this.EMAIL;
+			other.TELEPHONE = this.TELEPHONE;
+			other.FULL_NAME = this.FULL_NAME;
+			other.PERSONAL_ID = this.PERSONAL_ID;
+			other.CREATION_DATE = this.CREATION_DATE;
+			other.CREATION_USER_ID = this.CREATION_USER_ID;
+			other.LAST_UPDATE_DATE = this.LAST_UPDATE_DATE;
+			other.LAST_UPDATE_USER_ID = this.LAST_UPDATE_USER_ID;
+			other.SIGNATURE_TYP = this.SIGNATURE_TYP;
+			other.SIGNATURE_DATA = this.SIGNATURE_DATA;
+
+		}
+
+		public void copyKeysDataTo(row11Struct other) {
+
+			other.LOGIN = this.LOGIN;
+
+		}
+
+		private String readString(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				byte[] byteArray = new byte[length];
+				dis.read(byteArray);
+				strReturn = new String(byteArray, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private String readString(ObjectInputStream dis) throws IOException {
+			String strReturn = null;
+			int length = 0;
+			length = dis.readInt();
+			if (length == -1) {
+				strReturn = null;
+			} else {
+				if (length > commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length) {
+					if (length < 1024 && commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy.length == 0) {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[1024];
+					} else {
+						commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[2 * length];
+					}
+				}
+				dis.readFully(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length);
+				strReturn = new String(commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy, 0, length, utf8Charset);
+			}
+			return strReturn;
+		}
+
+		private void writeString(String str, ObjectOutputStream dos) throws IOException {
+			if (str == null) {
+				dos.writeInt(-1);
+			} else {
+				byte[] byteArray = str.getBytes(utf8Charset);
+				dos.writeInt(byteArray.length);
+				dos.write(byteArray);
+			}
+		}
+
+		private java.util.Date readDate(DataInputStream dis, ObjectInputStream ois) throws IOException {
+			java.util.Date dateReturn = null;
+			int length = 0;
+			length = dis.readByte();
+			if (length == -1) {
+				dateReturn = null;
+			} else {
+				dateReturn = new Date(dis.readLong());
+			}
+			return dateReturn;
+		}
+
+		private void writeDate(java.util.Date date1, DataOutputStream dos, ObjectOutputStream oos) throws IOException {
+			if (date1 == null) {
+				dos.writeByte(-1);
+			} else {
+				dos.writeByte(0);
+				dos.writeLong(date1.getTime());
+			}
+		}
+
+		public void readKeysData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy) {
+
+				try {
+
+					int length = 0;
+
+					this.LOGIN = readString(dis);
+
+				} catch (IOException e) {
+					throw new RuntimeException(e);
+
+				}
+
+			}
+
+		}
+
+		public void writeKeysData(ObjectOutputStream dos) {
+			try {
+
+				// String
+
+				writeString(this.LOGIN, dos);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		/**
+		 * Fill Values data by reading ObjectInputStream.
+		 */
+		public void readValuesData(DataInputStream dis, ObjectInputStream ois) {
+			try {
+
+				int length = 0;
+
+				this.ROW_VERSION = (BigDecimal) ois.readObject();
+
+				this.USER_ID = (BigDecimal) ois.readObject();
+
+				this.USER_NAME = readString(dis, ois);
+
+				this.IND_ADMINISTRATOR = readString(dis, ois);
+
+				this.IND_EXAMINER = readString(dis, ois);
+
+				this.IND_INACTIVE = readString(dis, ois);
+
+				this.IND_EXTERNAL = readString(dis, ois);
+
+				this.OFFICE_DIVISION_CODE = readString(dis, ois);
+
+				this.OFFICE_DEPARTMENT_CODE = readString(dis, ois);
+
+				this.OFFICE_SECTION_CODE = readString(dis, ois);
+
+				this.INITIALS = readString(dis, ois);
+
+				this.FOOTER_DESCRIPTION = readString(dis, ois);
+
+				this.QTY_WORK = (BigDecimal) ois.readObject();
+
+				this.IND_TEST_USER = readString(dis, ois);
+
+				this.FORCE_DOC_ORI = readString(dis, ois);
+
+				this.LOGIN_PASSWORD = readString(dis, ois);
+
+				this.LAST_LOGIN_DATE = readDate(dis, ois);
+
+				this.EMAIL = readString(dis, ois);
+
+				this.TELEPHONE = readString(dis, ois);
+
+				this.FULL_NAME = readString(dis, ois);
+
+				this.PERSONAL_ID = readString(dis, ois);
+
+				this.CREATION_DATE = readDate(dis, ois);
+
+				this.CREATION_USER_ID = (BigDecimal) ois.readObject();
+
+				this.LAST_UPDATE_DATE = readDate(dis, ois);
+
+				this.LAST_UPDATE_USER_ID = (BigDecimal) ois.readObject();
+
+				this.SIGNATURE_TYP = readString(dis, ois);
+
+				this.SIGNATURE_DATA = (Object) ois.readObject();
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+
+			} catch (ClassNotFoundException eCNFE) {
+				throw new RuntimeException(eCNFE);
+
+			}
+
+		}
+
+		/**
+		 * Return a byte array which represents Values data.
+		 */
+		public void writeValuesData(DataOutputStream dos, ObjectOutputStream oos) {
+			try {
+
+				oos.writeObject(this.ROW_VERSION);
+
+				oos.writeObject(this.USER_ID);
+
+				writeString(this.USER_NAME, dos, oos);
+
+				writeString(this.IND_ADMINISTRATOR, dos, oos);
+
+				writeString(this.IND_EXAMINER, dos, oos);
+
+				writeString(this.IND_INACTIVE, dos, oos);
+
+				writeString(this.IND_EXTERNAL, dos, oos);
+
+				writeString(this.OFFICE_DIVISION_CODE, dos, oos);
+
+				writeString(this.OFFICE_DEPARTMENT_CODE, dos, oos);
+
+				writeString(this.OFFICE_SECTION_CODE, dos, oos);
+
+				writeString(this.INITIALS, dos, oos);
+
+				writeString(this.FOOTER_DESCRIPTION, dos, oos);
+
+				oos.writeObject(this.QTY_WORK);
+
+				writeString(this.IND_TEST_USER, dos, oos);
+
+				writeString(this.FORCE_DOC_ORI, dos, oos);
+
+				writeString(this.LOGIN_PASSWORD, dos, oos);
+
+				writeDate(this.LAST_LOGIN_DATE, dos, oos);
+
+				writeString(this.EMAIL, dos, oos);
+
+				writeString(this.TELEPHONE, dos, oos);
+
+				writeString(this.FULL_NAME, dos, oos);
+
+				writeString(this.PERSONAL_ID, dos, oos);
+
+				writeDate(this.CREATION_DATE, dos, oos);
+
+				oos.writeObject(this.CREATION_USER_ID);
+
+				writeDate(this.LAST_UPDATE_DATE, dos, oos);
+
+				oos.writeObject(this.LAST_UPDATE_USER_ID);
+
+				writeString(this.SIGNATURE_TYP, dos, oos);
+
+				oos.writeObject(this.SIGNATURE_DATA);
+
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("ROW_VERSION=" + String.valueOf(ROW_VERSION));
+			sb.append(",USER_ID=" + String.valueOf(USER_ID));
+			sb.append(",USER_NAME=" + USER_NAME);
+			sb.append(",LOGIN=" + LOGIN);
+			sb.append(",IND_ADMINISTRATOR=" + IND_ADMINISTRATOR);
+			sb.append(",IND_EXAMINER=" + IND_EXAMINER);
+			sb.append(",IND_INACTIVE=" + IND_INACTIVE);
+			sb.append(",IND_EXTERNAL=" + IND_EXTERNAL);
+			sb.append(",OFFICE_DIVISION_CODE=" + OFFICE_DIVISION_CODE);
+			sb.append(",OFFICE_DEPARTMENT_CODE=" + OFFICE_DEPARTMENT_CODE);
+			sb.append(",OFFICE_SECTION_CODE=" + OFFICE_SECTION_CODE);
+			sb.append(",INITIALS=" + INITIALS);
+			sb.append(",FOOTER_DESCRIPTION=" + FOOTER_DESCRIPTION);
+			sb.append(",QTY_WORK=" + String.valueOf(QTY_WORK));
+			sb.append(",IND_TEST_USER=" + IND_TEST_USER);
+			sb.append(",FORCE_DOC_ORI=" + FORCE_DOC_ORI);
+			sb.append(",LOGIN_PASSWORD=" + LOGIN_PASSWORD);
+			sb.append(",LAST_LOGIN_DATE=" + String.valueOf(LAST_LOGIN_DATE));
+			sb.append(",EMAIL=" + EMAIL);
+			sb.append(",TELEPHONE=" + TELEPHONE);
+			sb.append(",FULL_NAME=" + FULL_NAME);
+			sb.append(",PERSONAL_ID=" + PERSONAL_ID);
+			sb.append(",CREATION_DATE=" + String.valueOf(CREATION_DATE));
+			sb.append(",CREATION_USER_ID=" + String.valueOf(CREATION_USER_ID));
+			sb.append(",LAST_UPDATE_DATE=" + String.valueOf(LAST_UPDATE_DATE));
+			sb.append(",LAST_UPDATE_USER_ID=" + String.valueOf(LAST_UPDATE_USER_ID));
+			sb.append(",SIGNATURE_TYP=" + SIGNATURE_TYP);
+			sb.append(",SIGNATURE_DATA=" + String.valueOf(SIGNATURE_DATA));
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row11Struct other) {
+
+			int returnValue = -1;
+
+			returnValue = checkNullsAndCompare(this.LOGIN, other.LOGIN);
+			if (returnValue != 0) {
+				return returnValue;
+			}
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tDBInput_6Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_6_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				row11Struct row11 = new row11Struct();
+
+				/**
+				 * [tAdvancedHash_row11 begin ] start
+				 */
+
+				ok_Hash.put("tAdvancedHash_row11", false);
+				start_Hash.put("tAdvancedHash_row11", System.currentTimeMillis());
+
+				currentComponent = "tAdvancedHash_row11";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row11");
+				}
+
+				int tos_count_tAdvancedHash_row11 = 0;
+
+				// connection name:row11
+				// source node:tDBInput_6 - inputs:(after_tDBInput_3) outputs:(row11,row11) |
+				// target node:tAdvancedHash_row11 - inputs:(row11) outputs:()
+				// linked node: tMap_3 - inputs:(row8,row9,row11) outputs:(insert_actions)
+
+				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row11 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row11Struct> tHash_Lookup_row11 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
+						.<row11Struct>getLookup(matchingModeEnum_row11);
+
+				globalMap.put("tHash_Lookup_row11", tHash_Lookup_row11);
+
+				/**
+				 * [tAdvancedHash_row11 begin ] stop
+				 */
+
+				/**
+				 * [tDBInput_6 begin ] start
+				 */
+
+				ok_Hash.put("tDBInput_6", false);
+				start_Hash.put("tDBInput_6", System.currentTimeMillis());
+
+				currentComponent = "tDBInput_6";
+
+				int tos_count_tDBInput_6 = 0;
+
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_6 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+						.getMSSqlGenerateTimestampUtil();
+
+				java.util.List<String> talendToDBList_tDBInput_6 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_6 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+						"DECIMAL IDENTITY", "REAL" };
+				java.util.Collections.addAll(talendToDBList_tDBInput_6, talendToDBArray_tDBInput_6);
+				int nb_line_tDBInput_6 = 0;
+				java.sql.Connection conn_tDBInput_6 = null;
+				String driverClass_tDBInput_6 = "net.sourceforge.jtds.jdbc.Driver";
+				java.lang.Class jdbcclazz_tDBInput_6 = java.lang.Class.forName(driverClass_tDBInput_6);
+				String dbUser_tDBInput_6 = "ADMIN";
+
+				final String decryptedPassword_tDBInput_6 = routines.system.PasswordEncryptUtil
+						.decryptPassword("enc:routine.encryption.key.v1:00zXR1BhozEfmZ9jxWVhwiKzuT/jte47F1EyfNlCAFDW");
+
+				String dbPwd_tDBInput_6 = decryptedPassword_tDBInput_6;
+
+				String port_tDBInput_6 = "1433";
+				String dbname_tDBInput_6 = "MARCAS_PY";
+				String url_tDBInput_6 = "jdbc:jtds:sqlserver://" + "localhost";
+				if (!"".equals(port_tDBInput_6)) {
+					url_tDBInput_6 += ":" + "1433";
+				}
+				if (!"".equals(dbname_tDBInput_6)) {
+					url_tDBInput_6 += "//" + "MARCAS_PY";
+				}
+				url_tDBInput_6 += ";appName=" + projectName + ";" + "";
+				String dbschema_tDBInput_6 = "ADMIN";
+
+				conn_tDBInput_6 = java.sql.DriverManager.getConnection(url_tDBInput_6, dbUser_tDBInput_6,
+						dbPwd_tDBInput_6);
+
+				java.sql.Statement stmt_tDBInput_6 = conn_tDBInput_6.createStatement();
+
+				String dbquery_tDBInput_6 = "SELECT ADMIN.IP_USER.ROW_VERSION,\n		ADMIN.IP_USER.\"USER_ID\",\n		ADMIN.IP_USER.\"USER_NAME\",\n		ADMIN.IP_USER.LOGIN,\n		"
+						+ "ADMIN.IP_USER.IND_ADMINISTRATOR,\n		ADMIN.IP_USER.IND_EXAMINER,\n		ADMIN.IP_USER.IND_INACTIVE,\n		ADMIN.IP_USER.IND_EXTERNA"
+						+ "L,\n		ADMIN.IP_USER.OFFICE_DIVISION_CODE,\n		ADMIN.IP_USER.OFFICE_DEPARTMENT_CODE,\n		ADMIN.IP_USER.OFFICE_SECTION_CODE,\n		"
+						+ "ADMIN.IP_USER.INITIALS,\n		ADMIN.IP_USER.FOOTER_DESCRIPTION,\n		ADMIN.IP_USER.QTY_WORK,\n		ADMIN.IP_USER.IND_TEST_USER,\n		A"
+						+ "DMIN.IP_USER.FORCE_DOC_ORI,\n		ADMIN.IP_USER.LOGIN_PASSWORD,\n		ADMIN.IP_USER.LAST_LOGIN_DATE,\n		ADMIN.IP_USER.EMAIL,\n		AD"
+						+ "MIN.IP_USER.TELEPHONE,\n		ADMIN.IP_USER.FULL_NAME,\n		ADMIN.IP_USER.PERSONAL_ID,\n		ADMIN.IP_USER.CREATION_DATE,\n		ADMIN.IP"
+						+ "_USER.CREATION_USER_ID,\n		ADMIN.IP_USER.LAST_UPDATE_DATE,\n		ADMIN.IP_USER.LAST_UPDATE_USER_ID,\n		ADMIN.IP_USER.SIGNATURE"
+						+ "_TYP,\n		ADMIN.IP_USER.SIGNATURE_DATA\nFROM	ADMIN.IP_USER";
+
+				globalMap.put("tDBInput_6_QUERY", dbquery_tDBInput_6);
+				java.sql.ResultSet rs_tDBInput_6 = null;
+
+				try {
+					rs_tDBInput_6 = stmt_tDBInput_6.executeQuery(dbquery_tDBInput_6);
+					java.sql.ResultSetMetaData rsmd_tDBInput_6 = rs_tDBInput_6.getMetaData();
+					int colQtyInRs_tDBInput_6 = rsmd_tDBInput_6.getColumnCount();
+
+					String tmpContent_tDBInput_6 = null;
+
+					while (rs_tDBInput_6.next()) {
+						nb_line_tDBInput_6++;
+
+						if (colQtyInRs_tDBInput_6 < 1) {
+							row11.ROW_VERSION = null;
+						} else {
+
+							row11.ROW_VERSION = rs_tDBInput_6.getBigDecimal(1);
+							if (rs_tDBInput_6.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 2) {
+							row11.USER_ID = null;
+						} else {
+
+							row11.USER_ID = rs_tDBInput_6.getBigDecimal(2);
+							if (rs_tDBInput_6.wasNull()) {
+								throw new RuntimeException("Null value in non-Nullable column");
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 3) {
+							row11.USER_NAME = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(3);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(3).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.USER_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.USER_NAME = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.USER_NAME = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 4) {
+							row11.LOGIN = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(4);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(4).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.LOGIN = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.LOGIN = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.LOGIN = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 5) {
+							row11.IND_ADMINISTRATOR = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(5);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.IND_ADMINISTRATOR = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.IND_ADMINISTRATOR = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.IND_ADMINISTRATOR = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 6) {
+							row11.IND_EXAMINER = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(6);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(6).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.IND_EXAMINER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.IND_EXAMINER = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.IND_EXAMINER = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 7) {
+							row11.IND_INACTIVE = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(7);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(7).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.IND_INACTIVE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.IND_INACTIVE = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.IND_INACTIVE = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 8) {
+							row11.IND_EXTERNAL = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(8);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(8).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.IND_EXTERNAL = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.IND_EXTERNAL = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.IND_EXTERNAL = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 9) {
+							row11.OFFICE_DIVISION_CODE = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(9);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.OFFICE_DIVISION_CODE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.OFFICE_DIVISION_CODE = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.OFFICE_DIVISION_CODE = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 10) {
+							row11.OFFICE_DEPARTMENT_CODE = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(10);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.OFFICE_DEPARTMENT_CODE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.OFFICE_DEPARTMENT_CODE = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.OFFICE_DEPARTMENT_CODE = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 11) {
+							row11.OFFICE_SECTION_CODE = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(11);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(11).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.OFFICE_SECTION_CODE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.OFFICE_SECTION_CODE = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.OFFICE_SECTION_CODE = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 12) {
+							row11.INITIALS = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(12);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(12).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.INITIALS = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.INITIALS = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.INITIALS = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 13) {
+							row11.FOOTER_DESCRIPTION = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(13);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(13).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.FOOTER_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.FOOTER_DESCRIPTION = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.FOOTER_DESCRIPTION = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 14) {
+							row11.QTY_WORK = null;
+						} else {
+
+							row11.QTY_WORK = rs_tDBInput_6.getBigDecimal(14);
+							if (rs_tDBInput_6.wasNull()) {
+								row11.QTY_WORK = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 15) {
+							row11.IND_TEST_USER = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(15);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.IND_TEST_USER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.IND_TEST_USER = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.IND_TEST_USER = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 16) {
+							row11.FORCE_DOC_ORI = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(16);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(16).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.FORCE_DOC_ORI = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.FORCE_DOC_ORI = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.FORCE_DOC_ORI = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 17) {
+							row11.LOGIN_PASSWORD = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(17);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.LOGIN_PASSWORD = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.LOGIN_PASSWORD = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.LOGIN_PASSWORD = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 18) {
+							row11.LAST_LOGIN_DATE = null;
+						} else {
+
+							row11.LAST_LOGIN_DATE = mssqlGTU_tDBInput_6.getDate(rsmd_tDBInput_6, rs_tDBInput_6, 18);
+
+						}
+						if (colQtyInRs_tDBInput_6 < 19) {
+							row11.EMAIL = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(19);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(19).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.EMAIL = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.EMAIL = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.EMAIL = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 20) {
+							row11.TELEPHONE = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(20);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.TELEPHONE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.TELEPHONE = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.TELEPHONE = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 21) {
+							row11.FULL_NAME = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(21);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(21).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.FULL_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.FULL_NAME = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.FULL_NAME = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 22) {
+							row11.PERSONAL_ID = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(22);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(22).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.PERSONAL_ID = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.PERSONAL_ID = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.PERSONAL_ID = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 23) {
+							row11.CREATION_DATE = null;
+						} else {
+
+							row11.CREATION_DATE = mssqlGTU_tDBInput_6.getDate(rsmd_tDBInput_6, rs_tDBInput_6, 23);
+
+						}
+						if (colQtyInRs_tDBInput_6 < 24) {
+							row11.CREATION_USER_ID = null;
+						} else {
+
+							row11.CREATION_USER_ID = rs_tDBInput_6.getBigDecimal(24);
+							if (rs_tDBInput_6.wasNull()) {
+								row11.CREATION_USER_ID = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 25) {
+							row11.LAST_UPDATE_DATE = null;
+						} else {
+
+							row11.LAST_UPDATE_DATE = mssqlGTU_tDBInput_6.getDate(rsmd_tDBInput_6, rs_tDBInput_6, 25);
+
+						}
+						if (colQtyInRs_tDBInput_6 < 26) {
+							row11.LAST_UPDATE_USER_ID = null;
+						} else {
+
+							row11.LAST_UPDATE_USER_ID = rs_tDBInput_6.getBigDecimal(26);
+							if (rs_tDBInput_6.wasNull()) {
+								row11.LAST_UPDATE_USER_ID = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 27) {
+							row11.SIGNATURE_TYP = null;
+						} else {
+
+							tmpContent_tDBInput_6 = rs_tDBInput_6.getString(27);
+							if (tmpContent_tDBInput_6 != null) {
+								if (talendToDBList_tDBInput_6.contains(
+										rsmd_tDBInput_6.getColumnTypeName(27).toUpperCase(java.util.Locale.ENGLISH))) {
+									row11.SIGNATURE_TYP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_6);
+								} else {
+									row11.SIGNATURE_TYP = tmpContent_tDBInput_6;
+								}
+							} else {
+								row11.SIGNATURE_TYP = null;
+							}
+						}
+						if (colQtyInRs_tDBInput_6 < 28) {
+							row11.SIGNATURE_DATA = null;
+						} else {
+
+							row11.SIGNATURE_DATA = rs_tDBInput_6.getObject(28);
+							if (rs_tDBInput_6.wasNull()) {
+								row11.SIGNATURE_DATA = null;
+							}
+						}
+
+						/**
+						 * [tDBInput_6 begin ] stop
+						 */
+
+						/**
+						 * [tDBInput_6 main ] start
+						 */
+
+						currentComponent = "tDBInput_6";
+
+						tos_count_tDBInput_6++;
+
+						/**
+						 * [tDBInput_6 main ] stop
+						 */
+
+						/**
+						 * [tDBInput_6 process_data_begin ] start
+						 */
+
+						currentComponent = "tDBInput_6";
+
+						/**
+						 * [tDBInput_6 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row11 main ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row11";
+
+						if (execStat) {
+							runStat.updateStatOnConnection(iterateId, 1, 1
+
+									, "row11"
+
+							);
+						}
+
+						row11Struct row11_HashRow = new row11Struct();
+
+						row11_HashRow.ROW_VERSION = row11.ROW_VERSION;
+
+						row11_HashRow.USER_ID = row11.USER_ID;
+
+						row11_HashRow.USER_NAME = row11.USER_NAME;
+
+						row11_HashRow.LOGIN = row11.LOGIN;
+
+						row11_HashRow.IND_ADMINISTRATOR = row11.IND_ADMINISTRATOR;
+
+						row11_HashRow.IND_EXAMINER = row11.IND_EXAMINER;
+
+						row11_HashRow.IND_INACTIVE = row11.IND_INACTIVE;
+
+						row11_HashRow.IND_EXTERNAL = row11.IND_EXTERNAL;
+
+						row11_HashRow.OFFICE_DIVISION_CODE = row11.OFFICE_DIVISION_CODE;
+
+						row11_HashRow.OFFICE_DEPARTMENT_CODE = row11.OFFICE_DEPARTMENT_CODE;
+
+						row11_HashRow.OFFICE_SECTION_CODE = row11.OFFICE_SECTION_CODE;
+
+						row11_HashRow.INITIALS = row11.INITIALS;
+
+						row11_HashRow.FOOTER_DESCRIPTION = row11.FOOTER_DESCRIPTION;
+
+						row11_HashRow.QTY_WORK = row11.QTY_WORK;
+
+						row11_HashRow.IND_TEST_USER = row11.IND_TEST_USER;
+
+						row11_HashRow.FORCE_DOC_ORI = row11.FORCE_DOC_ORI;
+
+						row11_HashRow.LOGIN_PASSWORD = row11.LOGIN_PASSWORD;
+
+						row11_HashRow.LAST_LOGIN_DATE = row11.LAST_LOGIN_DATE;
+
+						row11_HashRow.EMAIL = row11.EMAIL;
+
+						row11_HashRow.TELEPHONE = row11.TELEPHONE;
+
+						row11_HashRow.FULL_NAME = row11.FULL_NAME;
+
+						row11_HashRow.PERSONAL_ID = row11.PERSONAL_ID;
+
+						row11_HashRow.CREATION_DATE = row11.CREATION_DATE;
+
+						row11_HashRow.CREATION_USER_ID = row11.CREATION_USER_ID;
+
+						row11_HashRow.LAST_UPDATE_DATE = row11.LAST_UPDATE_DATE;
+
+						row11_HashRow.LAST_UPDATE_USER_ID = row11.LAST_UPDATE_USER_ID;
+
+						row11_HashRow.SIGNATURE_TYP = row11.SIGNATURE_TYP;
+
+						row11_HashRow.SIGNATURE_DATA = row11.SIGNATURE_DATA;
+
+						tHash_Lookup_row11.put(row11_HashRow);
+
+						tos_count_tAdvancedHash_row11++;
+
+						/**
+						 * [tAdvancedHash_row11 main ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row11 process_data_begin ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row11";
+
+						/**
+						 * [tAdvancedHash_row11 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row11 process_data_end ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row11";
+
+						/**
+						 * [tAdvancedHash_row11 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_6 process_data_end ] start
+						 */
+
+						currentComponent = "tDBInput_6";
+
+						/**
+						 * [tDBInput_6 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_6 end ] start
+						 */
+
+						currentComponent = "tDBInput_6";
+
+					}
+				} finally {
+					if (rs_tDBInput_6 != null) {
+						rs_tDBInput_6.close();
+					}
+					if (stmt_tDBInput_6 != null) {
+						stmt_tDBInput_6.close();
+					}
+					if (conn_tDBInput_6 != null && !conn_tDBInput_6.isClosed()) {
+
+						conn_tDBInput_6.close();
+
+						if ("com.mysql.cj.jdbc.Driver".equals((String) globalMap.get("driverClass_"))
+								&& routines.system.BundleUtils.inOSGi()) {
+							Class.forName("com.mysql.cj.jdbc.AbandonedConnectionCleanupThread")
+									.getMethod("checkedShutdown").invoke(null, (Object[]) null);
+						}
+
+					}
+				}
+				globalMap.put("tDBInput_6_NB_LINE", nb_line_tDBInput_6);
+
+				ok_Hash.put("tDBInput_6", true);
+				end_Hash.put("tDBInput_6", System.currentTimeMillis());
+
+				/**
+				 * [tDBInput_6 end ] stop
+				 */
+
+				/**
+				 * [tAdvancedHash_row11 end ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row11";
+
+				tHash_Lookup_row11.endPut();
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row11");
+				}
+
+				ok_Hash.put("tAdvancedHash_row11", true);
+				end_Hash.put("tAdvancedHash_row11", System.currentTimeMillis());
+
+				/**
+				 * [tAdvancedHash_row11 end ] stop
+				 */
+
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tDBInput_6 finally ] start
+				 */
+
+				currentComponent = "tDBInput_6";
+
+				/**
+				 * [tDBInput_6 finally ] stop
+				 */
+
+				/**
+				 * [tAdvancedHash_row11 finally ] start
+				 */
+
+				currentComponent = "tAdvancedHash_row11";
+
+				/**
+				 * [tAdvancedHash_row11 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tDBInput_6_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row44Struct implements routines.system.IPersistableComparableLookupRow<row44Struct> {
 		final static byte[] commonByteArrayLock_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		static byte[] commonByteArray_WIPO_PROJECTS_E1a_Marc_a_interm_Copy = new byte[0];
 		protected static final int DEFAULT_HASHCODE = 1;
@@ -5262,7 +11346,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				return false;
 			if (getClass() != obj.getClass())
 				return false;
-			final row33Struct other = (row33Struct) obj;
+			final row44Struct other = (row44Struct) obj;
 
 			if (this.FILE_NBR == null) {
 				if (other.FILE_NBR != null)
@@ -5275,7 +11359,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			return true;
 		}
 
-		public void copyDataTo(row33Struct other) {
+		public void copyDataTo(row44Struct other) {
 
 			other.FILE_SEQ = this.FILE_SEQ;
 			other.FILE_TYPE = this.FILE_TYPE;
@@ -5325,7 +11409,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 		}
 
-		public void copyKeysDataTo(row33Struct other) {
+		public void copyKeysDataTo(row44Struct other) {
 
 			other.FILE_NBR = this.FILE_NBR;
 
@@ -5675,7 +11759,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 		/**
 		 * Compare keys
 		 */
-		public int compareTo(row33Struct other) {
+		public int compareTo(row44Struct other) {
 
 			int returnValue = -1;
 
@@ -5710,8 +11794,8 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 	}
 
-	public void tDBInput_23Process(final java.util.Map<String, Object> globalMap) throws TalendException {
-		globalMap.put("tDBInput_23_SUBPROCESS_STATE", 0);
+	public void tDBInput_31Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tDBInput_31_SUBPROCESS_STATE", 0);
 
 		final boolean execStat = this.execStat;
 
@@ -5730,67 +11814,66 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
 
-				row33Struct row33 = new row33Struct();
+				row44Struct row44 = new row44Struct();
 
 				/**
-				 * [tAdvancedHash_row33 begin ] start
+				 * [tAdvancedHash_row44 begin ] start
 				 */
 
-				ok_Hash.put("tAdvancedHash_row33", false);
-				start_Hash.put("tAdvancedHash_row33", System.currentTimeMillis());
+				ok_Hash.put("tAdvancedHash_row44", false);
+				start_Hash.put("tAdvancedHash_row44", System.currentTimeMillis());
 
-				currentComponent = "tAdvancedHash_row33";
+				currentComponent = "tAdvancedHash_row44";
 
 				if (execStat) {
-					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row33");
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row44");
 				}
 
-				int tos_count_tAdvancedHash_row33 = 0;
+				int tos_count_tAdvancedHash_row44 = 0;
 
-				// connection name:row33
-				// source node:tDBInput_23 - inputs:(after_tDBInput_21) outputs:(row33,row33) |
-				// target node:tAdvancedHash_row33 - inputs:(row33) outputs:()
-				// linked node: tMap_9 - inputs:(row32,row34,row33)
-				// outputs:(insert_related_files)
+				// connection name:row44
+				// source node:tDBInput_31 - inputs:(after_tDBInput_33) outputs:(row44,row44) |
+				// target node:tAdvancedHash_row44 - inputs:(row44) outputs:()
+				// linked node: tMap_12 - inputs:(row43,row44) outputs:(copyOfinsert_actions)
 
-				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row33 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
+				org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE matchingModeEnum_row44 = org.talend.designer.components.lookup.common.ICommonLookup.MATCHING_MODE.UNIQUE_MATCH;
 
-				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row33Struct> tHash_Lookup_row33 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
-						.<row33Struct>getLookup(matchingModeEnum_row33);
+				org.talend.designer.components.lookup.memory.AdvancedMemoryLookup<row44Struct> tHash_Lookup_row44 = org.talend.designer.components.lookup.memory.AdvancedMemoryLookup
+						.<row44Struct>getLookup(matchingModeEnum_row44);
 
-				globalMap.put("tHash_Lookup_row33", tHash_Lookup_row33);
+				globalMap.put("tHash_Lookup_row44", tHash_Lookup_row44);
 
 				/**
-				 * [tAdvancedHash_row33 begin ] stop
+				 * [tAdvancedHash_row44 begin ] stop
 				 */
 
 				/**
-				 * [tDBInput_23 begin ] start
+				 * [tDBInput_31 begin ] start
 				 */
 
-				ok_Hash.put("tDBInput_23", false);
-				start_Hash.put("tDBInput_23", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_31", false);
+				start_Hash.put("tDBInput_31", System.currentTimeMillis());
 
-				currentComponent = "tDBInput_23";
+				currentComponent = "tDBInput_31";
 
-				int tos_count_tDBInput_23 = 0;
+				int tos_count_tDBInput_31 = 0;
 
-				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_23 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
+				org.talend.designer.components.util.mssql.MSSqlGenerateTimestampUtil mssqlGTU_tDBInput_31 = org.talend.designer.components.util.mssql.MSSqlUtilFactory
 						.getMSSqlGenerateTimestampUtil();
 
-				java.util.List<String> talendToDBList_tDBInput_23 = new java.util.ArrayList();
-				String[] talendToDBArray_tDBInput_23 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
+				java.util.List<String> talendToDBList_tDBInput_31 = new java.util.ArrayList();
+				String[] talendToDBArray_tDBInput_31 = new String[] { "FLOAT", "NUMERIC", "NUMERIC IDENTITY", "DECIMAL",
 						"DECIMAL IDENTITY", "REAL" };
-				java.util.Collections.addAll(talendToDBList_tDBInput_23, talendToDBArray_tDBInput_23);
-				int nb_line_tDBInput_23 = 0;
-				java.sql.Connection conn_tDBInput_23 = null;
-				conn_tDBInput_23 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
+				java.util.Collections.addAll(talendToDBList_tDBInput_31, talendToDBArray_tDBInput_31);
+				int nb_line_tDBInput_31 = 0;
+				java.sql.Connection conn_tDBInput_31 = null;
+				conn_tDBInput_31 = (java.sql.Connection) globalMap.get("conn_tDBConnection_1");
 
-				String dbschema_tDBInput_23 = (String) globalMap.get("dbschema_tDBConnection_1");
+				String dbschema_tDBInput_31 = (String) globalMap.get("dbschema_tDBConnection_1");
 
-				java.sql.Statement stmt_tDBInput_23 = conn_tDBInput_23.createStatement();
+				java.sql.Statement stmt_tDBInput_31 = conn_tDBInput_31.createStatement();
 
-				String dbquery_tDBInput_23 = "SELECT dbo.VW_IMPORT_MARK.FILE_SEQ,\n		dbo.VW_IMPORT_MARK.FILE_TYPE,\n		dbo.VW_IMPORT_MARK.FILE_SERIES,\n		dbo.VW_IMPORT_M"
+				String dbquery_tDBInput_31 = "SELECT dbo.VW_IMPORT_MARK.FILE_SEQ,\n		dbo.VW_IMPORT_MARK.FILE_TYPE,\n		dbo.VW_IMPORT_MARK.FILE_SERIES,\n		dbo.VW_IMPORT_M"
 						+ "ARK.FILE_NBR,\n		dbo.VW_IMPORT_MARK.DOC_ORI,\n		dbo.VW_IMPORT_MARK.DOC_SERIES,\n		dbo.VW_IMPORT_MARK.DOC_NBR,\n		dbo.VW_IMPO"
 						+ "RT_MARK.IND_IMPORT,\n		dbo.VW_IMPORT_MARK.APPLICATION_TYPE,\n		dbo.VW_IMPORT_MARK.APPLICATION_SUBTYPE,\n		dbo.VW_IMPORT_MAR"
 						+ "K.LAW_CODE,\n		dbo.VW_IMPORT_MARK.FILING_DATE,\n		dbo.VW_IMPORT_MARK.RECEPTION_DATE,\n		dbo.VW_IMPORT_MARK.PUBLICATION_DATE"
@@ -5806,804 +11889,804 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 						+ "VW_IMPORT_MARK.PUBLICATION_NBR,\n		dbo.VW_IMPORT_MARK.PUBLICATION_SER,\n		dbo.VW_IMPORT_MARK.PUBLICATION_TYP\nFROM	dbo.VW_I"
 						+ "MPORT_MARK";
 
-				globalMap.put("tDBInput_23_QUERY", dbquery_tDBInput_23);
-				java.sql.ResultSet rs_tDBInput_23 = null;
+				globalMap.put("tDBInput_31_QUERY", dbquery_tDBInput_31);
+				java.sql.ResultSet rs_tDBInput_31 = null;
 
 				try {
-					rs_tDBInput_23 = stmt_tDBInput_23.executeQuery(dbquery_tDBInput_23);
-					java.sql.ResultSetMetaData rsmd_tDBInput_23 = rs_tDBInput_23.getMetaData();
-					int colQtyInRs_tDBInput_23 = rsmd_tDBInput_23.getColumnCount();
+					rs_tDBInput_31 = stmt_tDBInput_31.executeQuery(dbquery_tDBInput_31);
+					java.sql.ResultSetMetaData rsmd_tDBInput_31 = rs_tDBInput_31.getMetaData();
+					int colQtyInRs_tDBInput_31 = rsmd_tDBInput_31.getColumnCount();
 
-					String tmpContent_tDBInput_23 = null;
+					String tmpContent_tDBInput_31 = null;
 
-					while (rs_tDBInput_23.next()) {
-						nb_line_tDBInput_23++;
+					while (rs_tDBInput_31.next()) {
+						nb_line_tDBInput_31++;
 
-						if (colQtyInRs_tDBInput_23 < 1) {
-							row33.FILE_SEQ = null;
+						if (colQtyInRs_tDBInput_31 < 1) {
+							row44.FILE_SEQ = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(1);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(1).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.FILE_SEQ = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(1);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(1).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.FILE_SEQ = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.FILE_SEQ = tmpContent_tDBInput_23;
+									row44.FILE_SEQ = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.FILE_SEQ = null;
+								row44.FILE_SEQ = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 2) {
-							row33.FILE_TYPE = null;
+						if (colQtyInRs_tDBInput_31 < 2) {
+							row44.FILE_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(2);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.FILE_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(2);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(2).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.FILE_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.FILE_TYPE = tmpContent_tDBInput_23;
+									row44.FILE_TYPE = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.FILE_TYPE = null;
+								row44.FILE_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 3) {
-							row33.FILE_SERIES = null;
+						if (colQtyInRs_tDBInput_31 < 3) {
+							row44.FILE_SERIES = null;
 						} else {
 
-							row33.FILE_SERIES = rs_tDBInput_23.getBigDecimal(3);
-							if (rs_tDBInput_23.wasNull()) {
+							row44.FILE_SERIES = rs_tDBInput_31.getBigDecimal(3);
+							if (rs_tDBInput_31.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 4) {
-							row33.FILE_NBR = null;
+						if (colQtyInRs_tDBInput_31 < 4) {
+							row44.FILE_NBR = null;
 						} else {
 
-							row33.FILE_NBR = rs_tDBInput_23.getBigDecimal(4);
-							if (rs_tDBInput_23.wasNull()) {
+							row44.FILE_NBR = rs_tDBInput_31.getBigDecimal(4);
+							if (rs_tDBInput_31.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 5) {
-							row33.DOC_ORI = null;
+						if (colQtyInRs_tDBInput_31 < 5) {
+							row44.DOC_ORI = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(5);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.DOC_ORI = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(5);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(5).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.DOC_ORI = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.DOC_ORI = tmpContent_tDBInput_23;
+									row44.DOC_ORI = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.DOC_ORI = null;
+								row44.DOC_ORI = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 6) {
-							row33.DOC_SERIES = null;
+						if (colQtyInRs_tDBInput_31 < 6) {
+							row44.DOC_SERIES = null;
 						} else {
 
-							row33.DOC_SERIES = rs_tDBInput_23.getBigDecimal(6);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.DOC_SERIES = null;
+							row44.DOC_SERIES = rs_tDBInput_31.getBigDecimal(6);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.DOC_SERIES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 7) {
-							row33.DOC_NBR = null;
+						if (colQtyInRs_tDBInput_31 < 7) {
+							row44.DOC_NBR = null;
 						} else {
 
-							row33.DOC_NBR = rs_tDBInput_23.getBigDecimal(7);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.DOC_NBR = null;
+							row44.DOC_NBR = rs_tDBInput_31.getBigDecimal(7);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.DOC_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 8) {
-							row33.IND_IMPORT = null;
+						if (colQtyInRs_tDBInput_31 < 8) {
+							row44.IND_IMPORT = null;
 						} else {
 
-							row33.IND_IMPORT = rs_tDBInput_23.getBigDecimal(8);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.IND_IMPORT = null;
+							row44.IND_IMPORT = rs_tDBInput_31.getBigDecimal(8);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.IND_IMPORT = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 9) {
-							row33.APPLICATION_TYPE = null;
+						if (colQtyInRs_tDBInput_31 < 9) {
+							row44.APPLICATION_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(9);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.APPLICATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(9);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(9).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.APPLICATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.APPLICATION_TYPE = tmpContent_tDBInput_23;
+									row44.APPLICATION_TYPE = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.APPLICATION_TYPE = null;
+								row44.APPLICATION_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 10) {
-							row33.APPLICATION_SUBTYPE = null;
+						if (colQtyInRs_tDBInput_31 < 10) {
+							row44.APPLICATION_SUBTYPE = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(10);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.APPLICATION_SUBTYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(10);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(10).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.APPLICATION_SUBTYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.APPLICATION_SUBTYPE = tmpContent_tDBInput_23;
+									row44.APPLICATION_SUBTYPE = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.APPLICATION_SUBTYPE = null;
+								row44.APPLICATION_SUBTYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 11) {
-							row33.LAW_CODE = null;
+						if (colQtyInRs_tDBInput_31 < 11) {
+							row44.LAW_CODE = null;
 						} else {
 
-							row33.LAW_CODE = rs_tDBInput_23.getBigDecimal(11);
-							if (rs_tDBInput_23.wasNull()) {
+							row44.LAW_CODE = rs_tDBInput_31.getBigDecimal(11);
+							if (rs_tDBInput_31.wasNull()) {
 								throw new RuntimeException("Null value in non-Nullable column");
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 12) {
-							row33.FILING_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 12) {
+							row44.FILING_DATE = null;
 						} else {
 
-							row33.FILING_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 12);
+							row44.FILING_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 12);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 13) {
-							row33.RECEPTION_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 13) {
+							row44.RECEPTION_DATE = null;
 						} else {
 
-							row33.RECEPTION_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 13);
+							row44.RECEPTION_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 13);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 14) {
-							row33.PUBLICATION_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 14) {
+							row44.PUBLICATION_DATE = null;
 						} else {
 
-							row33.PUBLICATION_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 14);
+							row44.PUBLICATION_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 14);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 15) {
-							row33.PUBLICATION_NOTES = null;
+						if (colQtyInRs_tDBInput_31 < 15) {
+							row44.PUBLICATION_NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(15);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.PUBLICATION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(15);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(15).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.PUBLICATION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.PUBLICATION_NOTES = tmpContent_tDBInput_23;
+									row44.PUBLICATION_NOTES = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.PUBLICATION_NOTES = null;
+								row44.PUBLICATION_NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 16) {
-							row33.IND_REGISTERED = null;
+						if (colQtyInRs_tDBInput_31 < 16) {
+							row44.IND_REGISTERED = null;
 						} else {
 
-							row33.IND_REGISTERED = rs_tDBInput_23.getBigDecimal(16);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.IND_REGISTERED = null;
+							row44.IND_REGISTERED = rs_tDBInput_31.getBigDecimal(16);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.IND_REGISTERED = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 17) {
-							row33.REGISTRATION_TYPE = null;
+						if (colQtyInRs_tDBInput_31 < 17) {
+							row44.REGISTRATION_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(17);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.REGISTRATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(17);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(17).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.REGISTRATION_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.REGISTRATION_TYPE = tmpContent_tDBInput_23;
+									row44.REGISTRATION_TYPE = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.REGISTRATION_TYPE = null;
+								row44.REGISTRATION_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 18) {
-							row33.REGISTRATION_SERIES = null;
+						if (colQtyInRs_tDBInput_31 < 18) {
+							row44.REGISTRATION_SERIES = null;
 						} else {
 
-							row33.REGISTRATION_SERIES = rs_tDBInput_23.getBigDecimal(18);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.REGISTRATION_SERIES = null;
+							row44.REGISTRATION_SERIES = rs_tDBInput_31.getBigDecimal(18);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.REGISTRATION_SERIES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 19) {
-							row33.REGISTRATION_NBR = null;
+						if (colQtyInRs_tDBInput_31 < 19) {
+							row44.REGISTRATION_NBR = null;
 						} else {
 
-							row33.REGISTRATION_NBR = rs_tDBInput_23.getBigDecimal(19);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.REGISTRATION_NBR = null;
+							row44.REGISTRATION_NBR = rs_tDBInput_31.getBigDecimal(19);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.REGISTRATION_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 20) {
-							row33.REGISTRATION_DUP = null;
+						if (colQtyInRs_tDBInput_31 < 20) {
+							row44.REGISTRATION_DUP = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(20);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.REGISTRATION_DUP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(20);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(20).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.REGISTRATION_DUP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.REGISTRATION_DUP = tmpContent_tDBInput_23;
+									row44.REGISTRATION_DUP = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.REGISTRATION_DUP = null;
+								row44.REGISTRATION_DUP = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 21) {
-							row33.REGISTRATION_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 21) {
+							row44.REGISTRATION_DATE = null;
 						} else {
 
-							row33.REGISTRATION_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23,
+							row44.REGISTRATION_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31,
 									21);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 22) {
-							row33.ENTITLEMENT_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 22) {
+							row44.ENTITLEMENT_DATE = null;
 						} else {
 
-							row33.ENTITLEMENT_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 22);
+							row44.ENTITLEMENT_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 22);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 23) {
-							row33.EXPIRATION_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 23) {
+							row44.EXPIRATION_DATE = null;
 						} else {
 
-							row33.EXPIRATION_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 23);
+							row44.EXPIRATION_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 23);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 24) {
-							row33.EXHIBITION_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 24) {
+							row44.EXHIBITION_DATE = null;
 						} else {
 
-							row33.EXHIBITION_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 24);
+							row44.EXHIBITION_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 24);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 25) {
-							row33.EXHIBITION_NOTES = null;
+						if (colQtyInRs_tDBInput_31 < 25) {
+							row44.EXHIBITION_NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(25);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(25).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.EXHIBITION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(25);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(25).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.EXHIBITION_NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.EXHIBITION_NOTES = tmpContent_tDBInput_23;
+									row44.EXHIBITION_NOTES = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.EXHIBITION_NOTES = null;
+								row44.EXHIBITION_NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 26) {
-							row33.SIGN_TYPE = null;
+						if (colQtyInRs_tDBInput_31 < 26) {
+							row44.SIGN_TYPE = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(26);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(26).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.SIGN_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(26);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(26).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.SIGN_TYPE = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.SIGN_TYPE = tmpContent_tDBInput_23;
+									row44.SIGN_TYPE = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.SIGN_TYPE = null;
+								row44.SIGN_TYPE = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 27) {
-							row33.MARK_NAME = null;
+						if (colQtyInRs_tDBInput_31 < 27) {
+							row44.MARK_NAME = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(27);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(27).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(27);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(27).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_NAME = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_NAME = tmpContent_tDBInput_23;
+									row44.MARK_NAME = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_NAME = null;
+								row44.MARK_NAME = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 28) {
-							row33.MARK_NAME_LANG2 = null;
+						if (colQtyInRs_tDBInput_31 < 28) {
+							row44.MARK_NAME_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(28);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(28).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_NAME_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(28);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(28).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_NAME_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_NAME_LANG2 = tmpContent_tDBInput_23;
+									row44.MARK_NAME_LANG2 = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_NAME_LANG2 = null;
+								row44.MARK_NAME_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 29) {
-							row33.MARK_TRANSLATION = null;
+						if (colQtyInRs_tDBInput_31 < 29) {
+							row44.MARK_TRANSLATION = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(29);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(29).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_TRANSLATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(29);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(29).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_TRANSLATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_TRANSLATION = tmpContent_tDBInput_23;
+									row44.MARK_TRANSLATION = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_TRANSLATION = null;
+								row44.MARK_TRANSLATION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 30) {
-							row33.MARK_TRANSLATION_LANG2 = null;
+						if (colQtyInRs_tDBInput_31 < 30) {
+							row44.MARK_TRANSLATION_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(30);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(30).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_TRANSLATION_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(30);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(30).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_TRANSLATION_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_TRANSLATION_LANG2 = tmpContent_tDBInput_23;
+									row44.MARK_TRANSLATION_LANG2 = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_TRANSLATION_LANG2 = null;
+								row44.MARK_TRANSLATION_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 31) {
-							row33.MARK_TRANSLITERATION = null;
+						if (colQtyInRs_tDBInput_31 < 31) {
+							row44.MARK_TRANSLITERATION = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(31);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(31).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_TRANSLITERATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(31);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(31).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_TRANSLITERATION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_TRANSLITERATION = tmpContent_tDBInput_23;
+									row44.MARK_TRANSLITERATION = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_TRANSLITERATION = null;
+								row44.MARK_TRANSLITERATION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 32) {
-							row33.MARK_TRANSLITERATION_LANG2 = null;
+						if (colQtyInRs_tDBInput_31 < 32) {
+							row44.MARK_TRANSLITERATION_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(32);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(32).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.MARK_TRANSLITERATION_LANG2 = FormatterUtils
-											.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(32);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(32).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.MARK_TRANSLITERATION_LANG2 = FormatterUtils
+											.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.MARK_TRANSLITERATION_LANG2 = tmpContent_tDBInput_23;
+									row44.MARK_TRANSLITERATION_LANG2 = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.MARK_TRANSLITERATION_LANG2 = null;
+								row44.MARK_TRANSLITERATION_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 33) {
-							row33.SERIES_DESCRIPTION = null;
+						if (colQtyInRs_tDBInput_31 < 33) {
+							row44.SERIES_DESCRIPTION = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(33);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(33).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.SERIES_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(33);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(33).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.SERIES_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.SERIES_DESCRIPTION = tmpContent_tDBInput_23;
+									row44.SERIES_DESCRIPTION = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.SERIES_DESCRIPTION = null;
+								row44.SERIES_DESCRIPTION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 34) {
-							row33.COLOUR_DESCRIPTION = null;
+						if (colQtyInRs_tDBInput_31 < 34) {
+							row44.COLOUR_DESCRIPTION = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(34);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(34).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.COLOUR_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(34);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(34).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.COLOUR_DESCRIPTION = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.COLOUR_DESCRIPTION = tmpContent_tDBInput_23;
+									row44.COLOUR_DESCRIPTION = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.COLOUR_DESCRIPTION = null;
+								row44.COLOUR_DESCRIPTION = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 35) {
-							row33.COLOUR_DESCR_LANG2 = null;
+						if (colQtyInRs_tDBInput_31 < 35) {
+							row44.COLOUR_DESCR_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(35);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(35).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.COLOUR_DESCR_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(35);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(35).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.COLOUR_DESCR_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.COLOUR_DESCR_LANG2 = tmpContent_tDBInput_23;
+									row44.COLOUR_DESCR_LANG2 = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.COLOUR_DESCR_LANG2 = null;
+								row44.COLOUR_DESCR_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 36) {
-							row33.DISCLAIMER = null;
+						if (colQtyInRs_tDBInput_31 < 36) {
+							row44.DISCLAIMER = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(36);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(36).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.DISCLAIMER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(36);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(36).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.DISCLAIMER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.DISCLAIMER = tmpContent_tDBInput_23;
+									row44.DISCLAIMER = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.DISCLAIMER = null;
+								row44.DISCLAIMER = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 37) {
-							row33.DISCLAIMER_LANG2 = null;
+						if (colQtyInRs_tDBInput_31 < 37) {
+							row44.DISCLAIMER_LANG2 = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(37);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(37).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.DISCLAIMER_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(37);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(37).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.DISCLAIMER_LANG2 = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.DISCLAIMER_LANG2 = tmpContent_tDBInput_23;
+									row44.DISCLAIMER_LANG2 = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.DISCLAIMER_LANG2 = null;
+								row44.DISCLAIMER_LANG2 = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 38) {
-							row33.BY_CONSENT = null;
+						if (colQtyInRs_tDBInput_31 < 38) {
+							row44.BY_CONSENT = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(38);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(38).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.BY_CONSENT = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(38);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(38).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.BY_CONSENT = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.BY_CONSENT = tmpContent_tDBInput_23;
+									row44.BY_CONSENT = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.BY_CONSENT = null;
+								row44.BY_CONSENT = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 39) {
-							row33.REGULATIONS = null;
+						if (colQtyInRs_tDBInput_31 < 39) {
+							row44.REGULATIONS = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(39);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(39).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.REGULATIONS = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(39);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(39).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.REGULATIONS = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.REGULATIONS = tmpContent_tDBInput_23;
+									row44.REGULATIONS = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.REGULATIONS = null;
+								row44.REGULATIONS = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 40) {
-							row33.NOTES = null;
+						if (colQtyInRs_tDBInput_31 < 40) {
+							row44.NOTES = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(40);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(40).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(40);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(40).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.NOTES = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.NOTES = tmpContent_tDBInput_23;
+									row44.NOTES = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.NOTES = null;
+								row44.NOTES = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 41) {
-							row33.CAPTURE_USER_ID = null;
+						if (colQtyInRs_tDBInput_31 < 41) {
+							row44.CAPTURE_USER_ID = null;
 						} else {
 
-							row33.CAPTURE_USER_ID = rs_tDBInput_23.getBigDecimal(41);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.CAPTURE_USER_ID = null;
+							row44.CAPTURE_USER_ID = rs_tDBInput_31.getBigDecimal(41);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.CAPTURE_USER_ID = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 42) {
-							row33.CAPTURE_DATE = null;
+						if (colQtyInRs_tDBInput_31 < 42) {
+							row44.CAPTURE_DATE = null;
 						} else {
 
-							row33.CAPTURE_DATE = mssqlGTU_tDBInput_23.getDate(rsmd_tDBInput_23, rs_tDBInput_23, 42);
+							row44.CAPTURE_DATE = mssqlGTU_tDBInput_31.getDate(rsmd_tDBInput_31, rs_tDBInput_31, 42);
 
 						}
-						if (colQtyInRs_tDBInput_23 < 43) {
-							row33.PUBLICATION_NBR = null;
+						if (colQtyInRs_tDBInput_31 < 43) {
+							row44.PUBLICATION_NBR = null;
 						} else {
 
-							row33.PUBLICATION_NBR = rs_tDBInput_23.getBigDecimal(43);
-							if (rs_tDBInput_23.wasNull()) {
-								row33.PUBLICATION_NBR = null;
+							row44.PUBLICATION_NBR = rs_tDBInput_31.getBigDecimal(43);
+							if (rs_tDBInput_31.wasNull()) {
+								row44.PUBLICATION_NBR = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 44) {
-							row33.PUBLICATION_SER = null;
+						if (colQtyInRs_tDBInput_31 < 44) {
+							row44.PUBLICATION_SER = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(44);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(44).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.PUBLICATION_SER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(44);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(44).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.PUBLICATION_SER = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.PUBLICATION_SER = tmpContent_tDBInput_23;
+									row44.PUBLICATION_SER = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.PUBLICATION_SER = null;
+								row44.PUBLICATION_SER = null;
 							}
 						}
-						if (colQtyInRs_tDBInput_23 < 45) {
-							row33.PUBLICATION_TYP = null;
+						if (colQtyInRs_tDBInput_31 < 45) {
+							row44.PUBLICATION_TYP = null;
 						} else {
 
-							tmpContent_tDBInput_23 = rs_tDBInput_23.getString(45);
-							if (tmpContent_tDBInput_23 != null) {
-								if (talendToDBList_tDBInput_23.contains(
-										rsmd_tDBInput_23.getColumnTypeName(45).toUpperCase(java.util.Locale.ENGLISH))) {
-									row33.PUBLICATION_TYP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_23);
+							tmpContent_tDBInput_31 = rs_tDBInput_31.getString(45);
+							if (tmpContent_tDBInput_31 != null) {
+								if (talendToDBList_tDBInput_31.contains(
+										rsmd_tDBInput_31.getColumnTypeName(45).toUpperCase(java.util.Locale.ENGLISH))) {
+									row44.PUBLICATION_TYP = FormatterUtils.formatUnwithE(tmpContent_tDBInput_31);
 								} else {
-									row33.PUBLICATION_TYP = tmpContent_tDBInput_23;
+									row44.PUBLICATION_TYP = tmpContent_tDBInput_31;
 								}
 							} else {
-								row33.PUBLICATION_TYP = null;
+								row44.PUBLICATION_TYP = null;
 							}
 						}
 
 						/**
-						 * [tDBInput_23 begin ] stop
+						 * [tDBInput_31 begin ] stop
 						 */
 
 						/**
-						 * [tDBInput_23 main ] start
+						 * [tDBInput_31 main ] start
 						 */
 
-						currentComponent = "tDBInput_23";
+						currentComponent = "tDBInput_31";
 
-						tos_count_tDBInput_23++;
-
-						/**
-						 * [tDBInput_23 main ] stop
-						 */
+						tos_count_tDBInput_31++;
 
 						/**
-						 * [tDBInput_23 process_data_begin ] start
-						 */
-
-						currentComponent = "tDBInput_23";
-
-						/**
-						 * [tDBInput_23 process_data_begin ] stop
+						 * [tDBInput_31 main ] stop
 						 */
 
 						/**
-						 * [tAdvancedHash_row33 main ] start
+						 * [tDBInput_31 process_data_begin ] start
 						 */
 
-						currentComponent = "tAdvancedHash_row33";
+						currentComponent = "tDBInput_31";
+
+						/**
+						 * [tDBInput_31 process_data_begin ] stop
+						 */
+
+						/**
+						 * [tAdvancedHash_row44 main ] start
+						 */
+
+						currentComponent = "tAdvancedHash_row44";
 
 						if (execStat) {
 							runStat.updateStatOnConnection(iterateId, 1, 1
 
-									, "row33"
+									, "row44"
 
 							);
 						}
 
-						row33Struct row33_HashRow = new row33Struct();
+						row44Struct row44_HashRow = new row44Struct();
 
-						row33_HashRow.FILE_SEQ = row33.FILE_SEQ;
+						row44_HashRow.FILE_SEQ = row44.FILE_SEQ;
 
-						row33_HashRow.FILE_TYPE = row33.FILE_TYPE;
+						row44_HashRow.FILE_TYPE = row44.FILE_TYPE;
 
-						row33_HashRow.FILE_SERIES = row33.FILE_SERIES;
+						row44_HashRow.FILE_SERIES = row44.FILE_SERIES;
 
-						row33_HashRow.FILE_NBR = row33.FILE_NBR;
+						row44_HashRow.FILE_NBR = row44.FILE_NBR;
 
-						row33_HashRow.DOC_ORI = row33.DOC_ORI;
+						row44_HashRow.DOC_ORI = row44.DOC_ORI;
 
-						row33_HashRow.DOC_SERIES = row33.DOC_SERIES;
+						row44_HashRow.DOC_SERIES = row44.DOC_SERIES;
 
-						row33_HashRow.DOC_NBR = row33.DOC_NBR;
+						row44_HashRow.DOC_NBR = row44.DOC_NBR;
 
-						row33_HashRow.IND_IMPORT = row33.IND_IMPORT;
+						row44_HashRow.IND_IMPORT = row44.IND_IMPORT;
 
-						row33_HashRow.APPLICATION_TYPE = row33.APPLICATION_TYPE;
+						row44_HashRow.APPLICATION_TYPE = row44.APPLICATION_TYPE;
 
-						row33_HashRow.APPLICATION_SUBTYPE = row33.APPLICATION_SUBTYPE;
+						row44_HashRow.APPLICATION_SUBTYPE = row44.APPLICATION_SUBTYPE;
 
-						row33_HashRow.LAW_CODE = row33.LAW_CODE;
+						row44_HashRow.LAW_CODE = row44.LAW_CODE;
 
-						row33_HashRow.FILING_DATE = row33.FILING_DATE;
+						row44_HashRow.FILING_DATE = row44.FILING_DATE;
 
-						row33_HashRow.RECEPTION_DATE = row33.RECEPTION_DATE;
+						row44_HashRow.RECEPTION_DATE = row44.RECEPTION_DATE;
 
-						row33_HashRow.PUBLICATION_DATE = row33.PUBLICATION_DATE;
+						row44_HashRow.PUBLICATION_DATE = row44.PUBLICATION_DATE;
 
-						row33_HashRow.PUBLICATION_NOTES = row33.PUBLICATION_NOTES;
+						row44_HashRow.PUBLICATION_NOTES = row44.PUBLICATION_NOTES;
 
-						row33_HashRow.IND_REGISTERED = row33.IND_REGISTERED;
+						row44_HashRow.IND_REGISTERED = row44.IND_REGISTERED;
 
-						row33_HashRow.REGISTRATION_TYPE = row33.REGISTRATION_TYPE;
+						row44_HashRow.REGISTRATION_TYPE = row44.REGISTRATION_TYPE;
 
-						row33_HashRow.REGISTRATION_SERIES = row33.REGISTRATION_SERIES;
+						row44_HashRow.REGISTRATION_SERIES = row44.REGISTRATION_SERIES;
 
-						row33_HashRow.REGISTRATION_NBR = row33.REGISTRATION_NBR;
+						row44_HashRow.REGISTRATION_NBR = row44.REGISTRATION_NBR;
 
-						row33_HashRow.REGISTRATION_DUP = row33.REGISTRATION_DUP;
+						row44_HashRow.REGISTRATION_DUP = row44.REGISTRATION_DUP;
 
-						row33_HashRow.REGISTRATION_DATE = row33.REGISTRATION_DATE;
+						row44_HashRow.REGISTRATION_DATE = row44.REGISTRATION_DATE;
 
-						row33_HashRow.ENTITLEMENT_DATE = row33.ENTITLEMENT_DATE;
+						row44_HashRow.ENTITLEMENT_DATE = row44.ENTITLEMENT_DATE;
 
-						row33_HashRow.EXPIRATION_DATE = row33.EXPIRATION_DATE;
+						row44_HashRow.EXPIRATION_DATE = row44.EXPIRATION_DATE;
 
-						row33_HashRow.EXHIBITION_DATE = row33.EXHIBITION_DATE;
+						row44_HashRow.EXHIBITION_DATE = row44.EXHIBITION_DATE;
 
-						row33_HashRow.EXHIBITION_NOTES = row33.EXHIBITION_NOTES;
+						row44_HashRow.EXHIBITION_NOTES = row44.EXHIBITION_NOTES;
 
-						row33_HashRow.SIGN_TYPE = row33.SIGN_TYPE;
+						row44_HashRow.SIGN_TYPE = row44.SIGN_TYPE;
 
-						row33_HashRow.MARK_NAME = row33.MARK_NAME;
+						row44_HashRow.MARK_NAME = row44.MARK_NAME;
 
-						row33_HashRow.MARK_NAME_LANG2 = row33.MARK_NAME_LANG2;
+						row44_HashRow.MARK_NAME_LANG2 = row44.MARK_NAME_LANG2;
 
-						row33_HashRow.MARK_TRANSLATION = row33.MARK_TRANSLATION;
+						row44_HashRow.MARK_TRANSLATION = row44.MARK_TRANSLATION;
 
-						row33_HashRow.MARK_TRANSLATION_LANG2 = row33.MARK_TRANSLATION_LANG2;
+						row44_HashRow.MARK_TRANSLATION_LANG2 = row44.MARK_TRANSLATION_LANG2;
 
-						row33_HashRow.MARK_TRANSLITERATION = row33.MARK_TRANSLITERATION;
+						row44_HashRow.MARK_TRANSLITERATION = row44.MARK_TRANSLITERATION;
 
-						row33_HashRow.MARK_TRANSLITERATION_LANG2 = row33.MARK_TRANSLITERATION_LANG2;
+						row44_HashRow.MARK_TRANSLITERATION_LANG2 = row44.MARK_TRANSLITERATION_LANG2;
 
-						row33_HashRow.SERIES_DESCRIPTION = row33.SERIES_DESCRIPTION;
+						row44_HashRow.SERIES_DESCRIPTION = row44.SERIES_DESCRIPTION;
 
-						row33_HashRow.COLOUR_DESCRIPTION = row33.COLOUR_DESCRIPTION;
+						row44_HashRow.COLOUR_DESCRIPTION = row44.COLOUR_DESCRIPTION;
 
-						row33_HashRow.COLOUR_DESCR_LANG2 = row33.COLOUR_DESCR_LANG2;
+						row44_HashRow.COLOUR_DESCR_LANG2 = row44.COLOUR_DESCR_LANG2;
 
-						row33_HashRow.DISCLAIMER = row33.DISCLAIMER;
+						row44_HashRow.DISCLAIMER = row44.DISCLAIMER;
 
-						row33_HashRow.DISCLAIMER_LANG2 = row33.DISCLAIMER_LANG2;
+						row44_HashRow.DISCLAIMER_LANG2 = row44.DISCLAIMER_LANG2;
 
-						row33_HashRow.BY_CONSENT = row33.BY_CONSENT;
+						row44_HashRow.BY_CONSENT = row44.BY_CONSENT;
 
-						row33_HashRow.REGULATIONS = row33.REGULATIONS;
+						row44_HashRow.REGULATIONS = row44.REGULATIONS;
 
-						row33_HashRow.NOTES = row33.NOTES;
+						row44_HashRow.NOTES = row44.NOTES;
 
-						row33_HashRow.CAPTURE_USER_ID = row33.CAPTURE_USER_ID;
+						row44_HashRow.CAPTURE_USER_ID = row44.CAPTURE_USER_ID;
 
-						row33_HashRow.CAPTURE_DATE = row33.CAPTURE_DATE;
+						row44_HashRow.CAPTURE_DATE = row44.CAPTURE_DATE;
 
-						row33_HashRow.PUBLICATION_NBR = row33.PUBLICATION_NBR;
+						row44_HashRow.PUBLICATION_NBR = row44.PUBLICATION_NBR;
 
-						row33_HashRow.PUBLICATION_SER = row33.PUBLICATION_SER;
+						row44_HashRow.PUBLICATION_SER = row44.PUBLICATION_SER;
 
-						row33_HashRow.PUBLICATION_TYP = row33.PUBLICATION_TYP;
+						row44_HashRow.PUBLICATION_TYP = row44.PUBLICATION_TYP;
 
-						tHash_Lookup_row33.put(row33_HashRow);
+						tHash_Lookup_row44.put(row44_HashRow);
 
-						tos_count_tAdvancedHash_row33++;
+						tos_count_tAdvancedHash_row44++;
 
 						/**
-						 * [tAdvancedHash_row33 main ] stop
+						 * [tAdvancedHash_row44 main ] stop
 						 */
 
 						/**
-						 * [tAdvancedHash_row33 process_data_begin ] start
+						 * [tAdvancedHash_row44 process_data_begin ] start
 						 */
 
-						currentComponent = "tAdvancedHash_row33";
+						currentComponent = "tAdvancedHash_row44";
 
 						/**
-						 * [tAdvancedHash_row33 process_data_begin ] stop
-						 */
-
-						/**
-						 * [tAdvancedHash_row33 process_data_end ] start
-						 */
-
-						currentComponent = "tAdvancedHash_row33";
-
-						/**
-						 * [tAdvancedHash_row33 process_data_end ] stop
+						 * [tAdvancedHash_row44 process_data_begin ] stop
 						 */
 
 						/**
-						 * [tDBInput_23 process_data_end ] start
+						 * [tAdvancedHash_row44 process_data_end ] start
 						 */
 
-						currentComponent = "tDBInput_23";
+						currentComponent = "tAdvancedHash_row44";
 
 						/**
-						 * [tDBInput_23 process_data_end ] stop
+						 * [tAdvancedHash_row44 process_data_end ] stop
 						 */
 
 						/**
-						 * [tDBInput_23 end ] start
+						 * [tDBInput_31 process_data_end ] start
 						 */
 
-						currentComponent = "tDBInput_23";
+						currentComponent = "tDBInput_31";
+
+						/**
+						 * [tDBInput_31 process_data_end ] stop
+						 */
+
+						/**
+						 * [tDBInput_31 end ] start
+						 */
+
+						currentComponent = "tDBInput_31";
 
 					}
 				} finally {
-					if (rs_tDBInput_23 != null) {
-						rs_tDBInput_23.close();
+					if (rs_tDBInput_31 != null) {
+						rs_tDBInput_31.close();
 					}
-					if (stmt_tDBInput_23 != null) {
-						stmt_tDBInput_23.close();
+					if (stmt_tDBInput_31 != null) {
+						stmt_tDBInput_31.close();
 					}
 				}
-				globalMap.put("tDBInput_23_NB_LINE", nb_line_tDBInput_23);
+				globalMap.put("tDBInput_31_NB_LINE", nb_line_tDBInput_31);
 
-				ok_Hash.put("tDBInput_23", true);
-				end_Hash.put("tDBInput_23", System.currentTimeMillis());
+				ok_Hash.put("tDBInput_31", true);
+				end_Hash.put("tDBInput_31", System.currentTimeMillis());
 
 				/**
-				 * [tDBInput_23 end ] stop
+				 * [tDBInput_31 end ] stop
 				 */
 
 				/**
-				 * [tAdvancedHash_row33 end ] start
+				 * [tAdvancedHash_row44 end ] start
 				 */
 
-				currentComponent = "tAdvancedHash_row33";
+				currentComponent = "tAdvancedHash_row44";
 
-				tHash_Lookup_row33.endPut();
+				tHash_Lookup_row44.endPut();
 
 				if (execStat) {
-					runStat.updateStat(resourceMap, iterateId, 2, 0, "row33");
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row44");
 				}
 
-				ok_Hash.put("tAdvancedHash_row33", true);
-				end_Hash.put("tAdvancedHash_row33", System.currentTimeMillis());
+				ok_Hash.put("tAdvancedHash_row44", true);
+				end_Hash.put("tAdvancedHash_row44", System.currentTimeMillis());
 
 				/**
-				 * [tAdvancedHash_row33 end ] stop
+				 * [tAdvancedHash_row44 end ] stop
 				 */
 
 			} // end the resume
@@ -6623,23 +12706,23 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			try {
 
 				/**
-				 * [tDBInput_23 finally ] start
+				 * [tDBInput_31 finally ] start
 				 */
 
-				currentComponent = "tDBInput_23";
+				currentComponent = "tDBInput_31";
 
 				/**
-				 * [tDBInput_23 finally ] stop
+				 * [tDBInput_31 finally ] stop
 				 */
 
 				/**
-				 * [tAdvancedHash_row33 finally ] start
+				 * [tAdvancedHash_row44 finally ] start
 				 */
 
-				currentComponent = "tAdvancedHash_row33";
+				currentComponent = "tAdvancedHash_row44";
 
 				/**
-				 * [tAdvancedHash_row33 finally ] stop
+				 * [tAdvancedHash_row44 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -6650,7 +12733,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			resourceMap = null;
 		}
 
-		globalMap.put("tDBInput_23_SUBPROCESS_STATE", 1);
+		globalMap.put("tDBInput_31_SUBPROCESS_STATE", 1);
 	}
 
 	public static class row1Struct implements routines.system.IPersistableRow<row1Struct> {
@@ -7661,6 +13744,18 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 			runStat.stopThreadStat();
 		}
 		int returnCode = 0;
+
+		Integer localErrorCode = (Integer) (((java.util.Map) threadLocal.get()).get("errorCode"));
+		String localStatus = (String) (((java.util.Map) threadLocal.get()).get("status"));
+		if (localErrorCode != null) {
+			if (errorCode == null || localErrorCode.compareTo(errorCode) > 0) {
+				errorCode = localErrorCode;
+			}
+		}
+		if (localStatus != null && !status.equals("failure")) {
+			status = localStatus;
+		}
+
 		if (errorCode == null) {
 			returnCode = status != null && status.equals("failure") ? 1 : 0;
 		} else {
@@ -7816,6 +13911,6 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 254842 characters generated by Talend Open Studio for Data Integration on the
- * October 21, 2020 at 5:12:41 PM CEST
+ * 438404 characters generated by Talend Open Studio for Data Integration on the
+ * October 30, 2020 at 7:29:43 PM CET
  ************************************************************************************************/

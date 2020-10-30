@@ -269,6 +269,73 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_7iUjsBq7EeuOueoz23vjqQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - userdocs",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "IPAS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_AGENT_PERSONS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC_FILES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC_OWNERS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC_REPRS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - movimiento_docum",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - titular",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - IP_USER",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_8ml8IMgREequdY9ihDRzng",
     "version" : "0.1",
     "type" : "job"
@@ -2617,11 +2684,19 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_VIENNA_CLASSES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
     "id" : "_bkUIkPwHEeqFhtRqCTUfWA - agente",
     "version" : "Latest",
     "type" : "schema"
   }, {
     "id" : "_bkUIkPwHEeqFhtRqCTUfWA - denominacion",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - logotipo_clasific",
     "version" : "Latest",
     "type" : "schema"
   }, {

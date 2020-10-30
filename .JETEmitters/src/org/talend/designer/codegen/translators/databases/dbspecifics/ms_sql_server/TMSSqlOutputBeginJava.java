@@ -69,411 +69,410 @@ public class TMSSqlOutputBeginJava {
   protected final String TEXT_40 = " = 0;" + NL + "" + NL + "int deletedCount_";
   protected final String TEXT_41 = "=0;" + NL + "int updatedCount_";
   protected final String TEXT_42 = "=0;" + NL + "int insertedCount_";
-  protected final String TEXT_43 = "=0;" + NL + "int rowsToCommitCount_";
-  protected final String TEXT_44 = "=0;" + NL + "int rejectedCount_";
-  protected final String TEXT_45 = "=0;" + NL + "String dbschema_";
-  protected final String TEXT_46 = " = null;" + NL + "String tableName_";
-  protected final String TEXT_47 = " = null;" + NL + "boolean whetherReject_";
-  protected final String TEXT_48 = " = false;" + NL + "" + NL + "java.util.Calendar calendar_";
-  protected final String TEXT_49 = " = java.util.Calendar.getInstance();" + NL + "long year1_";
-  protected final String TEXT_50 = " = TalendDate.parseDate(\"yyyy-MM-dd\",\"0001-01-01\").getTime();" + NL + "long year2_";
-  protected final String TEXT_51 = " = TalendDate.parseDate(\"yyyy-MM-dd\",\"1753-01-01\").getTime();" + NL + "long year10000_";
-  protected final String TEXT_52 = " = TalendDate.parseDate(\"yyyy-MM-dd HH:mm:ss\",\"9999-12-31 24:00:00\").getTime();" + NL + "long date_";
-  protected final String TEXT_53 = ";" + NL + "" + NL + "java.util.Calendar calendar_datetimeoffset_";
-  protected final String TEXT_54 = " = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone(\"UTC\"));" + NL;
-  protected final String TEXT_55 = NL + "        int updateKeyCount_";
-  protected final String TEXT_56 = " = ";
-  protected final String TEXT_57 = ";" + NL + "        if(updateKeyCount_";
-  protected final String TEXT_58 = " < 1) {" + NL + "            throw new RuntimeException(\"For update, Schema must have a key\");" + NL + "        }";
-  protected final String TEXT_59 = NL + "        int deleteKeyCount_";
-  protected final String TEXT_60 = ";" + NL + "        if(deleteKeyCount_";
-  protected final String TEXT_61 = " < 1) {" + NL + "            throw new RuntimeException(\"For delete, Schema must have a key\");" + NL + "        }";
-  protected final String TEXT_62 = NL + "        int insertKeyCount_";
-  protected final String TEXT_63 = ";" + NL + "        if(insertKeyCount_";
-  protected final String TEXT_64 = " < 1) {" + NL + "            throw new RuntimeException(\"For insert if not exist, Schema must have a key\");" + NL + "        }";
-  protected final String TEXT_65 = NL + "\t";
-  protected final String TEXT_66 = NL + "java.sql.Connection conn_";
-  protected final String TEXT_67 = " = null;";
-  protected final String TEXT_68 = NL + "String dbUser_";
-  protected final String TEXT_69 = NL + "\tdbschema_";
-  protected final String TEXT_70 = ";" + NL + "\t";
-  protected final String TEXT_71 = " = (String)globalMap.get(\"";
-  protected final String TEXT_72 = "\");" + NL + "\t";
-  protected final String TEXT_73 = NL + "\tconn_";
-  protected final String TEXT_74 = " = (java.sql.Connection)globalMap.get(\"";
-  protected final String TEXT_75 = NL + "\t\tjava.util.Map<String, routines.system.TalendDataSource> dataSources_";
-  protected final String TEXT_76 = " = (java.util.Map<String, routines.system.TalendDataSource>) globalMap.get(KEY_DB_DATASOURCES);" + NL + "\t\tif (null != dataSources_";
-  protected final String TEXT_77 = ") {" + NL + "\t\t\tString dsAlias_";
-  protected final String TEXT_78 = ";" + NL + "    \t\tif (dataSources_";
-  protected final String TEXT_79 = ".get(dsAlias_";
-  protected final String TEXT_80 = ") == null) {" + NL + "       \t\t\tthrow new RuntimeException(\"No DataSource with alias: \" + dsAlias_";
-  protected final String TEXT_81 = " + \" available!\");" + NL + "          \t}" + NL + "    \t\tconn_";
-  protected final String TEXT_82 = " = dataSources_";
-  protected final String TEXT_83 = ").getConnection();" + NL + "\t\t} else {" + NL + "\t";
-  protected final String TEXT_84 = NL + "    dbschema_";
-  protected final String TEXT_85 = ";";
-  protected final String TEXT_86 = NL + "    String driverClass_";
-  protected final String TEXT_87 = " = \"net.sourceforge.jtds.jdbc.Driver\";";
-  protected final String TEXT_88 = " = \"com.microsoft.sqlserver.jdbc.SQLServerDriver\";";
-  protected final String TEXT_89 = NL + "\t";
-  protected final String TEXT_90 = NL + "    java.lang.Class.forName(driverClass_";
-  protected final String TEXT_91 = ");" + NL + "    String port_";
-  protected final String TEXT_92 = ";" + NL + "    String dbname_";
-  protected final String TEXT_93 = " ;";
-  protected final String TEXT_94 = NL + "    String url_";
-  protected final String TEXT_95 = " = \"jdbc:jtds:sqlserver://\" + ";
-  protected final String TEXT_96 = " = \"jdbc:sqlserver://\" + ";
-  protected final String TEXT_97 = " " + NL + "    if (!\"\".equals(port_";
-  protected final String TEXT_98 = ")) {" + NL + "    \turl_";
-  protected final String TEXT_99 = " += \":\" + ";
-  protected final String TEXT_100 = ";" + NL + "    }" + NL + "    if (!\"\".equals(dbname_";
-  protected final String TEXT_101 = ")) {";
-  protected final String TEXT_102 = NL + "\t\t\t\turl_";
-  protected final String TEXT_103 = " += \"//\" + ";
-  protected final String TEXT_104 = "; " + NL + "\t";
-  protected final String TEXT_105 = "\t\t    " + NL + "\t\t    \turl_";
-  protected final String TEXT_106 = " += \";databaseName=\" + ";
-  protected final String TEXT_107 = NL + "    }";
-  protected final String TEXT_108 = NL + "        url_";
-  protected final String TEXT_109 = " += \";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;Authentication=ActiveDirectoryPassword\";" + NL + "        url_";
-  protected final String TEXT_110 = " += \";database=\" + ";
-  protected final String TEXT_111 = NL + "    url_";
-  protected final String TEXT_112 = " += \";appName=\" + projectName + \";\" + ";
-  protected final String TEXT_113 = ";" + NL + "    dbUser_";
-  protected final String TEXT_114 = ";" + NL;
-  protected final String TEXT_115 = NL;
-  protected final String TEXT_116 = " " + NL + "\tfinal String decryptedPassword_";
-  protected final String TEXT_117 = " = routines.system.PasswordEncryptUtil.decryptPassword(";
-  protected final String TEXT_118 = NL + "\tfinal String decryptedPassword_";
-  protected final String TEXT_119 = "; ";
-  protected final String TEXT_120 = NL + NL + "    String dbPwd_";
-  protected final String TEXT_121 = " = decryptedPassword_";
-  protected final String TEXT_122 = "\t" + NL + "    conn_";
-  protected final String TEXT_123 = " = java.sql.DriverManager.getConnection(url_";
-  protected final String TEXT_124 = ",dbUser_";
-  protected final String TEXT_125 = ",dbPwd_";
-  protected final String TEXT_126 = NL + "\t\t}" + NL + "\t";
-  protected final String TEXT_127 = NL + "\t\tresourceMap.put(\"conn_";
-  protected final String TEXT_128 = "\", conn_";
-  protected final String TEXT_129 = ");" + NL + "\t";
-  protected final String TEXT_130 = NL + "        conn_";
-  protected final String TEXT_131 = ".setAutoCommit(false);" + NL + "        int commitEvery_";
-  protected final String TEXT_132 = ";" + NL + "        int commitCounter_";
-  protected final String TEXT_133 = " = 0;" + NL;
-  protected final String TEXT_134 = NL + "   int batchSize_";
-  protected final String TEXT_135 = ";" + NL + "   int batchSizeCounter_";
-  protected final String TEXT_136 = "=0;";
-  protected final String TEXT_137 = NL + NL + "if(dbschema_";
-  protected final String TEXT_138 = " == null || dbschema_";
-  protected final String TEXT_139 = ".trim().length() == 0) {" + NL + "    tableName_";
-  protected final String TEXT_140 = ";" + NL + "} else {" + NL + "    tableName_";
-  protected final String TEXT_141 = " = dbschema_";
-  protected final String TEXT_142 = " + \"].[\" + ";
-  protected final String TEXT_143 = ";" + NL + "}";
-  protected final String TEXT_144 = NL + "\tint count_";
-  protected final String TEXT_145 = "=0;" + NL;
-  protected final String TEXT_146 = NL + "            try (java.sql.Statement stmtDrop_";
-  protected final String TEXT_147 = " = conn_";
-  protected final String TEXT_148 = ".createStatement()) {";
-  protected final String TEXT_149 = NL + "                              stmtDrop_";
-  protected final String TEXT_150 = ".setQueryTimeout(Integer.valueOf(Integer.valueOf(";
-  protected final String TEXT_151 = ")));";
-  protected final String TEXT_152 = NL + "                stmtDrop_";
-  protected final String TEXT_153 = ".execute(\"";
-  protected final String TEXT_154 = "\" ";
-  protected final String TEXT_155 = NL + "            }";
-  protected final String TEXT_156 = NL + "                 conn_";
-  protected final String TEXT_157 = ".commit();";
-  protected final String TEXT_158 = NL + "            try (java.sql.Statement stmtCreate_";
-  protected final String TEXT_159 = NL + "                              stmtCreate_";
-  protected final String TEXT_160 = ".setQueryTimeout(Integer.valueOf(";
-  protected final String TEXT_161 = "));";
-  protected final String TEXT_162 = NL + "                    \troutines.system.Dynamic dynamic_";
-  protected final String TEXT_163 = ";" + NL + "\t                    if (";
-  protected final String TEXT_164 = ") {" + NL + "\t                        for (int i = 0; i < dynamic_";
-  protected final String TEXT_165 = ".getColumnCount(); i++) {" + NL + "\t                        \troutines.system.DynamicMetadata column = dynamic_";
-  protected final String TEXT_166 = ".getColumnMetadata(i);" + NL + "\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t                        }" + NL + "\t                    }" + NL + "                        stmtCreate_";
-  protected final String TEXT_167 = ".execute(((\"";
-  protected final String TEXT_168 = "\").replace(\"{TALEND_DYNAMIC_COLUMN}\",DynamicUtils.getCreateTableSQL(dynamic_";
-  protected final String TEXT_169 = ", \"";
-  protected final String TEXT_170 = "\")";
-  protected final String TEXT_171 = ".toUpperCase()";
-  protected final String TEXT_172 = ")+\")";
-  protected final String TEXT_173 = "\"));";
-  protected final String TEXT_174 = NL + "                stmtCreate_";
-  protected final String TEXT_175 = ")\");";
-  protected final String TEXT_176 = NL + "                    routines.system.Dynamic dynamic_";
-  protected final String TEXT_177 = ";" + NL + "                    if (";
-  protected final String TEXT_178 = ") {" + NL + "                        for (int i = 0; i < dynamic_";
-  protected final String TEXT_179 = ".getColumnCount(); i++) {" + NL + "                        \troutines.system.DynamicMetadata column = dynamic_";
-  protected final String TEXT_180 = ".getColumnMetadata(i);" + NL + "                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "                        }" + NL + "                    }" + NL + "                    stmtCreate_";
-  protected final String TEXT_181 = NL + "                    String keyCheckTable_";
-  protected final String TEXT_182 = " = \"[Informix]\"+\"[\"+";
-  protected final String TEXT_183 = "+\"][\"+";
-  protected final String TEXT_184 = "+\"]\"+ \"[checktable]\" + \"[\" + ";
-  protected final String TEXT_185 = " + \"]\";";
-  protected final String TEXT_186 = NL + "                    // [%connection%][checktable][tableName]" + NL + "                    String keyCheckTable_";
-  protected final String TEXT_187 = " + \"[checktable]\" + \"[\" + ";
-  protected final String TEXT_188 = NL + NL + "                if(GlobalResource.resourceMap.get(keyCheckTable_";
-  protected final String TEXT_189 = ")== null){//}" + NL + "" + NL + "                    synchronized (GlobalResource.resourceLockMap.get(keyCheckTable_";
-  protected final String TEXT_190 = ")) {//}" + NL + "                        if(GlobalResource.resourceMap.get(keyCheckTable_";
-  protected final String TEXT_191 = ")== null){//}";
-  protected final String TEXT_192 = NL + "                                boolean whetherExist_";
-  protected final String TEXT_193 = " = false;" + NL + "                                try (java.sql.Statement isExistStmt_";
-  protected final String TEXT_194 = ".createStatement()) {" + NL + "                                    try {" + NL + "                                        isExistStmt_";
-  protected final String TEXT_195 = ".execute(\"SELECT TOP 1 1 FROM [\" + tableName_";
-  protected final String TEXT_196 = " + \"]\" );" + NL + "                                        whetherExist_";
-  protected final String TEXT_197 = " = true;" + NL + "                                    } catch (java.lang.Exception e){" + NL + "                                        whetherExist_";
-  protected final String TEXT_198 = " = false;" + NL + "                                    }" + NL + "                                }";
-  protected final String TEXT_199 = NL + "                                ";
-  protected final String TEXT_200 = NL + "                                java.sql.DatabaseMetaData dbMetaData_";
-  protected final String TEXT_201 = ".getMetaData();" + NL + "                                if(tableNameForSearch_";
-  protected final String TEXT_202 = ".indexOf(\"\\\"\")==-1){" + NL + "                                    tableNameForSearch_";
-  protected final String TEXT_203 = " = tableNameForSearch_";
-  protected final String TEXT_204 = ".toUpperCase();" + NL + "                                }else{" + NL + "                                    tableNameForSearch_";
-  protected final String TEXT_205 = ".replaceAll(\"\\\"\",\"\");" + NL + "                                }" + NL + "                                boolean whetherExist_";
-  protected final String TEXT_206 = " = false;" + NL + "                                try (java.sql.ResultSet rsTable_";
-  protected final String TEXT_207 = " = dbMetaData_";
-  protected final String TEXT_208 = ".getTables(null, dbschemaForSearch_";
-  protected final String TEXT_209 = ", tableNameForSearch_";
-  protected final String TEXT_210 = ", new String[]{\"TABLE\"})) {" + NL + "                                    if(rsTable_";
-  protected final String TEXT_211 = ".next()) {" + NL + "                                        whetherExist_";
-  protected final String TEXT_212 = " = true;" + NL + "                                    }" + NL + "                                }" + NL;
-  protected final String TEXT_213 = ".getMetaData();" + NL + "                                boolean whetherExist_";
-  protected final String TEXT_214 = ".getTables(null, null, null, new String[]{\"TABLE\"})) {" + NL + "                                    while(rsTable_";
-  protected final String TEXT_215 = ".next()) {" + NL + "                                        String table_";
-  protected final String TEXT_216 = " = rsTable_";
-  protected final String TEXT_217 = ".getString(\"TABLE_NAME\");" + NL + "                                        String schema_";
-  protected final String TEXT_218 = ".getString(\"TABLE_SCHEM\");" + NL + "                                        if(table_";
-  protected final String TEXT_219 = ".equals";
-  protected final String TEXT_220 = "IgnoreCase";
-  protected final String TEXT_221 = "(";
-  protected final String TEXT_222 = ")" + NL + "                                            && (schema_";
-  protected final String TEXT_223 = "(dbschema_";
-  protected final String TEXT_224 = ") || dbschema_";
-  protected final String TEXT_225 = ".trim().length() ==0)) {" + NL + "                                            whetherExist_";
-  protected final String TEXT_226 = " = true;" + NL + "                                            break;" + NL + "                                        }" + NL + "                                    }" + NL + "                                }";
-  protected final String TEXT_227 = "((";
-  protected final String TEXT_228 = ")";
-  protected final String TEXT_229 = ") || (dbschema_";
-  protected final String TEXT_230 = ".trim().length() ==0 && dbUser_";
-  protected final String TEXT_231 = ".equalsIgnoreCase(schema_";
-  protected final String TEXT_232 = ")))) {" + NL + "                                            whetherExist_";
-  protected final String TEXT_233 = ".getTables(null, null, null, new String[]{\"TABLE\"})) {" + NL + "                                    String defaultSchema_";
-  protected final String TEXT_234 = " = \"public\";" + NL + "                                    if(dbschema_";
-  protected final String TEXT_235 = ".trim().length() == 0) {" + NL + "                                        try(java.sql.Statement stmtSchema_";
-  protected final String TEXT_236 = ".createStatement();" + NL + "                                            java.sql.ResultSet rsSchema_";
-  protected final String TEXT_237 = " = stmtSchema_";
-  protected final String TEXT_238 = ".executeQuery(\"select current_schema() \")) {" + NL + "                                            while(rsSchema_";
-  protected final String TEXT_239 = ".next()){" + NL + "                                                defaultSchema_";
-  protected final String TEXT_240 = " = rsSchema_";
-  protected final String TEXT_241 = ".getString(\"current_schema\");" + NL + "                                            }" + NL + "                                        }" + NL + "                                    }" + NL + "                                    while(rsTable_";
-  protected final String TEXT_242 = ".toLowerCase()";
-  protected final String TEXT_243 = ") || ((dbschema_";
-  protected final String TEXT_244 = " ==null || dbschema_";
-  protected final String TEXT_245 = ".trim().length() ==0) && defaultSchema_";
-  protected final String TEXT_246 = "(schema_";
-  protected final String TEXT_247 = NL + "                                String tableForSearch_";
-  protected final String TEXT_248 = ";" + NL + "                                if(tableForSearch_";
-  protected final String TEXT_249 = " != null){" + NL + "                                    if(tableForSearch_";
-  protected final String TEXT_250 = ".startsWith(\"\\\"\") && tableForSearch_";
-  protected final String TEXT_251 = ".endsWith(\"\\\"\")){" + NL + "                                        tableForSearch_";
-  protected final String TEXT_252 = " =  tableForSearch_";
-  protected final String TEXT_253 = ".substring(1,tableForSearch_";
-  protected final String TEXT_254 = ".length()-1);" + NL + "                                    }else{" + NL + "                                        tableForSearch_";
-  protected final String TEXT_255 = ".toUpperCase();" + NL + "                                    }" + NL + "                                }" + NL + "                                java.sql.DatabaseMetaData dbMetaData_";
-  protected final String TEXT_256 = ".getMetaData();" + NL + "                                boolean whetherExist_";
-  protected final String TEXT_257 = " = false;" + NL + "                                try (java.sql.ResultSet rsTable_";
-  protected final String TEXT_258 = ".getTables(null, conn_";
-  protected final String TEXT_259 = ".getSchema(), tableForSearch_";
-  protected final String TEXT_260 = ", new String[]{\"TABLE\"})) {" + NL + "                                       if(rsTable_";
-  protected final String TEXT_261 = " = true;" + NL + "                                    }" + NL + "                                }";
-  protected final String TEXT_262 = ".getTables(null, schemaForSearch_";
-  protected final String TEXT_263 = ", null, new String[]{\"TABLE\"})) {" + NL + "                                    while(rsTable_";
-  protected final String TEXT_264 = ".next()) {" + NL + "                                        if(rsTable_";
-  protected final String TEXT_265 = ".getString(\"TABLE_NAME\").equalsIgnoreCase(tableForSearch_";
-  protected final String TEXT_266 = ")) {" + NL + "                                            whetherExist_";
-  protected final String TEXT_267 = " = true;" + NL + "                                            break;" + NL + "                                        }" + NL + "                                    }" + NL + "                                }" + NL + "                            " + NL + "                            ";
-  protected final String TEXT_268 = ".getMetaData();";
-  protected final String TEXT_269 = NL + "                                    java.sql.ResultSet rsTable_";
-  protected final String TEXT_270 = ".getTables(";
-  protected final String TEXT_271 = ", null, null, new String[]{\"TABLE\"});";
-  protected final String TEXT_272 = ".getTables(conn_";
-  protected final String TEXT_273 = ".getCatalog(), null, null, new String[]{\"TABLE\"});";
-  protected final String TEXT_274 = " = false;" + NL + "                                while(rsTable_";
-  protected final String TEXT_275 = ".next()) {" + NL + "                                    String table_";
-  protected final String TEXT_276 = ".getString(\"TABLE_NAME\");" + NL + "                                    if(table_";
-  protected final String TEXT_277 = ".equalsIgnoreCase(";
-  protected final String TEXT_278 = ")) {" + NL + "                                        whetherExist_";
-  protected final String TEXT_279 = " = true;" + NL + "                                        break;" + NL + "                                    }" + NL + "                                }";
-  protected final String TEXT_280 = ".getString(\"TABLE_NAME\");" + NL + "                                        if(table_";
-  protected final String TEXT_281 = NL + "                                if(!whetherExist_";
-  protected final String TEXT_282 = ") {" + NL + "                                    try (java.sql.Statement stmtCreate_";
-  protected final String TEXT_283 = NL + "                                                      stmtCreate_";
-  protected final String TEXT_284 = NL + "                                            routines.system.Dynamic dynamic_";
-  protected final String TEXT_285 = ";" + NL + "\t\t\t\t\t\t                    if (";
-  protected final String TEXT_286 = ") {" + NL + "\t\t\t\t\t\t                        for (int i = 0; i < dynamic_";
-  protected final String TEXT_287 = ".getColumnCount(); i++) {" + NL + "\t\t\t\t\t\t                        \troutines.system.DynamicMetadata column = dynamic_";
-  protected final String TEXT_288 = ".getColumnMetadata(i);" + NL + "\t\t\t\t\t\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t\t\t\t\t\t                        }" + NL + "\t\t\t\t\t\t                    }" + NL + "                                            stmtCreate_";
-  protected final String TEXT_289 = NL + "                                        stmtCreate_";
-  protected final String TEXT_290 = NL + "                                    }" + NL + "                                }";
-  protected final String TEXT_291 = NL + "                                if(whetherExist_";
-  protected final String TEXT_292 = ") {" + NL + "                                    try (java.sql.Statement stmtDrop_";
-  protected final String TEXT_293 = NL + "                                                      stmtDrop_";
-  protected final String TEXT_294 = NL + "                                        stmtDrop_";
-  protected final String TEXT_295 = NL + "                                    }";
-  protected final String TEXT_296 = NL + "                                            conn_";
-  protected final String TEXT_297 = NL + "                                }" + NL + "                                try(java.sql.Statement stmtCreate_";
-  protected final String TEXT_298 = NL + "                                                  stmtCreate_";
-  protected final String TEXT_299 = NL + "\t\t                                routines.system.Dynamic dynamic_";
-  protected final String TEXT_300 = ";" + NL + "\t\t\t\t\t                    if (";
-  protected final String TEXT_301 = ") {" + NL + "\t\t\t\t\t                        for (int i = 0; i < dynamic_";
-  protected final String TEXT_302 = ".getColumnCount(); i++) {" + NL + "\t\t\t\t\t                        \troutines.system.DynamicMetadata column = dynamic_";
-  protected final String TEXT_303 = ".getColumnMetadata(i);" + NL + "\t\t\t\t\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t\t\t\t\t                        }" + NL + "\t\t\t\t\t                    }" + NL + "                                        stmtCreate_";
-  protected final String TEXT_304 = NL + "                                    stmtCreate_";
-  protected final String TEXT_305 = NL + "                                }";
-  protected final String TEXT_306 = NL + "                            GlobalResource.resourceMap.put(keyCheckTable_";
-  protected final String TEXT_307 = ", true);" + NL + "            //{{{" + NL + "                        } // end of if" + NL + "                    } // end synchronized" + NL + "                }";
-  protected final String TEXT_308 = NL + "            try (java.sql.Statement stmtClear_";
-  protected final String TEXT_309 = NL + "                              stmtClear_";
-  protected final String TEXT_310 = NL + "                stmtClear_";
-  protected final String TEXT_311 = ".executeUpdate(\"";
-  protected final String TEXT_312 = "\");";
-  protected final String TEXT_313 = NL + "            int rsTruncCountNumber_";
-  protected final String TEXT_314 = " = 0;" + NL + "            try(java.sql.Statement stmtTruncCount_";
-  protected final String TEXT_315 = NL + "                              stmtTruncCount_";
-  protected final String TEXT_316 = NL + "                try (java.sql.ResultSet rsTruncCount_";
-  protected final String TEXT_317 = " = stmtTruncCount_";
-  protected final String TEXT_318 = ".executeQuery(\"";
-  protected final String TEXT_319 = "\")) {" + NL + "                    if(rsTruncCount_";
-  protected final String TEXT_320 = ".next()) {" + NL + "                        rsTruncCountNumber_";
-  protected final String TEXT_321 = " = rsTruncCount_";
-  protected final String TEXT_322 = ".getInt(1);" + NL + "                    }" + NL + "                }" + NL + "            }" + NL + "            try (java.sql.Statement stmtTrunc_";
-  protected final String TEXT_323 = NL + "                              stmtTrunc_";
-  protected final String TEXT_324 = NL + "                conn_";
-  protected final String TEXT_325 = NL + "                stmtTrunc_";
-  protected final String TEXT_326 = NL + "                    if(!conn_";
-  protected final String TEXT_327 = ".getAutoCommit()){" + NL + "                        conn_";
-  protected final String TEXT_328 = ".commit();" + NL + "                    }";
-  protected final String TEXT_329 = NL + "                deletedCount_";
-  protected final String TEXT_330 = " += rsTruncCountNumber_";
-  protected final String TEXT_331 = ";" + NL + "            }";
-  protected final String TEXT_332 = NL + "            try (java.sql.Statement stmtTruncCount_";
-  protected final String TEXT_333 = ".createStatement();" + NL + "                java.sql.ResultSet rsTruncCount_";
-  protected final String TEXT_334 = "\");" + NL + "                java.sql.Statement stmtTrunc_";
-  protected final String TEXT_335 = NL + "                while(rsTruncCount_";
-  protected final String TEXT_336 = ".next()) {" + NL + "                    deletedCount_";
-  protected final String TEXT_337 = " += rsTruncCount_";
-  protected final String TEXT_338 = ".getInt(1);" + NL + "                }" + NL + "            }";
-  protected final String TEXT_339 = NL + "        String insert_";
-  protected final String TEXT_340 = " = \"INSERT INTO [\" + tableName_";
-  protected final String TEXT_341 = " + \"] (";
-  protected final String TEXT_342 = ") VALUES (";
-  protected final String TEXT_343 = ")\";";
-  protected final String TEXT_344 = NL + "        java.sql.PreparedStatement pstmt_";
-  protected final String TEXT_345 = ".prepareStatement(insert_";
-  protected final String TEXT_346 = ");" + NL + "        resourceMap.put(\"pstmt_";
-  protected final String TEXT_347 = "\", pstmt_";
-  protected final String TEXT_348 = " = null;" + NL + "        String keyPsmt_";
-  protected final String TEXT_349 = " + \"[psmt]\" + \"[\" + ";
-  protected final String TEXT_350 = " + \"]\";" + NL + "        pstmt_";
-  protected final String TEXT_351 = " = SharedDBPreparedStatement.getSharedPreparedStatement(conn_";
-  protected final String TEXT_352 = ",insert_";
-  protected final String TEXT_353 = ",keyPsmt_";
-  protected final String TEXT_354 = NL + "        String update_";
-  protected final String TEXT_355 = " = \"UPDATE [\" + tableName_";
-  protected final String TEXT_356 = " + \"] SET ";
-  protected final String TEXT_357 = " WHERE ";
-  protected final String TEXT_358 = "\";" + NL + "        java.sql.PreparedStatement pstmt_";
-  protected final String TEXT_359 = ".prepareStatement(update_";
-  protected final String TEXT_360 = ".prepareStatement(\"SELECT COUNT(1) FROM [\" + tableName_";
-  protected final String TEXT_361 = " + \"] WHERE ";
-  protected final String TEXT_362 = "\");" + NL + "        resourceMap.put(\"pstmt_";
-  protected final String TEXT_363 = ");" + NL + "        String insert_";
-  protected final String TEXT_364 = ")\";" + NL + "        java.sql.PreparedStatement pstmtInsert_";
-  protected final String TEXT_365 = ");" + NL + "        resourceMap.put(\"pstmtInsert_";
-  protected final String TEXT_366 = "\", pstmtInsert_";
-  protected final String TEXT_367 = ");" + NL + "        String update_";
-  protected final String TEXT_368 = "\";" + NL + "        java.sql.PreparedStatement pstmtUpdate_";
-  protected final String TEXT_369 = ");" + NL + "        resourceMap.put(\"pstmtUpdate_";
-  protected final String TEXT_370 = "\", pstmtUpdate_";
-  protected final String TEXT_371 = NL + "        String delete_";
-  protected final String TEXT_372 = " = \"DELETE FROM [\" + tableName_";
-  protected final String TEXT_373 = ".prepareStatement(delete_";
-  protected final String TEXT_374 = NL + NL + "    class BufferLine_";
-  protected final String TEXT_375 = " {";
-  protected final String TEXT_376 = " ";
-  protected final String TEXT_377 = NL + NL + "        public BufferLine_";
-  protected final String TEXT_378 = NL + "                    ,";
-  protected final String TEXT_379 = NL + "        ){";
-  protected final String TEXT_380 = NL + "                    this.";
-  protected final String TEXT_381 = NL + "        }" + NL + "    }" + NL + "" + NL + "    java.util.List<BufferLine_";
-  protected final String TEXT_382 = "> sInsertColValueList";
-  protected final String TEXT_383 = " = new java.util.ArrayList();" + NL + "    BufferLine_";
-  protected final String TEXT_384 = " sInsertColValue";
-  protected final String TEXT_385 = " = null;" + NL + "" + NL + "    StringBuilder extendInsertValueStmt_";
-  protected final String TEXT_386 = " = new StringBuilder();" + NL + "    for(int i=0;i < ";
-  protected final String TEXT_387 = ";i++){" + NL + "         extendInsertValueStmt_";
-  protected final String TEXT_388 = ".append(\"(";
-  protected final String TEXT_389 = ")\");" + NL + "         if (i!=";
-  protected final String TEXT_390 = "-1) extendInsertValueStmt_";
-  protected final String TEXT_391 = ".append(\",\");" + NL + "    }" + NL + "" + NL + "\tString insert_";
-  protected final String TEXT_392 = " = \"INSERT INTO \"+";
-  protected final String TEXT_393 = "+\" (";
-  protected final String TEXT_394 = ") VALUES \" + extendInsertValueStmt_";
-  protected final String TEXT_395 = ".toString();" + NL + "" + NL + "\tjava.sql.PreparedStatement pstmt_";
-  protected final String TEXT_396 = " =  conn_";
-  protected final String TEXT_397 = ");" + NL + "    resourceMap.put(\"pstmt_";
-  protected final String TEXT_398 = ");" + NL + "" + NL + "    String insertColName";
-  protected final String TEXT_399 = " = \"";
-  protected final String TEXT_400 = "\";" + NL + "    String insertColValue";
-  protected final String TEXT_401 = " =  \"";
-  protected final String TEXT_402 = "\";" + NL + "    int rowCount";
-  protected final String TEXT_403 = " = 0;";
-  protected final String TEXT_404 = NL + "        StringBuffer query_";
-  protected final String TEXT_405 = " = null;" + NL + "       \t";
-  protected final String TEXT_406 = NL + "\t\t \tString[] insertSQLSplits_";
-  protected final String TEXT_407 = " = insert_";
-  protected final String TEXT_408 = ".split(\"\\\\?\");";
-  protected final String TEXT_409 = NL + "\t\t\tupdate_";
-  protected final String TEXT_410 = " += \" \";" + NL + "\t    \tString[] updateSQLSplits_";
-  protected final String TEXT_411 = " = update_";
-  protected final String TEXT_412 = " += \" \";" + NL + "\t\t\tString[] updateSQLSplits_";
-  protected final String TEXT_413 = ".split(\"\\\\?\");" + NL + "\t\t\tString[] insertSQLSplits_";
-  protected final String TEXT_414 = NL + "\t\t\tdelete_";
-  protected final String TEXT_415 = " += \" \";" + NL + "\t\t   \tString[] deleteSQLSplits_";
-  protected final String TEXT_416 = " = delete_";
-  protected final String TEXT_417 = NL + "\t\t\treplace_";
-  protected final String TEXT_418 = " += \" \";" + NL + "\t\t\tString[] replaceSQLSplits_";
-  protected final String TEXT_419 = " = replace_";
-  protected final String TEXT_420 = NL + "\t\t\tinsertIgnore_";
-  protected final String TEXT_421 = " += \" \";" + NL + "\t\t\tString[] insertIgnoreSQLSplits_";
-  protected final String TEXT_422 = " = insertIgnore_";
-  protected final String TEXT_423 = NL + " \tboolean isShareIdentity_";
-  protected final String TEXT_424 = " = globalMap.get(\"shareIdentitySetting_";
-  protected final String TEXT_425 = "\") != null && (Boolean)globalMap.get(\"shareIdentitySetting_";
-  protected final String TEXT_426 = "\") == true;";
-  protected final String TEXT_427 = NL + "        java.sql.Statement stmt_";
-  protected final String TEXT_428 = ".createStatement();";
-  protected final String TEXT_429 = NL + "\t        if ( !isShareIdentity_";
-  protected final String TEXT_430 = " ) {" + NL + "\t            stmt_";
-  protected final String TEXT_431 = ".execute(\"SET IDENTITY_INSERT [\"+ tableName_";
-  protected final String TEXT_432 = " +\"] ON\");" + NL + "\t        }";
-  protected final String TEXT_433 = NL + "            stmt_";
-  protected final String TEXT_434 = " +\"] ON\");" + NL + "     \t";
-  protected final String TEXT_435 = NL + "\tjava.sql.PreparedStatement pstmt_";
-  protected final String TEXT_436 = " =null;" + NL + "\tjava.sql.PreparedStatement pstmtInsert_";
-  protected final String TEXT_437 = " =null;" + NL + "\tjava.sql.PreparedStatement pstmtUpdate_";
-  protected final String TEXT_438 = " =null;" + NL + "\t";
-  protected final String TEXT_439 = NL + "\t\tStringBuffer query_";
-  protected final String TEXT_440 = " = null;" + NL + "\t\t";
-  protected final String TEXT_441 = NL + "\t    \tString[] updateSQLSplits_";
-  protected final String TEXT_442 = " =  null;";
-  protected final String TEXT_443 = NL + "\t\t\tString[] updateSQLSplits_";
-  protected final String TEXT_444 = " = null;" + NL + "\t\t\tString[] insertSQLSplits_";
-  protected final String TEXT_445 = NL + "\t\t   \tString[] deleteSQLSplits_";
-  protected final String TEXT_446 = NL + "\t\t\tString[] replaceSQLSplits_";
-  protected final String TEXT_447 = NL + "\t\t\tString[] insertIgnoreSQLSplits_";
+  protected final String TEXT_43 = "=0;" + NL + "int rejectedCount_";
+  protected final String TEXT_44 = "=0;" + NL + "String dbschema_";
+  protected final String TEXT_45 = " = null;" + NL + "String tableName_";
+  protected final String TEXT_46 = " = null;" + NL + "boolean whetherReject_";
+  protected final String TEXT_47 = " = false;" + NL + "" + NL + "java.util.Calendar calendar_";
+  protected final String TEXT_48 = " = java.util.Calendar.getInstance();" + NL + "long year1_";
+  protected final String TEXT_49 = " = TalendDate.parseDate(\"yyyy-MM-dd\",\"0001-01-01\").getTime();" + NL + "long year2_";
+  protected final String TEXT_50 = " = TalendDate.parseDate(\"yyyy-MM-dd\",\"1753-01-01\").getTime();" + NL + "long year10000_";
+  protected final String TEXT_51 = " = TalendDate.parseDate(\"yyyy-MM-dd HH:mm:ss\",\"9999-12-31 24:00:00\").getTime();" + NL + "long date_";
+  protected final String TEXT_52 = ";" + NL + "" + NL + "java.util.Calendar calendar_datetimeoffset_";
+  protected final String TEXT_53 = " = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone(\"UTC\"));" + NL;
+  protected final String TEXT_54 = NL + "        int updateKeyCount_";
+  protected final String TEXT_55 = " = ";
+  protected final String TEXT_56 = ";" + NL + "        if(updateKeyCount_";
+  protected final String TEXT_57 = " < 1) {" + NL + "            throw new RuntimeException(\"For update, Schema must have a key\");" + NL + "        }";
+  protected final String TEXT_58 = NL + "        int deleteKeyCount_";
+  protected final String TEXT_59 = ";" + NL + "        if(deleteKeyCount_";
+  protected final String TEXT_60 = " < 1) {" + NL + "            throw new RuntimeException(\"For delete, Schema must have a key\");" + NL + "        }";
+  protected final String TEXT_61 = NL + "        int insertKeyCount_";
+  protected final String TEXT_62 = ";" + NL + "        if(insertKeyCount_";
+  protected final String TEXT_63 = " < 1) {" + NL + "            throw new RuntimeException(\"For insert if not exist, Schema must have a key\");" + NL + "        }";
+  protected final String TEXT_64 = NL + "\t";
+  protected final String TEXT_65 = NL + "java.sql.Connection conn_";
+  protected final String TEXT_66 = " = null;";
+  protected final String TEXT_67 = NL + "String dbUser_";
+  protected final String TEXT_68 = NL + "\tdbschema_";
+  protected final String TEXT_69 = ";" + NL + "\t";
+  protected final String TEXT_70 = " = (String)globalMap.get(\"";
+  protected final String TEXT_71 = "\");" + NL + "\t";
+  protected final String TEXT_72 = NL + "\tconn_";
+  protected final String TEXT_73 = " = (java.sql.Connection)globalMap.get(\"";
+  protected final String TEXT_74 = NL + "\t\tjava.util.Map<String, routines.system.TalendDataSource> dataSources_";
+  protected final String TEXT_75 = " = (java.util.Map<String, routines.system.TalendDataSource>) globalMap.get(KEY_DB_DATASOURCES);" + NL + "\t\tif (null != dataSources_";
+  protected final String TEXT_76 = ") {" + NL + "\t\t\tString dsAlias_";
+  protected final String TEXT_77 = ";" + NL + "    \t\tif (dataSources_";
+  protected final String TEXT_78 = ".get(dsAlias_";
+  protected final String TEXT_79 = ") == null) {" + NL + "       \t\t\tthrow new RuntimeException(\"No DataSource with alias: \" + dsAlias_";
+  protected final String TEXT_80 = " + \" available!\");" + NL + "          \t}" + NL + "    \t\tconn_";
+  protected final String TEXT_81 = " = dataSources_";
+  protected final String TEXT_82 = ").getConnection();" + NL + "\t\t} else {" + NL + "\t";
+  protected final String TEXT_83 = NL + "    dbschema_";
+  protected final String TEXT_84 = ";";
+  protected final String TEXT_85 = NL + "    String driverClass_";
+  protected final String TEXT_86 = " = \"net.sourceforge.jtds.jdbc.Driver\";";
+  protected final String TEXT_87 = " = \"com.microsoft.sqlserver.jdbc.SQLServerDriver\";";
+  protected final String TEXT_88 = NL + "\t";
+  protected final String TEXT_89 = NL + "    java.lang.Class.forName(driverClass_";
+  protected final String TEXT_90 = ");" + NL + "    String port_";
+  protected final String TEXT_91 = ";" + NL + "    String dbname_";
+  protected final String TEXT_92 = " ;";
+  protected final String TEXT_93 = NL + "    String url_";
+  protected final String TEXT_94 = " = \"jdbc:jtds:sqlserver://\" + ";
+  protected final String TEXT_95 = " = \"jdbc:sqlserver://\" + ";
+  protected final String TEXT_96 = " " + NL + "    if (!\"\".equals(port_";
+  protected final String TEXT_97 = ")) {" + NL + "    \turl_";
+  protected final String TEXT_98 = " += \":\" + ";
+  protected final String TEXT_99 = ";" + NL + "    }" + NL + "    if (!\"\".equals(dbname_";
+  protected final String TEXT_100 = ")) {";
+  protected final String TEXT_101 = NL + "\t\t\t\turl_";
+  protected final String TEXT_102 = " += \"//\" + ";
+  protected final String TEXT_103 = "; " + NL + "\t";
+  protected final String TEXT_104 = "\t\t    " + NL + "\t\t    \turl_";
+  protected final String TEXT_105 = " += \";databaseName=\" + ";
+  protected final String TEXT_106 = NL + "    }";
+  protected final String TEXT_107 = NL + "        url_";
+  protected final String TEXT_108 = " += \";encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;Authentication=ActiveDirectoryPassword\";" + NL + "        url_";
+  protected final String TEXT_109 = " += \";database=\" + ";
+  protected final String TEXT_110 = NL + "    url_";
+  protected final String TEXT_111 = " += \";appName=\" + projectName + \";\" + ";
+  protected final String TEXT_112 = ";" + NL + "    dbUser_";
+  protected final String TEXT_113 = ";" + NL;
+  protected final String TEXT_114 = NL;
+  protected final String TEXT_115 = " " + NL + "\tfinal String decryptedPassword_";
+  protected final String TEXT_116 = " = routines.system.PasswordEncryptUtil.decryptPassword(";
+  protected final String TEXT_117 = NL + "\tfinal String decryptedPassword_";
+  protected final String TEXT_118 = "; ";
+  protected final String TEXT_119 = NL + NL + "    String dbPwd_";
+  protected final String TEXT_120 = " = decryptedPassword_";
+  protected final String TEXT_121 = "\t" + NL + "    conn_";
+  protected final String TEXT_122 = " = java.sql.DriverManager.getConnection(url_";
+  protected final String TEXT_123 = ",dbUser_";
+  protected final String TEXT_124 = ",dbPwd_";
+  protected final String TEXT_125 = NL + "\t\t}" + NL + "\t";
+  protected final String TEXT_126 = NL + "\t\tresourceMap.put(\"conn_";
+  protected final String TEXT_127 = "\", conn_";
+  protected final String TEXT_128 = ");" + NL + "\t";
+  protected final String TEXT_129 = NL + "        conn_";
+  protected final String TEXT_130 = ".setAutoCommit(false);" + NL + "        int commitEvery_";
+  protected final String TEXT_131 = ";" + NL + "        int commitCounter_";
+  protected final String TEXT_132 = " = 0;" + NL;
+  protected final String TEXT_133 = NL + "   int batchSize_";
+  protected final String TEXT_134 = ";" + NL + "   int batchSizeCounter_";
+  protected final String TEXT_135 = "=0;";
+  protected final String TEXT_136 = NL + NL + "if(dbschema_";
+  protected final String TEXT_137 = " == null || dbschema_";
+  protected final String TEXT_138 = ".trim().length() == 0) {" + NL + "    tableName_";
+  protected final String TEXT_139 = ";" + NL + "} else {" + NL + "    tableName_";
+  protected final String TEXT_140 = " = dbschema_";
+  protected final String TEXT_141 = " + \"].[\" + ";
+  protected final String TEXT_142 = ";" + NL + "}";
+  protected final String TEXT_143 = NL + "\tint count_";
+  protected final String TEXT_144 = "=0;" + NL;
+  protected final String TEXT_145 = NL + "            try (java.sql.Statement stmtDrop_";
+  protected final String TEXT_146 = " = conn_";
+  protected final String TEXT_147 = ".createStatement()) {";
+  protected final String TEXT_148 = NL + "                              stmtDrop_";
+  protected final String TEXT_149 = ".setQueryTimeout(Integer.valueOf(Integer.valueOf(";
+  protected final String TEXT_150 = ")));";
+  protected final String TEXT_151 = NL + "                stmtDrop_";
+  protected final String TEXT_152 = ".execute(\"";
+  protected final String TEXT_153 = "\" ";
+  protected final String TEXT_154 = NL + "            }";
+  protected final String TEXT_155 = NL + "                 conn_";
+  protected final String TEXT_156 = ".commit();";
+  protected final String TEXT_157 = NL + "            try (java.sql.Statement stmtCreate_";
+  protected final String TEXT_158 = NL + "                              stmtCreate_";
+  protected final String TEXT_159 = ".setQueryTimeout(Integer.valueOf(";
+  protected final String TEXT_160 = "));";
+  protected final String TEXT_161 = NL + "                    \troutines.system.Dynamic dynamic_";
+  protected final String TEXT_162 = ";" + NL + "\t                    if (";
+  protected final String TEXT_163 = ") {" + NL + "\t                        for (int i = 0; i < dynamic_";
+  protected final String TEXT_164 = ".getColumnCount(); i++) {" + NL + "\t                        \troutines.system.DynamicMetadata column = dynamic_";
+  protected final String TEXT_165 = ".getColumnMetadata(i);" + NL + "\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t                        }" + NL + "\t                    }" + NL + "                        stmtCreate_";
+  protected final String TEXT_166 = ".execute(((\"";
+  protected final String TEXT_167 = "\").replace(\"{TALEND_DYNAMIC_COLUMN}\",DynamicUtils.getCreateTableSQL(dynamic_";
+  protected final String TEXT_168 = ", \"";
+  protected final String TEXT_169 = "\")";
+  protected final String TEXT_170 = ".toUpperCase()";
+  protected final String TEXT_171 = ")+\")";
+  protected final String TEXT_172 = "\"));";
+  protected final String TEXT_173 = NL + "                stmtCreate_";
+  protected final String TEXT_174 = ")\");";
+  protected final String TEXT_175 = NL + "                    routines.system.Dynamic dynamic_";
+  protected final String TEXT_176 = ";" + NL + "                    if (";
+  protected final String TEXT_177 = ") {" + NL + "                        for (int i = 0; i < dynamic_";
+  protected final String TEXT_178 = ".getColumnCount(); i++) {" + NL + "                        \troutines.system.DynamicMetadata column = dynamic_";
+  protected final String TEXT_179 = ".getColumnMetadata(i);" + NL + "                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "                        }" + NL + "                    }" + NL + "                    stmtCreate_";
+  protected final String TEXT_180 = NL + "                    String keyCheckTable_";
+  protected final String TEXT_181 = " = \"[Informix]\"+\"[\"+";
+  protected final String TEXT_182 = "+\"][\"+";
+  protected final String TEXT_183 = "+\"]\"+ \"[checktable]\" + \"[\" + ";
+  protected final String TEXT_184 = " + \"]\";";
+  protected final String TEXT_185 = NL + "                    // [%connection%][checktable][tableName]" + NL + "                    String keyCheckTable_";
+  protected final String TEXT_186 = " + \"[checktable]\" + \"[\" + ";
+  protected final String TEXT_187 = NL + NL + "                if(GlobalResource.resourceMap.get(keyCheckTable_";
+  protected final String TEXT_188 = ")== null){//}" + NL + "" + NL + "                    synchronized (GlobalResource.resourceLockMap.get(keyCheckTable_";
+  protected final String TEXT_189 = ")) {//}" + NL + "                        if(GlobalResource.resourceMap.get(keyCheckTable_";
+  protected final String TEXT_190 = ")== null){//}";
+  protected final String TEXT_191 = NL + "                                boolean whetherExist_";
+  protected final String TEXT_192 = " = false;" + NL + "                                try (java.sql.Statement isExistStmt_";
+  protected final String TEXT_193 = ".createStatement()) {" + NL + "                                    try {" + NL + "                                        isExistStmt_";
+  protected final String TEXT_194 = ".execute(\"SELECT TOP 1 1 FROM [\" + tableName_";
+  protected final String TEXT_195 = " + \"]\" );" + NL + "                                        whetherExist_";
+  protected final String TEXT_196 = " = true;" + NL + "                                    } catch (java.lang.Exception e){" + NL + "                                        whetherExist_";
+  protected final String TEXT_197 = " = false;" + NL + "                                    }" + NL + "                                }";
+  protected final String TEXT_198 = NL + "                                ";
+  protected final String TEXT_199 = NL + "                                java.sql.DatabaseMetaData dbMetaData_";
+  protected final String TEXT_200 = ".getMetaData();" + NL + "                                if(tableNameForSearch_";
+  protected final String TEXT_201 = ".indexOf(\"\\\"\")==-1){" + NL + "                                    tableNameForSearch_";
+  protected final String TEXT_202 = " = tableNameForSearch_";
+  protected final String TEXT_203 = ".toUpperCase();" + NL + "                                }else{" + NL + "                                    tableNameForSearch_";
+  protected final String TEXT_204 = ".replaceAll(\"\\\"\",\"\");" + NL + "                                }" + NL + "                                boolean whetherExist_";
+  protected final String TEXT_205 = " = false;" + NL + "                                try (java.sql.ResultSet rsTable_";
+  protected final String TEXT_206 = " = dbMetaData_";
+  protected final String TEXT_207 = ".getTables(null, dbschemaForSearch_";
+  protected final String TEXT_208 = ", tableNameForSearch_";
+  protected final String TEXT_209 = ", new String[]{\"TABLE\"})) {" + NL + "                                    if(rsTable_";
+  protected final String TEXT_210 = ".next()) {" + NL + "                                        whetherExist_";
+  protected final String TEXT_211 = " = true;" + NL + "                                    }" + NL + "                                }" + NL;
+  protected final String TEXT_212 = ".getMetaData();" + NL + "                                boolean whetherExist_";
+  protected final String TEXT_213 = ".getTables(null, null, null, new String[]{\"TABLE\"})) {" + NL + "                                    while(rsTable_";
+  protected final String TEXT_214 = ".next()) {" + NL + "                                        String table_";
+  protected final String TEXT_215 = " = rsTable_";
+  protected final String TEXT_216 = ".getString(\"TABLE_NAME\");" + NL + "                                        String schema_";
+  protected final String TEXT_217 = ".getString(\"TABLE_SCHEM\");" + NL + "                                        if(table_";
+  protected final String TEXT_218 = ".equals";
+  protected final String TEXT_219 = "IgnoreCase";
+  protected final String TEXT_220 = "(";
+  protected final String TEXT_221 = ")" + NL + "                                            && (schema_";
+  protected final String TEXT_222 = "(dbschema_";
+  protected final String TEXT_223 = ") || dbschema_";
+  protected final String TEXT_224 = ".trim().length() ==0)) {" + NL + "                                            whetherExist_";
+  protected final String TEXT_225 = " = true;" + NL + "                                            break;" + NL + "                                        }" + NL + "                                    }" + NL + "                                }";
+  protected final String TEXT_226 = "((";
+  protected final String TEXT_227 = ")";
+  protected final String TEXT_228 = ") || (dbschema_";
+  protected final String TEXT_229 = ".trim().length() ==0 && dbUser_";
+  protected final String TEXT_230 = ".equalsIgnoreCase(schema_";
+  protected final String TEXT_231 = ")))) {" + NL + "                                            whetherExist_";
+  protected final String TEXT_232 = ".getTables(null, null, null, new String[]{\"TABLE\"})) {" + NL + "                                    String defaultSchema_";
+  protected final String TEXT_233 = " = \"public\";" + NL + "                                    if(dbschema_";
+  protected final String TEXT_234 = ".trim().length() == 0) {" + NL + "                                        try(java.sql.Statement stmtSchema_";
+  protected final String TEXT_235 = ".createStatement();" + NL + "                                            java.sql.ResultSet rsSchema_";
+  protected final String TEXT_236 = " = stmtSchema_";
+  protected final String TEXT_237 = ".executeQuery(\"select current_schema() \")) {" + NL + "                                            while(rsSchema_";
+  protected final String TEXT_238 = ".next()){" + NL + "                                                defaultSchema_";
+  protected final String TEXT_239 = " = rsSchema_";
+  protected final String TEXT_240 = ".getString(\"current_schema\");" + NL + "                                            }" + NL + "                                        }" + NL + "                                    }" + NL + "                                    while(rsTable_";
+  protected final String TEXT_241 = ".toLowerCase()";
+  protected final String TEXT_242 = ") || ((dbschema_";
+  protected final String TEXT_243 = " ==null || dbschema_";
+  protected final String TEXT_244 = ".trim().length() ==0) && defaultSchema_";
+  protected final String TEXT_245 = "(schema_";
+  protected final String TEXT_246 = NL + "                                String tableForSearch_";
+  protected final String TEXT_247 = ";" + NL + "                                if(tableForSearch_";
+  protected final String TEXT_248 = " != null){" + NL + "                                    if(tableForSearch_";
+  protected final String TEXT_249 = ".startsWith(\"\\\"\") && tableForSearch_";
+  protected final String TEXT_250 = ".endsWith(\"\\\"\")){" + NL + "                                        tableForSearch_";
+  protected final String TEXT_251 = " =  tableForSearch_";
+  protected final String TEXT_252 = ".substring(1,tableForSearch_";
+  protected final String TEXT_253 = ".length()-1);" + NL + "                                    }else{" + NL + "                                        tableForSearch_";
+  protected final String TEXT_254 = ".toUpperCase();" + NL + "                                    }" + NL + "                                }" + NL + "                                java.sql.DatabaseMetaData dbMetaData_";
+  protected final String TEXT_255 = ".getMetaData();" + NL + "                                boolean whetherExist_";
+  protected final String TEXT_256 = " = false;" + NL + "                                try (java.sql.ResultSet rsTable_";
+  protected final String TEXT_257 = ".getTables(null, conn_";
+  protected final String TEXT_258 = ".getSchema(), tableForSearch_";
+  protected final String TEXT_259 = ", new String[]{\"TABLE\"})) {" + NL + "                                       if(rsTable_";
+  protected final String TEXT_260 = " = true;" + NL + "                                    }" + NL + "                                }";
+  protected final String TEXT_261 = ".getTables(null, schemaForSearch_";
+  protected final String TEXT_262 = ", null, new String[]{\"TABLE\"})) {" + NL + "                                    while(rsTable_";
+  protected final String TEXT_263 = ".next()) {" + NL + "                                        if(rsTable_";
+  protected final String TEXT_264 = ".getString(\"TABLE_NAME\").equalsIgnoreCase(tableForSearch_";
+  protected final String TEXT_265 = ")) {" + NL + "                                            whetherExist_";
+  protected final String TEXT_266 = " = true;" + NL + "                                            break;" + NL + "                                        }" + NL + "                                    }" + NL + "                                }" + NL + "                            " + NL + "                            ";
+  protected final String TEXT_267 = ".getMetaData();";
+  protected final String TEXT_268 = NL + "                                    java.sql.ResultSet rsTable_";
+  protected final String TEXT_269 = ".getTables(";
+  protected final String TEXT_270 = ", null, null, new String[]{\"TABLE\"});";
+  protected final String TEXT_271 = ".getTables(conn_";
+  protected final String TEXT_272 = ".getCatalog(), null, null, new String[]{\"TABLE\"});";
+  protected final String TEXT_273 = " = false;" + NL + "                                while(rsTable_";
+  protected final String TEXT_274 = ".next()) {" + NL + "                                    String table_";
+  protected final String TEXT_275 = ".getString(\"TABLE_NAME\");" + NL + "                                    if(table_";
+  protected final String TEXT_276 = ".equalsIgnoreCase(";
+  protected final String TEXT_277 = ")) {" + NL + "                                        whetherExist_";
+  protected final String TEXT_278 = " = true;" + NL + "                                        break;" + NL + "                                    }" + NL + "                                }";
+  protected final String TEXT_279 = ".getString(\"TABLE_NAME\");" + NL + "                                        if(table_";
+  protected final String TEXT_280 = NL + "                                if(!whetherExist_";
+  protected final String TEXT_281 = ") {" + NL + "                                    try (java.sql.Statement stmtCreate_";
+  protected final String TEXT_282 = NL + "                                                      stmtCreate_";
+  protected final String TEXT_283 = NL + "                                            routines.system.Dynamic dynamic_";
+  protected final String TEXT_284 = ";" + NL + "\t\t\t\t\t\t                    if (";
+  protected final String TEXT_285 = ") {" + NL + "\t\t\t\t\t\t                        for (int i = 0; i < dynamic_";
+  protected final String TEXT_286 = ".getColumnCount(); i++) {" + NL + "\t\t\t\t\t\t                        \troutines.system.DynamicMetadata column = dynamic_";
+  protected final String TEXT_287 = ".getColumnMetadata(i);" + NL + "\t\t\t\t\t\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t\t\t\t\t\t                        }" + NL + "\t\t\t\t\t\t                    }" + NL + "                                            stmtCreate_";
+  protected final String TEXT_288 = NL + "                                        stmtCreate_";
+  protected final String TEXT_289 = NL + "                                    }" + NL + "                                }";
+  protected final String TEXT_290 = NL + "                                if(whetherExist_";
+  protected final String TEXT_291 = ") {" + NL + "                                    try (java.sql.Statement stmtDrop_";
+  protected final String TEXT_292 = NL + "                                                      stmtDrop_";
+  protected final String TEXT_293 = NL + "                                        stmtDrop_";
+  protected final String TEXT_294 = NL + "                                    }";
+  protected final String TEXT_295 = NL + "                                            conn_";
+  protected final String TEXT_296 = NL + "                                }" + NL + "                                try(java.sql.Statement stmtCreate_";
+  protected final String TEXT_297 = NL + "                                                  stmtCreate_";
+  protected final String TEXT_298 = NL + "\t\t                                routines.system.Dynamic dynamic_";
+  protected final String TEXT_299 = ";" + NL + "\t\t\t\t\t                    if (";
+  protected final String TEXT_300 = ") {" + NL + "\t\t\t\t\t                        for (int i = 0; i < dynamic_";
+  protected final String TEXT_301 = ".getColumnCount(); i++) {" + NL + "\t\t\t\t\t                        \troutines.system.DynamicMetadata column = dynamic_";
+  protected final String TEXT_302 = ".getColumnMetadata(i);" + NL + "\t\t\t\t\t                        \tcolumn.setName(column.getName().toLowerCase());" + NL + "\t\t\t\t\t                        }" + NL + "\t\t\t\t\t                    }" + NL + "                                        stmtCreate_";
+  protected final String TEXT_303 = NL + "                                    stmtCreate_";
+  protected final String TEXT_304 = NL + "                                }";
+  protected final String TEXT_305 = NL + "                            GlobalResource.resourceMap.put(keyCheckTable_";
+  protected final String TEXT_306 = ", true);" + NL + "            //{{{" + NL + "                        } // end of if" + NL + "                    } // end synchronized" + NL + "                }";
+  protected final String TEXT_307 = NL + "            try (java.sql.Statement stmtClear_";
+  protected final String TEXT_308 = NL + "                              stmtClear_";
+  protected final String TEXT_309 = NL + "                stmtClear_";
+  protected final String TEXT_310 = ".executeUpdate(\"";
+  protected final String TEXT_311 = "\");";
+  protected final String TEXT_312 = NL + "            int rsTruncCountNumber_";
+  protected final String TEXT_313 = " = 0;" + NL + "            try(java.sql.Statement stmtTruncCount_";
+  protected final String TEXT_314 = NL + "                              stmtTruncCount_";
+  protected final String TEXT_315 = NL + "                try (java.sql.ResultSet rsTruncCount_";
+  protected final String TEXT_316 = " = stmtTruncCount_";
+  protected final String TEXT_317 = ".executeQuery(\"";
+  protected final String TEXT_318 = "\")) {" + NL + "                    if(rsTruncCount_";
+  protected final String TEXT_319 = ".next()) {" + NL + "                        rsTruncCountNumber_";
+  protected final String TEXT_320 = " = rsTruncCount_";
+  protected final String TEXT_321 = ".getInt(1);" + NL + "                    }" + NL + "                }" + NL + "            }" + NL + "            try (java.sql.Statement stmtTrunc_";
+  protected final String TEXT_322 = NL + "                              stmtTrunc_";
+  protected final String TEXT_323 = NL + "                conn_";
+  protected final String TEXT_324 = NL + "                stmtTrunc_";
+  protected final String TEXT_325 = NL + "                    if(!conn_";
+  protected final String TEXT_326 = ".getAutoCommit()){" + NL + "                        conn_";
+  protected final String TEXT_327 = ".commit();" + NL + "                    }";
+  protected final String TEXT_328 = NL + "                deletedCount_";
+  protected final String TEXT_329 = " += rsTruncCountNumber_";
+  protected final String TEXT_330 = ";" + NL + "            }";
+  protected final String TEXT_331 = NL + "            try (java.sql.Statement stmtTruncCount_";
+  protected final String TEXT_332 = ".createStatement();" + NL + "                java.sql.ResultSet rsTruncCount_";
+  protected final String TEXT_333 = "\");" + NL + "                java.sql.Statement stmtTrunc_";
+  protected final String TEXT_334 = NL + "                while(rsTruncCount_";
+  protected final String TEXT_335 = ".next()) {" + NL + "                    deletedCount_";
+  protected final String TEXT_336 = " += rsTruncCount_";
+  protected final String TEXT_337 = ".getInt(1);" + NL + "                }" + NL + "            }";
+  protected final String TEXT_338 = NL + "        String insert_";
+  protected final String TEXT_339 = " = \"INSERT INTO [\" + tableName_";
+  protected final String TEXT_340 = " + \"] (";
+  protected final String TEXT_341 = ") VALUES (";
+  protected final String TEXT_342 = ")\";";
+  protected final String TEXT_343 = NL + "        java.sql.PreparedStatement pstmt_";
+  protected final String TEXT_344 = ".prepareStatement(insert_";
+  protected final String TEXT_345 = ");" + NL + "        resourceMap.put(\"pstmt_";
+  protected final String TEXT_346 = "\", pstmt_";
+  protected final String TEXT_347 = " = null;" + NL + "        String keyPsmt_";
+  protected final String TEXT_348 = " + \"[psmt]\" + \"[\" + ";
+  protected final String TEXT_349 = " + \"]\";" + NL + "        pstmt_";
+  protected final String TEXT_350 = " = SharedDBPreparedStatement.getSharedPreparedStatement(conn_";
+  protected final String TEXT_351 = ",insert_";
+  protected final String TEXT_352 = ",keyPsmt_";
+  protected final String TEXT_353 = NL + "        String update_";
+  protected final String TEXT_354 = " = \"UPDATE [\" + tableName_";
+  protected final String TEXT_355 = " + \"] SET ";
+  protected final String TEXT_356 = " WHERE ";
+  protected final String TEXT_357 = "\";" + NL + "        java.sql.PreparedStatement pstmt_";
+  protected final String TEXT_358 = ".prepareStatement(update_";
+  protected final String TEXT_359 = ".prepareStatement(\"SELECT COUNT(1) FROM [\" + tableName_";
+  protected final String TEXT_360 = " + \"] WHERE ";
+  protected final String TEXT_361 = "\");" + NL + "        resourceMap.put(\"pstmt_";
+  protected final String TEXT_362 = ");" + NL + "        String insert_";
+  protected final String TEXT_363 = ")\";" + NL + "        java.sql.PreparedStatement pstmtInsert_";
+  protected final String TEXT_364 = ");" + NL + "        resourceMap.put(\"pstmtInsert_";
+  protected final String TEXT_365 = "\", pstmtInsert_";
+  protected final String TEXT_366 = ");" + NL + "        String update_";
+  protected final String TEXT_367 = "\";" + NL + "        java.sql.PreparedStatement pstmtUpdate_";
+  protected final String TEXT_368 = ");" + NL + "        resourceMap.put(\"pstmtUpdate_";
+  protected final String TEXT_369 = "\", pstmtUpdate_";
+  protected final String TEXT_370 = NL + "        String delete_";
+  protected final String TEXT_371 = " = \"DELETE FROM [\" + tableName_";
+  protected final String TEXT_372 = ".prepareStatement(delete_";
+  protected final String TEXT_373 = NL + NL + "    class BufferLine_";
+  protected final String TEXT_374 = " {";
+  protected final String TEXT_375 = " ";
+  protected final String TEXT_376 = NL + NL + "        public BufferLine_";
+  protected final String TEXT_377 = NL + "                    ,";
+  protected final String TEXT_378 = NL + "        ){";
+  protected final String TEXT_379 = NL + "                    this.";
+  protected final String TEXT_380 = NL + "        }" + NL + "    }" + NL + "" + NL + "    java.util.List<BufferLine_";
+  protected final String TEXT_381 = "> sInsertColValueList";
+  protected final String TEXT_382 = " = new java.util.ArrayList();" + NL + "    BufferLine_";
+  protected final String TEXT_383 = " sInsertColValue";
+  protected final String TEXT_384 = " = null;" + NL + "" + NL + "    StringBuilder extendInsertValueStmt_";
+  protected final String TEXT_385 = " = new StringBuilder();" + NL + "    for(int i=0;i < ";
+  protected final String TEXT_386 = ";i++){" + NL + "         extendInsertValueStmt_";
+  protected final String TEXT_387 = ".append(\"(";
+  protected final String TEXT_388 = ")\");" + NL + "         if (i!=";
+  protected final String TEXT_389 = "-1) extendInsertValueStmt_";
+  protected final String TEXT_390 = ".append(\",\");" + NL + "    }" + NL + "" + NL + "\tString insert_";
+  protected final String TEXT_391 = " = \"INSERT INTO \"+";
+  protected final String TEXT_392 = "+\" (";
+  protected final String TEXT_393 = ") VALUES \" + extendInsertValueStmt_";
+  protected final String TEXT_394 = ".toString();" + NL + "" + NL + "\tjava.sql.PreparedStatement pstmt_";
+  protected final String TEXT_395 = " =  conn_";
+  protected final String TEXT_396 = ");" + NL + "    resourceMap.put(\"pstmt_";
+  protected final String TEXT_397 = ");" + NL + "" + NL + "    String insertColName";
+  protected final String TEXT_398 = " = \"";
+  protected final String TEXT_399 = "\";" + NL + "    String insertColValue";
+  protected final String TEXT_400 = " =  \"";
+  protected final String TEXT_401 = "\";" + NL + "    int rowCount";
+  protected final String TEXT_402 = " = 0;";
+  protected final String TEXT_403 = NL + "        StringBuffer query_";
+  protected final String TEXT_404 = " = null;" + NL + "       \t";
+  protected final String TEXT_405 = NL + "\t\t \tString[] insertSQLSplits_";
+  protected final String TEXT_406 = " = insert_";
+  protected final String TEXT_407 = ".split(\"\\\\?\");";
+  protected final String TEXT_408 = NL + "\t\t\tupdate_";
+  protected final String TEXT_409 = " += \" \";" + NL + "\t    \tString[] updateSQLSplits_";
+  protected final String TEXT_410 = " = update_";
+  protected final String TEXT_411 = " += \" \";" + NL + "\t\t\tString[] updateSQLSplits_";
+  protected final String TEXT_412 = ".split(\"\\\\?\");" + NL + "\t\t\tString[] insertSQLSplits_";
+  protected final String TEXT_413 = NL + "\t\t\tdelete_";
+  protected final String TEXT_414 = " += \" \";" + NL + "\t\t   \tString[] deleteSQLSplits_";
+  protected final String TEXT_415 = " = delete_";
+  protected final String TEXT_416 = NL + "\t\t\treplace_";
+  protected final String TEXT_417 = " += \" \";" + NL + "\t\t\tString[] replaceSQLSplits_";
+  protected final String TEXT_418 = " = replace_";
+  protected final String TEXT_419 = NL + "\t\t\tinsertIgnore_";
+  protected final String TEXT_420 = " += \" \";" + NL + "\t\t\tString[] insertIgnoreSQLSplits_";
+  protected final String TEXT_421 = " = insertIgnore_";
+  protected final String TEXT_422 = NL + " \tboolean isShareIdentity_";
+  protected final String TEXT_423 = " = globalMap.get(\"shareIdentitySetting_";
+  protected final String TEXT_424 = "\") != null && (Boolean)globalMap.get(\"shareIdentitySetting_";
+  protected final String TEXT_425 = "\") == true;";
+  protected final String TEXT_426 = NL + "        java.sql.Statement stmt_";
+  protected final String TEXT_427 = ".createStatement();";
+  protected final String TEXT_428 = NL + "\t        if ( !isShareIdentity_";
+  protected final String TEXT_429 = " ) {" + NL + "\t            stmt_";
+  protected final String TEXT_430 = ".execute(\"SET IDENTITY_INSERT [\"+ tableName_";
+  protected final String TEXT_431 = " +\"] ON\");" + NL + "\t        }";
+  protected final String TEXT_432 = NL + "            stmt_";
+  protected final String TEXT_433 = " +\"] ON\");" + NL + "     \t";
+  protected final String TEXT_434 = NL + "\tjava.sql.PreparedStatement pstmt_";
+  protected final String TEXT_435 = " =null;" + NL + "\tjava.sql.PreparedStatement pstmtInsert_";
+  protected final String TEXT_436 = " =null;" + NL + "\tjava.sql.PreparedStatement pstmtUpdate_";
+  protected final String TEXT_437 = " =null;" + NL + "\t";
+  protected final String TEXT_438 = NL + "\t\tStringBuffer query_";
+  protected final String TEXT_439 = " = null;" + NL + "\t\t";
+  protected final String TEXT_440 = NL + "\t    \tString[] updateSQLSplits_";
+  protected final String TEXT_441 = " =  null;";
+  protected final String TEXT_442 = NL + "\t\t\tString[] updateSQLSplits_";
+  protected final String TEXT_443 = " = null;" + NL + "\t\t\tString[] insertSQLSplits_";
+  protected final String TEXT_444 = NL + "\t\t   \tString[] deleteSQLSplits_";
+  protected final String TEXT_445 = NL + "\t\t\tString[] replaceSQLSplits_";
+  protected final String TEXT_446 = NL + "\t\t\tString[] insertIgnoreSQLSplits_";
 
     public static final String INSERT_COLUMN_NAME = "insertColName";
     public static final String INSERT_VALUE_STMT = "insertValueStmt";
@@ -6380,7 +6379,7 @@ DBLogUtil dbLog = null;
     stringBuffer.append(TEXT_46);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_47);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_48);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_49);
@@ -6390,10 +6389,8 @@ DBLogUtil dbLog = null;
     stringBuffer.append(TEXT_51);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_52);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_53);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_54);
+    stringBuffer.append(TEXT_53);
     
 List<IMetadataColumn> columnList = getColumnList(node);
 List<Column> stmtStructure = null;
@@ -6431,13 +6428,13 @@ if(("UPDATE").equals(dataAction) || ("INSERT_OR_UPDATE").equals(dataAction) || (
             }
         }
         
+    stringBuffer.append(TEXT_54);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_55);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
     stringBuffer.append(updateKeyCount);
-    stringBuffer.append(TEXT_57);
+    stringBuffer.append(TEXT_56);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_58);
+    stringBuffer.append(TEXT_57);
     
     }
 } else if(("DELETE").equals(dataAction)) {
@@ -6449,13 +6446,13 @@ if(("UPDATE").equals(dataAction) || ("INSERT_OR_UPDATE").equals(dataAction) || (
             }
         }
         
+    stringBuffer.append(TEXT_58);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(deleteKeyCount);
     stringBuffer.append(TEXT_59);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(deleteKeyCount);
     stringBuffer.append(TEXT_60);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_61);
     
     }
 } else if (("INSERT_IF_NOT_EXIST").equals(dataAction)){
@@ -6467,28 +6464,28 @@ if(("UPDATE").equals(dataAction) || ("INSERT_OR_UPDATE").equals(dataAction) || (
             }
         }
        
+    stringBuffer.append(TEXT_61);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(insertKeyCount);
     stringBuffer.append(TEXT_62);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(insertKeyCount);
     stringBuffer.append(TEXT_63);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_64);
     
     }
 }
 
+    stringBuffer.append(TEXT_64);
     stringBuffer.append(TEXT_65);
-    stringBuffer.append(TEXT_66);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 boolean useExistingConnection = "true".equals(ElementParameterParser.getValue(node,"__USE_EXISTING_CONNECTION__"));
 boolean useAlternateSchema = "true".equals(ElementParameterParser.getValue(node, "__USE_ALTERNATE_SCHEMA__"));
 
-    stringBuffer.append(TEXT_68);
-    stringBuffer.append(cid );
     stringBuffer.append(TEXT_67);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_66);
     
 if(useExistingConnection) {
 	String connection = ElementParameterParser.getValue(node,"__CONNECTION__");
@@ -6496,28 +6493,28 @@ if(useExistingConnection) {
 	if(useAlternateSchema) {
 		String alternateSchema = ElementParameterParser.getValue(node,"__ALTERNATE_SCHEMA__");
 	
-    stringBuffer.append(TEXT_69);
+    stringBuffer.append(TEXT_68);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(alternateSchema);
-    stringBuffer.append(TEXT_70);
+    stringBuffer.append(TEXT_69);
     
 	} else {
 		String schema = "dbschema_" + connection;
 	
-    stringBuffer.append(TEXT_69);
+    stringBuffer.append(TEXT_68);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_71);
+    stringBuffer.append(TEXT_70);
     stringBuffer.append(schema);
-    stringBuffer.append(TEXT_72);
+    stringBuffer.append(TEXT_71);
     
 	}
 	
-    stringBuffer.append(TEXT_73);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_74);
-    stringBuffer.append(conn);
     stringBuffer.append(TEXT_72);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_73);
+    stringBuffer.append(conn);
+    stringBuffer.append(TEXT_71);
     dbLog.conn().useExistConn("conn_"+cid+".getMetaData().getURL()", "conn_"+cid+".getMetaData().getUserName()");
     
 } else {
@@ -6526,14 +6523,16 @@ if(useExistingConnection) {
 	if(specify_alias){
 		String alias = ElementParameterParser.getValue(node, "__DATASOURCE_ALIAS__");
 		
+    stringBuffer.append(TEXT_74);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_75);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_76);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append((null != alias && !("".equals(alias)))?alias:"\"\"");
     stringBuffer.append(TEXT_77);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append((null != alias && !("".equals(alias)))?alias:"\"\"");
     stringBuffer.append(TEXT_78);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_79);
@@ -6542,155 +6541,153 @@ if(useExistingConnection) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_81);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_78);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_82);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_79);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_83);
     
 	}
     
-    stringBuffer.append(TEXT_84);
+    stringBuffer.append(TEXT_83);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(dbschema);
-    stringBuffer.append(TEXT_85);
+    stringBuffer.append(TEXT_84);
     
     if(driver.equals("JTDS")) {
     
-    stringBuffer.append(TEXT_86);
+    stringBuffer.append(TEXT_85);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_87);
+    stringBuffer.append(TEXT_86);
     
     } else {
     
-    stringBuffer.append(TEXT_86);
+    stringBuffer.append(TEXT_85);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_88);
+    stringBuffer.append(TEXT_87);
      
     }
     
-    stringBuffer.append(TEXT_89);
+    stringBuffer.append(TEXT_88);
     dbLog.conn().logJDBCDriver(dbLog.var("driverClass"));
+    stringBuffer.append(TEXT_89);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_90);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(dbport);
     stringBuffer.append(TEXT_91);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(dbport);
-    stringBuffer.append(TEXT_92);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(dbname);
-    stringBuffer.append(TEXT_93);
+    stringBuffer.append(TEXT_92);
     
     if(driver.equals("JTDS")) {
     
+    stringBuffer.append(TEXT_93);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_94);
+    stringBuffer.append(dbhost);
+    stringBuffer.append(TEXT_92);
+    
+    } else {
+    
+    stringBuffer.append(TEXT_93);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_95);
     stringBuffer.append(dbhost);
-    stringBuffer.append(TEXT_93);
-    
-    } else {
-    
-    stringBuffer.append(TEXT_94);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_96);
-    stringBuffer.append(dbhost);
-    stringBuffer.append(TEXT_93);
+    stringBuffer.append(TEXT_92);
     
     }
     
+    stringBuffer.append(TEXT_96);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_97);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_98);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_99);
+    stringBuffer.append(TEXT_98);
     stringBuffer.append(dbport);
-    stringBuffer.append(TEXT_100);
+    stringBuffer.append(TEXT_99);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_101);
+    stringBuffer.append(TEXT_100);
     
 			if(driver.equals("JTDS")) {
 	
-    stringBuffer.append(TEXT_102);
+    stringBuffer.append(TEXT_101);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_103);
+    stringBuffer.append(TEXT_102);
     stringBuffer.append(dbname);
-    stringBuffer.append(TEXT_104);
+    stringBuffer.append(TEXT_103);
     
 			} else {
 	
-    stringBuffer.append(TEXT_105);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_106);
-    stringBuffer.append(dbname);
     stringBuffer.append(TEXT_104);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_105);
+    stringBuffer.append(dbname);
+    stringBuffer.append(TEXT_103);
     
 			}
 	
-    stringBuffer.append(TEXT_107);
+    stringBuffer.append(TEXT_106);
     
     if (driver.equals("MSSQL_PROP") && useActiveDirectoryAuth) {
 
+    stringBuffer.append(TEXT_107);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_108);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_109);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_110);
     stringBuffer.append(dbname);
-    stringBuffer.append(TEXT_85);
+    stringBuffer.append(TEXT_84);
     
     }
 
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_110);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_112);
+    stringBuffer.append(TEXT_111);
     stringBuffer.append(dbproperties);
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_112);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(dbuser);
-    stringBuffer.append(TEXT_114);
+    stringBuffer.append(TEXT_113);
     
     String passwordFieldName = "__PASS__";
     
-    stringBuffer.append(TEXT_115);
+    stringBuffer.append(TEXT_114);
     if (ElementParameterParser.canEncrypt(node, passwordFieldName)) {
-    stringBuffer.append(TEXT_116);
+    stringBuffer.append(TEXT_115);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_116);
     stringBuffer.append(ElementParameterParser.getEncryptedValue(node, passwordFieldName));
     stringBuffer.append(TEXT_10);
     } else {
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_117);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append( ElementParameterParser.getValue(node, passwordFieldName));
-    stringBuffer.append(TEXT_119);
+    stringBuffer.append(TEXT_118);
     }
-    stringBuffer.append(TEXT_120);
+    stringBuffer.append(TEXT_119);
     stringBuffer.append(cid );
+    stringBuffer.append(TEXT_120);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_84);
+    dbLog.conn().connTry(dbLog.var("url"), dbLog.var("dbUser"));
     stringBuffer.append(TEXT_121);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_85);
-    dbLog.conn().connTry(dbLog.var("url"), dbLog.var("dbUser"));
     stringBuffer.append(TEXT_122);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_123);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_124);
+    stringBuffer.append(TEXT_123);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_125);
+    stringBuffer.append(TEXT_124);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_10);
     dbLog.conn().connDone(dbLog.var("url"));
-    stringBuffer.append(TEXT_89);
+    stringBuffer.append(TEXT_88);
     
 	if(specify_alias){
 	
-    stringBuffer.append(TEXT_126);
+    stringBuffer.append(TEXT_125);
     
 	}
 }
@@ -6698,62 +6695,62 @@ if(useExistingConnection) {
     
 if(!useExistingConnection) {
 	
+    stringBuffer.append(TEXT_126);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_127);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_128);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_129);
     
     if(!("").equals(commitEvery) && !("0").equals(commitEvery)) {
         
+    stringBuffer.append(TEXT_129);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_130);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(commitEvery);
     stringBuffer.append(TEXT_131);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(commitEvery);
     stringBuffer.append(TEXT_132);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_133);
     
     }
 }
 dbLog.commit().logAutoCommit("conn_"+cid+".getAutoCommit()");
 if (useBatch) {
 
+    stringBuffer.append(TEXT_133);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(batchSize);
     stringBuffer.append(TEXT_134);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(batchSize);
     stringBuffer.append(TEXT_135);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_136);
     
 }
 
+    stringBuffer.append(TEXT_136);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_137);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_138);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(table);
     stringBuffer.append(TEXT_139);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(table);
     stringBuffer.append(TEXT_140);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_141);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_142);
     stringBuffer.append(table);
-    stringBuffer.append(TEXT_143);
+    stringBuffer.append(TEXT_142);
     
 
 if(columnList != null && columnList.size()>0) {
 if(!isDynamic) {
 	
-    stringBuffer.append(TEXT_144);
+    stringBuffer.append(TEXT_143);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_145);
+    stringBuffer.append(TEXT_144);
     
 //issue 0010346 Parallelization crash with "Drop table if exists and create"
 Boolean isParallelize ="true".equalsIgnoreCase(ElementParameterParser.getValue(node, "__PARALLELIZE__"));
@@ -6785,54 +6782,54 @@ if (!isParallelize) {
     if(!("NONE").equals(tableAction)) {
         if(("DROP_CREATE").equals(tableAction)) {
         
+    stringBuffer.append(TEXT_145);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_149);
+    stringBuffer.append(TEXT_148);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_150);
+    stringBuffer.append(TEXT_149);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_151);
+    stringBuffer.append(TEXT_150);
     
                }
              
     dbLog.table().dropTry(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_152);
+    stringBuffer.append(TEXT_151);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getDropTableSQL());
-    stringBuffer.append(TEXT_154);
+    stringBuffer.append(TEXT_153);
     stringBuffer.append((useCascade ? " + \" cascade\"" : ""));
     stringBuffer.append(TEXT_10);
     dbLog.table().dropDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_155);
+    stringBuffer.append(TEXT_154);
     
                 if (TERADATA.equalsIgnoreCase(dbmsId)) {
             
-    stringBuffer.append(TEXT_156);
+    stringBuffer.append(TEXT_155);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_157);
+    stringBuffer.append(TEXT_156);
     
                 }
             
-    stringBuffer.append(TEXT_158);
+    stringBuffer.append(TEXT_157);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_159);
+    stringBuffer.append(TEXT_158);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                }
              
@@ -6843,63 +6840,63 @@ if (!isParallelize) {
                     if(conns_dynamic!=null && conns_dynamic.size()>0){
                         String query=manager.getCreateTableSQL(stmtStructure);
                     
-    stringBuffer.append(TEXT_162);
+    stringBuffer.append(TEXT_161);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(conns_dynamic.get(0).getName());
     stringBuffer.append(TEXT_28);
     stringBuffer.append(getDynamicColumn());
-    stringBuffer.append(TEXT_163);
+    stringBuffer.append(TEXT_162);
     stringBuffer.append(convertToLowercase_tableAction);
+    stringBuffer.append(TEXT_163);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_164);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_165);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_166);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_167);
     stringBuffer.append(query);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_169);
+    stringBuffer.append(TEXT_168);
     stringBuffer.append(dbms==null?"":dbms.toLowerCase());
-    stringBuffer.append(TEXT_170);
+    stringBuffer.append(TEXT_169);
     if(convertToUppercase_tableAction){
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_170);
     }
-    stringBuffer.append(TEXT_172);
+    stringBuffer.append(TEXT_171);
     stringBuffer.append(ending);
-    stringBuffer.append(TEXT_173);
+    stringBuffer.append(TEXT_172);
     
                     }
                 } else {
             
-    stringBuffer.append(TEXT_174);
+    stringBuffer.append(TEXT_173);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getCreateTableSQL(stmtStructure));
-    stringBuffer.append(TEXT_175);
+    stringBuffer.append(TEXT_174);
     
             }
             
     dbLog.table().createDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_155);
+    stringBuffer.append(TEXT_154);
     
         } else if(("CREATE").equals(tableAction)) {
         
-    stringBuffer.append(TEXT_158);
+    stringBuffer.append(TEXT_157);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_159);
+    stringBuffer.append(TEXT_158);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                }
              
@@ -6910,47 +6907,47 @@ if (!isParallelize) {
                 if(conns_dynamic!=null && conns_dynamic.size()>0){
                     String query=manager.getCreateTableSQL(stmtStructure);
                     
-    stringBuffer.append(TEXT_176);
+    stringBuffer.append(TEXT_175);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(conns_dynamic.get(0).getName());
     stringBuffer.append(TEXT_28);
     stringBuffer.append(getDynamicColumn());
-    stringBuffer.append(TEXT_177);
+    stringBuffer.append(TEXT_176);
     stringBuffer.append(convertToLowercase_tableAction);
+    stringBuffer.append(TEXT_177);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_178);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_179);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_180);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_167);
+    stringBuffer.append(TEXT_166);
     stringBuffer.append(query);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_169);
+    stringBuffer.append(TEXT_168);
     stringBuffer.append(dbms==null?"":dbms.toLowerCase());
-    stringBuffer.append(TEXT_170);
+    stringBuffer.append(TEXT_169);
     if(convertToUppercase_tableAction){
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_170);
     }
-    stringBuffer.append(TEXT_172);
+    stringBuffer.append(TEXT_171);
     stringBuffer.append(ending);
-    stringBuffer.append(TEXT_173);
+    stringBuffer.append(TEXT_172);
     
                 }
             } else {
             
-    stringBuffer.append(TEXT_174);
+    stringBuffer.append(TEXT_173);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getCreateTableSQL(stmtStructure));
-    stringBuffer.append(TEXT_175);
+    stringBuffer.append(TEXT_174);
     
             }
             
     dbLog.table().createDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_155);
+    stringBuffer.append(TEXT_154);
     
         } else if(("CREATE_IF_NOT_EXISTS").equals(tableAction) || ("DROP_IF_EXISTS_AND_CREATE").equals(tableAction)) {
             boolean tableNameCaseSensitive=false;
@@ -6962,7 +6959,7 @@ if (!isParallelize) {
             //to fixed: bug8422
             if((cid.equals("talendLogs_DB") || cid.equals("talendStats_DB") || cid.equals("talendMeter_DB"))){
             
-    stringBuffer.append(TEXT_115);
+    stringBuffer.append(TEXT_114);
     //bug22719: informix use independent connection, should remove this code after use shared connection
                 if(INFORMIX.equalsIgnoreCase(dbmsId)){
                     String dbnameKey = ElementParameterParser.getValue(node, "__DBNAME__");
@@ -6971,37 +6968,37 @@ if (!isParallelize) {
                     String dbportKey = ElementParameterParser.getValue(node, "__PORT__");
                     String tableSchemaKey = ElementParameterParser.getValue(node,"__SCHEMA_DB__");
                     
+    stringBuffer.append(TEXT_180);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_181);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_182);
     stringBuffer.append(dbhostKey);
-    stringBuffer.append(TEXT_183);
+    stringBuffer.append(TEXT_182);
     stringBuffer.append(dbportKey);
-    stringBuffer.append(TEXT_183);
+    stringBuffer.append(TEXT_182);
     stringBuffer.append(dbnameKey);
-    stringBuffer.append(TEXT_183);
+    stringBuffer.append(TEXT_182);
     stringBuffer.append(dbserverKey);
-    stringBuffer.append(TEXT_183);
+    stringBuffer.append(TEXT_182);
     stringBuffer.append(tableSchemaKey);
+    stringBuffer.append(TEXT_183);
+    stringBuffer.append(table);
     stringBuffer.append(TEXT_184);
-    stringBuffer.append(table);
-    stringBuffer.append(TEXT_185);
     }else{
-    stringBuffer.append(TEXT_186);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_187);
-    stringBuffer.append(table);
     stringBuffer.append(TEXT_185);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_186);
+    stringBuffer.append(table);
+    stringBuffer.append(TEXT_184);
     }
+    stringBuffer.append(TEXT_187);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_188);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_189);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_190);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_191);
     
             }
             
@@ -7013,11 +7010,13 @@ if (!isParallelize) {
                             //TODO we will use like "select" sql intead of use system table to checked table?
                             if(MSSQL.equalsIgnoreCase(dbmsId)) {
                             
+    stringBuffer.append(TEXT_191);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_192);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_193);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_193);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_194);
     stringBuffer.append(cid);
@@ -7026,16 +7025,16 @@ if (!isParallelize) {
     stringBuffer.append(TEXT_196);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_197);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_198);
     
                             } else if (ORACLE.equalsIgnoreCase(dbmsId) || SAPHANA.equalsIgnoreCase(dbmsId)) {
                             
-    stringBuffer.append(TEXT_199);
+    stringBuffer.append(TEXT_198);
     stringBuffer.append(manager.generateCode4TabelExist());
-    stringBuffer.append(TEXT_200);
+    stringBuffer.append(TEXT_199);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_200);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_201);
     stringBuffer.append(cid);
@@ -7043,9 +7042,9 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_203);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_204);
+    stringBuffer.append(TEXT_202);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_203);
+    stringBuffer.append(TEXT_204);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_205);
     stringBuffer.append(cid);
@@ -7060,21 +7059,21 @@ if (!isParallelize) {
     stringBuffer.append(TEXT_210);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_211);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_212);
     
                             } else if ( SYBASE.equalsIgnoreCase(dbmsId)
                                         || INFORMIX.equalsIgnoreCase(dbmsId) ) {
                             
-    stringBuffer.append(TEXT_200);
+    stringBuffer.append(TEXT_199);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_205);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
+    stringBuffer.append(TEXT_213);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_214);
     stringBuffer.append(cid);
@@ -7082,43 +7081,43 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_216);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_217);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_218);
+    if(!tableNameCaseSensitive){
+    stringBuffer.append(TEXT_219);
+    }
+    stringBuffer.append(TEXT_220);
+    stringBuffer.append(table);
+    stringBuffer.append(TEXT_221);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_218);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
     if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
+    stringBuffer.append(TEXT_219);
     }
-    stringBuffer.append(TEXT_221);
-    stringBuffer.append(table);
     stringBuffer.append(TEXT_222);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
-    if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
     stringBuffer.append(TEXT_223);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_224);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_225);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_226);
     
                             } else if( DB2.equalsIgnoreCase(dbmsId) || TERADATA.equalsIgnoreCase(dbmsId)){
                             
-    stringBuffer.append(TEXT_200);
+    stringBuffer.append(TEXT_199);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_205);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
+    stringBuffer.append(TEXT_213);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_214);
     stringBuffer.append(cid);
@@ -7126,29 +7125,29 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_216);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_217);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_218);
+    if(!tableNameCaseSensitive){
+    stringBuffer.append(TEXT_219);
+    }
+    stringBuffer.append(TEXT_226);
+    stringBuffer.append(table);
+    stringBuffer.append(TEXT_227);
+    if(convertToUppercase_tableAction){
+    stringBuffer.append(TEXT_170);
+    }
+    stringBuffer.append(TEXT_221);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_218);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
     if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
-    stringBuffer.append(TEXT_227);
-    stringBuffer.append(table);
-    stringBuffer.append(TEXT_228);
-    if(convertToUppercase_tableAction){
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_219);
     }
     stringBuffer.append(TEXT_222);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
-    if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
-    stringBuffer.append(TEXT_223);
+    stringBuffer.append(TEXT_228);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_229);
     stringBuffer.append(cid);
@@ -7156,31 +7155,31 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_231);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_232);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_226);
+    stringBuffer.append(TEXT_225);
     
                             } else if (GREENPLUM.equalsIgnoreCase(dbmsId) || POSTGRESQL.equalsIgnoreCase(dbmsId) || POSTGREPLUS.equalsIgnoreCase(dbmsId) || VERTICA.equalsIgnoreCase(dbmsId)) {
                             
-    stringBuffer.append(TEXT_200);
+    stringBuffer.append(TEXT_199);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_205);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
+    stringBuffer.append(TEXT_232);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_233);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_137);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_234);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_138);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_235);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_236);
     stringBuffer.append(cid);
@@ -7192,58 +7191,58 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_240);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_241);
+    stringBuffer.append(TEXT_214);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_215);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_216);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_217);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_218);
+    if(!tableNameCaseSensitive){
+    stringBuffer.append(TEXT_219);
+    }
+    stringBuffer.append(TEXT_226);
+    stringBuffer.append(table);
+    stringBuffer.append(TEXT_227);
+    if(convertToLowercase_tableAction){
+    stringBuffer.append(TEXT_241);
+    }
+    stringBuffer.append(TEXT_221);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_218);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
     if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
-    stringBuffer.append(TEXT_227);
-    stringBuffer.append(table);
-    stringBuffer.append(TEXT_228);
-    if(convertToLowercase_tableAction){
-    stringBuffer.append(TEXT_242);
+    stringBuffer.append(TEXT_219);
     }
     stringBuffer.append(TEXT_222);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
-    if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
-    stringBuffer.append(TEXT_223);
+    stringBuffer.append(TEXT_242);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_243);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_244);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_218);
+    if(!tableNameCaseSensitive){
+    stringBuffer.append(TEXT_219);
+    }
     stringBuffer.append(TEXT_245);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_219);
-    if(!tableNameCaseSensitive){
-    stringBuffer.append(TEXT_220);
-    }
-    stringBuffer.append(TEXT_246);
+    stringBuffer.append(TEXT_231);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_232);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_226);
+    stringBuffer.append(TEXT_225);
     
                             } else if(EXASOL.equalsIgnoreCase(dbmsId)) {
                             
+    stringBuffer.append(TEXT_246);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_55);
+    stringBuffer.append(table);
     stringBuffer.append(TEXT_247);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
-    stringBuffer.append(table);
     stringBuffer.append(TEXT_248);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_249);
@@ -7256,41 +7255,41 @@ if (!isParallelize) {
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_253);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_251);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_254);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_252);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_255);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_256);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_257);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_258);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_259);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_260);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_211);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_261);
-    
-                            } else if(REDSHIFT.equalsIgnoreCase(dbmsId)) {
-                            
-    stringBuffer.append(TEXT_200);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_256);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
+    stringBuffer.append(TEXT_257);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_258);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_259);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_210);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_260);
+    
+                            } else if(REDSHIFT.equalsIgnoreCase(dbmsId)) {
+                            
+    stringBuffer.append(TEXT_199);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_255);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_205);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_206);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_261);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_262);
     stringBuffer.append(cid);
@@ -7301,8 +7300,6 @@ if (!isParallelize) {
     stringBuffer.append(TEXT_265);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_266);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_267);
     
                             } else if(MYSQL.equalsIgnoreCase(dbmsId)) {
                                 boolean useExistMySQLConn = "true".equalsIgnoreCase(ElementParameterParser.getValue(node,"__USE_EXISTING_CONNECTION__"));
@@ -7321,90 +7318,90 @@ if (!isParallelize) {
                                 }
                                 dbnameMySQL = ("".equals(dbnameMySQL)) ? null : dbnameMySQL;
                             
-    stringBuffer.append(TEXT_200);
+    stringBuffer.append(TEXT_199);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_268);
+    stringBuffer.append(TEXT_267);
     if (dbnameMySQL != null) {
-    stringBuffer.append(TEXT_269);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_270);
-    stringBuffer.append(dbnameMySQL);
-    stringBuffer.append(TEXT_271);
-    } else {
-    stringBuffer.append(TEXT_269);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_272);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_273);
-    }
-    stringBuffer.append(TEXT_192);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_274);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_275);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_276);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_277);
-    stringBuffer.append(table);
-    stringBuffer.append(TEXT_278);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_279);
-    
-                            } else {
-                            
-    stringBuffer.append(TEXT_200);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
+    stringBuffer.append(TEXT_268);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_207);
+    stringBuffer.append(TEXT_269);
+    stringBuffer.append(dbnameMySQL);
+    stringBuffer.append(TEXT_270);
+    } else {
+    stringBuffer.append(TEXT_268);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_206);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_271);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_272);
+    }
+    stringBuffer.append(TEXT_191);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_273);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_274);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_275);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_276);
+    stringBuffer.append(table);
+    stringBuffer.append(TEXT_277);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_278);
+    
+                            } else {
+                            
+    stringBuffer.append(TEXT_199);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_205);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_206);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_213);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_214);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_215);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_279);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_280);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_277);
+    stringBuffer.append(TEXT_276);
     stringBuffer.append(table);
-    stringBuffer.append(TEXT_266);
+    stringBuffer.append(TEXT_265);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_226);
+    stringBuffer.append(TEXT_225);
     
                             }
                             
     
                             if(("CREATE_IF_NOT_EXISTS").equals(tableAction)) {
                             
+    stringBuffer.append(TEXT_280);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_281);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_282);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                                        if(setQueryTimeOut){
                                             
-    stringBuffer.append(TEXT_283);
+    stringBuffer.append(TEXT_282);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                                        }
                                      
@@ -7415,100 +7412,100 @@ if (!isParallelize) {
                                         if(conns_dynamic!=null && conns_dynamic.size()>0){
                                             String query=manager.getCreateTableSQL(stmtStructure);
                                             
-    stringBuffer.append(TEXT_284);
+    stringBuffer.append(TEXT_283);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(conns_dynamic.get(0).getName());
     stringBuffer.append(TEXT_28);
     stringBuffer.append(getDynamicColumn());
-    stringBuffer.append(TEXT_285);
+    stringBuffer.append(TEXT_284);
     stringBuffer.append(convertToLowercase_tableAction);
+    stringBuffer.append(TEXT_285);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_286);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_287);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_288);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_167);
+    stringBuffer.append(TEXT_166);
     stringBuffer.append(query);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_169);
+    stringBuffer.append(TEXT_168);
     stringBuffer.append(dbms==null?"":dbms.toLowerCase());
-    stringBuffer.append(TEXT_170);
+    stringBuffer.append(TEXT_169);
     if(convertToUppercase_tableAction){
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_170);
     }
-    stringBuffer.append(TEXT_172);
+    stringBuffer.append(TEXT_171);
     stringBuffer.append(ending);
-    stringBuffer.append(TEXT_173);
+    stringBuffer.append(TEXT_172);
     
                                         }
                                     } else {
                                     
-    stringBuffer.append(TEXT_289);
+    stringBuffer.append(TEXT_288);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getCreateTableSQL(stmtStructure));
-    stringBuffer.append(TEXT_175);
+    stringBuffer.append(TEXT_174);
     
                                     }
                                     
     dbLog.table().createDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_290);
+    stringBuffer.append(TEXT_289);
     
                             } else {
                             
+    stringBuffer.append(TEXT_290);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_291);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_292);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                                            if(setQueryTimeOut){
                                                 
-    stringBuffer.append(TEXT_293);
+    stringBuffer.append(TEXT_292);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                                            }
                                      
     dbLog.table().dropTry(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_294);
+    stringBuffer.append(TEXT_293);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getDropTableSQL());
-    stringBuffer.append(TEXT_154);
+    stringBuffer.append(TEXT_153);
     stringBuffer.append((useCascade ? " + \" cascade\"" : ""));
     stringBuffer.append(TEXT_10);
     dbLog.table().dropDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_295);
+    stringBuffer.append(TEXT_294);
     
                                         if (TERADATA.equalsIgnoreCase(dbmsId)) {
                                     
-    stringBuffer.append(TEXT_296);
+    stringBuffer.append(TEXT_295);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_157);
+    stringBuffer.append(TEXT_156);
     
                                         }
                                     
-    stringBuffer.append(TEXT_297);
+    stringBuffer.append(TEXT_296);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                                        if(setQueryTimeOut){
                                         
-    stringBuffer.append(TEXT_298);
+    stringBuffer.append(TEXT_297);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                                    }
                                  
@@ -7519,47 +7516,47 @@ if (!isParallelize) {
                                     if(conns_dynamic!=null && conns_dynamic.size()>0){
 		                                String query=manager.getCreateTableSQL(stmtStructure);
                                         
-    stringBuffer.append(TEXT_299);
+    stringBuffer.append(TEXT_298);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(conns_dynamic.get(0).getName());
     stringBuffer.append(TEXT_28);
     stringBuffer.append(getDynamicColumn());
-    stringBuffer.append(TEXT_300);
+    stringBuffer.append(TEXT_299);
     stringBuffer.append(convertToLowercase_tableAction);
+    stringBuffer.append(TEXT_300);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_301);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_302);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_303);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_167);
+    stringBuffer.append(TEXT_166);
     stringBuffer.append(query);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_169);
+    stringBuffer.append(TEXT_168);
     stringBuffer.append(dbms==null?"":dbms.toLowerCase());
-    stringBuffer.append(TEXT_170);
+    stringBuffer.append(TEXT_169);
     if(convertToUppercase_tableAction){
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_170);
     }
-    stringBuffer.append(TEXT_172);
+    stringBuffer.append(TEXT_171);
     stringBuffer.append(ending);
-    stringBuffer.append(TEXT_173);
+    stringBuffer.append(TEXT_172);
     
                                     }
                                 } else {
                                 
-    stringBuffer.append(TEXT_304);
+    stringBuffer.append(TEXT_303);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_153);
+    stringBuffer.append(TEXT_152);
     stringBuffer.append(manager.getCreateTableSQL(stmtStructure));
-    stringBuffer.append(TEXT_175);
+    stringBuffer.append(TEXT_174);
     
                                 }
                                 
     dbLog.table().createDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_305);
+    stringBuffer.append(TEXT_304);
     
                             }
                             
@@ -7567,149 +7564,149 @@ if (!isParallelize) {
             //to fixed: bug8422
             if((cid.equals("talendLogs_DB") || cid.equals("talendStats_DB") || cid.equals("talendMeter_DB"))){
             
-    stringBuffer.append(TEXT_306);
+    stringBuffer.append(TEXT_305);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_307);
+    stringBuffer.append(TEXT_306);
     
             }
             
     
         } else if(("CLEAR").equals(tableAction)) {
         
-    stringBuffer.append(TEXT_308);
+    stringBuffer.append(TEXT_307);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_309);
+    stringBuffer.append(TEXT_308);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                }
              
     dbLog.table().clearTry(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_310);
+    stringBuffer.append(TEXT_309);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_311);
+    stringBuffer.append(TEXT_310);
     stringBuffer.append(manager.getDeleteTableSQL());
-    stringBuffer.append(TEXT_312);
+    stringBuffer.append(TEXT_311);
     dbLog.table().clearDone(dbLog.varForTableName("tableName", dbmsId));
-    stringBuffer.append(TEXT_155);
+    stringBuffer.append(TEXT_154);
     
         }else if(("TRUNCATE").equals(tableAction)) {
         
+    stringBuffer.append(TEXT_312);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_313);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_314);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_315);
+    stringBuffer.append(TEXT_314);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                }
              
+    stringBuffer.append(TEXT_315);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_316);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_317);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_318);
     stringBuffer.append(manager.getSelectionSQL());
+    stringBuffer.append(TEXT_318);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_319);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_320);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_321);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_322);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     
                if(setQueryTimeOut){
                     
-    stringBuffer.append(TEXT_323);
+    stringBuffer.append(TEXT_322);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_160);
+    stringBuffer.append(TEXT_159);
     stringBuffer.append( queryTimeOutInSeconds );
-    stringBuffer.append(TEXT_161);
+    stringBuffer.append(TEXT_160);
     
                }
              
     dbLog.table().truncateTry(dbLog.varForTableName("tableName", dbmsId));
     if(DB2.equalsIgnoreCase(dbmsId)){
+    stringBuffer.append(TEXT_323);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_156);
+    }
     stringBuffer.append(TEXT_324);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_157);
-    }
-    stringBuffer.append(TEXT_325);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_311);
+    stringBuffer.append(TEXT_310);
     stringBuffer.append(manager.getTruncateTableSQL());
-    stringBuffer.append(TEXT_312);
+    stringBuffer.append(TEXT_311);
     if(INFORMIX.equalsIgnoreCase(dbmsId)){
-    stringBuffer.append(TEXT_326);
+    stringBuffer.append(TEXT_325);
     stringBuffer.append( cid );
-    stringBuffer.append(TEXT_327);
+    stringBuffer.append(TEXT_326);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_328);
+    stringBuffer.append(TEXT_327);
     }
     dbLog.table().truncateDone(dbLog.varForTableName("tableName", dbmsId));
+    stringBuffer.append(TEXT_328);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_329);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_330);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_331);
     
         } else if(("TRUNCATE_REUSE_STORAGE").equals(tableAction)) {
         
+    stringBuffer.append(TEXT_331);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_332);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_333);
+    stringBuffer.append(TEXT_316);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_317);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_318);
     stringBuffer.append(manager.getSelectionSQL());
-    stringBuffer.append(TEXT_334);
+    stringBuffer.append(TEXT_333);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_148);
     dbLog.table().truncateReuseStorageTry(dbLog.varForTableName("tableName", dbmsId));
     if(DB2.equalsIgnoreCase(dbmsId)){
+    stringBuffer.append(TEXT_323);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_156);
+    }
     stringBuffer.append(TEXT_324);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_157);
-    }
-    stringBuffer.append(TEXT_325);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_311);
+    stringBuffer.append(TEXT_310);
     stringBuffer.append(manager.getTruncateReuseStroageTableSQL());
-    stringBuffer.append(TEXT_312);
+    stringBuffer.append(TEXT_311);
     dbLog.table().truncateReuseStorageDone(dbLog.varForTableName("tableName", dbmsId));
+    stringBuffer.append(TEXT_334);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_335);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_336);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_337);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_338);
     
         }
     }
@@ -7727,27 +7724,27 @@ if (!isParallelize) {
 
     if(("INSERT").equals(dataAction)) {
         
+    stringBuffer.append(TEXT_338);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_339);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_340);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertColName.toString());
-    stringBuffer.append(TEXT_342);
+    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertValueStmt.toString());
-    stringBuffer.append(TEXT_343);
+    stringBuffer.append(TEXT_342);
     
 //to fixed: bug8422
 if(!usingStatsLogs){
-    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_343);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_344);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_345);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_346);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
+    stringBuffer.append(TEXT_346);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     }
@@ -7756,202 +7753,202 @@ if(!usingStatsLogs){
 //to fixed: bug8422
 //to fixed: bug18928,in bug 8422 if a statement is created,it will be used for many times,but it's not thread-safty.Now give one statement for each thread.
 if(usingStatsLogs){ 
-    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_343);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_348);
+    stringBuffer.append(TEXT_347);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_349);
+    stringBuffer.append(TEXT_348);
     stringBuffer.append(table);
-    stringBuffer.append(TEXT_350);
+    stringBuffer.append(TEXT_349);
     stringBuffer.append(cid );
+    stringBuffer.append(TEXT_350);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_351);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_352);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_353);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_346);
+    stringBuffer.append(TEXT_345);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
+    stringBuffer.append(TEXT_346);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     }
     
     } else if (("UPDATE").equals(dataAction)) {
         
+    stringBuffer.append(TEXT_353);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_354);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_355);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_356);
     stringBuffer.append(updateSetStmt.toString());
-    stringBuffer.append(TEXT_357);
+    stringBuffer.append(TEXT_356);
     stringBuffer.append(updateWhereStmt.toString());
+    stringBuffer.append(TEXT_357);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_358);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_345);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_359);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_346);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     
     } else if (("INSERT_OR_UPDATE").equals(dataAction)) {
         
-    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_343);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_360);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_361);
-    stringBuffer.append(updateWhereStmt.toString());
-    stringBuffer.append(TEXT_362);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_363);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_340);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_341);
-    stringBuffer.append(insertColName.toString());
-    stringBuffer.append(TEXT_342);
-    stringBuffer.append(insertValueStmt.toString());
-    stringBuffer.append(TEXT_364);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_345);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_365);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_366);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_367);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_355);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_356);
-    stringBuffer.append(updateSetStmt.toString());
-    stringBuffer.append(TEXT_357);
-    stringBuffer.append(updateWhereStmt.toString());
-    stringBuffer.append(TEXT_368);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_359);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_369);
+    stringBuffer.append(TEXT_360);
+    stringBuffer.append(updateWhereStmt.toString());
+    stringBuffer.append(TEXT_361);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_370);
+    stringBuffer.append(TEXT_346);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_362);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_339);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_340);
+    stringBuffer.append(insertColName.toString());
+    stringBuffer.append(TEXT_341);
+    stringBuffer.append(insertValueStmt.toString());
+    stringBuffer.append(TEXT_363);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_344);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_364);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_365);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_366);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_354);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_355);
+    stringBuffer.append(updateSetStmt.toString());
+    stringBuffer.append(TEXT_356);
+    stringBuffer.append(updateWhereStmt.toString());
+    stringBuffer.append(TEXT_367);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_358);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_368);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_369);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     
     } else if (("UPDATE_OR_INSERT").equals(dataAction)) {
         
+    stringBuffer.append(TEXT_353);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_354);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_355);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_356);
     stringBuffer.append(updateSetStmt.toString());
-    stringBuffer.append(TEXT_357);
+    stringBuffer.append(TEXT_356);
     stringBuffer.append(updateWhereStmt.toString());
+    stringBuffer.append(TEXT_367);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_358);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_368);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_359);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_369);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_370);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_363);
+    stringBuffer.append(TEXT_362);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_339);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_340);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertColName.toString());
-    stringBuffer.append(TEXT_342);
+    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertValueStmt.toString());
+    stringBuffer.append(TEXT_363);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_344);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_364);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_345);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_365);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_366);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     
     } else if (("DELETE").equals(dataAction)) {
         
+    stringBuffer.append(TEXT_370);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_371);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_360);
+    stringBuffer.append(deleteWhereStmt.toString());
+    stringBuffer.append(TEXT_357);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_372);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_361);
-    stringBuffer.append(deleteWhereStmt.toString());
-    stringBuffer.append(TEXT_358);
+    stringBuffer.append(TEXT_345);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_373);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_346);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     
     } else if (("INSERT_IF_NOT_EXIST").equals(dataAction)) {
     	
-    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_343);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_359);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_360);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_361);
     stringBuffer.append(updateWhereStmt.toString());
+    stringBuffer.append(TEXT_361);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_346);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_362);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_363);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_339);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_340);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertColName.toString());
-    stringBuffer.append(TEXT_342);
+    stringBuffer.append(TEXT_341);
     stringBuffer.append(insertValueStmt.toString());
+    stringBuffer.append(TEXT_363);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_146);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_344);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_364);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_345);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_365);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_366);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_10);
     
     }else if("SINGLE_INSERT".equals(dataAction)){
     
-    stringBuffer.append(TEXT_374);
+    stringBuffer.append(TEXT_373);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_375);
+    stringBuffer.append(TEXT_374);
     
         for(Column column : stmtStructure) {
             if(!column.isReplaced() && !column.isAddCol() && column.isInsertable()) {
@@ -7962,16 +7959,16 @@ if(usingStatsLogs){
                 
     stringBuffer.append(TEXT_33);
     stringBuffer.append(typeToGenerate);
-    stringBuffer.append(TEXT_376);
+    stringBuffer.append(TEXT_375);
     stringBuffer.append(column.getName());
-    stringBuffer.append(TEXT_85);
+    stringBuffer.append(TEXT_84);
     
             }
         }
         
-    stringBuffer.append(TEXT_377);
+    stringBuffer.append(TEXT_376);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
+    stringBuffer.append(TEXT_220);
     
         int count = 0;
         for(Column column : stmtStructure) {
@@ -7981,21 +7978,21 @@ if(usingStatsLogs){
                	}
                 if(count != 0) {
                     
-    stringBuffer.append(TEXT_378);
+    stringBuffer.append(TEXT_377);
     
                 }
                 String typeToGenerate = JavaTypesManager.getTypeToGenerate(column.getColumn().getTalendType(), column.getColumn().isNullable());
                 
     stringBuffer.append(TEXT_33);
     stringBuffer.append(typeToGenerate);
-    stringBuffer.append(TEXT_376);
+    stringBuffer.append(TEXT_375);
     stringBuffer.append(column.getName());
     
                 count++;
             }
         }
         
-    stringBuffer.append(TEXT_379);
+    stringBuffer.append(TEXT_378);
     
             for(Column column : stmtStructure) {
                 if(!column.isReplaced() && !column.isAddCol() && column.isInsertable()) {
@@ -8003,15 +8000,17 @@ if(usingStatsLogs){
                    		continue;
                		}
                     
-    stringBuffer.append(TEXT_380);
+    stringBuffer.append(TEXT_379);
     stringBuffer.append(column.getName());
-    stringBuffer.append(TEXT_56);
+    stringBuffer.append(TEXT_55);
     stringBuffer.append(column.getName());
-    stringBuffer.append(TEXT_85);
+    stringBuffer.append(TEXT_84);
     
                 }
             }
             
+    stringBuffer.append(TEXT_380);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_381);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_382);
@@ -8021,122 +8020,120 @@ if(usingStatsLogs){
     stringBuffer.append(TEXT_384);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_385);
-    stringBuffer.append(cid);
+    stringBuffer.append(batchSize);
     stringBuffer.append(TEXT_386);
-    stringBuffer.append(batchSize);
-    stringBuffer.append(TEXT_387);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_388);
+    stringBuffer.append(TEXT_387);
     stringBuffer.append(insertValueStmt.toString());
-    stringBuffer.append(TEXT_389);
+    stringBuffer.append(TEXT_388);
     stringBuffer.append(batchSize);
+    stringBuffer.append(TEXT_389);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_390);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_391);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_392);
     stringBuffer.append(table);
+    stringBuffer.append(TEXT_392);
+    stringBuffer.append(insertColName.toString());
     stringBuffer.append(TEXT_393);
-    stringBuffer.append(insertColName.toString());
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_394);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_395);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_344);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_396);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_345);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_346);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_397);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_347);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_398);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_399);
     stringBuffer.append(insertColName.toString());
+    stringBuffer.append(TEXT_399);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_400);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_401);
     stringBuffer.append(insertValueStmt.toString());
-    stringBuffer.append(TEXT_402);
+    stringBuffer.append(TEXT_401);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_403);
+    stringBuffer.append(TEXT_402);
     }
     if(isEnableDebug) {
         
-    stringBuffer.append(TEXT_404);
+    stringBuffer.append(TEXT_403);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_405);
+    stringBuffer.append(TEXT_404);
     
 	     if(("INSERT").equals(dataAction) || ("INSERT_IGNORE").equals(dataAction)) {
 
+    stringBuffer.append(TEXT_405);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_406);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_407);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
     
 		} else if (("UPDATE").equals(dataAction)) {
 
+    stringBuffer.append(TEXT_408);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_409);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_410);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_411);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
+    stringBuffer.append(TEXT_407);
     		
 		} else if (("INSERT_OR_UPDATE").equals(dataAction) || ("UPDATE_OR_INSERT").equals(dataAction)) {
 
-    stringBuffer.append(TEXT_409);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_412);
+    stringBuffer.append(TEXT_408);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_411);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_413);
+    stringBuffer.append(TEXT_410);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_412);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_406);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_407);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
     
 		} else if (("DELETE").equals(dataAction)) {
 
+    stringBuffer.append(TEXT_413);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_414);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_415);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_416);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
+    stringBuffer.append(TEXT_407);
     		
 		} else if (("REPLACE").equals(dataAction)) {//mysql
 
+    stringBuffer.append(TEXT_416);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_417);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_418);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_419);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
+    stringBuffer.append(TEXT_407);
     
 		} else if (("INSERT_ON_DUPLICATE_KEY_UPDATE").equals(dataAction)) {//mysql
 
+    stringBuffer.append(TEXT_419);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_420);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_421);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_422);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
+    stringBuffer.append(TEXT_407);
     
 		}else if (("INSERT_IF_NOT_EXIST").equals(dataAction)) {//MSSQL
 
+    stringBuffer.append(TEXT_405);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_406);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_407);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_408);
     
 		}
 
@@ -8147,42 +8144,42 @@ if(usingStatsLogs){
     if (useExistingConnection) {
     	String connection = ElementParameterParser.getValue(node,"__CONNECTION__");
  
-    stringBuffer.append(TEXT_423);
+    stringBuffer.append(TEXT_422);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_423);
+    stringBuffer.append(connection);
     stringBuffer.append(TEXT_424);
     stringBuffer.append(connection);
     stringBuffer.append(TEXT_425);
-    stringBuffer.append(connection);
-    stringBuffer.append(TEXT_426);
     
  	}
     if(identityInsert) {
         
-    stringBuffer.append(TEXT_427);
+    stringBuffer.append(TEXT_426);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_147);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_428);
+    stringBuffer.append(TEXT_427);
     
         if(!isDynamic){
     
             if (useExistingConnection) {
         
+    stringBuffer.append(TEXT_428);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_429);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_430);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_431);
+    stringBuffer.append(TEXT_430);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_432);
+    stringBuffer.append(TEXT_431);
     
             } else {
      	
-    stringBuffer.append(TEXT_433);
+    stringBuffer.append(TEXT_432);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_431);
+    stringBuffer.append(TEXT_430);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_434);
+    stringBuffer.append(TEXT_433);
     
             }
         }
@@ -8190,61 +8187,61 @@ if(usingStatsLogs){
 }
 if(isDynamic) {
 
+    stringBuffer.append(TEXT_434);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_435);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_436);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_437);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_438);
     if(isEnableDebug) {
-    stringBuffer.append(TEXT_439);
+    stringBuffer.append(TEXT_438);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_440);
+    stringBuffer.append(TEXT_439);
     
 	     if(("INSERT").equals(dataAction) || ("INSERT_IGNORE").equals(dataAction)) {
 
-    stringBuffer.append(TEXT_406);
+    stringBuffer.append(TEXT_405);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 		} else if (("UPDATE").equals(dataAction)) {
 
-    stringBuffer.append(TEXT_441);
+    stringBuffer.append(TEXT_440);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_442);
+    stringBuffer.append(TEXT_441);
     		
 		} else if (("INSERT_OR_UPDATE").equals(dataAction) || ("UPDATE_OR_INSERT").equals(dataAction)) {
 
+    stringBuffer.append(TEXT_442);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_443);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_444);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 		} else if (("DELETE").equals(dataAction)) {
 
-    stringBuffer.append(TEXT_445);
+    stringBuffer.append(TEXT_444);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     		
 		} else if (("REPLACE").equals(dataAction)) {//mysql
 
-    stringBuffer.append(TEXT_446);
+    stringBuffer.append(TEXT_445);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 		} else if (("INSERT_ON_DUPLICATE_KEY_UPDATE").equals(dataAction)) {//mysql
 
-    stringBuffer.append(TEXT_447);
+    stringBuffer.append(TEXT_446);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 		}else if (("INSERT_IF_NOT_EXIST").equals(dataAction)) {//MSSQL
 
-    stringBuffer.append(TEXT_406);
+    stringBuffer.append(TEXT_405);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_67);
+    stringBuffer.append(TEXT_66);
     
 		}
 

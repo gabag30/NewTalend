@@ -123,71 +123,73 @@ public class HeaderJava
   protected final String TEXT_86 = NL + "private final JobStructureCatcherUtils ";
   protected final String TEXT_87 = " = new JobStructureCatcherUtils(jobName, \"";
   protected final String TEXT_88 = "\", \"";
-  protected final String TEXT_89 = "\");" + NL + "private org.talend.job.audit.JobAuditLogger auditLogger_";
-  protected final String TEXT_90 = " = null;" + NL + "" + NL + "private RunStat runStat = new RunStat(";
-  protected final String TEXT_91 = ");";
-  protected final String TEXT_92 = NL + "private RunStat runStat = new RunStat();";
-  protected final String TEXT_93 = NL + "private RunTrace runTrace = new RunTrace();";
-  protected final String TEXT_94 = NL + NL + "\t// OSGi DataSource" + NL + "\tprivate final static String KEY_DB_DATASOURCES = \"KEY_DB_DATASOURCES\";" + NL + "\t" + NL + "\tprivate final static String KEY_DB_DATASOURCES_RAW = \"KEY_DB_DATASOURCES_RAW\";" + NL + "" + NL + "\tpublic void setDataSources(java.util.Map<String, javax.sql.DataSource> dataSources) {" + NL + "\t\tjava.util.Map<String, routines.system.TalendDataSource> talendDataSources = new java.util.HashMap<String, routines.system.TalendDataSource>();" + NL + "\t\tfor (java.util.Map.Entry<String, javax.sql.DataSource> dataSourceEntry : dataSources.entrySet()) {" + NL + "\t\t\ttalendDataSources.put(dataSourceEntry.getKey(), new routines.system.TalendDataSource(dataSourceEntry.getValue()));" + NL + "\t\t}" + NL + "\t\tglobalMap.put(KEY_DB_DATASOURCES, talendDataSources);" + NL + "\t\tglobalMap.put(KEY_DB_DATASOURCES_RAW, new java.util.HashMap<String, javax.sql.DataSource>(dataSources));" + NL + "\t}" + NL;
-  protected final String TEXT_95 = NL + "\tLogCatcherUtils ";
-  protected final String TEXT_96 = " = new LogCatcherUtils();";
-  protected final String TEXT_97 = NL + "\tStatCatcherUtils ";
-  protected final String TEXT_98 = " = new StatCatcherUtils(\"";
-  protected final String TEXT_99 = "\");";
-  protected final String TEXT_100 = NL + "\tMetterCatcherUtils ";
-  protected final String TEXT_101 = " = new MetterCatcherUtils(\"";
-  protected final String TEXT_102 = NL + "\tAssertCatcherUtils ";
-  protected final String TEXT_103 = " = new AssertCatcherUtils();";
-  protected final String TEXT_104 = NL + NL + "private final java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();" + NL + "private final java.io.PrintStream errorMessagePS = new java.io.PrintStream(new java.io.BufferedOutputStream(baos));" + NL + "" + NL + "public String getExceptionStackTrace() {" + NL + "\tif (\"failure\".equals(this.getStatus())) {" + NL + "\t\terrorMessagePS.flush();" + NL + "\t\treturn baos.toString();" + NL + "\t}" + NL + "\treturn null;" + NL + "}" + NL + "" + NL + "private Exception exception;" + NL + "" + NL + "public Exception getException() {" + NL + "\tif (\"failure\".equals(this.getStatus())) {" + NL + "\t\treturn this.exception;" + NL + "\t}" + NL + "\treturn null;" + NL + "}" + NL + "" + NL + "private class TalendException extends Exception {" + NL + "" + NL + "\tprivate static final long serialVersionUID = 1L;" + NL + "" + NL + "\tprivate java.util.Map<String, Object> globalMap = null;" + NL + "\tprivate Exception e = null;" + NL + "\tprivate String currentComponent = null;" + NL + "\tprivate String virtualComponentName = null;" + NL + "\t" + NL + "\tpublic void setVirtualComponentName (String virtualComponentName){" + NL + "\t\tthis.virtualComponentName = virtualComponentName;" + NL + "\t}" + NL + "" + NL + "\tprivate TalendException(Exception e, String errorComponent, final java.util.Map<String, Object> globalMap) {" + NL + "\t\tthis.currentComponent= errorComponent;" + NL + "\t\tthis.globalMap = globalMap;" + NL + "\t\tthis.e = e;" + NL + "\t}" + NL + "" + NL + "\tpublic Exception getException() {" + NL + "\t\treturn this.e;" + NL + "\t}" + NL + "" + NL + "\tpublic String getCurrentComponent() {" + NL + "\t\treturn this.currentComponent;" + NL + "\t}" + NL + "" + NL + "\t";
-  protected final String TEXT_105 = NL + "    public String getExceptionCauseMessage(Exception e){" + NL + "        Throwable cause = e;" + NL + "        String message = null;" + NL + "        int i = 10;" + NL + "        while (null != cause && 0 < i--) {" + NL + "            message = cause.getMessage();" + NL + "            if (null == message) {" + NL + "                cause = cause.getCause();" + NL + "            } else {" + NL + "                break;          " + NL + "            }" + NL + "        }" + NL + "        if (null == message) {" + NL + "            message = e.getClass().getName();" + NL + "        }   " + NL + "        return message;" + NL + "    }" + NL + "" + NL + "\t@Override" + NL + "\tpublic void printStackTrace() {" + NL + "\t\tif (!(e instanceof TalendException || e instanceof TDieException)) {" + NL + "\t\t\tif(virtualComponentName!=null && currentComponent.indexOf(virtualComponentName+\"_\")==0){" + NL + "\t\t\t\tglobalMap.put(virtualComponentName+\"_ERROR_MESSAGE\",getExceptionCauseMessage(e));" + NL + "\t\t\t}" + NL + "\t\t\tglobalMap.put(currentComponent+\"_ERROR_MESSAGE\",getExceptionCauseMessage(e));" + NL + "\t\t\tSystem.err.println(\"Exception in component \" + currentComponent + \" (\" + jobName + \")\");" + NL + "\t\t}" + NL + "\t\tif (!(e instanceof TDieException)) {" + NL + "\t\t\tif(e instanceof TalendException){" + NL + "\t\t\t\te.printStackTrace();" + NL + "\t\t\t} else {" + NL + "\t\t\t\te.printStackTrace();" + NL + "\t\t\t\te.printStackTrace(errorMessagePS);" + NL + "\t\t\t\t";
-  protected final String TEXT_106 = ".this.exception = e;" + NL + "\t\t\t}" + NL + "\t\t}" + NL + "\t\tif (!(e instanceof TalendException)) {" + NL + "\t\ttry {" + NL + "\t\t\tfor (java.lang.reflect.Method m : this.getClass().getEnclosingClass().getMethods()) {" + NL + "\t\t\t\tif (m.getName().compareTo(currentComponent + \"_error\") == 0) {" + NL + "\t\t\t\t\tm.invoke(";
-  protected final String TEXT_107 = ".this, new Object[] { e , currentComponent, globalMap});" + NL + "\t\t\t\t\tbreak;" + NL + "\t\t\t\t}" + NL + "\t\t\t}" + NL + "" + NL + "\t\t\tif(!(e instanceof TDieException)){";
-  protected final String TEXT_108 = NL + "\t\t\t\t";
-  protected final String TEXT_109 = ".addMessage(\"Java Exception\", currentComponent, 6, e.getClass().getName() + \":\" + e.getMessage(), 1);";
-  protected final String TEXT_110 = NL + "\t\t\ttry{";
-  protected final String TEXT_111 = "Process(globalMap);";
-  protected final String TEXT_112 = NL + "\t\t\t}finally{";
-  protected final String TEXT_113 = NL + "\t\t\t}";
-  protected final String TEXT_114 = NL + "\t\t\t} catch (TalendException e) {" + NL + "\t\t\t\t// do nothing" + NL + "\t\t\t";
-  protected final String TEXT_115 = NL + "\t\t} catch (Exception e) {" + NL + "\t\t\tthis.e.printStackTrace();" + NL + "\t\t}" + NL + "\t\t}" + NL + "\t}" + NL + "}" + NL;
-  protected final String TEXT_116 = NL + "\t\t\tpublic void ";
-  protected final String TEXT_117 = "_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {" + NL + "\t\t\t\t";
-  protected final String TEXT_118 = NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_119 = "_error(exception, errorComponent, globalMap);" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_120 = NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t";
-  protected final String TEXT_121 = NL + "\t\t\t\t\t";
-  protected final String TEXT_122 = "_error(exception, errorComponent, globalMap);" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t";
-  protected final String TEXT_123 = NL + "\t\t\t\tend_Hash.put(errorComponent, System.currentTimeMillis());" + NL + "\t\t\t\t";
-  protected final String TEXT_124 = NL + "\t\t\t\t\t\t\t\tif(!(exception instanceof TDieException)){" + NL + "\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_125 = NL + "\t\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_126 = ".addMessage(pid, projectName, jobName, \"java\", null, \"Failed\", \"Job execution error\", exception);" + NL + "\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_127 = ".addMessage(pid, projectName, jobName, \"java\", null, \"Failed\", \"Job execution error\", exception.getMessage());" + NL + "\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_128 = NL + "\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_129 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_130 = ".addMessage(\"failure\",errorComponent, end_Hash.get(errorComponent)-start_Hash.get(errorComponent));" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_131 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_132 = NL + "\t\t\t\t\t\ttry {" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_133 = NL + "\t\t\t\t\t\t\t\tif(this.execStat){" + NL + "\t\t\t\t\t\t\t\t\trunStat.updateStatOnConnection(\"";
-  protected final String TEXT_134 = "\", 0, \"error\");" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_135 = NL + "\t\t\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"errorCode\", null);" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_136 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\tif ( !\"failure\".equals(((java.util.Map)threadLocal.get()).get(\"status\")) ) {" + NL + "\t\t\t\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"end\");" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_137 = NL + "\t\t\t\t\t\t\t\terrorCode = null;" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_138 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\tif (!\"failure\".equals(status)) {" + NL + "\t\t\t\t\t\t\t\t\tstatus = \"end\";" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_139 = NL + NL + "\t\t\t\t\t\t} catch (Exception e) {" + NL + "\t\t\t\t\t\t\te.printStackTrace();" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_140 = NL + "\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"failure\");" + NL + "\t\t\t\t";
-  protected final String TEXT_141 = NL + "\t\t\t\tstatus = \"failure\";" + NL + "\t\t\t\t";
-  protected final String TEXT_142 = "_onSubJobError(exception, errorComponent, globalMap);" + NL + "\t\t\t}" + NL + "\t\t\t";
-  protected final String TEXT_143 = "_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {";
-  protected final String TEXT_144 = NL + NL + "resumeUtil.addLog(\"SYSTEM_LOG\", \"NODE:\"+ errorComponent, \"\", Thread.currentThread().getId()+ \"\", \"";
-  protected final String TEXT_145 = "\", \"\", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),\"\");" + NL;
-  protected final String TEXT_146 = NL + "\t\t\t\ttry {" + NL + "\t\t\t\t\t";
-  protected final String TEXT_147 = NL + "\t\t\t\t\t\tif(this.execStat){" + NL + "\t\t\t\t\t\t\trunStat.updateStatOnConnection(\"";
-  protected final String TEXT_148 = "\", 0, \"error\");" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t";
-  protected final String TEXT_149 = NL + "\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"errorCode\", null);" + NL + "\t\t\t\t\t";
-  protected final String TEXT_150 = "Process(globalMap);" + NL + "\t\t\t\t\tif ( !\"failure\".equals(((java.util.Map)threadLocal.get()).get(\"status\")) ) {" + NL + "\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"end\");" + NL + "\t\t\t\t\t}";
-  protected final String TEXT_151 = NL + "\t\t\t\t\terrorCode = null;" + NL + "\t\t\t\t\t";
-  protected final String TEXT_152 = "Process(globalMap);" + NL + "\t\t\t\t\tif (!\"failure\".equals(status)) {" + NL + "\t\t\t\t\t\tstatus = \"end\";" + NL + "\t\t\t\t\t}";
-  protected final String TEXT_153 = NL + "\t\t\t\t} catch (Exception e) {" + NL + "\t\t\t\t\te.printStackTrace();" + NL + "\t\t\t\t}";
+  protected final String TEXT_89 = "\");";
+  protected final String TEXT_90 = NL + "private org.talend.job.audit.JobAuditLogger runtime_lineage_logger_";
+  protected final String TEXT_91 = " = null;";
+  protected final String TEXT_92 = NL + "private org.talend.job.audit.JobAuditLogger auditLogger_";
+  protected final String TEXT_93 = " = null;" + NL + "" + NL + "private RunStat runStat = new RunStat(";
+  protected final String TEXT_94 = ", System.getProperty(\"audit.interval\"));";
+  protected final String TEXT_95 = NL + "private RunStat runStat = new RunStat();";
+  protected final String TEXT_96 = NL + "private RunTrace runTrace = new RunTrace();";
+  protected final String TEXT_97 = NL + NL + "\t// OSGi DataSource" + NL + "\tprivate final static String KEY_DB_DATASOURCES = \"KEY_DB_DATASOURCES\";" + NL + "\t" + NL + "\tprivate final static String KEY_DB_DATASOURCES_RAW = \"KEY_DB_DATASOURCES_RAW\";" + NL + "" + NL + "\tpublic void setDataSources(java.util.Map<String, javax.sql.DataSource> dataSources) {" + NL + "\t\tjava.util.Map<String, routines.system.TalendDataSource> talendDataSources = new java.util.HashMap<String, routines.system.TalendDataSource>();" + NL + "\t\tfor (java.util.Map.Entry<String, javax.sql.DataSource> dataSourceEntry : dataSources.entrySet()) {" + NL + "\t\t\ttalendDataSources.put(dataSourceEntry.getKey(), new routines.system.TalendDataSource(dataSourceEntry.getValue()));" + NL + "\t\t}" + NL + "\t\tglobalMap.put(KEY_DB_DATASOURCES, talendDataSources);" + NL + "\t\tglobalMap.put(KEY_DB_DATASOURCES_RAW, new java.util.HashMap<String, javax.sql.DataSource>(dataSources));" + NL + "\t}" + NL;
+  protected final String TEXT_98 = NL + "\tLogCatcherUtils ";
+  protected final String TEXT_99 = " = new LogCatcherUtils();";
+  protected final String TEXT_100 = NL + "\tStatCatcherUtils ";
+  protected final String TEXT_101 = " = new StatCatcherUtils(\"";
+  protected final String TEXT_102 = NL + "\tMetterCatcherUtils ";
+  protected final String TEXT_103 = " = new MetterCatcherUtils(\"";
+  protected final String TEXT_104 = NL + "\tAssertCatcherUtils ";
+  protected final String TEXT_105 = " = new AssertCatcherUtils();";
+  protected final String TEXT_106 = NL + NL + "private final java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();" + NL + "private final java.io.PrintStream errorMessagePS = new java.io.PrintStream(new java.io.BufferedOutputStream(baos));" + NL + "" + NL + "public String getExceptionStackTrace() {" + NL + "\tif (\"failure\".equals(this.getStatus())) {" + NL + "\t\terrorMessagePS.flush();" + NL + "\t\treturn baos.toString();" + NL + "\t}" + NL + "\treturn null;" + NL + "}" + NL + "" + NL + "private Exception exception;" + NL + "" + NL + "public Exception getException() {" + NL + "\tif (\"failure\".equals(this.getStatus())) {" + NL + "\t\treturn this.exception;" + NL + "\t}" + NL + "\treturn null;" + NL + "}" + NL + "" + NL + "private class TalendException extends Exception {" + NL + "" + NL + "\tprivate static final long serialVersionUID = 1L;" + NL + "" + NL + "\tprivate java.util.Map<String, Object> globalMap = null;" + NL + "\tprivate Exception e = null;" + NL + "\tprivate String currentComponent = null;" + NL + "\tprivate String virtualComponentName = null;" + NL + "\t" + NL + "\tpublic void setVirtualComponentName (String virtualComponentName){" + NL + "\t\tthis.virtualComponentName = virtualComponentName;" + NL + "\t}" + NL + "" + NL + "\tprivate TalendException(Exception e, String errorComponent, final java.util.Map<String, Object> globalMap) {" + NL + "\t\tthis.currentComponent= errorComponent;" + NL + "\t\tthis.globalMap = globalMap;" + NL + "\t\tthis.e = e;" + NL + "\t}" + NL + "" + NL + "\tpublic Exception getException() {" + NL + "\t\treturn this.e;" + NL + "\t}" + NL + "" + NL + "\tpublic String getCurrentComponent() {" + NL + "\t\treturn this.currentComponent;" + NL + "\t}" + NL + "" + NL + "\t";
+  protected final String TEXT_107 = NL + "    public String getExceptionCauseMessage(Exception e){" + NL + "        Throwable cause = e;" + NL + "        String message = null;" + NL + "        int i = 10;" + NL + "        while (null != cause && 0 < i--) {" + NL + "            message = cause.getMessage();" + NL + "            if (null == message) {" + NL + "                cause = cause.getCause();" + NL + "            } else {" + NL + "                break;          " + NL + "            }" + NL + "        }" + NL + "        if (null == message) {" + NL + "            message = e.getClass().getName();" + NL + "        }   " + NL + "        return message;" + NL + "    }" + NL + "" + NL + "\t@Override" + NL + "\tpublic void printStackTrace() {" + NL + "\t\tif (!(e instanceof TalendException || e instanceof TDieException)) {" + NL + "\t\t\tif(virtualComponentName!=null && currentComponent.indexOf(virtualComponentName+\"_\")==0){" + NL + "\t\t\t\tglobalMap.put(virtualComponentName+\"_ERROR_MESSAGE\",getExceptionCauseMessage(e));" + NL + "\t\t\t}" + NL + "\t\t\tglobalMap.put(currentComponent+\"_ERROR_MESSAGE\",getExceptionCauseMessage(e));" + NL + "\t\t\tSystem.err.println(\"Exception in component \" + currentComponent + \" (\" + jobName + \")\");" + NL + "\t\t}" + NL + "\t\tif (!(e instanceof TDieException)) {" + NL + "\t\t\tif(e instanceof TalendException){" + NL + "\t\t\t\te.printStackTrace();" + NL + "\t\t\t} else {" + NL + "\t\t\t\te.printStackTrace();" + NL + "\t\t\t\te.printStackTrace(errorMessagePS);" + NL + "\t\t\t\t";
+  protected final String TEXT_108 = ".this.exception = e;" + NL + "\t\t\t}" + NL + "\t\t}" + NL + "\t\tif (!(e instanceof TalendException)) {" + NL + "\t\ttry {" + NL + "\t\t\tfor (java.lang.reflect.Method m : this.getClass().getEnclosingClass().getMethods()) {" + NL + "\t\t\t\tif (m.getName().compareTo(currentComponent + \"_error\") == 0) {" + NL + "\t\t\t\t\tm.invoke(";
+  protected final String TEXT_109 = ".this, new Object[] { e , currentComponent, globalMap});" + NL + "\t\t\t\t\tbreak;" + NL + "\t\t\t\t}" + NL + "\t\t\t}" + NL + "" + NL + "\t\t\tif(!(e instanceof TDieException)){";
+  protected final String TEXT_110 = NL + "\t\t\t\t";
+  protected final String TEXT_111 = ".addMessage(\"Java Exception\", currentComponent, 6, e.getClass().getName() + \":\" + e.getMessage(), 1);";
+  protected final String TEXT_112 = NL + "\t\t\ttry{";
+  protected final String TEXT_113 = "Process(globalMap);";
+  protected final String TEXT_114 = NL + "\t\t\t}finally{";
+  protected final String TEXT_115 = NL + "\t\t\t}";
+  protected final String TEXT_116 = NL + "\t\t\t} catch (TalendException e) {" + NL + "\t\t\t\t// do nothing" + NL + "\t\t\t";
+  protected final String TEXT_117 = NL + "\t\t} catch (Exception e) {" + NL + "\t\t\tthis.e.printStackTrace();" + NL + "\t\t}" + NL + "\t\t}" + NL + "\t}" + NL + "}" + NL;
+  protected final String TEXT_118 = NL + "\t\t\tpublic void ";
+  protected final String TEXT_119 = "_error(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {" + NL + "\t\t\t\t";
+  protected final String TEXT_120 = NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_121 = "_error(exception, errorComponent, globalMap);" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_122 = NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t";
+  protected final String TEXT_123 = NL + "\t\t\t\t\t";
+  protected final String TEXT_124 = "_error(exception, errorComponent, globalMap);" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t";
+  protected final String TEXT_125 = NL + "\t\t\t\tend_Hash.put(errorComponent, System.currentTimeMillis());" + NL + "\t\t\t\t";
+  protected final String TEXT_126 = NL + "\t\t\t\t\t\t\t\tif(!(exception instanceof TDieException)){" + NL + "\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_127 = NL + "\t\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_128 = ".addMessage(pid, projectName, jobName, \"java\", null, \"Failed\", \"Job execution error\", exception);" + NL + "\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_129 = ".addMessage(pid, projectName, jobName, \"java\", null, \"Failed\", \"Job execution error\", exception.getMessage());" + NL + "\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_130 = NL + "\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_131 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_132 = ".addMessage(\"failure\",errorComponent, end_Hash.get(errorComponent)-start_Hash.get(errorComponent));" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_133 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_134 = NL + "\t\t\t\t\t\ttry {" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_135 = NL + "\t\t\t\t\t\t\t\tif(this.execStat){" + NL + "\t\t\t\t\t\t\t\t\trunStat.updateStatOnConnection(\"";
+  protected final String TEXT_136 = "\", 0, \"error\");" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_137 = NL + "\t\t\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"errorCode\", null);" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_138 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\tif ( !\"failure\".equals(((java.util.Map)threadLocal.get()).get(\"status\")) ) {" + NL + "\t\t\t\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"end\");" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_139 = NL + "\t\t\t\t\t\t\t\terrorCode = null;" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_140 = "Process(globalMap);" + NL + "\t\t\t\t\t\t\t\tif (!\"failure\".equals(status)) {" + NL + "\t\t\t\t\t\t\t\t\tstatus = \"end\";" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_141 = NL + NL + "\t\t\t\t\t\t} catch (Exception e) {" + NL + "\t\t\t\t\t\t\te.printStackTrace();" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_142 = NL + "\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"failure\");" + NL + "\t\t\t\t";
+  protected final String TEXT_143 = NL + "\t\t\t\tstatus = \"failure\";" + NL + "\t\t\t\t";
+  protected final String TEXT_144 = "_onSubJobError(exception, errorComponent, globalMap);" + NL + "\t\t\t}" + NL + "\t\t\t";
+  protected final String TEXT_145 = "_onSubJobError(Exception exception, String errorComponent, final java.util.Map<String, Object> globalMap) throws TalendException {";
+  protected final String TEXT_146 = NL + NL + "resumeUtil.addLog(\"SYSTEM_LOG\", \"NODE:\"+ errorComponent, \"\", Thread.currentThread().getId()+ \"\", \"";
+  protected final String TEXT_147 = "\", \"\", exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception),\"\");" + NL;
+  protected final String TEXT_148 = NL + "\t\t\t\ttry {" + NL + "\t\t\t\t\t";
+  protected final String TEXT_149 = NL + "\t\t\t\t\t\tif(this.execStat){" + NL + "\t\t\t\t\t\t\trunStat.updateStatOnConnection(\"";
+  protected final String TEXT_150 = "\", 0, \"error\");" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t";
+  protected final String TEXT_151 = NL + "\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"errorCode\", null);" + NL + "\t\t\t\t\t";
+  protected final String TEXT_152 = "Process(globalMap);" + NL + "\t\t\t\t\tif ( !\"failure\".equals(((java.util.Map)threadLocal.get()).get(\"status\")) ) {" + NL + "\t\t\t\t\t\t((java.util.Map)threadLocal.get()).put(\"status\", \"end\");" + NL + "\t\t\t\t\t}";
+  protected final String TEXT_153 = NL + "\t\t\t\t\terrorCode = null;" + NL + "\t\t\t\t\t";
+  protected final String TEXT_154 = "Process(globalMap);" + NL + "\t\t\t\t\tif (!\"failure\".equals(status)) {" + NL + "\t\t\t\t\t\tstatus = \"end\";" + NL + "\t\t\t\t\t}";
+  protected final String TEXT_155 = NL + "\t\t\t\t} catch (Exception e) {" + NL + "\t\t\t\t\te.printStackTrace();" + NL + "\t\t\t\t}";
 
   public String generate(Object argument)
   {
@@ -507,8 +509,11 @@ if(isRunInMultiThread){
 			break;
 		}
 	}
-	boolean enableLogStash = jobCatcherNode != null;
-	if (enableLogStash) {
+	
+	boolean enableLogStash = !Boolean.getBoolean("deactivate_extended_component_log") && (jobCatcherNode!=null);
+	boolean enable_runtime_lineage_log = NodeUtil.isJobUsingRuntimeLineage(process) && (jobCatcherNode!=null);
+	
+	if(jobCatcherNode!=null) {
 
     stringBuffer.append(TEXT_86);
     stringBuffer.append(jobCatcherNode.getUniqueName() );
@@ -517,73 +522,86 @@ if(isRunInMultiThread){
     stringBuffer.append(TEXT_88);
     stringBuffer.append(process.getVersion() );
     stringBuffer.append(TEXT_89);
-    stringBuffer.append(jobCatcherNode.getUniqueName());
+    
+	}
+	if(enable_runtime_lineage_log) {
+
     stringBuffer.append(TEXT_90);
-    stringBuffer.append(jobCatcherNode.getUniqueName() );
+    stringBuffer.append(jobCatcherNode.getUniqueName());
     stringBuffer.append(TEXT_91);
+    
+	}
+	
+	if (enableLogStash) {
+
+    stringBuffer.append(TEXT_92);
+    stringBuffer.append(jobCatcherNode.getUniqueName());
+    stringBuffer.append(TEXT_93);
+    stringBuffer.append(jobCatcherNode.getUniqueName() );
+    stringBuffer.append(TEXT_94);
     
 	} else if(stats) {
 
-    stringBuffer.append(TEXT_92);
+    stringBuffer.append(TEXT_95);
     
 	}
 
     
 	if (trace) {
 
-    stringBuffer.append(TEXT_93);
+    stringBuffer.append(TEXT_96);
     
 	}
 
-    stringBuffer.append(TEXT_94);
+    stringBuffer.append(TEXT_97);
     
 	for (INode logCatcher : process.getNodesOfType("tLogCatcher")) {
 
-    stringBuffer.append(TEXT_95);
+    stringBuffer.append(TEXT_98);
     stringBuffer.append(logCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_96);
+    stringBuffer.append(TEXT_99);
     
 	}
 
 	for (INode statCatcher : process.getNodesOfType("tStatCatcher")) {
 
-    stringBuffer.append(TEXT_97);
+    stringBuffer.append(TEXT_100);
     stringBuffer.append(statCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_98);
+    stringBuffer.append(TEXT_101);
     stringBuffer.append(process.getId() );
     stringBuffer.append(TEXT_88);
     stringBuffer.append(process.getVersion() );
-    stringBuffer.append(TEXT_99);
+    stringBuffer.append(TEXT_89);
     
 	}
 	
 	for (INode metterCatcher : process.getNodesOfType("tFlowMeterCatcher")) {
 
-    stringBuffer.append(TEXT_100);
+    stringBuffer.append(TEXT_102);
     stringBuffer.append(metterCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_101);
+    stringBuffer.append(TEXT_103);
     stringBuffer.append(process.getId() );
     stringBuffer.append(TEXT_88);
     stringBuffer.append(process.getVersion() );
-    stringBuffer.append(TEXT_99);
+    stringBuffer.append(TEXT_89);
     
 	}
 
 	for (INode assertCatcher : process.getNodesOfType("tAssertCatcher")) {
 
-    stringBuffer.append(TEXT_102);
+    stringBuffer.append(TEXT_104);
     stringBuffer.append(assertCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_103);
+    stringBuffer.append(TEXT_105);
     
 	}
 
-    stringBuffer.append(TEXT_104);
-    //For TDI-27789
-    stringBuffer.append(TEXT_105);
-    stringBuffer.append(className);
     stringBuffer.append(TEXT_106);
-    stringBuffer.append(className);
+    //For TDI-27789
     stringBuffer.append(TEXT_107);
+    stringBuffer.append(className);
+    stringBuffer.append(TEXT_108);
+    stringBuffer.append(className);
+    stringBuffer.append(TEXT_109);
     
 		boolean needCatchTalendException = false;
 		
@@ -593,9 +611,9 @@ if(isRunInMultiThread){
 				if (ElementParameterParser.getValue(logCatcher, "__CATCH_JAVA_EXCEPTION__").equals("true")) {
 					// 1) add the message to the stack
 
-    stringBuffer.append(TEXT_108);
+    stringBuffer.append(TEXT_110);
     stringBuffer.append(logCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_109);
+    stringBuffer.append(TEXT_111);
     
 				}
 			}
@@ -613,7 +631,7 @@ if(isRunInMultiThread){
 			}
 			if(hasRealCatchNode && virtualNCatchNode!=null){
 
-    stringBuffer.append(TEXT_110);
+    stringBuffer.append(TEXT_112);
     
 			}
 			for (INode logCatcher : logCatchers) {
@@ -622,51 +640,51 @@ if(isRunInMultiThread){
 					// 2) launch logCatcher subProcess
 					needCatchTalendException =  true;
 
-    stringBuffer.append(TEXT_108);
+    stringBuffer.append(TEXT_110);
     stringBuffer.append(logCatcher.getDesignSubjobStartNode().getUniqueName() );
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_113);
     
 					}
 				}
 			}
 			if(hasRealCatchNode && virtualNCatchNode!=null){
 
-    stringBuffer.append(TEXT_112);
+    stringBuffer.append(TEXT_114);
     
 			}
 			if(virtualNCatchNode!=null){
 				needCatchTalendException =  true;
 
-    stringBuffer.append(TEXT_108);
+    stringBuffer.append(TEXT_110);
     stringBuffer.append(virtualNCatchNode.getDesignSubjobStartNode().getUniqueName() );
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_113);
     
 			}
 			if(hasRealCatchNode && virtualNCatchNode!=null){
 
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_115);
     
 			}
 		}
 
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_115);
     
 		if(needCatchTalendException) {
 			//TODO should catch the TalendException in assertcatcher process? but before should not work too as use java reflect, this exception can't catch
 			
-    stringBuffer.append(TEXT_114);
+    stringBuffer.append(TEXT_116);
     
 		}
 
-    stringBuffer.append(TEXT_115);
+    stringBuffer.append(TEXT_117);
      // Methods for RUN IF Error links 
     
 	for (INode node : processNodes) {
 		if (node.isActivate()) {
 			
-    stringBuffer.append(TEXT_116);
+    stringBuffer.append(TEXT_118);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_119);
     
 				//If node is virtual component input part,invoke virtual component output part when virtual link is ROWS_END,FLOW,COMPONENT_OK,ITERATE(virtual link could not be ON_SUBJOB_OK)
 				if(node.isVirtualGenerateNode() && node.getVirtualLinkTo()!=null){
@@ -677,9 +695,9 @@ if(isRunInMultiThread){
 						INode virtualLinkNode = conn.getTarget();
 						if(virtualLinkNode.isVirtualGenerateNode()){
 						
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_120);
     stringBuffer.append(virtualLinkNode.getUniqueName());
-    stringBuffer.append(TEXT_119);
+    stringBuffer.append(TEXT_121);
     
 							invokeVirtualLinkError=true;
 							break;
@@ -687,21 +705,21 @@ if(isRunInMultiThread){
 					}
 					if(invokeVirtualLinkError){
 					
-    stringBuffer.append(TEXT_120);
+    stringBuffer.append(TEXT_122);
     
 						continue;
 					}
 				}
 				if(!node.isVirtualGenerateNode() && node.getUniqueName().startsWith("tAsyncIn_")){
 				
-    stringBuffer.append(TEXT_121);
+    stringBuffer.append(TEXT_123);
     stringBuffer.append(node.getUniqueName().replace("tAsyncIn_","tAsyncOut_"));
-    stringBuffer.append(TEXT_122);
+    stringBuffer.append(TEXT_124);
     
 					continue;
 				}
 				
-    stringBuffer.append(TEXT_123);
+    stringBuffer.append(TEXT_125);
     
 				boolean ifBeforRunError = NodeUtil.checkComponentErrorConnectionAfterNode(node);
 				if(!ifBeforRunError) {
@@ -711,19 +729,19 @@ if(isRunInMultiThread){
 							if (ElementParameterParser.getValue(assertCatcher, "__CATCH_JAVA_EXCEPTION__").equals("true")) {
 								// 1) add the message to the stack
 								
-    stringBuffer.append(TEXT_124);
-    if("true".equals(ElementParameterParser.getValue(assertCatcher, "__GET_ORIGINAL_EXCEPTION__"))){
-    stringBuffer.append(TEXT_125);
-    stringBuffer.append(assertCatcher.getUniqueName());
     stringBuffer.append(TEXT_126);
-    }else{
-    stringBuffer.append(TEXT_125);
-    stringBuffer.append(assertCatcher.getUniqueName());
+    if("true".equals(ElementParameterParser.getValue(assertCatcher, "__GET_ORIGINAL_EXCEPTION__"))){
     stringBuffer.append(TEXT_127);
-    }
+    stringBuffer.append(assertCatcher.getUniqueName());
     stringBuffer.append(TEXT_128);
-    stringBuffer.append(assertCatcher.getDesignSubjobStartNode().getUniqueName() );
+    }else{
+    stringBuffer.append(TEXT_127);
+    stringBuffer.append(assertCatcher.getUniqueName());
     stringBuffer.append(TEXT_129);
+    }
+    stringBuffer.append(TEXT_130);
+    stringBuffer.append(assertCatcher.getDesignSubjobStartNode().getUniqueName() );
+    stringBuffer.append(TEXT_131);
     
 							}
 						}
@@ -734,11 +752,11 @@ if(isRunInMultiThread){
 					if (statCatcher.compareTo("true")==0) {
 						for (INode statCatcherNode : node.getProcess().getNodesOfType("tStatCatcher")) {
 							
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_120);
     stringBuffer.append(statCatcherNode.getUniqueName() );
-    stringBuffer.append(TEXT_130);
+    stringBuffer.append(TEXT_132);
     stringBuffer.append(statCatcherNode.getDesignSubjobStartNode().getUniqueName() );
-    stringBuffer.append(TEXT_131);
+    stringBuffer.append(TEXT_133);
     
 						}
 					}
@@ -749,29 +767,29 @@ if(isRunInMultiThread){
 					if (conn.getLineStyle().equals(EConnectionType.ON_COMPONENT_ERROR)) {
 						isExistOnCompErrorLink = true;
 						
-    stringBuffer.append(TEXT_132);
-    if (stats) {
-    stringBuffer.append(TEXT_133);
-    stringBuffer.append(conn.getUniqueName() );
     stringBuffer.append(TEXT_134);
+    if (stats) {
+    stringBuffer.append(TEXT_135);
+    stringBuffer.append(conn.getUniqueName() );
+    stringBuffer.append(TEXT_136);
     }
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_120);
     
 							if (isRunInMultiThread ) {
-								
-    stringBuffer.append(TEXT_135);
-    stringBuffer.append(conn.getTarget().getUniqueName() );
-    stringBuffer.append(TEXT_136);
-    
-							} else {
 								
     stringBuffer.append(TEXT_137);
     stringBuffer.append(conn.getTarget().getUniqueName() );
     stringBuffer.append(TEXT_138);
     
+							} else {
+								
+    stringBuffer.append(TEXT_139);
+    stringBuffer.append(conn.getTarget().getUniqueName() );
+    stringBuffer.append(TEXT_140);
+    
 							}
 							
-    stringBuffer.append(TEXT_139);
+    stringBuffer.append(TEXT_141);
     
 					}
 				}
@@ -814,28 +832,28 @@ if(isRunInMultiThread){
 				if (!isSubjobHasOnSubJobError && !isExistOnCompErrorLink) { // when there is no subjoberror and no onComponentError
 					if (isRunInMultiThread ) {
 				
-    stringBuffer.append(TEXT_140);
+    stringBuffer.append(TEXT_142);
     
 					} else {
 				
-    stringBuffer.append(TEXT_141);
+    stringBuffer.append(TEXT_143);
     
 					}
 				}
 
 				
-    stringBuffer.append(TEXT_121);
+    stringBuffer.append(TEXT_123);
     stringBuffer.append(subjob_start_node.getDesignSubjobStartNode().getUniqueName() );
-    stringBuffer.append(TEXT_142);
+    stringBuffer.append(TEXT_144);
     
 		}
 	}
 	for (INode node : processNodes) {
 		if (node.isDesignSubjobStartNode()) {
 
-    stringBuffer.append(TEXT_116);
+    stringBuffer.append(TEXT_118);
     stringBuffer.append(node.getUniqueName() );
-    stringBuffer.append(TEXT_143);
+    stringBuffer.append(TEXT_145);
     
 			List< ? extends IConnection> conns = node.getOutgoingConnections();
 			int count = 0;
@@ -853,40 +871,40 @@ if(isRunInMultiThread){
 				label = "ERROR";
 			}
 
-    stringBuffer.append(TEXT_144);
+    stringBuffer.append(TEXT_146);
     stringBuffer.append(label );
-    stringBuffer.append(TEXT_145);
+    stringBuffer.append(TEXT_147);
     
 			for (IConnection conn : conns) {
 				if (conn.getLineStyle().equals(EConnectionType.ON_SUBJOB_ERROR)) {
 
-    stringBuffer.append(TEXT_146);
-    if (stats) {
-    stringBuffer.append(TEXT_147);
-    stringBuffer.append(conn.getUniqueName() );
     stringBuffer.append(TEXT_148);
+    if (stats) {
+    stringBuffer.append(TEXT_149);
+    stringBuffer.append(conn.getUniqueName() );
+    stringBuffer.append(TEXT_150);
     }
     
 					if(isRunInMultiThread ){
-
-    stringBuffer.append(TEXT_149);
-    stringBuffer.append(conn.getTarget().getUniqueName() );
-    stringBuffer.append(TEXT_150);
-    
-					} else {
 
     stringBuffer.append(TEXT_151);
     stringBuffer.append(conn.getTarget().getUniqueName() );
     stringBuffer.append(TEXT_152);
     
-					}
+					} else {
 
     stringBuffer.append(TEXT_153);
+    stringBuffer.append(conn.getTarget().getUniqueName() );
+    stringBuffer.append(TEXT_154);
+    
+					}
+
+    stringBuffer.append(TEXT_155);
     
 				}
 			}
 
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_115);
     
 		}
 	}

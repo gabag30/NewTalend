@@ -173,106 +173,97 @@ public class TMSSqlOutputEndJava {
   protected final String TEXT_144 = "+=count_dyn_";
   protected final String TEXT_145 = ";" + NL + "\t\t\t";
   protected final String TEXT_146 = NL + NL + "\t\t    row2Count";
-  protected final String TEXT_147 = "++;" + NL + "\t\t}" + NL + "\t\tint processedCount_";
-  protected final String TEXT_148 = " = pstmt_";
-  protected final String TEXT_149 = ".executeUpdate();" + NL + "\t\tinsertedCount_";
-  protected final String TEXT_150 = " += processedCount_";
-  protected final String TEXT_151 = ";" + NL + "\t\trowsToCommitCount_";
-  protected final String TEXT_152 = ";" + NL + "\t\t}";
-  protected final String TEXT_153 = NL + "                try {" + NL + "\t\t\t\t\t\tint countSum_";
-  protected final String TEXT_154 = " = 0;" + NL + "\t\t\t\t\t\tif (pstmt_";
-  protected final String TEXT_155 = " != null && batchSizeCounter_";
-  protected final String TEXT_156 = " > 0) {" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_157 = NL + "\t\t\t\t\t\t\tfor(int countEach_";
-  protected final String TEXT_158 = ": pstmt_";
-  protected final String TEXT_159 = ".executeBatch()) {" + NL + "\t\t\t\t\t\t\t\tif(countEach_";
-  protected final String TEXT_160 = " == -2 || countEach_";
-  protected final String TEXT_161 = " == -3) {" + NL + "\t\t\t\t\t\t\t\t\tbreak;" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\tcountSum_";
-  protected final String TEXT_162 = " += countEach_";
-  protected final String TEXT_163 = ";" + NL + "\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\trowsToCommitCount_";
+  protected final String TEXT_147 = "++;" + NL + "\t\t}" + NL + "\t\tinsertedCount_";
+  protected final String TEXT_148 = " = insertedCount_";
+  protected final String TEXT_149 = " + pstmt_";
+  protected final String TEXT_150 = ".executeUpdate();" + NL + "\t\t}";
+  protected final String TEXT_151 = NL + "                try {" + NL + "\t\t\t\t\t\tint countSum_";
+  protected final String TEXT_152 = " = 0;" + NL + "\t\t\t\t\t\tif (pstmt_";
+  protected final String TEXT_153 = " != null && batchSizeCounter_";
+  protected final String TEXT_154 = " > 0) {" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_155 = NL + "\t\t\t\t\t\t\tfor(int countEach_";
+  protected final String TEXT_156 = ": pstmt_";
+  protected final String TEXT_157 = ".executeBatch()) {" + NL + "\t\t\t\t\t\t\t\tif(countEach_";
+  protected final String TEXT_158 = " == -2 || countEach_";
+  protected final String TEXT_159 = " == -3) {" + NL + "\t\t\t\t\t\t\t\t\tbreak;" + NL + "\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t\tcountSum_";
+  protected final String TEXT_160 = " += countEach_";
+  protected final String TEXT_161 = ";" + NL + "\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_162 = NL + "\t\t\t\t\t\t}" + NL + "            \t    \t";
+  protected final String TEXT_163 = NL + "            \t    \t\tinsertedCount_";
   protected final String TEXT_164 = " += countSum_";
-  protected final String TEXT_165 = ";" + NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_166 = NL + "\t\t\t\t\t\t}" + NL + "            \t    \t";
-  protected final String TEXT_167 = NL + "            \t    \t\tinsertedCount_";
-  protected final String TEXT_168 = ";" + NL + "            \t    \t";
-  protected final String TEXT_169 = NL + "            \t    \t\tupdatedCount_";
-  protected final String TEXT_170 = NL + "            \t    \t    deletedCount_";
-  protected final String TEXT_171 = NL + "                }catch (java.sql.BatchUpdateException e){" + NL + "                \t";
-  protected final String TEXT_172 = NL + "                \t\tthrow(e);" + NL + "                \t";
-  protected final String TEXT_173 = NL + "                \tint countSum_";
-  protected final String TEXT_174 = " = 0;" + NL + "\t\t\t\t\tfor(int countEach_";
-  protected final String TEXT_175 = ": e.getUpdateCounts()) {" + NL + "\t\t\t\t\t\tcountSum_";
-  protected final String TEXT_176 = " += (countEach_";
-  protected final String TEXT_177 = " < 0 ? 0 : countEach_";
-  protected final String TEXT_178 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t\trowsToCommitCount_";
-  protected final String TEXT_179 = ";" + NL + "\t\t\t\t\t";
-  protected final String TEXT_180 = NL + "                \t\tSystem.err.println(e.getMessage());" + NL + "                \t";
-  protected final String TEXT_181 = NL + "            \t}";
-  protected final String TEXT_182 = NL + "        if(pstmt_";
-  protected final String TEXT_183 = " != null) {" + NL + "\t\t\t";
-  protected final String TEXT_184 = NL + "\t\t\t\tpstmt_";
-  protected final String TEXT_185 = ".close();" + NL + "\t\t\t\tresourceMap.remove(\"pstmt_";
-  protected final String TEXT_186 = "\");" + NL + "\t\t\t";
-  protected final String TEXT_187 = NL + "\t\t\t\tSharedDBPreparedStatement.releasePreparedStatement(keyPsmt_";
-  protected final String TEXT_188 = NL + "    String setIdentityInsertOFFSQL_";
-  protected final String TEXT_189 = " +\"] OFF\";";
-  protected final String TEXT_190 = NL + "    stmt_";
-  protected final String TEXT_191 = ".execute(setIdentityInsertOFFSQL_";
-  protected final String TEXT_192 = ".close();";
-  protected final String TEXT_193 = NL + "    resourceMap.put(\"statementClosed_";
-  protected final String TEXT_194 = "\", true);";
-  protected final String TEXT_195 = NL + "            if(rowsToCommitCount_";
-  protected final String TEXT_196 = " != 0){" + NL + "            \t";
-  protected final String TEXT_197 = NL + "            }" + NL + "            conn_";
-  protected final String TEXT_198 = ".commit();" + NL + "            if(rowsToCommitCount_";
-  protected final String TEXT_199 = NL + "            \trowsToCommitCount_";
-  protected final String TEXT_200 = " = 0;" + NL + "            }" + NL + "            commitCounter_";
-  protected final String TEXT_201 = " = 0;";
-  protected final String TEXT_202 = NL + "        conn_";
-  protected final String TEXT_203 = " .close();";
-  protected final String TEXT_204 = NL + "        resourceMap.put(\"finish_";
-  protected final String TEXT_205 = NL + "\tnb_line_deleted_";
-  protected final String TEXT_206 = "=nb_line_deleted_";
-  protected final String TEXT_207 = "+ deletedCount_";
-  protected final String TEXT_208 = ";" + NL + "\tnb_line_update_";
-  protected final String TEXT_209 = "=nb_line_update_";
-  protected final String TEXT_210 = " + updatedCount_";
-  protected final String TEXT_211 = ";" + NL + "\tnb_line_inserted_";
-  protected final String TEXT_212 = "=nb_line_inserted_";
-  protected final String TEXT_213 = " + insertedCount_";
-  protected final String TEXT_214 = ";" + NL + "\tnb_line_rejected_";
-  protected final String TEXT_215 = "=nb_line_rejected_";
-  protected final String TEXT_216 = " + rejectedCount_";
-  protected final String TEXT_217 = ";" + NL + "\t";
-  protected final String TEXT_218 = NL + "    \tif (globalMap.get(\"";
-  protected final String TEXT_219 = "_NB_LINE\") == null) {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_220 = "_NB_LINE\",nb_line_";
-  protected final String TEXT_221 = ");" + NL + "        } else {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_222 = "_NB_LINE\",(Integer)globalMap.get(\"";
-  protected final String TEXT_223 = "_NB_LINE\") + nb_line_";
-  protected final String TEXT_224 = ");" + NL + "        }" + NL + "        if (globalMap.get(\"";
-  protected final String TEXT_225 = "_NB_LINE_UPDATED\") == null) {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_226 = "_NB_LINE_UPDATED\",nb_line_update_";
-  protected final String TEXT_227 = "_NB_LINE_UPDATED\",(Integer)globalMap.get(\"";
-  protected final String TEXT_228 = "_NB_LINE_UPDATED\") + nb_line_update_";
-  protected final String TEXT_229 = "_NB_LINE_INSERTED\") == null) {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_230 = "_NB_LINE_INSERTED\",nb_line_inserted_";
-  protected final String TEXT_231 = "_NB_LINE_INSERTED\",(Integer)globalMap.get(\"";
-  protected final String TEXT_232 = "_NB_LINE_INSERTED\") + nb_line_inserted_";
-  protected final String TEXT_233 = "_NB_LINE_DELETED\") == null) {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_234 = "_NB_LINE_DELETED\",nb_line_deleted_";
-  protected final String TEXT_235 = "_NB_LINE_DELETED\",(Integer)globalMap.get(\"";
-  protected final String TEXT_236 = "_NB_LINE_DELETED\") + nb_line_deleted_";
-  protected final String TEXT_237 = "_NB_LINE_REJECTED\") == null) {" + NL + "        \tglobalMap.put(\"";
-  protected final String TEXT_238 = "_NB_LINE_REJECTED\",nb_line_rejected_";
-  protected final String TEXT_239 = "_NB_LINE_REJECTED\",(Integer)globalMap.get(\"";
-  protected final String TEXT_240 = "_NB_LINE_REJECTED\") + nb_line_rejected_";
-  protected final String TEXT_241 = ");" + NL + "        }" + NL + "\t";
-  protected final String TEXT_242 = NL + "        globalMap.put(\"";
-  protected final String TEXT_243 = ");" + NL + "        globalMap.put(\"";
-  protected final String TEXT_244 = "_NB_LINE_REJECTED\", nb_line_rejected_";
-  protected final String TEXT_245 = ");" + NL + "    ";
-  protected final String TEXT_246 = NL + NL + "\t";
+  protected final String TEXT_165 = ";" + NL + "            \t    \t";
+  protected final String TEXT_166 = NL + "            \t    \t\tupdatedCount_";
+  protected final String TEXT_167 = NL + "            \t    \t    deletedCount_";
+  protected final String TEXT_168 = NL + "                }catch (java.sql.BatchUpdateException e){" + NL + "                \t";
+  protected final String TEXT_169 = NL + "                \t\tthrow(e);" + NL + "                \t";
+  protected final String TEXT_170 = NL + "                \tint countSum_";
+  protected final String TEXT_171 = " = 0;" + NL + "\t\t\t\t\tfor(int countEach_";
+  protected final String TEXT_172 = ": e.getUpdateCounts()) {" + NL + "\t\t\t\t\t\tcountSum_";
+  protected final String TEXT_173 = " += (countEach_";
+  protected final String TEXT_174 = " < 0 ? 0 : countEach_";
+  protected final String TEXT_175 = ");" + NL + "\t\t\t\t\t}" + NL + "\t\t\t\t\t";
+  protected final String TEXT_176 = NL + "                \t\tSystem.err.println(e.getMessage());" + NL + "                \t";
+  protected final String TEXT_177 = NL + "            \t}";
+  protected final String TEXT_178 = NL + "        if(pstmt_";
+  protected final String TEXT_179 = " != null) {" + NL + "\t\t\t";
+  protected final String TEXT_180 = NL + "\t\t\t\tpstmt_";
+  protected final String TEXT_181 = ".close();" + NL + "\t\t\t\tresourceMap.remove(\"pstmt_";
+  protected final String TEXT_182 = "\");" + NL + "\t\t\t";
+  protected final String TEXT_183 = NL + "\t\t\t\tSharedDBPreparedStatement.releasePreparedStatement(keyPsmt_";
+  protected final String TEXT_184 = NL + "    String setIdentityInsertOFFSQL_";
+  protected final String TEXT_185 = " +\"] OFF\";";
+  protected final String TEXT_186 = NL + "    stmt_";
+  protected final String TEXT_187 = ".execute(setIdentityInsertOFFSQL_";
+  protected final String TEXT_188 = ".close();";
+  protected final String TEXT_189 = NL + "    resourceMap.put(\"statementClosed_";
+  protected final String TEXT_190 = "\", true);";
+  protected final String TEXT_191 = NL + "            conn_";
+  protected final String TEXT_192 = ".commit();" + NL + "\t\t\t";
+  protected final String TEXT_193 = NL + "        conn_";
+  protected final String TEXT_194 = " .close();";
+  protected final String TEXT_195 = NL + "        resourceMap.put(\"finish_";
+  protected final String TEXT_196 = NL + "\tnb_line_deleted_";
+  protected final String TEXT_197 = "=nb_line_deleted_";
+  protected final String TEXT_198 = "+ deletedCount_";
+  protected final String TEXT_199 = ";" + NL + "\tnb_line_update_";
+  protected final String TEXT_200 = "=nb_line_update_";
+  protected final String TEXT_201 = " + updatedCount_";
+  protected final String TEXT_202 = ";" + NL + "\tnb_line_inserted_";
+  protected final String TEXT_203 = "=nb_line_inserted_";
+  protected final String TEXT_204 = " + insertedCount_";
+  protected final String TEXT_205 = ";" + NL + "\tnb_line_rejected_";
+  protected final String TEXT_206 = "=nb_line_rejected_";
+  protected final String TEXT_207 = " + rejectedCount_";
+  protected final String TEXT_208 = ";" + NL + "\t";
+  protected final String TEXT_209 = NL + "    \tif (globalMap.get(\"";
+  protected final String TEXT_210 = "_NB_LINE\") == null) {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_211 = "_NB_LINE\",nb_line_";
+  protected final String TEXT_212 = ");" + NL + "        } else {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_213 = "_NB_LINE\",(Integer)globalMap.get(\"";
+  protected final String TEXT_214 = "_NB_LINE\") + nb_line_";
+  protected final String TEXT_215 = ");" + NL + "        }" + NL + "        if (globalMap.get(\"";
+  protected final String TEXT_216 = "_NB_LINE_UPDATED\") == null) {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_217 = "_NB_LINE_UPDATED\",nb_line_update_";
+  protected final String TEXT_218 = "_NB_LINE_UPDATED\",(Integer)globalMap.get(\"";
+  protected final String TEXT_219 = "_NB_LINE_UPDATED\") + nb_line_update_";
+  protected final String TEXT_220 = "_NB_LINE_INSERTED\") == null) {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_221 = "_NB_LINE_INSERTED\",nb_line_inserted_";
+  protected final String TEXT_222 = "_NB_LINE_INSERTED\",(Integer)globalMap.get(\"";
+  protected final String TEXT_223 = "_NB_LINE_INSERTED\") + nb_line_inserted_";
+  protected final String TEXT_224 = "_NB_LINE_DELETED\") == null) {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_225 = "_NB_LINE_DELETED\",nb_line_deleted_";
+  protected final String TEXT_226 = "_NB_LINE_DELETED\",(Integer)globalMap.get(\"";
+  protected final String TEXT_227 = "_NB_LINE_DELETED\") + nb_line_deleted_";
+  protected final String TEXT_228 = "_NB_LINE_REJECTED\") == null) {" + NL + "        \tglobalMap.put(\"";
+  protected final String TEXT_229 = "_NB_LINE_REJECTED\",nb_line_rejected_";
+  protected final String TEXT_230 = "_NB_LINE_REJECTED\",(Integer)globalMap.get(\"";
+  protected final String TEXT_231 = "_NB_LINE_REJECTED\") + nb_line_rejected_";
+  protected final String TEXT_232 = ");" + NL + "        }" + NL + "\t";
+  protected final String TEXT_233 = NL + "        globalMap.put(\"";
+  protected final String TEXT_234 = ");" + NL + "        globalMap.put(\"";
+  protected final String TEXT_235 = "_NB_LINE_REJECTED\", nb_line_rejected_";
+  protected final String TEXT_236 = ");" + NL + "    ";
+  protected final String TEXT_237 = NL + NL + "\t";
 
     public static final String INSERT_COLUMN_NAME = "insertColName";
     public static final String INSERT_VALUE_STMT = "insertValueStmt";
@@ -6167,7 +6158,7 @@ DBLogUtil dbLog = null;
 		isSpecifyIdentityKey = false;
 	}
     String identityKey = ElementParameterParser.getValue(node, "__IDENTITY_FIELD__");
-	if(identityInsert && useExistingConnection) {
+	if(identityInsert && useExistingConnection ) {
         
     stringBuffer.append(TEXT_35);
     stringBuffer.append(cid);
@@ -6678,144 +6669,130 @@ DBLogUtil dbLog = null;
     stringBuffer.append(TEXT_147);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_148);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_149);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_150);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_151);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_150);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_152);
      }else {
    
     
           if (useBatch) {
                 
+    stringBuffer.append(TEXT_151);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_152);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_153);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_154);
-    stringBuffer.append(cid );
+    dbLog.batch().executeTry(dbLog.str(dataAction));
     stringBuffer.append(TEXT_155);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_156);
-    dbLog.batch().executeTry(dbLog.str(dataAction));
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_157);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_158);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_159);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_160);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_161);
-    stringBuffer.append(cid);
+    dbLog.batch().executeDone(dbLog.str(dataAction));
     stringBuffer.append(TEXT_162);
-    stringBuffer.append(cid);
+    if (("INSERT").equals(dataAction)) {
+            	    	
     stringBuffer.append(TEXT_163);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_164);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_165);
-    dbLog.batch().executeDone(dbLog.str(dataAction));
+    
+            	    	}else if (("UPDATE").equals(dataAction)) {
+            	    	
     stringBuffer.append(TEXT_166);
-    if (("INSERT").equals(dataAction)) {
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_164);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_165);
+    
+            	    	}else if (("DELETE").equals(dataAction)) {
             	    	
     stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_164);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
-    
-            	    	}else if (("UPDATE").equals(dataAction)) {
-            	    	
-    stringBuffer.append(TEXT_169);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_164);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
-    
-            	    	}else if (("DELETE").equals(dataAction)) {
-            	    	
-    stringBuffer.append(TEXT_170);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_164);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_165);
     
             	    	}
-    stringBuffer.append(TEXT_171);
+    stringBuffer.append(TEXT_168);
     if(("true").equals(dieOnError)) {
                 	
-    stringBuffer.append(TEXT_172);
+    stringBuffer.append(TEXT_169);
     
                 	}else {
                 	
+    stringBuffer.append(TEXT_170);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_171);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_172);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_173);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_174);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_175);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_176);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_177);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_178);
+    if (("INSERT").equals(dataAction)) {
+            	    	
+    stringBuffer.append(TEXT_163);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_164);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_179);
-    if (("INSERT").equals(dataAction)) {
+    stringBuffer.append(TEXT_165);
+    
+            	    	}else if (("UPDATE").equals(dataAction)) {
+            	    	
+    stringBuffer.append(TEXT_166);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_164);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_165);
+    
+            	    	}else if (("DELETE").equals(dataAction)) {
             	    	
     stringBuffer.append(TEXT_167);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_164);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
-    
-            	    	}else if (("UPDATE").equals(dataAction)) {
-            	    	
-    stringBuffer.append(TEXT_169);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_164);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
-    
-            	    	}else if (("DELETE").equals(dataAction)) {
-            	    	
-    stringBuffer.append(TEXT_170);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_164);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_168);
+    stringBuffer.append(TEXT_165);
     
             	    	}
             	    	dbLog.logPrintedException("e.getMessage()");
             	    	
-    stringBuffer.append(TEXT_180);
+    stringBuffer.append(TEXT_176);
     
                 	}
-    stringBuffer.append(TEXT_181);
+    stringBuffer.append(TEXT_177);
     
                 }
-    stringBuffer.append(TEXT_182);
+    stringBuffer.append(TEXT_178);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_183);
+    stringBuffer.append(TEXT_179);
     
 			//to fixed: bug8422
 			if(!(cid.equals("talendLogs_DB") || cid.equals("talendStats_DB") || cid.equals("talendMeter_DB"))){
 			
-    stringBuffer.append(TEXT_184);
+    stringBuffer.append(TEXT_180);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_185);
+    stringBuffer.append(TEXT_181);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_186);
+    stringBuffer.append(TEXT_182);
     
 			}else{
 			
-    stringBuffer.append(TEXT_187);
+    stringBuffer.append(TEXT_183);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_41);
     
@@ -6827,65 +6804,73 @@ DBLogUtil dbLog = null;
 
 if(identityInsert){
 
-    stringBuffer.append(TEXT_188);
+    stringBuffer.append(TEXT_184);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_37);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_189);
+    stringBuffer.append(TEXT_185);
     dbLog.data().sqlExecuteTry(dbLog.var("setIdentityInsertOFFSQL"));
-    stringBuffer.append(TEXT_190);
+    stringBuffer.append(TEXT_186);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_191);
+    stringBuffer.append(TEXT_187);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_10);
     dbLog.data().sqlExecuteDone(dbLog.var("setIdentityInsertOFFSQL"));
-    stringBuffer.append(TEXT_190);
+    stringBuffer.append(TEXT_186);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_192);
+    stringBuffer.append(TEXT_188);
     
 }
 
-    stringBuffer.append(TEXT_193);
+    stringBuffer.append(TEXT_189);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_194);
+    stringBuffer.append(TEXT_190);
     
     if(!useExistingConnection)
     {
         if(!("").equals(commitEvery) && !("0").equals(commitEvery))
         {
             
-    stringBuffer.append(TEXT_195);
+    dbLog.commit().commitTry(null, dbLog.var("commitCounter"));
+    stringBuffer.append(TEXT_191);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_196);
-    dbLog.commit().commitTry(null, dbLog.var("rowsToCommitCount"));
-    stringBuffer.append(TEXT_197);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_198);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_196);
+    stringBuffer.append(TEXT_192);
     dbLog.commit().commitDone(null);
-    stringBuffer.append(TEXT_199);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_200);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_201);
     
         }
 
         commitEvery = "0";
         
     dbLog.conn().closeTry(null);
-    stringBuffer.append(TEXT_202);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_203);
-    dbLog.conn().closeDone(null);
-    stringBuffer.append(TEXT_204);
+    stringBuffer.append(TEXT_193);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_194);
+    dbLog.conn().closeDone(null);
+    stringBuffer.append(TEXT_195);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_190);
     
     }
     
     stringBuffer.append(TEXT_2);
+    stringBuffer.append(TEXT_196);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_197);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_198);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_199);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_200);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_201);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_202);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_203);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_204);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_205);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_206);
@@ -6893,117 +6878,99 @@ if(identityInsert){
     stringBuffer.append(TEXT_207);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_208);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_209);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_210);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_211);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_212);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_214);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_215);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_216);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_217);
     
 	boolean isEnableParallelize ="true".equalsIgnoreCase(ElementParameterParser.getValue(node, "__PARALLELIZE__"));
 	if (isEnableParallelize) {
 	
+    stringBuffer.append(TEXT_209);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_210);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_211);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_213);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_214);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_216);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_217);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_218);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_219);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_220);
-    stringBuffer.append(cid);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_221);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_222);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_223);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_224);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_225);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_226);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_227);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_215);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_228);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_224);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_229);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_212);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_230);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_231);
-    stringBuffer.append(cid );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_232);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_224);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_233);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_234);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_235);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_236);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_224);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_237);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_238);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_239);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_240);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_241);
     
 	} else {
 	
-    stringBuffer.append(TEXT_242);
+    stringBuffer.append(TEXT_233);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_220);
+    stringBuffer.append(TEXT_211);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_243);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_226);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_243);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_230);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_243);
-    stringBuffer.append(cid );
     stringBuffer.append(TEXT_234);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_243);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_244);
+    stringBuffer.append(TEXT_217);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_245);
+    stringBuffer.append(TEXT_234);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_221);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_234);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_225);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_234);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_235);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_236);
     
     }
     
-    stringBuffer.append(TEXT_246);
+    stringBuffer.append(TEXT_237);
     
 	if(!useExistingConnection || (useExistingConnection && setAutoCommit)){
 		if (("INSERT").equals(dataAction)) {

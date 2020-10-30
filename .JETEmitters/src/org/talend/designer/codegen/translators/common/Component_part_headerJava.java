@@ -7,6 +7,9 @@ import org.talend.core.model.metadata.IMetadataTable;
 import org.talend.core.model.metadata.IMetadataColumn;
 import org.talend.core.model.process.EConnectionType;
 import org.talend.core.model.process.ElementParameterParser;
+import org.talend.core.model.process.EParameterFieldType;
+import org.talend.designer.core.model.components.EParameterName;
+import org.talend.designer.core.model.components.ElementParameter;
 import org.talend.designer.codegen.config.CodeGeneratorArgument;
 import org.talend.core.model.utils.NodeUtil;
 import org.talend.core.model.process.IConnectionCategory;
@@ -136,23 +139,40 @@ public class Component_part_headerJava
   protected final String TEXT_106 = ".toLogString()));" + NL + "    \t\t\t}" + NL + "    \t\t";
   protected final String TEXT_107 = NL + "\t\tint tos_count_";
   protected final String TEXT_108 = " = 0;" + NL + "\t\t";
-  protected final String TEXT_109 = NL + "\t\t\tif(enableLogStash) {" + NL + "\t\t\t\t";
-  protected final String TEXT_110 = ".addCM(\"";
-  protected final String TEXT_111 = "\", \"";
-  protected final String TEXT_112 = NL + "\t\t\t\tif(";
-  protected final String TEXT_113 = "){" + NL + "\t\t\t\t\trunStat.updateStatOnConnectionAndLog(globalMap,iterateLoop,iterateId,";
-  protected final String TEXT_114 = ");" + NL + "\t\t\t\t}" + NL + "\t\t\t\t";
-  protected final String TEXT_115 = NL + "\t\t\t\t\trunStat.updateStatAndLog(execStat,enableLogStash,iterateId,0,0";
-  protected final String TEXT_116 = ");" + NL + "\t\t\t\t\t";
-  protected final String TEXT_117 = NL + "\t\t\t\t\t\tif(execStat){" + NL + "\t\t\t\t\t\t\trunStat.updateStatOnConnection(iterateId,0,0";
-  protected final String TEXT_118 = ");" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_119 = NL + "\t\t\t\t\t\t" + NL + "\t\t\t\t\t\t";
-  protected final String TEXT_120 = NL + "\t\t\t\t\t\tif(enableLogStash){" + NL + "\t\t\t\t\t\t\trunStat.log(iterateId,0,0";
-  protected final String TEXT_121 = NL + "\t\t\t\tresourceMap.put(\"inIterateVComp\", true);" + NL + "\t\t\t";
-  protected final String TEXT_122 = NL + "\t\t\t\tresourceMap.remove(\"inIterateVComp\");" + NL + "\t\t\t";
-  protected final String TEXT_123 = NL + "\t\t\t\t\t\tresourceMap.remove(\"inIterateVComp\");" + NL + "\t\t\t\t\t";
-  protected final String TEXT_124 = NL + "\t\t\t\t\t\tresourceMap.put(\"inIterateVComp\", true);" + NL + "\t\t\t\t\t";
-  protected final String TEXT_125 = NL;
+  protected final String TEXT_109 = NL + "\t\tclass ParameterUtil_";
+  protected final String TEXT_110 = "{" + NL + "\t\t" + NL + "            public java.util.Map<String, String> getParameter() throws Exception{" + NL + "                java.util.Map<String, String> component_parameters = new java.util.HashMap<>();";
+  protected final String TEXT_111 = NL;
+  protected final String TEXT_112 = NL + "                        component_parameters.put(\"";
+  protected final String TEXT_113 = "\",String.valueOf(";
+  protected final String TEXT_114 = "));";
+  protected final String TEXT_115 = "[";
+  protected final String TEXT_116 = "]\", \"";
+  protected final String TEXT_117 = "\");";
+  protected final String TEXT_118 = NL + "                  ";
+  protected final String TEXT_119 = NL + "                    component_parameters.put(\"";
+  protected final String TEXT_120 = "\", String.valueOf(";
+  protected final String TEXT_121 = NL + "                return component_parameters;" + NL + "            }" + NL + "        }" + NL + "        ";
+  protected final String TEXT_122 = NL + "        ";
+  protected final String TEXT_123 = ".addComponentParameterMessage(\"";
+  protected final String TEXT_124 = "\", \"";
+  protected final String TEXT_125 = "\"," + NL + "          new ParameterUtil_";
+  protected final String TEXT_126 = "().getParameter());";
+  protected final String TEXT_127 = "Process(globalMap);" + NL + "\t\t";
+  protected final String TEXT_128 = NL + "\t\t\tif(enableLogStash) {" + NL + "\t\t\t\t";
+  protected final String TEXT_129 = ".addCM(\"";
+  protected final String TEXT_130 = NL + "\t\t\t\tif(";
+  protected final String TEXT_131 = "){" + NL + "\t\t\t\t\trunStat.updateStatOnConnectionAndLog(globalMap,iterateLoop,iterateId,";
+  protected final String TEXT_132 = ");" + NL + "\t\t\t\t}" + NL + "\t\t\t\t";
+  protected final String TEXT_133 = NL + "\t\t\t\t\trunStat.updateStatAndLog(execStat,enableLogStash,iterateId,0,0";
+  protected final String TEXT_134 = ");" + NL + "\t\t\t\t\t";
+  protected final String TEXT_135 = NL + "\t\t\t\t\t\tif(execStat){" + NL + "\t\t\t\t\t\t\trunStat.updateStatOnConnection(iterateId,0,0";
+  protected final String TEXT_136 = ");" + NL + "\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_137 = NL + "\t\t\t\t\t\t" + NL + "\t\t\t\t\t\t";
+  protected final String TEXT_138 = NL + "\t\t\t\t\t\tif(enableLogStash){" + NL + "\t\t\t\t\t\t\trunStat.log(iterateId,0,0";
+  protected final String TEXT_139 = NL + "\t\t\t\tresourceMap.put(\"inIterateVComp\", true);" + NL + "\t\t\t";
+  protected final String TEXT_140 = NL + "\t\t\t\tresourceMap.remove(\"inIterateVComp\");" + NL + "\t\t\t";
+  protected final String TEXT_141 = NL + "\t\t\t\t\t\tresourceMap.remove(\"inIterateVComp\");" + NL + "\t\t\t\t\t";
+  protected final String TEXT_142 = NL + "\t\t\t\t\t\tresourceMap.put(\"inIterateVComp\", true);" + NL + "\t\t\t\t\t";
 
   public String generate(Object argument)
   {
@@ -612,10 +632,14 @@ LogUtil log = null;
 	connSet.addAll(node.getIncomingConnections(EConnectionType.FLOW_MAIN));
 	connSet.addAll(node.getIncomingConnections(EConnectionType.FLOW_MERGE));
 	
-	List<? extends INode> jobCatcherNodes = node.getProcess().getNodesOfType("tJobStructureCatcher");
-	boolean enableLogStash = jobCatcherNodes != null && !jobCatcherNodes.isEmpty();
 	String cid = node.getUniqueName();
-	boolean logstashCurrent = !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend") && enableLogStash;
+	
+	List<? extends INode> jobCatcherNodes = node.getProcess().getNodesOfType("tJobStructureCatcher");
+	boolean jobCatcherExists = jobCatcherNodes != null && !jobCatcherNodes.isEmpty();
+	INode jobCatcherNode = jobCatcherExists ? jobCatcherNodes.get(0) : null;
+	
+	boolean enableLogStash = !Boolean.getBoolean("deactivate_extended_component_log") && jobCatcherExists;
+	boolean logstashCurrent = enableLogStash && !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend");
 	
 	//about performance monitor, no way to support more than one job catcher component, also that is not necessary
 	final String subprocessName4Catcher = logstashCurrent ? jobCatcherNodes.get(0).getDesignSubjobStartNode().getUniqueName() : null;
@@ -895,19 +919,261 @@ LogUtil log = null;
     
 		log.startWork();
 		log.logCompSetting();
+		boolean enable_runtime_lineage_log = NodeUtil.isJobUsingRuntimeLineage(node.getProcess()) && jobCatcherExists && !cid.startsWith("tJobStructureCatcher") && !cid.startsWith("talend");
+		if(enable_runtime_lineage_log) {
+		
+    stringBuffer.append(TEXT_109);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_110);
+    
+                java.util.Set<org.talend.core.model.process.EParameterFieldType> ignoredParamsTypes = new java.util.HashSet<org.talend.core.model.process.EParameterFieldType>(); 
+                ignoredParamsTypes.addAll(
+                    java.util.Arrays.asList(
+                        org.talend.core.model.process.EParameterFieldType.SCHEMA_TYPE,
+                        org.talend.core.model.process.EParameterFieldType.SCHEMA_REFERENCE,
+                        org.talend.core.model.process.EParameterFieldType.LABEL,
+                        org.talend.core.model.process.EParameterFieldType.EXTERNAL,
+                        org.talend.core.model.process.EParameterFieldType.MAPPING_TYPE,
+                        org.talend.core.model.process.EParameterFieldType.IMAGE,
+                        org.talend.core.model.process.EParameterFieldType.TNS_EDITOR,
+                        org.talend.core.model.process.EParameterFieldType.WSDL2JAVA,
+                        org.talend.core.model.process.EParameterFieldType.GENERATEGRAMMARCONTROLLER,
+                        org.talend.core.model.process.EParameterFieldType.GENERATE_SURVIVORSHIP_RULES_CONTROLLER,
+                        org.talend.core.model.process.EParameterFieldType.REFRESH_REPORTS,
+                        org.talend.core.model.process.EParameterFieldType.BROWSE_REPORTS,
+                        org.talend.core.model.process.EParameterFieldType.PALO_DIM_SELECTION,
+                        org.talend.core.model.process.EParameterFieldType.GUESS_SCHEMA,
+                        org.talend.core.model.process.EParameterFieldType.MATCH_RULE_IMEX_CONTROLLER,
+                        org.talend.core.model.process.EParameterFieldType.MEMO_PERL,
+                        org.talend.core.model.process.EParameterFieldType.DBTYPE_LIST,
+                        org.talend.core.model.process.EParameterFieldType.VERSION,
+                        org.talend.core.model.process.EParameterFieldType.TECHNICAL,
+                        org.talend.core.model.process.EParameterFieldType.ICON_SELECTION,
+                        org.talend.core.model.process.EParameterFieldType.JAVA_COMMAND,
+                        org.talend.core.model.process.EParameterFieldType.TREE_TABLE,
+                        org.talend.core.model.process.EParameterFieldType.VALIDATION_RULE_TYPE,
+                        org.talend.core.model.process.EParameterFieldType.DCSCHEMA,
+                        org.talend.core.model.process.EParameterFieldType.SURVIVOR_RELATION,
+                        org.talend.core.model.process.EParameterFieldType.REST_RESPONSE_SCHEMA_TYPE,
+                        org.talend.core.model.process.EParameterFieldType.BUTTON
+                        )
+                );
+                for(org.talend.core.model.process.IElementParameter ep : org.talend.core.model.utils.NodeUtil.getDisplayedParameters(node)){
+                    if(!ep.isLog4JEnabled() || ignoredParamsTypes.contains(ep.getFieldType())){
+                        continue;
+                    }
+                    
+                    ElementParameter p = (ElementParameter)ep;
+                    Object pluginValue = p.getTaggedValue("org.talend.sdk.component.source");
+                    if(pluginValue != null && String.class.cast(pluginValue).equalsIgnoreCase("tacokit")) {
+                        try {
+                            if (!(Boolean) org.talend.core.runtime.IAdditionalInfo.class.cast(p).func("isPersisted")) {
+                                continue;
+                            }
+                        } catch (Exception ex) {
+                            //do nothing
+                        }
+                        
+                        
+    
+//copy from configuration.javajet for tacokit
+
+    stringBuffer.append(TEXT_111);
+    
+            //TODO: modify this part for Maps and nested lists.
+            if (p.getFieldType() == EParameterFieldType.TABLE || p.getFieldType() == EParameterFieldType.TACOKIT_SUGGESTABLE_TABLE) {
+                java.util.List<java.util.Map<String, String>> tableValues = ElementParameterParser.createTableValues((java.util.List<java.util.Map<String, Object>>) p.getValue(), p);
+                String[] items = p.getListItemsDisplayCodeName();
+                String tableName = p.getName().replace('$', '.');
+                boolean primitiveTable = items.length == 1 && items[0].equals(tableName + "[]");
+                String tableNamePrefix = tableName + "[]";
+                for (int i = 0; i < tableValues.size(); i++) {
+                    java.util.Map<String, String> lineValues = tableValues.get(i);
+                    for (int j = 0; j < items.length; j++) {
+                        String key = tableName + "[" + i + "]";
+                        if (!primitiveTable) {
+                            final String columnName = items[j].substring(tableNamePrefix.length(), items[j].length());
+                            key = key + columnName;
+                        }
+                        String value = lineValues.get(items[j]);
+                        if (!org.talend.core.model.utils.ContextParameterUtils.isDynamic(value)) {
+                            value = org.talend.core.model.utils.TalendTextUtils.removeQuotes(value);
+                            value = org.talend.core.model.utils.TalendTextUtils.addQuotes(value);
+                        }
+                        
+                        if(value==null || "null".equals(value.trim())) {
+                            value = "(Object)null";
+                        }
+
+    stringBuffer.append(TEXT_112);
+    stringBuffer.append(key);
+    stringBuffer.append(TEXT_113);
+    stringBuffer.append(value);
+    stringBuffer.append(TEXT_114);
+    
+                    }
+                }
+            } else if(p.getFieldType() == EParameterFieldType.SCHEMA_TYPE) {
+                final String parameterName = p.getName();
+                IConnection connection = null;
+                final List<? extends IConnection> connections = NodeUtil.getOutgoingConnections(node, p.getContext());
+                if(connections != null && !connections.isEmpty()) {
+                    connection = connections.get(0);
+                }
+                if(connection != null) {
+                    IMetadataTable metaTable = connection.getMetadataTable();
+                    List<IMetadataColumn> columns = metaTable.getListColumns();
+                    for(int i = 0; i < columns.size(); i++) {
+                        IMetadataColumn column = columns.get(i);
+                    
+    stringBuffer.append(TEXT_112);
+    stringBuffer.append(parameterName);
+    stringBuffer.append(TEXT_115);
+    stringBuffer.append(i);
+    stringBuffer.append(TEXT_116);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_117);
+    
+                    }
+                }
+            } else if (p.getFieldType() == EParameterFieldType.TACOKIT_INPUT_SCHEMA) {
+                final String parameterName = p.getName();
+                IConnection connection = null;
+                final List<? extends IConnection> connections = NodeUtil.getIncomingConnections(node, p.getContext());
+                if(connections != null && !connections.isEmpty()) {
+                    connection = connections.get(0);
+                }
+                if(connection != null) {
+                    IMetadataTable metaTable = connection.getMetadataTable();
+                    List<IMetadataColumn> columns = metaTable.getListColumns();
+                    for(int i = 0; i < columns.size(); i++) {
+                        IMetadataColumn column = columns.get(i);
+                    
+    stringBuffer.append(TEXT_112);
+    stringBuffer.append(parameterName);
+    stringBuffer.append(TEXT_115);
+    stringBuffer.append(i);
+    stringBuffer.append(TEXT_116);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_117);
+    
+                    }
+                }
+            } else {
+                final String key;
+                if(!p.getName().contains("$")){
+                    key = p.getName();
+                }else{
+                    final StringBuilder keyBuilder = new StringBuilder();
+                    for (String part : p.getName().split("\\.")) {
+                        if (keyBuilder.length() != 0) {
+                            keyBuilder.append(".");
+                        }
+                        if (part.contains("$") && !part.startsWith("$")) {
+                            keyBuilder.append(part.replace("$", "."));
+                        } else {
+                            keyBuilder.append(part);
+                        }
+                    }
+                    key = keyBuilder.toString();
+                }
+                String value = null;
+                if(p.getFieldType() == EParameterFieldType.PASSWORD) {
+                    continue;
+                } else {
+                    value = ElementParameterParser.getStringElementParameterValue(p);
+                    if (!org.talend.core.model.utils.ContextParameterUtils.isDynamic(value)) {
+                        value = org.talend.core.model.utils.TalendTextUtils.removeQuotes(value);
+                        value = org.talend.core.model.utils.TalendTextUtils.addQuotes(value);
+                    }
+                }
+                if (value != null) {
+                 if(key.endsWith("$maxBatchSize")){
+                  
+    stringBuffer.append(TEXT_118);
+    
+                 } else if(p.getFieldType() == EParameterFieldType.CLOSED_LIST) {
+                   String valueTemp = org.talend.core.model.utils.TalendTextUtils.removeQuotes(value);
+                    if ("".equals(valueTemp)) {
+                       String[] listItemsDisplayCodeValue = p.getListItemsDisplayCodeName();
+                       if(listItemsDisplayCodeValue != null && listItemsDisplayCodeValue.length > 0){
+                          valueTemp = listItemsDisplayCodeValue[0];
+                          value = org.talend.core.model.utils.TalendTextUtils.addQuotes(valueTemp);
+                       }
+                    }
+                }
+                
+                if(value==null || "null".equals(value.trim())) {
+                    value = "(Object)null";
+                }
+
+    stringBuffer.append(TEXT_119);
+    stringBuffer.append(key);
+    stringBuffer.append(TEXT_120);
+    stringBuffer.append(value);
+    stringBuffer.append(TEXT_114);
+    
+                } // else do not put value in configuration
+            }
+
+    
+                        
+                        continue;
+                    }
+                    
+                    String name = ep.getName();
+                    java.util.Set<String> ignoredParamsNames = new java.util.HashSet<String>();
+                    ignoredParamsNames.add("SQLPATTERN_VALUE");
+                    ignoredParamsNames.add("ADDITIONAL_INSERT_COLUMNS");
+                    ignoredParamsNames.add("ADDITIONAL_UPDATE_COLUMNS");
+                    ignoredParamsNames.add("SELECTION_TABLE");
+                    ignoredParamsNames.add("DIFFER_MESSAGE");
+                    ignoredParamsNames.add("NO_DIFFER_MESSAGE");
+                    
+                    if(ignoredParamsNames.contains(name)) {
+                        //do nothing
+                    } else if(org.talend.core.model.process.EParameterFieldType.PASSWORD.equals(ep.getFieldType())){
+                        //not log password
+                    }else{
+                        String value = org.talend.core.model.utils.NodeUtil.getRuntimeParameterValue(node, ep);
+                        
+    stringBuffer.append(TEXT_112);
+    stringBuffer.append(name);
+    stringBuffer.append(TEXT_120);
+    stringBuffer.append(value);
+    stringBuffer.append(TEXT_114);
+    
+                    }
+                }
+                
+    stringBuffer.append(TEXT_121);
+    stringBuffer.append(TEXT_122);
+    stringBuffer.append(jobCatcherNode.getUniqueName());
+    stringBuffer.append(TEXT_123);
+    stringBuffer.append(node.getUniqueName());
+    stringBuffer.append(TEXT_124);
+    stringBuffer.append(node.getComponent().getName());
+    stringBuffer.append(TEXT_125);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_126);
+    stringBuffer.append(TEXT_122);
+    stringBuffer.append(jobCatcherNode.getDesignSubjobStartNode().getUniqueName() );
+    stringBuffer.append(TEXT_127);
+    
+		}
 		
 		if(logstashCurrent) {
 			for (INode jobStructureCatcher : jobCatcherNodes) {
 				String label = ElementParameterParser.getValue(node, "__LABEL__");
 				String nodeLabel = ((label==null || "__UNIQUE_NAME__".equals(label) || label.contains("\"")) ? node.getUniqueName() : label);
 			
-    stringBuffer.append(TEXT_109);
+    stringBuffer.append(TEXT_128);
     stringBuffer.append(jobStructureCatcher.getUniqueName() );
-    stringBuffer.append(TEXT_110);
+    stringBuffer.append(TEXT_129);
     stringBuffer.append(node.getUniqueName());
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_124);
     stringBuffer.append(nodeLabel);
-    stringBuffer.append(TEXT_111);
+    stringBuffer.append(TEXT_124);
     stringBuffer.append(node.getComponent().getName());
     stringBuffer.append(TEXT_53);
     stringBuffer.append(jobStructureCatcher.getDesignSubjobStartNode().getUniqueName() );
@@ -928,7 +1194,7 @@ LogUtil log = null;
 					//do nothing
 				} else if(containsTPartitioner){
 				
-    stringBuffer.append(TEXT_112);
+    stringBuffer.append(TEXT_130);
     if(stat){
     stringBuffer.append(TEXT_65);
     }
@@ -938,7 +1204,7 @@ LogUtil log = null;
     if(logstashCurrent){
     stringBuffer.append(TEXT_67);
     }
-    stringBuffer.append(TEXT_113);
+    stringBuffer.append(TEXT_131);
     if(stat){
     stringBuffer.append(TEXT_65);
     } else {
@@ -950,52 +1216,52 @@ LogUtil log = null;
     stringBuffer.append(connName);
     stringBuffer.append(TEXT_72);
     }
-    stringBuffer.append(TEXT_114);
+    stringBuffer.append(TEXT_132);
     
 				} else {
 					if(stat && logstashCurrent) {
 					
-    stringBuffer.append(TEXT_115);
+    stringBuffer.append(TEXT_133);
     for(String connName : needToStartConnNames){
     stringBuffer.append(TEXT_71);
     stringBuffer.append(connName);
     stringBuffer.append(TEXT_72);
     }
-    stringBuffer.append(TEXT_116);
+    stringBuffer.append(TEXT_134);
     
 					} else {
 						if(stat){
 						
-    stringBuffer.append(TEXT_117);
+    stringBuffer.append(TEXT_135);
     for(String connName : needToStartConnNames){
     stringBuffer.append(TEXT_71);
     stringBuffer.append(connName);
     stringBuffer.append(TEXT_72);
     }
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_136);
     
 						}
 						
-    stringBuffer.append(TEXT_119);
+    stringBuffer.append(TEXT_137);
     if(logstashCurrent) {
-    stringBuffer.append(TEXT_120);
+    stringBuffer.append(TEXT_138);
     for(String connName : needToStartConnNames){
     stringBuffer.append(TEXT_71);
     stringBuffer.append(connName);
     stringBuffer.append(TEXT_72);
     }
-    stringBuffer.append(TEXT_118);
+    stringBuffer.append(TEXT_136);
     
 						}
 					}
 				}
 			}else if(codePart.equals(ECodePart.MAIN)){ 
 			
-    stringBuffer.append(TEXT_121);
+    stringBuffer.append(TEXT_139);
     
 			}else if(codePart.equals(ECodePart.END)){
 			
-    stringBuffer.append(TEXT_122);
+    stringBuffer.append(TEXT_140);
     
 			} 
 		}else{
@@ -1005,11 +1271,11 @@ LogUtil log = null;
 				if(iterateInVSComp){
 					if(codePart.equals(ECodePart.BEGIN)){ 
 					
-    stringBuffer.append(TEXT_123);
+    stringBuffer.append(TEXT_141);
     
 					}else if(codePart.equals(ECodePart.END)){
 					
-    stringBuffer.append(TEXT_124);
+    stringBuffer.append(TEXT_142);
     
 					}
 				}
@@ -1017,7 +1283,7 @@ LogUtil log = null;
 		}
 	}
 	
-    stringBuffer.append(TEXT_125);
+    stringBuffer.append(TEXT_111);
     return stringBuffer.toString();
   }
 }

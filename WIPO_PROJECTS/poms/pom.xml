@@ -51,6 +51,7 @@
     <module>jobs/process/M/PA/panama_0.1</module>
     <module>jobs/process/M/PY/PY_MARCAS_NUEVO/a1_copy_users_to_ipas_0.1</module>
     <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_a_interm_copy_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_userdoc_a_interm_0.1</module>
     <module>jobs/process/M/PY/PY_MARCAS_NUEVO/migrate_config_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/a_carga_a_vw_origin_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/b_agentes_a_intermed_0.1</module>
