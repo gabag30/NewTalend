@@ -669,7 +669,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_3 = "ADMIN";
 
 				final String decryptedPassword_tDBConnection_3 = routines.system.PasswordEncryptUtil
-						.decryptPassword("enc:routine.encryption.key.v1:Kbt4IYcXBnCikjaPG+uZ5Ax0l1c+2Szo+adQeQ28cJsH");
+						.decryptPassword("enc:routine.encryption.key.v1:IE7PZXWTmAZzGNwMQbjrqllRQGMPFsq11BFvQIMFb0hQ");
 				String dbPwd_tDBConnection_3 = decryptedPassword_tDBConnection_3;
 
 				java.sql.Connection conn_tDBConnection_3 = null;
@@ -830,7 +830,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_2 = "postgres";
 
 				final String decryptedPassword_tDBConnection_2 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:a9hfrKXtuEC1FKK6AoA2dsT9H0ggW63iG5DdLrIbY0y2wK+D");
+						"enc:routine.encryption.key.v1:7hkyNOmc00GqNqSPNWoLWOAtSkVMOVaaAjUvj2kO5RgghUCM");
 				String dbPwd_tDBConnection_2 = decryptedPassword_tDBConnection_2;
 
 				java.sql.Connection conn_tDBConnection_2 = null;
@@ -1006,7 +1006,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBConnection_1 = "sa";
 
 				final String decryptedPassword_tDBConnection_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:J5fU65HnRy5o36DlimUGIOZHxt4jUAhXiI0cdB6uTnbLx4d7");
+						"enc:routine.encryption.key.v1:3rhECjpZyr/x0tkg9spTjxwouevobui9KVxbf0MtFW6eP5Nf");
 				String dbPwd_tDBConnection_1 = decryptedPassword_tDBConnection_1;
 
 				java.sql.Connection conn_tDBConnection_1 = null;
@@ -3245,11 +3245,6 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				java.util.Calendar calendar_datetimeoffset_tDBOutput_4 = java.util.Calendar
 						.getInstance(java.util.TimeZone.getTimeZone("UTC"));
 
-				int updateKeyCount_tDBOutput_4 = 6;
-				if (updateKeyCount_tDBOutput_4 < 1) {
-					throw new RuntimeException("For update, Schema must have a key");
-				}
-
 				java.sql.Connection conn_tDBOutput_4 = null;
 				String dbUser_tDBOutput_4 = null;
 				dbschema_tDBOutput_4 = (String) globalMap.get("dbschema_tDBConnection_1");
@@ -3263,33 +3258,14 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				}
 				int count_tDBOutput_4 = 0;
 
-				int rsTruncCountNumber_tDBOutput_4 = 0;
-				try (java.sql.Statement stmtTruncCount_tDBOutput_4 = conn_tDBOutput_4.createStatement()) {
-					try (java.sql.ResultSet rsTruncCount_tDBOutput_4 = stmtTruncCount_tDBOutput_4
-							.executeQuery("SELECT COUNT(1) FROM [" + tableName_tDBOutput_4 + "]")) {
-						if (rsTruncCount_tDBOutput_4.next()) {
-							rsTruncCountNumber_tDBOutput_4 = rsTruncCount_tDBOutput_4.getInt(1);
-						}
-					}
+				try (java.sql.Statement stmtClear_tDBOutput_4 = conn_tDBOutput_4.createStatement()) {
+					stmtClear_tDBOutput_4.executeUpdate("DELETE FROM [" + tableName_tDBOutput_4 + "]");
 				}
-				try (java.sql.Statement stmtTrunc_tDBOutput_4 = conn_tDBOutput_4.createStatement()) {
-					stmtTrunc_tDBOutput_4.executeUpdate("TRUNCATE TABLE [" + tableName_tDBOutput_4 + "]");
-					deletedCount_tDBOutput_4 += rsTruncCountNumber_tDBOutput_4;
-				}
-				java.sql.PreparedStatement pstmt_tDBOutput_4 = conn_tDBOutput_4
-						.prepareStatement("SELECT COUNT(1) FROM [" + tableName_tDBOutput_4
-								+ "] WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [ACTION_TYPE] = ? AND [ACTION_DATE] = ?");
-				resourceMap.put("pstmt_tDBOutput_4", pstmt_tDBOutput_4);
 				String insert_tDBOutput_4 = "INSERT INTO [" + tableName_tDBOutput_4
 						+ "] ([FILE_SEQ],[FILE_TYPE],[FILE_SERIES],[FILE_NBR],[ACTION_TYPE],[ACTION_DATE],[MANUAL_DUE_DATE],[RESPONSIBLE_USER],[ACTION_NOTES1],[ACTION_NOTES2],[ACTION_NOTES3],[ACTION_NOTES4],[ACTION_NOTES5],[GENERAL_NOTES],[SELECTED_OPTIONS_TEXT],[ACTION_USER],[ACTION_CATEGORY],[SPECIAL_FINAL_STATUS],[JOURNAL_CODE],[PUBLICATION_DATE],[IPAS_PROC_TYP],[IPAS_PROC_NBR],[IPAS_ACTION_NBR]) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-				java.sql.PreparedStatement pstmtInsert_tDBOutput_4 = conn_tDBOutput_4
-						.prepareStatement(insert_tDBOutput_4);
-				resourceMap.put("pstmtInsert_tDBOutput_4", pstmtInsert_tDBOutput_4);
-				String update_tDBOutput_4 = "UPDATE [" + tableName_tDBOutput_4
-						+ "] SET [MANUAL_DUE_DATE] = ?,[RESPONSIBLE_USER] = ?,[ACTION_NOTES1] = ?,[ACTION_NOTES2] = ?,[ACTION_NOTES3] = ?,[ACTION_NOTES4] = ?,[ACTION_NOTES5] = ?,[GENERAL_NOTES] = ?,[SELECTED_OPTIONS_TEXT] = ?,[ACTION_USER] = ?,[ACTION_CATEGORY] = ?,[SPECIAL_FINAL_STATUS] = ?,[JOURNAL_CODE] = ?,[PUBLICATION_DATE] = ?,[IPAS_PROC_TYP] = ?,[IPAS_PROC_NBR] = ?,[IPAS_ACTION_NBR] = ? WHERE [FILE_SEQ] = ? AND [FILE_TYPE] = ? AND [FILE_SERIES] = ? AND [FILE_NBR] = ? AND [ACTION_TYPE] = ? AND [ACTION_DATE] = ?";
-				java.sql.PreparedStatement pstmtUpdate_tDBOutput_4 = conn_tDBOutput_4
-						.prepareStatement(update_tDBOutput_4);
-				resourceMap.put("pstmtUpdate_tDBOutput_4", pstmtUpdate_tDBOutput_4);
+				java.sql.PreparedStatement pstmt_tDBOutput_4 = conn_tDBOutput_4.prepareStatement(insert_tDBOutput_4);
+				resourceMap.put("pstmt_tDBOutput_4", pstmt_tDBOutput_4);
+
 				boolean isShareIdentity_tDBOutput_4 = globalMap.get("shareIdentitySetting_tDBConnection_1") != null
 						&& (Boolean) globalMap.get("shareIdentitySetting_tDBConnection_1") == true;
 
@@ -3724,357 +3700,156 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 							row10 = null;
 							whetherReject_tDBOutput_4 = false;
-
-							if (insert_actions.FILE_SEQ == null) {
-								pstmt_tDBOutput_4.setNull(1, java.sql.Types.VARCHAR);
-							} else {
-								pstmt_tDBOutput_4.setString(1, insert_actions.FILE_SEQ);
-							}
-
-							if (insert_actions.FILE_TYPE == null) {
-								pstmt_tDBOutput_4.setNull(2, java.sql.Types.VARCHAR);
-							} else {
-								pstmt_tDBOutput_4.setString(2, insert_actions.FILE_TYPE);
-							}
-
-							pstmt_tDBOutput_4.setBigDecimal(3, insert_actions.FILE_SERIES);
-
-							pstmt_tDBOutput_4.setBigDecimal(4, insert_actions.FILE_NBR);
-
-							if (insert_actions.ACTION_TYPE == null) {
-								pstmt_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
-							} else {
-								pstmt_tDBOutput_4.setString(5, insert_actions.ACTION_TYPE);
-							}
-
-							if (insert_actions.ACTION_DATE != null) {
-								pstmt_tDBOutput_4.setTimestamp(6,
-										new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
-							} else {
-								pstmt_tDBOutput_4.setNull(6, java.sql.Types.TIMESTAMP);
-							}
-
-							int checkCount_tDBOutput_4 = -1;
-							try (java.sql.ResultSet rs_tDBOutput_4 = pstmt_tDBOutput_4.executeQuery()) {
-								while (rs_tDBOutput_4.next()) {
-									checkCount_tDBOutput_4 = rs_tDBOutput_4.getInt(1);
+							try {
+								if (insert_actions.FILE_SEQ == null) {
+									pstmt_tDBOutput_4.setNull(1, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(1, insert_actions.FILE_SEQ);
 								}
-							}
-							if (checkCount_tDBOutput_4 > 0) {
-								try {
-									if (insert_actions.MANUAL_DUE_DATE != null) {
-										pstmtUpdate_tDBOutput_4.setTimestamp(1,
-												new java.sql.Timestamp(insert_actions.MANUAL_DUE_DATE.getTime()));
-									} else {
-										pstmtUpdate_tDBOutput_4.setNull(1, java.sql.Types.TIMESTAMP);
-									}
 
-									pstmtUpdate_tDBOutput_4.setBigDecimal(2, insert_actions.RESPONSIBLE_USER);
-
-									if (insert_actions.ACTION_NOTES1 == null) {
-										pstmtUpdate_tDBOutput_4.setNull(3, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(3, insert_actions.ACTION_NOTES1);
-									}
-
-									if (insert_actions.ACTION_NOTES2 == null) {
-										pstmtUpdate_tDBOutput_4.setNull(4, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(4, insert_actions.ACTION_NOTES2);
-									}
-
-									if (insert_actions.ACTION_NOTES3 == null) {
-										pstmtUpdate_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(5, insert_actions.ACTION_NOTES3);
-									}
-
-									if (insert_actions.ACTION_NOTES4 == null) {
-										pstmtUpdate_tDBOutput_4.setNull(6, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(6, insert_actions.ACTION_NOTES4);
-									}
-
-									if (insert_actions.ACTION_NOTES5 == null) {
-										pstmtUpdate_tDBOutput_4.setNull(7, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(7, insert_actions.ACTION_NOTES5);
-									}
-
-									if (insert_actions.GENERAL_NOTES == null) {
-										pstmtUpdate_tDBOutput_4.setNull(8, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(8, insert_actions.GENERAL_NOTES);
-									}
-
-									if (insert_actions.SELECTED_OPTIONS_TEXT == null) {
-										pstmtUpdate_tDBOutput_4.setNull(9, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(9, insert_actions.SELECTED_OPTIONS_TEXT);
-									}
-
-									pstmtUpdate_tDBOutput_4.setBigDecimal(10, insert_actions.ACTION_USER);
-
-									if (insert_actions.ACTION_CATEGORY == null) {
-										pstmtUpdate_tDBOutput_4.setNull(11, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(11, insert_actions.ACTION_CATEGORY);
-									}
-
-									if (insert_actions.SPECIAL_FINAL_STATUS == null) {
-										pstmtUpdate_tDBOutput_4.setNull(12, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(12, insert_actions.SPECIAL_FINAL_STATUS);
-									}
-
-									if (insert_actions.JOURNAL_CODE == null) {
-										pstmtUpdate_tDBOutput_4.setNull(13, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(13, insert_actions.JOURNAL_CODE);
-									}
-
-									if (insert_actions.PUBLICATION_DATE != null) {
-										pstmtUpdate_tDBOutput_4.setTimestamp(14,
-												new java.sql.Timestamp(insert_actions.PUBLICATION_DATE.getTime()));
-									} else {
-										pstmtUpdate_tDBOutput_4.setNull(14, java.sql.Types.TIMESTAMP);
-									}
-
-									if (insert_actions.IPAS_PROC_TYP == null) {
-										pstmtUpdate_tDBOutput_4.setNull(15, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(15, insert_actions.IPAS_PROC_TYP);
-									}
-
-									pstmtUpdate_tDBOutput_4.setBigDecimal(16, insert_actions.IPAS_PROC_NBR);
-
-									pstmtUpdate_tDBOutput_4.setBigDecimal(17, insert_actions.IPAS_ACTION_NBR);
-
-									if (insert_actions.FILE_SEQ == null) {
-										pstmtUpdate_tDBOutput_4.setNull(18 + count_tDBOutput_4, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(18 + count_tDBOutput_4,
-												insert_actions.FILE_SEQ);
-									}
-
-									if (insert_actions.FILE_TYPE == null) {
-										pstmtUpdate_tDBOutput_4.setNull(19 + count_tDBOutput_4, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(19 + count_tDBOutput_4,
-												insert_actions.FILE_TYPE);
-									}
-
-									pstmtUpdate_tDBOutput_4.setBigDecimal(20 + count_tDBOutput_4,
-											insert_actions.FILE_SERIES);
-
-									pstmtUpdate_tDBOutput_4.setBigDecimal(21 + count_tDBOutput_4,
-											insert_actions.FILE_NBR);
-
-									if (insert_actions.ACTION_TYPE == null) {
-										pstmtUpdate_tDBOutput_4.setNull(22 + count_tDBOutput_4, java.sql.Types.VARCHAR);
-									} else {
-										pstmtUpdate_tDBOutput_4.setString(22 + count_tDBOutput_4,
-												insert_actions.ACTION_TYPE);
-									}
-
-									if (insert_actions.ACTION_DATE != null) {
-										pstmtUpdate_tDBOutput_4.setTimestamp(23 + count_tDBOutput_4,
-												new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
-									} else {
-										pstmtUpdate_tDBOutput_4.setNull(23 + count_tDBOutput_4,
-												java.sql.Types.TIMESTAMP);
-									}
-
-									updatedCount_tDBOutput_4 = updatedCount_tDBOutput_4
-											+ pstmtUpdate_tDBOutput_4.executeUpdate();
-									nb_line_tDBOutput_4++;
-
-								} catch (java.lang.Exception e) {
-									whetherReject_tDBOutput_4 = true;
-									nb_line_tDBOutput_4++;
-
-									row10 = new row10Struct();
-									row10.FILE_SEQ = insert_actions.FILE_SEQ;
-									row10.FILE_TYPE = insert_actions.FILE_TYPE;
-									row10.FILE_SERIES = insert_actions.FILE_SERIES;
-									row10.FILE_NBR = insert_actions.FILE_NBR;
-									row10.ACTION_TYPE = insert_actions.ACTION_TYPE;
-									row10.ACTION_DATE = insert_actions.ACTION_DATE;
-									row10.MANUAL_DUE_DATE = insert_actions.MANUAL_DUE_DATE;
-									row10.RESPONSIBLE_USER = insert_actions.RESPONSIBLE_USER;
-									row10.ACTION_NOTES1 = insert_actions.ACTION_NOTES1;
-									row10.ACTION_NOTES2 = insert_actions.ACTION_NOTES2;
-									row10.ACTION_NOTES3 = insert_actions.ACTION_NOTES3;
-									row10.ACTION_NOTES4 = insert_actions.ACTION_NOTES4;
-									row10.ACTION_NOTES5 = insert_actions.ACTION_NOTES5;
-									row10.GENERAL_NOTES = insert_actions.GENERAL_NOTES;
-									row10.SELECTED_OPTIONS_TEXT = insert_actions.SELECTED_OPTIONS_TEXT;
-									row10.ACTION_USER = insert_actions.ACTION_USER;
-									row10.ACTION_CATEGORY = insert_actions.ACTION_CATEGORY;
-									row10.SPECIAL_FINAL_STATUS = insert_actions.SPECIAL_FINAL_STATUS;
-									row10.JOURNAL_CODE = insert_actions.JOURNAL_CODE;
-									row10.PUBLICATION_DATE = insert_actions.PUBLICATION_DATE;
-									row10.IPAS_PROC_TYP = insert_actions.IPAS_PROC_TYP;
-									row10.IPAS_PROC_NBR = insert_actions.IPAS_PROC_NBR;
-									row10.IPAS_ACTION_NBR = insert_actions.IPAS_ACTION_NBR;
-									rejectedCount_tDBOutput_4 = rejectedCount_tDBOutput_4 + 1;
-									row10.errorCode = ((java.sql.SQLException) e).getSQLState();
-									row10.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_4;
+								if (insert_actions.FILE_TYPE == null) {
+									pstmt_tDBOutput_4.setNull(2, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(2, insert_actions.FILE_TYPE);
 								}
-							} else {
-								try {
-									if (insert_actions.FILE_SEQ == null) {
-										pstmtInsert_tDBOutput_4.setNull(1, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(1, insert_actions.FILE_SEQ);
-									}
 
-									if (insert_actions.FILE_TYPE == null) {
-										pstmtInsert_tDBOutput_4.setNull(2, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(2, insert_actions.FILE_TYPE);
-									}
+								pstmt_tDBOutput_4.setBigDecimal(3, insert_actions.FILE_SERIES);
 
-									pstmtInsert_tDBOutput_4.setBigDecimal(3, insert_actions.FILE_SERIES);
+								pstmt_tDBOutput_4.setBigDecimal(4, insert_actions.FILE_NBR);
 
-									pstmtInsert_tDBOutput_4.setBigDecimal(4, insert_actions.FILE_NBR);
-
-									if (insert_actions.ACTION_TYPE == null) {
-										pstmtInsert_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(5, insert_actions.ACTION_TYPE);
-									}
-
-									if (insert_actions.ACTION_DATE != null) {
-										pstmtInsert_tDBOutput_4.setTimestamp(6,
-												new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
-									} else {
-										pstmtInsert_tDBOutput_4.setNull(6, java.sql.Types.TIMESTAMP);
-									}
-
-									if (insert_actions.MANUAL_DUE_DATE != null) {
-										pstmtInsert_tDBOutput_4.setTimestamp(7,
-												new java.sql.Timestamp(insert_actions.MANUAL_DUE_DATE.getTime()));
-									} else {
-										pstmtInsert_tDBOutput_4.setNull(7, java.sql.Types.TIMESTAMP);
-									}
-
-									pstmtInsert_tDBOutput_4.setBigDecimal(8, insert_actions.RESPONSIBLE_USER);
-
-									if (insert_actions.ACTION_NOTES1 == null) {
-										pstmtInsert_tDBOutput_4.setNull(9, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(9, insert_actions.ACTION_NOTES1);
-									}
-
-									if (insert_actions.ACTION_NOTES2 == null) {
-										pstmtInsert_tDBOutput_4.setNull(10, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(10, insert_actions.ACTION_NOTES2);
-									}
-
-									if (insert_actions.ACTION_NOTES3 == null) {
-										pstmtInsert_tDBOutput_4.setNull(11, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(11, insert_actions.ACTION_NOTES3);
-									}
-
-									if (insert_actions.ACTION_NOTES4 == null) {
-										pstmtInsert_tDBOutput_4.setNull(12, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(12, insert_actions.ACTION_NOTES4);
-									}
-
-									if (insert_actions.ACTION_NOTES5 == null) {
-										pstmtInsert_tDBOutput_4.setNull(13, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(13, insert_actions.ACTION_NOTES5);
-									}
-
-									if (insert_actions.GENERAL_NOTES == null) {
-										pstmtInsert_tDBOutput_4.setNull(14, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(14, insert_actions.GENERAL_NOTES);
-									}
-
-									if (insert_actions.SELECTED_OPTIONS_TEXT == null) {
-										pstmtInsert_tDBOutput_4.setNull(15, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(15, insert_actions.SELECTED_OPTIONS_TEXT);
-									}
-
-									pstmtInsert_tDBOutput_4.setBigDecimal(16, insert_actions.ACTION_USER);
-
-									if (insert_actions.ACTION_CATEGORY == null) {
-										pstmtInsert_tDBOutput_4.setNull(17, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(17, insert_actions.ACTION_CATEGORY);
-									}
-
-									if (insert_actions.SPECIAL_FINAL_STATUS == null) {
-										pstmtInsert_tDBOutput_4.setNull(18, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(18, insert_actions.SPECIAL_FINAL_STATUS);
-									}
-
-									if (insert_actions.JOURNAL_CODE == null) {
-										pstmtInsert_tDBOutput_4.setNull(19, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(19, insert_actions.JOURNAL_CODE);
-									}
-
-									if (insert_actions.PUBLICATION_DATE != null) {
-										pstmtInsert_tDBOutput_4.setTimestamp(20,
-												new java.sql.Timestamp(insert_actions.PUBLICATION_DATE.getTime()));
-									} else {
-										pstmtInsert_tDBOutput_4.setNull(20, java.sql.Types.TIMESTAMP);
-									}
-
-									if (insert_actions.IPAS_PROC_TYP == null) {
-										pstmtInsert_tDBOutput_4.setNull(21, java.sql.Types.VARCHAR);
-									} else {
-										pstmtInsert_tDBOutput_4.setString(21, insert_actions.IPAS_PROC_TYP);
-									}
-
-									pstmtInsert_tDBOutput_4.setBigDecimal(22, insert_actions.IPAS_PROC_NBR);
-
-									pstmtInsert_tDBOutput_4.setBigDecimal(23, insert_actions.IPAS_ACTION_NBR);
-
-									insertedCount_tDBOutput_4 = insertedCount_tDBOutput_4
-											+ pstmtInsert_tDBOutput_4.executeUpdate();
-									nb_line_tDBOutput_4++;
-								} catch (java.lang.Exception e) {
-									whetherReject_tDBOutput_4 = true;
-									nb_line_tDBOutput_4++;
-
-									row10 = new row10Struct();
-									row10.FILE_SEQ = insert_actions.FILE_SEQ;
-									row10.FILE_TYPE = insert_actions.FILE_TYPE;
-									row10.FILE_SERIES = insert_actions.FILE_SERIES;
-									row10.FILE_NBR = insert_actions.FILE_NBR;
-									row10.ACTION_TYPE = insert_actions.ACTION_TYPE;
-									row10.ACTION_DATE = insert_actions.ACTION_DATE;
-									row10.MANUAL_DUE_DATE = insert_actions.MANUAL_DUE_DATE;
-									row10.RESPONSIBLE_USER = insert_actions.RESPONSIBLE_USER;
-									row10.ACTION_NOTES1 = insert_actions.ACTION_NOTES1;
-									row10.ACTION_NOTES2 = insert_actions.ACTION_NOTES2;
-									row10.ACTION_NOTES3 = insert_actions.ACTION_NOTES3;
-									row10.ACTION_NOTES4 = insert_actions.ACTION_NOTES4;
-									row10.ACTION_NOTES5 = insert_actions.ACTION_NOTES5;
-									row10.GENERAL_NOTES = insert_actions.GENERAL_NOTES;
-									row10.SELECTED_OPTIONS_TEXT = insert_actions.SELECTED_OPTIONS_TEXT;
-									row10.ACTION_USER = insert_actions.ACTION_USER;
-									row10.ACTION_CATEGORY = insert_actions.ACTION_CATEGORY;
-									row10.SPECIAL_FINAL_STATUS = insert_actions.SPECIAL_FINAL_STATUS;
-									row10.JOURNAL_CODE = insert_actions.JOURNAL_CODE;
-									row10.PUBLICATION_DATE = insert_actions.PUBLICATION_DATE;
-									row10.IPAS_PROC_TYP = insert_actions.IPAS_PROC_TYP;
-									row10.IPAS_PROC_NBR = insert_actions.IPAS_PROC_NBR;
-									row10.IPAS_ACTION_NBR = insert_actions.IPAS_ACTION_NBR;
-									rejectedCount_tDBOutput_4 = rejectedCount_tDBOutput_4 + 1;
-									row10.errorCode = ((java.sql.SQLException) e).getSQLState();
-									row10.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_4;
+								if (insert_actions.ACTION_TYPE == null) {
+									pstmt_tDBOutput_4.setNull(5, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(5, insert_actions.ACTION_TYPE);
 								}
+
+								if (insert_actions.ACTION_DATE != null) {
+									pstmt_tDBOutput_4.setTimestamp(6,
+											new java.sql.Timestamp(insert_actions.ACTION_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_4.setNull(6, java.sql.Types.TIMESTAMP);
+								}
+
+								if (insert_actions.MANUAL_DUE_DATE != null) {
+									pstmt_tDBOutput_4.setTimestamp(7,
+											new java.sql.Timestamp(insert_actions.MANUAL_DUE_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_4.setNull(7, java.sql.Types.TIMESTAMP);
+								}
+
+								pstmt_tDBOutput_4.setBigDecimal(8, insert_actions.RESPONSIBLE_USER);
+
+								if (insert_actions.ACTION_NOTES1 == null) {
+									pstmt_tDBOutput_4.setNull(9, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(9, insert_actions.ACTION_NOTES1);
+								}
+
+								if (insert_actions.ACTION_NOTES2 == null) {
+									pstmt_tDBOutput_4.setNull(10, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(10, insert_actions.ACTION_NOTES2);
+								}
+
+								if (insert_actions.ACTION_NOTES3 == null) {
+									pstmt_tDBOutput_4.setNull(11, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(11, insert_actions.ACTION_NOTES3);
+								}
+
+								if (insert_actions.ACTION_NOTES4 == null) {
+									pstmt_tDBOutput_4.setNull(12, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(12, insert_actions.ACTION_NOTES4);
+								}
+
+								if (insert_actions.ACTION_NOTES5 == null) {
+									pstmt_tDBOutput_4.setNull(13, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(13, insert_actions.ACTION_NOTES5);
+								}
+
+								if (insert_actions.GENERAL_NOTES == null) {
+									pstmt_tDBOutput_4.setNull(14, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(14, insert_actions.GENERAL_NOTES);
+								}
+
+								if (insert_actions.SELECTED_OPTIONS_TEXT == null) {
+									pstmt_tDBOutput_4.setNull(15, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(15, insert_actions.SELECTED_OPTIONS_TEXT);
+								}
+
+								pstmt_tDBOutput_4.setBigDecimal(16, insert_actions.ACTION_USER);
+
+								if (insert_actions.ACTION_CATEGORY == null) {
+									pstmt_tDBOutput_4.setNull(17, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(17, insert_actions.ACTION_CATEGORY);
+								}
+
+								if (insert_actions.SPECIAL_FINAL_STATUS == null) {
+									pstmt_tDBOutput_4.setNull(18, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(18, insert_actions.SPECIAL_FINAL_STATUS);
+								}
+
+								if (insert_actions.JOURNAL_CODE == null) {
+									pstmt_tDBOutput_4.setNull(19, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(19, insert_actions.JOURNAL_CODE);
+								}
+
+								if (insert_actions.PUBLICATION_DATE != null) {
+									pstmt_tDBOutput_4.setTimestamp(20,
+											new java.sql.Timestamp(insert_actions.PUBLICATION_DATE.getTime()));
+								} else {
+									pstmt_tDBOutput_4.setNull(20, java.sql.Types.TIMESTAMP);
+								}
+
+								if (insert_actions.IPAS_PROC_TYP == null) {
+									pstmt_tDBOutput_4.setNull(21, java.sql.Types.VARCHAR);
+								} else {
+									pstmt_tDBOutput_4.setString(21, insert_actions.IPAS_PROC_TYP);
+								}
+
+								pstmt_tDBOutput_4.setBigDecimal(22, insert_actions.IPAS_PROC_NBR);
+
+								pstmt_tDBOutput_4.setBigDecimal(23, insert_actions.IPAS_ACTION_NBR);
+
+								nb_line_tDBOutput_4++;
+								insertedCount_tDBOutput_4 = insertedCount_tDBOutput_4
+										+ pstmt_tDBOutput_4.executeUpdate();
+							} catch (java.lang.Exception e) {
+								whetherReject_tDBOutput_4 = true;
+								row10 = new row10Struct();
+								row10.FILE_SEQ = insert_actions.FILE_SEQ;
+								row10.FILE_TYPE = insert_actions.FILE_TYPE;
+								row10.FILE_SERIES = insert_actions.FILE_SERIES;
+								row10.FILE_NBR = insert_actions.FILE_NBR;
+								row10.ACTION_TYPE = insert_actions.ACTION_TYPE;
+								row10.ACTION_DATE = insert_actions.ACTION_DATE;
+								row10.MANUAL_DUE_DATE = insert_actions.MANUAL_DUE_DATE;
+								row10.RESPONSIBLE_USER = insert_actions.RESPONSIBLE_USER;
+								row10.ACTION_NOTES1 = insert_actions.ACTION_NOTES1;
+								row10.ACTION_NOTES2 = insert_actions.ACTION_NOTES2;
+								row10.ACTION_NOTES3 = insert_actions.ACTION_NOTES3;
+								row10.ACTION_NOTES4 = insert_actions.ACTION_NOTES4;
+								row10.ACTION_NOTES5 = insert_actions.ACTION_NOTES5;
+								row10.GENERAL_NOTES = insert_actions.GENERAL_NOTES;
+								row10.SELECTED_OPTIONS_TEXT = insert_actions.SELECTED_OPTIONS_TEXT;
+								row10.ACTION_USER = insert_actions.ACTION_USER;
+								row10.ACTION_CATEGORY = insert_actions.ACTION_CATEGORY;
+								row10.SPECIAL_FINAL_STATUS = insert_actions.SPECIAL_FINAL_STATUS;
+								row10.JOURNAL_CODE = insert_actions.JOURNAL_CODE;
+								row10.PUBLICATION_DATE = insert_actions.PUBLICATION_DATE;
+								row10.IPAS_PROC_TYP = insert_actions.IPAS_PROC_TYP;
+								row10.IPAS_PROC_NBR = insert_actions.IPAS_PROC_NBR;
+								row10.IPAS_ACTION_NBR = insert_actions.IPAS_ACTION_NBR;
+								rejectedCount_tDBOutput_4 = rejectedCount_tDBOutput_4 + 1;
+								row10.errorCode = ((java.sql.SQLException) e).getSQLState();
+								row10.errorMessage = e.getMessage() + " - Line: " + tos_count_tDBOutput_4;
 							}
 							if (!whetherReject_tDBOutput_4) {
 							}
@@ -4510,17 +4285,11 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 
 				currentComponent = "tDBOutput_4";
 
-				if (pstmtUpdate_tDBOutput_4 != null) {
-					pstmtUpdate_tDBOutput_4.close();
-					resourceMap.remove("pstmtUpdate_tDBOutput_4");
-				}
-				if (pstmtInsert_tDBOutput_4 != null) {
-					pstmtInsert_tDBOutput_4.close();
-					resourceMap.remove("pstmtInsert_tDBOutput_4");
-				}
 				if (pstmt_tDBOutput_4 != null) {
+
 					pstmt_tDBOutput_4.close();
 					resourceMap.remove("pstmt_tDBOutput_4");
+
 				}
 				resourceMap.put("statementClosed_tDBOutput_4", true);
 
@@ -4629,16 +4398,6 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				currentComponent = "tDBOutput_4";
 
 				if (resourceMap.get("statementClosed_tDBOutput_4") == null) {
-					java.sql.PreparedStatement pstmtUpdateToClose_tDBOutput_4 = null;
-					if ((pstmtUpdateToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
-							.remove("pstmtUpdate_tDBOutput_4")) != null) {
-						pstmtUpdateToClose_tDBOutput_4.close();
-					}
-					java.sql.PreparedStatement pstmtInsertToClose_tDBOutput_4 = null;
-					if ((pstmtInsertToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
-							.remove("pstmtInsert_tDBOutput_4")) != null) {
-						pstmtInsertToClose_tDBOutput_4.close();
-					}
 					java.sql.PreparedStatement pstmtToClose_tDBOutput_4 = null;
 					if ((pstmtToClose_tDBOutput_4 = (java.sql.PreparedStatement) resourceMap
 							.remove("pstmt_tDBOutput_4")) != null) {
@@ -10383,7 +10142,7 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 				String dbUser_tDBInput_6 = "ADMIN";
 
 				final String decryptedPassword_tDBInput_6 = routines.system.PasswordEncryptUtil
-						.decryptPassword("enc:routine.encryption.key.v1:00zXR1BhozEfmZ9jxWVhwiKzuT/jte47F1EyfNlCAFDW");
+						.decryptPassword("enc:routine.encryption.key.v1:ssTWDfIeXweWQmqjo1VYLD0kR1ANlUF9m+nmGh29CCOd");
 
 				String dbPwd_tDBInput_6 = decryptedPassword_tDBInput_6;
 
@@ -13911,6 +13670,6 @@ public class E1a_Marc_a_interm_Copy implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 438404 characters generated by Talend Open Studio for Data Integration on the
- * October 30, 2020 at 7:29:43 PM CET
+ * 426269 characters generated by Talend Open Studio for Data Integration on the
+ * November 2, 2020 at 2:13:52 PM CET
  ************************************************************************************************/

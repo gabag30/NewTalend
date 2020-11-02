@@ -49,10 +49,14 @@
     <module>jobs/process/M/PA/a_generar_db_intermed_sqlserver_0.1</module>
     <module>jobs/process/M/PA/b_generar_ambiente_limpio_ipas_0.1</module>
     <module>jobs/process/M/PA/panama_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/a1_copy_users_to_ipas_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/a1_copy_users_to_ipas_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/migrate_config_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/a1_gen_marcas_0.1</module>
     <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_a_interm_copy_0.1</module>
     <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_userdoc_a_interm_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/migrate_config_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/fa_corr_pre_mig_tm_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/fa_corr_pre_mig_tm_py_0.1</module>
+    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/fc_corr_pre_mig_ud_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/a_carga_a_vw_origin_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/b_agentes_a_intermed_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/c_biblio_a_vw_import_patent_0.1</module>
@@ -62,11 +66,8 @@
     <module>jobs/process/M/PY/ParaguayFinal/g_ipas_env_creation_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/gen_mig_py_0.1</module>
     <module>jobs/process/M/PY/ParaguayFinal/j_valid_y_mig_0.1</module>
-    <module>jobs/process/M/PY/ParaguayMarcas/PY_mig_marcas/a1_gen_marcas_0.1</module>
     <module>jobs/process/M/PY/ParaguayMarcas/PY_mig_marcas/e1a_marc_a_interm_0.1</module>
     <module>jobs/process/M/PY/ParaguayMarcas/PY_mig_marcas/e1b_marc_ud_interm_0.1</module>
-    <module>jobs/process/M/PY/ParaguayMarcas/PY_mig_marcas/fa_corr_pre_mig_tm_0.1</module>
-    <module>jobs/process/M/PY/ParaguayMarcas/PY_mig_marcas/fc_corr_pre_mig_ud_0.1</module>
     <module>jobs/process/M/PY/Patents_Corrections/agente_faltante_0.1</module>
     <module>jobs/process/M/PY/Patents_Corrections/check_actions_0.1</module>
     <module>jobs/process/M/PY/Patents_Corrections/configuracion_0.1</module>

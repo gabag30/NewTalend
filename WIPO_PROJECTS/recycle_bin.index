@@ -2,4 +2,5 @@
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
   <deletedItems id="__N5ZgNSFEemfuuaVNdr6HQ" path="Paraguay" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_aqLk8NSFEemfuuaVNdr6HQ" path="Paraguay" type="METADATA_CONNECTIONS"/>
+  <deletedItems id="_V5AvAN7YEem7Qe8o507aSw" path="M/PY/PY_MARCAS_NUEVO" type="PROCESS"/>
 </recyclebin:RecycleBin>
