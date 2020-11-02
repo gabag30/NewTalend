@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:ziOuPvi7NA9l3d4KhQgVaO8J28wIE7Avqc8lQvms" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:xynMcaPbBJFCgfHgAgCRcsW8rTf101azNYI+tpSd" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zN4WXrab4ijIOk6ZtiBKC4c0WRAo8RVbXlVh30BI" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mvGmlynYT19WABQTRq8uogGNFyTn+Czp/hkfdj2o" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -182,7 +182,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hMYeAv60BJv6AQm8ycTmjV+AcsawxqulFcDsdwtsA/vmOVw55Uw="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Fv/s80NewJLzAs0S2C2/erRmPJ/V6DzQLmME2F+lk1XlsWh4fFY="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -208,7 +208,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:liuy74bXkWDxmzt9iwEX9ANRgNGpGOhhOiyxQlJu81VlhZDiLlQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vxlfAejsc8gyLvlbUc7JFD5AfsKmGxye2E8hiJKtbomNRGyeCv0="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -234,7 +234,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B/ndBORdUTjebPJ7BaaFXQNEiUaUkfz7C2/pVI5ipV6t7X1U5gQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LswcmA9Fwg92Gyj3k64VsH8O72gXzzuu6EAE8RcNOQGs8LkSDmw="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -654,7 +654,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0RfiufvJpHa8vs49hIBoGoBZvxsfW2wTTKHNG6VgH4LOQmkZLho="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4zM4mlQouhj8N09QN9tbt20GUJocFExlcNJoNxM3G3iQ5653zIQ="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - denominacion" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;denominacion&quot;"/>
@@ -708,7 +708,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mYF2hYcvdfKrggRJ3Y8k1bPeB54/0rQjKk8JDQmsMmX+tDZyI+Y="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:47z72V9Vmu6CXwCe9pR4PV7zAhG6r7o82LDNIMuGxK/qPmc4zK8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1258,7 +1258,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:14k+/evPzTBd6GJ4LMWmVdFyqn0RcN44/EpktOOsrFQhxySWQes="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZV25zdB3pS5dJhDR2nKKn71pvT0waVv9LC57O1Vx+W5xmMP9n6g="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - pub_date" show="false"/>
@@ -1556,7 +1556,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:94H0JTn2Da46MYYIoXeqbN+AcpPbCEUmoICzx0FS663wb3R6CNM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JHn/HstlFAk7nJh9/GBQYg/2Tehl7cXQTbIYgFG7wzP78Rpb5iI="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - movimiento" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;movimiento&quot;"/>
@@ -1903,7 +1903,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EDCzJLTM6GbpTUh43S/qQuUcvUo+f03HaOYIsY92G1qAF29qpio="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NaJMvETsawqjZ4fcpTTsOT9OB1r8y99tWqLgZIbuIVwBS5cUouw="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -2166,7 +2166,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k54FMtEwMtgJyh72t4qkqnXLoO2dqtrIz90ngMI4FPiDid4aMy8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zfl8ly23CWCKRq8qE8TNJoQLBaEc5m9otV/Y7vfsm6VMEcZMe+o="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_ACTIONS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -2614,7 +2614,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Dljg9JEbl5xngiu65ZO7txIW+cVpN7fVSpDJ5yXAV1Aync4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6W5k8o2/gZCj83sQbM+dL+vzx6/Lo4Zn/++eaS079FG9RcM="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_USER" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_USER&quot;"/>
@@ -2790,7 +2790,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KN1OtX9Yk/LF3+Y/jlM1S9tRaIMnAKJeAmdkWuFdOrXPwh4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gDpyLetFIJWLNGzEy2Cwgnrab2CKX454EZ2oMemHeYdeH0c="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -2818,7 +2818,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:v1BQJZNTs05S7S4ntGmCbXeGjlr3u3odrf9l2oRqX5H2TO/8fEM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DJJ2nwt10NfvgPSUrwM4IgGxojlqqyoAU1V0u7ae0UGL9CNMe7U="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - marca_producto" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca_producto&quot;"/>
@@ -2911,15 +2911,15 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="insert_nice">
         <mapperTableEntries name="FILE_SEQ" expression="row15.FILE_SEQ" type="id_String"/>
         <mapperTableEntries name="FILE_TYPE" expression="row15.FILE_TYPE" type="id_String"/>
         <mapperTableEntries name="FILE_SERIES" expression="row15.FILE_SERIES" type="id_BigDecimal"/>
         <mapperTableEntries name="FILE_NBR" expression="row15.FILE_NBR" type="id_BigDecimal"/>
-        <mapperTableEntries name="NICE_CLASS_VERSION" expression="&quot;0&quot;" type="id_String"/>
-        <mapperTableEntries name="NICE_CLASS_EDITION" expression="new BigDecimal(&quot;0&quot;)" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="NICE_CLASS_VERSION" expression="&quot;2017.01&quot;" type="id_String"/>
+        <mapperTableEntries name="NICE_CLASS_EDITION" expression="new BigDecimal(&quot;11&quot;)" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NICE_CLASS_NBR" expression="new BigDecimal(row12.num_clase )" type="id_BigDecimal"/>
         <mapperTableEntries name="NICE_CLASS_STATUS" expression="&quot;C&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="NICE_CLASS_DESCRIPTION" expression="row12.des_producto " type="id_String" nullable="true"/>
@@ -2993,7 +2993,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DjiFQ8BFxp5DeLvdAzNNCaHTD0TEzj7iL+e8GH6mpkupe9HZyAs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9WhaFVEWlaHSygxGornf0JpyoucLRCVoSnQ5xACNCPsgkdjf2U8="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -3256,7 +3256,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bFhTzLgREAXeYtTLhKvyf9XhaUyF1YU5eKnlrW6qimYU5zK1nFE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yOKRNq03PzIZ444Df9GWSEHq8OsMvO2ch1TRUKRexwrewNTxoM0="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_NICE_CLASSES&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -3498,7 +3498,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k6y//np0kO45iKuhU6PBkxMFI3MUtALsIrxGSLrz0SKvgiG26y8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pX/YC04q9eqzMe34hYCkRO/5XQSZ4yXtYaFwDv1GY457ZAdXYCE="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - marca_titular" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca_titular&quot;"/>
@@ -3741,7 +3741,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XUdUFNj+J6wvo0cVS8cnWp/JodFgmAzFf732WuTcf+sLrcCQX74="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EtWz46lCoUdGdBXAgLHkulR2tm2nwwV25b7aiiYx8PwscPklif4="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -4004,7 +4004,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SLQHeRIVTykDWRrjlfY2py+L+jzmQPcNlx7YqxcWeCOz0MwoCXk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HQUu/PcVyE9npjz22SIc78OwFA1LrLTgikctUqHGRWDQTdqUiS8="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - titular" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;titular&quot;"/>
@@ -4073,7 +4073,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bto7sJ7vEnq5XWedyPkQEfR5RJ6PBKiMN5p7Q7FsLYxoKh+d78Q="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8bd15QvewHozQ+aRxOMVidtgv/7Nl8AtoPGeZFrONl6ZAQlMyFc="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_OWNERS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -4603,7 +4603,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0xosGwexUede64OCMVvM9M7JofgrHQM6T/z47y1tbMmZwqxoBSU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iCK5UEl3qZGqVcfvACbdC1BJx0gvjGK2MDc5mZOiyZNAwQxD1f4="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - pagos" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;pagos&quot;"/>
@@ -4888,7 +4888,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NxI/7aekA5tByJLgIqxCdHR7UMDF00xUa3aPLg4A4sdO/mgFfqc="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AN9FMXjGd4nRUDQUMTthhND45p7z4Ak73GQprLuHUgTGphLuAVg="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -5151,7 +5151,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zWIxwvAtit/y42+aR6wOJJlzr1AJY4ye5sSUypveBPMLxTVi1Pk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:w3t/X0jVled2NvQ2Hr8RSaZONYOOZOcx1cW2N4BZnv0rSB1K3W8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_PAYMENTS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -5375,7 +5375,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wC73yV8IvMbwmsfEutmtndX4JNWa2ivddDPDxUSS8pW8kWRUZhc="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XlPXVLhc5Ag4pjlqxmWijmL6r6q1+Jmvrd9KQGvndmS1lQ88HYU="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;recibo_tasa_marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -5564,7 +5564,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mxunxFKhbWK/vpe3xlfMkMkrQgr9FK+8SrcJRsVPGD1VZG+pOds="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NmqLWnjN4uRCMgDeU18tue8cvlQ8NqkP7mYcyf1yn7fS9t4yo9I="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -5827,7 +5827,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lMCstxEy5FHGXP6ntWxlNL0FEWdWKaiTc2BQyfHkpdy7EOGDhzI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZmFEL3aWcbehqNh8CWCL9huewaUbmxJa+PGifqGHWETkhyzd/4o="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;recibo&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -5894,7 +5894,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:x0jZhWdhDxllnxDfyFdAgPk0A0vZsgjRP9XiPeolX2kvRqoOBgY="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Jx3qyzoFJMCihYfrs2sD4JzmOIaLD01WC5jEO1C0sph5jw54L6k="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_PAYMENTS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -6118,7 +6118,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MoHW7/SZurfZ/n3JXX9SC/l5bqN47tcqNfz2bmiMoa5ruSkSQsE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:udNAVm52VUQFb9VGhTtisGuVWsGq+ir+ouxOGnbzPyE5JXqgU0Y="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -6431,7 +6431,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eMeRVSaZ1gEnL27/IP2dF3zOaWQbq3zJ+ANbWcH4QsjZG2SLAHQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lQx/KgVG6XYbb82ZKSGm8kKwXoHUTekZUrrqct1UKjBTx0orKpI="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -6694,7 +6694,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LKlnpqe3e6KQ3/lRjpV/Ikl/yFG8BaQYTQBFU+V3MDuqLPXeIcM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ITNtPwbqlhEouT/xj/eQq7fV4WA6o4ItZe7+UFTpbiDrHzWpCdk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_PRIORITIES&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -6918,7 +6918,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:auPb915BV+pTH4H5qTR9lrppz+H/8vbbrJFNIAVfGggcG9AJp7s="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7FuZfee5y9slNP9GUWS/gMxWubB7ikWlUXFLn2NIWJESkO3B0PQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - related file" show="false"/>
@@ -7126,7 +7126,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ixhj9zmn/yZds2fTYaOrFr3iWpY/CFWgJEDRODO2hqR1aTrUDKY="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VXUyPVjXowu67PRMv2wjrRm6TKB8LAZ+VdwWZXKUoUbH4diWlf0="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -7389,7 +7389,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7Vcs0WVGg3REEGfifrOlQZAIH57TaMOW6Hi29H6fcvL8lp3matg="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p4lDiLQosYdaQecm/7lUM/OJVPvOh112trl0bu/fWHS7A1qzODw="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -7652,7 +7652,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G+vsBHfOvE9MFKB46CCKikSyvFeK7EWn/n3WBKK37OKCst5ZT4g="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hMCYfQfk0tMf75eY6xDcEIu9jmYalLwmVHbSCNaeG3FU+atLhkQ="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_RELS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -7908,7 +7908,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AZeYkcRLt7KgoMDi5EfzBDe/QXMlHRfa0HSc3eyDvnNiOxyeJAI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:a/iAW/hYnLr3dT86XKB5A3pJ85PeaIXnRGuf8RbHQ87cL9UnJLo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -8326,7 +8326,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5zRECD42JUZbBq0gmn9337W/frCk4P15KAeI1SUpenKiyG4J/xs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:O3eShQm53RtM8hfyp6oXLC4G8LWKeFhobNhzF4ly/hZ1m7PpbkA="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -8589,7 +8589,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WThYcnohwYEFXMtv+ETdvoM1T0n0tfKj8/Q1euzBD/eA6KscE30="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:41exqskP/g+oGlyTsYCvXJ/UJYKJV7F6M1TvVQQK7EE33JrNAx4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_REPRS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -8961,7 +8961,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qk+Wi+WT3PRhLh/8OR3NELA8HRepwcr5De4X/UpPCCsorYOt9Ao="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KJgNwxqEY6v4ismzPTcWd0+HvgZgHDysu+ANsOPPJ8IOrTA8og4="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_AGENT_PERSONS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_AGENT_PERSONS&quot;"/>
@@ -9286,7 +9286,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:45mHpYY2ZCZum+oCIkjKpHvvJH9hKJY/pgNqDH6qEthl0yp1GHU="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1Lt3uTY2odZmgx/gCANrTku6qK0eqnN6iKNtfFIn4i3peIeAbh0="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -9491,14 +9491,14 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="vienna">
         <mapperTableEntries name="FILE_SEQ" expression="row40.FILE_SEQ" type="id_String"/>
         <mapperTableEntries name="FILE_TYPE" expression="row40.FILE_TYPE" type="id_String"/>
         <mapperTableEntries name="FILE_SERIES" expression="row40.FILE_SERIES" type="id_BigDecimal"/>
         <mapperTableEntries name="FILE_NBR" expression="row40.FILE_NBR" type="id_BigDecimal"/>
-        <mapperTableEntries name="VIENNA_EDITION_CODE" expression="&quot;08-2018.01&quot;" type="id_String"/>
+        <mapperTableEntries name="VIENNA_EDITION_CODE" expression="&quot;8&quot;" type="id_String"/>
         <mapperTableEntries name="VIENNA_CATEGORY" expression="row41.cod_viena_clase!=null?new BigDecimal(row41.cod_viena_clase):new BigDecimal(&quot;1&quot;) " type="id_BigDecimal"/>
         <mapperTableEntries name="VIENNA_DIVISION" expression="row41.cod_viena_grupo!=null?new BigDecimal(row41.cod_viena_grupo):new BigDecimal(&quot;1&quot;) " type="id_BigDecimal"/>
         <mapperTableEntries name="VIENNA_SECTION" expression="row41.cod_viena_elemento!=null?new BigDecimal(row41.cod_viena_elemento):new BigDecimal(&quot;1&quot;) " type="id_BigDecimal" nullable="true"/>
@@ -9601,7 +9601,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PuHZcY/4g7zQAIu5HDHmEG1m0eNdHLnF764KprWdYFCWry6/954="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FuSP4eN9evYsenvAy+1NM1m03E+X2emlCJKoqlIdCDUew2Fmwd4="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -9864,7 +9864,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z/LlAWdQ11MaCwL7Y4qtb/KOTRFvJgZdHmrAcDJfEzjbAhl6Ga4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gAPSVIfxbYt9RYGH28C+g9zZ8ixEHB1ADVmRZ2L0MhE/hAM6zCg="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - logotipo_clasific" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;logotipo_clasific&quot;"/>
@@ -9923,7 +9923,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0X77RVYLYXlWZShjk1LZG0hF8IuMPJXqmazkDxjZg7KqwQF/Q3s="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+3dXSnxJdArUYPwEZdn73r7hxv8Y2Rs5qkBYyF6PCoiE+F/lfTg="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_VIENNA_CLASSES&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -10133,7 +10133,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BVHbsh/IOpD1p3BS6AqE4GIXsa1qnE6k3bWhSHOQzt80R64vzSk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:S8eRg//kv2Om0N0TfovJp+Yqyt/D/QfV5SnshlJqiYdRoD7FH7s="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;marca&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -10502,7 +10502,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ch6lkAFkwihAazNtZeJbWzZnRDwhFPvE5b6shV0d+MQQ9Idu7A4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FtXJtU2vVsMLZZjHSpf7UVxAwaQAusz91DWkW7iC+P+PY1uuYh4="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK&quot;"/>
@@ -10765,7 +10765,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3vjeUbw9fZG/0aaDyeNk4I/R5mmQhQArERooy8nVZcsrAtqx30o="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TiTadh1IXAMRlTwTw5k+RBKSkcvgGCyam29zdaCTvTyfy6H1USA="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_MARK_ACTIONS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -11215,7 +11215,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jfhhyK65N+77JbIcpCWNEQu8LZGZ5zRMyOPQyuD6agBH4yjTsA8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EHcsqzYtf/q6OasmXBhqmoyhVPBuRLkvEsCIRPoB+0Ly0dlpJPU="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bkUIkPwHEeqFhtRqCTUfWA - agente" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;agente&quot;"/>
@@ -11374,7 +11374,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="create_agent">
         <mapperTableEntries name="AGENT_CODE" expression="new BigDecimal(row3.num_agente)" type="id_BigDecimal"/>
@@ -11391,9 +11391,9 @@
         <mapperTableEntries name="IND_COMPANY" expression="new BigDecimal(&quot;1&quot;)" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="LEGAL_NATURE" expression="row4.tipo_agente " type="id_String" nullable="true"/>
         <mapperTableEntries name="LEGAL_NATURE_LANG2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="LEGAL_ID_TYPE" expression="row4.ruc!=null &amp;&amp; row4.ruc.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;).length()>0?&quot;RUC&quot;:null" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LEGAL_ID_TYPE" expression="&quot;RUC&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="LEGAL_ID_NBR" expression="row4.ruc!=null &amp;&amp; row4.ruc.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;).length()>0?new BigDecimal(row4.ruc.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;)):null " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="INDIVIDUAL_ID_TYPE" expression="row4.cedula!=null &amp;&amp; row4.cedula.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;).length()>0?&quot;CED&quot;:null" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INDIVIDUAL_ID_TYPE" expression="&quot;CED&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="INDIVIDUAL_ID_NBR" expression="row4.cedula!=null &amp;&amp; row4.cedula.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;).length()>0?new BigDecimal(row4.cedula.replaceAll(&quot;[^0-9]+&quot;, &quot;&quot;) ):null " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="RESIDENCE_COUNTRY_CODE" expression="row4.nacionalidad==&quot;ARGENTINA&quot;?&quot;AR&quot;:&#xD;&#xA;row4.nacionalidad==&quot;BRASIL&quot;?&quot;BR&quot;:&#xD;&#xA;row4.nacionalidad==&quot;PARAGUAY&quot;?&quot;PY&quot;:&#xD;&#xA;row4.nacionalidad==&quot;URUGUAY&quot;?&quot;UY&quot;:&#xA;row3.cod_pais!=null?row3.cod_pais:&#xA;&quot;XX&quot; " type="id_String"/>
         <mapperTableEntries name="STATE_NAME" expression="row4.departamento " type="id_String" nullable="true"/>
@@ -11455,7 +11455,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QUikejyGPwHtUKEtewNbNUfsAZwv2Q2FqOspscDJI7466xzKy2M="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Azuh9mBSO7YYgiEV7SC2U3oA7tweovH7B3F7cAsc8qhDPVpSt8E="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_AGENT&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -11565,7 +11565,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;Paraguay&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;public&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hBQartforJqw/g7WFVaJWhF3XTEhjprNqbUP5g+Fz3T3U35YgpI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dOch6UsYKioT7WwUj9ADWGspDIRBglNOQjB6m62l73YcVouBrAE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;usuario_agentes&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -11712,7 +11712,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IF/OQ2y1sgGDBUQVAWkz87AfVj1qbLLEPl8NZCL52K3fgofkGr0="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:v7IGXqlPThEaWVyObi9tQJl0/QJibBZjxfD4EqZdI9MQko39J50="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_AGENT_PERSONS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
