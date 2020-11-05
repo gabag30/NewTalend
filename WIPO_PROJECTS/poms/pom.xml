@@ -106,6 +106,7 @@
     <module>jobs/process/OMPI/MigCommon/b1_corr_postgresql_0.1</module>
     <module>jobs/process/OMPI/MigCommon/b_foxpro_a_mssql_0.1</module>
     <module>jobs/process/OMPI/MigCommon/c_mig_agents_0.1</module>
+    <module>jobs/process/OMPI/MigCommon/copy_of_g2b_mig_tm_0.1</module>
     <module>jobs/process/OMPI/MigCommon/f_ipas_env_cre_0.1</module>
     <module>jobs/process/OMPI/MigCommon/g1_val_mig_agents_0.1</module>
     <module>jobs/process/OMPI/MigCommon/g1a_corr_im_0.1</module>

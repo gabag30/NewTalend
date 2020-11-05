@@ -3,17 +3,17 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="intermediateHost" prompt="intermediateHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_7NkboAMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="intermediatePort" prompt="intermediatePort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_7NkboQMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NI_MARCAS" internalId="_7NkbogMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PY_INTERMED" internalId="_7NkbogMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="intermediateUser" prompt="intermediateUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sa" internalId="_7NkbowMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="intermediatePassword" prompt="intermediatePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="W1P0w1p0" internalId="_7NkbpAMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="ipasHost" prompt="ipasHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_7NkbpQMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="ipasPort" prompt="ipasPort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_7NkbpgMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MAR_RPI" internalId="_7NkbpwMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;PI&quot;" internalId="_7NkbqAMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;PI&quot;" internalId="_7NkbqQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MARCAS_PY" internalId="_7NkbpwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ADMIN" internalId="_7NkbqAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ADMIN" internalId="_7NkbqQMVEeuOjv5n7xl_Lg"/>
     <contextParameter comment="" name="ipasSaPassword" prompt="ipasSaPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="W1P0w1p0" internalId="_7NkbqgMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="dumpBaseIpasLocation" prompt="dumpBaseIpasLocation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:\\Dropbox\\WIPO\\MAR_RPI.bak&quot;" internalId="_7NkbqwMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="sqlLocation" prompt="sqlLocation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\&quot;" internalId="_7NkbrAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="dumpBaseIpasLocation" prompt="dumpBaseIpasLocation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Dropbox/Trabajo Team Folder/Paraguay/MARCAS_NUEVO/MARCAS_PY.bak&quot;" internalId="_7NkbqwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="sqlLocation" prompt="sqlLocation?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;G:\\Databases\\&quot;" internalId="_7NkbrAMVEeuOjv5n7xl_Lg"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -57,7 +57,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:NUHfMRRH5ZwslxEs9G25uPEOn79L/dSZBHeC2ULc" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:RNWERjoIK5Mw7zOXYj3kVsp2TBRluww6ljfxhgja" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -92,7 +92,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VdPJDtiKcEbCDYWGaFzkS1UDxD1DPUw2yBcsfR2t" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:C8FxGnzJQ8ZJIE3U6r0HU+1b73byaLFNP5gEr8NS" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -132,7 +132,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FKlrKuBD7a7ct21Q40JqDpqdV+wk5MjnJdD+Uo2WChvGJaidm5VVjmPKd1fc7pCXl+U="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:plIs3wYs111saqCfNXYJtQIr/GX3zOeeAJbSkQoyOylmrNMFaHVP8RN/R9zmPGwZ9mk="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -156,7 +156,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.intermediateDB"/>
     <elementParameter field="TEXT" name="USER" value="context.intermediateUser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DeWfzr7b7OGdkvDDvQ6irht6uqpRInabVaJIHgewd5AS3K/MlbI2QdEkg9mwiExWwX2qILPl+Xs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JGvpHMXgKRH2dUYV8d3mV+MStKTBoP1Vrz56i+mJswmJTkwivVHGBURjr6XjZgOkmPU2oqo5RWc="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -181,7 +181,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AhtJ4W+p4DFRprfi48wJHpIeothPLqgJWicSGkf7" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fnvBFYl6RjsFqC3RCPYT1S9B081WWhai8UrmUZDi" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -246,7 +246,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XAmrcdg6PYQNqRyAIdrR6WG6dgXvKH3DLJddVuZV" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ikUvO2ZD7OVrjf9qyo7XqN9a9JfOni6Az1lzUbp8" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -311,7 +311,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EKN3QUIG5MjySzXKGx5pNVWKN7U/3G9Wd70Z6t7q" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cBepfdBnMjDzJcG7KyPQD9JDAPYzCE61Cx8GNh+P" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -376,7 +376,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wh73yPv2drm1NWQE/IjGJ2eEGGcmGuWTI+0YQ98N" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2ZNNI5ofvfBFK2BrxXaceHofRYJc9wJR0PtkS5Bf" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -441,7 +441,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Su/WA05GQ8NLyDyuwDiZtYrXRU+P2JObdJDa+3Oh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uGpB0wevHfN8wiE05PAkItU3H3HtxvA7itGRfFNa" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -506,7 +506,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sbTFAJ79ljKh7blgjIcQa7PDY+MxUwPIVRkqpnlz" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q0EuEp/6tYmWeAXWF5KB3DsG6ymShpBvXqxZ7GwC" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -570,7 +570,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.intermediateDB"/>
     <elementParameter field="TEXT" name="USER" value="context.intermediateUser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NUkcT6++nsoZYE2fIWRjyccW6nwiSg2TcXOCxA1S52Zry+h97fkjJxpX8PcI1v39b4WPBrQqRms="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:L2L+NlOccvCP6pl0xiPzULQPUio3gBJ7Pv7XAAfBu8JWWjoAnbwiCGTlZ/sYs3b1G/OevTIsZzE="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -596,7 +596,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2aGIuydgMcRvHmEn574I7kW1PoRp2Mw00eLVX4HF" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jrtzHUlRyfuF1RP0Z1svOlDbzCZoelmCNMdiYvio" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_PATENT&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -669,7 +669,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
     <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:++uLj4UkVv0hF9orsBqoqvALIG9PrBS9mjDXLZPhKHddt9pqiW+WkOOIynA2T58T"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VSemBU63CuU8KGVoq9tfeB8vEJwg88aYCtu8HL7s0Ndxq2W0dc/p07P7N4468iqB"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -694,7 +694,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fqsMUD4oEcz9IhLHIRj48neXYkLy03TXnKvGTCPf" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xcQvWOXSkXjFGMb9QMuqBcZXB6AHPoH+u+CBnrMK" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -759,7 +759,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yU9cl/1e7iTR+7sfnfmNB1aTQZlw/vJGnLGuecwt" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q4Ph6eEsQeDWZvicExRO960/9NX5t6MISCqDxJJW" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -797,7 +797,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:E89//WlF293o/eP1FYwbVmQpRGC/R+algEBwsaLs" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2s97I8PRxI9ygX/GNqJYDLrxvW34AKLrEMSh8SM+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -889,7 +889,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fAAgvUyP9K3vhzUHEovQIWLxqj0z2C9mvv+ltqG3" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VGdXeoKKQo/VBK+qLT2vRTWlp1u8FE8sqHsLl6oG" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -954,7 +954,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OxcMeqGf51mSHMXAgY9tmNh/ohyKsfJRzVJnfRTk" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:okDaFP+Mxd9lQPv0ljs0NYn5YDZeBLejdq4KwZSX" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1019,7 +1019,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XKeCYJKr/fkTqHOKlrOtta4ssrXt7OpBj5kmIDJM" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hIJSlpVKDHP626VAbSFNSVo7o+Ie/Mk8bOBkkWb0" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1111,7 +1111,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xc9nD2x/1PHcc4OW61TsUNWR2xtogg0nzvL8cN41" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:19LxPQLmKFauH54eIQrn3DUe1EuOIsQZSSoJ5Tz9" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1149,7 +1149,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Mth5ivx6onLIDQmueLZwvAHqxYrfwTCSv01D+cuj" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:446fnxxJul/3Y0q/qhWpTyHi+wnXqrY1SEf9vU9z" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1241,7 +1241,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8JHpsXU4EaVfAR68xm08Apf2cQT6CYGAi6Gg2Ka0" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PUcJoJlRMDQ3NEgQaGH/HfKz7/xOLfhveaOUJAlU" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1279,7 +1279,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mykfJ489wpw8H/MCmwip+X1Yl4LXKz/qEgNpN5uz" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Aw3h1L+F8qVnb5MEBIkpLTCJ62ueyYw7pV4ReLyx" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1317,7 +1317,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xWMssdjt1c1XeEvl5R5XpChMXLqqE3rprkRZUEnL" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D0/OPoi6ve/vn0wmIZeVCyLrZn79iBZxj+eZsoj4" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1409,7 +1409,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AC27PdzmC4+vt8lvEZxV6dpgVajunSnNoqkUsKVd" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nfmYVoYdVFz597Lukoi+uK9j2ppSp74fnW56BeC7" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1501,7 +1501,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FCJ01aAlC1FsbzhTvE3oMMnTxvn86KcFjMOgARDw" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wozWStMdAgcmLBg8It9I62f2uChtnuzbOE4SUjgN" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1539,7 +1539,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AvMz8GJTXDGAYpEfg3xdSc876Vxji2w6hwt2lKYr" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q5YxWgbN9LeZcRk5EvUPTSQS/0zcslFxcWFgudZT" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1577,7 +1577,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:swEIxiKWSWzJUNC4xelUA1R1nmk+8s+0tyKLxvTb" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wBZtUFS6qo45E/a2dBN5VfW+Pzf5BOXn8NF6wIZw" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1669,7 +1669,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8ZvvOb/7sZvgN2c4KCAl4MoEuKt3SsHsjHpH1KVm" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NKE8aVBCJlZz5KD2ygqzjA0HoX51ofQ9MvOZzxMk" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1707,7 +1707,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:h7HEnbSTKB0hlu3k5Bv2g1meMER0AkTsKEdfnGQh" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vnxAobGUayJJEwZzlBQ/64zR5SYAJqdVCWwnjWqJ" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1799,7 +1799,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SR1eWd18sWItExo7IKKzzK52VHHPDVIqrS7NPeb7" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6F70xjhZgLrDT7WnDWTtSZGY6g7xJ3WugSjNxGCU" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1837,13 +1837,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:76hev1ManS3+vV7VPmwpdlLu9jHLonYe+XsBkP3j" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7/K0CbCcryFcvSq/iVwWSRCPXR7Le9K+Y72KnKbg" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE PROCEDURE ImportAgentProcessAll&#xD;&#xA;AS &#xD;&#xA;&#x9;BEGIN&#xD;&#xA;&#x9;&#x9;SET NOCOUNT ON&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Procedure name: ImportAgentProcessAll&#xD;&#xA;&#x9;&#x9;Input:  import tables with IND_IMPORT = 9&#xD;&#xA;&#x9;&#x9;Output: IPAS database updated and import tables updated with IND_IMPORT = 1&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;/* insert agents */&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_AGENT   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTIFICATION_WCODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_INACTIVE)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; AGENT_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; substring(AGENT_NAME,1,60),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'C',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;case when IND_INACTIVE=0 then 'N' else 'S'&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent &#xD;&#xA;&#x9;&#x9;WHERE&#x9;IND_IMPORT = 9&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Load WRK_PERSON_ADDR from  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_AGENT_PERSONS */&#xD;&#xA;&#x9;&#x9;DELETE FROM   wrk_person_addr    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  wrk_person_addr   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REF_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.AGENT_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent_persons T&#xD;&#xA;&#x9;&#x9; JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent A on A.AGENT_CODE = T.AGENT_CODE&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Call procedure ImportSetPersonNbr() to set PERSON_NBR and ADDR_NBR.&#xD;&#xA;&#x9;&#x9;This procedure will already insert persons linked to the agent, so there's no need to&#xD;&#xA;&#x9;&#x9;further process ther generated person numbers */&#xD;&#xA;&#x9;&#x9;EXEC IMPORTSETPERSONNBR&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;SET NOCOUNT OFF&#xD;&#xA;&#xD;&#xA;&#x9;END&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE PROCEDURE ImportAgentProcessAll&#xD;&#xA;AS &#xD;&#xA;&#x9;BEGIN&#xD;&#xA;&#x9;&#x9;SET NOCOUNT ON&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Procedure name: ImportAgentProcessAll&#xD;&#xA;&#x9;&#x9;Input:  import tables with IND_IMPORT = 9&#xD;&#xA;&#x9;&#x9;Output: IPAS database updated and import tables updated with IND_IMPORT = 1&#xD;&#xA;&#x9;&#x9;*/&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;/* insert agents */&#xD;&#xA;&#x9;&#x9;INSERT INTO  IP_AGENT   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTIFICATION_WCODE ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_INACTIVE)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; AGENT_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; substring(AGENT_NAME,1,60),&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'C',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;case when IND_INACTIVE=0 then 'N' else 'S' end&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent &#xD;&#xA;&#x9;&#x9;WHERE&#x9;IND_IMPORT = 9&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Load WRK_PERSON_ADDR from  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_IMPORT_AGENT_PERSONS */&#xD;&#xA;&#x9;&#x9;DELETE FROM   wrk_person_addr    &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;INSERT INTO  wrk_person_addr   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( PERSON_GROUP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AGENT_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NAME_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NATIONALITY_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_COMPANY , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_NATURE_LANG2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;LEGAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_TYPE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;INDIVIDUAL_ID_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;EMAIL , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;TELEPHONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;RESIDENCE_COUNTRY_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;STATE_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CITY_NAME , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_ZONE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDRESS_STREET_LANG2 ,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ZIP_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REF_NBR )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_GROUP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; T.AGENT_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NAME_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; NATIONALITY_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; IND_COMPANY,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_NATURE_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; LEGAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; INDIVIDUAL_ID_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; EMAIL,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; TELEPHONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; RESIDENCE_COUNTRY_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; STATE_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; CITY_NAME,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_ZONE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDRESS_STREET_LANG2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ZIP_CODE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1&#xD;&#xA;&#x9;&#x9;FROM   [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent_persons T&#xD;&#xA;&#x9;&#x9; JOIN  [&quot;+ context.intermediateDB + &quot;].[dbo].VW_import_agent A on A.AGENT_CODE = T.AGENT_CODE&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;/* Call procedure ImportSetPersonNbr() to set PERSON_NBR and ADDR_NBR.&#xD;&#xA;&#x9;&#x9;This procedure will already insert persons linked to the agent, so there's no need to&#xD;&#xA;&#x9;&#x9;further process ther generated person numbers */&#xD;&#xA;&#x9;&#x9;EXEC IMPORTSETPERSONNBR&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;SET NOCOUNT OFF&#xD;&#xA;&#xD;&#xA;&#x9;END&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -1864,7 +1864,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="2592">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="2656">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_25" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1891,7 +1891,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2592">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2656">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_26" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1929,7 +1929,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sT3qMdAbvwpNoBgvvDTD5C+5FuWuQY+O+ICmY17v" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:e7ZUVUH0bSFz/P5lPLfBehdPkY0knjOWGzlfqIeZ" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1967,7 +1967,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FZwQioaH+L0WOUUY1IdsC31sEq+cfKFajH+Bl5BN" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8JUo/yGnTRr3vHPtNHIg+E4tJlrDGrmD7nw9BToD" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2059,7 +2059,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mJOI+vHwATIbTt1Xrt2WF/sG+Yc5aUrvo36Fzd1m" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5fYPMjoRkeR9jsL+LAKvxnIFL4XYkcU0cb7PS5AH" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2097,7 +2097,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ojcDRNUzTdNisYNmmUYjumMGHGSfxkeg6JTmHWEQ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PXss4ddwkLKjFTuPTdEUynmv+1WyN68zdcwo7pe/" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2189,7 +2189,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bjD9f1AlRY8sRWuscua5Q1lCHBmpBmhMnX9brtaw" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oZGKL9An/rWfn/HUzagjQmvPe90siHzm58QKfrP+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2281,7 +2281,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q3WjhEfSCqn2La0KWdSkAXY5iieUfFtW7gF6jwRd" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zkaje26LU4IAkOrXYf/uQG9YDiCk0U43GnNSccgf" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2319,7 +2319,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wkvVsCyXHS1k91aVf6wnC70B4obJw9TjUH+HdCK1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Z5WD/O20VrQDf+QNt3e8s2WvMxvRcn9+A3ie6+tW" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2411,7 +2411,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ISnDRma9kjGmPPWhno13MbU6XLi6Sb8aTBeTtcOx" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Rgd2O9mY2eusT2pb0AzgOCg5CTGhpyObT+LYVDee" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2449,7 +2449,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EpLGjz070MflOvklWIPC3QyNYNnU2eNsNL/cLf7A" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cmr7Ch21t/yKJeqFzGUM4zmV8+Atjc1D+nSAChB+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2487,7 +2487,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pUL9EOzd1v/DZxMgsTkNo504AdnfkE7HAGgJufJ5" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GK+dZ5C/8AvXukX0xCGnr3NQTKP/Q3hd9TgOovYN" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2580,7 +2580,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9M0w00c/sHs1f78pXbL5HKqrh8ZaXCpkIYse8YAr" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ho6wYNFi90Wi9iccXHxP0GVuNbq6Iv5uNS88if+F" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2618,7 +2618,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fNAcYNZNJDGFHk0U7T5+rhpX+dJAgOXZj3vIIXc9" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+jHK2+ezxYbxDQp4ahKgZjHnQhgb8ZYVTf6Sw19+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2656,7 +2656,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ljioVMUo12TtmctJtT9B7+MD25U+lceg8MuDskEI" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EEQqbIYzCo6974vgguVlIU+HqTc7/Xm69FSI5NS8" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2748,7 +2748,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NLozIpoPqxiyJ8MFIL/2UBHuBxzjvpvApIgaAypz" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:taPwZnDmc9GhIeb4BhtZs/ytjTxgwH7aN2aKIwkY" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2786,7 +2786,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MGDAgWaCfJRxhqADCrH3CmqPT9ghYBaMdkFHB1R1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GFofdG+msVwTRbWLh2RU9UIgSYK9xnLG/9TpREMd" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2878,7 +2878,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LHKZv5LHmS8hOtJjKzYL+WrzoZskXhvQEa43p8uZ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JIBR5lh+iEMioVAk5Dll8T1gIaoGXygJmDpHTzJx" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2916,7 +2916,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MWx/Nx6r1tftN2LfHMnIcn9yQTIlzXMWLCCST4UB" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CL+nWiqTq7ASyyRNgNDBRU9Aj6tEj90L8uCANt95" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3008,7 +3008,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nsIhRzqSCaTV595L53DMl+0XaD3t8cqP7N6bqTDy" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:S4Tc0PN2eqkZ2SYX2oZyQBexUaVTG52Apo8H2Nki" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3046,7 +3046,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZzD2q+Nq1LupVeu+WDhb4RWDQXyXivtwKENlf85I" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:g5lKU6iHSKGsq3Oci6oXxVj5zEWU4PB8wvtE6wNJ" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3138,7 +3138,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OE5gHrCrHiILY1rlSAbvQt/0is1YP5u68o4Myhbs" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:evKGIXAt9TJR2/QcZLk+e1hZ1IIdbHzbvgBjx+/t" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3176,7 +3176,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gvi65YVqLJlCl40rqA3qEpgF+r19Sk+/MIvkrQ0A" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rqa5dRkKQDDny2p6r0pe/iho9fVNR64aufo6vJhY" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3269,7 +3269,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4Wi28IirL3+H5npFlPtA2+vpitLIKPWMQOeOwavf" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RTQ3UAivteboFCSRKk4OOGDYqVLeKFRtRjXXVWji" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3438,15 +3438,15 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_3" target="tMSSqlRow_6">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
-  <connection connectorName="REJECT" label="row66" lineStyle="0" metaname="tMSSqlRow_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlRow_2" target="tLogRow_7">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row66" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMSSqlRow_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlRow_2" target="tMSSqlCommit_3">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMSSqlRow_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMSSqlRow_2" target="tMSSqlCommit_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="row66" lineStyle="0" metaname="tMSSqlRow_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMSSqlRow_2" target="tLogRow_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row66" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tMSSqlConnection_4" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_4" target="tMSSqlRow_9">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>

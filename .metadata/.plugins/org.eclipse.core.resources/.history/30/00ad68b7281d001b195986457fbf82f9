@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_MInu4QMTEeuOjv5n7xl_Lg" label="WIPO_Projects" description="" language="java" technicalLabel="WIPO_PROJECTS" local="true" author="_MJn0cAMTEeuOjv5n7xl_Lg" productVersion="Talend Open Studio for Data Integration-7.4.1.20201015_1726-M3" itemsRelationVersion="1.3" bigData="false">
+    <migrationTask xmi:id="_MLwicAMTEeuOjv5n7xl_Lg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_MJn0cAMTEeuOjv5n7xl_Lg" login="user@talend.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
+  <TalendProperties:User xmi:id="_uVjWUBqNEeuOueoz23vjqQ" login="gabriel.berlicki@wipo.int" password="D41D8CD98F00B204E9800998ECF8427E"/>
+</xmi:XMI>

@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_18=>" expression="row21.APPLICATION_ID==null||row21.APPLICATION_ID.replace(&quot; &quot;, &quot;&quot;).length()==0?new BigDecimal(&quot;0&quot;):&#xA;row21.APPLICATION_ID.replaceAll( &quot;[^\\d]&quot;, &quot;&quot; ).length()>22?&#xA;new BigDecimal (row21.APPLICATION_ID.replaceAll( &quot;[^\\d]&quot;, &quot;&quot; ).substring(1,22)):new BigDecimal (row21.APPLICATION_ID.replaceAll( &quot;[^\\d]&quot;, &quot;&quot; ))">
+  <variables name="row21.FILE_SEQ" value="null" talendType="id_String"/>
+  <variables name="row21.FILE_TYPE" value="null" talendType="id_String"/>
+  <variables name="row21.FILE_SERIES" value="null" talendType="id_BigDecimal"/>
+  <variables name="row21.FILE_NBR" value="null" talendType="id_BigDecimal"/>
+  <variables name="row21.COUNTRY_CODE" value="null" talendType="id_String"/>
+  <variables name="row21.APPLICATION_ID" value="null" talendType="id_String"/>
+  <variables name="row21.PRIORITY_DATE" value="null" talendType="id_Date"/>
+  <variables name="row21.NOTES" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row21.IND_ACCEPTED" value="null" talendType="id_BigDecimal" nullable="true"/>
+  <variables name="row21.PRIORITY_APPL_ID_ALT" value="null" talendType="id_BigDecimal" nullable="true"/>
+</expression:EMFExpression>

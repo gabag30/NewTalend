@@ -118,6 +118,21 @@
       <artifactId>G1_Val_mig_AGENTS</artifactId>
       <version>0.1.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>Fa_Corr_pre_mig_TM_PY</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>G2a_Val_TM</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>F_IPAS_ENV_CRE</artifactId>
+      <version>0.1.0</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>

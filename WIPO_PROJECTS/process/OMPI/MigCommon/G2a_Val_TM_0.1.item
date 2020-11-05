@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="intermediateHost" prompt="intermediateHost?" promptNeeded="false" type="id_String" value="localhost" internalId="_7UHvkAMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="intermediatePort" prompt="intermediatePort?" promptNeeded="false" type="id_String" value="1433" internalId="_7UHvkQMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" type="id_String" value="NI_MARCAS" internalId="_7UHvkgMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="intermediateUser" prompt="intermediateUser?" promptNeeded="false" type="id_String" value="&quot;sa&quot;" internalId="_7UHvkwMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="intermediatePassword" prompt="intermediatePassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_7UHvlAMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasHost" prompt="ipasHost?" promptNeeded="false" type="id_String" value="localhost" internalId="_7UHvlQMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasPort" prompt="ipasPort?" promptNeeded="false" type="id_String" value="1433" internalId="_7UHvlgMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" type="id_String" value="MAR_RPI" internalId="_7UHvlwMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" type="id_String" value="&quot;PI&quot;" internalId="_7UHvmAMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" type="id_String" value="&quot;PI&quot;" internalId="_7UHvmQMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="ipasSaPassword" prompt="ipasSaPassword?" promptNeeded="false" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_7UHvmgMVEeuOjv5n7xl_Lg"/>
-    <contextParameter comment="" name="processAll" prompt="processAll?" promptNeeded="false" type="id_String" value="true" internalId="_7UHvmwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateHost" prompt="intermediateHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_7UHvkAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediatePort" prompt="intermediatePort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_7UHvkQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateDB" prompt="intermediateDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PY_INTERMED" internalId="_7UHvkgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediateUser" prompt="intermediateUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;sa&quot;" internalId="_7UHvkwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="intermediatePassword" prompt="intermediatePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_7UHvlAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasHost" prompt="ipasHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" internalId="_7UHvlQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasPort" prompt="ipasPort?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" internalId="_7UHvlgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasDB" prompt="ipasDB?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MARCAS_PY" internalId="_7UHvlwMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasUser" prompt="ipasUser?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ADMIN" internalId="_7UHvmAMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasPassword" prompt="ipasPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="ADMIN" internalId="_7UHvmQMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="ipasSaPassword" prompt="ipasSaPassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;W1P0w1p0&quot;" internalId="_7UHvmgMVEeuOjv5n7xl_Lg"/>
+    <contextParameter comment="" name="processAll" prompt="processAll?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="true" internalId="_7UHvmwMVEeuOjv5n7xl_Lg"/>
   </context>
   <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
@@ -40,6 +41,9 @@
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;D:/WIPO/TOS_DI-20161216_1026-V6.3.1/workspace/in.csv&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
     <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -52,7 +56,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:CKTUjErdzHohuBUWjZ7Fi7ndKeiEaTJ6JrKyh60E" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:q4rW1s7JfWhW+OVJxIDUkF2K29HmG9DzP0ilPAyC" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -67,7 +71,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/gabag/OneDrive/WIPO/TalendWorkspace/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;G:/GitHub/NewTalend/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -87,7 +91,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7OIX4JQDPQ0j37ildFgH6bq759vPSUs3jQSiy9vn" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nHgQbwehnCYVkvvPvmzEVy7hdqHIESQN6KiPnZuz" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -128,7 +132,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
     <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:S34qXRE3N+VWdXRIl7OKRgiJgq6UApailM4mR/U8Da5iMSk7H4FoIhPY92Yf8Jmz"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AA5SR4oWsLwHj2kivshH/OM1ATVR7Jq4IFu39bFEW61tVlvMAdN76ikU8J9dua3u"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -137,6 +141,7 @@
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="IPAS"/>
@@ -153,7 +158,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:D2Tb3nugvNE1DVw0rG8NBMLpBSNBlwyg2y3JY4nC" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:S9HlNb3cCBOYepHtNFcgz4qbUuYoWesAzcvf6w+N" show="false"/>
     <elementParameter field="TEXT" name="SP_NAME" value="&quot;ImportMarkValidate&quot;"/>
     <elementParameter field="CHECK" name="IS_FUNCTION" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RETURN" value="" show="false"/>
@@ -162,6 +167,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>

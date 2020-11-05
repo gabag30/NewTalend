@@ -259,6 +259,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "IPAS",
     "version" : "Latest",
     "type" : "routine"
@@ -287,6 +291,10 @@
     "type" : "property"
   }, {
     "id" : "_bkUIkPwHEeqFhtRqCTUfWA - userdocs",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_bkUIkPwHEeqFhtRqCTUfWA - userdocs_with_status",
     "version" : "Latest",
     "type" : "query"
   }, {
@@ -1767,6 +1775,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "WIPO_PROJECTS:_Z5ezkB0mEeuiEN5SqFxMcQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "WIPO_PROJECTS:_k8v80P2iEeqq-eaT_osC5g",
     "version" : "Latest",
     "type" : "job"
@@ -1780,10 +1792,6 @@
     "type" : "job"
   }, {
     "id" : "_K4YqECn1Eemz5OxCQ4AlZg",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
-    "id" : "_XYl50EGEEemvw7tH_ArB6w",
     "version" : "Latest",
     "type" : "job"
   }, {
@@ -2309,6 +2317,82 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - Initialice service nbr",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - missing series 2",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - missing_series_1",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - second_udpate_mark_code",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - set_proc_nbr_wrk_mark",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - truncate_tables",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update proc typ",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update service info",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update status code",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_actions",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_first_priority",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_main_owner",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_mark_code",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_nice_class_txt",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_person_owner",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - update_person_reprs",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
     "id" : "IPAS",
     "version" : "Latest",
     "type" : "routine"
@@ -2316,6 +2400,70 @@
     "id" : "test",
     "version" : "Latest",
     "type" : "routine"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_ACTIONS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_NATL_CLASSES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_NICE_CLASSES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_OWNERS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_PRIORITIES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_REPRS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - CF_DOC_SERIES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - IP_NAME",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_ACTIONS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_NICE_CLASSES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_OWNERS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_PRIORITIES",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_REPRS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_person_addr",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
@@ -2699,10 +2847,6 @@
     "version" : "Latest",
     "type" : "schema"
   }, {
-    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_NICE_CLASSES",
-    "version" : "Latest",
-    "type" : "schema"
-  }, {
     "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_OWNERS",
     "version" : "Latest",
     "type" : "schema"
@@ -2883,6 +3027,53 @@
     "type" : "schema"
   }, {
     "id" : "_yuZC4PHbEeim5sBtxACFZQ - VW_IMPORT_AGENT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_nV9J8B9OEeuyjYVBeJVSHA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - truncate_tables",
+    "version" : "Latest",
+    "type" : "query"
+  }, {
+    "id" : "IPAS",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "test",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_MARK_OWNERS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_x_N6QPwFEeqFhtRqCTUfWA - WRK_MARK_OWNERS",
     "version" : "Latest",
     "type" : "schema"
   } ]

@@ -264,6 +264,9 @@
         <dependencySet>
             <outputDirectory>${talend.job.name}</outputDirectory>
             <includes>
+                <include>org.example.wipo_projects.job:G2a_Val_TM:jar:0.1.0</include>
+                <include>org.example.wipo_projects.job:Fa_Corr_pre_mig_TM_PY:jar:0.1.0</include>
+                <include>org.example.wipo_projects.job:F_IPAS_ENV_CRE:jar:0.1.0</include>
                 <include>org.example.wipo_projects.job:A1_Gen_Marcas:jar:0.1.0</include>
                 <include>org.example.wipo_projects.job:G1_Val_mig_AGENTS:jar:0.1.0</include>
             </includes>

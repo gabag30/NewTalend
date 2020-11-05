@@ -1,9 +1,10 @@
-Palette.RecentlyUsed.ComponentsList=tDBInput\:1603292566003,tMap\:1603292383237,tLogRow\:1603292374023,tDBOutput\:1603292354257,tDBConnection\:1602860388057
+Palette.RecentlyUsed.ComponentsList=tDBRow\:1604533315528,tLogRow\:1604533219170,tDBOutput\:1604533142901,tMap\:1604533048772,tDBInput\:1604533031651,tDBConnection\:1604532959975
 TalendEditorPaletteFactory.Size=125
 TalendEditorPaletteFactory.StateAS400=1
 TalendEditorPaletteFactory.StateAccess=1
 TalendEditorPaletteFactory.StateAdvertising=1
 TalendEditorPaletteFactory.StateAmazon=1
+TalendEditorPaletteFactory.StateAnalytics=1
 TalendEditorPaletteFactory.StateAurora=1
 TalendEditorPaletteFactory.StateAutomation=1
 TalendEditorPaletteFactory.StateAzure=1
