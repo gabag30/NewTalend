@@ -33,7 +33,7 @@
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.product.version>7.4.1.20201015_1726-M3</talend.product.version>
+    <talend.product.version>7.4.1.20201110_1014-M4</talend.product.version>
     <talend.project.name>WIPO_PROJECTS</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
@@ -42,6 +42,17 @@
     <talend.job.finalName>files_upload_0_1</talend.job.finalName>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>activation</artifactId>
+      <version>6.0.0</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>advancedPersistentLookupLib-1.2</artifactId>
@@ -78,7 +89,7 @@
     <dependency>
       <groupId>org.talend.components</groupId>
       <artifactId>components-soap</artifactId>
-      <version>2.3-20200918</version>
+      <version>2.3-20201016</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
@@ -87,9 +98,9 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>org.talend.daikon</groupId>
       <artifactId>crypto-utils</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
+      <version>0.31.11</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>

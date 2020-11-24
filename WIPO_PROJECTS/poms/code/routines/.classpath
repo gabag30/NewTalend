@@ -30,5 +30,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/imgscalr-lib-4.2/6.0.0-SNAPSHOT/imgscalr-lib-4.2-6.0.0-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.talend.libraries"/>
+			<attribute name="maven.artifactId" value="imgscalr-lib-4.2"/>
+			<attribute name="maven.version" value="6.0.0-SNAPSHOT"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

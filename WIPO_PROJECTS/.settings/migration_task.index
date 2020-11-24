@@ -85,6 +85,11 @@
     "version" : "7.1.1",
     "status" : "ok"
   }, {
+    "id" : "org.talend.designer.core.utils.UpdateModuleListInComponentsMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.designer.dbmap.migration.DBMapSplitTableConstraintFiltersMigrationTask",
     "breaks" : "5.1.2",
     "version" : "5.6.0",
@@ -1124,6 +1129,11 @@
     "version" : "6.1.0",
     "status" : "ok"
   }, {
+    "id" : "org.talend.repository.model.migration.EnabletPersonatorAddressBasicSettingTask",
+    "breaks" : "7.4.0",
+    "version" : "7.4.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.EncryptDbPasswordMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -1371,6 +1381,11 @@
     "id" : "org.talend.repository.model.migration.RemoveRoutineJarDependencyTask",
     "breaks" : "5.4.1",
     "version" : "5.4.2",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.repository.model.migration.RemoveSnapshotJarMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
     "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.RemoveSpaceInJobNameMigrationTask",
@@ -1745,6 +1760,11 @@
     "id" : "org.talend.repository.model.migration.UncheckExceptionOnFileExistMigrationTask",
     "breaks" : "6.3.1",
     "version" : "6.4.0",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.repository.model.migration.UncheckTrustAllMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
     "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.UnifyParameterOfDatastaxAndHectorForCassandra",

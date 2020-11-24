@@ -499,6 +499,16 @@ public class TMSSqlRowMainJava
     
 		}
 
+		public void query(INode node, String dbQueryVariableName){
+			beforeComponentProcess(node);
+			//for input
+			logInfo(node,"debug",cid+" - Executing the query: '\" + "+dbQueryVariableName +" + \"'.");
+		}
+
+		/**
+		* @deprecated please use another method instead: query(INode node, String dbQueryVariableName) because execution of the query expression can be not idempotent
+		*/
+		@Deprecated
 		public void query(INode node){
 			beforeComponentProcess(node);
 			//for input
@@ -633,7 +643,6 @@ for(IConnection conn : outgoingConns) {
     
 	}
 }
-log4jCodeGenerateUtil.query(node);
 
     stringBuffer.append(TEXT_58);
     stringBuffer.append(cid );
@@ -643,6 +652,7 @@ log4jCodeGenerateUtil.query(node);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_61);
     
+log4jCodeGenerateUtil.query(node, "query_" + cid);
 List<IMetadataTable> metadatas = node.getMetadataList();
 if ((metadatas!=null)&&(metadatas.size()>0)) {
 	IMetadataTable metadata = metadatas.get(0);
@@ -749,7 +759,7 @@ if(("true").equals(propagateRecordset)){
     
 		}
 	}
-	log4jCodeGenerateUtil.logInfo(node,"debug",cid+" - Execute the query: '\" + "+dbquery +" + \"' has finished.");
+	log4jCodeGenerateUtil.logInfo(node,"debug",cid+" - Execute the query: '\" + query_" + cid  + " + \"' has finished.");
 
     
 	if(usePrepareStatement){

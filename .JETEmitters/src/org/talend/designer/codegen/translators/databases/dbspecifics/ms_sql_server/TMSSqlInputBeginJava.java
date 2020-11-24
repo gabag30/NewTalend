@@ -232,145 +232,142 @@ public class TMSSqlInputBeginJava
   protected final String TEXT_207 = ".setAutoCommit(currentAutoCommitMode";
   protected final String TEXT_208 = NL + "\t\t    ";
   protected final String TEXT_209 = NL + NL + "\t\t    String dbquery_";
-  protected final String TEXT_210 = ";" + NL + "\t\t\t";
-  protected final String TEXT_211 = NL + "                log.debug(\"";
-  protected final String TEXT_212 = " - Executing the query: '\"+dbquery_";
-  protected final String TEXT_213 = "+\"'.\");" + NL + "\t\t\t";
-  protected final String TEXT_214 = NL;
-  protected final String TEXT_215 = NL + "            \tglobalMap.put(\"";
-  protected final String TEXT_216 = "_QUERY\",dbquery_";
-  protected final String TEXT_217 = NL + "\t\t    java.sql.ResultSet rs_";
-  protected final String TEXT_218 = " = null;" + NL + "" + NL + "\t\t    try {" + NL + "\t\t    \trs_";
-  protected final String TEXT_219 = " = stmt_";
-  protected final String TEXT_220 = ".executeQuery(dbquery_";
-  protected final String TEXT_221 = ");" + NL + "\t\t    \tjava.sql.ResultSetMetaData rsmd_";
-  protected final String TEXT_222 = ".getMetaData();" + NL + "\t\t    \tint colQtyInRs_";
-  protected final String TEXT_223 = " = rsmd_";
-  protected final String TEXT_224 = ".getColumnCount();" + NL;
-  protected final String TEXT_225 = NL + "\t\t    routines.system.Dynamic dcg_";
-  protected final String TEXT_226 = " =  new routines.system.Dynamic();" + NL + "\t\t    dcg_";
-  protected final String TEXT_227 = ".setDbmsId(\"";
-  protected final String TEXT_228 = "\");" + NL + "\t\t    List<String> listSchema_";
-  protected final String TEXT_229 = "=new java.util.ArrayList<String>();" + NL + "\t\t    ";
-  protected final String TEXT_230 = NL + "\t\t    \t    listSchema_";
-  protected final String TEXT_231 = ".add(\"";
-  protected final String TEXT_232 = "\");" + NL + "\t    \t    ";
-  protected final String TEXT_233 = NL + NL + "\t\t\tint fixedColumnCount_";
-  protected final String TEXT_234 = ";" + NL + "" + NL + "            for (int i = ";
-  protected final String TEXT_235 = "; i <= rsmd_";
-  protected final String TEXT_236 = ".getColumnCount()-";
-  protected final String TEXT_237 = "; i++) {" + NL + "                if (!(listSchema_";
-  protected final String TEXT_238 = ".contains(rsmd_";
-  protected final String TEXT_239 = ".getColumnLabel(i).toUpperCase()) )) {" + NL + "                \troutines.system.DynamicMetadata dcm_";
-  protected final String TEXT_240 = "=new routines.system.DynamicMetadata();" + NL + "                \tdcm_";
-  protected final String TEXT_241 = ".setName(rsmd_";
-  protected final String TEXT_242 = ".getColumnLabel(i));" + NL + "                \tdcm_";
-  protected final String TEXT_243 = ".setDbName(rsmd_";
-  protected final String TEXT_244 = ".getColumnName(i));" + NL + "                \tdcm_";
-  protected final String TEXT_245 = ".setType(routines.system.Dynamic.getTalendTypeFromDBType(\"";
-  protected final String TEXT_246 = "\", rsmd_";
-  protected final String TEXT_247 = ".getColumnTypeName(i).toUpperCase(), rsmd_";
-  protected final String TEXT_248 = ".getPrecision(i), rsmd_";
-  protected final String TEXT_249 = ".getScale(i)));" + NL + "                \tdcm_";
-  protected final String TEXT_250 = ".setDbType(rsmd_";
-  protected final String TEXT_251 = ".getColumnTypeName(i));" + NL + "                \tdcm_";
-  protected final String TEXT_252 = ".setDbTypeId(rsmd_";
-  protected final String TEXT_253 = ".getColumnType(i));";
-  protected final String TEXT_254 = NL + "                \tdcm_";
-  protected final String TEXT_255 = ".setFormat(";
-  protected final String TEXT_256 = NL + "\t\t\tif(\"LONG\".equals(rsmd_";
-  protected final String TEXT_257 = ".getColumnTypeName(i).toUpperCase())) {" + NL + "\t\t\t\tString length = MetadataTalendType.getDefaultDBTypes(\"oracle_id\", \"LONG\", MetadataTalendType.DEFAULT_LENGTH);" + NL + "\t\t\t\tif(length!=null && !(\"\".equals(length))) {" + NL + "\t\t\t\t\tdcm_";
-  protected final String TEXT_258 = ".setLength(Integer.parseInt(length));" + NL + "\t\t\t\t} else {" + NL + "\t\t\t\t\tdcm_";
-  protected final String TEXT_259 = ".setLength(rsmd_";
-  protected final String TEXT_260 = ".getPrecision(i));" + NL + "\t\t\t\t}" + NL + "\t\t\t} else {" + NL + "\t\t\t\tdcm_";
-  protected final String TEXT_261 = ".getPrecision(i));" + NL + "\t\t\t}";
-  protected final String TEXT_262 = NL + "\t\t\tdcm_";
-  protected final String TEXT_263 = ".getPrecision(i));";
-  protected final String TEXT_264 = ".setPrecision(rsmd_";
-  protected final String TEXT_265 = ".getScale(i));" + NL + "                \tdcm_";
-  protected final String TEXT_266 = ".setNullable(rsmd_";
-  protected final String TEXT_267 = ".isNullable(i) == 0 ? false : true);" + NL + "                \tdcm_";
-  protected final String TEXT_268 = ".setKey(false);" + NL + "                \tdcm_";
-  protected final String TEXT_269 = ".setSourceType(DynamicMetadata.sourceTypes.database);" + NL + "                \tdcm_";
-  protected final String TEXT_270 = ".setColumnPosition(i);" + NL + "                \tdcg_";
-  protected final String TEXT_271 = ".metadatas.add(dcm_";
-  protected final String TEXT_272 = ");" + NL + "                }" + NL + "            }";
-  protected final String TEXT_273 = NL + "\t\t    String tmpContent_";
-  protected final String TEXT_274 = " = null;" + NL + "\t\t    ";
-  protected final String TEXT_275 = NL + "\t\t    \tint column_index_";
-  protected final String TEXT_276 = " =1;" + NL + "\t\t    ";
-  protected final String TEXT_277 = NL + "\t\t    \tlog.debug(\"";
-  protected final String TEXT_278 = " - Retrieving records from the database.\");" + NL + "\t\t    ";
-  protected final String TEXT_279 = NL + "\t\t    while (rs_";
-  protected final String TEXT_280 = ".next()) {" + NL + "\t\t        nb_line_";
-  protected final String TEXT_281 = "++;" + NL + "\t\t        ";
-  protected final String TEXT_282 = NL + "\t\t\t\t\t\t\t\t\tcolumn_index_";
-  protected final String TEXT_283 = " + dcg_";
-  protected final String TEXT_284 = ".getColumnCount();" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_285 = ";" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_286 = NL + "\t\t\t\t\t\t\t";
-  protected final String TEXT_287 = NL + "\t\t\t\t\t\t\tif(colQtyInRs_";
-  protected final String TEXT_288 = " < ";
-  protected final String TEXT_289 = ") {" + NL + "\t\t\t\t\t\t\t\t";
-  protected final String TEXT_290 = ";" + NL + "\t\t\t\t\t\t\t} else {";
-  protected final String TEXT_291 = NL + "\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_292 = NL + "\t\t\t\t\t\t\t\t\t\t";
-  protected final String TEXT_293 = NL + "\t\t                            ";
-  protected final String TEXT_294 = " = (List)rs_";
-  protected final String TEXT_295 = ".getObject(";
-  protected final String TEXT_296 = NL + "\t                         \t\t";
-  protected final String TEXT_297 = NL + "                                    oracle.sql.STRUCT jGeomStruct = (oracle.sql.STRUCT) rs_";
-  protected final String TEXT_298 = ");" + NL + "                                    if (jGeomStruct != null) {" + NL + "                                    oracle.spatial.geometry.JGeometry jGeom = oracle.spatial.geometry.JGeometry.load(jGeomStruct);" + NL + "                                    oracle.spatial.util.WKT wkt = new oracle.spatial.util.WKT();" + NL + "                                    String wktValue = new String(wkt.fromJGeometry(jGeom));" + NL;
-  protected final String TEXT_299 = NL + "                                    ";
-  protected final String TEXT_300 = " = new Geometry(wktValue);" + NL + "                                    } else {";
-  protected final String TEXT_301 = NL + "                                      ";
-  protected final String TEXT_302 = " = null;" + NL + "                                    }";
-  protected final String TEXT_303 = NL + "                                        if (";
-  protected final String TEXT_304 = " != null) {";
-  protected final String TEXT_305 = NL + "                                        ";
-  protected final String TEXT_306 = ".setEPSG(";
-  protected final String TEXT_307 = ");" + NL + "                                        }";
-  protected final String TEXT_308 = NL + "                                  ";
-  protected final String TEXT_309 = "=dcg_";
-  protected final String TEXT_310 = NL + "\t\t\t\t\t\t\t\t\t\tList<String> list_";
-  protected final String TEXT_311 = " = new java.util.ArrayList<String>();" + NL + "\t\t\t\t\t    \t\t\t\tfor(int i_";
-  protected final String TEXT_312 = "; i_";
-  protected final String TEXT_313 = "  <= rsmd_";
-  protected final String TEXT_314 = ".getColumnCount(); i_";
-  protected final String TEXT_315 = " ++){" + NL + "\t\t\t\t\t    \t\t\t\t\t";
-  protected final String TEXT_316 = NL + "\t\t\t\t\t\t \t\t\t\t\tif (\"NTEXT\".equals(rsmd_";
-  protected final String TEXT_317 = ".getColumnTypeName(i_";
-  protected final String TEXT_318 = " ).toUpperCase())) {" + NL + "\t\t\t\t\t\t\t\t\t\t\t\tnet.sourceforge.jtds.jdbc.ClobImpl clob_";
-  protected final String TEXT_319 = ".getClob(i_";
-  protected final String TEXT_320 = ");" + NL + "\t\t\t\t\t\t\t\t\t\t\t\tif(clob_";
-  protected final String TEXT_321 = " !=null){" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t\tnet.sourceforge.jtds.jdbc.TalendNTextImpl tNTextImpl_";
-  protected final String TEXT_322 = ");" + NL + "\t\t\t\t\t\t\t  \t\t\t\t\t\tlist_";
-  protected final String TEXT_323 = ".add(tNTextImpl_";
-  protected final String TEXT_324 = ".getValue());" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t}else{" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t\tlist_";
-  protected final String TEXT_325 = ".add(null);" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t";
-  protected final String TEXT_326 = " " + NL + "\t\t\t\t\t\t   \t\t\t\t\tif(\"NTEXT\".equals(rsmd_";
-  protected final String TEXT_327 = " ).toUpperCase())) {" + NL + "\t\t\t\t\t\t   \t\t\t\t\t\tlist_";
-  protected final String TEXT_328 = ".add(rs_";
-  protected final String TEXT_329 = ".getString(i_";
-  protected final String TEXT_330 = "));" + NL + "\t\t\t\t\t\t   \t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t";
-  protected final String TEXT_331 = NL + "   \t \t\t\t\t    \t\t\t\t}" + NL + "                                 \t\t routines.system.DynamicUtils.readColumnsFromDatabase_Mssql(";
-  protected final String TEXT_332 = ", fixedColumnCount_";
-  protected final String TEXT_333 = ",list_";
-  protected final String TEXT_334 = ",";
-  protected final String TEXT_335 = NL + "\t\t\t\t\t\t\t\t\t\troutines.system.DynamicUtils.readColumnsFromDatabase_Access(";
-  protected final String TEXT_336 = NL + "                                \t\t routines.system.DynamicUtils.readColumnsFromDatabase(";
-  protected final String TEXT_337 = NL + "                                  Object geom = rs_";
-  protected final String TEXT_338 = ");" + NL + "                                  if (geom != null) {" + NL + "                                  \torg.postgis.Geometry o =" + NL + "                                      org.postgis.PGgeometry.geomFromString(geom.toString());" + NL + "                                \tStringBuffer sb = new StringBuffer();" + NL + "                                \to.outerWKT(sb, false);" + NL + "                                \t";
-  protected final String TEXT_339 = " = new Geometry(sb.toString());" + NL + "                                  } else {" + NL + "                                  \t";
-  protected final String TEXT_340 = " = null;" + NL + "                                  }";
-  protected final String TEXT_341 = NL + "\t\t                          ";
-  protected final String TEXT_342 = NL + "\t\t                    }";
-  protected final String TEXT_343 = NL + "\t\t\t\t\t";
-  protected final String TEXT_344 = " - Retrieving the record \" + nb_line_";
-  protected final String TEXT_345 = " + \".\");" + NL + "\t\t\t\t\t";
-  protected final String TEXT_346 = ";" + NL + "\t\t                            ";
-  protected final String TEXT_347 = NL + NL + NL + NL;
-  protected final String TEXT_348 = NL;
+  protected final String TEXT_210 = ";" + NL + "\t\t    ";
+  protected final String TEXT_211 = NL;
+  protected final String TEXT_212 = NL + "            \tglobalMap.put(\"";
+  protected final String TEXT_213 = "_QUERY\",dbquery_";
+  protected final String TEXT_214 = NL + "\t\t    java.sql.ResultSet rs_";
+  protected final String TEXT_215 = " = null;" + NL + "" + NL + "\t\t    try {" + NL + "\t\t    \trs_";
+  protected final String TEXT_216 = " = stmt_";
+  protected final String TEXT_217 = ".executeQuery(dbquery_";
+  protected final String TEXT_218 = ");" + NL + "\t\t    \tjava.sql.ResultSetMetaData rsmd_";
+  protected final String TEXT_219 = ".getMetaData();" + NL + "\t\t    \tint colQtyInRs_";
+  protected final String TEXT_220 = " = rsmd_";
+  protected final String TEXT_221 = ".getColumnCount();" + NL;
+  protected final String TEXT_222 = NL + "\t\t    routines.system.Dynamic dcg_";
+  protected final String TEXT_223 = " =  new routines.system.Dynamic();" + NL + "\t\t    dcg_";
+  protected final String TEXT_224 = ".setDbmsId(\"";
+  protected final String TEXT_225 = "\");" + NL + "\t\t    List<String> listSchema_";
+  protected final String TEXT_226 = "=new java.util.ArrayList<String>();" + NL + "\t\t    ";
+  protected final String TEXT_227 = NL + "\t\t    \t    listSchema_";
+  protected final String TEXT_228 = ".add(\"";
+  protected final String TEXT_229 = "\");" + NL + "\t    \t    ";
+  protected final String TEXT_230 = NL + NL + "\t\t\tint fixedColumnCount_";
+  protected final String TEXT_231 = ";" + NL + "" + NL + "            for (int i = ";
+  protected final String TEXT_232 = "; i <= rsmd_";
+  protected final String TEXT_233 = ".getColumnCount()-";
+  protected final String TEXT_234 = "; i++) {" + NL + "                if (!(listSchema_";
+  protected final String TEXT_235 = ".contains(rsmd_";
+  protected final String TEXT_236 = ".getColumnLabel(i).toUpperCase()) )) {" + NL + "                \troutines.system.DynamicMetadata dcm_";
+  protected final String TEXT_237 = "=new routines.system.DynamicMetadata();" + NL + "                \tdcm_";
+  protected final String TEXT_238 = ".setName(rsmd_";
+  protected final String TEXT_239 = ".getColumnLabel(i));" + NL + "                \tdcm_";
+  protected final String TEXT_240 = ".setDbName(rsmd_";
+  protected final String TEXT_241 = ".getColumnName(i));" + NL + "                \tdcm_";
+  protected final String TEXT_242 = ".setType(routines.system.Dynamic.getTalendTypeFromDBType(\"";
+  protected final String TEXT_243 = "\", rsmd_";
+  protected final String TEXT_244 = ".getColumnTypeName(i).toUpperCase(), rsmd_";
+  protected final String TEXT_245 = ".getPrecision(i), rsmd_";
+  protected final String TEXT_246 = ".getScale(i)));" + NL + "                \tdcm_";
+  protected final String TEXT_247 = ".setDbType(rsmd_";
+  protected final String TEXT_248 = ".getColumnTypeName(i));" + NL + "                \tdcm_";
+  protected final String TEXT_249 = ".setDbTypeId(rsmd_";
+  protected final String TEXT_250 = ".getColumnType(i));";
+  protected final String TEXT_251 = NL + "                \tdcm_";
+  protected final String TEXT_252 = ".setFormat(";
+  protected final String TEXT_253 = NL + "\t\t\tif(\"LONG\".equals(rsmd_";
+  protected final String TEXT_254 = ".getColumnTypeName(i).toUpperCase())) {" + NL + "\t\t\t\tString length = MetadataTalendType.getDefaultDBTypes(\"oracle_id\", \"LONG\", MetadataTalendType.DEFAULT_LENGTH);" + NL + "\t\t\t\tif(length!=null && !(\"\".equals(length))) {" + NL + "\t\t\t\t\tdcm_";
+  protected final String TEXT_255 = ".setLength(Integer.parseInt(length));" + NL + "\t\t\t\t} else {" + NL + "\t\t\t\t\tdcm_";
+  protected final String TEXT_256 = ".setLength(rsmd_";
+  protected final String TEXT_257 = ".getPrecision(i));" + NL + "\t\t\t\t}" + NL + "\t\t\t} else {" + NL + "\t\t\t\tdcm_";
+  protected final String TEXT_258 = ".getPrecision(i));" + NL + "\t\t\t}";
+  protected final String TEXT_259 = NL + "\t\t\tdcm_";
+  protected final String TEXT_260 = ".getPrecision(i));";
+  protected final String TEXT_261 = ".setPrecision(rsmd_";
+  protected final String TEXT_262 = ".getScale(i));" + NL + "                \tdcm_";
+  protected final String TEXT_263 = ".setNullable(rsmd_";
+  protected final String TEXT_264 = ".isNullable(i) == 0 ? false : true);" + NL + "                \tdcm_";
+  protected final String TEXT_265 = ".setKey(false);" + NL + "                \tdcm_";
+  protected final String TEXT_266 = ".setSourceType(DynamicMetadata.sourceTypes.database);" + NL + "                \tdcm_";
+  protected final String TEXT_267 = ".setColumnPosition(i);" + NL + "                \tdcg_";
+  protected final String TEXT_268 = ".metadatas.add(dcm_";
+  protected final String TEXT_269 = ");" + NL + "                }" + NL + "            }";
+  protected final String TEXT_270 = NL + "\t\t    String tmpContent_";
+  protected final String TEXT_271 = " = null;" + NL + "\t\t    ";
+  protected final String TEXT_272 = NL + "\t\t    \tint column_index_";
+  protected final String TEXT_273 = " =1;" + NL + "\t\t    ";
+  protected final String TEXT_274 = NL + "\t\t    \tlog.debug(\"";
+  protected final String TEXT_275 = " - Retrieving records from the database.\");" + NL + "\t\t    ";
+  protected final String TEXT_276 = NL + "\t\t    while (rs_";
+  protected final String TEXT_277 = ".next()) {" + NL + "\t\t        nb_line_";
+  protected final String TEXT_278 = "++;" + NL + "\t\t        ";
+  protected final String TEXT_279 = NL + "\t\t\t\t\t\t\t\t\tcolumn_index_";
+  protected final String TEXT_280 = " + dcg_";
+  protected final String TEXT_281 = ".getColumnCount();" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_282 = ";" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_283 = NL + "\t\t\t\t\t\t\t";
+  protected final String TEXT_284 = NL + "\t\t\t\t\t\t\tif(colQtyInRs_";
+  protected final String TEXT_285 = " < ";
+  protected final String TEXT_286 = ") {" + NL + "\t\t\t\t\t\t\t\t";
+  protected final String TEXT_287 = ";" + NL + "\t\t\t\t\t\t\t} else {";
+  protected final String TEXT_288 = NL + "\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_289 = NL + "\t\t\t\t\t\t\t\t\t\t";
+  protected final String TEXT_290 = NL + "\t\t                            ";
+  protected final String TEXT_291 = " = (List)rs_";
+  protected final String TEXT_292 = ".getObject(";
+  protected final String TEXT_293 = NL + "\t                         \t\t";
+  protected final String TEXT_294 = NL + "                                    oracle.sql.STRUCT jGeomStruct = (oracle.sql.STRUCT) rs_";
+  protected final String TEXT_295 = ");" + NL + "                                    if (jGeomStruct != null) {" + NL + "                                    oracle.spatial.geometry.JGeometry jGeom = oracle.spatial.geometry.JGeometry.load(jGeomStruct);" + NL + "                                    oracle.spatial.util.WKT wkt = new oracle.spatial.util.WKT();" + NL + "                                    String wktValue = new String(wkt.fromJGeometry(jGeom));" + NL;
+  protected final String TEXT_296 = NL + "                                    ";
+  protected final String TEXT_297 = " = new Geometry(wktValue);" + NL + "                                    } else {";
+  protected final String TEXT_298 = NL + "                                      ";
+  protected final String TEXT_299 = " = null;" + NL + "                                    }";
+  protected final String TEXT_300 = NL + "                                        if (";
+  protected final String TEXT_301 = " != null) {";
+  protected final String TEXT_302 = NL + "                                        ";
+  protected final String TEXT_303 = ".setEPSG(";
+  protected final String TEXT_304 = ");" + NL + "                                        }";
+  protected final String TEXT_305 = NL + "                                  ";
+  protected final String TEXT_306 = "=dcg_";
+  protected final String TEXT_307 = NL + "\t\t\t\t\t\t\t\t\t\tList<String> list_";
+  protected final String TEXT_308 = " = new java.util.ArrayList<String>();" + NL + "\t\t\t\t\t    \t\t\t\tfor(int i_";
+  protected final String TEXT_309 = "; i_";
+  protected final String TEXT_310 = "  <= rsmd_";
+  protected final String TEXT_311 = ".getColumnCount(); i_";
+  protected final String TEXT_312 = " ++){" + NL + "\t\t\t\t\t    \t\t\t\t\t";
+  protected final String TEXT_313 = NL + "\t\t\t\t\t\t \t\t\t\t\tif (\"NTEXT\".equals(rsmd_";
+  protected final String TEXT_314 = ".getColumnTypeName(i_";
+  protected final String TEXT_315 = " ).toUpperCase())) {" + NL + "\t\t\t\t\t\t\t\t\t\t\t\tnet.sourceforge.jtds.jdbc.ClobImpl clob_";
+  protected final String TEXT_316 = ".getClob(i_";
+  protected final String TEXT_317 = ");" + NL + "\t\t\t\t\t\t\t\t\t\t\t\tif(clob_";
+  protected final String TEXT_318 = " !=null){" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t\tnet.sourceforge.jtds.jdbc.TalendNTextImpl tNTextImpl_";
+  protected final String TEXT_319 = ");" + NL + "\t\t\t\t\t\t\t  \t\t\t\t\t\tlist_";
+  protected final String TEXT_320 = ".add(tNTextImpl_";
+  protected final String TEXT_321 = ".getValue());" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t}else{" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t\tlist_";
+  protected final String TEXT_322 = ".add(null);" + NL + "\t\t\t\t\t\t\t\t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t";
+  protected final String TEXT_323 = " " + NL + "\t\t\t\t\t\t   \t\t\t\t\tif(\"NTEXT\".equals(rsmd_";
+  protected final String TEXT_324 = " ).toUpperCase())) {" + NL + "\t\t\t\t\t\t   \t\t\t\t\t\tlist_";
+  protected final String TEXT_325 = ".add(rs_";
+  protected final String TEXT_326 = ".getString(i_";
+  protected final String TEXT_327 = "));" + NL + "\t\t\t\t\t\t   \t\t\t\t\t}" + NL + "\t\t\t\t\t\t   \t\t\t\t\t";
+  protected final String TEXT_328 = NL + "   \t \t\t\t\t    \t\t\t\t}" + NL + "                                 \t\t routines.system.DynamicUtils.readColumnsFromDatabase_Mssql(";
+  protected final String TEXT_329 = ", fixedColumnCount_";
+  protected final String TEXT_330 = ",list_";
+  protected final String TEXT_331 = ",";
+  protected final String TEXT_332 = NL + "\t\t\t\t\t\t\t\t\t\troutines.system.DynamicUtils.readColumnsFromDatabase_Access(";
+  protected final String TEXT_333 = NL + "                                \t\t routines.system.DynamicUtils.readColumnsFromDatabase(";
+  protected final String TEXT_334 = NL + "                                  Object geom = rs_";
+  protected final String TEXT_335 = ");" + NL + "                                  if (geom != null) {" + NL + "                                  \torg.postgis.Geometry o =" + NL + "                                      org.postgis.PGgeometry.geomFromString(geom.toString());" + NL + "                                \tStringBuffer sb = new StringBuffer();" + NL + "                                \to.outerWKT(sb, false);" + NL + "                                \t";
+  protected final String TEXT_336 = " = new Geometry(sb.toString());" + NL + "                                  } else {" + NL + "                                  \t";
+  protected final String TEXT_337 = " = null;" + NL + "                                  }";
+  protected final String TEXT_338 = NL + "\t\t                          ";
+  protected final String TEXT_339 = NL + "\t\t                    }";
+  protected final String TEXT_340 = NL + "\t\t\t\t\t";
+  protected final String TEXT_341 = " - Retrieving the record \" + nb_line_";
+  protected final String TEXT_342 = " + \".\");" + NL + "\t\t\t\t\t";
+  protected final String TEXT_343 = ";" + NL + "\t\t                            ";
+  protected final String TEXT_344 = NL + NL + NL + NL;
+  protected final String TEXT_345 = NL;
 
   public String generate(Object argument)
   {
@@ -722,6 +719,16 @@ public class TMSSqlInputBeginJava
     
 		}
 
+		public void query(INode node, String dbQueryVariableName){
+			beforeComponentProcess(node);
+			//for input
+			logInfo(node,"debug",cid+" - Executing the query: '\" + "+dbQueryVariableName +" + \"'.");
+		}
+
+		/**
+		* @deprecated please use another method instead: query(INode node, String dbQueryVariableName) because execution of the query expression can be not idempotent
+		*/
+		@Deprecated
 		public void query(INode node){
 			beforeComponentProcess(node);
 			//for input
@@ -1578,51 +1585,45 @@ public class TMSSqlInputBeginJava
     stringBuffer.append(TEXT_60);
     stringBuffer.append(dbInputBeginUtil.getQueryString(node));
     stringBuffer.append(TEXT_210);
-    if(isLog4jEnabled){
+     log4jCodeGenerateUtil.query(node, "dbquery_" + cid); 
     stringBuffer.append(TEXT_211);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_212);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_213);
-    }
-    stringBuffer.append(TEXT_214);
      
             if(isAmazonAurora){
             // why 3: ==> "_in".length()
             
-    stringBuffer.append(TEXT_215);
+    stringBuffer.append(TEXT_212);
     stringBuffer.append( cid.substring(0,cid.length() - 3) );
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_213);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_71);
     
             }else{
             
-    stringBuffer.append(TEXT_215);
+    stringBuffer.append(TEXT_212);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_216);
+    stringBuffer.append(TEXT_213);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_71);
     
             }
             
+    stringBuffer.append(TEXT_214);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_215);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_216);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_217);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_218);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_219);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_220);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_221);
+    stringBuffer.append(TEXT_218);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_90);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_222);
+    stringBuffer.append(TEXT_219);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_223);
+    stringBuffer.append(TEXT_220);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_224);
+    stringBuffer.append(TEXT_221);
     
 		    List< ? extends IConnection> conns = node.getOutgoingSortedConnections();
 		    List<IMetadataColumn> columnList = metadata.getListColumns();
@@ -1636,15 +1637,15 @@ public class TMSSqlInputBeginJava
 		    		}
 		    	}
 		    
+    stringBuffer.append(TEXT_222);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_223);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_224);
+    stringBuffer.append(dbms );
     stringBuffer.append(TEXT_225);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_226);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_227);
-    stringBuffer.append(dbms );
-    stringBuffer.append(TEXT_228);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_229);
     
 
 		    for(int i=0; i< columnList.size(); i++) {
@@ -1657,25 +1658,31 @@ public class TMSSqlInputBeginJava
 		                columName = column.getLabel();
 		            }
 	            
-    stringBuffer.append(TEXT_230);
+    stringBuffer.append(TEXT_227);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_231);
+    stringBuffer.append(TEXT_228);
     stringBuffer.append(columName.toUpperCase());
-    stringBuffer.append(TEXT_232);
+    stringBuffer.append(TEXT_229);
     
 		    	}
 			}
 		    
-    stringBuffer.append(TEXT_233);
+    stringBuffer.append(TEXT_230);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_60);
     stringBuffer.append(dynamic_index-1);
-    stringBuffer.append(TEXT_234);
+    stringBuffer.append(TEXT_231);
     stringBuffer.append(dynamic_index);
+    stringBuffer.append(TEXT_232);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_233);
+    stringBuffer.append(columnList.size()-dynamic_index);
+    stringBuffer.append(TEXT_234);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_235);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_236);
-    stringBuffer.append(columnList.size()-dynamic_index);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_237);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_238);
@@ -1687,13 +1694,13 @@ public class TMSSqlInputBeginJava
     stringBuffer.append(TEXT_241);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_242);
-    stringBuffer.append(cid);
+    stringBuffer.append(dbms );
     stringBuffer.append(TEXT_243);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_244);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_245);
-    stringBuffer.append(dbms );
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_246);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_247);
@@ -1703,47 +1710,47 @@ public class TMSSqlInputBeginJava
     stringBuffer.append(TEXT_249);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_250);
-    stringBuffer.append(cid);
+     if((DynamicDatePattern!=null) && (!"".equals(DynamicDatePattern)) && (!"\"\"".equals(DynamicDatePattern))) {
     stringBuffer.append(TEXT_251);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_252);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_253);
-     if((DynamicDatePattern!=null) && (!"".equals(DynamicDatePattern)) && (!"\"\"".equals(DynamicDatePattern))) {
-    stringBuffer.append(TEXT_254);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_255);
     stringBuffer.append(DynamicDatePattern);
     stringBuffer.append(TEXT_71);
      } 
     
 		if (("oracle_id".equalsIgnoreCase(dbms))) {
 
+    stringBuffer.append(TEXT_253);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_254);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_255);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_256);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_257);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_256);
+    stringBuffer.append(cid);
     stringBuffer.append(TEXT_258);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_259);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_260);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_259);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_261);
     
 		} else {
 
-    stringBuffer.append(TEXT_262);
-    stringBuffer.append(cid);
     stringBuffer.append(TEXT_259);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_263);
+    stringBuffer.append(TEXT_256);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_260);
     
 		}
 
-    stringBuffer.append(TEXT_254);
+    stringBuffer.append(TEXT_251);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_261);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_262);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_263);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_264);
     stringBuffer.append(cid);
@@ -1756,34 +1763,28 @@ public class TMSSqlInputBeginJava
     stringBuffer.append(TEXT_268);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_269);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_270);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_271);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_272);
     
 		    }
 		    
-    stringBuffer.append(TEXT_273);
+    stringBuffer.append(TEXT_270);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_274);
+    stringBuffer.append(TEXT_271);
     if(isDynamic){
-    stringBuffer.append(TEXT_275);
+    stringBuffer.append(TEXT_272);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_276);
+    stringBuffer.append(TEXT_273);
     }
     stringBuffer.append(TEXT_208);
     if(isLog4jEnabled){
+    stringBuffer.append(TEXT_274);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_275);
+    }
+    stringBuffer.append(TEXT_276);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_277);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_278);
-    }
-    stringBuffer.append(TEXT_279);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_280);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_281);
     
 		        if(conns != null && conns.size() > 0) {
 		            IConnection conn = conns.get(0);
@@ -1813,69 +1814,69 @@ public class TMSSqlInputBeginJava
 							if(isDynamic){
 								if(!("Dynamic").equals(typeToGenerate) && dynamic_index < currentColNo) {
 								
-    stringBuffer.append(TEXT_282);
+    stringBuffer.append(TEXT_279);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_60);
     stringBuffer.append(currentColNo-1);
-    stringBuffer.append(TEXT_283);
+    stringBuffer.append(TEXT_280);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_284);
+    stringBuffer.append(TEXT_281);
     }else{
-    stringBuffer.append(TEXT_282);
+    stringBuffer.append(TEXT_279);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_60);
     stringBuffer.append(currentColNo);
-    stringBuffer.append(TEXT_285);
+    stringBuffer.append(TEXT_282);
     }
-    stringBuffer.append(TEXT_286);
+    stringBuffer.append(TEXT_283);
     
 							}
 							
-    stringBuffer.append(TEXT_287);
+    stringBuffer.append(TEXT_284);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_288);
+    stringBuffer.append(TEXT_285);
     if(isDynamic){
     stringBuffer.append(TEXT_92);
     stringBuffer.append(cid);
     }else{
     stringBuffer.append(currentColNo);
     }
-    stringBuffer.append(TEXT_289);
+    stringBuffer.append(TEXT_286);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_60);
     stringBuffer.append(defVal);
-    stringBuffer.append(TEXT_290);
+    stringBuffer.append(TEXT_287);
     
 								typeToGenerate = dbInputBeginUtil.mappingType(typeToGenerate);
 
 								if(("Char").equals(typeToGenerate) || ("Character").equals(typeToGenerate)) {
 
-    stringBuffer.append(TEXT_291);
+    stringBuffer.append(TEXT_288);
     dbInputBeginUtil.generateStringCharAndCharacterSet(firstConnName, column,currentColNo, trimMethod, typeToGenerate, whetherTrimAllCol, whetherTrimCol);
     
 								} else if(("Timestamp").equals(typeToGenerate)) {
 									if("vertica_id".equalsIgnoreCase(dbms) && "DATE".equalsIgnoreCase(column.getType())){
 
-    stringBuffer.append(TEXT_292);
+    stringBuffer.append(TEXT_289);
     dbInputBeginUtil.generateOthersResultSet(firstConnName, column,  currentColNo,  "Date");
     
 									}else{
 
-    stringBuffer.append(TEXT_292);
+    stringBuffer.append(TEXT_289);
     dbInputBeginUtil.generateTimestampResultSet(firstConnName, column, currentColNo);
     
 									}
 		                         } else if (("List").equals(typeToGenerate)) {
 
-    stringBuffer.append(TEXT_293);
+    stringBuffer.append(TEXT_290);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_294);
+    stringBuffer.append(TEXT_291);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_295);
+    stringBuffer.append(TEXT_292);
     if(isDynamic){
     stringBuffer.append(TEXT_92);
     stringBuffer.append(cid);
@@ -1886,72 +1887,72 @@ public class TMSSqlInputBeginJava
     
 		                        } else if(("String").equals(typeToGenerate)) {
 
-    stringBuffer.append(TEXT_296);
+    stringBuffer.append(TEXT_293);
     dbInputBeginUtil.generateStringResultSet(firstConnName, column, currentColNo,trimMethod);
     
 								} else if(("Double").equals(typeToGenerate)) {
 
-    stringBuffer.append(TEXT_296);
+    stringBuffer.append(TEXT_293);
     dbInputBeginUtil.generateDoubleResultSet(firstConnName, column, currentColNo);
     
 								} else if(("Boolean").equals(typeToGenerate)) {
 
-    stringBuffer.append(TEXT_296);
+    stringBuffer.append(TEXT_293);
     dbInputBeginUtil.generateBooleanResultSet(firstConnName, column, currentColNo);
     
 								} else if("Geometry".equals(typeToGenerate) && type.indexOf("ORACLE") >= 0) {
 
-    stringBuffer.append(TEXT_297);
+    stringBuffer.append(TEXT_294);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_295);
+    stringBuffer.append(TEXT_292);
     if(isDynamic){
     stringBuffer.append(TEXT_92);
     stringBuffer.append(cid);
     }else{
     stringBuffer.append(currentColNo);
     }
+    stringBuffer.append(TEXT_295);
+    stringBuffer.append(TEXT_296);
+    stringBuffer.append(firstConnName);
+    stringBuffer.append(TEXT_101);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_297);
     stringBuffer.append(TEXT_298);
+    stringBuffer.append(firstConnName);
+    stringBuffer.append(TEXT_101);
+    stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_299);
-    stringBuffer.append(firstConnName);
-    stringBuffer.append(TEXT_101);
-    stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_300);
-    stringBuffer.append(TEXT_301);
-    stringBuffer.append(firstConnName);
-    stringBuffer.append(TEXT_101);
-    stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_302);
     
                                     String sourceCRS = ElementParameterParser.getValue(node,"__CRS__");
                                     String forceCRS = ElementParameterParser.getValue(node,"__FORCE_CRS__");
                                     if (forceCRS.equals("true")) {
 
-    stringBuffer.append(TEXT_303);
+    stringBuffer.append(TEXT_300);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_301);
+    stringBuffer.append(TEXT_302);
+    stringBuffer.append(firstConnName);
+    stringBuffer.append(TEXT_101);
+    stringBuffer.append(column.getLabel());
+    stringBuffer.append(TEXT_303);
+    stringBuffer.append(sourceCRS);
     stringBuffer.append(TEXT_304);
+    
+                                    }
+								} else if(("Bytes").equals(typeToGenerate) && (columnType != null && (("LONG RAW").equals(columnType) || ("RAW").equals(columnType)))) {//oracle
+
+    stringBuffer.append(TEXT_288);
+    dbInputBeginUtil.generateBytesResultSet(firstConnName, column, currentColNo);
+    
+								} else if(("Dynamic").equals(typeToGenerate)) {
+
     stringBuffer.append(TEXT_305);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_306);
-    stringBuffer.append(sourceCRS);
-    stringBuffer.append(TEXT_307);
-    
-                                    }
-								} else if(("Bytes").equals(typeToGenerate) && (columnType != null && (("LONG RAW").equals(columnType) || ("RAW").equals(columnType)))) {//oracle
-
-    stringBuffer.append(TEXT_291);
-    dbInputBeginUtil.generateBytesResultSet(firstConnName, column, currentColNo);
-    
-								} else if(("Dynamic").equals(typeToGenerate)) {
-
-    stringBuffer.append(TEXT_308);
-    stringBuffer.append(firstConnName);
-    stringBuffer.append(TEXT_101);
-    stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_309);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_159);
      //for bug TDI-20886
@@ -1972,140 +1973,140 @@ public class TMSSqlInputBeginJava
 											driver = ElementParameterParser.getValue(node,"__DRIVER__");
 										}
 
-    stringBuffer.append(TEXT_310);
+    stringBuffer.append(TEXT_307);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_311);
+    stringBuffer.append(TEXT_308);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_60);
     stringBuffer.append(metadata.getListColumns().size());
-    stringBuffer.append(TEXT_312);
+    stringBuffer.append(TEXT_309);
     stringBuffer.append(cid );
+    stringBuffer.append(TEXT_310);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_311);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_312);
+     if("JTDS".equals(driver)) { 
     stringBuffer.append(TEXT_313);
     stringBuffer.append(cid);
     stringBuffer.append(TEXT_314);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_315);
-     if("JTDS".equals(driver)) { 
-    stringBuffer.append(TEXT_316);
+    stringBuffer.append(cid );
+    stringBuffer.append(TEXT_169);
     stringBuffer.append(cid);
+    stringBuffer.append(TEXT_316);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_317);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_318);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_169);
-    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_173);
+    stringBuffer.append(cid );
     stringBuffer.append(TEXT_319);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_320);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_321);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_173);
-    stringBuffer.append(cid );
     stringBuffer.append(TEXT_322);
-    stringBuffer.append(cid );
+     } else {
     stringBuffer.append(TEXT_323);
+    stringBuffer.append(cid);
+    stringBuffer.append(TEXT_314);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_324);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_325);
-     } else {
-    stringBuffer.append(TEXT_326);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_317);
+    stringBuffer.append(TEXT_326);
     stringBuffer.append(cid );
     stringBuffer.append(TEXT_327);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_328);
-    stringBuffer.append(cid);
-    stringBuffer.append(TEXT_329);
-    stringBuffer.append(cid );
-    stringBuffer.append(TEXT_330);
      } 
-    stringBuffer.append(TEXT_331);
+    stringBuffer.append(TEXT_328);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_166);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_332);
+    stringBuffer.append(TEXT_329);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_333);
+    stringBuffer.append(TEXT_330);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_334);
+    stringBuffer.append(TEXT_331);
     stringBuffer.append(trim);
     stringBuffer.append(TEXT_71);
     
 									}else if("access_id".equalsIgnoreCase(dbms)){
 
-    stringBuffer.append(TEXT_335);
+    stringBuffer.append(TEXT_332);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_166);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_332);
+    stringBuffer.append(TEXT_329);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_334);
+    stringBuffer.append(TEXT_331);
     stringBuffer.append(trim);
     stringBuffer.append(TEXT_71);
     
 									}else{
 
-    stringBuffer.append(TEXT_336);
+    stringBuffer.append(TEXT_333);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
     stringBuffer.append(TEXT_166);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_332);
+    stringBuffer.append(TEXT_329);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_334);
+    stringBuffer.append(TEXT_331);
     stringBuffer.append(trim);
     stringBuffer.append(TEXT_71);
     
 									}
 								} else if(typeToGenerate.equals("Geometry")) {
 
-    stringBuffer.append(TEXT_337);
+    stringBuffer.append(TEXT_334);
     stringBuffer.append(cid );
-    stringBuffer.append(TEXT_295);
+    stringBuffer.append(TEXT_292);
     if(isDynamic){
     stringBuffer.append(TEXT_92);
     stringBuffer.append(cid);
     }else{
     stringBuffer.append(currentColNo);
     }
-    stringBuffer.append(TEXT_338);
+    stringBuffer.append(TEXT_335);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_339);
+    stringBuffer.append(TEXT_336);
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_340);
+    stringBuffer.append(TEXT_337);
     
                  	            } else {
 
-    stringBuffer.append(TEXT_341);
+    stringBuffer.append(TEXT_338);
     dbInputBeginUtil.generateOthersResultSet( firstConnName, column,  currentColNo,  typeToGenerate);
     
 		                        }
 
-    stringBuffer.append(TEXT_342);
+    stringBuffer.append(TEXT_339);
     
 		                    currentColNo++;
 		                }
 		            }
 
-    stringBuffer.append(TEXT_343);
+    stringBuffer.append(TEXT_340);
     if(isLog4jEnabled){
     stringBuffer.append(TEXT_21);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_341);
     stringBuffer.append(cid);
-    stringBuffer.append(TEXT_345);
+    stringBuffer.append(TEXT_342);
     }
     
 		            if(conns.size() > 1) {
@@ -2114,7 +2115,7 @@ public class TMSSqlInputBeginJava
 		                    if((conn2.getName().compareTo(firstConnName) != 0) && (conn2.getLineStyle().hasConnectionCategory(IConnectionCategory.DATA))) {
 		                        for(IMetadataColumn column:columnList){
 		                            
-    stringBuffer.append(TEXT_293);
+    stringBuffer.append(TEXT_290);
     stringBuffer.append(conn2.getName());
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
@@ -2122,7 +2123,7 @@ public class TMSSqlInputBeginJava
     stringBuffer.append(firstConnName);
     stringBuffer.append(TEXT_101);
     stringBuffer.append(column.getLabel());
-    stringBuffer.append(TEXT_346);
+    stringBuffer.append(TEXT_343);
     
 		                        }
 		                    }
@@ -2132,8 +2133,8 @@ public class TMSSqlInputBeginJava
 		}
 	}
 
-    stringBuffer.append(TEXT_347);
-    stringBuffer.append(TEXT_348);
+    stringBuffer.append(TEXT_344);
+    stringBuffer.append(TEXT_345);
     return stringBuffer.toString();
   }
 }
