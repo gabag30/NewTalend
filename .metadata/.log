@@ -11829,3 +11829,439 @@ There may be some other errors caused by JVM compatibility. Make sure your JVM s
 !ENTRY org.talend.platform.logging 1 0 2020-11-25 14:43:03.263
 !MESSAGE 2020-11-25 14:43:03,263 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/M/PY/PY_MARCAS_NUEVO/a1_gen_marcas_0.1/target/classpath.jar; wipo_projects.a1_gen_marcas_0_1.A1_Gen_Marcas --context=Default --stat_port=3431 %*
 
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.349
+!MESSAGE 2020-11-25 16:47:27,349 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.631
+!MESSAGE 2020-11-25 16:47:27,630 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.892
+!MESSAGE 2020-11-25 16:47:27,892 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.894
+!MESSAGE 2020-11-25 16:47:27,893 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3A_VAL_UD_0.1: org.example.wipo_projects.job:G3a_Val_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3A_VAL_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.894
+!MESSAGE 2020-11-25 16:47:27,894 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1: org.example.wipo_projects.job:F_IPAS_ENV_CRE:0.1.0 with classifier  to /WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.894
+!MESSAGE 2020-11-25 16:47:27,894 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3B_MIG_UD_0.1: org.example.wipo_projects.job:G3b_Mig_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3B_MIG_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.895
+!MESSAGE 2020-11-25 16:47:27,895 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_GG_POA_0.1: org.example.wipo_projects.job:Gg_POA:0.1.0 with classifier  to /WIPO_PROJECTS_GG_POA_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:27.898
+!MESSAGE 2020-11-25 16:47:27,897 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G2B_MIG_TM_0.1: org.example.wipo_projects.job:G2b_Mig_TM:0.1.0 with classifier  to /WIPO_PROJECTS_G2B_MIG_TM_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.121
+!MESSAGE 2020-11-25 16:47:28,121 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_A1_GEN_MARCAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.122
+!MESSAGE 2020-11-25 16:47:28,121 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_A1_GEN_MARCAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.124
+!MESSAGE 2020-11-25 16:47:28,124 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_A1_GEN_MARCAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.124
+!MESSAGE 2020-11-25 16:47:28,124 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_A1_GEN_MARCAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.214
+!MESSAGE 2020-11-25 16:47:28,214 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.484
+!MESSAGE 2020-11-25 16:47:28,484 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.485
+!MESSAGE 2020-11-25 16:47:28,485 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3A_VAL_UD_0.1: org.example.wipo_projects.job:G3a_Val_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3A_VAL_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.485
+!MESSAGE 2020-11-25 16:47:28,485 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1: org.example.wipo_projects.job:F_IPAS_ENV_CRE:0.1.0 with classifier  to /WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.486
+!MESSAGE 2020-11-25 16:47:28,486 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3B_MIG_UD_0.1: org.example.wipo_projects.job:G3b_Mig_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3B_MIG_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.486
+!MESSAGE 2020-11-25 16:47:28,486 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_GG_POA_0.1: org.example.wipo_projects.job:Gg_POA:0.1.0 with classifier  to /WIPO_PROJECTS_GG_POA_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.488
+!MESSAGE 2020-11-25 16:47:28,487 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G2B_MIG_TM_0.1: org.example.wipo_projects.job:G2b_Mig_TM:0.1.0 with classifier  to /WIPO_PROJECTS_G2B_MIG_TM_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 16:47:28.637
+!MESSAGE 2020-11-25 16:47:28,637 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/M/PY/PY_MARCAS_NUEVO/a1_gen_marcas_0.1/target/classpath.jar; wipo_projects.a1_gen_marcas_0_1.A1_Gen_Marcas --context=Default --stat_port=3482 %*
+
+
+!ENTRY org.eclipse.ui 4 0 2020-11-25 18:43:34.986
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+	at org.apache.oro.text.regex.Perl5Matcher.__repeat(Unknown Source)
+	at org.apache.oro.text.regex.Perl5Matcher.__match(Unknown Source)
+	at org.apache.oro.text.regex.Perl5Matcher.__tryExpression(Unknown Source)
+	at org.apache.oro.text.regex.Perl5Matcher.matches(Unknown Source)
+	at org.apache.oro.text.regex.Perl5Matcher.matches(Unknown Source)
+	at org.talend.designer.core.ui.editor.process.Process.checkValidConnectionName(Process.java:3301)
+	at org.talend.designer.core.ui.editor.process.Process.loadConnections(Process.java:2912)
+	at org.talend.designer.core.ui.editor.process.Process.loadConnections(Process.java:2809)
+	at org.talend.designer.core.ui.editor.process.Process.loadXmlFile(Process.java:2163)
+	at org.talend.core.ui.editor.JobEditorInput.loadProcess(JobEditorInput.java:119)
+	at org.talend.core.ui.editor.JobEditorInput.checkInit(JobEditorInput.java:76)
+	at org.talend.core.ui.editor.JobEditorInput.<init>(JobEditorInput.java:68)
+	at org.talend.designer.core.ui.editor.ProcessEditorInput.<init>(ProcessEditorInput.java:39)
+	at org.talend.designer.core.ui.editor.ProcessEditorInput.<init>(ProcessEditorInput.java:30)
+	at org.talend.designer.core.ui.editor.CommonJobEditorHandler.createJobEditorInput(CommonJobEditorHandler.java:48)
+	at org.talend.designer.core.ui.editor.nodes.NodePart$2.run(NodePart.java:669)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:99)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3683)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2500)
+	at org.talend.designer.core.ui.editor.nodes.NodePart.performRequest(NodePart.java:677)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:259)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:43:38.470
+!MESSAGE 2020-11-25 18:43:38,470 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:43:38.565
+!MESSAGE 2020-11-25 18:43:38,564 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G3B_MIG_UD_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:43:38.565
+!MESSAGE 2020-11-25 18:43:38,565 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G3B_MIG_UD_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:43:38.566
+!MESSAGE 2020-11-25 18:43:38,566 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G3B_MIG_UD_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:43:38.567
+!MESSAGE 2020-11-25 18:43:38,567 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G3B_MIG_UD_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.303
+!MESSAGE 2020-11-25 18:46:10,303 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.347
+!MESSAGE 2020-11-25 18:46:10,347 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.348
+!MESSAGE 2020-11-25 18:46:10,348 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3A_VAL_UD_0.1: org.example.wipo_projects.job:G3a_Val_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3A_VAL_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.349
+!MESSAGE 2020-11-25 18:46:10,348 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1: org.example.wipo_projects.job:F_IPAS_ENV_CRE:0.1.0 with classifier  to /WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.349
+!MESSAGE 2020-11-25 18:46:10,349 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3B_MIG_UD_0.1: org.example.wipo_projects.job:G3b_Mig_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3B_MIG_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.349
+!MESSAGE 2020-11-25 18:46:10,349 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_GG_POA_0.1: org.example.wipo_projects.job:Gg_POA:0.1.0 with classifier  to /WIPO_PROJECTS_GG_POA_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.351
+!MESSAGE 2020-11-25 18:46:10,351 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G4_1_FIN_ENV_0.1: org.example.wipo_projects.job:G4_1_Fin_env:0.1.0 with classifier  to /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.351
+!MESSAGE 2020-11-25 18:46:10,351 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G2B_MIG_TM_0.1: org.example.wipo_projects.job:G2b_Mig_TM:0.1.0 with classifier  to /WIPO_PROJECTS_G2B_MIG_TM_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.512
+!MESSAGE 2020-11-25 18:46:10,512 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.513
+!MESSAGE 2020-11-25 18:46:10,512 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.514
+!MESSAGE 2020-11-25 18:46:10,513 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:10.514
+!MESSAGE 2020-11-25 18:46:10,514 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.164
+!MESSAGE 2020-11-25 18:46:22,163 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.167
+!MESSAGE 2020-11-25 18:46:22,167 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.213
+!MESSAGE 2020-11-25 18:46:22,213 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.306
+!MESSAGE 2020-11-25 18:46:22,306 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.306
+!MESSAGE 2020-11-25 18:46:22,306 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.307
+!MESSAGE 2020-11-25 18:46:22,307 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.308
+!MESSAGE 2020-11-25 18:46:22,308 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.378
+!MESSAGE 2020-11-25 18:46:22,377 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.639
+!MESSAGE 2020-11-25 18:46:22,639 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:46:22.877
+!MESSAGE 2020-11-25 18:46:22,876 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar; wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env --context=Default --stat_port=3403 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:05.959
+!MESSAGE 2020-11-25 18:47:05,959 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:05.964
+!MESSAGE 2020-11-25 18:47:05,963 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.009
+!MESSAGE 2020-11-25 18:47:06,009 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.096
+!MESSAGE 2020-11-25 18:47:06,096 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.097
+!MESSAGE 2020-11-25 18:47:06,097 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.098
+!MESSAGE 2020-11-25 18:47:06,098 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.098
+!MESSAGE 2020-11-25 18:47:06,098 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.162
+!MESSAGE 2020-11-25 18:47:06,161 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.395
+!MESSAGE 2020-11-25 18:47:06,395 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:47:06.537
+!MESSAGE 2020-11-25 18:47:06,537 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar; wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env --context=Default --stat_port=3765 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.277
+!MESSAGE 2020-11-25 18:48:31,277 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.282
+!MESSAGE 2020-11-25 18:48:31,282 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.422
+!MESSAGE 2020-11-25 18:48:31,421 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.519
+!MESSAGE 2020-11-25 18:48:31,518 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.519
+!MESSAGE 2020-11-25 18:48:31,519 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.521
+!MESSAGE 2020-11-25 18:48:31,520 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.521
+!MESSAGE 2020-11-25 18:48:31,521 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.606
+!MESSAGE 2020-11-25 18:48:31,605 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:31.860
+!MESSAGE 2020-11-25 18:48:31,860 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:48:32.003
+!MESSAGE 2020-11-25 18:48:32,002 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar; wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env --context=Default --stat_port=3793 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.655
+!MESSAGE 2020-11-25 18:53:24,655 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.660
+!MESSAGE 2020-11-25 18:53:24,660 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.755
+!MESSAGE 2020-11-25 18:53:24,755 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.801
+!MESSAGE 2020-11-25 18:53:24,801 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.802
+!MESSAGE 2020-11-25 18:53:24,802 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3A_VAL_UD_0.1: org.example.wipo_projects.job:G3a_Val_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3A_VAL_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.803
+!MESSAGE 2020-11-25 18:53:24,802 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1: org.example.wipo_projects.job:F_IPAS_ENV_CRE:0.1.0 with classifier  to /WIPO_PROJECTS_F_IPAS_ENV_CRE_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.803
+!MESSAGE 2020-11-25 18:53:24,803 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G3B_MIG_UD_0.1: org.example.wipo_projects.job:G3b_Mig_UD:0.1.0 with classifier  to /WIPO_PROJECTS_G3B_MIG_UD_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.803
+!MESSAGE 2020-11-25 18:53:24,803 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_GG_POA_0.1: org.example.wipo_projects.job:Gg_POA:0.1.0 with classifier  to /WIPO_PROJECTS_GG_POA_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.804
+!MESSAGE 2020-11-25 18:53:24,804 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G4_1_FIN_ENV_0.1: org.example.wipo_projects.job:G4_1_Fin_env:0.1.0 with classifier  to /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.805
+!MESSAGE 2020-11-25 18:53:24,805 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_G2B_MIG_TM_0.1: org.example.wipo_projects.job:G2b_Mig_TM:0.1.0 with classifier  to /WIPO_PROJECTS_G2B_MIG_TM_0.1/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.929
+!MESSAGE 2020-11-25 18:53:24,929 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.930
+!MESSAGE 2020-11-25 18:53:24,930 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.931
+!MESSAGE 2020-11-25 18:53:24,931 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.931
+!MESSAGE 2020-11-25 18:53:24,931 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:24.988
+!MESSAGE 2020-11-25 18:53:24,988 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:25.192
+!MESSAGE 2020-11-25 18:53:25,191 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:53:25.331
+!MESSAGE 2020-11-25 18:53:25,331 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar; wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env --context=Default --stat_port=3652 %*
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.794
+!MESSAGE 2020-11-25 18:54:54,794 INFO  org.talend.designer.runprocess.maven.MavenJavaProcessor  - build, threadParam: -T 1C
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.800
+!MESSAGE 2020-11-25 18:54:54,799 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.850
+!MESSAGE 2020-11-25 18:54:54,849 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.980
+!MESSAGE 2020-11-25 18:54:54,980 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.981
+!MESSAGE 2020-11-25 18:54:54,981 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.982
+!MESSAGE 2020-11-25 18:54:54,982 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:54.983
+!MESSAGE 2020-11-25 18:54:54,982 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_G4_1_FIN_ENV_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:55.046
+!MESSAGE 2020-11-25 18:54:55,046 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 0 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:55.282
+!MESSAGE 2020-11-25 18:54:55,282 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2020-11-25 18:54:55.432
+!MESSAGE 2020-11-25 18:54:55,432 INFO  org.talend.designer.core.runprocess.Processor  - Command line: C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe -Xms4096M -Xmx10240M -Dfile.encoding=UTF-8 -Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository -Dencryption.keys.file=/G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/studio.keys -cp G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar; wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env --context=Default --stat_port=3783 %*
+

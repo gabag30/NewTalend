@@ -251,6 +251,7 @@
             <includes>
                 <include>org.example.wipo_projects.code:routines:jar:7.4.1</include>
                 <include>org.talend.libraries:ini4j-0.5.1:jar:6.0.0</include>
+                <include>org.talend.libraries:mssql-jdbc:jar:6.0.0</include>
             </includes>
             <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
             <useProjectArtifact>false</useProjectArtifact>
@@ -260,7 +261,6 @@
             <includes>
                 <include>org.apache.logging.log4j:log4j-slf4j-impl:jar:2.12.1</include>
                 <include>org.talend.components.lib:talend_DB_mssqlUtil:jar:1.4</include>
-                <include>net.sourceforge.jtds:jtds:jar:1.3.1-patch-20190523</include>
                 <include>org.apache.logging.log4j:log4j-api:jar:2.12.1</include>
                 <include>org.apache.logging.log4j:log4j-core:jar:2.12.1</include>
             </includes>
