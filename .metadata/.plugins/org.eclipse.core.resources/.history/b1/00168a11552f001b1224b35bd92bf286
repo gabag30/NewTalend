@@ -7,9 +7,11 @@
     <additionalProperties xmi:id="_eucu8jjZEei5QtkpgTr11Q" key="created_date" value="2019-05-15T15:58:33.896+0200"/>
     <additionalProperties xmi:id="_eucu8zjZEei5QtkpgTr11Q" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
     <additionalProperties xmi:id="_eucu9DjZEei5QtkpgTr11Q" key="modified_product_version" value="7.4.1.20201110_1014-M4"/>
-    <additionalProperties xmi:id="_eucu9TjZEei5QtkpgTr11Q" key="modified_date" value="2020-11-25T20:33:21.708+0100"/>
+    <additionalProperties xmi:id="_eucu9TjZEei5QtkpgTr11Q" key="modified_date" value="2020-11-25T14:42:33.083+0100"/>
   </TalendProperties:Property>
-  <TalendProperties:ItemState xmi:id="_7Uh_QAMVEeuOjv5n7xl_Lg" path="OMPI/MigCommon"/>
+  <TalendProperties:ItemState xmi:id="_7Uh_QAMVEeuOjv5n7xl_Lg" path="OMPI/MigCommon" locked="true" lockDate="2020-11-25T14:33:41.778+0100">
+    <locker href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+  </TalendProperties:ItemState>
   <TalendProperties:ProcessItem xmi:id="_gU6HYhVKEeelTsrV3aLpjg" property="_gU6HYBVKEeelTsrV3aLpjg" state="_7Uh_QAMVEeuOjv5n7xl_Lg">
     <process href="G2b_Mig_TM_0.1.item#/"/>
   </TalendProperties:ProcessItem>
