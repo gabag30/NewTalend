@@ -10,7 +10,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:TmufdglLIXamqxn/BeXVM3BYc80wSd4s5Bcr3D1l" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:xMLE86fKXEROosP1y9VxzxaRJEPHXQJwRNFwH7t2" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4/TDb3siRvxod4TD3m38lCzTVssMaXAjLaKmHk+f" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+W+MmqJg0p6c+c82pF1274lg4txcnGCgOoArjo2l" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -115,7 +115,7 @@
     <routinesParameter id="_2oQnQKLiEeSuYal6KjY4uA" name="IPAS"/>
     <routinesParameter id="_8FqG8D7KEeeQurZirz5-Ng" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="160">
+  <node componentName="tStatCatcher" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStatCatcher_1" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tStatCatcher_1">
@@ -135,7 +135,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -185,7 +185,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PtADxBxcodHYex1UDmbaYIG9VBOkMYUclLDMWYBE" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BoxSnRl7Wqn+gnQDzCAB4z8MDiyGvRYGP7ab1Mz8" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -251,7 +251,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ciRAzOu3A5G39e+7Vh5nWCbL0VYILMn1+IJVRiXV0w8ZHKE9/8c="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:O0aCAhnFPhGntMdjSBxEbutcdShECp5OLi7jtx+K9MhEcIRZneM="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -278,7 +278,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RatgC4p0k7Cg4YIMUph7v0evxhIHpANZcjIODEEmJN6QjnI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iTxoUvPt8G+JzFkwtEOfUnIrv0ZOUf9uV2gc548XWYHoRqM="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
@@ -293,7 +293,7 @@
     <elementParameter field="TEXT" name="LABEL" value="IPAS_SQL_SERVER"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -306,7 +306,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Z31onsL6f4aUZr+2mwJi4tRiVVOG858YB+b4JKXv1kF8Zzguxuk="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yC/yjq4MjtaXJA/Eo2Qd0bIQk38ZNA0xIp9Oi5iCnWJfi16vJ68="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_USERDOC&quot;"/>
@@ -516,7 +516,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -562,12 +562,12 @@
       <outputTables sizeState="INTERMEDIATE" name="set_poa">
         <mapperTableEntries name="ROW_VERSION" expression="new BigDecimal(1)" type="id_BigDecimal"/>
         <mapperTableEntries name="DOC_ORI" expression="row1.DOC_ORI" type="id_String"/>
-        <mapperTableEntries name="DOC_LOG" expression="'E'" type="id_String"/>
+        <mapperTableEntries name="DOC_LOG" expression="&quot;E&quot;" type="id_String"/>
         <mapperTableEntries name="DOC_SER" expression="row1.DOC_SERIES " type="id_BigDecimal"/>
         <mapperTableEntries name="DOC_NBR" expression="row1.DOC_NBR" type="id_BigDecimal"/>
         <mapperTableEntries name="POA_REG_NBR" expression="row1.USERDOC_NBR " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="POA_DATE" expression="row1.RECEPTION_DATE " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="SCOPE" expression="row1.NOTES.substring(0, 253) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SCOPE" expression="row1.NOTES!=null &amp;&amp;&#xD;&#xA;&#xD;&#xA;row1.NOTES.length()>=253?&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;row1.NOTES.substring(0, 252) :&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;row1.NOTES " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="USERDOC_SEQ" type="id_String"/>
@@ -610,7 +610,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA" show="false"/>
@@ -623,7 +623,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5imQuDelBQuoIt6OiXcnhJOmill5/ULrnhvHRBX1yLb36QA="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5NuffdZlgq9KqDA/mhbWFksOuq7CzSnWGQV/1s72Kq+FDV4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -753,7 +753,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -820,7 +820,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -833,7 +833,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bm8BsM3lBS3K1iV82FRvz6pgUZDY/jFMt1BkQp+jcwHa5p8="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+8sm/pOIKBlpb5gdB/yRj72Mg4+INpUlEh6hIpRwmkPKraU="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_USERDOC_NEW_OWNERS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_USERDOC_NEW_OWNERS&quot;"/>
@@ -903,7 +903,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -941,7 +941,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="poa_grantors">
         <mapperTableEntries name="ROW_VERSION" expression="row4.ROW_VERSION" type="id_BigDecimal"/>
@@ -975,7 +975,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
@@ -988,7 +988,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LeKjLnEsGDGY6ungjDdHPeLspUhF84OTFoo5vtgwHdQf/qc="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1hUZc9YdLfomoG0N40kEA+wYgdjzIN2L4RDYqV2l/0pb1BY="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_POA" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA&quot;"/>
@@ -1053,7 +1053,7 @@
       </column>
     </metadata>
   </node>
-  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA" show="false"/>
@@ -1066,7 +1066,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uhZ1b5tshNYW1NWg6xT4kXr+cb4+BX5CEAYa7kkreZZydZE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2bOCsH+NUdkC089Bzxsp47boR78s7ibaIpYAP3kI+DONRlk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA_GRANTORS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CLEAR"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1185,7 +1185,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_4" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1260,7 +1260,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rzsO5/j7dSAz+iiwC97cQIyhxbS914WRyLOB9V0tYOVCmtE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HKyVT5IEae1cAi535X2rcXr8IXNuVIg9g/7KuLAfNs7k86c="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_USERDOC_REPRS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_USERDOC_REPRS&quot;"/>
@@ -1366,7 +1366,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="poa_grantess">
         <mapperTableEntries name="ROW_VERSION" expression="row8.ROW_VERSION" type="id_BigDecimal"/>
@@ -1413,7 +1413,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lxKH63K/hwY3qJSCOk3f0B6y9hSwBq8cFfm2h/SsFbs4aKE="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pzQN0+32DCblQNZKxrsDs/Gtou+jBgqweawVz34TPl5s8oI="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_POA" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA&quot;"/>
@@ -1491,7 +1491,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:waFKSukbRkUccR5r04Y6/2V8nug9XMwu7Yj2qVSfieeVix4="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rV6SW8Moq1fR59oF2COyEHw0ca4jDRVeS9EAPLoQ0GflsOM="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA_GRANTEES&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
@@ -1701,7 +1701,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:M+jqGSeaETWv/f1907psEaLRiIH+riYMVHbMfXzvRY+pEsa2x4k="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:i1lVbn9oDG+hdcs86RshYupblQwmYdOXoZOkGSCumZ6ys94n25M="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC_FILES" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_USERDOC_FILES&quot;"/>
@@ -1810,7 +1810,7 @@
         <mapperTableEntries name="FILE_SER" expression="row11.FILE_SERIES " type="id_BigDecimal"/>
         <mapperTableEntries name="FILE_NBR" expression="row11.FILE_NBR" type="id_BigDecimal"/>
         <mapperTableEntries name="POA_DOC_ORI" expression="row13.DOC_ORI " type="id_String" nullable="true"/>
-        <mapperTableEntries name="POA_LOG_TYP" expression="row13.DOC_LOG " type="id_String" nullable="true"/>
+        <mapperTableEntries name="POA_LOG_TYP" expression="&quot;E&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="POA_DOC_SER" expression="row13.DOC_SER  " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="POA_DOC_NBR" expression="row13.DOC_NBR " type="id_BigDecimal" nullable="true"/>
       </outputTables>
@@ -1823,7 +1823,7 @@
         <mapperTableEntries name="FILE_SERIES" type="id_BigDecimal"/>
         <mapperTableEntries name="FILE_NBR" type="id_BigDecimal"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row12" minimized="true" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="row12" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="USERDOC_SEQ" expression="row11.USERDOC_SEQ  " type="id_String" operator="="/>
         <mapperTableEntries name="USERDOC_SERIES" expression="row11.USERDOC_SERIES " type="id_BigDecimal"/>
         <mapperTableEntries name="USERDOC_NBR" expression="row11.USERDOC_NBR" type="id_BigDecimal"/>
@@ -1865,10 +1865,10 @@
       <inputTables sizeState="INTERMEDIATE" name="row13" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
         <mapperTableEntries name="ROW_VERSION" type="id_BigDecimal"/>
         <mapperTableEntries name="DOC_ORI" expression="row12.DOC_ORI " type="id_String" operator="="/>
-        <mapperTableEntries name="DOC_LOG" expression="row12.DOC_LOG" type="id_String"/>
-        <mapperTableEntries name="DOC_SER" expression="row12.DOC_SER" type="id_BigDecimal"/>
+        <mapperTableEntries name="DOC_LOG" expression="&quot;E&quot;" type="id_String"/>
+        <mapperTableEntries name="DOC_SER" expression="row12.DOC_SERIES" type="id_BigDecimal"/>
         <mapperTableEntries name="DOC_NBR" expression="row12.DOC_NBR" type="id_BigDecimal"/>
-        <mapperTableEntries name="POA_REG_NBR" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="POA_REG_NBR" expression="" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="POA_DATE" type="id_Date" nullable="true"/>
         <mapperTableEntries name="SCOPE" type="id_String" nullable="true"/>
       </inputTables>
@@ -1887,7 +1887,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;dbo&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;PY_INTERMED&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;sa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HiScCHovRxknOr4AqnGlTssxsnnD6b4uo33q3SqsDDRFZyvtAHM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EhyAa/pda7nx8OPFJTQkf5TgHC1U9qSmgECVkhzou5t6knk4qZc="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Z8rKcPwJEeqFhtRqCTUfWA - VW_IMPORT_USERDOC" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;VW_IMPORT_USERDOC&quot;"/>
@@ -2110,7 +2110,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;ADMIN&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gzN5tYF/ZnLxD0dgSr92ysLtz/huiMhDN23s+TBCo8Rke4c="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6uoPtA1f7KDHNfVB2t0vYwxY/IRNOkLBP0MHDqOOwmiGC4g="/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_x_N6QPwFEeqFhtRqCTUfWA - IP_POA" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_POA&quot;"/>
@@ -2188,7 +2188,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MARCAS_PY&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;ADMIN&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JRxEIvY5jq9indd+WHAdTnLEM39mxj0bzuWhQcYYZBNwzoQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bmlScsZnZRXdfl4hHSc1Y6KgBln6cAIQwofsPf/479H6iuc="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;IP_MARK&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>

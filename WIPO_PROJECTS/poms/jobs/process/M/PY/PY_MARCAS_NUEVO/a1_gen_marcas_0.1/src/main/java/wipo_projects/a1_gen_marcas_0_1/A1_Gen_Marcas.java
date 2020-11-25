@@ -584,6 +584,48 @@ public class A1_Gen_Marcas implements TalendJob {
 		tRunJob_1_onSubJobError(exception, errorComponent, globalMap);
 	}
 
+	public void tRunJob_6_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		tStatCatcher_1.addMessage("failure", errorComponent,
+				end_Hash.get(errorComponent) - start_Hash.get(errorComponent));
+		tStatCatcher_1Process(globalMap);
+
+		status = "failure";
+
+		tRunJob_6_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tRunJob_4_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		tStatCatcher_1.addMessage("failure", errorComponent,
+				end_Hash.get(errorComponent) - start_Hash.get(errorComponent));
+		tStatCatcher_1Process(globalMap);
+
+		status = "failure";
+
+		tRunJob_6_onSubJobError(exception, errorComponent, globalMap);
+	}
+
+	public void tRunJob_3_error(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		end_Hash.put(errorComponent, System.currentTimeMillis());
+
+		tStatCatcher_1.addMessage("failure", errorComponent,
+				end_Hash.get(errorComponent) - start_Hash.get(errorComponent));
+		tStatCatcher_1Process(globalMap);
+
+		status = "failure";
+
+		tRunJob_3_onSubJobError(exception, errorComponent, globalMap);
+	}
+
 	public void tRunJob_5_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
@@ -689,6 +731,22 @@ public class A1_Gen_Marcas implements TalendJob {
 	}
 
 	public void tRunJob_1_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tRunJob_6_onSubJobError(Exception exception, String errorComponent,
+			final java.util.Map<String, Object> globalMap) throws TalendException {
+
+		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
+				exception.getMessage(), ResumeUtil.getExceptionStackTrace(exception), "");
+
+	}
+
+	public void tRunJob_3_onSubJobError(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		resumeUtil.addLog("SYSTEM_LOG", "NODE:" + errorComponent, "", Thread.currentThread().getId() + "", "FATAL", "",
@@ -1395,6 +1453,17 @@ public class A1_Gen_Marcas implements TalendJob {
 				 */
 			} // end the resume
 
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:tRunJob_1:OnSubjobOk", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("OnSubjobOk10", 0, "ok");
+			}
+
+			tRunJob_6Process(globalMap);
+
 		} catch (java.lang.Exception e) {
 
 			TalendException te = new TalendException(e, currentComponent, globalMap);
@@ -1427,6 +1496,1922 @@ public class A1_Gen_Marcas implements TalendJob {
 		}
 
 		globalMap.put("tRunJob_1_SUBPROCESS_STATE", 1);
+	}
+
+	public static class row4Struct implements routines.system.IPersistableRow<row4Struct> {
+		final static byte[] commonByteArrayLock_WIPO_PROJECTS_A1_Gen_Marcas = new byte[0];
+		static byte[] commonByteArray_WIPO_PROJECTS_A1_Gen_Marcas = new byte[0];
+
+		public void readData(ObjectInputStream dis) {
+
+			synchronized (commonByteArrayLock_WIPO_PROJECTS_A1_Gen_Marcas) {
+
+				try {
+
+					int length = 0;
+
+				}
+
+				finally {
+				}
+
+			}
+
+		}
+
+		public void writeData(ObjectOutputStream dos) {
+			try {
+
+			}
+
+			finally {
+			}
+
+		}
+
+		public String toString() {
+
+			StringBuilder sb = new StringBuilder();
+			sb.append(super.toString());
+			sb.append("[");
+			sb.append("]");
+
+			return sb.toString();
+		}
+
+		/**
+		 * Compare keys
+		 */
+		public int compareTo(row4Struct other) {
+
+			int returnValue = -1;
+
+			return returnValue;
+		}
+
+		private int checkNullsAndCompare(Object object1, Object object2) {
+			int returnValue = 0;
+			if (object1 instanceof Comparable && object2 instanceof Comparable) {
+				returnValue = ((Comparable) object1).compareTo(object2);
+			} else if (object1 != null && object2 != null) {
+				returnValue = compareStrings(object1.toString(), object2.toString());
+			} else if (object1 == null && object2 != null) {
+				returnValue = 1;
+			} else if (object1 != null && object2 == null) {
+				returnValue = -1;
+			} else {
+				returnValue = 0;
+			}
+
+			return returnValue;
+		}
+
+		private int compareStrings(String string1, String string2) {
+			return string1.compareTo(string2);
+		}
+
+	}
+
+	public void tRunJob_6Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tRunJob_6_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				row4Struct row4 = new row4Struct();
+
+				/**
+				 * [tRunJob_4 begin ] start
+				 */
+
+				ok_Hash.put("tRunJob_4", false);
+				start_Hash.put("tRunJob_4", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("begin", "tRunJob_4");
+				tStatCatcher_1Process(globalMap);
+
+				currentComponent = "tRunJob_4";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row4");
+				}
+
+				int tos_count_tRunJob_4 = 0;
+
+				class DealChildJobLibrary_tRunJob_4 {
+
+					public String replaceJarPathsFromCrcMap(String originalClassPathLine) throws java.lang.Exception {
+						String classPathLine = "";
+						String crcMapPath = new java.io.File("../crcMap").getCanonicalPath();
+						if (isNeedAddLibsPath(crcMapPath)) {
+							java.util.Map<String, String> crcMap = null;
+							java.io.ObjectInputStream ois = new ObjectInputStream(
+									new java.io.FileInputStream(crcMapPath));
+							crcMap = (java.util.Map<String, String>) ois.readObject();
+							ois.close();
+							classPathLine = addLibsPath(originalClassPathLine, crcMap);
+						} else {
+							classPathLine = originalClassPathLine;
+						}
+						return classPathLine;
+					}
+
+					private boolean isNeedAddLibsPath(String crcMapPath) {
+						if (!(new java.io.File(crcMapPath).exists())) {// when not use cache
+							return false;
+						}
+						return true;
+					}
+
+					private String addLibsPath(String line, java.util.Map<String, String> crcMap) {
+						for (java.util.Map.Entry<String, String> entry : crcMap.entrySet()) {
+							line = adaptLibPaths(line, entry);
+						}
+						return line;
+					}
+
+					private String adaptLibPaths(String line, java.util.Map.Entry<String, String> entry) {
+						String jarName = entry.getValue();
+						String crc = entry.getKey();
+						String libStringFinder = "../lib/" + jarName;
+						if (line.contains(libStringFinder)) {
+							line = line.replace(libStringFinder, "../../../cache/lib/" + crc + "/" + jarName);
+						} else if (line.contains(":$ROOT_PATH/" + jarName + ":")) {
+							line = line.replace(":$ROOT_PATH/" + jarName + ":",
+									":$ROOT_PATH/../../../cache/lib/" + crc + "/" + jarName + ":");
+						} else if (line.contains(";" + jarName + ";")) {
+							line = line.replace(";" + jarName + ";",
+									";../../../cache/lib/" + crc + "/" + jarName + ";");
+						}
+						return line;
+					}
+
+				}
+				DealChildJobLibrary_tRunJob_4 dealChildJobLibrary_tRunJob_4 = new DealChildJobLibrary_tRunJob_4();
+
+				class JVMArgumentHelper_tRunJob_4 {
+
+					public void addArgumentsTo(java.util.List<String> target_argument_list,
+							String argument_from_child) {
+
+						target_argument_list.add(argument_from_child);
+					}
+
+				}
+
+				JVMArgumentHelper_tRunJob_4 jvm_argument_helper_tRunJob_4 = new JVMArgumentHelper_tRunJob_4();
+
+				String audit_jar_path_tRunJob_4 = System.getProperty("classpath.extended");
+
+				/**
+				 * [tRunJob_4 begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_6 begin ] start
+				 */
+
+				ok_Hash.put("tRunJob_6", false);
+				start_Hash.put("tRunJob_6", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("begin", "tRunJob_6");
+				tStatCatcher_1Process(globalMap);
+
+				currentComponent = "tRunJob_6";
+
+				int tos_count_tRunJob_6 = 0;
+
+				class DealChildJobLibrary_tRunJob_6 {
+
+					public String replaceJarPathsFromCrcMap(String originalClassPathLine) throws java.lang.Exception {
+						String classPathLine = "";
+						String crcMapPath = new java.io.File("../crcMap").getCanonicalPath();
+						if (isNeedAddLibsPath(crcMapPath)) {
+							java.util.Map<String, String> crcMap = null;
+							java.io.ObjectInputStream ois = new ObjectInputStream(
+									new java.io.FileInputStream(crcMapPath));
+							crcMap = (java.util.Map<String, String>) ois.readObject();
+							ois.close();
+							classPathLine = addLibsPath(originalClassPathLine, crcMap);
+						} else {
+							classPathLine = originalClassPathLine;
+						}
+						return classPathLine;
+					}
+
+					private boolean isNeedAddLibsPath(String crcMapPath) {
+						if (!(new java.io.File(crcMapPath).exists())) {// when not use cache
+							return false;
+						}
+						return true;
+					}
+
+					private String addLibsPath(String line, java.util.Map<String, String> crcMap) {
+						for (java.util.Map.Entry<String, String> entry : crcMap.entrySet()) {
+							line = adaptLibPaths(line, entry);
+						}
+						return line;
+					}
+
+					private String adaptLibPaths(String line, java.util.Map.Entry<String, String> entry) {
+						String jarName = entry.getValue();
+						String crc = entry.getKey();
+						String libStringFinder = "../lib/" + jarName;
+						if (line.contains(libStringFinder)) {
+							line = line.replace(libStringFinder, "../../../cache/lib/" + crc + "/" + jarName);
+						} else if (line.contains(":$ROOT_PATH/" + jarName + ":")) {
+							line = line.replace(":$ROOT_PATH/" + jarName + ":",
+									":$ROOT_PATH/../../../cache/lib/" + crc + "/" + jarName + ":");
+						} else if (line.contains(";" + jarName + ";")) {
+							line = line.replace(";" + jarName + ";",
+									";../../../cache/lib/" + crc + "/" + jarName + ";");
+						}
+						return line;
+					}
+
+				}
+				DealChildJobLibrary_tRunJob_6 dealChildJobLibrary_tRunJob_6 = new DealChildJobLibrary_tRunJob_6();
+
+				class JVMArgumentHelper_tRunJob_6 {
+
+					public void addArgumentsTo(java.util.List<String> target_argument_list,
+							String argument_from_child) {
+
+						target_argument_list.add(argument_from_child);
+					}
+
+				}
+
+				JVMArgumentHelper_tRunJob_6 jvm_argument_helper_tRunJob_6 = new JVMArgumentHelper_tRunJob_6();
+
+				String audit_jar_path_tRunJob_6 = System.getProperty("classpath.extended");
+
+				/**
+				 * [tRunJob_6 begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_6 main ] start
+				 */
+
+				currentComponent = "tRunJob_6";
+
+				java.util.List<String> paraList_tRunJob_6 = new java.util.ArrayList<String>();
+
+				String osName_tRunJob_6 = System.getProperty("os.name");
+				if (osName_tRunJob_6 != null && osName_tRunJob_6.toLowerCase().startsWith("win")) {
+
+					paraList_tRunJob_6.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_6.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_6.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_6.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Xms256M");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Xmx1024M");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-cp");
+
+					String classpath_tRunJob_6_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g3b_mig_ud_0.1/target/classpath.jar;";
+
+					if (audit_jar_path_tRunJob_6 != null && !audit_jar_path_tRunJob_6.isEmpty()) {
+						classpath_tRunJob_6_6 += audit_jar_path_tRunJob_6;
+					}
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							dealChildJobLibrary_tRunJob_6.replaceJarPathsFromCrcMap(classpath_tRunJob_6_6));
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							"wipo_projects.g3b_mig_ud_0_1.G3b_Mig_UD");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--father_node=tRunJob_6");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--context=Default");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "%*");
+
+				} else {
+
+					paraList_tRunJob_6.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_6.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_6.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_6.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Xms256M");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Xmx1024M");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "-cp");
+
+					String classpath_tRunJob_6_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g3b_mig_ud_0.1/target/classes:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g3b_mig_ud_0.1/src/main/ext-resources:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/code/routines/target/classes:.:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/net/sourceforge/jtds/jtds/1.3.1-patch-20190523/jtds-1.3.1-patch-20190523.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/imgscalr-lib-4.2/6.0.0-SNAPSHOT/imgscalr-lib-4.2-6.0.0-SNAPSHOT.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/daikon/crypto-utils/0.31.11/crypto-utils-0.31.11.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/components/lib/talend_DB_mssqlUtil/1.4/talend_DB_mssqlUtil-1.4.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:";
+
+					if (audit_jar_path_tRunJob_6 != null && !audit_jar_path_tRunJob_6.isEmpty()) {
+						classpath_tRunJob_6_6 += audit_jar_path_tRunJob_6;
+					}
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							dealChildJobLibrary_tRunJob_6.replaceJarPathsFromCrcMap(classpath_tRunJob_6_6)
+									.replace("$ROOT_PATH", System.getProperty("user.dir")));
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6,
+							"wipo_projects.g3b_mig_ud_0_1.G3b_Mig_UD");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--father_node=tRunJob_6");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "--context=Default");
+
+					jvm_argument_helper_tRunJob_6.addArgumentsTo(paraList_tRunJob_6, "$@");
+
+				}
+
+				if (enableLogStash) {
+					paraList_tRunJob_6.add("--audit.enabled=" + enableLogStash);
+				}
+
+				// for feature:10589
+
+				paraList_tRunJob_6.add("--stat_port=" + null);
+
+				if (resuming_logs_dir_path != null) {
+					paraList_tRunJob_6.add("--resuming_logs_dir_path=" + resuming_logs_dir_path);
+				}
+				String childResumePath_tRunJob_6 = ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path);
+				String tRunJobName_tRunJob_6 = ResumeUtil.getRighttRunJob(resuming_checkpoint_path);
+				if ("tRunJob_6".equals(tRunJobName_tRunJob_6) && childResumePath_tRunJob_6 != null) {
+					paraList_tRunJob_6.add("--resuming_checkpoint_path="
+							+ ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path));
+				}
+				paraList_tRunJob_6.add("--parent_part_launcher=JOB:" + jobName + "/NODE:tRunJob_6");
+
+				java.util.Map<String, Object> parentContextMap_tRunJob_6 = new java.util.HashMap<String, Object>();
+
+				java.util.List<String> paraListForLog_tRunJob_6 = new java.util.ArrayList<String>();
+				paraListForLog_tRunJob_6.addAll(paraList_tRunJob_6);
+				List<String> parametersToEncrypt_tRunJob_6 = new java.util.ArrayList<String>();
+
+				Object obj_tRunJob_6 = null;
+
+				obj_tRunJob_6 = context.intermediateHost;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param intermediateHost=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add("--context_param intermediateHost="
+								+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param intermediateHost="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("intermediateHost") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediateHost=" + routines.system.PasswordEncryptUtil.encryptPassword(
+									String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediateHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("intermediateHost", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.intermediatePort;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param intermediatePort=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add("--context_param intermediatePort="
+								+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param intermediatePort="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("intermediatePort") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediatePort=" + routines.system.PasswordEncryptUtil.encryptPassword(
+									String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediatePort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("intermediatePort", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.intermediateDB;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param intermediateDB=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add(
+								"--context_param intermediateDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param intermediateDB="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("intermediateDB") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param intermediateDB=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param intermediateDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("intermediateDB", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.intermediateUser;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param intermediateUser=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add("--context_param intermediateUser="
+								+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param intermediateUser="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("intermediateUser") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediateUser=" + routines.system.PasswordEncryptUtil.encryptPassword(
+									String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6.add(
+							"--context_param intermediateUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("intermediateUser", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.intermediatePassword;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6.add(
+								"--context_param intermediatePassword=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add("--context_param intermediatePassword="
+								+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param intermediatePassword="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("intermediatePassword") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param intermediatePassword="
+							+ routines.system.PasswordEncryptUtil.encryptPassword(
+									String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6.add("--context_param intermediatePassword="
+							+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("intermediatePassword", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasHost;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param ipasHost=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6
+								.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add(
+							"--context_param ipasHost=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasHost") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasHost=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasHost", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasPort;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param ipasPort=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6
+								.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add(
+							"--context_param ipasPort=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasPort") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasPort=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasPort", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasDB;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6.add("--context_param ipasDB=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6
+								.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add(
+							"--context_param ipasDB=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasDB") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasDB=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasDB", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasUser;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param ipasUser=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6
+								.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add(
+							"--context_param ipasUser=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasUser") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasUser=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasUser", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasPassword;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param ipasPassword=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add(
+								"--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param ipasPassword="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasPassword") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasPassword=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasPassword", obj_tRunJob_6);
+
+				obj_tRunJob_6 = context.ipasSaPassword;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param ipasSaPassword=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6.add(
+								"--context_param ipasSaPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add("--context_param ipasSaPassword="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("ipasSaPassword") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param ipasSaPassword=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param ipasSaPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("ipasSaPassword", obj_tRunJob_6);
+
+				obj_tRunJob_6 = true;
+				if (obj_tRunJob_6 != null) {
+					if (obj_tRunJob_6.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_6
+								.add("--context_param processAll=" + ((java.util.Date) obj_tRunJob_6).getTime());
+					} else {
+						paraList_tRunJob_6
+								.add("--context_param processAll=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+					}
+				} else {
+					paraList_tRunJob_6.add(
+							"--context_param processAll=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_6.contains("processAll") && obj_tRunJob_6 != null) {
+					paraListForLog_tRunJob_6.add("--context_param processAll=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6))));
+				} else {
+					paraListForLog_tRunJob_6
+							.add("--context_param processAll=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_6));
+				}
+
+				parentContextMap_tRunJob_6.put("processAll", obj_tRunJob_6);
+
+				System.out.println(
+						"tRunJob_6 in A1_Gen_Marcas call G3b_Mig_UD with:\n\n" + paraListForLog_tRunJob_6 + "\n");
+
+				class ConsoleHelper_tRunJob_6 {
+					private Thread getNormalThread(Process process) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getInputStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											System.out.println(line);
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+
+					private Thread getErrorThread(Process process, StringBuffer sb) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getErrorStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											sb.append(line).append("\n");
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+				}
+				ConsoleHelper_tRunJob_6 consoleHelper_tRunJob_6 = new ConsoleHelper_tRunJob_6();
+
+				Runtime runtime_tRunJob_6 = Runtime.getRuntime();
+				Process ps_tRunJob_6 = null;
+
+				// 0 indicates normal termination
+				int result_tRunJob_6;
+				StringBuffer errorMsg_tRunJob_6 = new StringBuffer();
+				try {
+					ps_tRunJob_6 = runtime_tRunJob_6
+							.exec((String[]) paraList_tRunJob_6.toArray(new String[paraList_tRunJob_6.size()]));
+
+					Thread normal_tRunJob_6 = consoleHelper_tRunJob_6.getNormalThread(ps_tRunJob_6);
+					normal_tRunJob_6.start();
+
+					Thread error_tRunJob_6 = consoleHelper_tRunJob_6.getErrorThread(ps_tRunJob_6, errorMsg_tRunJob_6);
+					error_tRunJob_6.start();
+
+					result_tRunJob_6 = ps_tRunJob_6.waitFor();
+					normal_tRunJob_6.join();
+					error_tRunJob_6.join();
+				} catch (ThreadDeath tde) {
+					ps_tRunJob_6.destroy();
+					throw tde;
+				}
+
+				globalMap.put("tRunJob_6_CHILD_RETURN_CODE", result_tRunJob_6);
+				if (result_tRunJob_6 != 0) {
+					globalMap.put("tRunJob_6_CHILD_EXCEPTION_STACKTRACE", errorMsg_tRunJob_6.toString());
+
+					throw new RuntimeException("Child job returns " + result_tRunJob_6
+							+ ". It doesn't terminate normally.\n" + errorMsg_tRunJob_6.toString());
+
+				}
+
+				System.err.println(
+						"when tRunJob runs in an independent process, it can't extract datas from tBufferOutput of child job.");
+
+				tos_count_tRunJob_6++;
+
+				/**
+				 * [tRunJob_6 main ] stop
+				 */
+
+				/**
+				 * [tRunJob_6 process_data_begin ] start
+				 */
+
+				currentComponent = "tRunJob_6";
+
+				/**
+				 * [tRunJob_6 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_4 main ] start
+				 */
+
+				currentComponent = "tRunJob_4";
+
+				if (execStat) {
+					runStat.updateStatOnConnection(iterateId, 1, 1
+
+							, "row4"
+
+					);
+				}
+
+				java.util.List<String> paraList_tRunJob_4 = new java.util.ArrayList<String>();
+
+				String osName_tRunJob_4 = System.getProperty("os.name");
+				if (osName_tRunJob_4 != null && osName_tRunJob_4.toLowerCase().startsWith("win")) {
+
+					paraList_tRunJob_4.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_4.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_4.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_4.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Xms256M");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Xmx1024M");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-cp");
+
+					String classpath_tRunJob_4_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/M/PY/PY_MARCAS_NUEVO/gg_poa_0.1/target/classpath.jar;";
+
+					if (audit_jar_path_tRunJob_4 != null && !audit_jar_path_tRunJob_4.isEmpty()) {
+						classpath_tRunJob_4_6 += audit_jar_path_tRunJob_4;
+					}
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4,
+							dealChildJobLibrary_tRunJob_4.replaceJarPathsFromCrcMap(classpath_tRunJob_4_6));
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "wipo_projects.gg_poa_0_1.Gg_POA");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--father_node=tRunJob_4");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--context=Default");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "%*");
+
+				} else {
+
+					paraList_tRunJob_4.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_4.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_4.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_4.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Xms256M");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Xmx1024M");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "-cp");
+
+					String classpath_tRunJob_4_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/M/PY/PY_MARCAS_NUEVO/gg_poa_0.1/target/classes:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/M/PY/PY_MARCAS_NUEVO/gg_poa_0.1/src/main/ext-resources:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/code/routines/target/classes:.:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/net/sourceforge/jtds/jtds/1.3.1-patch-20190523/jtds-1.3.1-patch-20190523.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/jboss-serialization/6.0.0/jboss-serialization-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/imgscalr-lib-4.2/6.0.0-SNAPSHOT/imgscalr-lib-4.2-6.0.0-SNAPSHOT.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/daikon/crypto-utils/0.31.11/crypto-utils-0.31.11.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/advancedPersistentLookupLib-1.2/6.0.0/advancedPersistentLookupLib-1.2-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/components/lib/talend_DB_mssqlUtil/1.4/talend_DB_mssqlUtil-1.4.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/trove/6.0.0/trove-6.0.0.jar:";
+
+					if (audit_jar_path_tRunJob_4 != null && !audit_jar_path_tRunJob_4.isEmpty()) {
+						classpath_tRunJob_4_6 += audit_jar_path_tRunJob_4;
+					}
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4,
+							dealChildJobLibrary_tRunJob_4.replaceJarPathsFromCrcMap(classpath_tRunJob_4_6)
+									.replace("$ROOT_PATH", System.getProperty("user.dir")));
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "wipo_projects.gg_poa_0_1.Gg_POA");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--father_node=tRunJob_4");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "--context=Default");
+
+					jvm_argument_helper_tRunJob_4.addArgumentsTo(paraList_tRunJob_4, "$@");
+
+				}
+
+				if (enableLogStash) {
+					paraList_tRunJob_4.add("--audit.enabled=" + enableLogStash);
+				}
+
+				// for feature:10589
+
+				paraList_tRunJob_4.add("--stat_port=" + null);
+
+				if (resuming_logs_dir_path != null) {
+					paraList_tRunJob_4.add("--resuming_logs_dir_path=" + resuming_logs_dir_path);
+				}
+				String childResumePath_tRunJob_4 = ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path);
+				String tRunJobName_tRunJob_4 = ResumeUtil.getRighttRunJob(resuming_checkpoint_path);
+				if ("tRunJob_4".equals(tRunJobName_tRunJob_4) && childResumePath_tRunJob_4 != null) {
+					paraList_tRunJob_4.add("--resuming_checkpoint_path="
+							+ ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path));
+				}
+				paraList_tRunJob_4.add("--parent_part_launcher=JOB:" + jobName + "/NODE:tRunJob_4");
+
+				java.util.Map<String, Object> parentContextMap_tRunJob_4 = new java.util.HashMap<String, Object>();
+
+				java.util.List<String> paraListForLog_tRunJob_4 = new java.util.ArrayList<String>();
+				paraListForLog_tRunJob_4.addAll(paraList_tRunJob_4);
+				List<String> parametersToEncrypt_tRunJob_4 = new java.util.ArrayList<String>();
+
+				Object obj_tRunJob_4 = null;
+
+				obj_tRunJob_4 = context.intermediateDB;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4
+								.add("--context_param intermediateDB=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4.add(
+								"--context_param intermediateDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add("--context_param intermediateDB="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("intermediateDB") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param intermediateDB=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param intermediateDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("intermediateDB", obj_tRunJob_4);
+
+				obj_tRunJob_4 = context.ipasHost;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4
+								.add("--context_param ipasHost=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4
+								.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add(
+							"--context_param ipasHost=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("ipasHost") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param ipasHost=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("ipasHost", obj_tRunJob_4);
+
+				obj_tRunJob_4 = context.ipasPort;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4
+								.add("--context_param ipasPort=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4
+								.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add(
+							"--context_param ipasPort=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("ipasPort") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param ipasPort=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("ipasPort", obj_tRunJob_4);
+
+				obj_tRunJob_4 = context.ipasDB;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4.add("--context_param ipasDB=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4
+								.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add(
+							"--context_param ipasDB=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("ipasDB") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param ipasDB=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("ipasDB", obj_tRunJob_4);
+
+				obj_tRunJob_4 = context.ipasUser;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4
+								.add("--context_param ipasUser=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4
+								.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add(
+							"--context_param ipasUser=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("ipasUser") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param ipasUser=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("ipasUser", obj_tRunJob_4);
+
+				obj_tRunJob_4 = context.ipasPassword;
+				if (obj_tRunJob_4 != null) {
+					if (obj_tRunJob_4.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_4
+								.add("--context_param ipasPassword=" + ((java.util.Date) obj_tRunJob_4).getTime());
+					} else {
+						paraList_tRunJob_4.add(
+								"--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+					}
+				} else {
+					paraList_tRunJob_4.add("--context_param ipasPassword="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_4.contains("ipasPassword") && obj_tRunJob_4 != null) {
+					paraListForLog_tRunJob_4.add("--context_param ipasPassword=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4))));
+				} else {
+					paraListForLog_tRunJob_4
+							.add("--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_4));
+				}
+
+				parentContextMap_tRunJob_4.put("ipasPassword", obj_tRunJob_4);
+
+				System.out
+						.println("tRunJob_4 in A1_Gen_Marcas call Gg_POA with:\n\n" + paraListForLog_tRunJob_4 + "\n");
+
+				class ConsoleHelper_tRunJob_4 {
+					private Thread getNormalThread(Process process) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getInputStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											System.out.println(line);
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+
+					private Thread getErrorThread(Process process, StringBuffer sb) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getErrorStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											sb.append(line).append("\n");
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+				}
+				ConsoleHelper_tRunJob_4 consoleHelper_tRunJob_4 = new ConsoleHelper_tRunJob_4();
+
+				Runtime runtime_tRunJob_4 = Runtime.getRuntime();
+				Process ps_tRunJob_4 = null;
+
+				// 0 indicates normal termination
+				int result_tRunJob_4;
+				StringBuffer errorMsg_tRunJob_4 = new StringBuffer();
+				try {
+					ps_tRunJob_4 = runtime_tRunJob_4
+							.exec((String[]) paraList_tRunJob_4.toArray(new String[paraList_tRunJob_4.size()]));
+
+					Thread normal_tRunJob_4 = consoleHelper_tRunJob_4.getNormalThread(ps_tRunJob_4);
+					normal_tRunJob_4.start();
+
+					Thread error_tRunJob_4 = consoleHelper_tRunJob_4.getErrorThread(ps_tRunJob_4, errorMsg_tRunJob_4);
+					error_tRunJob_4.start();
+
+					result_tRunJob_4 = ps_tRunJob_4.waitFor();
+					normal_tRunJob_4.join();
+					error_tRunJob_4.join();
+				} catch (ThreadDeath tde) {
+					ps_tRunJob_4.destroy();
+					throw tde;
+				}
+
+				globalMap.put("tRunJob_4_CHILD_RETURN_CODE", result_tRunJob_4);
+				if (result_tRunJob_4 != 0) {
+					globalMap.put("tRunJob_4_CHILD_EXCEPTION_STACKTRACE", errorMsg_tRunJob_4.toString());
+
+					throw new RuntimeException("Child job returns " + result_tRunJob_4
+							+ ". It doesn't terminate normally.\n" + errorMsg_tRunJob_4.toString());
+
+				}
+
+				tos_count_tRunJob_4++;
+
+				/**
+				 * [tRunJob_4 main ] stop
+				 */
+
+				/**
+				 * [tRunJob_4 process_data_begin ] start
+				 */
+
+				currentComponent = "tRunJob_4";
+
+				/**
+				 * [tRunJob_4 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_4 process_data_end ] start
+				 */
+
+				currentComponent = "tRunJob_4";
+
+				/**
+				 * [tRunJob_4 process_data_end ] stop
+				 */
+
+				/**
+				 * [tRunJob_6 process_data_end ] start
+				 */
+
+				currentComponent = "tRunJob_6";
+
+				/**
+				 * [tRunJob_6 process_data_end ] stop
+				 */
+
+				/**
+				 * [tRunJob_6 end ] start
+				 */
+
+				currentComponent = "tRunJob_6";
+
+				ok_Hash.put("tRunJob_6", true);
+				end_Hash.put("tRunJob_6", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("end", "tRunJob_6", end_Hash.get("tRunJob_6") - start_Hash.get("tRunJob_6"));
+				tStatCatcher_1Process(globalMap);
+
+				/**
+				 * [tRunJob_6 end ] stop
+				 */
+
+				/**
+				 * [tRunJob_4 end ] start
+				 */
+
+				currentComponent = "tRunJob_4";
+
+				if (execStat) {
+					runStat.updateStat(resourceMap, iterateId, 2, 0, "row4");
+				}
+
+				ok_Hash.put("tRunJob_4", true);
+				end_Hash.put("tRunJob_4", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("end", "tRunJob_4", end_Hash.get("tRunJob_4") - start_Hash.get("tRunJob_4"));
+				tStatCatcher_1Process(globalMap);
+
+				/**
+				 * [tRunJob_4 end ] stop
+				 */
+
+			} // end the resume
+
+			if (resumeEntryMethodName == null || globalResumeTicket) {
+				resumeUtil.addLog("CHECKPOINT", "CONNECTION:SUBJOB_OK:tRunJob_6:OnSubjobOk", "",
+						Thread.currentThread().getId() + "", "", "", "", "", "");
+			}
+
+			if (execStat) {
+				runStat.updateStatOnConnection("OnSubjobOk3", 0, "ok");
+			}
+
+			tRunJob_3Process(globalMap);
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tRunJob_6 finally ] start
+				 */
+
+				currentComponent = "tRunJob_6";
+
+				/**
+				 * [tRunJob_6 finally ] stop
+				 */
+
+				/**
+				 * [tRunJob_4 finally ] start
+				 */
+
+				currentComponent = "tRunJob_4";
+
+				/**
+				 * [tRunJob_4 finally ] stop
+				 */
+
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tRunJob_6_SUBPROCESS_STATE", 1);
+	}
+
+	public void tRunJob_3Process(final java.util.Map<String, Object> globalMap) throws TalendException {
+		globalMap.put("tRunJob_3_SUBPROCESS_STATE", 0);
+
+		final boolean execStat = this.execStat;
+
+		String iterateId = "";
+
+		String currentComponent = "";
+		java.util.Map<String, Object> resourceMap = new java.util.HashMap<String, Object>();
+
+		try {
+			// TDI-39566 avoid throwing an useless Exception
+			boolean resumeIt = true;
+			if (globalResumeTicket == false && resumeEntryMethodName != null) {
+				String currentMethodName = new java.lang.Exception().getStackTrace()[0].getMethodName();
+				resumeIt = resumeEntryMethodName.equals(currentMethodName);
+			}
+			if (resumeIt || globalResumeTicket) { // start the resume
+				globalResumeTicket = true;
+
+				/**
+				 * [tRunJob_3 begin ] start
+				 */
+
+				ok_Hash.put("tRunJob_3", false);
+				start_Hash.put("tRunJob_3", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("begin", "tRunJob_3");
+				tStatCatcher_1Process(globalMap);
+
+				currentComponent = "tRunJob_3";
+
+				int tos_count_tRunJob_3 = 0;
+
+				class DealChildJobLibrary_tRunJob_3 {
+
+					public String replaceJarPathsFromCrcMap(String originalClassPathLine) throws java.lang.Exception {
+						String classPathLine = "";
+						String crcMapPath = new java.io.File("../crcMap").getCanonicalPath();
+						if (isNeedAddLibsPath(crcMapPath)) {
+							java.util.Map<String, String> crcMap = null;
+							java.io.ObjectInputStream ois = new ObjectInputStream(
+									new java.io.FileInputStream(crcMapPath));
+							crcMap = (java.util.Map<String, String>) ois.readObject();
+							ois.close();
+							classPathLine = addLibsPath(originalClassPathLine, crcMap);
+						} else {
+							classPathLine = originalClassPathLine;
+						}
+						return classPathLine;
+					}
+
+					private boolean isNeedAddLibsPath(String crcMapPath) {
+						if (!(new java.io.File(crcMapPath).exists())) {// when not use cache
+							return false;
+						}
+						return true;
+					}
+
+					private String addLibsPath(String line, java.util.Map<String, String> crcMap) {
+						for (java.util.Map.Entry<String, String> entry : crcMap.entrySet()) {
+							line = adaptLibPaths(line, entry);
+						}
+						return line;
+					}
+
+					private String adaptLibPaths(String line, java.util.Map.Entry<String, String> entry) {
+						String jarName = entry.getValue();
+						String crc = entry.getKey();
+						String libStringFinder = "../lib/" + jarName;
+						if (line.contains(libStringFinder)) {
+							line = line.replace(libStringFinder, "../../../cache/lib/" + crc + "/" + jarName);
+						} else if (line.contains(":$ROOT_PATH/" + jarName + ":")) {
+							line = line.replace(":$ROOT_PATH/" + jarName + ":",
+									":$ROOT_PATH/../../../cache/lib/" + crc + "/" + jarName + ":");
+						} else if (line.contains(";" + jarName + ";")) {
+							line = line.replace(";" + jarName + ";",
+									";../../../cache/lib/" + crc + "/" + jarName + ";");
+						}
+						return line;
+					}
+
+				}
+				DealChildJobLibrary_tRunJob_3 dealChildJobLibrary_tRunJob_3 = new DealChildJobLibrary_tRunJob_3();
+
+				class JVMArgumentHelper_tRunJob_3 {
+
+					public void addArgumentsTo(java.util.List<String> target_argument_list,
+							String argument_from_child) {
+
+						target_argument_list.add(argument_from_child);
+					}
+
+				}
+
+				JVMArgumentHelper_tRunJob_3 jvm_argument_helper_tRunJob_3 = new JVMArgumentHelper_tRunJob_3();
+
+				String audit_jar_path_tRunJob_3 = System.getProperty("classpath.extended");
+
+				/**
+				 * [tRunJob_3 begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_3 main ] start
+				 */
+
+				currentComponent = "tRunJob_3";
+
+				java.util.List<String> paraList_tRunJob_3 = new java.util.ArrayList<String>();
+
+				String osName_tRunJob_3 = System.getProperty("os.name");
+				if (osName_tRunJob_3 != null && osName_tRunJob_3.toLowerCase().startsWith("win")) {
+
+					paraList_tRunJob_3.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_3.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_3.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_3.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Xms4096M");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Xmx10240M");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-cp");
+
+					String classpath_tRunJob_3_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classpath.jar;";
+
+					if (audit_jar_path_tRunJob_3 != null && !audit_jar_path_tRunJob_3.isEmpty()) {
+						classpath_tRunJob_3_6 += audit_jar_path_tRunJob_3;
+					}
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							dealChildJobLibrary_tRunJob_3.replaceJarPathsFromCrcMap(classpath_tRunJob_3_6));
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							"wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--father_node=tRunJob_3");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--context=Default");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "%*");
+
+				} else {
+
+					paraList_tRunJob_3.add("C:/Program Files/Amazon Corretto/jdk11.0.4_10/bin/java.exe");
+					String m2 = System.getProperty("talend.component.manager.m2.repository");
+					if (m2 != null) {
+						paraList_tRunJob_3.add("-Dtalend.component.manager.m2.repository=" + m2);
+					}
+
+					if (enableLogStash) {
+						System.getProperties().stringPropertyNames().stream().filter(it -> it.startsWith("audit."))
+								.forEach(key -> paraList_tRunJob_3.add("-D" + key + "=" + System.getProperty(key)));
+					}
+
+					System.getProperties().stringPropertyNames().stream()
+							.filter(it -> it.startsWith("runtime.lineage.") || "classpath.extended".equals(it))
+							.forEach(key -> paraList_tRunJob_3.add("-D" + key + "=" + System.getProperty(key)));
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Xms4096M");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Xmx10240M");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-Dfile.encoding=UTF-8");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							"-Dtalend.component.manager.m2.repository=G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "-cp");
+
+					String classpath_tRunJob_3_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/target/classes:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g4_1_fin_env_0.1/src/main/ext-resources:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/code/routines/target/classes:.:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/net/sourceforge/jtds/jtds/1.3.1-patch-20190523/jtds-1.3.1-patch-20190523.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/daikon/crypto-utils/0.31.11/crypto-utils-0.31.11.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/components/lib/talend_DB_mssqlUtil/1.4/talend_DB_mssqlUtil-1.4.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/ini4j-0.5.1/6.0.0/ini4j-0.5.1-6.0.0.jar:";
+
+					if (audit_jar_path_tRunJob_3 != null && !audit_jar_path_tRunJob_3.isEmpty()) {
+						classpath_tRunJob_3_6 += audit_jar_path_tRunJob_3;
+					}
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							dealChildJobLibrary_tRunJob_3.replaceJarPathsFromCrcMap(classpath_tRunJob_3_6)
+									.replace("$ROOT_PATH", System.getProperty("user.dir")));
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3,
+							"wipo_projects.g4_1_fin_env_0_1.G4_1_Fin_env");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--father_pid=" + pid);
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--root_pid=" + rootPid);
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--father_node=tRunJob_3");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "--context=Default");
+
+					jvm_argument_helper_tRunJob_3.addArgumentsTo(paraList_tRunJob_3, "$@");
+
+				}
+
+				if (enableLogStash) {
+					paraList_tRunJob_3.add("--audit.enabled=" + enableLogStash);
+				}
+
+				// for feature:10589
+
+				paraList_tRunJob_3.add("--stat_port=" + null);
+
+				if (resuming_logs_dir_path != null) {
+					paraList_tRunJob_3.add("--resuming_logs_dir_path=" + resuming_logs_dir_path);
+				}
+				String childResumePath_tRunJob_3 = ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path);
+				String tRunJobName_tRunJob_3 = ResumeUtil.getRighttRunJob(resuming_checkpoint_path);
+				if ("tRunJob_3".equals(tRunJobName_tRunJob_3) && childResumePath_tRunJob_3 != null) {
+					paraList_tRunJob_3.add("--resuming_checkpoint_path="
+							+ ResumeUtil.getChildJobCheckPointPath(resuming_checkpoint_path));
+				}
+				paraList_tRunJob_3.add("--parent_part_launcher=JOB:" + jobName + "/NODE:tRunJob_3");
+
+				java.util.Map<String, Object> parentContextMap_tRunJob_3 = new java.util.HashMap<String, Object>();
+
+				java.util.List<String> paraListForLog_tRunJob_3 = new java.util.ArrayList<String>();
+				paraListForLog_tRunJob_3.addAll(paraList_tRunJob_3);
+				List<String> parametersToEncrypt_tRunJob_3 = new java.util.ArrayList<String>();
+
+				Object obj_tRunJob_3 = null;
+
+				obj_tRunJob_3 = context.ipasHost;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param ipasHost=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3
+								.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add(
+							"--context_param ipasHost=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("ipasHost") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param ipasHost=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param ipasHost=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("ipasHost", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.ipasPort;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param ipasPort=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3
+								.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add(
+							"--context_param ipasPort=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("ipasPort") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param ipasPort=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param ipasPort=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("ipasPort", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.ipasUser;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param ipasUser=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3
+								.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add(
+							"--context_param ipasUser=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("ipasUser") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param ipasUser=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param ipasUser=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("ipasUser", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.ipasPassword;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param ipasPassword=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3.add(
+								"--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add("--context_param ipasPassword="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("ipasPassword") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param ipasPassword=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param ipasPassword=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("ipasPassword", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.utilityFolder;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param utilityFolder=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3.add(
+								"--context_param utilityFolder=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add("--context_param utilityFolder="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("utilityFolder") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param utilityFolder=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param utilityFolder=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("utilityFolder", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.ipasDB;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3.add("--context_param ipasDB=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3
+								.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add(
+							"--context_param ipasDB=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("ipasDB") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param ipasDB=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param ipasDB=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("ipasDB", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.sid;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3.add("--context_param sid=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3
+								.add("--context_param sid=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3
+							.add("--context_param sid=" + NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("sid") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param sid=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param sid=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("sid", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.mssqlserverInstance;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3.add(
+								"--context_param mssqlserverInstance=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3.add("--context_param mssqlserverInstance="
+								+ RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add("--context_param mssqlserverInstance="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("mssqlserverInstance") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param mssqlserverInstance="
+							+ routines.system.PasswordEncryptUtil.encryptPassword(
+									String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3.add(
+							"--context_param mssqlserverInstance=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("mssqlserverInstance", obj_tRunJob_3);
+
+				obj_tRunJob_3 = context.databaseType;
+				if (obj_tRunJob_3 != null) {
+					if (obj_tRunJob_3.getClass().getName().equals("java.util.Date")) {
+						paraList_tRunJob_3
+								.add("--context_param databaseType=" + ((java.util.Date) obj_tRunJob_3).getTime());
+					} else {
+						paraList_tRunJob_3.add(
+								"--context_param databaseType=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+					}
+				} else {
+					paraList_tRunJob_3.add("--context_param databaseType="
+							+ NULL_VALUE_EXPRESSION_IN_COMMAND_STRING_FOR_CHILD_JOB_ONLY);
+				}
+
+				if (parametersToEncrypt_tRunJob_3.contains("databaseType") && obj_tRunJob_3 != null) {
+					paraListForLog_tRunJob_3.add("--context_param databaseType=" + routines.system.PasswordEncryptUtil
+							.encryptPassword(String.valueOf(RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3))));
+				} else {
+					paraListForLog_tRunJob_3
+							.add("--context_param databaseType=" + RuntimeUtils.tRunJobConvertContext(obj_tRunJob_3));
+				}
+
+				parentContextMap_tRunJob_3.put("databaseType", obj_tRunJob_3);
+
+				System.out.println(
+						"tRunJob_3 in A1_Gen_Marcas call G4_1_Fin_env with:\n\n" + paraListForLog_tRunJob_3 + "\n");
+
+				class ConsoleHelper_tRunJob_3 {
+					private Thread getNormalThread(Process process) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getInputStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											System.out.println(line);
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+
+					private Thread getErrorThread(Process process, StringBuffer sb) {
+						return new Thread() {
+							public void run() {
+								try {
+									java.io.BufferedReader reader = new java.io.BufferedReader(
+											new java.io.InputStreamReader(process.getErrorStream()));
+									String line = "";
+									try {
+										while ((line = reader.readLine()) != null) {
+											sb.append(line).append("\n");
+										}
+									} finally {
+										reader.close();
+									}
+								} catch (java.io.IOException ioe) {
+
+									ioe.printStackTrace();
+								}
+							}
+						};
+					}
+				}
+				ConsoleHelper_tRunJob_3 consoleHelper_tRunJob_3 = new ConsoleHelper_tRunJob_3();
+
+				Runtime runtime_tRunJob_3 = Runtime.getRuntime();
+				Process ps_tRunJob_3 = null;
+
+				// 0 indicates normal termination
+				int result_tRunJob_3;
+				StringBuffer errorMsg_tRunJob_3 = new StringBuffer();
+				try {
+					ps_tRunJob_3 = runtime_tRunJob_3
+							.exec((String[]) paraList_tRunJob_3.toArray(new String[paraList_tRunJob_3.size()]));
+
+					Thread normal_tRunJob_3 = consoleHelper_tRunJob_3.getNormalThread(ps_tRunJob_3);
+					normal_tRunJob_3.start();
+
+					Thread error_tRunJob_3 = consoleHelper_tRunJob_3.getErrorThread(ps_tRunJob_3, errorMsg_tRunJob_3);
+					error_tRunJob_3.start();
+
+					result_tRunJob_3 = ps_tRunJob_3.waitFor();
+					normal_tRunJob_3.join();
+					error_tRunJob_3.join();
+				} catch (ThreadDeath tde) {
+					ps_tRunJob_3.destroy();
+					throw tde;
+				}
+
+				globalMap.put("tRunJob_3_CHILD_RETURN_CODE", result_tRunJob_3);
+				if (result_tRunJob_3 != 0) {
+					globalMap.put("tRunJob_3_CHILD_EXCEPTION_STACKTRACE", errorMsg_tRunJob_3.toString());
+
+					throw new RuntimeException("Child job returns " + result_tRunJob_3
+							+ ". It doesn't terminate normally.\n" + errorMsg_tRunJob_3.toString());
+
+				}
+
+				tos_count_tRunJob_3++;
+
+				/**
+				 * [tRunJob_3 main ] stop
+				 */
+
+				/**
+				 * [tRunJob_3 process_data_begin ] start
+				 */
+
+				currentComponent = "tRunJob_3";
+
+				/**
+				 * [tRunJob_3 process_data_begin ] stop
+				 */
+
+				/**
+				 * [tRunJob_3 process_data_end ] start
+				 */
+
+				currentComponent = "tRunJob_3";
+
+				/**
+				 * [tRunJob_3 process_data_end ] stop
+				 */
+
+				/**
+				 * [tRunJob_3 end ] start
+				 */
+
+				currentComponent = "tRunJob_3";
+
+				ok_Hash.put("tRunJob_3", true);
+				end_Hash.put("tRunJob_3", System.currentTimeMillis());
+
+				tStatCatcher_1.addMessage("end", "tRunJob_3", end_Hash.get("tRunJob_3") - start_Hash.get("tRunJob_3"));
+				tStatCatcher_1Process(globalMap);
+
+				/**
+				 * [tRunJob_3 end ] stop
+				 */
+			} // end the resume
+
+		} catch (java.lang.Exception e) {
+
+			TalendException te = new TalendException(e, currentComponent, globalMap);
+
+			throw te;
+		} catch (java.lang.Error error) {
+
+			runStat.stopThreadStat();
+
+			throw error;
+		} finally {
+
+			try {
+
+				/**
+				 * [tRunJob_3 finally ] start
+				 */
+
+				currentComponent = "tRunJob_3";
+
+				/**
+				 * [tRunJob_3 finally ] stop
+				 */
+			} catch (java.lang.Exception e) {
+				// ignore
+			} catch (java.lang.Error error) {
+				// ignore
+			}
+			resourceMap = null;
+		}
+
+		globalMap.put("tRunJob_3_SUBPROCESS_STATE", 1);
 	}
 
 	public void tRunJob_5Process(final java.util.Map<String, Object> globalMap) throws TalendException {
@@ -1619,7 +3604,7 @@ public class A1_Gen_Marcas implements TalendJob {
 
 					jvm_argument_helper_tRunJob_5.addArgumentsTo(paraList_tRunJob_5, "-cp");
 
-					String classpath_tRunJob_5_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g2b_mig_tm_0.1/target/classes:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g2b_mig_tm_0.1/src/main/ext-resources:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/code/routines/target/classes:.:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/net/sourceforge/jtds/jtds/1.3.1-patch-20190523/jtds-1.3.1-patch-20190523.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/imgscalr-lib-4.2/6.0.0-SNAPSHOT/imgscalr-lib-4.2-6.0.0-SNAPSHOT.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/daikon/crypto-utils/0.31.11/crypto-utils-0.31.11.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/trove/6.0.0/trove-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/advancedPersistentLookupLib-1.2/6.0.0/advancedPersistentLookupLib-1.2-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/components/lib/talend_DB_mssqlUtil/1.4/talend_DB_mssqlUtil-1.4.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/jboss-serialization/6.0.0/jboss-serialization-6.0.0.jar:";
+					String classpath_tRunJob_5_6 = "G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g2b_mig_tm_0.1/target/classes:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/jobs/process/OMPI/MigCommon/g2b_mig_tm_0.1/src/main/ext-resources:G:/GitHub/NewTalend/WIPO_PROJECTS/poms/code/routines/target/classes:.:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/net/sourceforge/jtds/jtds/1.3.1-patch-20190523/jtds-1.3.1-patch-20190523.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/jboss-serialization/6.0.0/jboss-serialization-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/imgscalr-lib-4.2/6.0.0-SNAPSHOT/imgscalr-lib-4.2-6.0.0-SNAPSHOT.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/daikon/crypto-utils/0.31.11/crypto-utils-0.31.11.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/advancedPersistentLookupLib-1.2/6.0.0/advancedPersistentLookupLib-1.2-6.0.0.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/dom4j/dom4j/2.1.3/dom4j-2.1.3.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/components/lib/talend_DB_mssqlUtil/1.4/talend_DB_mssqlUtil-1.4.jar:G:/TOS_DI-20201110_1014-V7.4.1M4/configuration/.m2/repository/org/talend/libraries/trove/6.0.0/trove-6.0.0.jar:";
 
 					if (audit_jar_path_tRunJob_5 != null && !audit_jar_path_tRunJob_5.isEmpty()) {
 						classpath_tRunJob_5_6 += audit_jar_path_tRunJob_5;
@@ -6304,6 +8289,6 @@ public class A1_Gen_Marcas implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 234633 characters generated by Talend Open Studio for Data Integration on the
- * November 24, 2020 at 6:40:11 PM CET
+ * 314173 characters generated by Talend Open Studio for Data Integration on the
+ * November 25, 2020 at 2:42:52 PM CET
  ************************************************************************************************/

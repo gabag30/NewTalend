@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row1.NOTES.substring(0, 253)">
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row1.NOTES!=null &amp;&amp;&#xD;&#xA;&#xD;&#xA;row1.NOTES.length()>=253?&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;row1.NOTES.substring(0, 252) :&#xD;&#xD;&#xA;&#xD;&#xD;&#xA;row1.NOTES">
   <variables name="row1.USERDOC_SEQ" value="null" talendType="id_String"/>
   <variables name="row1.USERDOC_SERIES" value="null" talendType="id_BigDecimal"/>
   <variables name="row1.USERDOC_NBR" value="null" talendType="id_BigDecimal"/>

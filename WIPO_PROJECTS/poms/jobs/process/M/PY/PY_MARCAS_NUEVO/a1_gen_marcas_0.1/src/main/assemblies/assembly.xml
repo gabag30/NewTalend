@@ -251,6 +251,7 @@
             <includes>
                 <include>org.example.wipo_projects.code:routines:jar:7.4.1</include>
                 <include>org.talend.libraries:advancedPersistentLookupLib-1.2:jar:6.0.0</include>
+                <include>org.talend.libraries:ini4j-0.5.1:jar:6.0.0</include>
                 <include>org.talend.libraries:imgscalr-lib-4.2:jar:6.0.0-SNAPSHOT</include>
                 <include>org.talend.libraries:jboss-serialization:jar:6.0.0</include>
                 <include>org.talend.libraries:trove:jar:6.0.0</include>
@@ -282,6 +283,9 @@
                 <include>org.example.wipo_projects.job:A1_Gen_Marcas:jar:0.1.0</include>
                 <include>org.example.wipo_projects.job:G1_Val_mig_AGENTS:jar:0.1.0</include>
                 <include>org.example.wipo_projects.job:G3a_Val_UD:jar:0.1.0</include>
+                <include>org.example.wipo_projects.job:G4_1_Fin_env:jar:0.1.0</include>
+                <include>org.example.wipo_projects.job:Gg_POA:jar:0.1.0</include>
+                <include>org.example.wipo_projects.job:G3b_Mig_UD:jar:0.1.0</include>
             </includes>
             <outputFileNameMapping>${artifact.build.finalName}.${artifact.extension}</outputFileNameMapping>
             <useProjectArtifact>true</useProjectArtifact>

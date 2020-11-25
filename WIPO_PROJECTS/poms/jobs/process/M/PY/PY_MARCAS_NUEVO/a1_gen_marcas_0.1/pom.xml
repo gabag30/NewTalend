@@ -145,6 +145,21 @@
     </dependency>
     <dependency>
       <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>G3b_Mig_UD</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>Gg_POA</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
+      <artifactId>G4_1_Fin_env</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.wipo_projects.job</groupId>
       <artifactId>G2b_Mig_TM</artifactId>
       <version>0.1.0</version>
     </dependency>

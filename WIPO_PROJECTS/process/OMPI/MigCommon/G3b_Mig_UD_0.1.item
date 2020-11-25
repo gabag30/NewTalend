@@ -17,7 +17,7 @@
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="96" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="128" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -56,7 +56,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:X5SZLmZe3gBrHyacgE9gvcG3YiealpMlSV+MIJKO" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:oLaBEVRKar8OKkAijPl0urHketxacBYO9wWJsJ2K" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -91,7 +91,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WQ/B3EMz1IW0RwmMmQeYQTD0e3iwjwMg3uZBF/zS" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:J8C4HetgY7eZDq9cyQ8O3IjSI9DJrhcjg5Z6ed3v" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -124,6 +124,7 @@
   </parameters>
   <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMSSqlConnection_3" show="false"/>
+    <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
     <elementParameter field="TEXT" name="HOST" value="context.ipasHost"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
@@ -131,7 +132,7 @@
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="context.ipasDB"/>
     <elementParameter field="TEXT" name="USER" value="context.ipasUser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:auwmXhGaODFoV97wx2aMGaG3/UxvjL5wti6iU7SW11h4FRSFPnkU5pfHKOvZOrnc"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:16+9pidErlFgrq6wNcStI5JV9x0sJkXPZgzRsVR5VpThzyRal/l4HUckGI8AoA1c"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="PROPERTIES" value=" &quot;allowMultiQueries=true&quot;"/>
@@ -141,7 +142,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false" show="false"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="IPAS"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -158,7 +159,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MYbYMX0a33oMSwOuGHgkpISea4K5dX8k0/b6CQAqslgJeZjW" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DxS66RG8czhOHTxBPxUzybUteWWrrphH/LYJY/a02JUcErbT" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -186,13 +187,6 @@
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="544" posY="-64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_8" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_8"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_12" show="false"/>
@@ -232,7 +226,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RulN4mdHnvHiU+tB3KdMAYKh8b9/ZrvQjaZQ9d1vsSWeYV4W" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Xevu0EhKPDKI61yozHrrBX86QuWfZdBTU6o8QDbs0/2M3QfU" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -288,7 +282,7 @@
       <column comment="" key="false" length="23" name="Time" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="3" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="640">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_1" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -300,7 +294,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tKrVemAWOXR/ZW/yjxI2OZ2lV3pA+5ilowNLb8bRD/c3tYot" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:57KmINWe2ItrDF6Wp1c6FVLHYWxbGIS9tIz5CjB/buPoiomM" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -328,13 +322,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="384" posY="640">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_1"/>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -346,7 +333,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U/nZy+Zx5QFNJa7w9GBl131utoxKgvNZtbgJ2TQrjH9t68lM" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Yc/tegTJl+hN6A1DNfQqK37Y+pbBPQZ07M2eP/79lHABCK/u" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -413,7 +400,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p4lbGnK7NqqsJfYzuIzAadOGc5mV5D1bfm6e42aib5VK4lCQ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p/ktrYEL7rSVatASpNkSVSGBpxqJ4wvaXl68VL013QlZ2d+6" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -480,7 +467,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zuOKxtzBimVkQzzdgOhSPemZKu+0KDMPQjw8YpjufjpUDerp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hDXo4MRvM8puCtLpBoRS2FB/Q/jhzcQRzSHiuzvHEYJOtF6E" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -508,13 +495,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="384" posY="992">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_3" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_3"/>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="992">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -526,7 +506,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:l0AHyI4CufuumSg1a7MWJoXhjWkFHUAyZDb6XN3DiUHz7FGc" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y6hYp/mQA5zNFanzDc9NXsocwoBmqmc/8qtlCIH9AWD/VaHS" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -593,7 +573,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:74B3/EsaVhhNV/Wcygc/qnLKyWxNcAqhscu3nF35/qoSKrBT" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2KTeZT8UgxQK5JSKDSqo5sKDPupl2xgSofIxNDDJYkVn00j3" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -660,7 +640,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hCRlBf3iA/qRf+lINfN2VOXsBnQ5fxfpGmdpW4YhhBZ8/F4D" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eLdXxD0AWNk+37rWiMiCAuoD8dQlzGSsabz6lqEd1jpAnTsZ" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -688,13 +668,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="1056" posY="1536">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_5" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_5"/>
-  </node>
   <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="1536">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -706,7 +679,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7Ndq8AN0p+xunxtt1kSz43pRHwHfVA6ilYmOJDKzBH2EfhbV" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cMOFTo9E8FhsT48prWw8KnWM4vNvxKGjzlswB08ImhXLKn43" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -773,7 +746,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UYpWd6uqnhI1omqdfetcDRAepyBaJIV5apkr/NSkqNa71nSW" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:US1Gj19eQPmKiwZqlV3E5twQY1aqwI7Jukm36MsN3CveW0pn" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -840,7 +813,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rbjKjWRzgowRlSm7NOQs1pMIJkdULH99crOAh6BsuAGeUsxI" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vuMDP3kJCF2dvtmL3JTB1vClA3aJhawwJKhp0UIBgux7oQLi" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -907,7 +880,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RMLm5DmbUElUkPSPqqiQeD1SFCmP+Vhp+jba3j2N4aRJmJfv" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ddgMThSjh1B/QVM8+dvTUEWLilez0VzbP9lsXSp1+rWPhqdH" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -974,7 +947,7 @@
     <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;MARCAS&quot;" show="false"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IB5prXhzwnYjd3ODg6VuAqTpNf0YypNomsM9WpJd3nVxw/tp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8iLiRyZZanynWhSt6PEt7jtxXdcA7OcIhIkHcEhTK9fxNBdX" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
@@ -1042,7 +1015,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fjtyDopGQCfMlEOHOk9+Hm2eW65N983/ntBaq8WT5asVaVie" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:M7r6AguHH/IR92wA1Qd814bGWhwCfgkty6TwxhyqqaZ4ExV/" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1069,13 +1042,6 @@
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="800" posY="-64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_12" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_12"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_11" show="false"/>
@@ -1104,7 +1070,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_13" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1116,7 +1082,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0hjJ1XTCnNEOcIEJRkKIm5dTk+F1QOxYWKFaysdqRHAZi7QV" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:u3YIEryFIHtKnlQuxW4EjbcoA8aNMCHVPz6tpxnZAmajWris" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1144,14 +1110,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="256">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_13" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_13"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_13" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1178,7 +1137,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="256">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_14" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1190,7 +1149,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gkORi/8CUmVENhFQJ8RwA+PSArUVqgoTqY7ov2ULCEgt2vXE" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XIUCIfcAp02xjYQICTwo76lLb4AK1k+kJfU7VTPP/XGq46b+" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1218,14 +1177,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="672" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_14" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_14"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="288">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1252,7 +1204,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_15" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1264,7 +1216,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JKHcker/iEtmCNbxSNlwYt8zXg5h0mqxrRiDJO+Qiq+zw2CR" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hkuog/s1rQ/laNWPU4sF4AycOS84FGKubnjvFCO2k1YL709F" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1292,14 +1244,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="960" posY="160">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_15" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_15"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="256">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_14" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1388,7 +1333,7 @@
       <column defaultValue="" key="false" length="8" name="duration" nullable="true" precision="0" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="480">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_16" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1400,7 +1345,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qgcx9gpIpjcZzCd/pmTSK2rmBFIQmWpamz2OFLMzGReYBqx5" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fds1LHRTnDRNyHA7X5YxCKLqqozdGxxPh9bmY4jfgeEK5mme" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1428,14 +1373,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_16" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_16"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="512">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_17" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1462,7 +1400,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="832">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="832">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_11" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1474,7 +1412,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8tRQSTFKGO+lZ800gjx9AnxmI67bTZQC0vruWakmv+pfHY73" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:A2FqVWrJbk3WXHTps0el2chpF1JMhcsC9sBlPa6uQcPledVj" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1502,14 +1440,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="384" posY="768">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_11" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_11"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="864">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_18" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1548,7 +1479,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LfYcxouBNOh014qIMdALJGnQZlBpxpErahTyq+c5PaChs5yB" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MNa52FcFAHwHEfhr+XsZApltPP6pkZgNqm6cp9cXYZRW6lqp" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1575,13 +1506,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="704" posY="768">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_17" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_17"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="864">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_19" show="false"/>
@@ -1610,7 +1534,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="1216">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="1152">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_2" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1622,7 +1546,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8ej2WeLJvyC5d0Eo2k1m/kabAGMfxZ0+fLbSAzoyGMDE8Cty" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PUZ53pn+GImH5E4qQGmlPrtcTPfoT/gnLVD5KA9/tiE4SfzD" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1650,14 +1574,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="384" posY="1152">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_2" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_2"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1248">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1184">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_20" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1684,7 +1601,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="1216">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="1152">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_18" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1696,7 +1613,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:e8j0USpiRpoVaMWIkemugEsVDKtwPzEiuM0XygJIEGJroLGD" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TaGj+T/dqfVLniE6CsL2/iiPPF+83ppdMMArnCYOt1HdoV1k" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1724,14 +1641,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="672" posY="1152">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_18" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_18"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_21" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1758,7 +1668,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="1216">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="1152">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_19" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -1770,7 +1680,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X4Pt0lvTHijqV7MpAKQrhztCJj5vpocEXc0cGUrDiGsjtWJM" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BqEJfh6M/bBzevsGD4TunFZTyDRJERcxwPJfEq6bOiqM5pjz" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1798,14 +1708,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="1056" posY="1152">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_19" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_19"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="1280">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="1216">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_23" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1844,7 +1747,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:onl9tJuFfafyZWB0Vg2Z/pjjWE0SIDNe+nbdRk/WTIU46yVk" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T/BYclSjAOS7jd3+9jFDM6EqZIaphp4uOmat81hjBKEDca9U" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1871,13 +1774,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="1376">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_20" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_20"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="1504">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_24" show="false"/>
@@ -1918,7 +1814,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mkKvYT46mHRW/P1lcAKbWQNGaM7dHQQVcHYXZEjwjgvpuRAl" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6t9/VMDvcmCKBzO4BfKP6EfMMM1Ypkp365wIB3MHuC9aKd5f" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -1945,13 +1841,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="672" posY="1376">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_21" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_21"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="1504">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_25" show="false"/>
@@ -1992,7 +1881,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CDDctt3dinRaBvyEzqqnlLOMnZCFOD/g06IVLJV+cgtvr6Wz" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IVpxQmgEdCZEq4YoCd21R3ztL7Wj9i8tNb1obX2PUbECOvIE" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2019,13 +1908,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="320" posY="1632">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_4" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_4"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_26" show="false"/>
@@ -2066,7 +1948,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fta6etrg88oWKaOor/vPBYXyDxdAB0VjO+S77mFBvJBy+Os/" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:n2IDm8vSoVG+igOy+p8ydZ9u3vxyb+4IV+4fgAurYWMehg5I" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2093,13 +1975,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="608" posY="1632">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_22" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_22"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="1760">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_27" show="false"/>
@@ -2140,7 +2015,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ywvLa8oX6KB/0QmGYRMV1XuuLi990yK9uMHYSi2virzp8pcV" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cu5xr8tnf+YuHt3zJmchOHBzEgecOhVz73FOfTvRb1IEFJlT" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2167,13 +2042,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="320" posY="1888">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_23" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_23"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2016">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_28" show="false"/>
@@ -2214,7 +2082,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:F/W4IjCyAkrwPr6XreZ/FRzMWXM7CvhsT8WK+Cgp/+uJn8Zu" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Vw28rtgZIw+vGtOXfk5OlSpbOJ9rwgSalwjapUDyMb9jYYa2" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2241,13 +2109,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="608" posY="1888">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_24" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_24"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="2016">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_29" show="false"/>
@@ -2276,7 +2137,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="2240">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="832" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_6" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2288,7 +2149,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:La3wgGfjbcNg+8lm4RJqtiSRCTxau3YQzwdXZtJOVZFERltF" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Z4YhtSJLCyFeNH2Jo6RyqjvirDMDwI6SQ2QEC8oIM6ToXknl" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2316,14 +2177,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="320" posY="2176">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_6" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_6"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2304">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="2304">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_30" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -2350,7 +2204,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="2240">
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="2240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBRow_25" show="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -2362,7 +2216,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p6/jKtyJYFdS4fiKOZrKIVpFytm8lE4pj5l2NpsFuhpaQvhC" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jzdtOkLcFZ0xh0HAgHhFZvhIh1Y4vTqVKtVoSa/t8YDY87Uw" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2390,14 +2244,7 @@
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="864" posY="2176">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_25" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_25"/>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="2304">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="2304">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_31" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -2436,7 +2283,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XLJX7YGjEp3dX+HdBbMfVSguMqOtf5h63JdAMx+ZGM8vEngx" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:En7VtPlq0q7KyWmqf0zaq9CcmkOQGZKn98UD+TeX3XGmnWmM" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2463,13 +2310,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="320" posY="2432">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_7" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_7"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_32" show="false"/>
@@ -2510,7 +2350,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:aSRmLORIY/xKTjSWOegmQ1kN0DynWhJfkgPJFSzb2ogAjLTp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cFBQvXtQDU39rJ0Cxnd92yGRIfiOUp8PvlzSYOgHTH0zFtqX" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2537,13 +2377,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="576" posY="2432">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_26" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_26"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_33" show="false"/>
@@ -2584,7 +2417,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/OMLNUgRaW3TiTL720619lXUJ1jnyLg02rbHfQwJkhQZN/0e" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tO8GbX2NrQmTYjTGGdXGhlFrzNdlfUkelCQ4RVkfDsz1/GSC" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2611,13 +2444,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="864" posY="2432">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_27" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_27"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2560">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_34" show="false"/>
@@ -2658,13 +2484,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9W6PEw1YagwRfjglqVMDJgg3KOrEZI8nZvfOmPSRfPCKmnI9" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uSurYKq7JQVI0/t3xtnD5ljDYKndTo4gfF5W6CYet1KRg7zz" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;ALTER TABLE IP_USERDOC_TYPES CHECK CONSTRAINT PROMOCION_TIPO_FK_TRAMITE;&#xD;&#xA;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;ACTION_CATEGORY  = 'N';&#xD;&#xA;&#x9;&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;ALTER TABLE IP_USERDOC_TYPES CHECK CONSTRAINT PROMOCION_TIPO_FK_TRAMITE;&#xD;&#xA;INSERT INTO  IP_USERDOC_NEW_OWNERS   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; OWNERSHIP_NOTES&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_OWNERS T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  ;&#x9;&#xD;&#xA;&#xD;&#xA;&#x9;INSERT INTO  IP_USERDOC_REPRS   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_ORI , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_LOG , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_SER , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;DOC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PERSON_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ADDR_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;REPRESENTATIVE_TYP )  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_ORI,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'E',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_SERIES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; DOC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; PERSON_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ADDR_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; REPRESENTATIVE_TYPE&#xD;&#xA;&#x9;&#x9;FROM  WRK_USERDOC_REPRS T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2678,20 +2504,13 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="insert_ip_action_type_N"/>
+    <elementParameter field="TEXT" name="LABEL" value="insert_own_reprs"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBRow_28"/>
     <metadata connector="REJECT" name="REJECT">
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="2688">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_28" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_28"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="2816">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_35" show="false"/>
@@ -2732,7 +2551,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qNnRR/iJPaRzs5JaBecgWqCiePdGG5Tsz5p3tzP75EY0/lRQ" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HZPXzaK2rpX/ThTNQH29tj7ewaM6oghJzcxCekvkc2IjfbAa" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2759,13 +2578,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="576" posY="2688">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_29" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_29"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="2816">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_36" show="false"/>
@@ -2806,7 +2618,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/NyHDXi5HEEr1nk/h7znDScpQkO30QQ+Tw1niAhYZi23nZ3a" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:C9vDkfCBnq/v2j39JX3DknmItmXYZ1mdwKHJbH1+E9xKHdOW" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2833,13 +2645,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="864" posY="2688">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_30" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_30"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="2816">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_37" show="false"/>
@@ -2880,13 +2685,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4LYrYIMABMlSpU+c9a65EH6kcOUMWDLQg/KCk1WfEa96ZYkY" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:z19aFLASF3I3PYyNv7glAbQ5SDe0uLEc15g9GvjUYKyuFCep" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;ALTER TABLE IP_USERDOC_TYPES CHECK CONSTRAINT PROMOCION_TIPO_FK_TRAMITE;&#xD;&#xA;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;ACTION_CATEGORY  = 'N';&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;INSERT INTO  IP_ACTION   &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;( ROW_VERSION , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PROC_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NBR , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_TYP , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;SIGNATURE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;CAPTURE_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;AUTHORISING_USER_ID , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES2 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES3 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES4 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES5 , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;ACTION_NOTES , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;IND_CHANGES_STATUS , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NEW_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_CODE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_STATUS_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;PRIOR_DUE_DATE , &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;NOTES1)  &#xD;&#xA;&#x9;&#x9;SELECT&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 1,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_TYP,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; USERDOC_PROC_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NBR,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_TYPE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_DATE,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_USER,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES2,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES3,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES4,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES5,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; GENERAL_NOTES,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; 'N',&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; null,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9; ACTION_NOTES1&#xD;&#xA;&#x9;&#x9;FROM  wrk_userdoc_actions T JOIN wrk_userdoc U ON U.userdoc_seq  = T.userdoc_seq&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_series  = T.userdoc_series&#xD;&#xA;&#x9;&#x9;&#x9; AND&#x9;U.userdoc_nbr  = T.userdoc_nbr  &#xD;&#xA;&#x9;&#x9;WHERE&#x9; USERDOC_PROC_TYP  is not null&#xD;&#xA;&#x9;&#x9; AND&#x9;ACTION_CATEGORY  = 'N';&#xD;&#xA;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
@@ -2907,13 +2712,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="2976">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_31" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_31"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="3104">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_38" show="false"/>
@@ -2954,7 +2752,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Z9LorpcsSbXNhAelpU4lDUhq0TwhfgKCKWA744Cr5Zop/kl1" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ziOImWuOxW6SiPHTgfj6jhEetU/ybsh85/msRxbeXHLwG0PT" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -2981,13 +2779,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="576" posY="2976">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_32" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_32"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="3104">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_39" show="false"/>
@@ -3028,7 +2819,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cGmGsmbhKu4faCDaekEAY1HnsqdYWePuAzHYt8ovbGDUMeV3" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PQFaVTif9U9SWp9vjfPMMUk3yFPNjnNIk+UnH3PbOVdQ00Sg" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3055,13 +2846,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="3232">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_33" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_33"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="3360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_40" show="false"/>
@@ -3102,7 +2886,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DmE1n27TmloO8Uz4+1X7Au7keApALLUzT0ZdG/E3QDh4qfYm" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qVDivYfXiJ6CiVv0qiMUA7086lvGRlKMZ7yHok50khWl42e0" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3129,13 +2913,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="576" posY="3232">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_9" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_9"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="3360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_41" show="false"/>
@@ -3176,7 +2953,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b9+fxOO9fDPIqERMQhcQBIA9LpO3CtA3BQNWQU9wK0KVmvkj" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dD7khyRyRLP/sbgtva+klfHeNkW31zk+OCQEEsj1fhCuM3nl" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3203,13 +2980,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="800" posY="3232">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_34" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_34"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="3360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_42" show="false"/>
@@ -3250,7 +3020,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6y1MzK3Ua4LRJgzacznllhOIdejE1XD1ppxT9kvSrlOf9N1L" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cxOQsYrL58fZOob7uYCWsAA3UdFMw+YzPl/bLGXPYfMuJ40Y" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3277,13 +3047,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="3456">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_35" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_35"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="3584">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_43" show="false"/>
@@ -3324,7 +3087,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gQlgVZv7kpdfp194hQrbHEE+U8WXriU5yeegvLOSqWX7SdqU" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7d7/d7yIG6pT0Clli8KE6nCFyzAMv+TAANLhe6uZU+Rq2Ert" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3351,13 +3114,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="576" posY="3456">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_36" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_36"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="3584">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_44" show="false"/>
@@ -3398,7 +3154,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3nxEReeNLzjma+CaZSGaz6HohI9274ns9T4UsNv6TWUV0UI8" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:59a0qwpL3UaxxPWWTCA/f1Ylc4NrWribtDMP4OF8nU+IGErd" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3425,13 +3181,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="800" posY="3456">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_37" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_37"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="3584">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_45" show="false"/>
@@ -3472,7 +3221,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uRjE7cUoND/CrNcVobWSiy6HUM/JgoNXdaOkBZA5qMh3eCUq" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:342YFnds0rNIvCvSDN9SVijEE9I88XRI5ZUiWSLyBgHcNYL3" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3499,13 +3248,6 @@
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="352" posY="3744">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_38" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_38"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="3872">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_46" show="false"/>
@@ -3551,7 +3293,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;MAR_RPI&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;MARCAS&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OphNcxUUoIwjlb1QZ89M4bboZew4pML1FL5d3Qmpgy+0ywzW" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:K7M9rmzgSVpPO8f1BuriA1hUaulmG/bb8HERNjKCDfxTFVUC" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3579,13 +3321,6 @@
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-  </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-3" posX="288" posY="-64">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_10" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_10"/>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_22" show="false"/>
@@ -3625,7 +3360,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QskAUolKnej3gD8yMx2b/9C5DIxmIEgfMc0XKfeg" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Y09XLbODKhIUm7OaeUzz1+p+nIqzKGNZdiMJXhzq" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
@@ -3652,21 +3387,10 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMSSqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="3936">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_40" show="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMSSqlConnection_3"/>
-    <elementParameter field="CHECK" name="CLOSE" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBCommit_40"/>
-  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tMSSqlConnection_3" offsetLabelX="0" offsetLabelY="0" source="tMSSqlConnection_3" target="tDBRow_10">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk53" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tDBRow_7" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_7" target="tDBCommit_8">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row23" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_7" target="tLogRow_12">
+  <connection connectorName="REJECT" label="row23" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" source="tDBRow_7" target="tLogRow_12">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row23" show="false"/>
   </connection>
@@ -3677,15 +3401,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row67" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBCommit_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBRow_11">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBCommit_1" offsetLabelX="0" offsetLabelY="0" source="tDBCommit_1" target="tDBInput_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3695,15 +3415,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDBRow_3" offsetLabelX="0" offsetLabelY="0" source="tDBRow_3" target="tDBCommit_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_3" offsetLabelX="0" offsetLabelY="0" source="tDBRow_3" target="tDBInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_3" offsetLabelX="0" offsetLabelY="0" source="tDBRow_3" target="tDBRow_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk6" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBCommit_3" offsetLabelX="0" offsetLabelY="0" source="tDBCommit_3" target="tDBInput_4">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3716,15 +3432,11 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tDBRow_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk25" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tDBRow_5" offsetLabelX="0" offsetLabelY="0" source="tDBRow_5" target="tDBCommit_5">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_5" offsetLabelX="0" offsetLabelY="0" source="tDBRow_5" target="tDBInput_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_5" offsetLabelX="0" offsetLabelY="0" source="tDBRow_5" target="tDBRow_4">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk7" show="false"/>
-  </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBCommit_5" offsetLabelX="0" offsetLabelY="0" source="tDBCommit_5" target="tDBInput_6">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tLogRow_6">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -3758,44 +3470,28 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_10" offsetLabelX="0" offsetLabelY="0" source="tDBInput_10" target="tDBClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk51" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row24" lineStyle="0" metaname="tDBRow_12" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_12" target="tDBCommit_12">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row24" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row25" lineStyle="0" metaname="tDBRow_12" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_12" target="tLogRow_11">
+  <connection connectorName="REJECT" label="row25" lineStyle="0" metaname="tDBRow_12" offsetLabelX="0" offsetLabelY="0" source="tDBRow_12" target="tLogRow_11">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row25" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_12" offsetLabelX="0" offsetLabelY="0" source="tDBRow_12" target="tDBRow_13">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row26" lineStyle="0" metaname="tDBRow_13" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_13" target="tDBCommit_13">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row26" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row27" lineStyle="0" metaname="tDBRow_13" offsetLabelX="30" offsetLabelY="23" outputId="2" source="tDBRow_13" target="tLogRow_13">
+  <connection connectorName="REJECT" label="row27" lineStyle="0" metaname="tDBRow_13" offsetLabelX="30" offsetLabelY="23" source="tDBRow_13" target="tLogRow_13">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row27" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_13" offsetLabelX="0" offsetLabelY="0" source="tDBRow_13" target="tDBRow_14">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk12" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBRow_14" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_14" target="tDBCommit_14">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="tDBRow_14" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_14" target="tLogRow_1">
+  <connection connectorName="REJECT" label="row2" lineStyle="0" metaname="tDBRow_14" offsetLabelX="0" offsetLabelY="0" source="tDBRow_14" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_14" offsetLabelX="0" offsetLabelY="0" source="tDBRow_14" target="tDBRow_15">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk13" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row28" lineStyle="0" metaname="tDBRow_15" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_15" target="tDBCommit_15">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row28" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row29" lineStyle="0" metaname="tDBRow_15" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_15" target="tLogRow_14">
+  <connection connectorName="REJECT" label="row29" lineStyle="0" metaname="tDBRow_15" offsetLabelX="0" offsetLabelY="0" source="tDBRow_15" target="tLogRow_14">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row29" show="false"/>
   </connection>
@@ -3806,11 +3502,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row30" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row31" lineStyle="0" metaname="tDBRow_16" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_16" target="tDBCommit_16">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row31" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row32" lineStyle="0" metaname="tDBRow_16" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_16" target="tLogRow_17">
+  <connection connectorName="REJECT" label="row32" lineStyle="0" metaname="tDBRow_16" offsetLabelX="0" offsetLabelY="0" source="tDBRow_16" target="tLogRow_17">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row32" show="false"/>
   </connection>
@@ -3820,11 +3512,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_16" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_16" target="tDBRow_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row22" lineStyle="0" metaname="tDBRow_11" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_11" target="tDBCommit_11">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row22" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row33" lineStyle="0" metaname="tDBRow_11" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_11" target="tLogRow_18">
+  <connection connectorName="REJECT" label="row33" lineStyle="0" metaname="tDBRow_11" offsetLabelX="0" offsetLabelY="0" source="tDBRow_11" target="tLogRow_18">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row33" show="false"/>
   </connection>
@@ -3834,317 +3522,201 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_11" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_11" target="tDBRow_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row34" lineStyle="0" metaname="tDBRow_17" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_17" target="tDBCommit_17">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row34" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row35" lineStyle="0" metaname="tDBRow_17" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_17" target="tLogRow_19">
+  <connection connectorName="REJECT" label="row35" lineStyle="0" metaname="tDBRow_17" offsetLabelX="0" offsetLabelY="0" source="tDBRow_17" target="tLogRow_19">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row35" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_17" offsetLabelX="0" offsetLabelY="0" source="tDBRow_17" target="tDBInput_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk19" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_2" target="tDBCommit_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row36" lineStyle="0" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_2" target="tLogRow_20">
+  <connection connectorName="REJECT" label="row36" lineStyle="0" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tLogRow_20">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row36" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_2" offsetLabelX="0" offsetLabelY="0" source="tDBRow_2" target="tDBRow_18">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk20" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row37" lineStyle="0" metaname="tDBRow_18" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_18" target="tDBCommit_18">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row37" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row38" lineStyle="0" metaname="tDBRow_18" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_18" target="tLogRow_21">
+  <connection connectorName="REJECT" label="row38" lineStyle="0" metaname="tDBRow_18" offsetLabelX="0" offsetLabelY="0" source="tDBRow_18" target="tLogRow_21">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row38" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_18" offsetLabelX="0" offsetLabelY="0" source="tDBRow_18" target="tDBRow_19">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk21" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row39" lineStyle="0" metaname="tDBRow_19" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_19" target="tDBCommit_19">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row39" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row40" lineStyle="0" metaname="tDBRow_19" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_19" target="tLogRow_23">
+  <connection connectorName="REJECT" label="row40" lineStyle="0" metaname="tDBRow_19" offsetLabelX="0" offsetLabelY="0" source="tDBRow_19" target="tLogRow_23">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row40" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_19" offsetLabelX="0" offsetLabelY="0" source="tDBRow_19" target="tDBRow_20">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk22" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row41" lineStyle="0" metaname="tDBRow_20" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_20" target="tDBCommit_20">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row41" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row42" lineStyle="0" metaname="tDBRow_20" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_20" target="tLogRow_24">
+  <connection connectorName="REJECT" label="row42" lineStyle="0" metaname="tDBRow_20" offsetLabelX="0" offsetLabelY="0" source="tDBRow_20" target="tLogRow_24">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row42" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_20" offsetLabelX="0" offsetLabelY="0" source="tDBRow_20" target="tDBRow_21">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk23" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row43" lineStyle="0" metaname="tDBRow_21" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_21" target="tDBCommit_21">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row43" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row44" lineStyle="0" metaname="tDBRow_21" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_21" target="tLogRow_25">
+  <connection connectorName="REJECT" label="row44" lineStyle="0" metaname="tDBRow_21" offsetLabelX="0" offsetLabelY="0" source="tDBRow_21" target="tLogRow_25">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row44" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_21" offsetLabelX="0" offsetLabelY="0" source="tDBRow_21" target="tDBInput_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk24" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tDBRow_4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_4" target="tDBCommit_4">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row45" lineStyle="0" metaname="tDBRow_4" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_4" target="tLogRow_26">
+  <connection connectorName="REJECT" label="row45" lineStyle="0" metaname="tDBRow_4" offsetLabelX="0" offsetLabelY="0" source="tDBRow_4" target="tLogRow_26">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row45" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_4" offsetLabelX="0" offsetLabelY="0" source="tDBRow_4" target="tDBRow_22">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk26" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row46" lineStyle="0" metaname="tDBRow_22" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_22" target="tDBCommit_22">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row46" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row47" lineStyle="0" metaname="tDBRow_22" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_22" target="tLogRow_27">
+  <connection connectorName="REJECT" label="row47" lineStyle="0" metaname="tDBRow_22" offsetLabelX="0" offsetLabelY="0" source="tDBRow_22" target="tLogRow_27">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row47" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_22" offsetLabelX="0" offsetLabelY="0" source="tDBRow_22" target="tDBRow_23">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk28" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row48" lineStyle="0" metaname="tDBRow_23" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_23" target="tDBCommit_23">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row48" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row49" lineStyle="0" metaname="tDBRow_23" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_23" target="tLogRow_28">
+  <connection connectorName="REJECT" label="row49" lineStyle="0" metaname="tDBRow_23" offsetLabelX="0" offsetLabelY="0" source="tDBRow_23" target="tLogRow_28">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row49" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_23" offsetLabelX="0" offsetLabelY="0" source="tDBRow_23" target="tDBRow_24">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk27" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row50" lineStyle="0" metaname="tDBRow_24" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_24" target="tDBCommit_24">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row50" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row51" lineStyle="0" metaname="tDBRow_24" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_24" target="tLogRow_29">
+  <connection connectorName="REJECT" label="row51" lineStyle="0" metaname="tDBRow_24" offsetLabelX="0" offsetLabelY="0" source="tDBRow_24" target="tLogRow_29">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row51" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_24" offsetLabelX="0" offsetLabelY="0" source="tDBRow_24" target="tDBInput_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row14" lineStyle="0" metaname="tDBRow_6" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_6" target="tDBCommit_6">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row14" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row52" lineStyle="0" metaname="tDBRow_6" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_6" target="tLogRow_30">
+  <connection connectorName="REJECT" label="row52" lineStyle="0" metaname="tDBRow_6" offsetLabelX="0" offsetLabelY="0" source="tDBRow_6" target="tLogRow_30">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row52" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_6" offsetLabelX="0" offsetLabelY="0" source="tDBRow_6" target="tDBInput_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk29" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row53" lineStyle="0" metaname="tDBRow_25" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_25" target="tDBCommit_25">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row53" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row54" lineStyle="0" metaname="tDBRow_25" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_25" target="tLogRow_31">
+  <connection connectorName="REJECT" label="row54" lineStyle="0" metaname="tDBRow_25" offsetLabelX="0" offsetLabelY="0" source="tDBRow_25" target="tLogRow_31">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row54" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_25" offsetLabelX="0" offsetLabelY="0" source="tDBRow_25" target="tDBRow_8">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk31" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row16" lineStyle="0" metaname="tDBRow_8" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_8" target="tDBCommit_7">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row55" lineStyle="0" metaname="tDBRow_8" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_8" target="tLogRow_32">
+  <connection connectorName="REJECT" label="row55" lineStyle="0" metaname="tDBRow_8" offsetLabelX="0" offsetLabelY="0" source="tDBRow_8" target="tLogRow_32">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row55" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_8" offsetLabelX="0" offsetLabelY="0" source="tDBRow_8" target="tDBRow_26">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk32" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row56" lineStyle="0" metaname="tDBRow_26" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_26" target="tDBCommit_26">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row56" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row57" lineStyle="0" metaname="tDBRow_26" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_26" target="tLogRow_33">
+  <connection connectorName="REJECT" label="row57" lineStyle="0" metaname="tDBRow_26" offsetLabelX="0" offsetLabelY="0" source="tDBRow_26" target="tLogRow_33">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row57" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_26" offsetLabelX="0" offsetLabelY="0" source="tDBRow_26" target="tDBRow_27">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk33" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row58" lineStyle="0" metaname="tDBRow_27" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_27" target="tDBCommit_27">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row58" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row59" lineStyle="0" metaname="tDBRow_27" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_27" target="tLogRow_34">
+  <connection connectorName="REJECT" label="row59" lineStyle="0" metaname="tDBRow_27" offsetLabelX="0" offsetLabelY="0" source="tDBRow_27" target="tLogRow_34">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row59" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_27" offsetLabelX="0" offsetLabelY="0" source="tDBRow_27" target="tDBRow_28">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk34" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row60" lineStyle="0" metaname="tDBRow_28" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_28" target="tDBCommit_28">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row60" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row61" lineStyle="0" metaname="tDBRow_28" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_28" target="tLogRow_35">
+  <connection connectorName="REJECT" label="row61" lineStyle="0" metaname="tDBRow_28" offsetLabelX="0" offsetLabelY="0" source="tDBRow_28" target="tLogRow_35">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row61" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_28" offsetLabelX="0" offsetLabelY="0" source="tDBRow_28" target="tDBRow_29">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk36" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row62" lineStyle="0" metaname="tDBRow_29" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_29" target="tDBCommit_29">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row62" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row63" lineStyle="0" metaname="tDBRow_29" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_29" target="tLogRow_36">
+  <connection connectorName="REJECT" label="row63" lineStyle="0" metaname="tDBRow_29" offsetLabelX="0" offsetLabelY="0" source="tDBRow_29" target="tLogRow_36">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row63" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_29" offsetLabelX="0" offsetLabelY="0" source="tDBRow_29" target="tDBRow_30">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk35" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row64" lineStyle="0" metaname="tDBRow_30" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_30" target="tDBCommit_30">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row64" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row65" lineStyle="0" metaname="tDBRow_30" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_30" target="tLogRow_37">
+  <connection connectorName="REJECT" label="row65" lineStyle="0" metaname="tDBRow_30" offsetLabelX="0" offsetLabelY="0" source="tDBRow_30" target="tLogRow_37">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row65" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_30" offsetLabelX="0" offsetLabelY="0" source="tDBRow_30" target="tDBRow_31">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk39" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row66" lineStyle="0" metaname="tDBRow_31" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_31" target="tDBCommit_31">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row66" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row68" lineStyle="0" metaname="tDBRow_31" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_31" target="tLogRow_38">
+  <connection connectorName="REJECT" label="row68" lineStyle="0" metaname="tDBRow_31" offsetLabelX="0" offsetLabelY="0" source="tDBRow_31" target="tLogRow_38">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row68" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_31" offsetLabelX="0" offsetLabelY="0" source="tDBRow_31" target="tDBRow_32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk37" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row69" lineStyle="0" metaname="tDBRow_32" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_32" target="tDBCommit_32">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row69" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row70" lineStyle="0" metaname="tDBRow_32" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_32" target="tLogRow_39">
+  <connection connectorName="REJECT" label="row70" lineStyle="0" metaname="tDBRow_32" offsetLabelX="0" offsetLabelY="0" source="tDBRow_32" target="tLogRow_39">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row70" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_32" offsetLabelX="0" offsetLabelY="0" source="tDBRow_32" target="tDBInput_9">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk38" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row71" lineStyle="0" metaname="tDBRow_33" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_33" target="tDBCommit_33">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row71" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row72" lineStyle="0" metaname="tDBRow_33" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_33" target="tLogRow_40">
+  <connection connectorName="REJECT" label="row72" lineStyle="0" metaname="tDBRow_33" offsetLabelX="0" offsetLabelY="0" source="tDBRow_33" target="tLogRow_40">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row72" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_33" offsetLabelX="0" offsetLabelY="0" source="tDBRow_33" target="tDBRow_9">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk41" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row18" lineStyle="0" metaname="tDBRow_9" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_9" target="tDBCommit_9">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row18" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row73" lineStyle="0" metaname="tDBRow_9" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_9" target="tLogRow_41">
+  <connection connectorName="REJECT" label="row73" lineStyle="0" metaname="tDBRow_9" offsetLabelX="0" offsetLabelY="0" source="tDBRow_9" target="tLogRow_41">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row73" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_9" offsetLabelX="0" offsetLabelY="0" source="tDBRow_9" target="tDBRow_34">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk40" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row74" lineStyle="0" metaname="tDBRow_34" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_34" target="tDBCommit_34">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row74" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row75" lineStyle="0" metaname="tDBRow_34" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_34" target="tLogRow_42">
+  <connection connectorName="REJECT" label="row75" lineStyle="0" metaname="tDBRow_34" offsetLabelX="0" offsetLabelY="0" source="tDBRow_34" target="tLogRow_42">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row75" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_34" offsetLabelX="0" offsetLabelY="0" source="tDBRow_34" target="tDBRow_35">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk44" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row76" lineStyle="0" metaname="tDBRow_35" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_35" target="tDBCommit_35">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row76" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row77" lineStyle="0" metaname="tDBRow_35" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_35" target="tLogRow_43">
+  <connection connectorName="REJECT" label="row77" lineStyle="0" metaname="tDBRow_35" offsetLabelX="0" offsetLabelY="0" source="tDBRow_35" target="tLogRow_43">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row77" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_35" offsetLabelX="0" offsetLabelY="0" source="tDBRow_35" target="tDBRow_36">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk42" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row78" lineStyle="0" metaname="tDBRow_36" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_36" target="tDBCommit_36">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row78" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row79" lineStyle="0" metaname="tDBRow_36" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_36" target="tLogRow_44">
+  <connection connectorName="REJECT" label="row79" lineStyle="0" metaname="tDBRow_36" offsetLabelX="0" offsetLabelY="0" source="tDBRow_36" target="tLogRow_44">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row79" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_36" offsetLabelX="0" offsetLabelY="0" source="tDBRow_36" target="tDBRow_37">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk43" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row80" lineStyle="0" metaname="tDBRow_37" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_37" target="tDBCommit_37">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row80" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row81" lineStyle="0" metaname="tDBRow_37" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_37" target="tLogRow_45">
+  <connection connectorName="REJECT" label="row81" lineStyle="0" metaname="tDBRow_37" offsetLabelX="0" offsetLabelY="0" source="tDBRow_37" target="tLogRow_45">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row81" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_37" offsetLabelX="0" offsetLabelY="0" source="tDBRow_37" target="tDBRow_38">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk47" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row82" lineStyle="0" metaname="tDBRow_38" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_38" target="tDBCommit_38">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row82" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row83" lineStyle="0" metaname="tDBRow_38" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_38" target="tLogRow_46">
+  <connection connectorName="REJECT" label="row83" lineStyle="0" metaname="tDBRow_38" offsetLabelX="0" offsetLabelY="0" source="tDBRow_38" target="tLogRow_46">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row83" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_38" offsetLabelX="0" offsetLabelY="0" source="tDBRow_38" target="tDBRow_39">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk45" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row20" lineStyle="0" metaname="tDBRow_10" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tDBRow_10" target="tDBCommit_10">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row20" show="false"/>
-  </connection>
-  <connection connectorName="REJECT" label="row84" lineStyle="0" metaname="tDBRow_10" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tDBRow_10" target="tLogRow_22">
+  <connection connectorName="REJECT" label="row84" lineStyle="0" metaname="tDBRow_10" offsetLabelX="0" offsetLabelY="0" source="tDBRow_10" target="tLogRow_22">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row84" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_10" offsetLabelX="0" offsetLabelY="0" source="tDBRow_10" target="tDBRow_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk50" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row86" lineStyle="0" metaname="tDBRow_39" offsetLabelX="0" offsetLabelY="0" source="tDBRow_39" target="tDBCommit_40">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row86" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_39" offsetLabelX="0" offsetLabelY="0" source="tDBRow_39" target="tDBInput_10">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk54" show="false"/>
