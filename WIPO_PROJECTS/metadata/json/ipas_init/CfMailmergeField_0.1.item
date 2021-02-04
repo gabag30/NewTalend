@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_GLsncfr5EemSBqvBwzGp4g" name="CfMailmergeField" dataPackage="_GLsngPr5EemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfMailmergeField.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_GLsncvr5EemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfMailmergeField[*]">
+      <schemaTargets xmi:id="_GLsnc_r5EemSBqvBwzGp4g" RelativeXPathQuery="id" TagName="field_id"/>
+      <schemaTargets xmi:id="_GLsndPr5EemSBqvBwzGp4g" RelativeXPathQuery="baseTypeWcode" TagName="base_type_wcode"/>
+      <schemaTargets xmi:id="_GLsndfr5EemSBqvBwzGp4g" RelativeXPathQuery="category" TagName="category"/>
+      <schemaTargets xmi:id="_GLsndvr5EemSBqvBwzGp4g" RelativeXPathQuery="condition" TagName="condition"/>
+      <schemaTargets xmi:id="_GLsnd_r5EemSBqvBwzGp4g" RelativeXPathQuery="definition" TagName="definition"/>
+      <schemaTargets xmi:id="_GLsnePr5EemSBqvBwzGp4g" RelativeXPathQuery="droolRule" TagName="drool_rule"/>
+      <schemaTargets xmi:id="_GLsnefr5EemSBqvBwzGp4g" RelativeXPathQuery="format" TagName="format"/>
+      <schemaTargets xmi:id="_GLsnevr5EemSBqvBwzGp4g" RelativeXPathQuery="image" TagName="image"/>
+      <schemaTargets xmi:id="_GLsne_r5EemSBqvBwzGp4g" RelativeXPathQuery="imageBorder" TagName="image_border"/>
+      <schemaTargets xmi:id="_GLsnfPr5EemSBqvBwzGp4g" RelativeXPathQuery="imageHeight" TagName="image_height"/>
+      <schemaTargets xmi:id="_GLsnffr5EemSBqvBwzGp4g" RelativeXPathQuery="imageWidth" TagName="image_width"/>
+      <schemaTargets xmi:id="_GLsnfvr5EemSBqvBwzGp4g" RelativeXPathQuery="modelPath" TagName="model_path"/>
+      <schemaTargets xmi:id="_GLsnf_r5EemSBqvBwzGp4g" RelativeXPathQuery="type" TagName="type"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_GLsngPr5EemSBqvBwzGp4g" name="default" dataManager="_GLsncfr5EemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_GLsngfr5EemSBqvBwzGp4g" id="_bZf3YPr4EemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsngvr5EemSBqvBwzGp4g" label="field_id" length="255" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsng_r5EemSBqvBwzGp4g" label="base_type_wcode" length="1" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnhPr5EemSBqvBwzGp4g" label="category" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnhfr5EemSBqvBwzGp4g" label="condition" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnhvr5EemSBqvBwzGp4g" label="definition" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnh_r5EemSBqvBwzGp4g" label="drool_rule" length="500" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsniPr5EemSBqvBwzGp4g" label="format" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnifr5EemSBqvBwzGp4g" label="image" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnivr5EemSBqvBwzGp4g" label="image_border" length="10" precision="2" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsni_r5EemSBqvBwzGp4g" label="image_height" length="10" precision="2" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnjPr5EemSBqvBwzGp4g" label="image_width" length="10" precision="2" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnjfr5EemSBqvBwzGp4g" label="model_path" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_GLsnjvr5EemSBqvBwzGp4g" label="type" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

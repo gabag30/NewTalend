@@ -46,28 +46,33 @@ public class IPAS {
 			throws Exception {
 
 		ImageIO.scanForPlugins();
+		try { 
+			InputStream in = new ByteArrayInputStream(imageInByte);
+			BufferedImage originalImage = ImageIO.read(in);
+			
+			int width = originalImage.getWidth();
+			int height = originalImage.getHeight();
+	
+			BufferedImage resizedImage;
+			if (width > sizeMax || height > sizeMax)
+				resizedImage = Scalr.resize(originalImage, sizeMax);		
+			else
+				resizedImage = originalImage;
+	
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			ImageIO.write(resizedImage, "jpg", baos);
+			baos.flush();
+			imageInByte = baos.toByteArray();
+			baos.close();
+			resizedImage.flush();
+			originalImage.flush();
+
+			return imageInByte;
+		} catch (Exception e) {
+			System.out.println ("image format error. deleting");
+			return null;
+		}
 		
-		InputStream in = new ByteArrayInputStream(imageInByte);
-		BufferedImage originalImage = ImageIO.read(in);
-		
-		int width = originalImage.getWidth();
-		int height = originalImage.getHeight();
-
-		BufferedImage resizedImage;
-		if (width > sizeMax || height > sizeMax)
-			resizedImage = Scalr.resize(originalImage, sizeMax);		
-		else
-			resizedImage = originalImage;
-
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		ImageIO.write(resizedImage, "jpg", baos);
-		baos.flush();
-		imageInByte = baos.toByteArray();
-		baos.close();
-		resizedImage.flush();
-		originalImage.flush();
-
-		return imageInByte;
 	}
 
 	public static void byteArrayToFile(byte[] input, String filepath)
@@ -89,4 +94,37 @@ public class IPAS {
 		image.flush();
 		return imageInByte;		
 	}
+	
+	public static byte[] image_to_jpg (byte[] imageInByte)  throws Exception {
+	
+		try {
+			InputStream in = new ByteArrayInputStream(imageInByte);
+			
+			BufferedImage originalImage = ImageIO.read(in);
+			
+			BufferedImage jpgImage = originalImage;
+			
+			ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			
+			ImageIO.write(jpgImage, "jpg", baos);
+			
+			baos.flush();
+			
+			imageInByte = baos.toByteArray();
+			
+			baos.close();
+			
+			jpgImage.flush();
+			
+			originalImage.flush();
+	
+			return imageInByte;
+		
+	} catch (Exception exp) {
+	    exp.printStackTrace();
+	    return null;
+	}
+	
+	}
+	
 }

@@ -1,0 +1,44 @@
+{
+  "itemId" : "_ZMV60KAhEeqLKYPtbIDmeQ",
+  "contextList" : [ {
+    "contextName" : "extractionupload",
+    "repoId" : "_hK8JEKAhEeqLKYPtbIDmeQ",
+    "parameterList" : [ {
+      "id" : "_jE2BEaTvEeqYuuj4D2dkMQ",
+      "name" : "db_host"
+    }, {
+      "id" : "_jE2BFaTvEeqYuuj4D2dkMQ",
+      "name" : "db_name"
+    }, {
+      "id" : "_jE2BFKTvEeqYuuj4D2dkMQ",
+      "name" : "db_pass"
+    }, {
+      "id" : "_jE2BEqTvEeqYuuj4D2dkMQ",
+      "name" : "db_port"
+    }, {
+      "id" : "_jE2BE6TvEeqYuuj4D2dkMQ",
+      "name" : "db_user"
+    }, {
+      "id" : "_jE2BFqTvEeqYuuj4D2dkMQ",
+      "name" : "dump_file_location"
+    }, {
+      "id" : "_jE2BF6TvEeqYuuj4D2dkMQ",
+      "name" : "postgres_installation_bin_path"
+    }, {
+      "id" : "_jE2BGKTvEeqYuuj4D2dkMQ",
+      "name" : "sftp_host"
+    }, {
+      "id" : "_jE2BGaTvEeqYuuj4D2dkMQ",
+      "name" : "sftp_port"
+    }, {
+      "id" : "_jE2BG6TvEeqYuuj4D2dkMQ",
+      "name" : "sftp_private_key_file_path"
+    }, {
+      "id" : "_jE2BHKTvEeqYuuj4D2dkMQ",
+      "name" : "sftp_remote_dir"
+    }, {
+      "id" : "_jE2BGqTvEeqYuuj4D2dkMQ",
+      "name" : "sftp_user"
+    } ]
+  } ]
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_jE2BEKTvEeqYuuj4D2dkMQ" confirmationNeeded="false" name="extractionupload">
+  <contextParameter xmi:id="_jE2BEaTvEeqYuuj4D2dkMQ" comment="" name="db_host" prompt="db_host?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_jE2BEqTvEeqYuuj4D2dkMQ" comment="" name="db_port" prompt="db_port?" promptNeeded="false" type="id_String" value="5432"/>
+  <contextParameter xmi:id="_jE2BE6TvEeqYuuj4D2dkMQ" comment="" name="db_user" prompt="db_user?" promptNeeded="false" type="id_String" value="ipas4"/>
+  <contextParameter xmi:id="_jE2BFKTvEeqYuuj4D2dkMQ" comment="" name="db_pass" prompt="db_pass?" promptNeeded="false" type="id_String" value="ipas4"/>
+  <contextParameter xmi:id="_jE2BFaTvEeqYuuj4D2dkMQ" comment="" name="db_name" prompt="db_name?" promptNeeded="false" type="id_String" value="el400"/>
+  <contextParameter xmi:id="_jE2BFqTvEeqYuuj4D2dkMQ" comment="" name="dump_file_location" prompt="dump_file_location?" promptNeeded="false" type="id_String" value="I:\ws\temp"/>
+  <contextParameter xmi:id="_jE2BF6TvEeqYuuj4D2dkMQ" comment="" name="postgres_installation_bin_path" prompt="postgres_installation_bin_path?" promptNeeded="false" type="id_String" value="D:\programs\PostgreSQL\11\bin"/>
+  <contextParameter xmi:id="_jE2BGKTvEeqYuuj4D2dkMQ" comment="" name="sftp_host" prompt="sftp_host?" promptNeeded="false" type="id_String" value="sftp.wipo.int"/>
+  <contextParameter xmi:id="_jE2BGaTvEeqYuuj4D2dkMQ" comment="" name="sftp_port" prompt="sftp_port?" promptNeeded="false" type="id_Integer" value="22"/>
+  <contextParameter xmi:id="_jE2BGqTvEeqYuuj4D2dkMQ" comment="" name="sftp_user" prompt="sftp_user?" promptNeeded="false" type="id_String" value="ipas_sheikh"/>
+  <contextParameter xmi:id="_jE2BG6TvEeqYuuj4D2dkMQ" comment="" name="sftp_private_key_file_path" prompt="sftp_private_key_file_path?" promptNeeded="false" type="id_String" value="D:\workarea\sftp-keys\win-sheikh-priv.ppk"/>
+  <contextParameter xmi:id="_jE2BHKTvEeqYuuj4D2dkMQ" comment="" name="sftp_remote_dir" prompt="sftp_remote_dir?" promptNeeded="false" type="id_String" value="//Support//Download//temp//upload-test"/>
+</talendfile:ContextType>

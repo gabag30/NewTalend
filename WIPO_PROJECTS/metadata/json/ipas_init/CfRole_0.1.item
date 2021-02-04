@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_p8xBoPr6EemSBqvBwzGp4g" name="CfRole" dataPackage="_p8xBq_r6EemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfRole.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_p8xBofr6EemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfRole[*]">
+      <schemaTargets xmi:id="_p8xBovr6EemSBqvBwzGp4g" RelativeXPathQuery="roleId" TagName="role_id"/>
+      <schemaTargets xmi:id="_p8xBo_r6EemSBqvBwzGp4g" RelativeXPathQuery="creationDate" TagName="creation_date"/>
+      <schemaTargets xmi:id="_p8xBpPr6EemSBqvBwzGp4g" RelativeXPathQuery="isActive" TagName="is_active"/>
+      <schemaTargets xmi:id="_p8xBpfr6EemSBqvBwzGp4g" RelativeXPathQuery="isProtected" TagName="is_protected"/>
+      <schemaTargets xmi:id="_p8xBpvr6EemSBqvBwzGp4g" RelativeXPathQuery="lastUpdateDate" TagName="last_update_date"/>
+      <schemaTargets xmi:id="_p8xBp_r6EemSBqvBwzGp4g" RelativeXPathQuery="name" TagName="role_name"/>
+      <schemaTargets xmi:id="_p8xBqPr6EemSBqvBwzGp4g" RelativeXPathQuery="tag" TagName="tag"/>
+      <schemaTargets xmi:id="_p8xBqfr6EemSBqvBwzGp4g" RelativeXPathQuery="creationUserId" TagName="creation_user_id"/>
+      <schemaTargets xmi:id="_p8xBqvr6EemSBqvBwzGp4g" RelativeXPathQuery="lastUpdateUserId" TagName="last_update_user_id"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_p8xBq_r6EemSBqvBwzGp4g" name="default" dataManager="_p8xBoPr6EemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_p8xBrPr6EemSBqvBwzGp4g" id="_CrezkPr6EemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBrfr6EemSBqvBwzGp4g" label="role_id" length="10" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBrvr6EemSBqvBwzGp4g" label="creation_date" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBr_r6EemSBqvBwzGp4g" label="is_active" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBsPr6EemSBqvBwzGp4g" label="is_protected" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBsfr6EemSBqvBwzGp4g" label="last_update_date" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBsvr6EemSBqvBwzGp4g" label="role_name" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBs_r6EemSBqvBwzGp4g" label="tag" length="255" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBtPr6EemSBqvBwzGp4g" label="creation_user_id" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_p8xBtfr6EemSBqvBwzGp4g" label="last_update_user_id" length="5" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

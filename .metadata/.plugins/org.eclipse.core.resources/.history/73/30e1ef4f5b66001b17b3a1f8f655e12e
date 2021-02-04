@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_b_Kn8PyzEemSK7Vk_CtH1g" id="_b_JZ0PyzEemSK7Vk_CtH1g" label="MigrateTrademark" purpose="Migration of Trademark data" description="All the tables specific to the trademark will be migrated" version="0.1" statusCode="" item="_b_LPAPyzEemSK7Vk_CtH1g" displayName="MigrateTrademark">
+    <author href="../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_b_MdIPyzEemSK7Vk_CtH1g" key="created_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_b_MdIfyzEemSK7Vk_CtH1g" key="created_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_b_MdIvyzEemSK7Vk_CtH1g" key="created_date" value="2019-11-01T15:25:21.906+0100"/>
+    <additionalProperties xmi:id="_b_MdI_yzEemSK7Vk_CtH1g" key="modified_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_b_MdJPyzEemSK7Vk_CtH1g" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_b_MdJfyzEemSK7Vk_CtH1g" key="modified_date" value="2020-09-07T12:28:44.691+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_-Hg3kGZaEeuywLl5bDJyLA" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_b_LPAPyzEemSK7Vk_CtH1g" property="_b_Kn8PyzEemSK7Vk_CtH1g" state="_-Hg3kGZaEeuywLl5bDJyLA">
+    <process href="MigrateTrademark_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_QmttsTqLEeWYcqCfASzNcw" id="_YhmPsMM6EeW7fvG2whHVEQ" label="PATENT_DRAWINGS_RESIZE" version="0.3" statusCode="" item="_QmttszqLEeWYcqCfASzNcw" displayName="PATENT_DRAWINGS_RESIZE">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_lykSQBybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lykSQRybEeifVt3bEFEg0w" key="created_product_version" value="6.4.1.20170623_1246"/>
+    <additionalProperties xmi:id="_lykSQhybEeifVt3bEFEg0w" key="created_date" value="2015-08-05T09:47:32.235+0200"/>
+    <additionalProperties xmi:id="_lykSQxybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lykSRBybEeifVt3bEFEg0w" key="modified_product_version" value="7.4.1.20201110_1014-M4"/>
+    <additionalProperties xmi:id="_lykSRRybEeifVt3bEFEg0w" key="modified_date" value="2021-02-04T08:40:35.384+0100"/>
+    <additionalProperties xmi:id="_ebdAECmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_ebdAESmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_ebdAEimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7Jyu4AMVEeuOjv5n7xl_Lg" path="OMPI/IPAS_IMAGE" locked="true" lockDate="2021-02-04T08:36:48.294+0100">
+    <locker href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_QmttszqLEeWYcqCfASzNcw" property="_QmttsTqLEeWYcqCfASzNcw" state="_7Jyu4AMVEeuOjv5n7xl_Lg">
+    <process href="PATENT_DRAWINGS_RESIZE_0.3.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_ezIyEJm8EeqBccRJOjMeeQ" name="checklistTemplate" id="_ey_BEJm8EeqBccRJOjMeeQ" dataPackage="_ezIyH5m8EeqBccRJOjMeeQ" JSONFilePath="I:/ws/running/866/home/conf/modules/references/checklist/TMFMT.json" Encoding="UTF-8" inputModel="false" outputFilePath="">
+    <root xmi:id="_3WDZUJnfEeqBccRJOjMeeQ" JSONPath="/root" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+    <root xmi:id="_3WDZUZnfEeqBccRJOjMeeQ" JSONPath="/root/checklistMode" RelatedColumn="checklistMode" Attribute="branch" Order="2" Type="id_String"/>
+    <root xmi:id="_3WDZUpnfEeqBccRJOjMeeQ" JSONPath="/root/label" RelatedColumn="label" Attribute="branch" Order="3" Type="id_String"/>
+    <root xmi:id="_3WDZU5nfEeqBccRJOjMeeQ" JSONPath="/root/id" RelatedColumn="id" Attribute="branch" Order="4" Type="id_String"/>
+    <loop xmi:id="_3WDZVJnfEeqBccRJOjMeeQ" JSONPath="/root/childs" RelatedColumn="" Attribute="main" Order="5" Type="id_String"/>
+    <loop xmi:id="_3WDZVZnfEeqBccRJOjMeeQ" JSONPath="/root/childs/childs" RelatedColumn="" Attribute="branch" Order="6" Type="id_String"/>
+    <loop xmi:id="_3WDZVpnfEeqBccRJOjMeeQ" JSONPath="/root/childs/childs/content" RelatedColumn="content" Attribute="branch" Order="7" Type="id_String"/>
+    <loop xmi:id="_3WDZV5nfEeqBccRJOjMeeQ" JSONPath="/root/childs/childs/id" RelatedColumn="id1" Attribute="branch" Order="8" Type="id_String"/>
+    <loop xmi:id="_3WDZWJnfEeqBccRJOjMeeQ" JSONPath="/root/childs/childs/selectable" RelatedColumn="selectable" Attribute="branch" Order="9" Type="id_Boolean"/>
+    <loop xmi:id="_3WDZWZnfEeqBccRJOjMeeQ" JSONPath="/root/childs/childs/withNotes" RelatedColumn="withNotes" Attribute="branch" Order="10" Type="id_Boolean"/>
+    <loop xmi:id="_3WDZWpnfEeqBccRJOjMeeQ" JSONPath="/root/childs/content" RelatedColumn="content1" Attribute="branch" Order="11" Type="id_String"/>
+    <loop xmi:id="_3WDZW5nfEeqBccRJOjMeeQ" JSONPath="/root/childs/id" RelatedColumn="id2" Attribute="branch" Order="12" Type="id_String"/>
+    <loop xmi:id="_3WDZXJnfEeqBccRJOjMeeQ" JSONPath="/root/childs/selectable" RelatedColumn="selectable1" Attribute="branch" Order="13" Type="id_Boolean"/>
+    <loop xmi:id="_3WDZXZnfEeqBccRJOjMeeQ" JSONPath="/root/childs/withNotes" RelatedColumn="withNotes1" Attribute="branch" Order="14" Type="id_Boolean"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ezIyH5m8EeqBccRJOjMeeQ" name="default" dataManager="_ezIyEJm8EeqBccRJOjMeeQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ezIyIJm8EeqBccRJOjMeeQ" id="_mJkpkJm7EeqBccRJOjMeeQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzgJnfEeqBccRJOjMeeQ" name="checklistMode" label="checklistMode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzgZnfEeqBccRJOjMeeQ" name="label" label="label" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzgpnfEeqBccRJOjMeeQ" name="id" label="id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzg5nfEeqBccRJOjMeeQ" name="content" label="content" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzhJnfEeqBccRJOjMeeQ" name="id" label="id1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzhZnfEeqBccRJOjMeeQ" name="selectable" label="selectable" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzhpnfEeqBccRJOjMeeQ" name="withNotes" label="withNotes" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzh5nfEeqBccRJOjMeeQ" name="content" label="content1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knziJnfEeqBccRJOjMeeQ" name="id" label="id2" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knziZnfEeqBccRJOjMeeQ" name="selectable" label="selectable1" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0knzipnfEeqBccRJOjMeeQ" name="withNotes" label="withNotes1" talendType="id_Boolean"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

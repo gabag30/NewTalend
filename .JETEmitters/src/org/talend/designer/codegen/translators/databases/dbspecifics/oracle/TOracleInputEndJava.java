@@ -434,6 +434,16 @@ public class TOracleInputEndJava
     
 		}
 
+		public void query(INode node, String dbQueryVariableName){
+			beforeComponentProcess(node);
+			//for input
+			logInfo(node,"debug",cid+" - Executing the query: '\" + "+dbQueryVariableName +" + \"'.");
+		}
+
+		/**
+		* @deprecated please use another method instead: query(INode node, String dbQueryVariableName) because execution of the query expression can be not idempotent
+		*/
+		@Deprecated
 		public void query(INode node){
 			beforeComponentProcess(node);
 			//for input

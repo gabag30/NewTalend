@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_YhjSgfr7EemSBqvBwzGp4g" name="CfRoleAuthRoleObject" dataPackage="_YhjShfr7EemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfRoleAuthRoleObject.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_YhjSgvr7EemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfRoleAuthRoleObject[*]">
+      <schemaTargets xmi:id="_YhjSg_r7EemSBqvBwzGp4g" RelativeXPathQuery="roleId" TagName="role_id"/>
+      <schemaTargets xmi:id="_YhjShPr7EemSBqvBwzGp4g" RelativeXPathQuery="authId" TagName="auth_id"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_YhjShfr7EemSBqvBwzGp4g" name="default" dataManager="_YhjSgfr7EemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_YhjShvr7EemSBqvBwzGp4g" id="_HRSEkPr7EemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YhjSh_r7EemSBqvBwzGp4g" label="role_id" length="10" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_YhjSiPr7EemSBqvBwzGp4g" label="auth_id" length="10" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

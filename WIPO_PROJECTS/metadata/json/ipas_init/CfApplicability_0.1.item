@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_lT5YUfpmEemSBqvBwzGp4g" name="CfApplicability" id="_lT5YUPpmEemSBqvBwzGp4g" dataPackage="_lT5YVfpmEemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfApplicability.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_lT5YUvpmEemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfApplicability[*]">
+      <schemaTargets xmi:id="_k23ooPpnEemSBqvBwzGp4g" RelativeXPathQuery="applicabilityId" TagName="applicability_id"/>
+      <schemaTargets xmi:id="_lT5YVPpmEemSBqvBwzGp4g" RelativeXPathQuery="applicabilityName" TagName="applicability_name"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_lT5YVfpmEemSBqvBwzGp4g" name="default" dataManager="_lT5YUfpmEemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_lT5YVvpmEemSBqvBwzGp4g" id="_c5RVYPpmEemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lT5YV_pmEemSBqvBwzGp4g" label="applicability_id" length="10" talendType="id_String" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_lT5YWPpmEemSBqvBwzGp4g" label="applicability_name" length="250" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

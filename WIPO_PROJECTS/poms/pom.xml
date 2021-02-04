@@ -10,6 +10,18 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/Ipas4Mig/exportanduploaddatabase_0.1</module>
+    <module>jobs/process/Ipas4Mig/initializedefaultdatascript_0.1</module>
+    <module>jobs/process/Ipas4Mig/migratebinaryobjects_0.1</module>
+    <module>jobs/process/Ipas4Mig/migratecommondata_0.1</module>
+    <module>jobs/process/Ipas4Mig/migrateconfigurationdata_0.1</module>
+    <module>jobs/process/Ipas4Mig/migrateoptionlist_0.1</module>
+    <module>jobs/process/Ipas4Mig/migratepatentanddesign_0.1</module>
+    <module>jobs/process/Ipas4Mig/migratetrademark_0.1</module>
+    <module>jobs/process/Ipas4Mig/migrationmain_0.1</module>
+    <module>jobs/process/Ipas4Mig/updatefornewfunctionality_0.1</module>
+    <module>jobs/process/Ipas4Mig/validatedata_0.1</module>
+    <module>jobs/process/Ipas4Mig/verifydataintegration_0.1</module>
     <module>jobs/process/M/EC/Data_corr/dc1_corrections_intermed_0.1</module>
     <module>jobs/process/M/EC/Data_mig/dm1_excel_to_sql_0.1</module>
     <module>jobs/process/M/EC/Data_mig/dm2_pg_a_intermed_0.1</module>

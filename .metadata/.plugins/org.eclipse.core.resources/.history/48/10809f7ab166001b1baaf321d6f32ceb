@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_wdriAASfEeqbDtSJsN6OKw" id="_wdiYEASfEeqbDtSJsN6OKw" label="ValidateData" description="Validate the foreign key" version="0.1" statusCode="" item="_wdriAgSfEeqbDtSJsN6OKw" displayName="ValidateData">
+    <author href="../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_wdriAwSfEeqbDtSJsN6OKw" key="created_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_wdriBASfEeqbDtSJsN6OKw" key="created_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_wdriBQSfEeqbDtSJsN6OKw" key="created_date" value="2019-11-11T17:24:38.688+0100"/>
+    <additionalProperties xmi:id="_wdriBgSfEeqbDtSJsN6OKw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_wdriBwSfEeqbDtSJsN6OKw" key="modified_product_version" value="7.4.1.20201110_1014-M4"/>
+    <additionalProperties xmi:id="_wdriCASfEeqbDtSJsN6OKw" key="modified_date" value="2021-02-04T07:23:20.083+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_-NNP4GZaEeuywLl5bDJyLA" path="Ipas4Mig"/>
+  <TalendProperties:ProcessItem xmi:id="_wdriAgSfEeqbDtSJsN6OKw" property="_wdriAASfEeqbDtSJsN6OKw" state="_-NNP4GZaEeuywLl5bDJyLA">
+    <process href="ValidateData_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

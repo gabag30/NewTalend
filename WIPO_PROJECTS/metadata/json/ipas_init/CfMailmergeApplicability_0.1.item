@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_WgC1IPr4EemSBqvBwzGp4g" name="CfMailmergeApplicability" dataPackage="_WgC1JPr4EemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfMailmergeApplicability.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_WgC1Ifr4EemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfMailmergeApplicability[*]">
+      <schemaTargets xmi:id="_WgC1Ivr4EemSBqvBwzGp4g" RelativeXPathQuery="mailmergeId" TagName="field_id"/>
+      <schemaTargets xmi:id="_WgC1I_r4EemSBqvBwzGp4g" RelativeXPathQuery="applicabiltyId" TagName="applicability_id"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_WgC1JPr4EemSBqvBwzGp4g" name="default" dataManager="_WgC1IPr4EemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WgC1Jfr4EemSBqvBwzGp4g" id="_7m954Pr3EemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WgC1Jvr4EemSBqvBwzGp4g" label="field_id" length="255" talendType="id_String" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WgC1J_r4EemSBqvBwzGp4g" label="applicability_id" length="-1" talendType="id_String" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

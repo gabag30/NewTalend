@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_a5NTUPswEemm96tHEgIvQQ" id="_a5MsQPswEemm96tHEgIvQQ" label="MigrateCommonData" purpose="Migration of Common data tables" description="Such as actions, docs, user docs, office docs, files etc" version="0.1" statusCode="" item="_a5NTUvswEemm96tHEgIvQQ" displayName="MigrateCommonData">
+    <author href="../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_a5PIgPswEemm96tHEgIvQQ" key="created_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_a5PIgfswEemm96tHEgIvQQ" key="created_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_a5PIgvswEemm96tHEgIvQQ" key="created_date" value="2019-10-30T17:14:59.336+0100"/>
+    <additionalProperties xmi:id="_a5PIg_swEemm96tHEgIvQQ" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_a5PIhPswEemm96tHEgIvQQ" key="modified_product_version" value="7.4.1.20201110_1014-M4"/>
+    <additionalProperties xmi:id="_a5PvkPswEemm96tHEgIvQQ" key="modified_date" value="2021-02-04T07:23:17.592+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_945z0GZaEeuywLl5bDJyLA" path="Ipas4Mig"/>
+  <TalendProperties:ProcessItem xmi:id="_a5NTUvswEemm96tHEgIvQQ" property="_a5NTUPswEemm96tHEgIvQQ" state="_945z0GZaEeuywLl5bDJyLA">
+    <process href="MigrateCommonData_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

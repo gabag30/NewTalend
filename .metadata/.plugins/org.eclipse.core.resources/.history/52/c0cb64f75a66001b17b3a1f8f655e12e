@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_SNk1MP_sEemMy_DxVs8tGw" id="_SNjnEP_sEemMy_DxVs8tGw" label="MigrateBinaryObjects" purpose="Binary objects like Logo, Design, Office document" version="0.1" statusCode="" item="_SNlcQP_sEemMy_DxVs8tGw" displayName="MigrateBinaryObjects">
+    <author href="../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_SNmqYP_sEemMy_DxVs8tGw" key="created_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_SNmqYf_sEemMy_DxVs8tGw" key="created_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_SNmqYv_sEemMy_DxVs8tGw" key="created_date" value="2019-11-05T17:49:51.110+0100"/>
+    <additionalProperties xmi:id="_SNmqY__sEemMy_DxVs8tGw" key="modified_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_SNmqZP_sEemMy_DxVs8tGw" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_SNmqZf_sEemMy_DxVs8tGw" key="modified_date" value="2020-09-24T09:56:51.377+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_912f0GZaEeuywLl5bDJyLA" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_SNlcQP_sEemMy_DxVs8tGw" property="_SNk1MP_sEemMy_DxVs8tGw" state="_912f0GZaEeuywLl5bDJyLA">
+    <process href="MigrateBinaryObjects_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_N2ND8_Y2EemzYuZ5JQNGWA" id="_GY2hkPY2EemzYuZ5JQNGWA" label="DestinationDBPostgres" purpose="Postgres destination" version="0.1" statusCode="" item="_N2ND9fY2EemzYuZ5JQNGWA" displayName="DestinationDBPostgres">
+    <author href="../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_N2ND9vY2EemzYuZ5JQNGWA" key="created_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_N2ND9_Y2EemzYuZ5JQNGWA" key="created_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_N2ND-PY2EemzYuZ5JQNGWA" key="created_date" value="2019-10-24T10:13:52.943+0200"/>
+    <additionalProperties xmi:id="_N2ND-fY2EemzYuZ5JQNGWA" key="modified_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_N2ND-vY2EemzYuZ5JQNGWA" key="modified_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_N2ND-_Y2EemzYuZ5JQNGWA" key="modified_date" value="2020-08-28T16:29:14.146+0200"/>
+    <additionalProperties xmi:id="_uBAMEPcpEemXJ4VBqfYivQ" key="import_product_fullname" value="Talend Open Studio for ESB"/>
+    <additionalProperties xmi:id="_uBAMEfcpEemXJ4VBqfYivQ" key="import_product_version" value="7.2.1.20190620_1446"/>
+    <additionalProperties xmi:id="_uBAMEvcpEemXJ4VBqfYivQ" key="import_date" value="2019-10-25T15:16:56.268+0200"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_-P1tIGZaEeuywLl5bDJyLA" path=""/>
+  <TalendProperties:DatabaseConnectionItem xmi:id="_N2ND9fY2EemzYuZ5JQNGWA" property="_N2ND8_Y2EemzYuZ5JQNGWA" state="_-P1tIGZaEeuywLl5bDJyLA" typeName="PostgreSQL">
+    <connection href="DestinationDBPostgres_0.1.item#_N2ND8PY2EemzYuZ5JQNGWA"/>
+  </TalendProperties:DatabaseConnectionItem>
+</xmi:XMI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_1RLpgPpoEemSBqvBwzGp4g" name="CfAuthRoleObject" dataPackage="_1RLpiPpoEemSBqvBwzGp4g" JSONFilePath="I:/ws/migration/project/init_json/latest/CfAuthRoleObject.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_1RLpgfpoEemSBqvBwzGp4g" LimitBoucle="50" AbsoluteXPathQuery="$.CfAuthRoleObject[*]">
+      <schemaTargets xmi:id="_1RLpgvpoEemSBqvBwzGp4g" RelativeXPathQuery="authId" TagName="auth_id"/>
+      <schemaTargets xmi:id="_1RLpg_poEemSBqvBwzGp4g" RelativeXPathQuery="accessLevel" TagName="access_level"/>
+      <schemaTargets xmi:id="_1RLphPpoEemSBqvBwzGp4g" RelativeXPathQuery="authCode" TagName="auth_code"/>
+      <schemaTargets xmi:id="_1RLphfpoEemSBqvBwzGp4g" RelativeXPathQuery="authType" TagName="auth_type"/>
+      <schemaTargets xmi:id="_1RLphvpoEemSBqvBwzGp4g" RelativeXPathQuery="serviceUrl" TagName="service_url"/>
+      <schemaTargets xmi:id="_1RLph_poEemSBqvBwzGp4g" RelativeXPathQuery="viewName" TagName="viewname"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_1RLpiPpoEemSBqvBwzGp4g" name="default" dataManager="_1RLpgPpoEemSBqvBwzGp4g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_1RLpifpoEemSBqvBwzGp4g" id="_YqJXoPpoEemSBqvBwzGp4g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpivpoEemSBqvBwzGp4g" label="auth_id" length="5" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpi_poEemSBqvBwzGp4g" label="access_level" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpjPpoEemSBqvBwzGp4g" label="auth_code" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpjfpoEemSBqvBwzGp4g" label="auth_type" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpjvpoEemSBqvBwzGp4g" label="service_url" length="500" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1RLpj_poEemSBqvBwzGp4g" label="viewname" length="500" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_dzk9QZniEeqBccRJOjMeeQ" name="ChecklistTemplateNew" id="_dzk9QJniEeqBccRJOjMeeQ" dataPackage="_dzk9S5niEeqBccRJOjMeeQ" JSONFilePath="I:/ws/running/866/home/conf/modules/references/checklist/TMSRC.json" Encoding="UTF-8" inputModel="false" outputFilePath="">
+    <root xmi:id="_LkD3wJqxEeq3Q9uz4xXJvQ" JSONPath="/root" RelatedColumn="" Attribute="main" Order="239" Type="id_String"/>
+    <root xmi:id="_LkD3wZqxEeq3Q9uz4xXJvQ" JSONPath="/root/checklistMode" RelatedColumn="checklistMode" Attribute="branch" Order="240" Type="id_String"/>
+    <root xmi:id="_LkD3wpqxEeq3Q9uz4xXJvQ" JSONPath="/root/label" RelatedColumn="label" Attribute="branch" Order="241" Type="id_String"/>
+    <root xmi:id="_LkD3w5qxEeq3Q9uz4xXJvQ" JSONPath="/root/id" RelatedColumn="id" Attribute="branch" Order="242" Type="id_String"/>
+    <loop xmi:id="_LkD3xJqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs" RelatedColumn="" Attribute="main" Order="243" Type="id_String"/>
+    <loop xmi:id="_LkD3xZqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/childs" RelatedColumn="" DefaultValue="[]" Attribute="branch" Order="244"/>
+    <loop xmi:id="_LkD3xpqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/content" RelatedColumn="content" Attribute="branch" Order="245" Type="id_String"/>
+    <loop xmi:id="_LkD3x5qxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/id" RelatedColumn="id1" Attribute="branch" Order="246" Type="id_String"/>
+    <loop xmi:id="_LkD3yJqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/placeholders" RelatedColumn="" DefaultValue="[]" Attribute="branch" Order="247"/>
+    <loop xmi:id="_LkD3yZqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/selectable" RelatedColumn="selectable" Attribute="branch" Order="248" Type="id_Boolean"/>
+    <loop xmi:id="_LkD3ypqxEeq3Q9uz4xXJvQ" JSONPath="/root/childs/withNotes" RelatedColumn="withNotes" Attribute="branch" Order="249" Type="id_Boolean"/>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_dzk9S5niEeqBccRJOjMeeQ" name="default" dataManager="_dzk9QZniEeqBccRJOjMeeQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dzk9TJniEeqBccRJOjMeeQ" id="_Ko7GQJniEeqBccRJOjMeeQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1ekJqxEeq3Q9uz4xXJvQ" name="checklistMode" label="checklistMode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1ekZqxEeq3Q9uz4xXJvQ" name="label" label="label" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1ekpqxEeq3Q9uz4xXJvQ" name="id" label="id" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1ek5qxEeq3Q9uz4xXJvQ" name="content" label="content" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1elJqxEeq3Q9uz4xXJvQ" name="id" label="id1" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1elZqxEeq3Q9uz4xXJvQ" name="selectable" label="selectable" talendType="id_Boolean"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_CK1elpqxEeq3Q9uz4xXJvQ" name="withNotes" label="withNotes" talendType="id_Boolean"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
