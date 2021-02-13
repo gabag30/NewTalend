@@ -33,7 +33,7 @@
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.product.version>7.4.1.20201110_1014-M4</talend.product.version>
+    <talend.product.version>7.4.1.20210107_1111-M6</talend.product.version>
     <talend.project.name>WIPO_PROJECTS</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
@@ -155,7 +155,7 @@
     <dependency>
       <groupId>org.talend.components.lib</groupId>
       <artifactId>talend_file_enhanced</artifactId>
-      <version>1.0</version>
+      <version>1.1</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>
@@ -209,6 +209,18 @@
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.19</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -233,6 +245,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -414,6 +433,13 @@
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.19</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -422,23 +448,6 @@
         <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
         <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
       </properties>
-      <dependencies>
-        <dependency>
-          <groupId>io.micrometer</groupId>
-          <artifactId>micrometer-registry-prometheus</artifactId>
-          <version>1.1.1</version>
-        </dependency>
-        <dependency>
-          <groupId>io.prometheus.jmx</groupId>
-          <artifactId>collector</artifactId>
-          <version>0.13.0</version>
-        </dependency>
-        <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-security</artifactId>
-          <version>2.1.2.RELEASE</version>
-        </dependency>
-      </dependencies>
     </profile>
   </profiles>
 </project>

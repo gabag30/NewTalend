@@ -14,14 +14,14 @@
   <name>WIPO_PROJECTS ValidateData-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
-    <talend.pigudf.groupid>org.example.wipo_projects.pigudf</talend.pigudf.groupid>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
-    <talend.job.folder></talend.job.folder>
+    <talend.pigudf.groupid>org.example.wipo_projects.pigudf</talend.pigudf.groupid>
+    <talend.job.folder>ipas4mig/</talend.job.folder>
     <talend.job.context>migration</talend.job.context>
     <talend.job.path>wipo_projects</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <talend.job.stat>true</talend.job.stat>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8</talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.id>_wdiYEASfEeqbDtSJsN6OKw</talend.job.id>
     <talend.job.version>0.1</talend.job.version>
     <talend.job.framework></talend.job.framework>
@@ -33,7 +33,7 @@
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
-    <talend.product.version>7.4.1.20201110_1014-M4</talend.product.version>
+    <talend.product.version>7.4.1.20210107_1111-M6</talend.product.version>
     <talend.project.name>WIPO_PROJECTS</talend.project.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
@@ -231,6 +231,18 @@
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.19</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -255,6 +267,13 @@
                 </goals>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -436,6 +455,13 @@
                 </configuration>
               </execution>
             </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>1.19</version>
+              </dependency>
+            </dependencies>
           </plugin>
         </plugins>
       </build>
@@ -444,23 +470,6 @@
         <contexts.running.dir>${current.resources.dir}/</contexts.running.dir>
         <microservice.running.configs.dir>${current.int-resources.dir}/</microservice.running.configs.dir>
       </properties>
-      <dependencies>
-        <dependency>
-          <groupId>io.micrometer</groupId>
-          <artifactId>micrometer-registry-prometheus</artifactId>
-          <version>1.1.1</version>
-        </dependency>
-        <dependency>
-          <groupId>io.prometheus.jmx</groupId>
-          <artifactId>collector</artifactId>
-          <version>0.13.0</version>
-        </dependency>
-        <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-security</artifactId>
-          <version>2.1.2.RELEASE</version>
-        </dependency>
-      </dependencies>
     </profile>
   </profiles>
 </project>

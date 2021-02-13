@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="ExportItemWizard">
 		<section name="destinationFile">
-			<item value="G:\convertSqlserver.zip" key="archivePath"/>
+			<item value="C:\WIPO\image_convert.zip" key="archivePath"/>
 		</section>
 	</section>
 </section>

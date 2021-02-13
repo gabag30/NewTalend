@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_TqAOIVt9EeW-rqPBjn7WFw" id="_TqAOIFt9EeW-rqPBjn7WFw" label="IMPORT_DESIGN_DRAWINGS" version="0.2" statusCode="" item="_TqAOI1t9EeW-rqPBjn7WFw" displayName="IMPORT_DESIGN_DRAWINGS">
+    <author href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+    <additionalProperties xmi:id="_lrG_YBybEeifVt3bEFEg0w" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lrG_YRybEeifVt3bEFEg0w" key="created_product_version" value="6.4.1.20170623_1246"/>
+    <additionalProperties xmi:id="_lrG_YhybEeifVt3bEFEg0w" key="created_date" value="2015-09-17T06:27:02.221+0200"/>
+    <additionalProperties xmi:id="_lrG_YxybEeifVt3bEFEg0w" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_lrG_ZBybEeifVt3bEFEg0w" key="modified_product_version" value="7.4.1.20210107_1111-M6"/>
+    <additionalProperties xmi:id="_lrG_ZRybEeifVt3bEFEg0w" key="modified_date" value="2021-02-05T15:59:22.367+0100"/>
+    <additionalProperties xmi:id="_eZXVYCmnEei2ofTLIN0zjw" key="import_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_eZXVYSmnEei2ofTLIN0zjw" key="import_product_version" value="6.5.1.20180116_1512"/>
+    <additionalProperties xmi:id="_eZXVYimnEei2ofTLIN0zjw" key="import_date" value="2018-03-17T06:53:05.749+0100"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_7GI98AMVEeuOjv5n7xl_Lg" path="OMPI/IPAS_IMAGE" locked="true" lockDate="2021-02-05T15:59:22.367+0100">
+    <locker href="../../../talend.project#_MJn0cAMTEeuOjv5n7xl_Lg"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_TqAOI1t9EeW-rqPBjn7WFw" property="_TqAOIVt9EeW-rqPBjn7WFw" state="_7GI98AMVEeuOjv5n7xl_Lg">
+    <process href="IMPORT_DESIGN_DRAWINGS_0.2.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

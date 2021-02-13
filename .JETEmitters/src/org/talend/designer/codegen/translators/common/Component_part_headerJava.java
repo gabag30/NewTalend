@@ -720,10 +720,10 @@ LogUtil log = null;
 					String sourceNodeId = source.getUniqueName();
 					
 					String sourceLabel = ElementParameterParser.getValue(source, "__LABEL__");
-					String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel);
+					String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel.trim());
 					
 					String targetLabel = ElementParameterParser.getValue(node, "__LABEL__");
-					String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel);
+					String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel.trim());
 					
 					String sourceNodeComponent = source.getComponent().getName();
 				
@@ -769,10 +769,10 @@ LogUtil log = null;
 							String sourceNodeId = source.getUniqueName();
 							
 							String sourceLabel = ElementParameterParser.getValue(source, "__LABEL__");
-							String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel);
+							String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel.trim());
 							
 							String targetLabel = ElementParameterParser.getValue(node, "__LABEL__");
-							String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel);
+							String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel.trim());
 							
 							String sourceNodeComponent = source.getComponent().getName();
 						
@@ -809,10 +809,10 @@ LogUtil log = null;
 							String sourceNodeId = source.getUniqueName();
 							
 							String sourceLabel = ElementParameterParser.getValue(source, "__LABEL__");
-							String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel);
+							String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel.trim());
 							
 							String targetLabel = ElementParameterParser.getValue(node, "__LABEL__");
-							String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel);
+							String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel.trim());
 							
 							String sourceNodeComponent = source.getComponent().getName();
 							
@@ -858,10 +858,10 @@ LogUtil log = null;
 									String sourceNodeId = source.getUniqueName();
 									
 									String sourceLabel = ElementParameterParser.getValue(source, "__LABEL__");
-									String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel);
+									String sourceNodeLabel = ((sourceLabel==null || "__UNIQUE_NAME__".equals(sourceLabel) || sourceLabel.contains("\"")) ? sourceNodeId : sourceLabel.trim());
 									
 									String targetLabel = ElementParameterParser.getValue(node, "__LABEL__");
-									String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel);
+									String targetNodeLabel = ((targetLabel==null || "__UNIQUE_NAME__".equals(targetLabel) || targetLabel.contains("\"")) ? node.getUniqueName() : targetLabel.trim());
 							
 									String sourceNodeComponent = source.getComponent().getName();
 							
@@ -1165,7 +1165,7 @@ LogUtil log = null;
 		if(logstashCurrent) {
 			for (INode jobStructureCatcher : jobCatcherNodes) {
 				String label = ElementParameterParser.getValue(node, "__LABEL__");
-				String nodeLabel = ((label==null || "__UNIQUE_NAME__".equals(label) || label.contains("\"")) ? node.getUniqueName() : label);
+				String nodeLabel = ((label==null || "__UNIQUE_NAME__".equals(label) || label.contains("\"")) ? node.getUniqueName() : label.trim());
 			
     stringBuffer.append(TEXT_128);
     stringBuffer.append(jobStructureCatcher.getUniqueName() );
