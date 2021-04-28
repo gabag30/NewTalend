@@ -6007,3 +6007,619 @@ Caused by: org.talend.commons.exception.BusinessException: 404:Not Found
 !MESSAGE The download failed for the following jars : [hadoop-aws-2.6.0-cdh5.13.0.jar]
 !SUBENTRY 1 org.talend.updates.runtime 0 0 2021-02-07 22:45:15.482
 !MESSAGE The following jars were successfully installed : [activation-1.1.jar]
+!SESSION 2021-02-14 14:32:33.357 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-02-14 14:32:36.711
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-02-14 14:32:36.716
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:32:41.676
+!MESSAGE 2021-02-14 14:32:41,666 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210107_1111-V7.4.1M6\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:32:42.931
+!MESSAGE 2021-02-14 14:32:42,931 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:32:42.933
+!MESSAGE 2021-02-14 14:32:42,932 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-02-14 14:32:43.172
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:32:48.152
+!MESSAGE 2021-02-14 14:32:48,152 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-02-14 14:32:58.665
+!MESSAGE 2021-02-14 14:32:58,664 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:08.766
+!MESSAGE 2021-02-14 14:33:08,766 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:08.768
+!MESSAGE 2021-02-14 14:33:08,767 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:08.774
+!MESSAGE 2021-02-14 14:33:08,773 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:08.775
+!MESSAGE 2021-02-14 14:33:08,775 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.852
+!MESSAGE 2021-02-14 14:33:09,851 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.852
+!MESSAGE 2021-02-14 14:33:09,852 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.852
+!MESSAGE 2021-02-14 14:33:09,852 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.853
+!MESSAGE 2021-02-14 14:33:09,853 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.854
+!MESSAGE 2021-02-14 14:33:09,853 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.854
+!MESSAGE 2021-02-14 14:33:09,854 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.855
+!MESSAGE 2021-02-14 14:33:09,855 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.856
+!MESSAGE 2021-02-14 14:33:09,855 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.857
+!MESSAGE 2021-02-14 14:33:09,856 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.857
+!MESSAGE 2021-02-14 14:33:09,857 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.859
+!MESSAGE 2021-02-14 14:33:09,858 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.859
+!MESSAGE 2021-02-14 14:33:09,859 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:09.867
+!MESSAGE 2021-02-14 14:33:09,867 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-02-14 14:33:11.061
+!MESSAGE 2021-02-14 14:33:11,060 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-02-14 14:34:55.215
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-03-05 16:16:00.854 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-03-05 16:16:07.485
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-03-05 16:16:07.499
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:16:23.658
+!MESSAGE 2021-03-05 16:16:23,632 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210107_1111-V7.4.1M6\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:16:26.842
+!MESSAGE 2021-03-05 16:16:26,841 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:16:26.845
+!MESSAGE 2021-03-05 16:16:26,844 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-05 16:16:27.106
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:16:36.645
+!MESSAGE 2021-03-05 16:16:36,643 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-03-05 16:17:01.638
+!MESSAGE 2021-03-05 16:17:01,634 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:23.640
+!MESSAGE 2021-03-05 16:17:23,639 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:23.642
+!MESSAGE 2021-03-05 16:17:23,641 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:23.662
+!MESSAGE 2021-03-05 16:17:23,661 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:23.664
+!MESSAGE 2021-03-05 16:17:23,663 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.924
+!MESSAGE 2021-03-05 16:17:26,921 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.926
+!MESSAGE 2021-03-05 16:17:26,925 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.928
+!MESSAGE 2021-03-05 16:17:26,927 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.929
+!MESSAGE 2021-03-05 16:17:26,929 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.931
+!MESSAGE 2021-03-05 16:17:26,930 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.933
+!MESSAGE 2021-03-05 16:17:26,932 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.935
+!MESSAGE 2021-03-05 16:17:26,934 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.937
+!MESSAGE 2021-03-05 16:17:26,936 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.939
+!MESSAGE 2021-03-05 16:17:26,938 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.942
+!MESSAGE 2021-03-05 16:17:26,941 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.944
+!MESSAGE 2021-03-05 16:17:26,943 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.947
+!MESSAGE 2021-03-05 16:17:26,946 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:26.963
+!MESSAGE 2021-03-05 16:17:26,962 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-05 16:17:29.633
+!MESSAGE 2021-03-05 16:17:29,632 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-05 16:29:33.520
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-03-31 21:43:42.816 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-03-31 21:43:45.697
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-03-31 21:43:45.701
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:43:55.165
+!MESSAGE 2021-03-31 21:43:55,137 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210107_1111-V7.4.1M6\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:43:59.325
+!MESSAGE 2021-03-31 21:43:59,325 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:43:59.329
+!MESSAGE 2021-03-31 21:43:59,329 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-31 21:43:59.757
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:09.026
+!MESSAGE 2021-03-31 21:44:09,025 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-03-31 21:44:22.869
+!MESSAGE 2021-03-31 21:44:22,866 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:30.651
+!MESSAGE 2021-03-31 21:44:30,650 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:30.652
+!MESSAGE 2021-03-31 21:44:30,651 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:30.661
+!MESSAGE 2021-03-31 21:44:30,661 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:30.661
+!MESSAGE 2021-03-31 21:44:30,661 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.048
+!MESSAGE 2021-03-31 21:44:32,046 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.049
+!MESSAGE 2021-03-31 21:44:32,049 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.050
+!MESSAGE 2021-03-31 21:44:32,050 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.051
+!MESSAGE 2021-03-31 21:44:32,050 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.052
+!MESSAGE 2021-03-31 21:44:32,051 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.052
+!MESSAGE 2021-03-31 21:44:32,052 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.054
+!MESSAGE 2021-03-31 21:44:32,054 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.055
+!MESSAGE 2021-03-31 21:44:32,054 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.056
+!MESSAGE 2021-03-31 21:44:32,055 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.058
+!MESSAGE 2021-03-31 21:44:32,056 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.059
+!MESSAGE 2021-03-31 21:44:32,059 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.060
+!MESSAGE 2021-03-31 21:44:32,060 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:32.068
+!MESSAGE 2021-03-31 21:44:32,068 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:44:33.626
+!MESSAGE 2021-03-31 21:44:33,625 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:30.648
+!MESSAGE 2021-03-31 21:45:30,647 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:30.812
+!MESSAGE 2021-03-31 21:45:30,811 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_UPDATEFORNEWFUNCTIONALITY_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:30.813
+!MESSAGE 2021-03-31 21:45:30,812 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_UPDATEFORNEWFUNCTIONALITY_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:30.826
+!MESSAGE 2021-03-31 21:45:30,826 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_UPDATEFORNEWFUNCTIONALITY_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:30.827
+!MESSAGE 2021-03-31 21:45:30,827 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_UPDATEFORNEWFUNCTIONALITY_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:52.908
+!MESSAGE 2021-03-31 21:45:52,907 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:53.115
+!MESSAGE 2021-03-31 21:45:53,114 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:53.115
+!MESSAGE 2021-03-31 21:45:53,115 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:53.126
+!MESSAGE 2021-03-31 21:45:53,126 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:45:53.128
+!MESSAGE 2021-03-31 21:45:53,126 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/test/resources
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-31 21:53:30.723
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-03-31 21:57:24.875 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-03-31 21:57:27.851
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-03-31 21:57:27.855
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:57:32.091
+!MESSAGE 2021-03-31 21:57:32,083 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210107_1111-V7.4.1M6\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:57:33.647
+!MESSAGE 2021-03-31 21:57:33,647 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:57:33.651
+!MESSAGE 2021-03-31 21:57:33,651 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-31 21:57:33.811
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:57:47.015
+!MESSAGE 2021-03-31 21:57:47,015 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-03-31 21:58:03.091
+!MESSAGE 2021-03-31 21:58:03,091 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:14.402
+!MESSAGE 2021-03-31 21:58:14,402 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:14.405
+!MESSAGE 2021-03-31 21:58:14,404 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:14.415
+!MESSAGE 2021-03-31 21:58:14,413 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:14.416
+!MESSAGE 2021-03-31 21:58:14,415 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.154
+!MESSAGE 2021-03-31 21:58:16,154 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.155
+!MESSAGE 2021-03-31 21:58:16,155 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.156
+!MESSAGE 2021-03-31 21:58:16,156 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.157
+!MESSAGE 2021-03-31 21:58:16,157 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.158
+!MESSAGE 2021-03-31 21:58:16,158 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.158
+!MESSAGE 2021-03-31 21:58:16,158 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.159
+!MESSAGE 2021-03-31 21:58:16,159 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.160
+!MESSAGE 2021-03-31 21:58:16,160 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.161
+!MESSAGE 2021-03-31 21:58:16,161 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.162
+!MESSAGE 2021-03-31 21:58:16,162 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.163
+!MESSAGE 2021-03-31 21:58:16,162 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.163
+!MESSAGE 2021-03-31 21:58:16,163 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:16.171
+!MESSAGE 2021-03-31 21:58:16,171 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:58:17.765
+!MESSAGE 2021-03-31 21:58:17,764 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:05.261
+!MESSAGE 2021-03-31 21:59:05,261 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:05.594
+!MESSAGE 2021-03-31 21:59:05,593 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_MIGRATION_PATENTS_WS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:05.595
+!MESSAGE 2021-03-31 21:59:05,595 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_MIGRATION_PATENTS_WS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:05.607
+!MESSAGE 2021-03-31 21:59:05,606 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_MIGRATION_PATENTS_WS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:05.608
+!MESSAGE 2021-03-31 21:59:05,608 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_MIGRATION_PATENTS_WS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:19.409
+!MESSAGE 2021-03-31 21:59:19,407 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:19.645
+!MESSAGE 2021-03-31 21:59:19,644 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:19.645
+!MESSAGE 2021-03-31 21:59:19,645 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:19.648
+!MESSAGE 2021-03-31 21:59:19,648 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-03-31 21:59:19.649
+!MESSAGE 2021-03-31 21:59:19,648 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_PATENTS_LOAD_VIA_WS_0.1/src/test/resources
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-31 22:06:14.124
+!MESSAGE The workspace will exit with unsaved changes in this session.
