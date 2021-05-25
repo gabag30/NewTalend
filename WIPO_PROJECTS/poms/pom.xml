@@ -61,6 +61,14 @@
     <module>jobs/process/M/OLD_MIG/PA/a_generar_db_intermed_sqlserver_0.1</module>
     <module>jobs/process/M/OLD_MIG/PA/b_generar_ambiente_limpio_ipas_0.1</module>
     <module>jobs/process/M/OLD_MIG/PA/panama_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/a1_copy_users_to_ipas_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/migrate_config_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/a1_gen_marcas_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/e1a_marc_a_intermed_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/e1a_marc_userdoc_a_interm_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/fa_corr_pre_mig_tm_py_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/fc_corr_pre_mig_ud_0.1</module>
+    <module>jobs/process/M/OLD_MIG/PY/PY_MARCAS_NUEVO/gg_poa_0.1</module>
     <module>jobs/process/M/OLD_MIG/ParaguayFinal/a_carga_a_vw_origin_0.1</module>
     <module>jobs/process/M/OLD_MIG/ParaguayFinal/b_agentes_a_intermed_0.1</module>
     <module>jobs/process/M/OLD_MIG/ParaguayFinal/c_biblio_a_vw_import_patent_0.1</module>
@@ -73,14 +81,6 @@
     <module>jobs/process/M/OLD_MIG/Patents_Corrections/agente_faltante_0.1</module>
     <module>jobs/process/M/OLD_MIG/Patents_Corrections/check_actions_0.1</module>
     <module>jobs/process/M/OLD_MIG/Patents_Corrections/configuracion_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/a1_copy_users_to_ipas_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/Migrate_configuration_and_users/migrate_config_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/a1_gen_marcas_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_a_intermed_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/e1a_marc_userdoc_a_interm_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/fa_corr_pre_mig_tm_py_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/fc_corr_pre_mig_ud_0.1</module>
-    <module>jobs/process/M/PY/PY_MARCAS_NUEVO/gg_poa_0.1</module>
     <module>jobs/process/OMPI/EDMS/edocid_oracle_0.1</module>
     <module>jobs/process/OMPI/EDMS/missededocid_0.1</module>
     <module>jobs/process/OMPI/EDMS/movertiff_0.1</module>
@@ -149,6 +149,11 @@
           <version>3.6.1</version>
           <dependencies>
             <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-utils</artifactId>
+              <version>3.3.3</version>
+            </dependency>
+            <dependency>
               <groupId>org.eclipse.tycho</groupId>
               <artifactId>tycho-compiler-jdt</artifactId>
               <version>1.6.0</version>
@@ -174,12 +179,22 @@
               <artifactId>plexus-utils</artifactId>
               <version>3.0.24</version>
             </dependency>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-utils</artifactId>
+              <version>3.3.3</version>
+            </dependency>
           </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
           <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-utils</artifactId>
+              <version>3.3.3</version>
+            </dependency>
             <dependency>
               <groupId>org.codehaus.plexus</groupId>
               <artifactId>plexus-utils</artifactId>
@@ -201,6 +216,11 @@
           <artifactId>maven-assembly-plugin</artifactId>
           <version>3.0.0</version>
           <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-shared-utils</artifactId>
+              <version>3.3.3</version>
+            </dependency>
             <dependency>
               <groupId>org.codehaus.plexus</groupId>
               <artifactId>plexus-utils</artifactId>
@@ -226,6 +246,11 @@
               <groupId>org.codehaus.plexus</groupId>
               <artifactId>plexus-utils</artifactId>
               <version>3.0.24</version>
+            </dependency>
+            <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>4.13.2</version>
             </dependency>
           </dependencies>
         </plugin>

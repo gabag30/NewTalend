@@ -6623,3 +6623,2625 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.la
 
 !ENTRY org.eclipse.core.resources 2 10035 2021-03-31 22:06:14.124
 !MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-05-07 23:28:30.470 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_291
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/GitHub/NewTalend/
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-05-07 23:28:32.156
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-05-07 23:28:32.156
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:28:35.622
+!MESSAGE 2021-05-07 23:28:35,622 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210504_0925-V7.4.1M9\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:28:36.483
+!MESSAGE 2021-05-07 23:28:36,483 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:28:36.483
+!MESSAGE 2021-05-07 23:28:36,483 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-07 23:28:36.577
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:28:52.323
+!MESSAGE 2021-05-07 23:28:52,323 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:00.236
+!MESSAGE 2021-05-07 23:29:00,220 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:00.236
+!MESSAGE 2021-05-07 23:29:00,236 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:00.260
+!MESSAGE 2021-05-07 23:29:00,260 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:00.260
+!MESSAGE 2021-05-07 23:29:00,260 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:13.251
+!MESSAGE 2021-05-07 23:29:13,251 INFO  org.talend.librariesmanager.model.service.LocalLibraryManager  - Skip deploying libs from custom components
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:16.096
+!MESSAGE 2021-05-07 23:29:16,096 INFO  org.talend.librariesmanager.model.service.LocalLibraryManager  - Skip deploying libs from custom components
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.304
+!MESSAGE 2021-05-07 23:29:20,304 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.304
+!MESSAGE 2021-05-07 23:29:20,304 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.320
+!MESSAGE 2021-05-07 23:29:20,320 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.320
+!MESSAGE 2021-05-07 23:29:20,320 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.336
+!MESSAGE 2021-05-07 23:29:20,336 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-07 23:29:20.336
+!MESSAGE 2021-05-07 23:29:20,336 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:25.545
+!MESSAGE 2021-05-07 23:29:25,545 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jsch-0.1.55.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:25.545
+!MESSAGE 2021-05-07 23:29:25,545 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:26.063
+!MESSAGE 2021-05-07 23:29:26,063 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:26.928
+!MESSAGE 2021-05-07 23:29:26,928 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:26.949
+!MESSAGE 2021-05-07 23:29:26,948 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:26.976
+!MESSAGE 2021-05-07 23:29:26,976 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:26.976
+!MESSAGE 2021-05-07 23:29:26,976 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:29.234
+!MESSAGE 2021-05-07 23:29:29,234 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:29.234
+!MESSAGE 2021-05-07 23:29:29,234 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:29.234
+!MESSAGE 2021-05-07 23:29:29,234 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:29.234
+!MESSAGE 2021-05-07 23:29:29,234 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:32.221
+!MESSAGE 2021-05-07 23:29:32,221 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:32.221
+!MESSAGE 2021-05-07 23:29:32,221 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:32.221
+!MESSAGE 2021-05-07 23:29:32,221 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jxl.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:32.221
+!MESSAGE 2021-05-07 23:29:32,221 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:32.221
+!MESSAGE 2021-05-07 23:29:32,221 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.661
+!MESSAGE 2021-05-07 23:29:33,661 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.661
+!MESSAGE 2021-05-07 23:29:33,661 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-lib-2.4.6-talend.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.661
+!MESSAGE 2021-05-07 23:29:33,661 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xom-1.2.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.661
+!MESSAGE 2021-05-07 23:29:33,661 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.677
+!MESSAGE 2021-05-07 23:29:33,677 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:33.707
+!MESSAGE 2021-05-07 23:29:33,707 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.250
+!MESSAGE 2021-05-07 23:29:35,250 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.251
+!MESSAGE 2021-05-07 23:29:35,251 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.253
+!MESSAGE 2021-05-07 23:29:35,252 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.254
+!MESSAGE 2021-05-07 23:29:35,253 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.867
+!MESSAGE 2021-05-07 23:29:35,867 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.867
+!MESSAGE 2021-05-07 23:29:35,867 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.867
+!MESSAGE 2021-05-07 23:29:35,867 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:35.867
+!MESSAGE 2021-05-07 23:29:35,867 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.103
+!MESSAGE 2021-05-07 23:29:36,103 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.103
+!MESSAGE 2021-05-07 23:29:36,103 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.789
+!MESSAGE 2021-05-07 23:29:36,789 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.804
+!MESSAGE 2021-05-07 23:29:36,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.804
+!MESSAGE 2021-05-07 23:29:36,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:36.804
+!MESSAGE 2021-05-07 23:29:36,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.252
+!MESSAGE 2021-05-07 23:29:37,252 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.252
+!MESSAGE 2021-05-07 23:29:37,252 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.252
+!MESSAGE 2021-05-07 23:29:37,252 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jxl.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.267
+!MESSAGE 2021-05-07 23:29:37,252 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.704
+!MESSAGE 2021-05-07 23:29:37,704 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:external_sort.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.704
+!MESSAGE 2021-05-07 23:29:37,704 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.913
+!MESSAGE 2021-05-07 23:29:37,913 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:37.931
+!MESSAGE 2021-05-07 23:29:37,931 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.647
+!MESSAGE 2021-05-07 23:29:38,647 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:SparseBitSet-1.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.647
+!MESSAGE 2021-05-07 23:29:38,647 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-collections4-4.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.647
+!MESSAGE 2021-05-07 23:29:38,647 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.647
+!MESSAGE 2021-05-07 23:29:38,647 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:curvesapi-1.06.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.711
+!MESSAGE 2021-05-07 23:29:38,710 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-math3-3.6.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.738
+!MESSAGE 2021-05-07 23:29:38,738 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xmlbeans-3.1.0.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:38.769
+!MESSAGE 2021-05-07 23:29:38,769 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:39.804
+!MESSAGE 2021-05-07 23:29:39,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:39.806
+!MESSAGE 2021-05-07 23:29:39,805 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:39.817
+!MESSAGE 2021-05-07 23:29:39,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:39.831
+!MESSAGE 2021-05-07 23:29:39,830 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:39.832
+!MESSAGE 2021-05-07 23:29:39,831 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.013
+!MESSAGE 2021-05-07 23:29:41,013 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.013
+!MESSAGE 2021-05-07 23:29:41,013 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.013
+!MESSAGE 2021-05-07 23:29:41,013 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.013
+!MESSAGE 2021-05-07 23:29:41,013 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.013
+!MESSAGE 2021-05-07 23:29:41,013 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.370
+!MESSAGE 2021-05-07 23:29:41,370 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.370
+!MESSAGE 2021-05-07 23:29:41,370 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.370
+!MESSAGE 2021-05-07 23:29:41,370 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.370
+!MESSAGE 2021-05-07 23:29:41,370 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.652
+!MESSAGE 2021-05-07 23:29:41,652 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.652
+!MESSAGE 2021-05-07 23:29:41,652 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.652
+!MESSAGE 2021-05-07 23:29:41,652 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.652
+!MESSAGE 2021-05-07 23:29:41,652 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.950
+!MESSAGE 2021-05-07 23:29:41,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.950
+!MESSAGE 2021-05-07 23:29:41,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.950
+!MESSAGE 2021-05-07 23:29:41,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:41.950
+!MESSAGE 2021-05-07 23:29:41,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.496
+!MESSAGE 2021-05-07 23:29:42,496 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.496
+!MESSAGE 2021-05-07 23:29:42,496 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.496
+!MESSAGE 2021-05-07 23:29:42,496 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.496
+!MESSAGE 2021-05-07 23:29:42,496 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.496
+!MESSAGE 2021-05-07 23:29:42,496 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:saaj-impl-1.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jakarta.xml.soap-api-1.4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:stax-ex-1.8.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:42.998
+!MESSAGE 2021-05-07 23:29:42,998 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.328
+!MESSAGE 2021-05-07 23:29:43,328 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:velocity-1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.343
+!MESSAGE 2021-05-07 23:29:43,343 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xmlschema-core-2.2.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.343
+!MESSAGE 2021-05-07 23:29:43,343 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.343
+!MESSAGE 2021-05-07 23:29:43,343 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-impl-2.2.6-modified.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-xjc-2.2.6-modified.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:woodstox-core-5.2.0.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:serializer-2.7.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mail.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.12.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.359
+!MESSAGE 2021-05-07 23:29:43,359 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xalan-2.7.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.379
+!MESSAGE 2021-05-07 23:29:43,379 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.380
+!MESSAGE 2021-05-07 23:29:43,380 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-api-2.2.6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.382
+!MESSAGE 2021-05-07 23:29:43,381 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:cxf-tools-common-3.3.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:saaj-impl-1.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jakarta.xml.soap-api-1.4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:stax-ex-1.8.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.641
+!MESSAGE 2021-05-07 23:29:43,641 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.877
+!MESSAGE 2021-05-07 23:29:43,877 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.877
+!MESSAGE 2021-05-07 23:29:43,877 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.877
+!MESSAGE 2021-05-07 23:29:43,877 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.877
+!MESSAGE 2021-05-07 23:29:43,877 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:saaj-impl-1.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.888
+!MESSAGE 2021-05-07 23:29:43,888 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.888
+!MESSAGE 2021-05-07 23:29:43,888 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jakarta.xml.soap-api-1.4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.888
+!MESSAGE 2021-05-07 23:29:43,888 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:43.888
+!MESSAGE 2021-05-07 23:29:43,888 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:stax-ex-1.8.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:44.767
+!MESSAGE 2021-05-07 23:29:44,767 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:44.778
+!MESSAGE 2021-05-07 23:29:44,777 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:44.874
+!MESSAGE 2021-05-07 23:29:44,874 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:44.877
+!MESSAGE 2021-05-07 23:29:44,875 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:45.467
+!MESSAGE 2021-05-07 23:29:45,467 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:45.467
+!MESSAGE 2021-05-07 23:29:45,467 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:45.561
+!MESSAGE 2021-05-07 23:29:45,561 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:45.561
+!MESSAGE 2021-05-07 23:29:45,561 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:46.331
+!MESSAGE 2021-05-07 23:29:46,331 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:46.331
+!MESSAGE 2021-05-07 23:29:46,331 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:46.468
+!MESSAGE 2021-05-07 23:29:46,468 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ini4j-0.5.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:46.468
+!MESSAGE 2021-05-07 23:29:46,468 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:47.611
+!MESSAGE 2021-05-07 23:29:47,611 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:47.611
+!MESSAGE 2021-05-07 23:29:47,611 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:47.611
+!MESSAGE 2021-05-07 23:29:47,611 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.097
+!MESSAGE 2021-05-07 23:29:48,097 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.097
+!MESSAGE 2021-05-07 23:29:48,097 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.097
+!MESSAGE 2021-05-07 23:29:48,097 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.097
+!MESSAGE 2021-05-07 23:29:48,097 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.113
+!MESSAGE 2021-05-07 23:29:48,113 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.420
+!MESSAGE 2021-05-07 23:29:48,420 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.421
+!MESSAGE 2021-05-07 23:29:48,420 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.422
+!MESSAGE 2021-05-07 23:29:48,421 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.423
+!MESSAGE 2021-05-07 23:29:48,422 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.423
+!MESSAGE 2021-05-07 23:29:48,423 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.649
+!MESSAGE 2021-05-07 23:29:48,649 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.649
+!MESSAGE 2021-05-07 23:29:48,649 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.706
+!MESSAGE 2021-05-07 23:29:48,705 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:48.708
+!MESSAGE 2021-05-07 23:29:48,707 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.300
+!MESSAGE 2021-05-07 23:29:49,299 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.301
+!MESSAGE 2021-05-07 23:29:49,301 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.303
+!MESSAGE 2021-05-07 23:29:49,303 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.305
+!MESSAGE 2021-05-07 23:29:49,304 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.306
+!MESSAGE 2021-05-07 23:29:49,305 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.736
+!MESSAGE 2021-05-07 23:29:49,736 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.736
+!MESSAGE 2021-05-07 23:29:49,736 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.736
+!MESSAGE 2021-05-07 23:29:49,736 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.736
+!MESSAGE 2021-05-07 23:29:49,736 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.736
+!MESSAGE 2021-05-07 23:29:49,736 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.817
+!MESSAGE 2021-05-07 23:29:49,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:49.821
+!MESSAGE 2021-05-07 23:29:49,821 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.357
+!MESSAGE 2021-05-07 23:29:50,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.451
+!MESSAGE 2021-05-07 23:29:50,451 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.451
+!MESSAGE 2021-05-07 23:29:50,451 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.630
+!MESSAGE 2021-05-07 23:29:50,630 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.630
+!MESSAGE 2021-05-07 23:29:50,630 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.677
+!MESSAGE 2021-05-07 23:29:50,677 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:50.677
+!MESSAGE 2021-05-07 23:29:50,677 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:51.163
+!MESSAGE 2021-05-07 23:29:51,163 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:51.178
+!MESSAGE 2021-05-07 23:29:51,178 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:51.367
+!MESSAGE 2021-05-07 23:29:51,367 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:51.367
+!MESSAGE 2021-05-07 23:29:51,367 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:52.804
+!MESSAGE 2021-05-07 23:29:52,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:52.804
+!MESSAGE 2021-05-07 23:29:52,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:52.804
+!MESSAGE 2021-05-07 23:29:52,804 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.165
+!MESSAGE 2021-05-07 23:29:53,165 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.180
+!MESSAGE 2021-05-07 23:29:53,165 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.416
+!MESSAGE 2021-05-07 23:29:53,416 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.416
+!MESSAGE 2021-05-07 23:29:53,416 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.416
+!MESSAGE 2021-05-07 23:29:53,416 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.416
+!MESSAGE 2021-05-07 23:29:53,416 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.930
+!MESSAGE 2021-05-07 23:29:53,930 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.930
+!MESSAGE 2021-05-07 23:29:53,930 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.930
+!MESSAGE 2021-05-07 23:29:53,930 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:53.930
+!MESSAGE 2021-05-07 23:29:53,930 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.150
+!MESSAGE 2021-05-07 23:29:54,150 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.150
+!MESSAGE 2021-05-07 23:29:54,150 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.150
+!MESSAGE 2021-05-07 23:29:54,150 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.150
+!MESSAGE 2021-05-07 23:29:54,150 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.338
+!MESSAGE 2021-05-07 23:29:54,338 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.338
+!MESSAGE 2021-05-07 23:29:54,338 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.338
+!MESSAGE 2021-05-07 23:29:54,338 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.338
+!MESSAGE 2021-05-07 23:29:54,338 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.853
+!MESSAGE 2021-05-07 23:29:54,853 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.853
+!MESSAGE 2021-05-07 23:29:54,853 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.978
+!MESSAGE 2021-05-07 23:29:54,978 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:54.978
+!MESSAGE 2021-05-07 23:29:54,978 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.339
+!MESSAGE 2021-05-07 23:29:55,339 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.339
+!MESSAGE 2021-05-07 23:29:55,339 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.339
+!MESSAGE 2021-05-07 23:29:55,339 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.418
+!MESSAGE 2021-05-07 23:29:55,418 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.418
+!MESSAGE 2021-05-07 23:29:55,418 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.480
+!MESSAGE 2021-05-07 23:29:55,480 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.480
+!MESSAGE 2021-05-07 23:29:55,480 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.571
+!MESSAGE 2021-05-07 23:29:55,571 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.571
+!MESSAGE 2021-05-07 23:29:55,571 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.869
+!MESSAGE 2021-05-07 23:29:55,869 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.869
+!MESSAGE 2021-05-07 23:29:55,869 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.869
+!MESSAGE 2021-05-07 23:29:55,869 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.885
+!MESSAGE 2021-05-07 23:29:55,885 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:55.885
+!MESSAGE 2021-05-07 23:29:55,885 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.136
+!MESSAGE 2021-05-07 23:29:56,136 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.136
+!MESSAGE 2021-05-07 23:29:56,136 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc8-19.3.0.0.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.136
+!MESSAGE 2021-05-07 23:29:56,136 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.136
+!MESSAGE 2021-05-07 23:29:56,136 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.635
+!MESSAGE 2021-05-07 23:29:56,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.635
+!MESSAGE 2021-05-07 23:29:56,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.635
+!MESSAGE 2021-05-07 23:29:56,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.635
+!MESSAGE 2021-05-07 23:29:56,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:56.635
+!MESSAGE 2021-05-07 23:29:56,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.184
+!MESSAGE 2021-05-07 23:29:57,168 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.184
+!MESSAGE 2021-05-07 23:29:57,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.184
+!MESSAGE 2021-05-07 23:29:57,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.184
+!MESSAGE 2021-05-07 23:29:57,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.184
+!MESSAGE 2021-05-07 23:29:57,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.278
+!MESSAGE 2021-05-07 23:29:57,278 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.278
+!MESSAGE 2021-05-07 23:29:57,278 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.357
+!MESSAGE 2021-05-07 23:29:57,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.357
+!MESSAGE 2021-05-07 23:29:57,357 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.545
+!MESSAGE 2021-05-07 23:29:57,545 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.545
+!MESSAGE 2021-05-07 23:29:57,545 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.561
+!MESSAGE 2021-05-07 23:29:57,561 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.561
+!MESSAGE 2021-05-07 23:29:57,561 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.697
+!MESSAGE 2021-05-07 23:29:57,697 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.697
+!MESSAGE 2021-05-07 23:29:57,697 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jersey-core-1.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.697
+!MESSAGE 2021-05-07 23:29:57,697 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.697
+!MESSAGE 2021-05-07 23:29:57,697 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jersey-client-1.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.729
+!MESSAGE 2021-05-07 23:29:57,714 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.791
+!MESSAGE 2021-05-07 23:29:57,791 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.791
+!MESSAGE 2021-05-07 23:29:57,791 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jersey-core-1.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.791
+!MESSAGE 2021-05-07 23:29:57,791 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.791
+!MESSAGE 2021-05-07 23:29:57,791 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jersey-client-1.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.791
+!MESSAGE 2021-05-07 23:29:57,791 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.901
+!MESSAGE 2021-05-07 23:29:57,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.915
+!MESSAGE 2021-05-07 23:29:57,915 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.915
+!MESSAGE 2021-05-07 23:29:57,915 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.915
+!MESSAGE 2021-05-07 23:29:57,915 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.917
+!MESSAGE 2021-05-07 23:29:57,917 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.917
+!MESSAGE 2021-05-07 23:29:57,917 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.917
+!MESSAGE 2021-05-07 23:29:57,917 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:57.917
+!MESSAGE 2021-05-07 23:29:57,917 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.015
+!MESSAGE 2021-05-07 23:29:58,015 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.043
+!MESSAGE 2021-05-07 23:29:58,043 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.184
+!MESSAGE 2021-05-07 23:29:58,184 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.199
+!MESSAGE 2021-05-07 23:29:58,199 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.293
+!MESSAGE 2021-05-07 23:29:58,293 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.293
+!MESSAGE 2021-05-07 23:29:58,293 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.356
+!MESSAGE 2021-05-07 23:29:58,356 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.356
+!MESSAGE 2021-05-07 23:29:58,356 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.403
+!MESSAGE 2021-05-07 23:29:58,403 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.403
+!MESSAGE 2021-05-07 23:29:58,403 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.482
+!MESSAGE 2021-05-07 23:29:58,482 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.482
+!MESSAGE 2021-05-07 23:29:58,482 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.560
+!MESSAGE 2021-05-07 23:29:58,560 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.560
+!MESSAGE 2021-05-07 23:29:58,560 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.637
+!MESSAGE 2021-05-07 23:29:58,637 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.637
+!MESSAGE 2021-05-07 23:29:58,637 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.731
+!MESSAGE 2021-05-07 23:29:58,731 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.731
+!MESSAGE 2021-05-07 23:29:58,731 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.778
+!MESSAGE 2021-05-07 23:29:58,778 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.778
+!MESSAGE 2021-05-07 23:29:58,778 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.817
+!MESSAGE 2021-05-07 23:29:58,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.817
+!MESSAGE 2021-05-07 23:29:58,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.872
+!MESSAGE 2021-05-07 23:29:58,872 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.872
+!MESSAGE 2021-05-07 23:29:58,872 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.950
+!MESSAGE 2021-05-07 23:29:58,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.950
+!MESSAGE 2021-05-07 23:29:58,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:58.950
+!MESSAGE 2021-05-07 23:29:58,950 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.060
+!MESSAGE 2021-05-07 23:29:59,060 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.060
+!MESSAGE 2021-05-07 23:29:59,060 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.123
+!MESSAGE 2021-05-07 23:29:59,123 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.123
+!MESSAGE 2021-05-07 23:29:59,123 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.201
+!MESSAGE 2021-05-07 23:29:59,201 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.201
+!MESSAGE 2021-05-07 23:29:59,201 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.264
+!MESSAGE 2021-05-07 23:29:59,264 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.327
+!MESSAGE 2021-05-07 23:29:59,327 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.405
+!MESSAGE 2021-05-07 23:29:59,405 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.405
+!MESSAGE 2021-05-07 23:29:59,405 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.484
+!MESSAGE 2021-05-07 23:29:59,484 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.484
+!MESSAGE 2021-05-07 23:29:59,484 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.484
+!MESSAGE 2021-05-07 23:29:59,484 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.562
+!MESSAGE 2021-05-07 23:29:59,562 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.562
+!MESSAGE 2021-05-07 23:29:59,562 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:29:59.562
+!MESSAGE 2021-05-07 23:29:59,562 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:00.573
+!MESSAGE 2021-05-07 23:30:00,573 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:00.574
+!MESSAGE 2021-05-07 23:30:00,574 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:00.575
+!MESSAGE 2021-05-07 23:30:00,575 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:00.576
+!MESSAGE 2021-05-07 23:30:00,576 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.222
+!MESSAGE 2021-05-07 23:30:01,222 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.224
+!MESSAGE 2021-05-07 23:30:01,223 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.344
+!MESSAGE 2021-05-07 23:30:01,344 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.345
+!MESSAGE 2021-05-07 23:30:01,345 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.524
+!MESSAGE 2021-05-07 23:30:01,524 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.524
+!MESSAGE 2021-05-07 23:30:01,524 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.616
+!MESSAGE 2021-05-07 23:30:01,616 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:01.616
+!MESSAGE 2021-05-07 23:30:01,616 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:05.962
+!MESSAGE 2021-05-07 23:30:05,962 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:05.962
+!MESSAGE 2021-05-07 23:30:05,962 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:05.962
+!MESSAGE 2021-05-07 23:30:05,962 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:05.967
+!MESSAGE 2021-05-07 23:30:05,967 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:06.286
+!MESSAGE 2021-05-07 23:30:06,285 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:06.287
+!MESSAGE 2021-05-07 23:30:06,286 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.155
+!MESSAGE 2021-05-07 23:30:07,155 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.155
+!MESSAGE 2021-05-07 23:30:07,155 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.412
+!MESSAGE 2021-05-07 23:30:07,412 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ini4j-0.5.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.413
+!MESSAGE 2021-05-07 23:30:07,413 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.511
+!MESSAGE 2021-05-07 23:30:07,511 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.511
+!MESSAGE 2021-05-07 23:30:07,511 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.527
+!MESSAGE 2021-05-07 23:30:07,527 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.527
+!MESSAGE 2021-05-07 23:30:07,527 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.527
+!MESSAGE 2021-05-07 23:30:07,527 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.527
+!MESSAGE 2021-05-07 23:30:07,527 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.527
+!MESSAGE 2021-05-07 23:30:07,527 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.589
+!MESSAGE 2021-05-07 23:30:07,588 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:07.590
+!MESSAGE 2021-05-07 23:30:07,590 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.003
+!MESSAGE 2021-05-07 23:30:08,003 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.003
+!MESSAGE 2021-05-07 23:30:08,003 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mssql-jdbc.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.116
+!MESSAGE 2021-05-07 23:30:08,116 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.236
+!MESSAGE 2021-05-07 23:30:08,236 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.468
+!MESSAGE 2021-05-07 23:30:08,468 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.469
+!MESSAGE 2021-05-07 23:30:08,469 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,469 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.470
+!MESSAGE 2021-05-07 23:30:08,470 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.630
+!MESSAGE 2021-05-07 23:30:08,629 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.631
+!MESSAGE 2021-05-07 23:30:08,630 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.632
+!MESSAGE 2021-05-07 23:30:08,631 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.633
+!MESSAGE 2021-05-07 23:30:08,632 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.634
+!MESSAGE 2021-05-07 23:30:08,633 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.635
+!MESSAGE 2021-05-07 23:30:08,634 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.636
+!MESSAGE 2021-05-07 23:30:08,635 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.637
+!MESSAGE 2021-05-07 23:30:08,636 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.638
+!MESSAGE 2021-05-07 23:30:08,638 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.639
+!MESSAGE 2021-05-07 23:30:08,639 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.640
+!MESSAGE 2021-05-07 23:30:08,640 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.819
+!MESSAGE 2021-05-07 23:30:08,819 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.820
+!MESSAGE 2021-05-07 23:30:08,820 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.821
+!MESSAGE 2021-05-07 23:30:08,821 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.822
+!MESSAGE 2021-05-07 23:30:08,821 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.823
+!MESSAGE 2021-05-07 23:30:08,822 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.823
+!MESSAGE 2021-05-07 23:30:08,823 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.824
+!MESSAGE 2021-05-07 23:30:08,824 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.825
+!MESSAGE 2021-05-07 23:30:08,824 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.825
+!MESSAGE 2021-05-07 23:30:08,825 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.825
+!MESSAGE 2021-05-07 23:30:08,825 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.825
+!MESSAGE 2021-05-07 23:30:08,825 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:08.971
+!MESSAGE 2021-05-07 23:30:08,971 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.153
+!MESSAGE 2021-05-07 23:30:09,152 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ojdbc6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.154
+!MESSAGE 2021-05-07 23:30:09,154 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.161
+!MESSAGE 2021-05-07 23:30:09,161 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.161
+!MESSAGE 2021-05-07 23:30:09,161 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j-1.3.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.161
+!MESSAGE 2021-05-07 23:30:09,161 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.561
+!MESSAGE 2021-05-07 23:30:09,561 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:velocity-1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.567
+!MESSAGE 2021-05-07 23:30:09,567 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xmlschema-core-2.2.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.568
+!MESSAGE 2021-05-07 23:30:09,568 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.569
+!MESSAGE 2021-05-07 23:30:09,568 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-impl-2.2.6-modified.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.570
+!MESSAGE 2021-05-07 23:30:09,569 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-xjc-2.2.6-modified.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.571
+!MESSAGE 2021-05-07 23:30:09,570 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:woodstox-core-5.2.0.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.572
+!MESSAGE 2021-05-07 23:30:09,572 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:serializer-2.7.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.573
+!MESSAGE 2021-05-07 23:30:09,573 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:mail.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.575
+!MESSAGE 2021-05-07 23:30:09,574 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.12.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.576
+!MESSAGE 2021-05-07 23:30:09,576 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.578
+!MESSAGE 2021-05-07 23:30:09,577 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:xalan-2.7.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.579
+!MESSAGE 2021-05-07 23:30:09,578 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.580
+!MESSAGE 2021-05-07 23:30:09,579 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jaxb-api-2.2.6.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.581
+!MESSAGE 2021-05-07 23:30:09,580 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:cxf-tools-common-3.3.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:activation.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:saaj-impl-1.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:trove.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jakarta.xml.soap-api-1.4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jboss-serialization.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.764
+!MESSAGE 2021-05-07 23:30:09,764 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:stax-ex-1.8.3.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.911
+!MESSAGE 2021-05-07 23:30:09,911 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:09.987
+!MESSAGE 2021-05-07 23:30:09,987 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.080
+!MESSAGE 2021-05-07 23:30:10,080 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jtds-1.3.1-patch-20190523.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.158
+!MESSAGE 2021-05-07 23:30:10,158 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.555
+!MESSAGE 2021-05-07 23:30:10,555 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:accessors-smart-1.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.556
+!MESSAGE 2021-05-07 23:30:10,556 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:json-smart-2.2.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.557
+!MESSAGE 2021-05-07 23:30:10,557 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:10.609
+!MESSAGE 2021-05-07 23:30:10,609 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:postgresql-42.2.14.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:12.947
+!MESSAGE 2021-05-07 23:30:12,947 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:12.947
+!MESSAGE 2021-05-07 23:30:12,947 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:12.963
+!MESSAGE 2021-05-07 23:30:12,963 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:12.963
+!MESSAGE 2021-05-07 23:30:12,963 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:14.623
+!MESSAGE 2021-05-07 23:30:14,623 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - C:\GitHub\NewTalend\WIPO_PROJECTS\poms
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:14.623
+!MESSAGE 2021-05-07 23:30:14,623 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s C:\WIPO\TOS_BD-20210504_0925-V7.4.1M9\configuration\maven_user_settings.xml install -llr -N -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.856
+!MESSAGE 2021-05-07 23:30:18,856 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.857
+!MESSAGE 2021-05-07 23:30:18,857 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.858
+!MESSAGE 2021-05-07 23:30:18,858 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.859
+!MESSAGE 2021-05-07 23:30:18,858 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.859
+!MESSAGE 2021-05-07 23:30:18,859 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.860
+!MESSAGE 2021-05-07 23:30:18,860 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.861
+!MESSAGE 2021-05-07 23:30:18,860 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.861
+!MESSAGE 2021-05-07 23:30:18,861 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.862
+!MESSAGE 2021-05-07 23:30:18,862 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.863
+!MESSAGE 2021-05-07 23:30:18,862 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.863
+!MESSAGE 2021-05-07 23:30:18,863 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.864
+!MESSAGE 2021-05-07 23:30:18,864 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.865
+!MESSAGE 2021-05-07 23:30:18,864 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.865
+!MESSAGE 2021-05-07 23:30:18,865 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.866
+!MESSAGE 2021-05-07 23:30:18,866 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:18.880
+!MESSAGE 2021-05-07 23:30:18,879 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update started
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:20.093
+!MESSAGE 2021-05-07 23:30:20,093 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:20.093
+!MESSAGE 2021-05-07 23:30:20,093 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:20.108
+!MESSAGE 2021-05-07 23:30:20,108 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:20.108
+!MESSAGE 2021-05-07 23:30:20,108 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:20.297
+!MESSAGE 2021-05-07 23:30:20,297 INFO  org.eclipse.m2e.core.internal.project.ProjectConfigurationManager  - Update completed: 1 sec
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:21.900
+!MESSAGE 2021-05-07 23:30:21,899 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  - C:\GitHub\NewTalend\WIPO_PROJECTS\poms\code\routines
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:21.901
+!MESSAGE 2021-05-07 23:30:21,901 INFO  org.eclipse.m2e.internal.launch.MavenLaunchDelegate  -  mvn -B -o -s C:\WIPO\TOS_BD-20210504_0925-V7.4.1M9\configuration\maven_user_settings.xml install -llr -Dmaven.main.skip=true -Dci.builder.skip=true
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:28.024
+!MESSAGE 2021-05-07 23:30:28,024 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:30:29.197
+!MESSAGE 2021-05-07 23:30:29,197 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 4 0 2021-05-07 23:30:51.086
+!MESSAGE 2021-05-07 23:30:51,083 ERROR org.talend.commons.exception.CommonExceptionHandler  - Unmapped relationship: 7
+
+!STACK 0
+java.lang.IllegalStateException: Unmapped relationship: 7
+	at com.sun.jna.platform.win32.WinNT$SYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX.fromPointer(WinNT.java:3033)
+	at com.sun.jna.platform.win32.Kernel32Util.getLogicalProcessorInformationEx(Kernel32Util.java:715)
+	at oshi.driver.windows.LogicalProcessorInformation.getLogicalProcessorInformationEx(LogicalProcessorInformation.java:61)
+	at oshi.hardware.platform.windows.WindowsCentralProcessor.initProcessorCounts(WindowsCentralProcessor.java:149)
+	at oshi.hardware.common.AbstractCentralProcessor.<init>(AbstractCentralProcessor.java:73)
+	at oshi.hardware.platform.windows.WindowsCentralProcessor.<init>(WindowsCentralProcessor.java:68)
+	at oshi.hardware.platform.windows.WindowsHardwareAbstractionLayer.createProcessor(WindowsHardwareAbstractionLayer.java:60)
+	at oshi.util.Memoizer$1.get(Memoizer.java:87)
+	at oshi.hardware.common.AbstractHardwareAbstractionLayer.getProcessor(AbstractHardwareAbstractionLayer.java:66)
+	at org.talend.core.ui.token.PerformanceTokenCollector.collect(PerformanceTokenCollector.java:49)
+	at org.talend.core.ui.token.TokenCollectorFactory.collectTokenInfors(TokenCollectorFactory.java:219)
+	at org.talend.core.ui.token.TokenCollectorFactory$2.run(TokenCollectorFactory.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.help.base 4 4 2021-05-07 23:31:05.368
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2021-05-07 23:31:05.368
+!MESSAGE Help document /org.talend.help.jdbc/guide/components/en/gxh1550477947142.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2021-05-07 23:31:05.368
+!MESSAGE Help document /org.talend.help.jdbc/guide/components/en/qda1550477940712.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2021-05-07 23:31:05.368
+!MESSAGE Help document /org.talend.help.jdbc/guide/components/en/iwk1550477951686.html cannot be opened.
+
+!ENTRY org.talend.platform.logging 0 0 2021-05-07 23:38:05.967
+!MESSAGE 2021-05-07 23:38:05,952 WARN  org.talend.commons.exception.CommonExceptionHandler  - Bad saving logic for Project
+
+!STACK 0
+java.lang.Exception: Bad saving logic for Project
+	at org.talend.core.repository.utils.XmiResourceManager.saveResource(XmiResourceManager.java:665)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1478)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1443)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1443)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.moveFolder(ProxyRepositoryFactory.java:662)
+	at org.talend.core.repository.ui.actions.MoveObjectAction.executeMulti(MoveObjectAction.java:327)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1$1.run(RepositoryDropAdapter.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1.run(RepositoryDropAdapter.java:738)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable.run(RepositoryDropAdapter.java:745)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$4.run(RepositoryDropAdapter.java:555)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$5.run(RepositoryDropAdapter.java:568)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.runInProgressDialog(RepositoryDropAdapter.java:577)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDropRepositoryNode(RepositoryDropAdapter.java:268)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDrop(RepositoryDropAdapter.java:223)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:257)
+	at org.eclipse.ui.part.PluginDropAdapter.drop(PluginDropAdapter.java:69)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.drop(RepositoryDropAdapter.java:103)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:94)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:122)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:370)
+	at org.eclipse.swt.dnd.DragSource.lambda$0(DragSource.java:175)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:260)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 0 0 2021-05-07 23:38:06.783
+!MESSAGE 2021-05-07 23:38:06,783 WARN  org.talend.commons.exception.CommonExceptionHandler  - Bad saving logic for Project
+
+!STACK 0
+java.lang.Exception: Bad saving logic for Project
+	at org.talend.core.repository.utils.XmiResourceManager.saveResource(XmiResourceManager.java:665)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1478)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1443)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.moveFolder(ProxyRepositoryFactory.java:662)
+	at org.talend.core.repository.ui.actions.MoveObjectAction.executeMulti(MoveObjectAction.java:327)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1$1.run(RepositoryDropAdapter.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1.run(RepositoryDropAdapter.java:738)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable.run(RepositoryDropAdapter.java:745)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$4.run(RepositoryDropAdapter.java:555)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$5.run(RepositoryDropAdapter.java:568)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.runInProgressDialog(RepositoryDropAdapter.java:577)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDropRepositoryNode(RepositoryDropAdapter.java:268)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDrop(RepositoryDropAdapter.java:223)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:257)
+	at org.eclipse.ui.part.PluginDropAdapter.drop(PluginDropAdapter.java:69)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.drop(RepositoryDropAdapter.java:103)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:94)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:122)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:370)
+	at org.eclipse.swt.dnd.DragSource.lambda$0(DragSource.java:175)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:260)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 0 0 2021-05-07 23:38:06.838
+!MESSAGE 2021-05-07 23:38:06,838 WARN  org.talend.commons.exception.CommonExceptionHandler  - Bad saving logic for Project
+
+!STACK 0
+java.lang.Exception: Bad saving logic for Project
+	at org.talend.core.repository.utils.XmiResourceManager.saveResource(XmiResourceManager.java:665)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.moveFolder(LocalRepositoryFactory.java:1478)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.moveFolder(ProxyRepositoryFactory.java:662)
+	at org.talend.core.repository.ui.actions.MoveObjectAction.executeMulti(MoveObjectAction.java:327)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1$1.run(RepositoryDropAdapter.java:724)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable$1.run(RepositoryDropAdapter.java:738)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$MoveRunnable.run(RepositoryDropAdapter.java:745)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$4.run(RepositoryDropAdapter.java:555)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:474)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter$5.run(RepositoryDropAdapter.java:568)
+	at org.talend.repository.RepositoryWorkUnit.executeRun(RepositoryWorkUnit.java:103)
+	at org.talend.core.repository.model.AbstractRepositoryFactory.executeRepositoryWorkUnit(AbstractRepositoryFactory.java:258)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.executeRepositoryWorkUnit(LocalRepositoryFactory.java:3716)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.executeRepositoryWorkUnit(ProxyRepositoryFactory.java:2545)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.runInProgressDialog(RepositoryDropAdapter.java:577)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDropRepositoryNode(RepositoryDropAdapter.java:268)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.performDrop(RepositoryDropAdapter.java:223)
+	at org.eclipse.jface.viewers.ViewerDropAdapter.drop(ViewerDropAdapter.java:257)
+	at org.eclipse.ui.part.PluginDropAdapter.drop(PluginDropAdapter.java:69)
+	at org.talend.core.repository.ui.view.RepositoryDropAdapter.drop(RepositoryDropAdapter.java:103)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:94)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.swt.dnd.DropTarget.Drop(DropTarget.java:467)
+	at org.eclipse.swt.dnd.DropTarget.Drop_64(DropTarget.java:401)
+	at org.eclipse.swt.dnd.DropTarget$1.method6(DropTarget.java:265)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:122)
+	at org.eclipse.swt.internal.ole.win32.COM.DoDragDrop(Native Method)
+	at org.eclipse.swt.dnd.DragSource.drag(DragSource.java:370)
+	at org.eclipse.swt.dnd.DragSource.lambda$0(DragSource.java:175)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.talend.rcp.intro.Application.start(Application.java:260)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:42:43.820
+!MESSAGE 2021-05-07 23:42:43,820 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:42:44.180
+!MESSAGE 2021-05-07 23:42:44,180 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_MIG_PAT_WS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:42:44.180
+!MESSAGE 2021-05-07 23:42:44,180 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_MIG_PAT_WS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:42:44.196
+!MESSAGE 2021-05-07 23:42:44,180 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_MIG_PAT_WS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-07 23:42:44.196
+!MESSAGE 2021-05-07 23:42:44,196 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_MIG_PAT_WS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 4 0 2021-05-08 00:01:42.712
+!MESSAGE 2021-05-08 00:01:42,711 ERROR org.talend.commons.exception.CommonExceptionHandler  - Download hadoop-aws-2.6.0-cdh5.13.0.jar : mvn:org.apache.hadoop/hadoop-aws/2.6.0-cdh5.13.0/jar failed!
+
+!STACK 0
+java.lang.Exception: Download hadoop-aws-2.6.0-cdh5.13.0.jar : mvn:org.apache.hadoop/hadoop-aws/2.6.0-cdh5.13.0/jar failed!
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:136)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.run(DownloadModuleRunnable.java:87)
+	at org.talend.updates.runtime.model.TalendWebServiceUpdateExtraFeature.install(TalendWebServiceUpdateExtraFeature.java:97)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.installFeature(InstallNewFeatureJob.java:77)
+	at org.talend.updates.runtime.engine.InstallNewFeatureJob.run(InstallNewFeatureJob.java:67)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: https://talend-update.talend.com/nexus/content/repositories/libraries/org/apache/hadoop/hadoop-aws/2.6.0-cdh5.13.0/hadoop-aws-2.6.0-cdh5.13.0.jar
+	at org.talend.core.nexus.HttpClientTransport.doRequestOne(HttpClientTransport.java:160)
+	at org.talend.core.nexus.HttpClientTransport.doRequest(HttpClientTransport.java:97)
+	at org.talend.core.nexus.HttpClientTransport.doRequest(HttpClientTransport.java:84)
+	at org.talend.librariesmanager.nexus.utils.NexusDownloader.download(NexusDownloader.java:158)
+	at org.talend.core.download.DownloadHelperWithProgress.download(DownloadHelperWithProgress.java:90)
+	at org.talend.librariesmanager.utils.nexus.NexusDownloadHelperWithProgress.download(NexusDownloadHelperWithProgress.java:95)
+	at org.talend.librariesmanager.utils.DownloadModuleRunnable.downLoad(DownloadModuleRunnable.java:129)
+	... 5 more
+Caused by: org.talend.commons.exception.BusinessException: 404:Not Found
+	at org.talend.core.nexus.HttpClientTransport.processResponseCode(HttpClientTransport.java:227)
+	at org.talend.core.nexus.HttpClientTransport.doRequestOne(HttpClientTransport.java:152)
+	... 11 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-08 00:10:07.039
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-05-08 21:49:58.898 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_291
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-05-08 21:50:00.568
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-05-08 21:50:00.572
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:05.167
+!MESSAGE 2021-05-08 21:50:05,161 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210504_0925-V7.4.1M9\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:05.901
+!MESSAGE 2021-05-08 21:50:05,900 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:05.902
+!MESSAGE 2021-05-08 21:50:05,901 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-08 21:50:06.039
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:50:19.037
+!MESSAGE 2021-05-08 21:50:19,035 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:25.319
+!MESSAGE 2021-05-08 21:50:25,318 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:25.320
+!MESSAGE 2021-05-08 21:50:25,319 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:25.327
+!MESSAGE 2021-05-08 21:50:25,326 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:25.327
+!MESSAGE 2021-05-08 21:50:25,327 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.599
+!MESSAGE 2021-05-08 21:50:26,599 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.600
+!MESSAGE 2021-05-08 21:50:26,600 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.601
+!MESSAGE 2021-05-08 21:50:26,601 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.603
+!MESSAGE 2021-05-08 21:50:26,602 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.604
+!MESSAGE 2021-05-08 21:50:26,603 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.604
+!MESSAGE 2021-05-08 21:50:26,604 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.605
+!MESSAGE 2021-05-08 21:50:26,605 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.606
+!MESSAGE 2021-05-08 21:50:26,606 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.607
+!MESSAGE 2021-05-08 21:50:26,607 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.608
+!MESSAGE 2021-05-08 21:50:26,608 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.609
+!MESSAGE 2021-05-08 21:50:26,609 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.610
+!MESSAGE 2021-05-08 21:50:26,610 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.611
+!MESSAGE 2021-05-08 21:50:26,611 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.612
+!MESSAGE 2021-05-08 21:50:26,612 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:26.613
+!MESSAGE 2021-05-08 21:50:26,613 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:29.521
+!MESSAGE 2021-05-08 21:50:29,521 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 21:50:30.762
+!MESSAGE 2021-05-08 21:50:30,761 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.902
+!MESSAGE 2021-05-08 21:51:13,902 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.903
+!MESSAGE 2021-05-08 21:51:13,902 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.917
+!MESSAGE 2021-05-08 21:51:13,916 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.917
+!MESSAGE 2021-05-08 21:51:13,917 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.945
+!MESSAGE 2021-05-08 21:51:13,944 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 21:51:13.946
+!MESSAGE 2021-05-08 21:51:13,945 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-08 22:19:22.179
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2021-05-08 22:31:31.847 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_291
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching.macosx 4 0 2021-05-08 22:31:33.165
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.macosx [19]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jdt.launching.ui.macosx 4 0 2021-05-08 22:31:33.168
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.launching.ui.macosx [20]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=macosx)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:451)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1783)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1762)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1725)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1656)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:35.908
+!MESSAGE 2021-05-08 22:31:35,904 INFO  org.talend.utils.StudioKeysFileCheck  - encryptionKeyFilePath: C:\WIPO\TOS_BD-20210504_0925-V7.4.1M9\configuration\studio.keys
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:36.557
+!MESSAGE 2021-05-08 22:31:36,557 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into http.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:36.558
+!MESSAGE 2021-05-08 22:31:36,558 INFO  org.talend.commons.exception.CommonExceptionHandler  - org.talend.commons.utils.network.TalendProxySelector:-Dtalend.studio.proxy.excludeLoopbackAutomatically=true, adding missing loopback addresses into https.nonProxyHosts: [localhost, 0:0:0:0:0:0:0:1, 127.0.0.1]
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-08 22:31:36.635
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:31:47.090
+!MESSAGE 2021-05-08 22:31:47,090 WARN  org.talend.sdk.component.studio.logging.JULToOsgiHandler  - [org.talend.sdk.component.server.service.ComponentManagerService.init] No system property 'jdk.serialFilter', ensure it is intended
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:51.320
+!MESSAGE 2021-05-08 22:31:51,319 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:51.321
+!MESSAGE 2021-05-08 22:31:51,321 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Resources folder /WIPO_PROJECTS_ROUTINES/src/main/java overlaps with sources folder /WIPO_PROJECTS_ROUTINES/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:51.330
+!MESSAGE 2021-05-08 22:31:51,330 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_ROUTINES/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:51.331
+!MESSAGE 2021-05-08 22:31:51,331 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_ROUTINES/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.332
+!MESSAGE 2021-05-08 22:31:52,331 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-lang3-3.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.333
+!MESSAGE 2021-05-08 22:31:52,333 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-tools-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.334
+!MESSAGE 2021-05-08 22:31:52,334 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.335
+!MESSAGE 2021-05-08 22:31:52,335 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpclient-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.336
+!MESSAGE 2021-05-08 22:31:52,335 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:itext-2.1.7.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.336
+!MESSAGE 2021-05-08 22:31:52,336 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:imgscalr-lib-4.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.337
+!MESSAGE 2021-05-08 22:31:52,337 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:zip4j_1.3.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.338
+!MESSAGE 2021-05-08 22:31:52,338 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:pdfbox-2.0.13.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.339
+!MESSAGE 2021-05-08 22:31:52,339 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:ghost4j-1.0.1.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.340
+!MESSAGE 2021-05-08 22:31:52,339 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:jbig2-imageio-3.0.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.340
+!MESSAGE 2021-05-08 22:31:52,340 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.341
+!MESSAGE 2021-05-08 22:31:52,341 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.341
+!MESSAGE 2021-05-08 22:31:52,341 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:commons-io-2.4.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.342
+!MESSAGE 2021-05-08 22:31:52,342 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpmime-4.5.2.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:52.342
+!MESSAGE 2021-05-08 22:31:52,342 INFO  org.talend.commons.exception.CommonExceptionHandler  - missing jar:httpcore-4.4.5.jar
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:54.639
+!MESSAGE 2021-05-08 22:31:54,639 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - user@talend.com logged on WIPO_Projects
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:31:55.556
+!MESSAGE 2021-05-08 22:31:55,555 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.323
+!MESSAGE 2021-05-08 22:32:34,322 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.323
+!MESSAGE 2021-05-08 22:32:34,323 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.338
+!MESSAGE 2021-05-08 22:32:34,337 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.338
+!MESSAGE 2021-05-08 22:32:34,338 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.364
+!MESSAGE 2021-05-08 22:32:34,364 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP220
+
+
+!ENTRY org.talend.platform.logging 2 0 2021-05-08 22:32:34.365
+!MESSAGE 2021-05-08 22:32:34,365 WARN  org.talend.commons.exception.CommonExceptionHandler  - Missing module group definition: TEZ-SERVER-LIB-HDP_2_3
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:37.438
+!MESSAGE 2021-05-08 22:32:37,437 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:37.677
+!MESSAGE 2021-05-08 22:32:37,676 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_A1_GENERAL_MARCAS_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:37.678
+!MESSAGE 2021-05-08 22:32:37,678 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_A1_GENERAL_MARCAS_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:37.690
+!MESSAGE 2021-05-08 22:32:37,689 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_A1_GENERAL_MARCAS_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:37.691
+!MESSAGE 2021-05-08 22:32:37,690 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_A1_GENERAL_MARCAS_0.1/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:47.272
+!MESSAGE 2021-05-08 22:32:47,271 INFO  org.eclipse.m2e.core.internal.project.WorkspaceClassifierResolverManager  - Resolving P/WIPO_PROJECTS_ROUTINES: org.example.wipo_projects.code:routines:7.4.1 with classifier  to /WIPO_PROJECTS_ROUTINES/target/classes
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:47.382
+!MESSAGE 2021-05-08 22:32:47,382 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_B_FOXPRO_A_MSSQL_0.1/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:47.383
+!MESSAGE 2021-05-08 22:32:47,383 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_B_FOXPRO_A_MSSQL_0.1/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:47.393
+!MESSAGE 2021-05-08 22:32:47,392 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /WIPO_PROJECTS_B_FOXPRO_A_MSSQL_0.1/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2021-05-08 22:32:47.394
+!MESSAGE 2021-05-08 22:32:47,393 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /WIPO_PROJECTS_B_FOXPRO_A_MSSQL_0.1/src/test/resources
+
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-08 23:04:19.757
+!MESSAGE The workspace will exit with unsaved changes in this session.
